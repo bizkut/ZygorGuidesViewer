@@ -385,6 +385,9 @@ function PopupHandler:CreatePopup(name,skin)
 	popup.SavedShow = popup.Show --Save show... Good idea....
 
 	function popup:ApplySkin()
+		local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+		local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
+
 		CHAIN(popup.logobackground)
 			:SetBackdrop(SkinData("NotificationPopupHeaderBackdrop"))
 			:SetBackdropColor(unpack(SkinData("NotificationPopupHeaderBackdropColor")))
@@ -393,8 +396,8 @@ function PopupHandler:CreatePopup(name,skin)
 
 		CHAIN(popup)
 			:SetBackdrop(SkinData("NotificationPopupContentBackdrop"))
-			:SetBackdropColor(unpack(SkinData("NotificationPopupContentBackdropColor")))
-			:SetBackdropBorderColor(unpack(SkinData("NotificationPopupContentBackdropBorderColor")))
+			:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("NotificationPopupContentBackdropColor"))))
+			:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("NotificationPopupContentBackdropBorderColor"))))
 			:SquareCorners(false,false,false,true)
 
 		CHAIN(popup.morebutton)

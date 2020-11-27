@@ -43,6 +43,7 @@ STYLE.StepFontSizeMod = 1
 
 STYLE.StyleAceGUI = true
 
+STYLE.UseOpacity = false
 
 ------------------- Templates
 -- Black frame with a lightborder
@@ -86,8 +87,8 @@ STYLE.StepBackdropBorderColor=STEPBACK
 STYLE.StepBackdropPersistentBorder=true
 
 STYLE.StepSpacing = 2
-STYLE.StepStickyBarSpace = 3
-STYLE.StepStickyBarHeight = 2
+STYLE.StepStickyBarSpace = 5
+STYLE.StepStickyBarHeight = 1
 STYLE.StepStickySeparatorColor = CONTROLBAR
 STYLE.StepPaddingTop = 0
 STYLE.StepPaddingBottom = 0

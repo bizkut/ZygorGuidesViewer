@@ -401,6 +401,51 @@ function ZGV:Options_DefineOptionTables()
 			_default = "starlight",
 			})
 
+		AddOptionSep()
+
+		AddOption('opacitytoggle',{
+			type = 'toggle',
+			set = function(i,v)
+				Setter_Simple(i,v)
+				ZGV:SetSkin(ZGV.db.profile.skin,ZGV.db.profile.skinstyle)
+			      end,
+			width=200, 
+		})
+		AddOptionSep()
+
+		AddOption('opacity',{
+			type = 'select',
+			values = {[0.1]=L["opt_opacity_low"],[0.2]="'",[0.3]="'",[0.4]="||",[0.5]="'",[0.6]="'",[0.7]="'",[0.8]="'",[0.9]="'",[1]=L["opt_opacity_high"]},
+			style = 'slider',
+			set = function(i,v)
+				Setter_Simple(i,v)
+				ZGV:SendMessage("SKIN_UPDATED")
+				self:ApplySkin()
+			end,
+			disabled=function() return not ZGV.db.profile.opacitytoggle end,
+			_default=1,
+			width="single",
+			_inline=true,
+		})
+		AddOption('',{ type = 'description', name="  ", width=30})
+		AddOption('opacitymenu',{
+			type = 'select',
+			values = {[0.1]=L["opt_opacity_low"],[0.2]="'",[0.3]="'",[0.4]="||",[0.5]="'",[0.6]="'",[0.7]="'",[0.8]="'",[0.9]="'",[1]=L["opt_opacity_high"]},
+			style = 'slider',
+			set = function(i,v)
+				Setter_Simple(i,v)
+				ZGV:SendMessage("SKIN_UPDATED")
+				self:ApplySkin()
+			end,
+			disabled=function() return not ZGV.db.profile.opacitytoggle end,
+			_default=1,
+			width="single",
+			_inline=true,
+		})
+
+
+
+
 		AddOptionSpace()
 
 		local framescales={0.625, 0.750, 0.875, 1, 1.125, 1.250, 1.375, 1.500, 1.625, 1.750}

@@ -998,10 +998,14 @@ end
 
 function BugReport:ApplySkin()
 	if self.dumpFrameBasic then
+
+		local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+		local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
+
 		CHAIN(self.dumpFrameBasic)
 			:SetBackdrop(SkinData("BugBackdrop"))
-			:SetBackdropColor(unpack(SkinData("BugBackdropColor")))
-			:SetBackdropBorderColor(unpack(SkinData("BugBackdropBorderColor")))
+			:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("BugBackdropColor"))))
+			:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("BugBackdropBorderColor"))))
 
 		CHAIN(self.dumpFrameBasic.editBox)
 			:SetBackdrop(SkinData("BugEditBackdrop"))

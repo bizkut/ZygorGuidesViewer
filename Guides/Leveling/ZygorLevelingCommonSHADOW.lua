@@ -5426,6 +5426,7 @@ Speak with the Lord Chamberlain |q 56978/1 |goto 66.91,64.69
 step
 Watch the dialogue
 |tip Follow Lord Chamberlain as he walks.
+|tip He eventually walks to this location.
 Reach Darkhaven |q 56978/2 |goto 63.26,62.10
 step
 talk Lord Chamberlain##156374
@@ -5486,10 +5487,10 @@ Watch the dialogue
 Kill the enemies that attack in waves
 Find the Soul of Keltesh Clue |q 60177/3 |goto 62.69,64.72
 step
-Locate Globknob |goto 63.38,60.87 < 7 |c |q 60177
-step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 63.51,60.82 |count 30
+Collect Tithe Anima |q 60176/1 |goto 62.78,60.92 |count 20
+step
+Locate Globknob |goto 63.38,60.87 < 7 |c |q 60177
 step
 talk Globknob##167838
 Choose _<Ask about suspicious activity>_
@@ -5499,18 +5500,23 @@ Watch the dialogue
 click Rubbish Pile
 Find the Globknob Clue |q 60177/2 |goto 63.71,61.10
 step
+Enter the building |goto 63.38,60.88 < 7 |walk
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 62.20,59.56 |count 35
+|tip Inside the building.
+Collect Tithe Anima |q 60176/1 |goto 63.51,60.82 |count 25
+step
+click Droplets of Anima
+Collect Tithe Anima |q 60176/1 |goto 62.20,59.56 |count 30
 step
 talk Darkhaven Villager##167746
 Choose _<Request tithe>_
-Collect Tithe Anima |q 60176/1 |goto 61.90,59.74 |count 40
+Collect Tithe Anima |q 60176/1 |goto 61.90,59.74 |count 60
 step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 61.42,59.22 |count 70
+Collect Tithe Anima |q 60176/1 |goto 61.42,59.22 |count 65
 step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 60.80,60.23 |count 65
+Collect Tithe Anima |q 60176/1 |goto 60.80,60.23 |count 70
 step
 talk Lord Chamberlain##156374
 turnin A Plea to the Harvesters##58654 |goto 60.61,60.86
@@ -5523,12 +5529,12 @@ Choose _<Ask about suspicious activity>_
 Watch the dialogue
 Find the Courier Rokalai Clue |q 60177/1 |goto 60.50,60.61
 step
-step		talk 167717
+talk Darkhaven Villager##167717
 Choose _<Request tithe>_
-Collect Tithe Anima |q 60176/1 |goto 61.60,62.15 |count 100
+Collect Tithe Anima |q 60176/1 |goto 61.36,61.20 |count 85
 step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 61.78,61.66 |count 85
+Collect Tithe Anima |q 60176/1 |goto 61.78,61.66 |count 90
 step
 talk Darkhaven Villager##167744
 Choose _<Request tithe>_
@@ -5691,11 +5697,9 @@ talk Nadjia the Mistblade##166616
 turnin It's a Trap##59726 |goto 60.21,78.63
 step
 clicknpc Myskia##156597
-Ride Myskia |q 57178/1 |goto 60.26,60.80
+Begin Flying with Myskia |invehicle |goto 60.26,60.80 |q 57178
 step
-Begin Flying with Myskia |invehicle |q 57178
-step
-Reach the Grand Palisade |outvehicle |goto 57.54,55.77 |q 57178 |notravel
+Ride Myskia |q 57178/1 |goto 57.54,55.77 |notravel
 step
 Watch the dialogue
 |tip Follow General Kaal as she walks.
@@ -5757,7 +5761,7 @@ talk Echelon##163469
 Begin Flying with Echelon |invehicle |goto 64.72,50.08 |q 58931
 step
 Watch the dialogue
-Fly with Echelon |q 58931/1 |goto 69.48,53.91
+Fly with Echelon |q 58931/1 |goto 69.48,53.91 |notravel
 step
 accept Temel, the Sin Herald##58932 |goto 69.48,53.91
 |tip You will accept this quest automatically.
@@ -5922,8 +5926,6 @@ accept Alpha Bat##58941 |goto 51.27,74.31
 stickystart "Slay_Dredbats"
 step
 click Stake
-Bind Houndmaster Loksey to the Stake |q 58941/1 |goto 52.44,76.47
-step
 kill Duskterror##163059
 |tip She flies down to you.
 |tip She will eventually be captured.
@@ -6584,7 +6586,7 @@ Jump into the Maw |q 57689/2 |goto 34.61,49.51
 |tip Jump into the huge white swirling portal.
 |tip Inside the building.
 step
-Enter the Maw |goto The Maw/0 37.67,27.40 < 50 |noway |c |q 57689
+Enter the Maw |goto The Maw/0 37.70,27.40 < 10 |noway |c |q 57689
 step
 _Next to you:_
 talk Vorpalia
@@ -6614,17 +6616,17 @@ step
 Enter Torghast |goto Torghast/1 37.75,49.53 < 10 |noway |c |q 57693
 step
 Enter the Portal |goto 29.30,49.51
-|tip Walk into the swirling portal
+|tip Walk into the swirling portal.
 Reach Floor 1 in Torghast |goto Torghast/2 42.81,14.04 < 10 |noway |c |q 57693
 step
 Enter the Portal |goto 46.66,70.11
-|tip Walk into the swirling portal
+|tip Walk into the swirling portal.
 Reach Floor 2 in Torghast |goto Torghast/3 47.94,20.73 < 10 |noway |c |q 57693
 step
 Follow the path |goto 47.54,65.60 < 10 |walk
 Continue following the path |goto 58.48,70.09 < 10 |walk
 Enter the Portal
-|tip Walk into the swirling portal
+|tip Walk into the swirling portal.
 Ascend to the Chamber of Power |q 57693/3 |goto 67.74,57.50
 step
 Reach Floor 3 in Torghast |goto Torghast/4 50.02,25.95 < 20 |noway |c |q 57693
@@ -6714,7 +6716,7 @@ click Anima Container+
 |tip You need anima to awaken the Darkwing Rebels.
 Kill enemies around this area
 |tip Walk through the red orbs that appear after you kill them to collect anima.
-Awaken #5# Darkwing Stoneborns |scenariogoal 2/46664 |goto 41.50,41.52 |q 58086
+Awaken #6# Darkwing Stoneborns |scenariogoal 2/46664 |goto 41.50,41.52 |q 58086
 step
 _Collect All of the Anima:_
 |tip Collect as much Anima as you can.
@@ -6749,7 +6751,7 @@ kill Dread Siphonist##163966+
 Watch the dialogue
 Empower Renathal |scenariogoal 6/46669 |goto 49.14,34.84 |q 58086
 step
-kill Myskia##174550 |scenariogoal 7/50579 |goto 50.37,30.30
+kill Myskia##174550 |scenariogoal 7/50579 |goto 50.39,31.32
 |tip He flies down to you.
 step
 Watch the dialogue
@@ -12616,27 +12618,9 @@ Release Nadjia the Mistblade |q 57381/1 |goto 65.70,64.65
 stickystart "Pique_Nadjias_Interest"
 stickystart "Abandoned_Soulguard_Torches"
 step
-talk Tessle the Snitch##168618
-accept The Endmire##60480 |goto 65.12,63.53
-step
-click Stolen Infused Ruby
-collect Infused Ruby##175751 |q 60480/1 |goto 65.83,63.24 |count 1
-step
-click Stolen Infused Ruby
-collect Infused Ruby##175751 |q 60480/1 |goto 65.80,61.74 |count 2
-step
-click Stolen Infused Ruby
-collect Infused Ruby##175751 |q 60480/1 |goto 66.55,59.58 |count 3
-step
-click Stolen Infused Ruby
-collect Infused Ruby##175751 |q 60480/1 |goto 66.65,59.33 |count 4
-step
 talk Lord Chamberlain##155677
 Tell him _"Come with me."_
 Find Lord Chamberlain |q 56829/2 |goto 66.85,57.81
-step
-click Stolen Infused Ruby
-collect Infused Ruby##175751 |q 60480/1 |goto 66.75,57.53 |count 5
 step
 Find Cudgelface |q 56829/1 |goto 67.50,62.41
 |tip He runs around this area and gets picked up by a flying enemy.
@@ -12658,15 +12642,12 @@ click Abandoned Soulguard Torch+
 |tip You will steadily gain stacks of a debuff as you move around this area that increases the Shadow damage you take from enemies.
 |tip These torches will remove the debuff.
 step
-talk Tessle the Snitch##168618
-turnin The Endmire##60480 |goto 65.12,63.52
-step
 talk Rendle##155668
 turnin Bottom Feeders##56829 |goto 65.34,66.27
 accept On The Road Again##56942 |goto 65.34,66.27
 step
 click Darkhaven Carriage
-Begin Riding the Carriage |havebuff spell:304590 |goto 65.26,66.22 |q 56942
+Begin Riding the Carriage |havebuff spell:304590 |goto 65.12,65.81 |q 56942
 step
 Watch the dialogue
 Ride the Darkhaven Carriage |q 56942/1 |goto 67.50,68.52 |notravel
@@ -12677,18 +12658,9 @@ accept Rebels on the Road##56955 |goto 67.50,68.52
 accept Anima Attrition##58433 |goto 67.50,68.52
 stickystart "Kill_Stoneborn_Rebels"
 step
-click Join the Rebellion!
-accept Words Have Power##58272 |goto 67.74,67.66
-stickystart "Collect_Rebellion_Pamphlets"
-step
 click Anima Canister
 |tip You will be attacked.
 collect Anima Canister##174102 |q 58433/1 |goto 68.79,63.72
-step
-label "Collect_Rebellion_Pamphlets"
-click Join the Rebellion!+
-|tip They look like pieces of paper pinned onto walls around this area.
-Collect #9# Pamphlets|q 58272/1 |goto 68.26,65.97
 step
 label "Kill_Stoneborn_Rebels"
 kill 5 Stoneborn Rebel##156084 |q 56955/1 |goto 68.26,65.97
@@ -12696,7 +12668,6 @@ step
 talk Lord Chamberlain##155533
 turnin Rebels on the Road##56955 |goto 66.91,64.70
 turnin Anima Attrition##58433 |goto 66.91,64.70
-turnin Words Have Power##58272 |goto 66.91,64.70
 accept To Darkhaven##56978 |goto 66.91,64.70
 step
 talk Lord Chamberlain##155533
@@ -12705,6 +12676,7 @@ Speak with the Lord Chamberlain |q 56978/1 |goto 66.91,64.69
 step
 Watch the dialogue
 |tip Follow Lord Chamberlain as he walks.
+|tip He eventually walks to this location.
 Reach Darkhaven |q 56978/2 |goto 63.26,62.10
 step
 talk Lord Chamberlain##156374
@@ -12753,9 +12725,9 @@ talk General Kaal##155541
 accept The Master Awaits##57178 |goto 60.45,60.91
 step
 clicknpc Myskia##156597
-Ride Myskia |q 57178/1 |goto 60.26,60.80
+Begin Flying with Myskia |invehicle |goto 60.26,60.80 |q 57178
 step
-Reach the Grand Palisade |goto 57.54,55.77 < 10 |c |q 57178 |notravel
+Ride Myskia |q 57178/1 |goto 57.54,55.77 |notravel
 step
 Watch the dialogue
 |tip Follow General Kaal as she walks.
@@ -12788,6 +12760,7 @@ turnin The Authority of Revendreth##57179 |goto 57.42,49.45
 step
 Watch the dialogue
 talk Lord Chamberlain##156605
+|tip He walks to this location.
 accept I Don't Get My Hands Dirty##57161 |goto 58.04,49.51
 step
 Kill enemies around this area
@@ -12798,6 +12771,7 @@ Clear Penance Bridge |q 57161/1 |goto 60.61,49.74
 step
 Watch the dialogue
 talk Echelon##156842
+|tip He flies to this location.
 turnin I Don't Get My Hands Dirty##57161 |goto 64.71,50.08
 accept The Accuser's Sinstone##57173 |goto 64.71,50.08
 step
@@ -12810,13 +12784,11 @@ talk Lord Chamberlain##156823
 turnin The Accuser's Sinstone##57173 |goto 64.70,49.97
 accept Inquisitor Stelia's Sinstone##58931 |goto 64.70,49.97
 step
-Locate Echelon |goto 64.72,50.08  < 10 |c |q 58931
-step
 talk Echelon##163469
-Begin Flying with Echelon |goto 64.72,50.08 > 15 |c |q 58931
+Begin Flying with Echelon |invehicle |goto 64.72,50.08 |q 58931
 step
 Watch the dialogue
-Fly with Echelon |q 58931/1 |goto 69.48,53.91
+Fly with Echelon |q 58931/1 |goto 69.48,53.91 |notravel
 step
 accept Temel, the Sin Herald##58932 |goto 69.48,53.91
 |tip You will accept this quest automatically.
@@ -12843,7 +12815,7 @@ turnin Temel, the Sin Herald##58932 |goto 67.40,53.56
 accept Herald Their Demise##59021 |goto 67.40,53.56
 step
 Use the _"Read Inquisitor Stelia's Sinstone"_ ability
-|tip Use it on Inquisitor Stelia.
+|tip It appears as a button on the screen.
 kill Inquisitor Stelia##163971 |q 59021/1 |goto 64.42,52.61
 step
 talk Echelon##163576
@@ -12873,7 +12845,7 @@ turnin Inquisitor Vilhelm's Sinstone##57175 |goto 65.97,47.19
 accept Ending the Inquisitor##59023 |goto 65.97,47.19
 step
 Use the _"Read Inquisitor Vilhelm's Sinstone"_ ability
-|tip Use it on Inquisitor Vilhelm.
+|tip It appears as a button on the screen.
 kill Inquisitor Vilhelm##163973 |q 59023/1 |goto 67.29,43.47
 step
 talk Echelon##164166
@@ -12881,7 +12853,7 @@ turnin Ending the Inquisitor##59023 |goto 65.97,47.19
 accept Sinstone Delivery##57176 |goto 65.97,47.19
 step
 talk Echelon##164274
-Begin Flying with Echelon |goto 65.97,47.19 > 15 |q 57176
+Begin Flying with Echelon |invehicle |goto 65.97,47.19 |q 57176
 step
 Watch the dialogue
 Fly with Echelon |q 57176/1 |goto 65.71,49.48 |notravel
@@ -12908,13 +12880,12 @@ talk Lord Chamberlain##157084
 turnin The Accuser's Secret##57180 |goto 66.34,50.57
 accept The Accuser's Fate##57182 |goto 66.34,50.57
 step
-Locate Myskia |goto 66.20,51.31 < 15 |c |q 57182
-step
 clicknpc Myskia##164438
-Begin Flying with Myskia |goto 66.20,51.31 > 20 |c |q 57182
+|tip He flies to this location.
+Begin Flying with Myskia |invehicle |goto 66.20,51.31 |q 57182
 step
 Watch the dialogue
-Deliver the Accuser to the Master |q 57182/1 |goto 53.63,63.92 |notravel
+Deliver the Accuser to the Master |q 57182/1 |goto 53.62,64.02 |notravel
 step
 talk Sire Denathrius##156381
 turnin The Accuser's Fate##57182 |goto 53.34,63.93
@@ -12954,17 +12925,14 @@ turnin Dread Priming##58916 |goto 51.27,74.31
 accept Alpha Bat##58941 |goto 51.27,74.31
 step
 click Stake
-Bind Houndmaster Loksey to the Stake |q 58941/1 |goto 52.44,76.47
-step
 kill Duskterror##163059
-|tip He flies down to you.
+|tip She flies down to you.
 |tip She will eventually be captured.
 Watch the dialogue
 Capture Duskterror |q 58941/2 |goto 51.14,74.48
 step
 talk Flockmaster Sergio##163221
 turnin Alpha Bat##58941 |goto 51.26,74.31
-turnin Beast Control##58936 |goto 51.26,74.31
 accept King of the Hill##59014 |goto 51.26,74.31
 step
 Deliver Houndmaster Loksey to Wanecrypt Hill |q 59014/1 |goto 47.86,70.12
@@ -13041,19 +13009,16 @@ Enter the Mirror |q 57159/1 |goto 51.52,59.00
 |tip Walk into the red swirling portal.
 |tip Inside the building.
 step
-_Inside the Royal Cellars:_
 talk The Accuser##165003
 Tell her _"I am ready."_
-Witness the Truth |q 57159/2
+Witness the Truth |q 57159/2 |goto Castle Nathria/7 66.16,44.12
 step
-_Inside the Royal Cellars:_
 Kill the enemies that attack in waves
-|tip Stay inside the large red circle surrounding The Accuser to receive a combat buff.
+|tip Stay inside the large red circle surrounding the Accuser to receive a combat buff.
 |tip Fill up the blue bar in the quest tracker area.
-Protect the Accuser |q 57159/3
+Protect the Accuser |q 57159/3 |goto 66.16,44.12
 step
-_Inside the Royal Cellars:_
-Escape Castle Nathria |q 57159/4
+Escape Castle Nathria |q 57159/4 |goto 72.25,44.10
 |tip Walk into the red swirling portal nearby.
 step
 talk The Accuser##156554
@@ -13064,7 +13029,6 @@ step
 Cross the bridge |goto 47.55,72.44 < 20 |only if walking
 talk The Accuser##168217
 turnin Dredhollow##60313 |goto 43.21,73.86
-accept Forgotten Village##59211 |goto 43.21,73.86
 accept Breaking the Hopebreakers##57189 |goto 43.21,73.86
 accept They Won't Know What Hit Them##57190 |goto 43.21,73.86
 step
@@ -13186,6 +13150,7 @@ Follow Lost Sybille |q 57405/1 |goto 37.43,60.35
 step
 Watch the dialogue
 talk Theotar##157639
+|tip He walks to this location.
 turnin Chasing Madness##57405 |goto 38.05,60.73
 accept My Terrible Morning##57426 |goto 38.05,60.73
 accept Theotar's Mission##57428 |goto 38.05,60.73
@@ -13375,7 +13340,7 @@ Jump into the Maw |q 57689/2 |goto 34.61,49.51
 |tip Jump into the huge white swirling portal.
 |tip Inside the building.
 step
-Enter the Maw |goto The Maw/0 38.71,28.35 < 10 |noway |c |q 57689
+Enter the Maw |goto The Maw/0 37.70,27.40 < 10 |noway |c |q 57689
 step
 _Next to you:_
 talk Vorpalia
@@ -13404,18 +13369,18 @@ Enter Skoldus Hall, Torghast |q 57693/2 |goto 31.36,12.52
 step
 Enter Torghast |goto Torghast/1 37.75,49.53 < 10 |noway |c |q 57693
 step
-Enter the Portal |goto 29.97,49.55
-|tip Walk into the swirling portal
+Enter the Portal |goto 29.30,49.51
+|tip Walk into the swirling portal.
 Reach Floor 1 in Torghast |goto Torghast/2 42.81,14.04 < 10 |noway |c |q 57693
 step
-Enter the Portal |goto 46.71,69.36
-|tip Walk into the swirling portal
+Enter the Portal |goto 46.66,70.11
+|tip Walk into the swirling portal.
 Reach Floor 2 in Torghast |goto Torghast/3 47.94,20.73 < 10 |noway |c |q 57693
 step
 Follow the path |goto 47.54,65.60 < 10 |walk
 Continue following the path |goto 58.48,70.09 < 10 |walk
 Enter the Portal
-|tip Walk into the swirling portal
+|tip Walk into the swirling portal.
 Ascend to the Chamber of Power |q 57693/3 |goto 67.74,57.50
 step
 Reach Floor 3 in Torghast |goto Torghast/4 50.02,25.95 < 20 |noway |c |q 57693
@@ -13424,7 +13389,7 @@ kill Warden of Souls##152995 |q 57693/4 |goto 50.30,75.39
 |tip You can buy items and buffs from Broker Ve'nott when you enter floor 3, before you fight the Warden of Souls.
 step
 Watch the dialogue
-Enter the Ritual of Soul Tracing |q 57693/5 |goto 50.22,70.18
+Enter the Ritual of Soul Tracing |q 57693/5 |goto 50.03,69.50
 step
 Return to Sinfall |goto Sinfall/0 24.75,56.33 < 10 |noway |c |q 57693
 step
@@ -13449,9 +13414,9 @@ talk Prince Renathal##162688
 turnin Refuge of Revendreth##57694 |goto 52.49,39.11
 step
 Reach Level 60 |ding 60
-|tip You should already be level 60, if you completed all of the quests in the Leveling guides.
-|tip However, if you're not, grind on enemies or run dungeons.
-|tip You need to be level 60 before continuing the questline.
+|tip You must be level 60 to continue the questline.
+|tip Use the "Revendreth" leveling guide to complete side quests.
+|tip You can also run dungeons, if you prefer.
 step
 talk Prince Renathal##162688
 |tip Inside the building.
@@ -13495,7 +13460,7 @@ step
 Begin the Scenario |scenariostart |q 58086
 step
 Watch the dialogue
-Rally to Prince Renathal |scenariostage 1 |goto 37.48,41.49 |q 58086
+Rally to Prince Renathal |scenariostage 1 |goto Revendreth Scenario/0 37.48,41.49 |q 58086
 step
 click Darkwing Rebel+
 |tip They look like stone gargoyle statues on the ground around this area.
@@ -13504,13 +13469,14 @@ click Anima Container+
 |tip They look like red filled lanterns on the ground around this whole area.
 |tip You need anima to awaken the Darkwing Rebels.
 Kill enemies around this area
-|tip Walk through the red orbes that appear after you kill them to collect anima.
-Awaken #5# Darkwing Stoneborns |scenariogoal 2/46664 |goto 41.50,41.52 |q 58086
+|tip Walk through the red orbs that appear after you kill them to collect anima.
+Awaken #6# Darkwing Stoneborns |scenariogoal 2/46664 |goto 41.50,41.52 |q 58086
 step
-Awaken Darkwing Stoneborns
-|tip Collect as much Anima as you can, to awaken all of the Stoneborn statues around this area.
+_Collect All of the Anima:_
+|tip Collect as much Anima as you can.
+|tip Each anima you collect will increase your damage.
 |tip They will all stay with you and make you extremely powerful.
-Click Here After Activate All of the Stoneborn |confirm |goto 41.50,41.52 |q 58086
+Click Here After Collecting All of the Anima |confirm |goto 41.50,41.52 |q 58086
 step
 Rally at Dominance Gate |scenariostage 3 |goto 42.06,37.63 |q 58086
 step
@@ -13526,24 +13492,28 @@ Defeat General Kaal |scenariostage 5 |goto 45.86,31.24 |q 58086
 step
 kill Dread Siphonist##163966+
 |tip There are 4 of them.
-Empower The Accuser |scenariogoal 6/47767 |goto 47.62,32.97 |q 58086
-step
-kill Dread Siphonist##163966+
-|tip There are 4 of them.
+Watch the dialogue
 Empower The Curator |scenariogoal 6/47768 |goto 47.18,30.22 |q 58086
 step
 kill Dread Siphonist##163966+
 |tip There are 4 of them.
+Watch the dialogue
+Empower The Accuser |scenariogoal 6/47767 |goto 47.62,32.97 |q 58086
+step
+kill Dread Siphonist##163966+
+|tip There are 4 of them.
+Watch the dialogue
 Empower Renathal |scenariogoal 6/46669 |goto 49.14,34.84 |q 58086
 step
+kill Myskia##174550 |scenariogoal 7/50579 |goto 50.39,31.32
+|tip He flies down to you.
+step
 Watch the dialogue
-|tip Do not attack the 3 enemies that start attacking you.
-|tip Prince Renathal will appear and kill them.
 talk Prince Renathal##170316
 Tell him _"Ready to face the Master."_
-Confront Sire Denathrius |scenarioend |goto 50.37,30.28 |q 58086
+Speak with Prince Renathal |scenarioend |goto 50.37,30.30 |q 58086
 step
-Return to the Menagerie of the Master |goto 51.35,29.37 < 10 |c |q 58086
+Return to the Menagerie of the Master |goto Revendreth/0 51.35,29.37 < 10 |c |q 58086
 step
 talk Courier Skraal##158564
 fpath Menagerie of the Master |goto 54.22,25.68
@@ -13579,14 +13549,11 @@ turnin The Master of Lies##58086 |goto 50.28,28.27
 accept The End of the Beginning##57876 |goto 50.28,28.27
 step
 talk General Draven##173188
-|tip Jump down to him.
 Tell him _"I am ready."_
-Speak with Draven |q 57876/1 |goto 50.29,28.77
+Speak with Draven |q 57876/1 |goto 50.28,29.20
 step
 Watch the dialogue
-|tip Follow General Draven as he walks, after you land in Oribos.
-|tip He walks to this location.
-Fly with Draven to Oribos |q 57876/2 |goto Oribos/0 38.84,66.61
+Fly with Draven to the Flightmaster |q 57876/2 |goto 70.49,80.50 |notravel
 step
 talk Tal-Inara##159478
 turnin The End of the Beginning##57876 |goto Oribos/0 38.87,70.01

@@ -24,7 +24,7 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 	["zgname"] = "|cfffe6100Zygor Guides|r",
 	["name_plain"] = "Zygor Guides Viewer",
 	["about_desc1"] = "Zygor Guides Viewer",
-	["about_desc2"] = "Zygor Guides",
+	["about_desc2"] = "2020 Zygor Guides",
 	["about_desc3"] = "All Rights Preserved",
 	["about_desc4"] = "Release %s.",
 	["link"] = "Release|n|n|n",
@@ -401,6 +401,11 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 		["opt_framescale_s_normal"] = "Normal",
 		["opt_framescale_s_large"] = "Large",
 		['opt_fontsize_s'] = "Font size:",			['opt_fontsize_s_desc'] = "Set the size of step text font.",
+
+		["opt_opacity"] = "Viewer opacity",
+		["opt_opacitymenu"] = "Guide Menu opacity",
+		["opt_opacity_low"] = "Low",
+		["opt_opacity_high"] = "High",
 
 		['opt_windowlocked'] = "Lock viewer",
 		['opt_windowlocked_desc'] = "Prevents the window from being dragged with the mouse.",

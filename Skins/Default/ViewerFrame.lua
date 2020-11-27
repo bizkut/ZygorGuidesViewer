@@ -1392,8 +1392,8 @@ end
 			stickytexture_bottom:Show()
 			--]]
 
-			stepframe:SetPoint("TOPLEFT",self.stepframes[stepframe.num-1],"BOTTOMLEFT",0,-5)
-			stepframe:SetPoint("TOPRIGHT",self.stepframes[stepframe.num-1],"BOTTOMRIGHT",0,-5)
+			stepframe:SetPoint("TOPLEFT",self.stepframes[stepframe.num-1],"BOTTOMLEFT",0,-SkinData("StepStickyBarSpace") -SkinData("StepStickyBarHeight") -SkinData("StepStickyBarSpace"))
+			stepframe:SetPoint("TOPRIGHT",self.stepframes[stepframe.num-1],"BOTTOMRIGHT",0,-SkinData("StepStickyBarSpace") -SkinData("StepStickyBarHeight") -SkinData("StepStickyBarSpace"))
 			--
 			--frame:SetPoint("TOPLEFT",getglobal("ZygorGuidesViewerFrame_Step"..(stepnum-1)),"BOTTOMLEFT",0,-ZGV.STEP_SPACING)
 			--frame:SetPoint("TOPRIGHT",getglobal("ZygorGuidesViewerFrame_Step"..(stepnum-1)),"BOTTOMRIGHT",0,-ZGV.STEP_SPACING)
@@ -1769,7 +1769,7 @@ function ZGV_DefaultSkin_Frame_Mixin:MenuSettingsButton_OnClick()
 			text=L["menu_Settings"],
 			iconset=ZGV.ButtonSets.TitleButtons,
 			iconkey="SETTINGS",
-			func=function() ZGV:OpenOptions() end, 
+			func=function() ZGV:OpenOptions() ZGV:ScheduleTimer(function() ZGV:OpenOptions() end, 0) end, -- ugly hack #154 - sliders show in incorrect position when first opening options. any interaction with window fixes them... so lets open the window again.
 			notCheckable=1,
 		},
 	}

@@ -35,15 +35,17 @@ function FrameProto:ApplySkin()
 
 	ZGV.STEP_SPACING = SkinData("StepSpacing")
 
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
 
 	-- Setting up border
 	frame.Border:SetBackdrop(SkinData("WindowBackdrop") or SkinData("Backdrop"))
-	frame.Border:SetBackdropColor(unpack(SkinData("WindowBackdropColor") or SkinData("BackdropColor")))
-	frame.Border:SetBackdropBorderColor(unpack(SkinData("WindowBackdropBorderColor") or SkinData("BackdropBorderColor")))
+	frame.Border:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("WindowBackdropColor") or SkinData("BackdropColor"))))
+	frame.Border:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("WindowBackdropBorderColor") or SkinData("BackdropBorderColor"))))
 	CHAIN(frame.Border.Back)
 		:SetBackdrop(SkinData("WindowBottomBackdrop"))
-		:SetBackdropColor(unpack(SkinData("WindowBottomBackdropColor")))
-		:SetBackdropBorderColor(unpack(SkinData("WindowBottomBBackdropBorderColor")))
+		:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("WindowBottomBackdropColor"))))
+		:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("WindowBottomBBackdropBorderColor"))))
 		:SetPoint("LEFT",SkinData("ViewerMargin"),0)
 		:SetPoint("RIGHT",-SkinData("ViewerMargin"),0)
 		:SetFrameLevel(4)

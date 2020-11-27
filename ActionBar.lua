@@ -28,12 +28,14 @@ local function OnEvent(self, event)
 
 	-- only events registered here are for updating action bar, so no need 
 
-	if InCombatLockdown() then
-		if event~="ZGV_NPC_TRANSLATED" then -- don't overlay buttons if we would be just switching npc names. Especially since the event may not matter to us
-			ActionBar:ShowDisabledOverlay()
-		end
-	else
+	if ActionBar.SetTimer then ZGV:CancelTimer(ActionBar.SetTimer) end
+
+	if not InCombatLockdown() then
 		ActionBar:SetActionButtons()
+	else
+		ActionBar.SetTimer = ZGV:ScheduleTimer(function() 
+			ActionBar:SetActionButtons()
+		end, 1)
 	end
 end
 
@@ -82,8 +84,8 @@ function ActionBar:SetActionButtons()
 		end -- if goal visible
 	end -- for goal in step
 
-	for _,data in ipairs(actions_npc) do ZGV.ActionBar:SetButton(data[1],data[2]) end
 	for _,data in ipairs(actions) do ZGV.ActionBar:SetButton(data[1],data[2]) end
+	for _,data in ipairs(actions_npc) do ZGV.ActionBar:SetButton(data[1],data[2]) end
 end
 
 
@@ -234,9 +236,12 @@ function ActionBar:ApplySkin()
 
 	ZGV.ButtonSets.TitleButtons.CLOSE:AssignToButton(MF.close)
 
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
+
 	MF:SetBackdrop(SkinData("ActionBarBackdrop"))
-	MF:SetBackdropColor(unpack(SkinData("ActionBarBackdropColor")))
-	MF:SetBackdropBorderColor(unpack(SkinData("ActionBarBackdropBorderColor")))
+	MF:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("ActionBarBackdropColor"))))
+	MF:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("ActionBarBackdropBorderColor"))))
 
 	ActionBar:SetAlpha()
 	ActionBar:SetScale() 

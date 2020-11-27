@@ -2533,7 +2533,7 @@ function ZGV:ResizeFrame()
 		--if not self.CurrentStepNum or not _G['ZygorGuidesViewerFrame_Step'..self.CurrentStepNum] then return end
 		local height = 0
 		for i,stepframe in ipairs(self.Frame.stepframes) do  if stepframe:IsShown() then
-			if i>1 then height = height + SkinData("StepStickyBarSpace")+SkinData("StepStickyBarHeight")  end
+			if i>1 then height = height + SkinData("StepStickyBarSpace")+SkinData("StepStickyBarHeight")+SkinData("StepStickyBarSpace")  end
 			--if i>1 then height = height + SkinData("StepSpacing") + (stepframe.is_sticky and SkinData("StepStickyBarSpace")+SkinData("StepStickyBarHeight")+SkinData("StepStickyBarHeight") or 0) end
 			height = height + stepframe:GetHeight()
 		end end

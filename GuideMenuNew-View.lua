@@ -254,16 +254,18 @@ function GuideMenu:ApplySkin()
 	if not MF then return end
 
 	local TINYMARGIN = SkinData("GuideMenuTinyMargin")
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacitymenu or  1
 
 	CHAIN(MF)
 		:SetBackdrop(SkinData("GuideMenuBackdrop"))
-		:SetBackdropColor(unpack(SkinData("GuideMenuBackdropColor")))
-		:SetBackdropBorderColor(unpack(SkinData("GuideMenuBackdropBorderColor")))
+		:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("GuideMenuBackdropColor"))))
+		:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("GuideMenuBackdropBorderColor"))))
 		:SetWidth(MAINFRAME_WIDTH+SkinData("GuideMenuMargin")*2)
 
 	CHAIN(MF.Header)
-		:SetBackdropColor(unpack(SkinData("GuideMenuHeaderFooterBackground")))
-		:SetBackdropBorderColor(unpack(SkinData("GuideMenuHeaderFooterBorder")))
+		:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("GuideMenuHeaderFooterBackground"))))
+		:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("GuideMenuHeaderFooterBorder"))))
 		:SetPoint("TOPLEFT",TINYMARGIN,-TINYMARGIN)
 		:SetPoint("TOPRIGHT",-TINYMARGIN,TINYMARGIN)
 

@@ -540,6 +540,8 @@ end
 function GearFinder:ApplySkin()
 	local MF = self.MainFrame 
 	if not MF then return end
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
 
 	MF.Logo:SetTexture(SkinData("TitleLogo"))
 	MF.Logo:SetSize(unpack(SkinData("TitleLogoSize")))

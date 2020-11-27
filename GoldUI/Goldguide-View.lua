@@ -229,15 +229,18 @@ function Goldguide:ApplySkin()
 	local MF = Goldguide.MainFrame
 	if not MF then return end
 
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
+
 	MF:SetBackdrop(SkinData("GoldguideBackdrop"))
-	MF:SetBackdropColor(unpack(SkinData("GoldguideBackdropColor")))
-	MF:SetBackdropBorderColor(unpack(SkinData("GoldguideBackdropBorderColor")))
+	MF:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("GoldguideBackdropColor"))))
+	MF:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("GoldguideBackdropBorderColor"))))
 
-	MF.HeaderFrame:SetBackdropColor(unpack(SkinData("GoldguideHeaderFooterColor")))
-	MF.HeaderFrame:SetBackdropBorderColor(unpack(SkinData("GoldguideHeaderFooterColor")))
+	MF.HeaderFrame:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("GoldguideHeaderFooterColor"))))
+	MF.HeaderFrame:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("GoldguideHeaderFooterColor"))))
 
-	MF.FooterFrame:SetBackdropColor(unpack(SkinData("GoldguideHeaderFooterColor")))
-	MF.FooterFrame:SetBackdropBorderColor(unpack(SkinData("GoldguideHeaderFooterColor")))
+	MF.FooterFrame:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("GoldguideHeaderFooterColor"))))
+	MF.FooterFrame:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("GoldguideHeaderFooterColor"))))
 
 	MF.MenuFrame.SearchEdit:SetTextColor(unpack(SkinData("SearchEditTextColor")))
 	CHAIN(MF.MenuFrame.SearchEdit.back)

@@ -39,6 +39,8 @@ STYLE.IconIndent = 17
 
 STYLE.StyleAceGUI = false
 
+STYLE.UseOpacity = false
+
 ------------------- Templates
 -- Black frame with a lightborder
 STYLE.MainBackdrop={bgFile=SKINSDIR.."white",edgeFile=SKINSDIR.."white",tile = true, edgeSize=1, tileSize = 20, insets = { left = 0, right = 0, top = 0, bottom = 0 }}
@@ -76,8 +78,8 @@ STYLE.StepBackdropBorderColor=STYLE.DarkBorder
 STYLE.StepBackdropPersistentBorder=true
 
 STYLE.StepSpacing = 2
-STYLE.StepStickyBarSpace = 3
-STYLE.StepStickyBarHeight = 2
+STYLE.StepStickyBarSpace = 5
+STYLE.StepStickyBarHeight = 1
 STYLE.StepStickySeparatorColor = {ZGV.F.HTMLColor("#222222ff")}
 STYLE.StepPaddingTop = 0
 STYLE.StepPaddingBottom = 0

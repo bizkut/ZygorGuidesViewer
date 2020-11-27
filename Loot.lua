@@ -108,6 +108,9 @@ function Loot:ToggleFrame()
 end
 
 function Loot:ApplySkin()
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
+
 	self.GreyFrame:SetBackdrop(SkinData("MoneyBackdrop"))
 	self.GreyFrame:SetBackdropColor(unpack(SkinData("MoneyBackdropColor")))
 	self.GreyFrame:SetBackdropBorderColor(unpack(SkinData("MoneyBackdropBorderColor")))

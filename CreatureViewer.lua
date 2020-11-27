@@ -714,9 +714,10 @@ function CV:ApplySkin()
 		return
 	end
 
-	local function SkinData(property)
-		return ZGV.UI.SkinData(property)
-	end
+	local SkinData=ZGV.UI.SkinData
+
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
 
 	CHAIN(CV.Frame) :SetBackdrop(SkinData("CreatureBackdrop")) -- TODO make other elements skinnable
 		:SetBackdropColor(unpack(SkinData("CreatureBackdropColor")))

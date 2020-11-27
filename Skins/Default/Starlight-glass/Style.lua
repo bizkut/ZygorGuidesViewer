@@ -32,6 +32,8 @@ STYLE.TitleButtons = STYLEDIR.."titlebuttons-thin"
 STYLE.TitleLogo = STYLEDIR.."zygorlogo"
 STYLE.TitleLogoSize = {100,100/4}
 
+STYLE.UseOpacity = true
+
 ------------------- Templates
 -- Black frame with a lightborder
 STYLE.MainBackdrop={bgFile=SKINSDIR.."white",edgeFile=SKINSDIR.."white",tile = true, edgeSize=1, tileSize = 20, insets = { left = 0, right = 0, top = 0, bottom = 0 }}

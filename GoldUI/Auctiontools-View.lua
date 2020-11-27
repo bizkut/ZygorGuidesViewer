@@ -72,13 +72,16 @@ function Appraiser:ApplySkin()
 	local MF = self.MainFrame 
 	if not MF then return end
 
-	MF:SetBackdropColor(unpack(SkinData("MainBackdropColor")))
+	local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
+	local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
 
-	MF.HeaderFrame:SetBackdropColor(unpack(SkinData("AuctionToolsHeaderFooterBackground")))
+	MF:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("MainBackdropColor"))))
+
+	MF.HeaderFrame:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("AuctionToolsHeaderFooterBackground"))))
 	MF.HeaderFrame:SetBackdropBorderColor(0,0,0,0)
 
 
-	MF.FooterFrame:SetBackdropColor(unpack(SkinData("AuctionToolsHeaderFooterBackground")))
+	MF.FooterFrame:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("AuctionToolsHeaderFooterBackground"))))
 	MF.FooterFrame:SetBackdropBorderColor(0,0,0,0)
 
 	MF.ContentFrame:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
