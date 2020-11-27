@@ -2370,26 +2370,26 @@ accept Forces of Perdition##62214 |goto 46.91,41.69 |only if questactive(62214) 
 step
 click Broker Journal
 accept What They Know##63069 |goto The Maw/0 46.44,62.27
-|only if questactive(63069) or completedq(63069)
+|only if questactive(63069)
 step
 click Torn Pages##364991+
 |tip They look like small pieces of paper on the ground around this area.
 collect 18 Torn Journal Page##184579 |q 63069/1 |goto 46.98,66.13
-|only if questactive(63069) or completedq(63069)
+|only if questactive(63069)
 step
 click Spectral Pick
 accept Acquisition: Stygic Ore##63072 |goto 47.18,82.66
-|only if questactive(63072) or completedq(63072)
+|only if questactive(63072)
 step
 click Stygic Ore Vein##364995+
 |tip They look like glowing blue veins of ore on rock around this area.
 collect Stygic Ore##184585 |q 63072/1 |goto 47.65,81.61
-|only if questactive(63072) or completedq(63072)
+|only if questactive(63072)
 step
 Enter the cave |goto 30.56,59.24 < 10 |walk
 talk Deceased Broker##175797
 accept Guaranteed Delivery##63040 |goto 30.73,58.35
-|only if questactive(63040) or completedq(63040)
+|only if questactive(63040)
 stickystart "Send_3_Tools_of_Constraint"
 stickystart "Send_5_Scrolls_of_Subjugation"
 step
@@ -2417,80 +2417,80 @@ step
 kill Mawsworn Eviscerator##175700 |q 62214/3 |goto 29.76,61.40
 |tip It walks around this area.
 |tip You may need a group for this.
-|only if havequest(62214) or completedq(62214)
+|only if havequest(62214)
 step
 label "Send_3_Tools_of_Constraint"
 use the Containment Orb##184513
 |tip Use it on Tools of Constraint.
 |tip They look like hook-bladed knives on the ground around this area.
 Send #3# Tools of Constraint |q 63040/2 |goto 31.56,62.76
-|only if havequest(63040) or completedq(63040)
+|only if havequest(63040)
 step
 label "Send_5_Scrolls_of_Subjugation"
 use the Containment Orb##184513 |notinsticky
 |tip Use it on Scrolls of Subjugation. |notinsticky
 |tip They look like open scrolls floating above the ground around this area. |notinsticky
 Send #5# Scrolls of Subjugation |q 63040/1 |goto 31.56,62.76
-|only if havequest(63040) or completedq(63040)
+|only if havequest(63040)
 step
 label "Kill_3_Mawsworn_Instructors"
 kill 3 Mawsworn Instructor##175707 |q 62214/2 |goto 29.76,61.40
 |tip You may need a group for this. |notinsticky
-|only if havequest(62214) or completedq(62214)
+|only if havequest(62214)
 step
 label "Kill_5_Mawsworn_Myrmidons"
 kill 5 Mawsworn Myrmidon##175701 |q 62214/1 |goto 29.76,61.40
 |tip You may need a group for this. |notinsticky
-|only if havequest(62214) or completedq(62214)
+|only if havequest(62214)
 step
 talk Vengeful Soul##175866
 accept Feed Your Soul##63045 |goto 25.11,66.63
-|only if questactive(63045) or completedq(63045)
+|only if questactive(63045)
 step
 kill Soulsteel Colossus##169286
 |tip You may need a group for this.
 collect Colossal Power Core##183042 |q 62234/1 |goto 22.76,65.34
-|only if havequest(62234) or completedq(62234)
+|only if havequest(62234)
 step
 Kill enemies around this area
 click Sealed Urns+
 |tip They look like small and large jars on the ground around this area.
 Strengthen the Vengeful Soul with Anima |q 63045/1 |goto 24.45,68.87
-|only if havequest(63045) or completedq(63045)
+|only if havequest(63045)
 step
 Enter the building |goto 23.02,68.39 < 15 |walk
 kill Inquisitor Moorlac##175863 |q 63045/2 |goto Altar of Domination/0 25.70,54.64
 |tip Inside the building.
-|only if havequest(63045) or completedq(63045)
+|only if havequest(63045)
 stickystart "Destroy_5_Soulforged_Cores"
 stickystart "Disrupt_the_Mawsworn"
 step
 talk Doomed Soul##176164
 accept Disrupting the Flow##60732 |goto The Maw/0 39.30,45.85
-|only if questactive(60732) or completedq(60732)
+|only if questactive(60732)
 step
 click Blazing Ingot
 accept Acquisiton: Blazing Ingots##63050 |goto 38.90,39.90
-|only if questactive(63050) or completedq(63050)
+|only if questactive(63050)
 stickystart "Collect_12_Blazing_Ingots"
 step
 Kill Stygian enemies around this area
 collect Stygian Hammer##184622 |q 63206/1 |goto 38.16,38.88
-|only if questactive(63206) or completedq(63206)
+|only if questactive(63206)
 step
 use the Stygian Hammer##184622
 |tip Use it on Armored Husks.
 |tip They look like Suits of Stygian armor on the ground around this area.
 Destroy #10# Armored Husks |q 63206/2 |goto 38.16,38.88
 You can find more around [34.71,41.69]
-|only if questactive(63206) or completedq(63206)
+|only if questactive(63206)
 step
 label "Collect_12_Blazing_Ingots"
 click Blazing Ingot+
 |tip They look like small flaming metal bars on the ground around this area.
 collect 12 Blazing Ingot##184556 |q 63050/1 |goto 40.69,42.30
 You can find more around [35.40,43.52]
-|only if havequest(63050) or completedq(63050)
+|only if havequest(63050)
 step
 label "Destroy_5_Soulforged_Cores"
 Kill Soulforger enemies around this area
@@ -2500,26 +2500,26 @@ use the Soulforged Core##180280
 |tip They look like giant skulls with flames in the mouth around this area.
 Destroy #5# Soulforged Cores |q 60775/1 |goto 35.34,43.42
 You can find a forge at [36.39,43.68]
-|only if havequest(60775) or completedq(60775)
+|only if havequest(60775)
 step
 label "Disrupt_the_Mawsworn"
 Kill enemies around this area
 Disrupt the Mawsworn |q 60732/1 |goto 34.75,39.96
-|only if havequest(60732) or completedq(60732)
+|only if havequest(60732)
 stickystart "Collect_Essences_of_Misery"
 step
 click Misery Conduit
 Destroy the Northern Misery Conduit |q 60646/3 |goto 35.30,26.08
-|only if havequest(60646) or completedq(60646)
+|only if havequest(60646)
 step
 talk Disciple Kimonas##176144
 accept Drowned and Torn Asunder##63179 |goto 38.88,23.55
-|only if questactive(63179) or completedq(63179)
+|only if questactive(63179)
 step
 click Grasping Tentacle+
 |tip They look like tentacles grasping Kyrian NPCs on the ground around this area.
 Release #8# Drowned Kyrian |q 63179/1 |goto 44.55,22.34
-|only if havequest(63179) or completedq(63179)
+|only if havequest(63179)
 step
 talk Disciple Kimonas##176144
 turnin Drowned and Torn Asunder##63179 |goto 38.88,23.55
@@ -2531,26 +2531,26 @@ stickystart "Kill_Mawsworn_Deadeyes"
 step
 talk Trapped Soul##175813
 accept Sundered Souls##63043 |goto 28.11,14.68
-|only if questactive(63043) or completedq(63043)
+|only if questactive(63043)
 step
 label "Rescue_Half-Buried_Souls"
 click Dirt Pile+
 |tip They look like light brown piles of loose dirt on the ground around this area.
 Rescue #6# Half-Buried Souls |q 61088/1 |goto 29.68,15.18
-|only if havequest(61088) or completedq(61088)
+|only if havequest(61088)
 step
 label "Kill_Mawsworn_Shacklers"
 kill 8 Mawsworn Shackler##167322 |q 61103/1 |goto 29.68,15.18
-|only if havequest(61103) or completedq(61103)
+|only if havequest(61103)
 step
 label "Kill_Mawsworn_Deadeyes"
 kill 4 Mawsworn Deadeye##167323 |q 61103/2 |goto 29.68,15.18
-|only if havequest(61103) or completedq(61103)
+|only if havequest(61103)
 step
 click Soulrend Trap+
 |tip They look like square tiles with smoking purple centers on the ground around this area.
 Disable #10# Soulrend Traps |q 63043/1 |goto 28.26,14.97
-|only if havequest(63043) or completedq(63043)
+|only if havequest(63043)
 step
 Click the Complete Quest Box
 turnin Sundered Souls##63043
@@ -2558,25 +2558,25 @@ turnin Sundered Souls##63043
 step
 talk Tormented Soul##176029
 accept A Shadowed Fate##63166 |goto 29.71,20.91
-|only if questactive(63166) or completedq(63166)
+|only if questactive(63166)
 stickystart "Disable_Pain_Conduits"
 step
 Enter the building |goto 27.88,20.50
 kill Grathalax##171307 |q 61104/2 |goto 27.88,20.50
 |tip Inside the building.
-|only if havequest(61104) or completedq(61104)
+|only if havequest(61104)
 step
 label "Disable_Pain_Conduits"
 click Pain Conduit##354937+
 Disable #3# Pain Conduits |q 61104/1 |goto 27.88,20.50
-|only if havequest(61104) or completedq(61104)
+|only if havequest(61104)
 stickystart "Release_6_Tormented_Souls"
 stickystart "Collect_9_Runeforged_Shackles"
 stickystart "Collect_12_Death_Motes"
 step
 click Runeforged Shackles##364921+
 accept Acquisiton: Runeforged Shackles##63047 |goto 25.62,24.21
-|only if questactive(63047) or completedq(63047)
+|only if questactive(63047)
 step
 label "Release_6_Tormented_Souls"
 click Circle of Agony+
@@ -2584,17 +2584,17 @@ click Circle of Agony+
 kill Tormented Shade##176025+
 |tip They sometimes spawn from Circles of Agony.
 Release #6# Tormented Souls |q 63166/1 |goto 26.50,24.96
-|only if havequest(63166) or completedq(63166)
+|only if havequest(63166)
 step
 label "Collect_9_Runeforged_Shackles"
 click Runeforged Shackles##364921+
 |tip They look like long chains hanging from objects around this area.
 collect 9 Runeforged Shackles##184552 |q 63047/1 |goto 26.47,26.00
-|only if havequest(63047) or completedq(63047)
+|only if havequest(63047)
 step
 label "Collect_12_Death_Motes"
 Collect #12# Death Motes |q 60762/1 |goto 27.30,24.65
-|only if havequest(60762) or completedq(60762)
+|only if havequest(60762)
 step
 talk Tormented Soul##176029
 turnin A Shadowed Fate##63166 |goto 29.71,20.91
@@ -2602,48 +2602,48 @@ turnin A Shadowed Fate##63166 |goto 29.71,20.91
 step
 click Stygia Conduit
 Place the Stygia Conduit |q 61079/1 |goto 26.98,31.73 |count 1
-|only if havequest(61079) or completedq(61079)
+|only if havequest(61079)
 step
 Enter the cave |goto 25.51,32.61 < 20 |walk
 kill Leerok the Scryer##169551
 |tip Inside the cave.
 collect Eye of the Scryer##180035 |q 60622/1 |goto 24.83,36.79
-|only if havequest(60622) or completedq(60622)
+|only if havequest(60622)
 step
 Enter the cave |goto 25.51,32.61 < 20 |walk |only if not havequest(60622)
 click Stygia Conduit
 |tip Inside the cave.
 Place the Stygia Conduit |q 61079/1 |goto 24.12,37.35 |count 2
-|only if havequest(61079) or completedq(61079)
+|only if havequest(61079)
 step
 Leave the cave |goto 25.51,32.61 < 20 |walk
 click Stygia Conduit
 Place the Stygia Conduit |q 61079/1 |goto 22.89,34.73 |count 3
-|only if havequest(61079) or completedq(61079)
+|only if havequest(61079)
 step
 click Crystallized Stygia##364900
 accept Acquisition: Crystallized Stygia##63031 |goto 21.17,34.12
-|only if questactive(63031) or completedq(63031)
+|only if questactive(63031)
 stickystart "Collect_10_Crystallized_Stygia"
 step
 click Stygia Conduit
 Place the Stygia Conduit |q 61079/1 |goto 19.44,34.39 |count 4
-|only if havequest(61079) or completedq(61079)
+|only if havequest(61079)
 step
 label "Collect_10_Crystallized_Stygia"
 click Crystallized Stygia##364900+
 |tip They look like blue and white crystals on the ground around this area.
 collect 10 Crystallized Stygia##184510 |q 63031/1 |goto 21.44,34.97
-|only if havequest(63031) or completedq(63031)
+|only if havequest(63031)
 stickystart "Collect_Essences_of_Misery"
 step
 talk Hopeless Vessel##176069
 accept Misery's Company##63100 |goto 24.73,45.37
-|only if questactive(63100) or completedq(63100)
+|only if questactive(63100)
 step
 kill Hopeless Vessel##176027 |q 63100/1 |goto 24.07,44.52
 |tip They spawn all along the River of Souls.
-|only if havequest(63100) or completedq(63100)
+|only if havequest(63100)
 step
 Click the Complete Quest Box
 turnin Misery's Company##63100
@@ -2651,26 +2651,26 @@ turnin Misery's Company##63100
 step
 click Misery Conduit
 Destroy the Southern Misery Conduit |q 60646/2 |goto 21.52,48.76
-|only if havequest(60646) or completedq(60646)
+|only if havequest(60646)
 stickystart "Kill_8_Crucible_Soulseekers"
 step
 talk Knight of the Ebon Blade##175807
 |tip On the bridge.
 accept A Monument to Vengeance##63039 |goto 22.17,47.94
-|only if questactive(63039) or completedq(63039)
+|only if questactive(63039)
 step
 click Ebon Runeblade##364901+
 |tip They look like axes laying on the ground around this area.
 collect 8 Ebon Runeblade##184511 |q 63039/1 |goto 19.48,48.48
-|only if havequest(63039) or completedq(63039)
+|only if havequest(63039)
 step
 label "Kill_8_Crucible_Soulseekers"
 kill 8 Crucible Soulseeker##171179 |q 61075/1 |goto 19.48,48.48
-|only if havequest(61075) or completedq(61075)
+|only if havequest(61075)
 step
 use the Cypher of Melody##180626
 Lure Souls East of the River |q 60902/2 |goto The Maw/0 19.80,54.35
-|only if havequest(60902) or completedq(60902)
+|only if havequest(60902)
 step
 click Twisted Mawstone
 turnin A Monument to Vengeance##63039 |goto 23.39,49.85
@@ -2678,21 +2678,21 @@ turnin A Monument to Vengeance##63039 |goto 23.39,49.85
 step
 use the Cypher of Melody##180626
 Lure Souls West of the River |q 60902/1 |goto The Maw/0 18.27,50.44
-|only if havequest(60902) or completedq(60902)
+|only if havequest(60902)
 step
 click Phasic Siphoner
 accept Torment for the Taking##63062 |goto 27.99,46.98
-|only if questactive(63062) or completedq(63062)
+|only if questactive(63062)
 step
 click Soul Fissure+
 |tip They look like white patches surrounded by black stones on the ground around this area.
 Fill the Phasic Siphoner |q 63062/1 |goto 27.95,46.98
-|only if havequest(63062) or completedq(63062)
+|only if havequest(63062)
 step
 label "Collect_Essences_of_Misery"
 kill Resonant Misery##169780+
 collect 10 Essence of Misery##184614 |q 60646/1 |goto 33.24,29.93
-|only if havequest(60646) or completedq(60646)
+|only if havequest(60646)
 step
 talk Ve'nari##162804
 turnin A Dark Song##60902 |goto The Maw/0 46.91,41.69 |only if readyq(60902) or completedq(60902)

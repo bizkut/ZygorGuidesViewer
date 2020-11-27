@@ -746,6 +746,7 @@ step
 Watch the dialogue
 Discuss the Vision |q 61716/3 |goto 39.49,69.28
 step
+Watch the dialogue
 talk Highlord Bolvar Fordragon##164079
 turnin A Glimpse into Darkness##61716 |goto 39.94,68.58
 step
@@ -2352,10 +2353,11 @@ step
 kill High Champion Meskal##166975 |q 57425/1 |goto 50.37,48.10
 step
 Watch the dialogue
-Begin Flying with Draka |invehicle |q 57425
+|tip You will fly automatically.
+Make Your Escape |invehicle |q 57425
 step
 Watch the dialogue
-Escape the Theater of Pain |outvehicle |q 57425
+Escape the Theater of Pain |outvehicle |goto 48.34,57.05 |q 57425 |notravel
 step
 talk Baroness Draka##162069
 turnin Land of Opportunity##57425 |goto 48.38,57.16
@@ -2563,6 +2565,7 @@ talk Baroness Draka##163536
 Tell her _"I'm ready. Let's fly to the Seat of the Primus."_
 Begin Flying with Draka |invehicle |goto 37.12,68.37 |q 60886 |region vortrexxis
 step
+Watch the dialogue
 Fly with Draka to the Seat of the Primus |q 60886/1 |goto 50.38,67.56 |notravel
 step
 Use the _"Resonate"_ ability
@@ -2904,8 +2907,8 @@ click Potion Chamber
 Form the Potion |q 60831/2 |goto 60.66,71.40
 step
 Watch the dialogue
-click Rune of Adroit Ingenuity
-Collect the Rune of Adroit Ingenuity |q 60831/3 |goto 60.66,71.40
+click Rune of Insight
+Collect the Rune of Insight |q 60831/3 |goto 60.66,71.40
 step
 talk Plague Deviser Marileth##159930
 turnin Fit For a Margrave##60831 |goto 60.49,71.65
@@ -3045,7 +3048,7 @@ step
 kill Mor'Bitan##163431 |q 59025/2 |goto 73.73,44.11
 |tip Baroness Vashj will help you fight.
 step
-click Rune of Immortal Artifice
+click Rune of Guile
 Collect the Rune of Guile |q 59025/3 |goto 73.73,44.11
 step
 Watch the dialogue
@@ -3291,61 +3294,77 @@ Kill Warstitched enemies around this area
 Slay #15# Warstitched Forces |q 57987/1 |goto 28.60,28.16
 step
 Watch the dialogue
+|tip Inside the building.
 Bring Kou and Koa to Thales |q 57986/3 |goto 30.08,24.04
 step
 talk Aspirant Thales##169949
+|tip Inside the building.
 turnin A Burden Worth Bearing##57986 |goto 30.08,24.04
 step
 talk Secutor Mevix##165397
+|tip Inside the building.
 turnin Give Them a Hand##57985 |goto 30.19,23.77
 turnin A Deadly Distraction##57987 |goto 30.19,23.77
 accept Breaking Down Barriers##57982 |goto 30.19,23.77
 step
 talk Aspirant Thales##169949
+|tip Inside the building.
 Ask him _"How would you breach the barrier?"_
 Speak with Thales |q 57982/1 |goto 30.08,24.04
 step
 talk Salvaged Praetor##169953
+|tip Inside the building.
 Tell him _"I need you to follow my directions."_
 Direct the Salvaged Praetor |q 57982/2 |goto 30.03,23.95
 step
 click Spewer Valve
 |tip Use the ability on your action bar to be able to walk through the barrier.
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.96,23.52 |count 1
 step
 click Spewer Valve
 |tip Use the ability on your action bar to be able to walk through the green spraying liquid.
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.60,23.48 |count 2
 step
 click Spewer Valve
 |tip Use the ability on your action bar to be able to walk through the green spraying liquid.
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.53,22.70 |count 3
 step
 click Spewer Valve
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.54,22.63 |count 4
 step
 click Shielding Lattice
+|tip Inside the building.
 Disable the Shielding Lattice |q 57982/4 |goto 29.29,23.06
 step
 Return to Secutor Mevix |outvehicle |q 57982
+|tip Inside the building.
 step
 talk Secutor Mevix##165397
+|tip Inside the building.
 turnin Breaking Down Barriers##57982 |goto 30.19,23.77
 accept Two of Them, Two of Us##57993 |goto 30.19,23.77
 step
 kill Sharrex the Fleshcrafter##165478 |q 57993/1 |goto 29.00,22.27
 kill First Apprentice Malkrex##165477 |q 57993/2 |goto 29.00,22.27
+|tip Inside the building.
 step
 clicknpc Soulfused Construct##170020
+|tip Inside the building.
 Examine the Soulfused Construct |q 57993/3 |goto 28.87,21.97
 step
 Watch the dialogue
 talk Aspirant Thales##165575
 |tip He runs to this location.
+|tip Inside the building.
 turnin Two of Them, Two of Us##57993 |goto 28.89,22.15
 accept In The Flesh##57994 |goto 28.89,22.15
 step
 clicknpc Soulfused Construct##165488
+|tip Inside the building.
 Take Control of the Soulfused Construct |q 57994/1 |goto 28.86,21.96
 stickystart "Destroy_The_Construct_House_Forces"
 step
@@ -3364,8 +3383,8 @@ Watch the dialogue
 Reach Spider's Watch |goto 37.60,29.39 < 10 |c |q 57994 |notravel
 |tip You will run there automatically.
 step
-click Rune of Banded Strength
-Retrieve the Rune of Banded Strength |q 57994/5 |goto 37.65,29.20
+click Rune of Might
+Retrieve the Rune of Might |q 57994/5 |goto 37.65,29.20
 step
 talk Aspirant Thales##160211
 turnin In The Flesh##57994 |goto 37.61,29.10
@@ -3597,9 +3616,9 @@ step
 Use the _"Resonate"_ ability
 |tip It appears as a button on the screen.
 |tip Upstairs.
-Empower the Rune of Immortal Artifice |q 59009/1 |goto 50.40,67.75
-Empower Rune of Adroit Ingenuity |q 59231/1 |goto 50.40,67.75
-Empower the Rune of Banded Strength |q 60733/1 |goto 50.40,67.75
+Empower the Rune of Guile |q 59009/1 |goto 50.40,67.75
+Empower Rune of Insight |q 59231/1 |goto 50.40,67.75
+Empower the Rune of Might |q 60733/1 |goto 50.40,67.75
 step
 talk Baroness Draka##168381
 |tip Upstairs.
@@ -3677,7 +3696,6 @@ step
 Travel with Ve'nari |goto 36.29,55.32 < 10 |c |q 59962 |notravel
 step
 talk Ve'nari##171770
-|tip She teleports to this location.
 turnin Hope Never Dies##59962 |goto 36.23,55.74
 accept Delving Deeper##59966 |goto 36.23,55.74
 step
@@ -3734,12 +3752,16 @@ talk Alexandros Mograine##162801
 turnin A Soul Saved##59974 |goto Maldraxxus/0 41.34,60.58
 accept In Death We Are Truly Tested##59011 |goto Maldraxxus/0 41.34,60.58
 step
+Watch the dialogue
 Use the _"Claim Rune"_ ability
 |tip It appears as a button on the screen.
+Claim the Final Rune |q 59011/1 |goto 41.34,60.58
+step
 Watch the dialogue
 kill Baron Vyraz##169901
+|tip Kill the enemies that channel on him when they appear.
 |tip He will eventually escape.
-Confront Vyraz |q 59011/1 |goto 41.34,60.58
+Confront Vyraz |q 59011/2 |goto 41.10,61.00
 step
 Watch the dialogue
 |tip You will fly automatically.
@@ -4306,7 +4328,6 @@ Enter the cave |goto 60.28,32.70 < 7 |walk
 Locate the Gorm Matriarch's Den |q 58023/4 |goto Ardenweald/3 60.15,45.24
 |tip Inside the cave.
 step
-Enter the cave |goto 59.73,34.41 < 7 |walk
 talk Guardian Kota##160155
 |tip Inside the cave.
 turnin Finish What He Started##58022 |goto 60.15,45.24
@@ -7506,8 +7527,8 @@ click Potion Chamber
 Form the Potion |q 60831/2 |goto 60.66,71.40
 step
 Watch the dialogue
-click Rune of Adroit Ingenuity
-Collect the Rune of Adroit Ingenuity |q 60831/3 |goto 60.66,71.40
+click Rune of Insight
+Collect the Rune of Insight |q 60831/3 |goto 60.66,71.40
 step
 talk Plague Deviser Marileth##159930
 turnin Fit For a Margrave##60831 |goto 60.49,71.65
@@ -10190,6 +10211,13 @@ Return to Kleia |outvehicle |goto 53.96,73.62 |q 57447 |notravel
 step
 talk Kleia##156238
 turnin Purity's Prerogative##57447 |goto 53.83,73.66
+step
+Reach Level 51 |ding 51
+|tip You must be level 51 to continue the questline.
+|tip Use the "Bastion" leveling guide to complete side quests.
+|tip You can also run dungeons, if you prefer.
+step
+talk Kleia##156238
 accept Chasing a Memory##58976 |goto 53.83,73.66
 step
 Watch the dialogue
@@ -10447,7 +10475,7 @@ turnin The Wards of Bastion##59200 |goto 55.65,41.95
 step
 Reach Level 53 |ding 53
 |tip You must be level 53 to continue the questline.
-|tip Use the "Bastion (Threads of Fate)" leveling guide to complete side quests.
+|tip Use the "Bastion" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Polemarch Adrestes##160037
@@ -10681,7 +10709,10 @@ kill High Champion Meskal##166975 |q 57425/1 |goto 50.37,48.10
 step
 Watch the dialogue
 |tip You will fly automatically.
-Escape the Theater of Pain |goto 48.34,57.05 < 10 |noway |c |q 57425
+Make Your Escape |invehicle |q 57425
+step
+Watch the dialogue
+Escape the Theater of Pain |outvehicle |goto 48.34,57.05 |q 57425 |notravel
 step
 talk Baroness Draka##162069
 turnin Land of Opportunity##57425 |goto 48.38,57.16
@@ -10752,6 +10783,14 @@ step
 talk Baroness Draka##159065
 |tip Inside the building.
 turnin The House of the Chosen##57515 |goto 38.90,65.19
+step
+Reach Level 54 |ding 54
+|tip You must be level 54 to continue the questline.
+|tip Use the "Maldraxxus" leveling guide to complete side quests.
+|tip You can also run dungeons, if you prefer.
+step
+talk Baroness Draka##159065
+|tip Inside the building.
 accept The First Act of War##57514 |goto 38.90,65.19
 step
 Enter the building |goto 36.43,60.83 < 10 |walk
@@ -10810,8 +10849,7 @@ step
 click Unfinished Blade
 collect Unfinished Blade##178662 |q 57516/2 |goto 37.12,68.50
 step
-Use the Teleport Rune |goto 37.16,68.42
-|tip Walk onto the rune symbol on the ground.
+click Orb of Teleportation |goto 37.18,68.39
 Return to Draka |goto 37.99,66.97 < 10 |noway |c |q 57516
 step
 talk Baroness Draka##159065
@@ -10833,6 +10871,7 @@ Convince Bonesmith Heirmir to Speak with You |q 58616/2 |goto 36.35,70.50
 step
 Watch the dialogue
 talk Bonesmith Heirmir##157676
+|tip He walks to this location.
 turnin Forging a Champion##58616 |goto 36.29,71.08
 accept Ossein Enchantment##58618 |goto 36.29,71.08
 accept Thick Skin##58726 |goto 36.29,71.08
@@ -10887,14 +10926,16 @@ step
 talk Baroness Draka##163536
 |tip Inside the building.
 Tell her _"I'm ready. Let's fly to the Seat of the Primus."_
-Begin Flying with Draka |goto 37.12,68.37 > 20 |c |q 60886 |region vortrexxis
+Begin Flying with Draka |invehicle |goto 37.12,68.37 |q 60886 |region vortrexxis
 step
+Watch the dialogue
 Fly with Draka to the Seat of the Primus |q 60886/1 |goto 50.38,67.56 |notravel
 step
 Use the _"Resonate"_ ability
 |tip It appears as a button on the screen.
-Empower the Rune of Forged Greatness |q 60886/2 |goto 50.39,67.75
+Empower the Rune of Ambition |q 60886/2 |goto 50.39,67.75
 step
+Watch the dialogue
 talk Baroness Draka##168381
 turnin The Seat of the Primus##60886 |goto 50.31,67.72
 accept A Common Peril##58751 |goto 50.31,67.72
@@ -10904,9 +10945,10 @@ step
 talk Wing Guard Buurkin##157514
 fpath Bleak Redoubt |goto 52.47,67.65
 step
-Cross the bridge |goto 50.35,61.15 < 30 |only if walking
-talk Wing Guard Alamar##157540
-fpath Theater of Pain |goto 49.88,53.25
+talk Wing Guard Buurkin##157514
+|tip Open the flight taxi map.
+|tip This is to allow the guide to learn the flight paths you have.
+fpath Theater of Pain |goto 52.47,67.65
 step
 talk Slumbar Valorum##161702
 home Theater of Pain |goto 50.95,53.17
@@ -11014,8 +11056,8 @@ click Potion Chamber
 Form the Potion |q 60831/2 |goto 60.66,71.40
 step
 Watch the dialogue
-click Rune of Adroit Ingenuity
-Collect the Rune of Adroit Ingenuity |q 60831/3 |goto 60.66,71.40
+click Rune of Insight
+Collect the Rune of Insight |q 60831/3 |goto 60.66,71.40
 step
 talk Plague Deviser Marileth##159930
 turnin Fit For a Margrave##60831 |goto 60.49,71.65
@@ -11026,6 +11068,7 @@ Follow the road |goto 58.19,60.43 < 30 |only if walking
 Follow the path |goto 65.79,54.25 < 15 |only if walking
 Watch the dialogue
 talk Baroness Vashj##162487
+|tip She walks to this location.
 Tell her _"I have a summons from Draka."_
 Watch the dialogue
 Deliver the Summons to the Lost Bannerman |q 58751/1 |goto 67.67,45.92
@@ -11122,14 +11165,14 @@ Siphon #12# Corpses of Anima |q 59210/2 |goto 72.12,50.60
 step
 Follow the path up |goto 73.68,48.20 < 30 |only if walking
 talk Baroness Vashj##164326
-turnin Entangling Web##59185 |goto 73.58,44.56
-turnin Tainted Cores##59210 |goto 73.58,44.56
+turnin Entangling Web##59185 |goto 73.54,44.51
+turnin Tainted Cores##59210 |goto 73.54,44.51
 step
 talk Khaliiq##164297
 turnin Vaunted Vengeance##59188 |goto 73.39,44.52
 step
 talk Baroness Vashj##164326
-accept Seek Your Mark##59190 |goto 73.57,44.56
+accept Seek Your Mark##59190 |goto 73.54,44.51
 step
 click Tainted Crystal
 Place the Fractured Crystal |q 59190/1 |goto 73.17,44.46 |count 1
@@ -11144,8 +11187,8 @@ click Ritual Focus
 Draw the Binding Sigil |q 59190/2 |goto 73.82,43.94
 step
 talk Baroness Vashj##164326
-turnin Seek Your Mark##59190 |goto 73.58,44.55
-accept Straight to the Heart##59025 |goto 73.58,44.55
+turnin Seek Your Mark##59190 |goto 73.54,44.51
+accept Straight to the Heart##59025 |goto 73.54,44.51
 step
 click Ritual Focus
 Trigger the Ritual |q 59025/1 |goto 73.78,43.97
@@ -11153,15 +11196,15 @@ step
 kill Mor'Bitan##163431 |q 59025/2 |goto 73.73,44.11
 |tip Baroness Vashj will help you fight.
 step
-click Rune of Immortal Artifice
+click Rune of Guile
 Collect the Rune of Guile |q 59025/3 |goto 73.73,44.11
 step
 Watch the dialogue
-|tip She walks to this location.
 talk Baroness Vashj##164326
-turnin Straight to the Heart##59025 |goto 73.58,44.54
-accept Her Rightful Place##59009 |goto 73.58,44.54
+turnin Straight to the Heart##59025 |goto 73.54,44.51
+accept Her Rightful Place##59009 |goto 73.54,44.51
 step
+Follow the road |goto 53.23,54.99 < 40 |only if walking
 Follow the path up |goto 54.70,32.68 < 15 |only if walking
 talk Fly-eyed Eliera##157517
 fpath Keres' Rest |goto 53.82,30.69
@@ -11297,9 +11340,6 @@ clicknpc Vestigial Animate##165084+
 |tip They look like hands reaching out of the ground around this area.
 kill Vestigial Animate##165084+
 Destroy #10# Vestigial Animates |q 57985/1 |goto 31.09,28.33
-step
-talk Secutor Mevix##165397
-turnin Give Them a Hand##57985 |goto 31.99,27.37
 stickystart "Slay_Warstitched_Forces"
 step
 click Gurney
@@ -11328,64 +11368,77 @@ Kill Warstitched enemies around this area
 Slay #15# Warstitched Forces |q 57987/1 |goto 28.60,28.16
 step
 Watch the dialogue
+|tip Inside the building.
 Bring Kou and Koa to Thales |q 57986/3 |goto 30.08,24.04
 step
 talk Aspirant Thales##169949
+|tip Inside the building.
 turnin A Burden Worth Bearing##57986 |goto 30.08,24.04
 step
 talk Secutor Mevix##165397
+|tip Inside the building.
+turnin Give Them a Hand##57985 |goto 30.19,23.77
 turnin A Deadly Distraction##57987 |goto 30.19,23.77
 accept Breaking Down Barriers##57982 |goto 30.19,23.77
 step
 talk Aspirant Thales##169949
+|tip Inside the building.
 Ask him _"How would you breach the barrier?"_
 Speak with Thales |q 57982/1 |goto 30.08,24.04
 step
 talk Salvaged Praetor##169953
+|tip Inside the building.
 Tell him _"I need you to follow my directions."_
-Direct Salvaged Praetor |q 57982/2 |goto 30.03,23.95
-step
-talk Salvaged Praetor##169953
-Tell him _"I need you to follow my directions."_
-Control the Salvaged Praetor |invehicle |goto 30.03,23.95 |q 57982
+Direct the Salvaged Praetor |q 57982/2 |goto 30.03,23.95
 step
 click Spewer Valve
 |tip Use the ability on your action bar to be able to walk through the barrier.
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.96,23.52 |count 1
 step
 click Spewer Valve
 |tip Use the ability on your action bar to be able to walk through the green spraying liquid.
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.60,23.48 |count 2
 step
 click Spewer Valve
 |tip Use the ability on your action bar to be able to walk through the green spraying liquid.
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.53,22.70 |count 3
 step
 click Spewer Valve
+|tip Inside the building.
 Disable the Bile Spewer |q 57982/3 |goto 29.54,22.63 |count 4
 step
 click Shielding Lattice
+|tip Inside the building.
 Disable the Shielding Lattice |q 57982/4 |goto 29.29,23.06
 step
-Return to Secutor Mevix |outvehicle |goto 30.09,23.96 |q 57982
+Return to Secutor Mevix |outvehicle |q 57982
+|tip Inside the building.
 step
 talk Secutor Mevix##165397
+|tip Inside the building.
 turnin Breaking Down Barriers##57982 |goto 30.19,23.77
 accept Two of Them, Two of Us##57993 |goto 30.19,23.77
 step
 kill Sharrex the Fleshcrafter##165478 |q 57993/1 |goto 29.00,22.27
 kill First Apprentice Malkrex##165477 |q 57993/2 |goto 29.00,22.27
+|tip Inside the building.
 step
 clicknpc Soulfused Construct##170020
+|tip Inside the building.
 Examine the Soulfused Construct |q 57993/3 |goto 28.87,21.97
 step
 Watch the dialogue
 talk Aspirant Thales##165575
 |tip He runs to this location.
+|tip Inside the building.
 turnin Two of Them, Two of Us##57993 |goto 28.89,22.15
 accept In The Flesh##57994 |goto 28.89,22.15
 step
 clicknpc Soulfused Construct##165488
+|tip Inside the building.
 Take Control of the Soulfused Construct |q 57994/1 |goto 28.86,21.96
 stickystart "Destroy_The_Construct_House_Forces"
 step
@@ -11404,8 +11457,8 @@ Watch the dialogue
 Reach Spider's Watch |goto 37.60,29.39 < 10 |c |q 57994 |notravel
 |tip You will run there automatically.
 step
-click Rune of Banded Strength
-Retrieve the Rune of Banded Strength |q 57994/5 |goto 37.65,29.20
+click Rune of Might
+Retrieve the Rune of Might |q 57994/5 |goto 37.65,29.20
 step
 talk Aspirant Thales##160211
 turnin In The Flesh##57994 |goto 37.61,29.10
@@ -11419,15 +11472,23 @@ step
 Use the _"Resonate"_ ability
 |tip It appears as a button on the screen.
 |tip Upstairs.
-Empower the Rune of Immortal Artifice |q 59009/1 |goto 50.40,67.75
-Empower Rune of Adroit Ingenuity |q 59231/1 |goto 50.40,67.75
-Empower the Rune of Banded Strength |q 60733/1 |goto 50.40,67.75
+Empower the Rune of Guile |q 59009/1 |goto 50.40,67.75
+Empower Rune of Insight |q 59231/1 |goto 50.40,67.75
+Empower the Rune of Might |q 60733/1 |goto 50.40,67.75
 step
 talk Baroness Draka##168381
 |tip Upstairs.
 turnin Front and Center##60733 |goto 50.31,67.72
 turnin Her Rightful Place##59009 |goto 50.31,67.72
 turnin Fathomless Power##59231 |goto 50.31,67.72
+step
+Reach Level 55 |ding 55
+|tip You must be level 55 to continue the questline.
+|tip Use the "Maldraxxus" leveling guide to complete side quests.
+|tip You can also run dungeons, if you prefer.
+step
+talk Baroness Draka##168381
+|tip Upstairs.
 accept Among the Chosen##59202 |goto 50.31,67.72
 step
 Enter the building |goto 40.91,61.34 < 15 |walk
@@ -11454,7 +11515,7 @@ Jump into the Soul Pillar from the Ring of Transference |q 59897/1 |goto Oribos/
 step
 Travel to the Maw |goto The Maw/0 44.95,40.99 < 10 |noway |c |q 59897
 step
-Click the Complete Quest Box:
+_Click the Complete Quest Box:_
 turnin Seeking the Baron##59897
 accept The Hunt for the Baron##60972
 step
@@ -11463,7 +11524,7 @@ Charge the Ebon Blade Amulet |q 60972/1 |goto 40.56,42.76
 |tip Fill up the bar near the bottom of the screen.
 You can find more around [37.05,36.82]
 step
-Click the Complete Quest Box:
+_Click the Complete Quest Box:_
 turnin The Hunt for the Baron##60972
 accept A Cooling Trail##59960
 step
@@ -11498,7 +11559,6 @@ step
 Travel with Ve'nari |goto 36.29,55.32 < 10 |c |q 59962 |notravel
 step
 talk Ve'nari##171770
-|tip She teleports to this location.
 turnin Hope Never Dies##59962 |goto 36.23,55.74
 accept Delving Deeper##59966 |goto 36.23,55.74
 step
@@ -11522,7 +11582,8 @@ step
 Kill the enemies
 Secure the Area |q 59973/2 |goto 33.05,66.53
 step
-kill Deslan the Torturer##166987 |q 59973/3 |goto 33.05,66.53
+kill Deslan the Torturer##166987 |q 59973/3 |goto 33.74,67.48
+|tip She flies to this location.
 step
 talk Highlord Darion Mograine##172414
 turnin A Bond Beyond Death##59973 |goto 32.92,66.40
@@ -11532,8 +11593,8 @@ click Ve'nari's Portal
 Use Ve'nari's Portal |q 61190/1 |goto 33.06,66.16
 step
 talk Ve'nari##162804
-turnin Wake of Ashes##61190 |goto 46.95,41.71
-accept Maw Walker##62654 |goto 46.95,41.71
+turnin Wake of Ashes##61190 |goto 46.92,41.69
+accept Maw Walker##62654 |goto 46.92,41.69
 step
 click Waystone to Oribos
 Attune to Alexandros and Darion at the Waygate |q 62654/1 |goto 42.38,42.16
@@ -11544,6 +11605,7 @@ step
 talk Highlord Bolvar Fordragon##164079
 turnin Maw Walker##62654 |goto Oribos/0 39.94,68.60
 step
+Watch the dialogue
 talk Baroness Draka##167903
 accept A Soul Saved##59974 |goto 39.15,67.95
 step
@@ -11551,19 +11613,23 @@ talk Alexandros Mograine##162801
 turnin A Soul Saved##59974 |goto Maldraxxus/0 41.34,60.58
 accept In Death We Are Truly Tested##59011 |goto Maldraxxus/0 41.34,60.58
 step
-talk Alexandros Mograine##162801
-Tell him _"I am ready."_
 Watch the dialogue
 Use the _"Claim Rune"_ ability
 |tip It appears as a button on the screen.
+Claim the Final Rune |q 59011/1 |goto 41.34,60.58
+step
+Watch the dialogue
 kill Baron Vyraz##169901
-|tip During the fight, kill the enemies that start channeling on him, to remove his shield.
-|tip He will eventually escape at around 40% health.
-Confront Vyraz |q 59011/1 |goto 41.34,60.58
+|tip Kill the enemies that channel on him when they appear.
+|tip He will eventually escape.
+Confront Vyraz |q 59011/2 |goto 41.10,61.00
 step
 Watch the dialogue
 |tip You will fly automatically.
-Escape to Safety |goto 50.39,67.70 < 10 |c |q 59011 |notravel
+Escape with Alexandros Mograine |invehicle |q 59011
+step
+Watch the dialogue
+Escape to Safety |outvehicle |goto 50.39,67.70 |q 59011 |notravel
 step
 talk Baroness Draka##170309
 turnin In Death We Are Truly Tested##59011 |goto 50.52,67.88
@@ -11574,7 +11640,7 @@ Use the _"Unlock Door"_ ability
 Watch the dialogue
 Open the Door to the Seat of the Primus |q 60737/1 |goto 50.39,67.42
 step
-Enter the building |goto 50.40,68.05 < 10 |walk
+Enter the building |goto 50.40,68.05 < 7 |walk
 click Stone Altar
 |tip Inside the building.
 turnin The Door to the Unknown##60737 |goto Seat of the Primus/0 49.68,54.84
@@ -11603,7 +11669,7 @@ turnin Journey to Ardenweald##60338 |goto Ardenweald/0 68.27,18.37 |only if have
 accept I Moustache You to Lend a Hand##60763 |goto Ardenweald/0 68.27,18.37
 step
 click Night Lily
-collect Night Lily##178747 |q 60763/1 |goto 68.88,17.84
+collect Night Lily##178747 |q 60763/1 |goto 67.48,18.28
 step
 talk Featherlight##170175
 Tell him _"I have the lily."_
@@ -11633,10 +11699,12 @@ step
 Find Korenth |q 60778/1 |goto 66.73,21.03
 step
 talk Korenth##168422
+|tip In the entrance of the cave.
 Tell him _"I'm standing in for Lady Moonberry. What happened?"_
 Speak with Korenth |q 60778/2 |goto 67.67,20.56
 step
 talk Featherlight##170324
+|tip In the entrance of the cave.
 Choose _<Hold still?>_
 Speak with Featherlight |q 60778/3 |goto 67.69,20.61
 step
@@ -11644,10 +11712,13 @@ Coax the Nesting Valeshrieker |q 60778/4 |goto Ardenweald/1 46.50,56.26
 |tip Use the abilities on your action bar.
 |tip Fill up the blue bar in the quest tracker area.
 |tip It will attack you after you complete this quest goal.
+|tip Inside the cave.
 step
 kill Nesting Valeshrieker##168475 |q 60778/5 |goto 46.50,56.26
+|tip Inside the cave.
 step
 talk Featherlight##170324
+|tip In the entrance of the cave.
 turnin Wildseed Rescue##60778 |goto Ardenweald/0 67.69,20.61
 accept We Can't Save Them All##60857 |goto Ardenweald/0 67.69,20.61
 step
@@ -11764,11 +11835,11 @@ step
 kill Devouring Hydra##169206+
 use the Hydra Gutter##179921
 |tip Use it on their corpses.
-Free #16# Wildseed Tenders from Hydras |q 60575/1 |goto 61.18,41.66
+Free #16# Wildseed Tenders from Hydras |q 60575/1 |goto 61.43,39.48
 step
 label "Collect_Animacones_60577"
 kill Gobbling Blossom##169205+
-collect 25 Animacone##179922 |q 60577/1 |goto 60.64,40.30
+collect 25 Animacone##179922 |q 60577/1 |goto 61.09,39.39
 step
 talk Dreamweaver##169217
 turnin Belly Full of Fae##60575 |goto 62.21,36.47
@@ -11854,10 +11925,8 @@ talk Droman Tashmur##158487
 turnin Preparing for the Winter Queen##60600 |goto 63.50,36.29
 accept Ride to Heartwood Grove##60624 |goto 63.50,36.29
 step
-Locate the Riding Stag |goto 63.05,35.63 < 10 |c |q 60624
-step
 clicknpc Riding Stag##169577
-Begin Riding the Stag |goto 63.05,35.63 > 15 |c |q 60624
+Begin Riding the Stag |invehicle |goto 63.05,35.63 |q 60624
 step
 Watch the dialogue
 Ride the Stag to Heartwood Grove |q 60624/1 |goto 66.94,26.55 |notravel
@@ -11955,8 +12024,16 @@ Speak to Lady Moonberry |q 60519/1 |goto 63.50,36.08
 step
 talk Lady Moonberry##169031
 turnin Audience with the Winter Queen##60519 |goto 63.59,36.27
+step
+Reach Level 56 |ding 56
+|tip You must be level 56 to continue the questline.
+|tip Use the "Ardenweald" leveling guide to complete side quests.
+|tip You can also run dungeons, if you prefer.
+step
+talk Lady Moonberry##169031
 accept Call of the Hunt##60521 |goto 63.59,36.27
 step
+Follow the path up |goto 52.85,33.46 < 30 |only if walking
 talk Hunt-Captain Korayn##169584
 turnin Call of the Hunt##60521 |goto 51.31,33.99
 accept The Missing Hunters##60628 |goto 51.31,33.99
@@ -12046,9 +12123,6 @@ Follow the path up |goto 50.14,34.61 < 15 |only if walking
 talk Ara'lon##169935
 turnin I Know Your Face##60632 |goto 51.31,33.99
 accept Return to Tirna Vaal##60522 |goto 51.31,33.99
-step
-talk Tishereenelee##167265
-fpath Root-Home |goto 35.13,51.71
 step
 Return to Tirna Vaal |q 60522/1 |goto 63.39,37.51
 step
@@ -12221,8 +12295,8 @@ Slay Vroth, Bulwark of Thros |q 58486/1 |goto 70.51,53.61
 step
 talk Ara'lon##161492
 |tip Up on the platform.
-turnin He's Drust in the Way##58486 |goto 71.46,54.53
-accept Go for the Heart##58488 |goto 71.46,54.53
+turnin He's Drust in the Way##58486 |goto 71.44,54.64
+accept Go for the Heart##58488 |goto 71.44,54.64
 step
 kill Barrier##166222
 Destroy the Barrier |q 58488/1 |goto 71.70,54.68
@@ -12231,7 +12305,7 @@ click Heart of Tirna Noch
 collect Heart of Tirna Noch##174269 |q 58488/2 |goto 71.76,54.69
 step
 talk Ara'lon##161492
-turnin Go for the Heart##58488 |goto 71.46,54.53
+turnin Go for the Heart##58488 |goto 71.44,54.64
 step
 talk Lady Moonberry##161494
 accept Sparkles Rain from Above##58524 |goto 71.50,54.68
@@ -12246,7 +12320,7 @@ Kill enemies around this area
 Slay #50# Invaders |q 58524/2 |goto 69.37,55.03
 step
 Watch the dialogue
-Return to Hibernal Hollow |goto 60.05,53.07 < 10 |c |q 58524 |notravel
+Return to Hibernal Hollow |outvehicle |goto 60.05,53.07 |q 58524 |notravel
 step
 talk Droman Aliothe##160894
 turnin Sparkles Rain from Above##58524 |goto 60.08,53.94
@@ -12336,6 +12410,13 @@ step
 talk Dreamweaver##160962
 turnin Visions of the Dreamer: Origins##58590 |goto 60.06,52.96
 turnin Visions of the Dreamer: The Betrayal##60578 |goto 60.06,52.96
+step
+Reach Level 58 |ding 58
+|tip You must be level 58 to continue the questline.
+|tip Use the "Ardenweald" leveling guide to complete side quests.
+|tip You can also run dungeons, if you prefer.
+step
+talk Dreamweaver##160962
 accept End of the Dream##58593 |goto 60.06,52.96
 step
 talk Dreamweaver##160962
@@ -12394,13 +12475,13 @@ turnin Enemies at the Gates##60621 |goto 59.89,53.19
 accept Battle for Hibernal Hollow##58869 |goto 59.89,53.19
 stickystart "Slay_Attackers_58869"
 step
-Gain the Swift of Hoof Buff |havebuff spell:334829 |goto 60.09,51.41 |q 58869
+Gain the Swift of Hoof Buff |havebuff spell:334829 |goto 59.54,53.24 |q 58869
 |tip Walk onto the yellow circle.
 step
-Gain the Energized Spirit Buff |havebuff spell:317878 |goto 61.06,53.87 |q 58869
+Gain the Energized Spirit Buff |havebuff spell:317878 |goto 60.19,52.55 |q 58869
 |tip Walk onto the green circle.
 step
-Gain the Hunter's Efficiency Buff |havebuff spell:334865 |goto 59.19,53.88 |q 58869
+Gain the Hunter's Efficiency Buff |havebuff spell:334865 |goto 59.89,52.36 |q 58869
 |tip Walk onto the red circle.
 step
 label "Slay_Attackers_58869"
@@ -12416,8 +12497,7 @@ kill Fulyar the Destroyer##169540
 |tip Kill whichever of these two enemies has the lowest health.
 |tip You only need to kill one of them to end the battle.
 kill Lorkron the Hunter##171556
-Defeat Lorkron and Fulyar the Destroyer |q 58869/3 |goto 59.60,52.81
-You can find Lorkron the Hunter fighting around [60.23,52.60]
+Defeat Lorkron and Fulyar the Destroyer |q 58869/3 |goto 59.78,52.80
 step
 talk Droman Aliothe##160894
 turnin Battle for Hibernal Hollow##58869 |goto 59.86,53.17
@@ -12480,6 +12560,10 @@ talk Winter Queen##162968
 |tip Inside the tree.
 turnin The Court of Winter##58723 |goto 49.01,33.67
 accept The Queen's Request##58724 |goto 49.01,33.67
+step
+Follow the road |goto Ardenweald/0 39.79,49.92 < 40 |only if walking
+talk Tishereenelee##167265
+fpath Root-Home |goto Ardenweald/0 35.13,51.71
 step
 talk Tal-Inara##159478
 turnin The Queen's Request##58724 |goto Oribos/1 49.03,60.01

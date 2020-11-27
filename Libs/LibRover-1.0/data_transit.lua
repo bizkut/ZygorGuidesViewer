@@ -1646,7 +1646,7 @@ data.basenodes.transit = {
 		"Dazar'alor/1 73.99,62.22 -to- Silvermoon City/0 58.26,19.24 {fac:H} {mode:PORTAL} {title:Click the Portal to Silvermoon City Inside the Building} {cond:ZGV.InPhase('BFA')}",
 
 		-- Hall of Ancient Paths - Zuldazar, Zandalar -to- Orgrimmar - Durotar, Kalimdor --
-		"Dazar'alor/1 74.04,69.94 -to- Orgrimmar/1 57.10,89.81 {fac:H} {mode:PORTAL} {title:Click the Portal to Orgrimmar Inside the Building} {cond:ZGV.InPhase('BFA')}",
+		"Dazar'alor/1 74.05,69.75 -to- Orgrimmar/1 57.10,89.81 {fac:H} {mode:PORTAL} {title:Click the Portal to Orgrimmar Inside the Building} {cond:ZGV.InPhase('BFA')}",
 
 		-- Hall of Ancient Paths - Zuldazar, Zandalar -to- Thunder Bluff - Mulgore, Kalimdor --
 		"Dazar'alor/1 73.60,77.38 -to- Thunder Bluff/0 22.21,16.87 {fac:H} {mode:PORTAL} {title:Click the Portal to Thunder Bluff Inside the Building} {cond:ZGV.InPhase('BFA')}",
@@ -2061,9 +2061,9 @@ data.basenodes.transit = {
 
 
 
-		"Orgrimmar/2 48.3,64.7 <region:cleftofshadow>		<spell:3567>   <faction:H>",
+		"Orgrimmar/1 57.10,89.81				<spell:3567>   <faction:H>",
 		"Silvermoon City 58.3,19.2				<spell:32272>  <faction:H>",
-		"Swamp of Sorrows 49.8,55.8				<spell:49358>  <faction:H>", --stonard
+		"Swamp of Sorrows 49.8,55.8				<spell:49358>  <faction:H>",	-- Stonard
 		"Thunder Bluff 22.2,16.9				<spell:3566>   <faction:H>",
 		"Shattrath City 53.0,49.2				<spell:35715>  <faction:H>",
 		"Undercity 84.6,16.3					<spell:3563>   <faction:H>",
@@ -2071,7 +2071,8 @@ data.basenodes.transit = {
 		"Vale of Eternal Blossoms/0 62.21,21.54			<spell:132627> <faction:H>",
 		"Warspear/0 58.8,51.4					<spell:176242>  <faction:H>",
 		"Boralus/0 69.80,15.75					<spell:281403>",		-- Alliance
-		"Dazar'alor/1 68.28,64.58				<spell:281404>",	-- Horde
+		"Dazar'alor/1 68.28,64.58				<spell:281404>",		-- Horde
+		"Oribos/0 20.37,50.32					<spell:344587>",
 
 		--[[ Note: node cond functions work only for teleport spells --]]
 		-- DRUIDS

@@ -227,7 +227,7 @@ function GuideMenu:SetSectionHeader(text,arrow)
 	section.Name:SetText(text)
 	if arrow then
 		section.Texture:SetWidth(12)
-		section.Texture:SetTexture(ZGV.StyleDir.."titlebuttons")
+		section.Texture:SetTexture(SkinData("TitleButtons"))
 		section.Name:SetPoint("TOPLEFT",section.Texture,"TOPRIGHT",5,0)
 	else
 		section.Texture:SetWidth(1)
@@ -571,7 +571,7 @@ function GuideMenu:CreateFrames()
 			local SectionInfo=MF.CenterColumn.SectionInfo
 			SectionInfo.Texture = CHAIN(SectionInfo:CreateTexture(nil,"LOW")) 
 				:SetSize(12,12) 
-				:SetTexture(ZGV.StyleDir.."titlebuttons")
+				:SetTexture(SkinData("TitleButtons"))
 				:SetTexCoord(8/32,9/32,0,1/4)
 				:SetPoint("TOPLEFT",SectionInfo,"TOPLEFT",10,-10)
 				.__END
@@ -1542,7 +1542,7 @@ GuideMenu.Parsers.ICONS = false
 		object.text:SetWordWrap(false)
 
 		object.Toggle = CHAIN(parent:CreateTexture())
-			:SetTexture(ZGV.StyleDir.."titlebuttons")
+			:SetTexture(SkinData("TitleButtons"))
 			:SetSize(14,14)
 			:SetVertexColor(1,1,1,1)
 			:SetPoint("RIGHT",object,"RIGHT",0,0)
@@ -1657,7 +1657,7 @@ GuideMenu.Parsers.ICONS = false
 		object.nexticon = CHAIN(object:CreateTexture())
 			:SetSize(12,12)
 			:SetPoint("RIGHT")
-			:SetTexture(ZGV.StyleDir.."titlebuttons")
+			:SetTexture(SkinData("TitleButtons"))
 			:SetTexCoord(9/32,10/32,0,1/4)
 		.__END
 		
@@ -1687,7 +1687,7 @@ GuideMenu.Parsers.ICONS = false
 		header.backicon = CHAIN(header:CreateTexture())
 			:SetSize(12,12)
 			:SetPoint("LEFT")
-			:SetTexture(ZGV.StyleDir.."titlebuttons")
+			:SetTexture(SkinData("TitleButtons"))
 			:SetTexCoord(8/32,9/32,0,1/4)
 		.__END
 		CHAIN(header.text)
