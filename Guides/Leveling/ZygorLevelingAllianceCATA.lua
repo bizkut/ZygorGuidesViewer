@@ -658,12 +658,6 @@ Enter the building |goto Stormwind City/0 80.60,37.89 < 15 |walk
 talk Anduin Wrynn##107574
 |tip Inside the building.
 turnin Where Kings Walk##13188 |goto Stormwind City/0 85.8,31.7
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(13188)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Draenei Starter",{
 author="support@zygorguides.com",
@@ -844,12 +838,6 @@ step
 talk Technician Zhanaa##17071
 turnin The Emitter##9312 |goto 50.50,47.85
 accept Travel to Azure Watch##9313 |goto 50.50,47.85
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(9313)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Dwarf Starter",{
 author="support@zygorguides.com",
@@ -1047,12 +1035,6 @@ Fly to Kharanos |goto Dun Morogh/0 53.3,49.8 < 50 |noway |c |q 24493
 step
 talk Tharek Blackstone##1872
 turnin Don't Forget About Us##24493 |goto Dun Morogh/0 53.1,50.0
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(24493)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Gnome Starter",{
 author="support@zygorguides.com",
@@ -1313,12 +1295,6 @@ Follow the road |goto 52.98,57.95 < 20 |only if walking
 Continue following the road |goto 64.55,53.51 < 20 |only if walking
 talk Ciara Deepstone##42933
 accept Bound for Kharanos##26380 |goto Dun Morogh 49.9,45.0
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(26380)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Human Starter",{
 author="support@zygorguides.com",
@@ -1529,12 +1505,6 @@ Follow the path |goto 40.35,60.10 < 20 |only if walking
 talk Marshal McBride##197
 turnin Ending the Invasion!##26390 |goto 33.6,53.0
 accept Report to Goldshire##54 |goto 33.6,53.0
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(54)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Night Elf Starter",{
 author="support@zygorguides.com",
@@ -2079,12 +2049,6 @@ Enter the Pink Portal |goto 36.90,50.40 |n
 Reach Rut'theran Village |goto Teldrassil/0 55.10,88.53 |noway |c |q 26383 |only if havequest(26383)
 Reach Rut'theran Village |goto Teldrassil/0 55.10,88.53 |noway |c |q 26385 |only if havequest(26385)
 Reach Rut'theran Village |goto Teldrassil/0 55.10,88.53 |noway |c |q 28490 |only if havequest(28490)
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(14039)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Worgen Starter",{
 author="support@zygorguides.com",
@@ -2935,12 +2899,6 @@ talk Genn Greymane##48736
 |tip Inside the hollow tree.
 turnin The Howling Oak##28517 |goto Darnassus/0 48.13,14.42
 accept Breaking Waves of Change##26385 |goto 48.13,14.42
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(26385)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Dun Morogh (1-50)",{
 author="support@zygorguides.com",
@@ -3366,13 +3324,6 @@ talk Gremlock Pilsnor##1699
 |tip Downstairs inside the building.
 turnin Return to Gremlock##6392 |goto Dun Morogh/0 54.8,50.7
 |only Dwarf, Gnome
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(26118) |only if default
-'|condition completedq(6392) |only Dwarf, Gnome
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Elwynn Forest (1-50)",{
 author="support@zygorguides.com",
@@ -3721,12 +3672,6 @@ Continue following the road |goto 35.52,76.39 < 30 |only if walking
 Cross the bridge |goto 29.01,77.95 < 20 |only if walking
 talk Deputy Rainer##963
 turnin Riverpaw Gnoll Bounty##11 |goto 24.23,74.45
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(11)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Loch Modan (5-50)",{
 author="support@zygorguides.com",
@@ -4360,12 +4305,6 @@ step
 talk Torren Squarejaw##1153
 |tip Downstairs, inside the building.
 turnin Heartfelt Appreciation##13661 |goto 37.21,46.37
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(13661)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Westfall (5-50)",{
 author="support@zygorguides.com",
@@ -4820,12 +4759,6 @@ step
 talk Marshal Gryan Stoutmantle##234
 turnin Return to Sentinel Hill##26370 |goto Westfall/0 56.37,49.63
 accept Threat to the Kingdom##26761 |goto Westfall/0 56.37,49.63
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(26761)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Redridge Mountains (7-50)",{
 author="support@zygorguides.com",
@@ -5427,12 +5360,6 @@ Follow the path |goto 26.08,43.14 < 15 |only if walking
 talk Magistrate Solomon##344
 |tip Inside the building.
 turnin Triumphant Return##26726 |goto 28.9,41.1
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(26726)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Duskwood (10-50)",{
 author="support@zygorguides.com",
@@ -13443,12 +13370,6 @@ step
 talk Sentinel Cordressa Briarbow##42936
 |tip Upstairs inside the building.
 accept Breaking Waves of Change##26383 |goto Darnassus/0 43.89,76.14
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(26383)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Bloodmyst Isle (1-50)",{
 author="support@zygorguides.com",
@@ -14263,12 +14184,6 @@ Follow the path |goto Azuremyst Isle/0 29.54,49.17 < 20 |only if walking |notrav
 Continue following the path |goto Azuremyst Isle/0 26.53,52.33 < 20 |only if walking |notravel
 talk Huntress Kella Nightbow##17614
 turnin Newfound Allies##9632 |goto Azuremyst Isle/0 24.18,54.35
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(9632)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Darkshore (5-50)",{
 author="support@zygorguides.com",
@@ -15340,12 +15255,6 @@ label "Time_Travel_On"
 talk Zidormi##141489
 Ask her _"Can you show me what Darkshore was like before the battle?"_
 Travel to the Past |condition ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |q 13898 |future
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(13898)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Ashenvale (7-50)",{
 author="support@zygorguides.com",
@@ -16449,12 +16358,6 @@ step
 talk Gnombus the X-Terminator##40894
 |tip He walks around this area.
 accept Do Yourself a Favor##25613 |goto Ashenvale/0 35.3,71.2
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(25613)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Stonetalon Mountains (10-50)",{
 author="support@zygorguides.com",

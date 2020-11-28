@@ -122,13 +122,6 @@ step
 talk Arcanist Helion##15297
 turnin Tainted Arcane Sliver##8338 |goto 58.47,38.79
 only if BloodElf
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(8338) |only if BloodElf
-'|condition havequest(8347) |only if default
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Death Knight (8-10)",{
 author="support@zygorguides.com",
@@ -766,12 +759,6 @@ Enter the building |goto Orgrimmar/1 49.90,75.62 < 5 |walk
 talk High Overlord Saurfang##14720
 |tip Inside the building.
 turnin Saurfang's Blessing##13189 |goto 48.52,70.72
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(13189)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Goblin (1-10)",{
 author="support@zygorguides.com",
@@ -1784,12 +1771,6 @@ accept Reports to Orgrimmar##26806 |goto 51.95,43.50
 step
 talk Burok##41140
 turnin Reports to Orgrimmar##26806 |goto 53.10,43.58
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(26806)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Orc (1-5)",{
 author="support@zygorguides.com",
@@ -1911,12 +1892,6 @@ step
 talk Zureetha Fargaze##3145
 turnin Burning Blade Medallion##25132 |goto 45.82,63.44
 accept Report to Sen'jin Village##25133 |goto 45.82,63.44
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(25133)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Tauren (1-4)",{
 author="support@zygorguides.com",
@@ -2021,12 +1996,6 @@ Fly to Bloodhoof Village |goto Mulgore/0 47.82,59.87 < 10 |notravel |q 24215
 step
 talk Ahmo Thunderhorn##36644
 turnin Rite of the Winds##24215 |goto 47.66,59.59
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(24215)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Troll (1-5)",{
 author="support@zygorguides.com",
@@ -2484,12 +2453,6 @@ talk Vol'jin##38966
 |tip Inside the building.
 turnin An Ancient Enemy##24814 |goto 61.55,65.85
 accept Sen'jin Village##25073 |goto 61.55,65.85
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(25073)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Undead (1-10)",{
 author="support@zygorguides.com",
@@ -3045,12 +3008,6 @@ step
 talk Executor Zygand##1515
 turnin Take to the Skies##25012 |goto 60.53,51.87
 accept Warchief's Command: Silverpine Forest!##26964 |goto 60.53,51.87
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(26964)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Eversong Woods (1-50)",{
 author="support@zygorguides.com",
@@ -3551,12 +3508,6 @@ Energize the Runestone |q 8490/1 |goto 55.19,84.23
 step
 talk Runewarden Deryan##16362
 turnin Powering our Defenses##8490 |goto 44.20,85.47
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(8490)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Ghostlands (1-50)",{
 author="support@zygorguides.com",
@@ -4158,13 +4109,6 @@ talk Lor'themar Theron##16802
 |tip Inside the building.
 turnin Friend of the Sin'dorei##9811 |goto 53.80,20.24 |only if not BloodElf
 turnin Hero of the Sin'dorei##9328 |goto 53.80,20.24 |only if BloodElf
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(9328) |only if BloodElf
-'|condition completedq(9218) |only if default
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Silverpine Forest (5-50)",{
 author="support@zygorguides.com",
@@ -4812,12 +4756,6 @@ Follow the road |goto 66.06,79.60 < 20 |only if walking
 talk High Executor Darthalia##2215
 turnin Empire of Dirt##27746 |goto Hillsbrad Foothills/0 29.23,63.35
 turnin Warchief's Command: Hillsbrad Foothills!##28089 |goto Hillsbrad Foothills/0 29.23,63.35 |only if havequest(28089) or completedq(28089)
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(28089)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Hillsbrad Foothills (7-50)",{
 author="support@zygorguides.com",
@@ -5502,12 +5440,6 @@ talk Captain Jekyll##49243
 |tip He walks around this area.
 turnin Silence of the Dwarves##28636 |goto 60.29,63.45
 turnin The Durnholde Challenge: D-1000##28647 |goto 60.29,63.45
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(28647)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Arathi Highlands (10-50)",{
 author="support@zygorguides.com",
@@ -13083,12 +13015,6 @@ talk Arnak Fireblade##3216
 |tip Inside the building.
 turnin Arnak Fireblade##25263 |goto Orgrimmar/2 58.18,54.62
 accept Ak'Zeloth##25264 |goto 58.18,54.62
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(25264)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Mulgore (1-50)",{
 author="support@zygorguides.com",
@@ -13378,12 +13304,6 @@ Enter the building |goto 49.88,75.57 < 5 |walk
 talk High Overlord Saurfang##14720
 |tip Inside the building.
 turnin Walk With The Earth Mother##26397 |goto 48.53,70.75
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(26397)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Northern Barrens (5-50)",{
 author="support@zygorguides.com",
@@ -14223,12 +14143,6 @@ step
 talk Kadrak##8582
 |tip He walks around this area.
 turnin Mor'shan Caravan Delivery##29111 |goto 42.70,14.97
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(29111)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Azshara (5-50)",{
 author="support@zygorguides.com",
@@ -15400,12 +15314,6 @@ Teleport back to Valormok |goto 13.91,64.94 < 10 |noway |q 24439
 step
 talk Chawg##36730
 turnin The Conquest of Azshara##24439 |goto 14.01,64.84
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(24439)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Ashenvale (7-50)",{
 author="support@zygorguides.com",
@@ -16151,12 +16059,6 @@ Enter the building |goto Orgrimmar/1 49.85,75.48 < 5 |walk
 talk Eitrigg##3144
 |tip Inside the building.
 turnin Dread Head Redemption##13842 |goto 49.22,72.28
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(13842)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Classic (1-50)\\Kalimdor\\Stonetalon Mountains (10-50)",{
 author="support@zygorguides.com",

@@ -122,13 +122,6 @@ step
 talk Arcanist Helion##15297
 turnin Tainted Arcane Sliver##8338 |goto 58.47,38.79
 only if BloodElf
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(8338) |only if BloodElf
-'|condition havequest(8347) |only if default
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Death Knight (8-10)",{
 author="support@zygorguides.com",
@@ -766,12 +759,6 @@ Enter the building |goto Orgrimmar/1 49.90,75.62 < 5 |walk
 talk High Overlord Saurfang##14720
 |tip Inside the building.
 turnin Saurfang's Blessing##13189 |goto 48.52,70.72
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(13189)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Goblin (1-10)",{
 author="support@zygorguides.com",
@@ -1784,12 +1771,6 @@ accept Reports to Orgrimmar##26806 |goto 51.95,43.50
 step
 talk Burok##41140
 turnin Reports to Orgrimmar##26806 |goto 53.10,43.58
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(26806)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Orc (1-5)",{
 author="support@zygorguides.com",
@@ -1911,12 +1892,6 @@ step
 talk Zureetha Fargaze##3145
 turnin Burning Blade Medallion##25132 |goto 45.82,63.44
 accept Report to Sen'jin Village##25133 |goto 45.82,63.44
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(25133)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Tauren (1-4)",{
 author="support@zygorguides.com",
@@ -2021,12 +1996,6 @@ Fly to Bloodhoof Village |goto Mulgore/0 47.82,59.87 < 10 |notravel |q 24215
 step
 talk Ahmo Thunderhorn##36644
 turnin Rite of the Winds##24215 |goto 47.66,59.59
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition completedq(24215)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Troll (1-5)",{
 author="support@zygorguides.com",
@@ -2484,12 +2453,6 @@ talk Vol'jin##38966
 |tip Inside the building.
 turnin An Ancient Enemy##24814 |goto 61.55,65.85
 accept Sen'jin Village##25073 |goto 61.55,65.85
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(25073)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Undead (1-10)",{
 author="support@zygorguides.com",
@@ -3045,10 +3008,4 @@ step
 talk Executor Zygand##1515
 turnin Take to the Skies##25012 |goto 60.53,51.87
 accept Warchief's Command: Silverpine Forest!##26964 |goto 60.53,51.87
-step
-label "Chromie_Time_Eligible"
-You are now eligible for Chromie Time!
-|tip Load the "Chromie Time" leveling guide to select your leveling timeline.
-'|condition havequest(26964)
-|only if level >= 10 and level < 50 and not chromietime()
 ]])
