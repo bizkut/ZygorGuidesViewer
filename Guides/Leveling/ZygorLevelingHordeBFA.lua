@@ -20216,7 +20216,7 @@ turnin Speaker of the Horde##46931 |goto Dazar'alor/2 41.31,66.65
 step
 talk Paku'ai Rokota##122689
 fpath The Great Seal |goto Dazar'alor/0 51.92,41.20
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Nightborne Starter",{
 author="support@zygorguides.com",
@@ -20225,7 +20225,7 @@ condition_valid=function() return raceclass('Nightborne') and not raceclass('Dea
 condition_valid_msg="Nightborne only.",
 condition_suggested=function() return raceclass('Nightborne') and level < 10.5 and not completedq(50303) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20242,7 +20242,7 @@ Find the Warchief's Command Board |q 50303/1 |goto 49.67,76.47
 step
 talk Melitier Vahlouran##131328
 turnin Stranger in a Strange Land##50303 |goto 49.79,76.41
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Highmountain Tauren Starter",{
 author="support@zygorguides.com",
@@ -20251,7 +20251,7 @@ condition_valid=function() return raceclass('HighmountainTauren') and not racecl
 condition_valid_msg="Highmountain Tauren only.",
 condition_suggested=function() return raceclass('HighmountainTauren') and level < 10.5 and not completedq(50319) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20269,7 +20269,7 @@ Find the Warchief's Command Board |q 50319/1 |goto 49.67,76.47
 step
 talk Halian Shlavahawk##131201
 turnin Stranger in a Strange Land##50319 |goto 49.79,76.41
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Mag'har Orc Starter",{
 author="support@zygorguides.com",
@@ -20278,7 +20278,7 @@ condition_valid=function() return raceclass('MagharOrc') and not raceclass('Deat
 condition_valid_msg="Mag'har Orc only.",
 condition_suggested=function() return raceclass('MagharOrc') and level < 10.5 and not completedq(53502) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20295,7 +20295,7 @@ Find the Warchief's Command Board |q 53502/1 |goto 49.67,76.47
 step
 talk Limbflayer Lasha##143979
 turnin Stranger in a Strange Land##53502 |goto 49.79,76.41
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Zandalari Troll Starter",{
 author="support@zygorguides.com",
@@ -20304,7 +20304,7 @@ condition_valid=function() return raceclass('ZandalariTroll') and not raceclass(
 condition_valid_msg="Zandalari Troll only.",
 condition_suggested=function() return raceclass('ZandalariTroll') and level < 10.5 and not completedq(55138) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20324,7 +20324,7 @@ Find the Warchief's Command Board |q 55138/1 |goto 49.67,76.47
 step
 talk Natal'hakata##150909
 turnin Stranger in a Strange Land##55138 |goto 49.79,76.41
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Vulpera Starter",{
 author="support@zygorguides.com",
@@ -20333,7 +20333,7 @@ condition_valid=function() return raceclass('Vulpera') and not raceclass('DeathK
 condition_valid_msg="Vulpera only.",
 condition_suggested=function() return raceclass('Vulpera') and level == 10 and not completedq(58124) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20350,7 +20350,7 @@ Find the Warchief's Command Board |q 58124/1 |goto 49.67,76.47
 step
 talk Nilsa##160452
 turnin Stranger in a Strange Land##58124 |goto 64.64,46.51
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (10-50)\\Allied Race Death Knight Starter",{
 author="support@zygorguides.com",
@@ -20385,9 +20385,9 @@ Use the Warchief's Command Board |q 58903/4 |goto Orgrimmar/0 49.66,76.46
 step
 Click the Complete Quest Box:
 turnin Defender of Azeroth##58903
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands\\Chromie Time",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Chromie Time",{
 author="support@zygorguides.com",
 description="\nThis guide will assist you in changing the expansion you will\n"..
 "\nlevel up in by speaking with Chromie.\n",

@@ -340,7 +340,6 @@ Speak to Jaina |q 59767/1 |goto 31.83,44.41
 step
 Watch the dialogue
 Become Invisible |havebuff spell:327876 |goto 31.83,44.41 |q 59767
-|tip Stand near Jaina until she casts her spell on you.
 step
 Watch the dialogue
 |tip Follow your allies as they walk.
@@ -366,6 +365,7 @@ step
 Leave the Maw |goto Oribos/0 19.24,50.31 < 10 |noway |c |q 60129 |future
 step
 _Is This Character an Alt?_
+|tip To unlock the Threads of Fate, you must complete the Shadowlands campaign, and the first chapter of your covenant on your main character.
 |tip For your first character that enters shadowlands, you cannot skip any content.
 |tip Alt character are given a choice, though.
 |tip Click the line below that matches the character you're currently playing.
@@ -399,7 +399,7 @@ turnin Re-Introductions##62716 |goto 38.88,70.00
 accept Choosing Your Purpose##62000 |goto 38.88,70.00
 step
 click Shadowlands Covenant Map
-|tip Join whichever Covenant you like the best.
+|tip Join the Covenant you like the best.
 |tip Before choosing, you can talk to them all nearby, if you want to refresh yourself on what each of them offers.
 Choose Your Covenant |q 62000/1 |goto 39.51,69.24
 step
@@ -410,11 +410,11 @@ step
 talk Tal-Inara##159478
 Tell her _"Show me how I can help the Shadowlands."_
 |tip Accept the quest for Bastion.
-|tip You will be able to get all of the zone quests after.
 accept Bastion##62275 |goto 38.88,70.00
 Speak with Tal-Inara to Choose Where to Go |q 62159/1 |goto 38.88,70.00
 step
 talk Tal-Inara##159478
+turnin Aiding the Shadowlands##62159 |goto 38.88,70.00
 turnin Bastion##62275 |goto 38.88,70.00
 accept The Elysian Fields##62707 |goto 38.88,70.00
 step
@@ -425,52 +425,7 @@ talk Kalisthene##163427
 turnin The Elysian Fields##62707 |goto Bastion/0 51.12,46.79 |region heros_rest
 accept Bolstering Bastion##62723 |goto Bastion/0 51.12,46.79 |region heros_rest
 step
-talk Tal-Inara##159478
-Tell her _"Show me how I can help the Shadowlands."_
-|tip Accept the quest for Maldraxxus.
-|tip You will be able to get all of the zone quests after.
-accept Maldraxxus##62278 |goto Oribos/0 38.88,70.00
-step
-talk Tal-Inara##159478
-turnin Maldraxxus##62278 |goto 38.88,70.00
-accept A Fresh Blade##62738 |goto 38.88,70.00
-step
-talk Secutor Mevix##175008
-turnin A Fresh Blade##62738 |goto Maldraxxus/0 52.85,68.27
-accept Rallying Maldraxxus##62748 |goto Maldraxxus/0 52.85,68.27
-step
-talk Tal-Inara##159478
-Tell her _"Show me how I can help the Shadowlands."_
-|tip Accept the quest for Revendreth.
-|tip You will be able to get all of the zone quests after.
-accept Revendreth##62279 |goto Oribos/0 38.88,70.00
-step
-talk Tal-Inara##159478
-turnin Revendreth##62279 |goto 38.88,70.00
-accept Dark Aspirations##62740 |goto 38.88,70.00
-step
-Enter the building |goto Revendreth/0 61.31,59.76 < 7 |c |q 62740
-step
-talk Prince Renathal##175056
-|tip Downstairs inside the building.
-turnin Dark Aspirations##62740 |goto Revendreth/0 61.47,60.43
-accept Reinforcing Revendreth##62778 |goto Revendreth/0 61.47,60.43
-step
-talk Tal-Inara##159478
-Tell her _"Show me how I can help the Shadowlands."_
-|tip Accept the quest for Ardenweald.
-|tip You will be able to get all of the zone quests after.
-accept Ardenweald##62277 |goto Oribos/0 38.88,70.00
-step
-talk Tal-Inara##159478
-turnin Ardenweald##62277 |goto 38.88,70.00
-accept Restoring Balance##62739 |goto 38.88,70.00
-step
-talk Lady Moonberry##172431
-turnin Restoring Balance##62739 |goto Ardenweald/0 49.34,52.36
-accept Support the Court##62763 |goto Ardenweald/0 49.34,52.36
-step
-Complete Objectives in Each Zone:
+_Complete Objectives in Bastion:_
 |tip Complete side quests, bonus objectives, world quests, dungeons, and kill rare enemies in Bastion.
 |tip Use the "Bastion (Threads of Fate)" leveling guide to complete side quests and discover flight paths.
 |tip Click world quests and use their guides to complete them.
@@ -484,8 +439,24 @@ accept Return to Oribos##62729 |goto Bastion/0 51.12,46.79 |region heros_rest
 step
 talk Tal-Inara##159478
 turnin Return to Oribos##62729 |goto Oribos/0 38.89,69.99
+accept The Next Step##63208 |goto Oribos/0 38.89,69.99
 step
-Complete Objectives in Each Zone:
+talk Tal-Inara##159478
+Tell her _"Show me how I can help the Shadowlands."_
+|tip Accept the quest for Maldraxxus.
+accept Maldraxxus##62278 |goto 38.88,70.00
+Speak with Tal-Inara to Choose Where to Go |q 63208/1 |goto 38.88,70.00
+step
+talk Tal-Inara##159478
+turnin The Next Step##63208 |goto 38.88,70.00
+turnin Maldraxxus##62278 |goto 38.88,70.00
+accept A Fresh Blade##62738 |goto 38.88,70.00
+step
+talk Secutor Mevix##175008
+turnin A Fresh Blade##62738 |goto Maldraxxus/0 52.85,68.27
+accept Rallying Maldraxxus##62748 |goto Maldraxxus/0 52.85,68.27
+step
+_Complete Objectives in Maldraxxus:_
 |tip Complete side quests, bonus objectives, world quests, dungeons, and kill rare enemies in Maldraxxus.
 |tip Use the "Maldraxxus (Threads of Fate)" leveling guide to complete side quests and discover flight paths.
 |tip Click world quests and use their guides to complete them.
@@ -499,8 +470,24 @@ accept Return to Oribos##62761 |goto Maldraxxus/0 52.85,68.28
 step
 talk Tal-Inara##159478
 turnin Return to Oribos##62761 |goto Oribos/0 38.89,69.99
+accept Furthering the Purpose##63209 |goto Oribos/0 38.89,69.99
 step
-Complete Objectives in Each Zone:
+talk Tal-Inara##159478
+Tell her _"Show me how I can help the Shadowlands."_
+|tip Accept the quest for Ardenweald.
+accept Ardenweald##62277 |goto 38.88,70.00
+Speak with Tal-Inara to Choose Where to Go |q 63209/1 |goto 38.88,70.00
+step
+talk Tal-Inara##159478
+turnin Furthering the Purpose##63209 |goto 38.88,70.00
+turnin Ardenweald##62277 |goto 38.88,70.00
+accept Restoring Balance##62739 |goto 38.88,70.00
+step
+talk Lady Moonberry##172431
+turnin Restoring Balance##62739 |goto Ardenweald/0 49.34,52.36
+accept Support the Court##62763 |goto Ardenweald/0 49.34,52.36
+step
+_Complete Objectives in Ardenweald:_
 |tip Complete side quests, bonus objectives, world quests, dungeons, and kill rare enemies in Ardenweald.
 |tip Use the "Ardenweald (Threads of Fate)" leveling guide to complete side quests and discover flight paths.
 |tip Click world quests and use their guides to complete them.
@@ -515,7 +502,23 @@ step
 talk Tal-Inara##159478
 turnin Return to Oribos##62776 |goto Oribos/0 38.89,69.99
 step
-Complete Objectives in Each Zone:
+talk Tal-Inara##159478
+Tell her _"Show me how I can help the Shadowlands."_
+|tip Accept the quest for Revendreth.
+accept Revendreth##62279 |goto Oribos/0 38.88,70.00
+step
+talk Tal-Inara##159478
+turnin Revendreth##62279 |goto 38.88,70.00
+accept Dark Aspirations##62740 |goto 38.88,70.00
+step
+Enter the building |goto Revendreth/0 61.31,59.76 < 7 |c |q 62740
+step
+talk Prince Renathal##175056
+|tip Downstairs inside the building.
+turnin Dark Aspirations##62740 |goto Revendreth/0 61.47,60.43
+accept Reinforcing Revendreth##62778 |goto Revendreth/0 61.47,60.43
+step
+_Complete Objectives in Revendreth:_
 |tip Complete side quests, bonus objectives, world quests, dungeons, and kill rare enemies in Revendreth.
 |tip Use the "Revendreth (Threads of Fate)" leveling guide to complete side quests and discover flight paths.
 |tip Click world quests and use their guides to complete them.
@@ -6918,7 +6921,11 @@ endlevel=60.0,
 image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
 },[[
 step
-Follow the road |goto Bastion/0 44.52,79.21 < 40 |only if walking
+accept Bolstering Bastion##62723
+|tip Use the "Shadowlands Intro & Main Story Questline" guide to accomplish this.
+step
+Follow the road |goto Bastion/0 55.92,55.83 < 50 |only if walking
+Continue following the road |goto Bastion/0 53.56,69.79 < 50 |only if walking
 talk Torgolius##159127
 fpath Aspirant's Rest |goto Bastion/0 48.10,74.25
 step
@@ -6945,9 +6952,11 @@ talk Klystere##160598
 turnin The Old Ways##60466 |goto 47.88,73.50
 accept A Gift for An Acolyte##62714 |goto 47.88,73.50
 step
-Cross the bridge |goto 51.64,76.75 < 15 |only if walking
+Cross the bridge |goto 51.64,76.75 < 15 |c |q 57712 |future
+step
 accept Aspirant For a Day##62737 |goto 52.82,80.19
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 stickystart "Aid_The_Aspirants"
 step
 talk Aspirant Akimos##157138
@@ -6979,6 +6988,7 @@ kill Sparring Aspirant##159505+
 Aid the Aspirants |q 62737/1 |goto 52.82,80.19
 |tip Fill up the blue bar in the quest tracker area.
 Brind any Lost Library Scrolls to Scrollminder Vasi inside the building at [55.68,84.05]
+|only if havequest(62737) or completedq(62737)
 step
 talk Acolyte Amalthina##174900
 turnin A Gift for An Acolyte##62714 |goto 53.88,73.96
@@ -6989,6 +6999,7 @@ accept An Inspired Moral Inventory##57444 |goto 54.03,73.94
 step
 accept Scour the Temple##62705 |goto 55.06,73.63
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 stickystart "Defend_The_Temple"
 step
 Use the _"Introspection"_ ability
@@ -7007,6 +7018,7 @@ click Vesper+
 |tip They look like huge bells floating above the ground around this area.
 Defend the Temple |q 62705/1 |goto 58.04,73.47
 |tip Fill up the blue bar in the quest tracker area.
+|only if havequest(62705) or completedq(62705)
 step
 talk Acolyte Galistos##160647
 turnin An Inspired Moral Inventory##57444 |goto 54.03,73.94
@@ -7014,6 +7026,7 @@ step
 Follow the road |goto 53.74,65.07 < 50 |only if walking
 accept Locus Focus##62732 |goto Bastion/0 55.66,62.93
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 clicknpc Orphaned Memory##174934+
@@ -7022,9 +7035,11 @@ click Soul Mirror+
 |tip They look like tall stone gateways without the blue glass inside them, like the others have nearby them.
 |tip They will appear on your minimap as yellow dots.
 Defend the Mnemonic Locus |q 62732/1 |goto 55.66,62.93
+|only if havequest(62732) or completedq(62732)
 step
 accept Hostile Recollection##62735 |goto 58.11,64.52
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 label "Repel_The_Forsworn_Threat"
 Kill enemies around this area
@@ -7034,8 +7049,9 @@ clicknpc Depleted Clawguard##167387+
 |tip They look like robot lions on the ground around this area.
 Repel the Felsworn Threat |q 62735/1 |goto 58.87,59.71
 |tip Fill up the blue bar in the quest tracker area.
+|only if havequest(62735) or completedq(62735)
 step
-Follow the road |goto 52.46,72.46 < 40 |only if walking
+Follow the road |goto 52.46,72.46 < 40 |only if walking	and completedq(62716)
 talk Tamesis##158005
 accept Garden in Turmoil##57529 |goto 52.32,61.35
 step
@@ -7100,14 +7116,12 @@ step
 click Notice
 accept A Fine Journey##59554 |goto 51.93,47.70 |region heros_rest
 step
-talk Navarros##159423
-fpath Hero's Rest |goto 51.37,46.80 |region heros_rest
-step
 talk Inkiep##160173
 home Hero's Rest |goto 53.21,46.86 |region heros_rest
 step
 accept Maldraxxi Eviction Notice##62736 |goto 41.71,55.27
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 talk Disciple Artemede##167584
 accept Necrotic Wake: A Paragon's Plight##60057 |goto 40.93,55.34
@@ -7119,6 +7133,7 @@ click Necrotic Extractor+
 click Banner+
 |tip They look like large bone stands with flags hanging from them on the ground around this area.
 Repel the Maldraxxi Threat |q 62736/1 |goto 40.38,57.86
+|only if havequest(62736) or completedq(62736)
 step
 Follow the road |goto 42.50,55.19 < 40 |only if walking
 click Cultivated Windblossom
@@ -7295,7 +7310,7 @@ step
 Escort #3# Forgefire Engineers |q 57933/3 |goto 54.63,40.55
 step
 click Anima Barrel
-Bring Over the Anima Barrel |q 57933/5 |goto 54.63,40.55
+Bring Over the Anima Barrel |q 57933/4 |goto 54.63,40.55
 step
 click Reinforced Armor+
 |tip They look like yellow floating plates around this area.
@@ -7320,7 +7335,7 @@ clicknpc Gatamatos##159697
 Retrieve Gatamatos |q 57935/1 |goto 55.39,42.06
 Retrieve Gatamatos |q 57934/1 |goto 55.39,42.06 |only if not havequest(57935)
 stickystart "Collect_Training_Gems"
-stickystart "Kill_Agitated_Etherwyrms"
+stickystart "Slay_Agitated_Etherwyrms_With_Gatamatos"
 step
 Enter the building |goto 55.70,42.83 < 7 |walk
 kill Leonid##159612 |q 57936/1 |goto 55.93,39.88
@@ -7332,9 +7347,10 @@ Use the _"Order Search"_ ability
 |tip Inside the building.
 collect 6 Training Gem##173269 |q 57935/2 |goto 56.37,40.73
 step
-label "Kill_Agitated_Etherwyrms"
-kill 8 Agitated Etherwyrm##159610 |q 57934/2 |goto 56.37,40.73
+label "Slay_Agitated_Etherwyrms_With_Gatamatos"
+kill Agitated Etherwyrm##159610
 |tip Inside the building.
+Slay #8# Agitated Etherwyrms with Gatamatos |q 57934/2 |goto 56.37,40.73
 stickystart "Collect_Cloudfeather_Essences"
 step
 Leave the building |goto 55.70,42.83 < 7 |walk
@@ -7362,9 +7378,7 @@ Fly Through the Rings |q 58042/2 |goto 57.18,39.31
 |tip They look like rings of smoke with blue spirals inside them in the air around this area.
 |tip Fly through them to fill up the blue bar in the quest tracker area.
 step
-Return to Nemea |goto 57.18,39.31 < 20 |c |q 58042
-|tip You will eventually get dismounted from Andira.
-|tip Try to stay low to the ground at this location while waiting a few seconds to be dismounted.
+Return to Nemea |goto 57.23,39.32 < 10 |c |q 58042 |notravel
 step
 talk Nemea##157696
 turnin On Larion Wings##58042 |goto 57.26,39.21
@@ -7398,6 +7412,7 @@ clicknpc Gatamatos##159675
 Return Gatamatos |q 57937/5 |goto 55.39,42.05
 step
 talk Pelodis##158765
+|tip He walks to this location.
 turnin Tactical Formation##57937 |goto 54.78,41.17
 accept Pride or Unit##58103 |goto 54.78,41.17
 step
@@ -7408,9 +7423,8 @@ _Make Your Choice:_
 |tip There is speculation that you will be able to get whichever you choose as a mount in the future, but this isn't confirmed.
 |tip The Phalynx is the mechanical lion.
 |tip The Larion is the lion with wings.
-|tip Click the line below of the companion you want to choose.
-Phalynx |confirm |goto 55.77,39.41 |q 58103 |or |next "Phalynx"
-Larion |confirm |goto 55.77,39.41 |q 58103 |or |next "Larion"
+Choose Phalynx |q 60293 |future |goto 55.77,39.41 |or |next "Phalynx"
+Choose Larion |q 60294 |future |goto 55.77,39.41 |or |next "Larion"
 step
 label "Phalynx"
 talk Pelodis##158765
@@ -7434,7 +7448,11 @@ label "Continue_After_Phalynx_Larion_Choice"
 Cross the bridge |goto 44.80,47.61 < 15 |only if walking
 Cross the bridge |goto 44.46,36.76 < 15 |only if walking
 talk Klassia##159125
-fpath Eonian Archives |goto 44.08,32.45
+fpath Sagehaven |goto 44.08,32.45
+step
+Follow the road |goto 41.43,23.95 < 30 |only if walking
+talk Adrina##175457
+fpath Terrace of the Collectors |goto 35.80,21.07
 |next Leveling Guides\\Shadowlands (50-60)\\Shadowlands Intro & Main Story Questline
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Maldraxxus (Threads of Fate)",{
@@ -7445,20 +7463,22 @@ startlevel=50.0,
 endlevel=60.0,
 },[[
 step
-Cross the bridge |goto Maldraxxus/0 50.35,61.15 < 30 |only if walking
-talk Wing Guard Alamar##157540
-fpath Theater of Pain |goto Maldraxxus/0 49.88,53.25
-step
 talk Slumbar Valorum##161702
-home Theater of Pain |goto 50.95,53.17
+home Theater of Pain |goto Maldraxxus/0 50.95,53.17
 step
 accept Avoid 'Em Like the Plague##62742 |goto 55.87,64.49
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
-Kill enemies around this area`
+Kill enemies around this area
 click Plague Refuse+
 |tip They look like green steaming piles of slime on the ground around this area.
+click Cleansing Formula+
+|tip They look like small glass vials of yellow liquid on the ground around this area.
+|tip It grants a "Cleansing Formula" ability that appears as a button on the screen.
+|tip Use the ability on Plague-ridden enemies around this area.
 Aid the House of Plagues Survivors |q 62742/1 |goto 58.81,61.73
+|only if havequest(62742) or completedq(62742)
 step
 Run up the stairs |goto 57.83,66.73 < 15 |only if walking
 talk Judas Sneap##165049
@@ -7537,17 +7557,20 @@ turnin Fit For a Margrave##60831 |goto 60.49,71.65
 accept Fathomless Power##59231 |goto 60.49,71.65
 step
 Follow the path |goto 58.22,70.94 < 30 |only if walking
-Follow the road |goto 58.19,60.43 < 30 |only if walking
+Follow the road |goto 58.19,60.43 < 30 |c |q 62785 |future
+step
 accept Decaying Situation##62743 |goto Maldraxxus/0 64.32,55.79
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 click Bone Stake+
 |tip They look like bone spikes with ropes connecting to flying creatures on the ground around this area.
 Secure Glutharn's Decay |q 62743/1 |goto 63.27,51.39
+|only if havequest(62743) or completedq(62743)
 step
-Follow the path up |goto 62.03,46.94 < 15 |only if walking
-Follow the path |goto 64.74,48.16 < 30 |only if walking
+Follow the path up |goto 62.03,46.94 < 15 |only if walking and completedq(62716)
+Follow the path |goto 64.74,48.16 < 30 |only if walking and completedq(62716)
 talk Felsen Wingclip##157516
 fpath Renounced Bastille |goto 67.93,45.84
 step
@@ -7614,8 +7637,8 @@ turnin Side Effects##58090 |goto 54.03,50.86
 step
 kill Predatory Bloodtusk##158752+
 use Louison's Gristle Cutter##177835
-|tip Use it on their corpses.
-collect 10 Bloodtusk Skull##177837 |q 59750/1 |goto 57.24,47.07
+|tip Use it near their corpses.
+collect 12 Bloodtusk Skull##177837 |q 59750/1 |goto 57.24,47.07
 step
 talk Marcel Mullby##161710
 Tell him _"I have some bloodtusk skulls for you."_
@@ -7645,8 +7668,7 @@ Follow the path up |goto 54.70,32.68 < 15 |only if walking
 talk Fly-eyed Eliera##157517
 fpath Keres' Rest |goto 53.82,30.69
 step
-Run up the stairs |goto 51.89,46.50 < 15 |only if walking
-Leave the building |goto 54.91,45.04 < 15 |only if walking
+Follow the path |goto 56.00,46.28 < 50 |only if walking
 talk Louison##161559
 turnin The Last Guy##59781 |goto 54.48,48.59
 accept Stuff We All Get##58575 |goto 54.48,48.59
@@ -7723,7 +7745,7 @@ step
 talk Anzio The Infallible##161733
 turnin A Sure Bet##58900 |goto 50.58,51.62
 step
-Follow the road |goto 46.65,53.35 < 30 |only if walking
+Follow the road |goto 46.65,53.35 < 40 |only if walking
 talk Caleesy##162615
 accept Smack And Grab##58785 |goto 47.00,49.04
 step
@@ -7802,21 +7824,40 @@ step
 talk Dundae##162474
 turnin Stabbing Wasteward##58794 |goto 46.88,48.58
 step
-Follow the road |goto 42.66,58.17 < 50 |only if walking
-accept War of Attrition##62712 |goto 39.03,55.24
+accept Choice of Action##62741 |goto 42.06,59.19
 |tip You will accept this quest automatically.
+|only if completedq(62716)
+step
+Kill enemies around this area
+click Chosen Banner+
+|tip They look like red flags handing from bone totems on the ground around this area.
+click Powerful Swiftblade+
+|tip They look like swords stuck in the ground around this area.
+click Chosen Battlearmor+
+|tip They looke like dark grey metal pieces of armor on the ground around this area.
+click Reinforced Bindings+
+|tip They look like flat silver sheets of metal on the ground around this area.
+click Volatile Runes+
+|tip They look like white unrolled scrolls on the ground around this area.
+Attack the House of the Chosen |q 62741/1 |goto 41.06,61.08
+|only if havequest(62741) or completedq(62741)
 step
 talk Wing Guard Aela##157519
 fpath The Spearhead |goto 39.03,55.24
 step
+accept War of Attrition##62712 |goto 39.03,55.24
+|tip You will accept this quest automatically.
+|only if completedq(62716)
+step
 Kill enemies around this area
 clicknpc Injured Vanguard##174898+
-|tip They look like skeletons kneeling or laying on the ground around this area.
+|tip They look like skeletons and brutes kneeling, laying, or sitting on the ground around this area.
 click Construct Supplies+
 |tip They look like piles of bone crates on the ground around this area.
 Wear Down the Enemy Forces |q 62712/1 |goto 37.60,49.52
+|only if havequest(62712) or completedq(62712)
 step
-Follow the road |goto 38.64,56.23 < 20 |only if walking
+Follow the road |goto 37.67,55.51 < 20 |only if walking
 Continue following the road |goto 33.20,53.17 < 20 |only if walking
 Follow the path down |goto 30.68,50.99 < 15 |only if walking
 Follow the path |goto 26.02,45.48 < 20 |only if walking
@@ -7847,6 +7888,7 @@ step
 Follow the path down |goto 25.43,42.06 < 20 |only if walking
 accept Deconstructing The Problem##62721 |goto 31.67,32.51
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 collect Prisoner Cage Key##183987+ |n
@@ -7856,6 +7898,7 @@ clicknpc Vestigial Animate##165084+
 |tip They look like small arms reaching out of the ground in the pit nearby this location.
 |tip Run away from them after clicking them, to pull them out of the ground.
 Disrupt the Construct House Operations |q 62721/1 |goto 31.87,31.80
+|only if havequest(62721) or completedq(62721)
 step
 Run down the stairs |goto 33.88,33.39 < 15 |only if walking
 Follow the path up |goto 36.57,33.65 < 10 |only if walking
@@ -7964,7 +8007,11 @@ Enter the building |goto 42.33,24.26 < 10 |walk
 click Alver's Annals of Strategy
 |tip Click the Tower Door and walk into the building.
 |tip Inside the building.
-Retrieve Alver's Annals of Strategy |q 58622/4 |goto 42.46,23.62 |count 1
+Retrieve Alver's Annals of Strategy |q 58622/8 |goto 42.46,23.62 |count 1
+step
+click How Not To Lose
+|tip Inside the building.
+Retrieve How Not To Lose |q 58622/7 |goto 42.05,23.01 |count 1
 step
 click World of Crafting War
 |tip Inside the building.
@@ -7972,7 +8019,23 @@ Retrive the World of Crafting War |q 58622/3 |goto 42.02,23.02 |count 1
 step
 click Guide To Marching
 |tip Inside the building.
-Retrieve Guide To Marching |q 58622/1 |goto 41.93,23.35
+Retrieve the Guide To Marching |q 58622/1 |goto 41.93,23.35
+step
+click Beginners Guide To Polearms
+|tip Inside the building.
+Retrieve the Beginners Guide To Polearms |q 58622/5 |goto 41.95,23.60 |count 1
+step
+click How Not To Lose
+|tip Upstairs inside the building.
+Retrieve How Not To Lose |q 58622/7 |goto 41.59,23.27 |count 2
+step
+click Pretend To Win
+|tip Upstairs inside the building.
+Retrieve Pretend To Win |q 58622/6 |goto 42.31,22.92 |count 1
+step
+click Pretend To Win
+|tip Upstairs inside the building.
+Retrieve Pretend To Win |q 58622/6 |goto 42.32,23.37 |count 2
 step
 click World of Crafting War
 |tip Upstairs inside the building.
@@ -7980,23 +8043,43 @@ Retrive the World of Crafting War |q 58622/3 |goto 42.33,23.30 |count 2
 step
 click Alver's Annals of Strategy
 |tip Upstairs inside the building.
-Retrieve Alver's Annals of Strategy |q 58622/4 |goto 42.05,23.03 |count 2
+Retrieve Alver's Annals of Strategy |q 58622/8 |goto 42.05,23.03 |count 2
+step
+click War, is it art?
+|tip Upstairs inside the building.
+Retrieve War, is it art? |q 58622/4 |goto 42.02,23.04 |count 1
+step
+click War, is it art?
+|tip Upstairs inside the building.
+Retrieve War, is it art? |q 58622/4 |goto 41.90,23.39 |count 2
 step
 click Alver's Annals of Strategy
 |tip Upstairs inside the building.
-Retrieve Alver's Annals of Strategy |q 58622/4 |goto 41.89,23.56 |count 3
+Retrieve Alver's Annals of Strategy |q 58622/8 |goto 41.89,23.56 |count 3
+step
+click Pretend To Win
+|tip Upstairs inside the building.
+Retrieve Pretend To Win |q 58622/6 |goto 42.29,22.93 |count 3
+step
+click How Not To Lose
+|tip Upstairs inside the building.
+Retrieve How Not To Lose |q 58622/7 |goto 42.16,23.55 |count 3
 step
 click Krexus's Guide To War
 |tip Upstairs inside the building.
 Retrive Krexus's Guide To War |q 58622/2 |goto 42.20,23.22
 step
-click Alver's Annals of Strategy
+click Beginners Guide To Polearms
 |tip Upstairs inside the building.
-Retrieve Alver's Annals of Strategy |q 58622/4 |goto 41.93,23.04 |count 4
+Retrieve the Beginners Guide To Polearms |q 58622/5 |goto 42.00,23.10 |count 2
 step
 click Alver's Annals of Strategy
 |tip Upstairs inside the building.
-Retrieve Alver's Annals of Strategy |q 58622/4 |goto 42.46,23.38 |count 5
+Retrieve Alver's Annals of Strategy |q 58622/8 |goto 41.93,23.04 |count 4
+step
+click Alver's Annals of Strategy
+|tip Upstairs inside the building.
+Retrieve Alver's Annals of Strategy |q 58622/8 |goto 41.77,22.89 |count 5
 step
 talk Ta'eran##170667
 |tip Upstairs inside the building.
@@ -8049,12 +8132,9 @@ startlevel=50.0,
 endlevel=60.0,
 },[[
 step
-talk Milon##164721
-fpath Starlit Overlook |goto Ardenweald/0 64.92,20.01
-step
-Cross the bridge |goto 67.37,21.98 < 15 |only if walking
-accept The Waning Grove##62775 |goto 68.74,25.06
+accept The Waning Grove##62775 |goto Ardenweald/0 68.74,25.06
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 talk Heartwood Grove Holdout##157949+
@@ -8063,6 +8143,7 @@ Tell them _"Evacuate, now!"_
 click Drained Wildseed+
 |tip They look like large round seeds with green tips on the ground at the base of trees around this area.
 Preserve Heartwood Grove |q 62775/1 |goto 68.74,25.06
+|only if havequest(62775) or completedq(62775)
 step
 Cross the bridge |goto 66.79,26.61 < 15 |only if walking
 Follow the path |goto 64.40,34.40 < 20 |only if walking
@@ -8149,6 +8230,7 @@ turnin Unknown Assailants##58166 |goto 63.49,36.28
 step
 accept Tranquil Pools##62774 |goto 64.86,38.95
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 talk Master Sha'lor##158969
 turnin In Need of Gorm Gris##57952 |goto 64.86,38.95
@@ -8198,6 +8280,7 @@ click Animacone+
 click Hungry Wildseed+
 |tip They look like huge brown seeds on the ground at the edges of water around this area.
 Aid the Tranquil Pools |q 62774/1 |goto 62.38,41.29
+|only if havequest(62774) or completedq(62774)
 step
 Follow the road |goto 60.53,36.97 < 30 |only if walking
 talk Guardian Kota##158921
@@ -8531,15 +8614,18 @@ step
 Follow the road |goto 64.31,37.68 < 15 |only if walking
 accept Wild Hunt Offensive##60840 |goto 62.79,44.67
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 click Draining Totem+
 |tip They look like` wooden spikes with antlered animal skulls on them on the ground around this area.
 Disrupt the Blighted Forces |q 60840/1 |goto 63.71,47.14
+|only if havequest(60840) or completedq(60840)
 step
 Follow the path down |goto 63.50,49.42 < 30 |only if walking
 accept Dreamshrine Basin##62773 |goto 62.86,49.55
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 click Drust Totem+
@@ -8548,6 +8634,7 @@ clicknpc Unfettered Vision##175059+
 |tip They look like small green portals on the ground around this area.
 |tip Enemies may appear out of the portals after clicking them.
 Defend Hibernal Hollow |q 62773/1 |goto 62.19,50.92
+|only if havequest(62773) or completedq(62773)
 step
 talk Na'lor##165166
 fpath Hibernal Hollow |goto 60.35,53.49
@@ -8861,6 +8948,7 @@ step
 Ride the elevator up |goto 70.12,57.89 < 15 |only if walking
 accept Charlatans of Ceremony##62784 |goto 70.13,56.80
 |tip You will accept this quest automatically.
+|only if completedq(62716)
 stickystart "Purge_The_Depravity"
 step
 talk Chiselgrump##168698
@@ -8881,6 +8969,7 @@ click Blasphemous Idol+
 click Debased Sinstone+
 |tip They look like small red glowing tombestones on the ground around this area.
 Purge the Depravity |q 62784/1 |goto 71.67,48.39
+|only if havequest(62784) or completedq(62784)
 step
 Jump down here |goto 69.43,41.59 < 15 |only if walking
 talk Courier Rehkaash##158417
@@ -13610,11 +13699,13 @@ talk Polemarch Adrestes##168906
 Tell him _"I'm ready."_
 Fly to Elysian Hold |q 57895/1 |goto 58.44,28.92
 step
+Begin Flying with Polemarch Adrestes |invehicle |goto 58.44,28.92 |q 57895
+step
 Watch the dialogue
-Fly with Polemarch Adrestes |goto Elysian Hold/0 51.88,47.68 < 10 |c |q 57895 |notravel
+Fly with Polemarch Adrestes |outvehicle |goto Elysian Hold/0 51.88,47.68 |q 57895 |notravel
 step
 talk Polemarch Adrestes##160037
-|tip Upstairs on Archon's Rise.
+|tip Upstairs.
 turnin Elysian Hold##57895 |goto Elysian Hold/0 55.65,41.96
 accept Of Great Renown##62789 |goto 55.65,41.96
 step
@@ -13627,14 +13718,14 @@ accept The Path Provides##62790 |goto 42.75,70.24
 step
 talk Iona Skyblade##176100
 Ask her _"What is my Renown with the Kyrian."_
-Examine your Renown |q 62790/1 |goto 42.75,70.24
+Examine Your Renown |q 62790/1 |goto 42.75,70.24
 step
 talk Haephus##167745
 turnin The Path Provides##62790 |goto 42.75,70.24
 accept A Call to Service##62698 |goto 42.75,70.24
 step
 talk Hermestes##160387
-|tip Upstairs on The Eternal Watch.
+|tip Upstairs.
 turnin A Call to Service##62698 |goto 40.95,40.91
 accept A Calling in Bastion##62692 |goto 40.95,40.91
 step
@@ -13643,22 +13734,24 @@ Complete #3# World Quests in Bastion |q 62692/1
 |tip Click a world quest on the Bastion map to load the guide for it.
 step
 talk Hermestes##160387
-|tip Upstairs on The Eternal Watch.
+|tip Upstairs.
 turnin A Calling in Bastion##62692 |goto 40.95,40.91
 accept Our Most Precious Resource##62791 |goto 40.95,40.91
+step
+use the Tribute of the Ascended##181372
+|tip You should have this from turning in the "A Calling in Bastion" quest.
+|tip You will be given an item worth 500 Anima.
+|tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
+Receive the Rewards |condition itemcount(181372) == 0 |q 62792 |future
 step
 talk Haephus##167745
 turnin Our Most Precious Resource##62791 |goto 42.61,53.10
 accept Into the Reservoir##62792 |goto 42.61,53.10
 step
-use the Tribute of the Ascended##181372
-|tip You should have this from turning in the "A Calling in Bastion" quest a few steps ago.
-|tip You will be given an item worth 500 Anima.
-|tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
 talk Haephus##167745
 Tell him _"Show me the Sanctum."_
-|tip Click the "Deposit" button to deposit the Anima to your covenant.
-Deposit #375# Reservoir Anima |q 62792/2 |goto 42.61,53.10
+|tip Click the "Deposit" button.
+Deposit #375# Anima |q 62792/2 |goto 42.61,53.10
 step
 talk Haephus##167745
 turnin Into the Reservoir##62792 |goto 42.61,53.10
@@ -13671,7 +13764,7 @@ accept Friends in Dark Places##62832 |goto 59.48,34.22
 step
 talk Ve'nari##162804
 turnin Friends in Dark Places##62832 |goto The Maw/0 46.91,41.69
-accept Setting the Ground Rules##62882 |goto 46.91,41.69
+accept Setting the Ground Rules##62882 |goto The Maw/0 46.91,41.69
 step
 talk Ve'nari##162804
 Ask her _"What are your ground rules for working together?"_
@@ -13681,26 +13774,29 @@ step
 talk Ve'nari##162804
 turnin Setting the Ground Rules##62882 |goto 46.91,41.69
 accept Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
-stickystart "Collect_60_Granules_of_Stygia"
+stickystart "Collect_Granules_of_Stygia_60287"
 step
 kill Stone Prison##176145+
+|tip They look like pyramids made of rocks on the ground around this area.
 click Soul Cage+
 |tip They look like tall grey metal cages on the ground around this area.
-|tip They will appear on your minimap.
-clicknpc Caged Soul##174182+
-|tip They look like white spirits that float out of the cages.
-|tip You can also click Caged Souls that come out of cages other players opened.
-Take #5# Souls into the Soulkeeper |q 60287/1 |goto 41.90,49.63
+|tip They will appear on your minimap as white ghost icons.
+click Soul+
+|tip They look like white spirits that float out of the cages and stone prisons.
+|tip You can also click Souls that other players free.
+Take #5# Souls into the Soulkeeper |q 60287/1 |goto 40.16,42.42
 step
-label "Collect_60_Granules_of_Stygia"
+label "Collect_Granules_of_Stygia_60287"
 Kill enemies around this area
-click Soul Cage+ |notinsticky
-|tip They look like tall grey metal cages on the ground around this area. |notinsticky
-|tip They will appear on your minimap. |notinsticky
-clicknpc Caged Soul##174182+ |notinsticky
-|tip They look like white spirits that float out of the cages. |notinsticky
-|tip You can also click Caged Souls that come out of cages other players opened. |notinsticky
-collect 60 Granule of Stygia##180852 |q 60287/2 |goto 37.75,39.18
+kill Stone Prison##176145+								|notinsticky
+|tip They look like pyramids made of rocks on the ground around this area.		|notinsticky
+click Soul Cage+									|notinsticky
+|tip They look like tall grey metal cages on the ground around this area.		|notinsticky
+|tip They will appear on your minimap as white ghost icons.				|notinsticky
+click Soul+										|notinsticky
+|tip They look like white spirits that float out of the cages and stone prisons.	|notinsticky
+|tip You can also click Souls that other players free.					|notinsticky
+collect 60 Granule of Stygia##180852 |q 60287/2 |goto 40.16,42.42
 step
 Follow the path down |goto 44.60,41.08 < 15 |only if walking
 talk Ve'nari##162804
@@ -13710,20 +13806,16 @@ talk Ve'nari##162804
 turnin Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
 accept Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 47.19,43.16 |count 1
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 48.41,41.84 |count 2
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 48.19,40.20 |count 3
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 46.93,39.48 |count 4
 step
 talk Ve'nari##162804
@@ -13734,10 +13826,10 @@ click Signaling Beacon
 Place the Signaling Beacon |q 60289/1 |goto 34.98,47.68
 step
 click Baine's Mace##364498
+|tip You will be attacked.
 collect Bloodhoof Warmace##184284 |q 60289/2 |goto 33.46,49.06
 step
 kill Tower Inquisitor##171626 |q 60289/3 |goto 33.46,49.06
-|tip You will be attacked.
 step
 use the Cypher of Relocation##180817
 Return to Ve'nari |goto 46.22,41.25 < 10 |c |q 60289
@@ -13751,9 +13843,9 @@ turnin Hopeful News##62837 |goto Oribos/0 39.94,68.61
 accept Return to Adrestes##62796 |goto 39.94,68.61
 step
 talk Polemarch Adrestes##160037
-|tip Upstairs on Archon's Rise.
+|tip Upstairs.
 turnin Return to Adrestes##62796 |goto Elysian Hold/0 55.66,41.94
-accept It's All Coming Together##62793 |goto 55.66,41.94
+accept It's All Coming Together##62793 |goto Elysian Hold/0 55.66,41.94
 step
 talk Haephus##167745
 turnin It's All Coming Together##62793 |goto 42.61,53.10
@@ -13761,9 +13853,8 @@ accept Enhancing the Hold##62794 |goto 42.61,53.10
 step
 talk Haephus##167745
 Tell him _"Show me the Sanctum."_
-|tip There are 4 upgrades to choose from.
-|tip Choose whichever one you like best, it doesn't matter, because you will eventually unlock them all over time.
-|tip Then, click the "Activate" button.
+|tip Choose whichever upgrade you like best, it doesn't matter, because you will eventually unlock them all over time.
+|tip Click the "Activate" button.
 Start a Sanctum Upgrade |q 62794/1 |goto 42.61,53.10
 step
 talk Haephus##167745
@@ -13776,9 +13867,9 @@ turnin Dangerous to Go Alone##57897 |goto Elysian Hold/1 59.49,34.24
 accept Soul Meets Body##57898 |goto 59.49,34.24
 step
 Watch the dialogue
+|tip Downstairs inside the building.
 talk Pelagos##160595
 |tip He walks to this location.
-|tip Downstairs inside the building.
 Tell him _"Let us soulbind."_
 Soulbind with Pelagos |q 57898/1 |goto 60.02,36.32
 step
@@ -13788,22 +13879,24 @@ turnin Soul Meets Body##57898 |goto 59.48,34.23
 accept Strengthen the Bond##60504 |goto 59.48,34.23
 step
 click Forge of Bonds
-|tip Follow the instructions on the screen, then click the Activate button.
+|tip Select the Soulbind Power.
 |tip Downstairs inside the building.
-Empower the Soulbind |q 60504/1 |goto 59.84,34.66
+Activate the Soulbind Power |q 60504/1 |goto 59.84,34.66
 step
 talk Soulguide Daelia##160212
 |tip Downstairs inside the building.
 turnin Strengthen the Bond##60504 |goto 59.49,34.24
 accept A Conduit for Good##62795 |goto 59.49,34.24
 step
-Use the conduits in your bags
-|tip You should have received 3 of them.
-|tip Follow the instructions on the screen.
+click Forge of Bonds
+|tip Use the 3 conduits in your bags.
+|tip The conduits are different, depending on your class.
+|tip Downstairs inside the building.
 Add the Conduits to the Forge of Bonds |q 62795/1 |goto 59.84,34.67
 step
 click Forge of Bonds
-|tip Follow the instructions on the screen.
+|tip Look at the powers down the tree to figure out the path you want to take.
+|tip Choose the conduit that leads to unlocking the power you like best.
 |tip Downstairs inside the building.
 Apply the Conduit to Pelagos |q 62795/2 |goto 59.84,34.67
 step
@@ -13813,127 +13906,16 @@ turnin A Conduit for Good##62795 |goto 59.49,34.24
 accept Our Eternal Charge##57904 |goto 59.49,34.24
 step
 talk Polemarch Adrestes##160037
-|tip Upstairs on Archon's Rise.
+|tip Upstairs.
 turnin Our Eternal Charge##57904 |goto Elysian Hold/0 55.64,41.96
 accept The Highlord Calls##63029 |goto 55.64,41.96
 step
 talk Highlord Bolvar Fordragon##164079
 turnin The Highlord Calls##63029 |goto Oribos/0 39.94,68.59
-accept Into Torghast##60136 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Ask her _"How do I enter Torghast?"_
-Ask Ve'nari about a Way into Torghast |q 60136/1 |goto The Maw/0 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Into Torghast##60136 |goto 46.91,41.69
-accept The Search for Baine##61099 |goto 46.91,41.69
-step
-Use Ve'nari's Portal to Enter Torghast |q 61099/1 |goto 48.20,39.38
-step
-click Wayfinder
-Choose _<Use the [Attuned Shard] with the Wayfinder.>_
-|tip Enter the instance with the popup that displays.
-Take the Attuned Shard to the Wayfinder and See Where it Leads |q 61099/2 |goto Torghast/0 37.96,47.08
-step
-Enter Arkoban Hall |goto Torghast/6 43.78,9.70 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/6 51.30,84.47
-|tip Walk into the swirling portal.
-Reach Floor 2 in Torghast |goto Torghast/7 36.19,61.10 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 54.08,52.39 < 10 |walk
-Enter the Portal |goto Torghast/7 54.84,78.28
-|tip Walk into the swirling portal.
-Reach Floor 3 in Torghast |goto Torghast/8 50.69,85.55 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/8 72.38,54.51
-|tip Walk into the swirling portal.
-Reach Floor 4 in Torghast |goto Torghast/7 78.38,52.61 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 71.37,52.40 < 10 |walk
-Run up the stairs |goto Torghast/7 62.90,35.51 < 10 |walk
-Enter the Portal |goto Torghast/7 62.86,53.95
-|tip Walk into the swirling portal.
-Reach Floor 5 in Torghast |goto Torghast/9 54.13,18.73 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/9 37.27,58.44 < 15 |only if walking
-Enter the Portal |goto Torghast/9 62.57,71.88
-|tip Walk into the swirling portal.
-Reach Floor 6 in Torghast |goto Torghast/10 75.86,76.65 < 10 |noway |c |q 61099
-step
-kill Warden Arkoban##175123 |q 61099/3 |goto Torghast/10 46.43,50.95
-accept Prison of the Forgotten##60267 |goto Torghast/10 46.43,50.95
-|tip You will automatically accept this quest after looting him.
-step
-clicknpc Baine Bloodhoof##175294
-Rescue Baine |q 61099/4 |goto 34.79,56.25
-step
-Enter the Portal |goto 35.23,41.51
-|tip Walk into the swirling portal.
-Leave Arkoban Hall |goto Torghast/0 37.23,47.20 < 10 |noway |c |q 61099
-step
-talk Highlord Bolvar Fordragon##164079
-turnin The Search for Baine##61099 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Tell her _"This was carried by one of the Jailer's more powerful guards. Do you know what it does?"_
-Speak with Ve'nari |q 60267/1 |goto The Maw/0 46.91,41.69
-step
-click Domination Lock
-turnin Prison of the Forgotten##60267 |goto Torghast/0 15.96,62.97
-step
-talk Runecarver##164937
-accept Deep Within##60268 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-Ask him _"Who are you? Why are you here?"_
-Learn More About the Prisoner |q 60268/1 |goto 50.17,53.83
-step
-talk Runecarver##164937
-turnin Deep Within##60268 |goto 50.17,53.83
-accept Reawakening##60269 |goto 50.17,53.83
-step
-Return to Torghast |goto Torghast/0 16.09,57.84 < 10 |c |q 60137
-step
-Follow the path |goto The Maw/0 44.56,41.13 < 15 |only if walking
-kill Odalrik##172207
-collect Runecarver's Memory##178561 |q 60269/1 |goto 38.63,28.84
-step
-talk Runecarver##164937
-turnin Reawakening##60269 |goto The Runecarver/0 50.17,53.83
-accept A Damned Pact##60270 |goto 50.17,53.83
-step
-talk Ve'nari##162804
-turnin A Damned Pact##60270 |goto The Maw/0 46.91,41.69
-accept A Grave Chance##60271 |goto 46.91,41.69
-stickystart "Collect_50_Stygia"
-step
-Kill enemies around this area
-|tip Enemies that are on fire will drop Molten Anima.
-collect 5 Molten Anima##178562 |q 60271/2 |goto 37.76,39.29
-step
-label "Collect_50_Stygia"
-Collect #50# Stygia |condition curcount(1767) >= 50 |q 60271
-|tip Stygia is a reward from world quests, daily quests, bonus objectives and rare spawns in The Maw.
-step
-talk Ve'nari##162804
-buy 1 Anima Supricifer##181324 |q 60271/1 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin A Grave Chance##60271 |goto 46.91,41.69
-accept The Weak Link##60272 |goto 46.91,41.69
-step
-talk Runecarver##164937
-Tell him _"I've found a way, but we only have one shot at it. Let's get you free!"_
-Break the Chain |q 60272/1 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-turnin The Weak Link##60272 |goto 50.72,54.13
 step
 Reach Renown Level 5 |condition covenant() == Kyrian and covenantrenown() >= 5
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
+|tip Complete Covenant Sanctum quests.
+|tip They are repeatable weekly quests in your covenant base.
 |tip Use the "Kyrian Daily Quests" guide to accomplish this.
 step
 talk Polemarch Adrestes##160037

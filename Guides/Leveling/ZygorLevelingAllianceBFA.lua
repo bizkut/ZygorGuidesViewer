@@ -20459,7 +20459,7 @@ talk Captain Garrick##154169
 accept Welcome to Stormwind##59583 |goto 73.69,91.29 |or |next "Welcome_To_Stormwind"
 _Or_
 Tell her _"I know my way around Stormwind. <Skip the city tour and choose a Timewalking Campaign.>"_
-accept Adventurers Wanted: Chromie's Call##62567 |goto 73.69,91.29 |or |next "Leveling Guides\\Shadowlands\\Chromie Time"
+accept Adventurers Wanted: Chromie's Call##62567 |goto 73.69,91.29 |or |next "Leveling Guides\\Starter Guides\\Chromie Time"
 step
 label "Welcome_To_Stormwind"
 talk Lindie Springstock##163095
@@ -20892,7 +20892,7 @@ Enter the building |goto 68.83,21.11 < 7 |walk
 talk Taelia##121235
 |tip Inside the building.
 turnin Sanctum of the Sages##47186 |goto  68.17,21.97
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Void Elf Starter",{
 author="support@zygorguides.com",
@@ -20901,7 +20901,7 @@ condition_valid=function() return raceclass('VoidElf') and not raceclass('DeathK
 condition_valid_msg="Void Elf only.",
 condition_suggested=function() return raceclass('VoidElf') and level < 10.5 and not completedq(50305) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20918,7 +20918,7 @@ Find the Hero's Call Board |q 50305/1 |goto 62.25,29.94
 step
 talk Keira Onyxraven##131347
 turnin Stranger in a Strange Land##50305 |goto 62.49,29.73
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Lightforged Draenei Starter",{
 author="support@zygorguides.com",
@@ -20927,7 +20927,7 @@ condition_valid=function() return raceclass('LightforgedDraenei') and not racecl
 condition_valid_msg="Lightforged Draenei only.",
 condition_suggested=function() return raceclass('LightforgedDraenei') and level < 10.5 and not completedq(50313) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20944,7 +20944,7 @@ Find the Hero's Call Board |q 50313/1 |goto 62.25,29.94
 step
 talk Vindicator Minkey##131334
 turnin Stranger in a Strange Land##50313 |goto 62.49,29.73
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Dark Iron Dwarf Starter",{
 author="support@zygorguides.com",
@@ -20953,7 +20953,7 @@ condition_valid=function() return raceclass('DarkIronDwarf') and not raceclass('
 condition_valid_msg="Dark Iron Dwarf only.",
 condition_suggested=function() return raceclass('DarkIronDwarf') and level < 10.5 and not completedq(53500) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -20970,7 +20970,7 @@ Find the Hero's Call Board |q 53500/1 |goto 62.25,29.94
 step
 talk Mudrik Leger##143978
 turnin Stranger in a Strange Land##53500 |goto 62.49,29.73
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Kul Tiran Starter",{
 author="support@zygorguides.com",
@@ -20979,7 +20979,7 @@ condition_valid=function() return raceclass('KulTiran') and not raceclass('Death
 condition_valid_msg="Kul Tiran only.",
 condition_suggested=function() return raceclass('KulTiran') and level < 10.5 and not completedq(55146) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -21002,7 +21002,7 @@ Find the Hero's Call Board |q 55146/1 |goto 62.25,29.94
 step
 talk Provisioner Fray##150947
 turnin Stranger in a Strange Land##55146 |goto 62.49,29.73
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Mechagnome Starter",{
 author="support@zygorguides.com",
@@ -21011,7 +21011,7 @@ condition_valid=function() return raceclass('Mechagnome') and not raceclass('Dea
 condition_valid_msg="Mechagnome only.",
 condition_suggested=function() return raceclass('Mechagnome') and level < 10.5 and not completedq(58147) and not raceclass('DeathKnight') end,
 condition_suggested_exclusive=true,
-next="Leveling Guides\\Shadowlands\\Chromie Time",
+next="Leveling Guides\\Starter Guides\\Chromie Time",
 startlevel=10,
 endlevel=11,
 },[[
@@ -21031,7 +21031,7 @@ Find the Hero's Call Board |q 58147/1 |goto 62.25,29.94
 step
 talk Lulana##160600
 turnin Stranger in a Strange Land##58147 |goto 62.49,29.73
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (10-50)\\Allied Race Death Knight Starter",{
 author="support@zygorguides.com",
@@ -21068,9 +21068,9 @@ Use the Hero's Call Board |q 58902/4 |goto Stormwind City/0 62.91,71.54
 step
 Click the Complete Quest Box:
 turnin Defender of Azeroth##58902
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands\\Chromie Time",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Chromie Time",{
 author="support@zygorguides.com",
 description="\nThis guide will assist you in changing the expansion you will\n"..
 "\nlevel up in by speaking with Chromie.\n",

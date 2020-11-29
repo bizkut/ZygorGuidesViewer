@@ -1299,9 +1299,9 @@ turnin Speaker of the Horde##46931 |goto Dazar'alor/2 41.31,66.65
 step
 talk Paku'ai Rokota##122689
 fpath The Great Seal |goto Dazar'alor/0 51.92,41.20
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands\\Chromie Time",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Chromie Time",{
 author="support@zygorguides.com",
 description="\nThis guide will assist you in changing the expansion you will\n"..
 "\nlevel up in by speaking with Chromie.\n",

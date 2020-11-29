@@ -964,7 +964,7 @@ talk Captain Garrick##154169
 accept Welcome to Stormwind##59583 |goto 73.69,91.29 |or |next "Welcome_To_Stormwind"
 _Or_
 Tell her _"I know my way around Stormwind. <Skip the city tour and choose a Timewalking Campaign.>"_
-accept Adventurers Wanted: Chromie's Call##62567 |goto 73.69,91.29 |or |next "Leveling Guides\\Shadowlands\\Chromie Time"
+accept Adventurers Wanted: Chromie's Call##62567 |goto 73.69,91.29 |or |next "Leveling Guides\\Starter Guides\\Chromie Time"
 step
 label "Welcome_To_Stormwind"
 talk Lindie Springstock##163095
@@ -1397,9 +1397,9 @@ Enter the building |goto 68.83,21.11 < 7 |walk
 talk Taelia##121235
 |tip Inside the building.
 turnin Sanctum of the Sages##47186 |goto  68.17,21.97
-|next Leveling Guides\\Shadowlands\\Chromie Time
+|next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands\\Chromie Time",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Chromie Time",{
 author="support@zygorguides.com",
 description="\nThis guide will assist you in changing the expansion you will\n"..
 "\nlevel up in by speaking with Chromie.\n",

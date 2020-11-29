@@ -47,7 +47,11 @@ data.basenodes.inns = {
 	},
 
 	['Sinfall']={
-		{name="Sinfall",faction="B",npc="Tavian",npcid=166137,x=66.02,y=33.59},			-- Requires Venthyr covenant
+		{name="Sinfall",faction="B",npc="Tavian",npcid=166137,x=66.02,y=33.59},						-- Requires Venthyr covenant
+	},
+
+	['Elysian Hold']={
+		{name="Elysian Hold",faction="B",npc="Caretaker Theo",npcid=174581,x=48.25,y=59.16},				-- Requires Kyrian covenant
 	},
 	
 	
