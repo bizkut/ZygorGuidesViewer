@@ -2388,8 +2388,10 @@ collect Stygic Ore##184585 |q 63072/1 |goto 47.65,81.61
 step
 Enter the cave |goto 30.56,59.24 < 10 |walk
 talk Deceased Broker##175797
-accept Guaranteed Delivery##63040 |goto 30.73,58.35
-|only if questactive(63040)
+accept Guaranteed Delivery##63040 |goto 30.73,58.35 |only if questactive(63040)
+accept Guaranteed Delivery##63038 |goto 30.73,58.35 |only if questactive(63038)
+|only if anyquestactive(63040,63038)
+stickystart "Send_8_Imprisoned_Essences"
 stickystart "Send_3_Tools_of_Constraint"
 stickystart "Send_5_Scrolls_of_Subjugation"
 step
@@ -2418,6 +2420,13 @@ kill Mawsworn Eviscerator##175700 |q 62214/3 |goto 29.76,61.40
 |tip It walks around this area.
 |tip You may need a group for this.
 |only if havequest(62214)
+step
+label "Send_8_Imprisoned_Essences"
+use the Containment Orb##184513
+|tip Use it on Imprisoned Essences.
+|tip They look like brown urns on the ground around this area.
+Send #8# Imprisoned Essences |q 63038/1 |goto 31.56,62.76
+|only if havequest(63038)
 step
 label "Send_3_Tools_of_Constraint"
 use the Containment Orb##184513
@@ -2711,6 +2720,7 @@ turnin Acquisiton: Runeforged Shackles##63047 |goto 46.91,41.69 |only if readyq(
 turnin Acquisition: Crystallized Stygia##63031 |goto 46.91,41.69 |only if readyq(63031) or completedq(63031)
 turnin Torment for the Taking##63062 |goto 46.91,41.69 |only if readyq(63062) or completedq(63062)
 turnin Guaranteed Delivery##63040 |goto 46.91,41.69 |only if readyq(63040) or completedq(63040)
+turnin Guaranteed Delivery##63038 |goto 46.91,41.69 |only if readyq(63038) or completedq(63038)
 turnin Feed Your Soul##63045 |goto 46.91,41.69 |only if readyq(63045) or completedq(63045)
 turnin Power of the Colossus##62234 |goto 46.91,41.69 |only if readyq(62234) or completedq(62234)
 turnin Words of Warding##61765 |goto 46.91,41.69 |only if readyq(61765) or completedq(61765)
@@ -2718,11 +2728,11 @@ turnin What They Know##63069 |goto 46.91,41.69 |only if readyq(63069) or complet
 turnin Acquisition: Stygic Ore##63072 |goto 46.91,41.69 |only if readyq(63072) or completedq(63072)
 turnin Soulless Husks##63206 |goto 46.91,41.69 |only if readyq(63206) or completedq(63206)
 turnin Forces of Perdition##62214 |goto 46.91,41.69 |only if readyq(62214) or completedq(62214)
-|only if readyanyq(60775,60646,60762,61088,61104,60732,61103,60622,61079,61075,63050,63047,63031,63062,63040,63045,62234,61765,63069,63072,63206,62214) or completedanyq(60775,60646,60762,61088,61104,60732,61103,60622,61079,61075,63050,63047,63031,63062,63040,63045,62234,63069,63072,63206,62214)
+|only if readyanyq(60775,60646,60762,61088,61104,60732,61103,60622,61079,61075,63050,63047,63031,63062,63040,63038,63045,62234,61765,63069,63072,63206,62214) or completedanyq(60775,60646,60762,61088,61104,60732,61103,60622,61079,61075,63050,63047,63031,63062,63040,63038,63045,62234,63069,63072,63206,62214)
 step
 You have completed all daily quests in The Maw
 |tip This guide will reset when more become available.
-'|condition not completedanyq(63062,63050,63179,63043,63047,63166,63031,63100,63040,63045,63069,63072) |next "Begin_Dailies"
+'|condition not completedanyq(63062,63050,63179,63043,63047,63166,63031,63100,63040,63038,63045,63069,63072) |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Daily Quests",{
 author="support@zygorguides.com",

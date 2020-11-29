@@ -501,22 +501,25 @@ accept Return to Oribos##62776 |goto Ardenweald/0 49.34,52.36
 step
 talk Tal-Inara##159478
 turnin Return to Oribos##62776 |goto Oribos/0 38.89,69.99
+accept The Last Step##63210 |goto Oribos/0 38.89,69.99
 step
 talk Tal-Inara##159478
 Tell her _"Show me how I can help the Shadowlands."_
 |tip Accept the quest for Revendreth.
 accept Revendreth##62279 |goto Oribos/0 38.88,70.00
+Speak with Tal-Inara to Choose Where to Go |q 63210/1 |goto 38.88,70.00
 step
 talk Tal-Inara##159478
+turnin The Last Step##63210 |goto 38.88,70.00
 turnin Revendreth##62279 |goto 38.88,70.00
-accept Dark Aspirations##62740 |goto 38.88,70.00
 step
-Enter the building |goto Revendreth/0 61.31,59.76 < 7 |c |q 62740
+talk Tal-Inara##159478
+accept Dark Aspirations##63037 |goto 38.88,70.00
 step
-talk Prince Renathal##175056
-|tip Downstairs inside the building.
-turnin Dark Aspirations##62740 |goto Revendreth/0 61.47,60.43
-accept Reinforcing Revendreth##62778 |goto Revendreth/0 61.47,60.43
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin Dark Aspirations##63037 |goto Sinfall/0 51.83,37.56
+accept Reinforcing Revendreth##62778 |goto Sinfall/0 51.83,37.56
 step
 _Complete Objectives in Revendreth:_
 |tip Complete side quests, bonus objectives, world quests, dungeons, and kill rare enemies in Revendreth.
@@ -526,11 +529,10 @@ _Complete Objectives in Revendreth:_
 |tip Fill up the blue bar in the quest tracker area.
 Aid the Venthyr |q 62778/1
 step
-Enter the building |goto Revendreth/0 61.31,59.76 < 7 |walk
 talk Prince Renathal##175056
-|tip Downstairs inside the building.
-turnin Reinforcing Revendreth##62778 |goto Revendreth/0 61.47,60.43
-accept Return to Oribos##62779 |goto Revendreth/0 61.47,60.43
+|tip Inside the building.
+turnin Reinforcing Revendreth##62778 |goto Sinfall/0 51.83,37.56
+accept Return to Oribos##62779 |goto Sinfall/0 51.83,37.56
 step
 talk Tal-Inara##159478
 turnin Return to Oribos##62779 |goto Oribos/0 38.88,70.02
@@ -8132,7 +8134,11 @@ startlevel=50.0,
 endlevel=60.0,
 },[[
 step
-accept The Waning Grove##62775 |goto Ardenweald/0 68.74,25.06
+talk Nolon##162446
+home Tirna Vaal |goto Ardenweald/0 62.56,35.31
+step
+Cross the bridge |goto 65.79,27.83 < 15 |only if walking
+accept The Waning Grove##62775 |goto 67.16,26.58
 |tip You will accept this quest automatically.
 |only if completedq(62716)
 step
@@ -8142,16 +8148,8 @@ talk Heartwood Grove Holdout##157949+
 Tell them _"Evacuate, now!"_
 click Drained Wildseed+
 |tip They look like large round seeds with green tips on the ground at the base of trees around this area.
-Preserve Heartwood Grove |q 62775/1 |goto 68.74,25.06
+Preserve Heartwood Grove |q 62775/1 |goto 68.62,26.21
 |only if havequest(62775) or completedq(62775)
-step
-Cross the bridge |goto 66.79,26.61 < 15 |only if walking
-Follow the path |goto 64.40,34.40 < 20 |only if walking
-talk Brigdin##160440
-accept Forest Disappearances##58161 |goto 64.39,35.18
-step
-talk Nolon##162446
-home Tirna Vaal |goto 62.56,35.31
 step
 talk Guardian Kota##158921
 accept In Need of Gorm Gris##57952 |goto 62.61,36.08
@@ -8159,7 +8157,9 @@ step
 talk Lanra##165164
 fpath Tirna Vaal |goto 63.46,37.56
 step
-Follow the path |goto 64.44,34.34 < 20 |only if walking
+talk Brigdin##160440
+accept Forest Disappearances##58161 |goto 64.39,35.18
+step
 talk Partik##160439
 turnin Forest Disappearances##58161 |goto 70.35,32.60
 accept Cult of Personality##58164 |goto 70.35,32.60
@@ -8380,15 +8380,17 @@ accept Supplies Needed: Amber Grease##57652 |goto 46.92,27.66
 stickystart "Destroy_Gorm_Eggs"
 stickystart "Collect_Giant_Gorm_Gris"
 step
+Enter the cave |goto 45.79,25.40 < 7 |walk
 kill Egg-Tender Tiom##165398 |q 59622/1 |goto 45.53,25.44
-|tip Inside the small cave.
+|tip Inside the cave.
 step
-Enter the cave |goto 44.71,24.12 < 10 |walk
+Enter the cave |goto 44.71,24.12 < 7 |walk
 kill Egg-Tender Erys##165401 |q 59622/3 |goto 44.48,23.83
 |tip Inside the cave.
 step
+Enter the cave |goto 45.54,23.23 < 7 |walk
 kill Egg-Tender Bloome##165400 |q 59622/2 |goto 45.27,23.25
-|tip Inside the small cave.
+|tip Inside the cave.
 step
 label "Destroy_Gorm_Eggs"
 click Gorm Egg+
@@ -8575,7 +8577,7 @@ step
 label "Disarm_Booby_Trapped_Tools"
 Disarm #6# Booby Trapped Tools |q 57867/1 |goto 57.84,26.89
 |tip You need specific buffs to disable certain traps. When you find the items that give buffs, before clicking them, plan out the item you want to click with the buff.
-|tip The buffs don't last long, only 2 minutes.
+|tip The buffs last for 10 minutes.
 |tip
 |tip Click Gossamer Threads (small blue spools of thread) to get the Gossamer Laces buff.  Click Suspiciously Untouched Harps (light colored wooden statues with strings in them) while the buff is active.
 |tip
@@ -8594,22 +8596,15 @@ kill Buzzkill##165404
 |tip He flies low to the ground around this area.
 collect Buzzkill's Stinger##176760 |q 59623/1 |goto 50.33,26.29
 step
+Follow the path up |goto 49.66,31.56 < 20 |only if walking
 talk Lady of the Falls##158345
 turnin Ages-Echoing Wisdom##57865 |goto 51.11,33.88
-turnin Idle Hands##57866 |goto 51.11,33.88
 turnin The Sweat of Our Brow##57867 |goto 51.11,33.88
+turnin Idle Hands##57866 |goto 51.11,33.88
 turnin Outplayed##57871 |goto 51.11,33.88
 step
 talk Gormsmith Cavina##165382
 turnin What a Buzzkill##59623 |goto 51.58,33.99
-step
-Follow the path up |goto 45.85,33.51 < 20 |only if walking
-Follow the road |goto 44.38,40.55 < 30 |only if walking
-talk Crysta Flutterwing##159905
-fpath Dreamsong Fenn |goto 36.77,36.72
-step
-talk Tishereenelee##167265
-fpath Root-Home |goto 35.13,51.71
 step
 Follow the road |goto 64.31,37.68 < 15 |only if walking
 accept Wild Hunt Offensive##60840 |goto 62.79,44.67
@@ -8670,9 +8665,15 @@ click Faerie Belongings+
 |tip It looks like a small basket in the hanging fae nest.
 collect 3 Primrose's Pyrotechnic Powder##174078 |goto 53.54,60.80 |q 58266
 step
+click Basket of Enchanted Wings
+Equip the Enchanted Wings |havebuff spell:323695 |goto 52.67,57.53 |q 58266
+step
 click Faerie Belongings+
 |tip It looks like a small basket in the hanging fae nest.
 collect 4 Primrose's Pyrotechnic Powder##174078 |goto 53.52,60.93 |q 58266
+step
+click Basket of Enchanted Wings
+Equip the Enchanted Wings |havebuff spell:323695 |goto 52.67,57.53 |q 58266
 step
 click Faerie Belongings+
 |tip It looks like a small basket in the hanging fae nest.
@@ -8736,89 +8737,40 @@ Kill enemies around this area
 Slay #15# Ritualists |q 58265/1 |goto 52.65,60.18
 step
 talk Guardian Molan##160929
-turnin Beneath the Mask##58267 |goto 60.68,51.34
 turnin Blooming Villains##58265 |goto 60.68,51.34
+turnin Beneath the Mask##58267 |goto 60.68,51.34
+step
+Follow the road |goto 62.49,55.90 < 30 |only if walking
+Follow the road |goto 62.49,55.90 < 30 |only if walking
+accept The Fallen Tree##62720 |goto 65.73,55.88
+|tip You will accept this quest automatically.
+|only if completedq(62716)
+step
+Kill enemies around this area
+click Cage+
+|tip They look like wooden stick cages on the ground around this area.
+click Abandoned Memento+
+|tip They look like various small objects on the ground around this area.
+click Drust Rune+
+|tip They look like patches of black symbols on the ground around this area.
+|tip They will appear on your minimap as yellow dots.
+Reclaim Tirna Noch |q 62720/1 |goto 69.57,55.18
+|only if havequest(62720) or completedq(62720)
 step
 talk Flwngyrr##168032
 turnin Forest Refugees##62807 |goto 48.38,50.46
 accept Tirna Scithe: A Warning Silence##62371 |goto 48.38,50.46
 step
-talk Aithlyn##158556
-accept Silk Shortage##57661 |goto 48.48,50.41
-step
-Follow the road |goto 51.14,58.81 < 20 |only if walking
+Follow the road |goto 48.44,54.57 < 20 |only if walking
+Continue following the road |goto 51.14,58.81 < 20 |only if walking
 Follow the path |goto 50.57,67.73 < 30 |only if walking
 talk V'kerra##167247
 fpath Claw's Edge |goto 51.30,71.31
 step
-talk Caretaker Lillythistle##159270
-|tip Inside the cave.
-turnin Silk Shortage##57661 |goto Ardenweald/0 38.98,29.93
-accept Tough as Silk##60061 |goto Ardenweald/0 38.98,29.93
-stickystart "Preserve_The_Silk_Production"
-step
-click Broken Harp
-accept The Shattered Harp##60062 |goto 38.11,28.72
-step
-Kill Blackthorn enemies around this area
-collect 3 Harp Piece##178138 |q 60062/1 |goto 36.86,28.47
-step
-Cross the bridge |goto 36.82,27.65 < 15 |only if walking
-talk Artisan Rees##167047
-turnin The Shattered Harp##60062 |goto 37.05,29.67
-step
-Watch the dialogue
-talk Artisan Rees##167047
-accept A Song for Silkstriders##60063 |goto 37.05,29.67
-accept Save Ol' Gertie##60064 |goto 37.05,29.67
-step
-use the Silkstrider Harp##178143
-click Raw Silkstrider Silk
-|tip It appears on the ground nearby.
-Gather Silk from the Silkstrider |q 60063/1 |goto 37.58,27.70 |count 1
-step
-Follow the path up |goto 38.68,27.40 < 15 |only if walking
-use the Silkstrider Harp##178143
-click Raw Silkstrider Silk
-|tip It appears on the ground nearby.
-Gather Silk from the Silkstrider |q 60063/1 |goto 38.65,26.38 |count 2
-step
-kill Noisul of Many Faces##167089 |q 60064/1 |goto 36.31,25.96
-|tip He walks around this area.
-step
-talk Gertie Jr.##159388
-turnin Save Ol' Gertie##60064 |goto 37.29,25.98
-accept Thread of Hope##60065 |goto 37.29,25.98
-step
-use the Silkstrider Harp##178143
-click Raw Silkstrider Silk
-|tip It appears on the ground nearby.
-Gather Silk from the Silkstrider |q 60063/1 |goto 35.02,28.81 |count 3
-step
-use the Silkstrider Harp##178143
-click Raw Silkstrider Silk
-|tip It appears on the ground nearby.
-Gather Silk from the Silkstrider |q 60063/1 |goto 35.03,29.58 |count 4
-step
-label "Preserve_The_Silk_Production"
-Kill enemies around this area
-clicknpc Silkstrider Caretaker##159424+
-|tip They look like fae stuck in small purple tornados on the ground around this area.
-Preserve the Silk Production |q 60061/1 |goto 36.86,28.47
-step
-Enter the cave |goto 39.16,30.07 < 15 |walk
-talk Artisan Rees##167047
-|tip Inside the cave.
-turnin A Song for Silkstriders##60063 |goto 39.04,29.87
-step
-talk Caretaker Lillythistle##159270
-|tip Inside the cave.
-turnin Tough as Silk##60061 |goto 38.98,29.93
-turnin Thread of Hope##60065 |goto 38.98,29.93
-accept Silk for Ardenweald##60066 |goto 38.98,29.93
-step
-talk Aithlyn##158556
-turnin Silk for Ardenweald##60066 |goto 48.48,50.42
+Cross the bridge |goto 47.69,50.59 < 15 |only if walking
+Follow the road |goto 39.79,49.92 < 40 |only if walking
+talk Tishereenelee##167265
+fpath Root-Home |goto 35.13,51.71
 |next Leveling Guides\\Shadowlands (50-60)\\Shadowlands Intro & Main Story Questline
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Revendreth (Threads of Fate)",{
