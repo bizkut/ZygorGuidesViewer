@@ -33892,6 +33892,8 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [175707]="Mawsworn Instructor|",
 [175701]="Mawsworn Myrmidon|",
 [174550]="Myskia|",
+[174417]="Lyri|",
+[174383]="Shifting Dread|",
 
 
 --[]="|",

@@ -3801,6 +3801,7 @@ accept Go Beyond!##62417 |goto 50.75,53.29 |only if questpossible() and covenant
 accept Go Beyond!##62466 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
 accept Go Beyond!##60188 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
 accept Go Beyond!##62263 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
+accept Go Beyond!##62465 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
 Accept the Daily Quest 1 |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 1 |or
 Accept the Daily Quests 2 |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 2 |or 2
 Accept the Daily Quests 3 |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 3 |or 3
@@ -4100,6 +4101,36 @@ Use the _"Traverse to The Ring"_ ability |goto 54.21,93.63
 Return to The Ring |goto Fungal Terminus/0 65.75,73.60 < 100 |c |noway |q 62263
 |only if havequest(62263) or completedq(62263)
 step
+Use the _"Traverse to the Unknown"_ ability
+|tip It appears as a button on-screen.
+Travel to the Great Unknown |q 62465/1 |goto Fungal Terminus/0 38.81,55.29
+|only if havequest(62465) or completedq(62465)
+step
+talk Lyri##174417
+Ask her _"How can I help?"_
+Speak with Lyri |q 62465/2 |goto Ardenweald/0 50.46,7.54
+|only if havequest(62465) or completedq(62465)
+stickystart "Collect_6_Pilfered_Materials"
+step
+kill Shifting Dread##174383
+collect Artisan's Implement##183792 |q 62465/4 |goto 48.92,9.25
+|only if havequest(62465) or completedq(62465)
+step
+label "Collect_6_Pilfered_Materials"
+Kill Stranded enemies around this area
+collect 6 Pilfered Materials##183791 |q 62465/3 |goto 49.10,8.32
+|only if havequest(62465) or completedq(62465)
+step
+talk Lyri##174417
+Tell her _"Here are your things."_
+Return with Lyri |q 62465/5 |goto 50.46,7.54
+|only if havequest(62465) or completedq(62465)
+step
+Use the _"Traverse to The Ring"_ ability |goto 50.90,7.44
+|tip It appears as a button on-screen.
+Return to The Ring |goto Fungal Terminus/0 65.75,73.60 < 100 |c |noway |q 62465
+|only if havequest(62465) or completedq(62465)
+step
 talk Marasmius##167455
 turnin Hyphae Patrol: Eventide Grove##62614 |goto Fungal Terminus/0 50.75,53.29 |only if readyq(62614) or completedq(62614)
 turnin Hyphae Patrol: Gossamer Cliffs##62615 |goto 50.75,53.29 |only if readyq(62615) or completedq(62615)
@@ -4119,6 +4150,7 @@ turnin Go Beyond!##62417 |goto 50.75,53.29 |only if readyq(62417) or completedq(
 turnin Go Beyond!##62466 |goto 50.75,53.29 |only if readyq(62466) or completedq(62466)
 turnin Go Beyond!##60188 |goto 50.75,53.29 |only if readyq(60188) or completedq(60188)
 turnin Go Beyond!##62263 |goto 50.75,53.29 |only if readyq(62263) or completedq(62263)
+turnin Go Beyond!##62465 |goto 50.75,53.29 |only if readyq(62465) or completedq(62465)
 |only if readyanyq(62614,62615,62610,60153,62296,62382,62453,62611,62607,60175,62608,62606,62459,62400,62417,62466,60188,62263,62465) or completedanyq(62614,62615,62610,60153,62296,62382,62453,62611,62607,60175,62608,62606,62459,62400,62417,62466,60188,62263,62465)
 step
 You have completed all Fungal Terminus daily quests

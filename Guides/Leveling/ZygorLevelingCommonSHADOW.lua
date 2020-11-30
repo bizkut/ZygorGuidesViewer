@@ -528,14 +528,10 @@ _Complete Objectives in Revendreth:_
 |tip Use the dungeon guides to complete dungeons.
 |tip Fill up the blue bar in the quest tracker area.
 Aid the Venthyr |q 62778/1
-step
+Enter the building |goto 61.31,59.76 < 7 |walk
 talk Prince Renathal##175056
-|tip Inside the building.
-turnin Reinforcing Revendreth##62778 |goto Sinfall/0 51.83,37.56
-accept Return to Oribos##62779 |goto Sinfall/0 51.83,37.56
-step
-talk Tal-Inara##159478
-turnin Return to Oribos##62779 |goto Oribos/0 38.88,70.02
+|tip Downstairs inside the building.
+turnin Reinforcing Revendreth##62778 |goto 61.47,60.43
 step
 Reach Level 60 |ding 60
 |tip Complete world quests, dungeons, and kill rare enemies in Shadowlands.
@@ -5396,7 +5392,7 @@ step
 kill Charthox##157954 |q 57481/4 |goto 75.45,76.51
 |tip Use the abilities on your action bar.
 step
-Return to Rendle |goto 72.95,73.05 < 30 |c |q 57481 |notravel
+Return to Rendle |outvehicle |goto 73.02,73.00 |q 57481 |notravel
 |tip You will run automatically.
 step
 talk Rendle##157846
@@ -5485,12 +5481,12 @@ step
 click Droplets of Anima
 Collect Tithe Anima |q 60176/1 |goto 63.15,62.90 |count 15
 step
-talk Bela##167918
+talk Soul of Keltesh##167849
 |tip Outside, behind the building.
 Choose _<Ask about suspicious activity>_
 Watch the dialogue
 Kill the enemies that attack in waves
-Find the Soul of Keltesh Clue |q 60177/3 |goto 62.69,64.72
+Find the Soul of Keltesh Clue |q 60177/3 |goto 62.57,64.78
 step
 click Droplets of Anima
 Collect Tithe Anima |q 60176/1 |goto 62.78,60.92 |count 20
@@ -8849,7 +8845,7 @@ step
 kill Charthox##157954 |q 57481/4 |goto 75.45,76.51
 |tip Use the abilities on your action bar.
 step
-Return to Rendle |goto 72.95,73.05 < 30 |c |q 57481 |notravel
+Return to Rendle |outvehicle |goto 73.02,73.00 |q 57481 |notravel
 |tip You will run automatically.
 step
 talk Rendle##157846
@@ -8861,7 +8857,8 @@ talk Tessle the Snitch##168618
 accept The Endmire##60480 |goto 65.12,63.53
 step
 accept Parasites of Reality##62780 |goto 65.12,63.53
-|tip You will automatically accept this quest.
+|tip You will accept this quest automatically.
+|only if completedq(62716)
 stickystart "Eliminate_The_Endmire_Horrors"
 step
 click Stolen Infused Ruby
@@ -8896,13 +8893,14 @@ clicknpc Mired Soul##175270+
 click Amalgamation Conduit+
 |tip They look like large jagged hollow tree stumps with a large blue orb sitting in them on the ground around this area.
 Eliminate the Endmire Horrors |q 62780/1 |goto 67.32,60.24
+|only if havequest(62780) or completedq(62780)
 step
-Ride the elevator up |goto 70.12,57.89 < 15 |only if walking
-accept Charlatans of Ceremony##62784 |goto 70.13,56.80
+accept Charlatans of Ceremony##62784 |goto 68.83,57.67
 |tip You will accept this quest automatically.
 |only if completedq(62716)
 stickystart "Purge_The_Depravity"
 step
+Ride the elevator up |goto 70.12,57.89 < 15 |only if walking
 talk Chiselgrump##168698
 accept It Used to Be Quiet Here##60487 |goto 69.53,53.38
 step
@@ -9066,7 +9064,7 @@ accept Hunting an Inquisitor##57929 |goto 72.99,51.99
 step
 Run up the stairs |goto 75.32,50.94 < 15 |only if walking
 Use the _"Read Inquisitor Traian's Sinstone"_ ability
-|tip Use it on Inquisitor Traian.
+|tip It appears as a button on the screen.
 kill Inquisitor Traian##159151 |q 57929/1 |goto 76.19,52.11
 step
 Enter the building |goto 72.98,52.47 < 15 |walk
@@ -9081,30 +9079,10 @@ Follow the path |goto 62.13,37.21 < 20 |only if walking
 talk Courier Tarehaar##158517
 fpath Old Gate |goto 61.22,38.78
 step
-click Wanted: Lord Darion
-accept WANTED: Lord Darion##60280 |goto 60.87,40.06
-step
-click Wanted: Duke Anton
-accept WANTED: Duke Anton##60278 |goto 60.70,40.17
-step
-Run up the stairs |goto 58.19,40.18 < 15 |only if walking
-Follow the path |goto 57.05,37.24 < 30 |only if walking
-Enter the building |goto 55.23,34.69 < 7 |walk
-kill Lord Darion##161620 |q 60280/1 |goto 54.55,34.10
-|tip Downstairs inside the building.
-|tip Click the Door to walk through it.
-step
-Follow the path |goto 53.51,39.03 < 20 |only if walking
-kill Duke Anton##161647 |q 60278/1 |goto 53.07,38.23
-step
 Run up the stairs |goto 53.26,35.64 < 15 |only if walking
 Follow the path down |goto 52.56,30.14 < 30 |only if walking
 talk Courier Skraal##158564
 fpath Menagerie of the Master |goto 54.22,25.68
-step
-talk Gustav##168121
-turnin WANTED: Duke Anton##60278 |goto 60.78,40.21
-turnin WANTED: Lord Darion##60280 |goto 60.78,40.21
 step
 Follow the road |goto 67.68,79.46 < 20 |only if walking
 click Join the Rebellion!
@@ -9128,23 +9106,22 @@ talk Mistress Mihaela##156822
 accept Bring Out Your Tithe##60176 |goto 61.31,63.78
 step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 62.26,62.13 |count 5
-step
-talk Lajos##167489
-accept Reason for the Treason##60177 |goto 62.22,61.36
+Collect Tithe Anima |q 60176/1 |goto 62.51,63.36 |count 5
 step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 62.02,61.62 |count 10
+Collect Tithe Anima |q 60176/1 |goto 62.29,62.10 |count 10
+step		talk 167489
+accept Reason for the Treason##60177 |goto 62.22,61.36
 step
 click Droplets of Anima
 Collect Tithe Anima |q 60176/1 |goto 63.15,62.90 |count 15
 step
-talk Bela##167918
+talk Soul of Keltesh##167849
 |tip Outside, behind the building.
 Choose _<Ask about suspicious activity>_
 Watch the dialogue
 Kill the enemies that attack in waves
-Find the Soul of Keltesh Clue |q 60177/3 |goto 62.69,64.72
+Find the Soul of Keltesh Clue |q 60177/3 |goto 62.57,64.78
 step
 click Droplets of Anima
 Collect Tithe Anima |q 60176/1 |goto 62.78,60.92 |count 20
@@ -9159,31 +9136,45 @@ Watch the dialogue
 click Rubbish Pile
 Find the Globknob Clue |q 60177/2 |goto 63.71,61.10
 step
+Enter the building |goto 63.38,60.88 < 7 |walk
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 62.20,59.56 |count 25
+|tip Inside the building.
+Collect Tithe Anima |q 60176/1 |goto 63.51,60.82 |count 25
+step
+click Droplets of Anima
+Collect Tithe Anima |q 60176/1 |goto 62.20,59.56 |count 30
 step
 talk Darkhaven Villager##167746
 Choose _<Request tithe>_
-Collect Tithe Anima |q 60176/1 |goto 61.90,59.74 |count 55
+Collect Tithe Anima |q 60176/1 |goto 61.90,59.74 |count 60
 step
 click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 61.42,59.23 |count 60
+Collect Tithe Anima |q 60176/1 |goto 61.42,59.22 |count 65
+step
+click Droplets of Anima
+Collect Tithe Anima |q 60176/1 |goto 60.80,60.23 |count 70
+step
+talk Lord Chamberlain##156374
+turnin A Plea to the Harvesters##58654 |goto 60.61,60.86
+step
+talk General Kaal##155541
+accept The Master Awaits##57178 |goto 60.45,60.91
 step
 talk Courier Rokalai##156295
 Choose _<Ask about suspicious activity>_
 Watch the dialogue
 Find the Courier Rokalai Clue |q 60177/1 |goto 60.50,60.61
 step
-click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 60.46,60.24 |count 65
-step
 talk Darkhaven Villager##167717
 Choose _<Request tithe>_
-Collect Tithe Anima |q 60176/1 |goto 61.35,61.19 |count 80
+Collect Tithe Anima |q 60176/1 |goto 61.36,61.20 |count 85
+step
+click Droplets of Anima
+Collect Tithe Anima |q 60176/1 |goto 61.78,61.66 |count 90
 step
 talk Darkhaven Villager##167744
 Choose _<Request tithe>_
-Collect Tithe Anima |q 60176/1 |goto 61.60,62.15 |count 95
+Collect Tithe Anima |q 60176/1 |goto 61.60,62.15 |count 100
 step
 talk Lajos##167489
 turnin Reason for the Treason##60177 |goto 62.21,61.36
@@ -9192,9 +9183,6 @@ step
 talk Ilka##168237
 Choose _<Present Lajos' invitation>_
 Invite Ilka |q 60178/2 |goto 63.25,60.34
-step
-click Droplets of Anima
-Collect Tithe Anima |q 60176/1 |goto 63.50,60.44 |count 100
 step
 Enter the building |goto 62.26,63.58 < 7 |walk
 talk Samu##168238
@@ -9348,7 +9336,7 @@ clicknpc Hulking Stoneborn##166825
 |tip Upstairs, on the balcony of the building.
 Fly with the Hulking Stoneborn |invehicle |goto 60.10,80.73 |q 58936 |future
 step
-Return to Safety |goto 61.82,69.42 < 20 |c |q 58936 |future |notravel
+Return to Safety |outvehicle |goto 61.82,69.42 |q 58936 |future |notravel
 step
 Follow the road |goto 58.89,72.99 < 30 |only if walking
 click Bounty: Beast Control
@@ -9372,8 +9360,9 @@ talk Huntmaster Constantin##156384
 accept Hunting Trophies##60514 |goto 48.50,68.44
 accept Abel's Fate##58996 |goto 48.50,68.44
 step
-accept Beast Control##58936 |goto 47.08,63.66
+accept The Banewood##62782 |goto 47.08,63.66
 |tip You will automatically accept this quest.
+|only if completedq(62716)
 stickystart "Clear_The_Hunting_Grounds"
 stickystart "Collect_Pristine_Deathwalker_Paws"
 stickystart "Collect_Prized_Fearspinner_Fangs"
@@ -9400,6 +9389,7 @@ click Hopebreaker Snare+
 click Soulwatcher Post+
 |tip They look like wooden spikes with demon dogs chained to them on the ground around this area.
 Clear the Hunting Grounds |q 62782/1 |goto 47.08,63.66
+|only if havequest(62782) or completedq(62782)
 step
 talk Huntmaster Constantin##156384
 |tip Outside.
@@ -9414,12 +9404,14 @@ turnin Abel's Fate##58996 |goto 48.51,68.44
 step
 Cross the bridge |goto 47.55,72.44 < 20 |only if walking
 accept Stalking Fear##62783 |goto 42.97,74.23
-|tip You will automatically accept this quest.
+|tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 click Soulbreaker Trap+
 |tip They look like dark metal circle traps with red coloring on the ground around this area.
 Eliminate the Dredhollow Threats |q 62783/1 |goto 41.45,77.07
+|only if havequest(62783) or completedq(62783)
 step
 Cross the bridge |goto 42.82,71.21 < 20 |only if walking
 Follow the path |goto 36.66,57.08 < 20 |only if walking
@@ -9469,11 +9461,12 @@ Release Sabina |q 60470/1 |goto 35.09,53.88
 step
 kill Sabina##168525 |q 60470/2 |goto 35.07,53.88
 step
-Click the Complete Quest Box:
+_Click the Complete Quest Box:_
 turnin Setting Sabina Free##60470
 step
 accept Ash You Like It##62781 |goto 35.74,58.68
-|tip You will automatically accept this quest.
+|tip You will accept this quest automatically.
+|only if completedq(62716)
 step
 Kill enemies around this area
 clicknpc Desiccation Refugee##175040+
@@ -9485,14 +9478,12 @@ Use the _"Throw Ash"_ ability
 |tip They look like tornados on the ground around this area.
 |tip It appears as a button on the screen after you click a Bottle of Settling Ash.
 Dessimate the Desiccation |q 62781/1 |goto 35.74,58.68
+|only if havequest(62781) or completedq(62781)
 step
 Follow the path up |goto 34.14,52.98 < 10 |only if walking
 talk Delia##166089
 |tip Inside the building.
 home Sanctuary of the Mad |goto 31.19,46.63
-step
-click Wanted: Enforcer Kristof
-accept WANTED: Enforcer Kristof##60275 |goto 30.68,48.99
 step
 click Wanted: Summoner Marcelis
 accept WANTED: Summoner Marcelis##60276 |goto 30.87,49.04
@@ -9580,11 +9571,6 @@ click Mirror Trap+
 |tip There are 3 of them surrounding the Blistering Outcast.
 Free the Blistering Outcast |q 57533/1 |goto 22.51,52.16 |count 5
 step
-Follow the path up |goto 23.78,53.06 < 20 |only if walking
-Enter the building |goto 22.76,55.40 < 7 |walk
-kill Enforcer Kristof##168118 |q 60275/1 |goto 22.88,55.84
-|tip Inside the building.
-step
 label "Kill_Ashen_Ravagers"
 kill 10 Ashen Ravager##164524 |q 57534/1 |goto 23.21,49.46
 step
@@ -9618,22 +9604,18 @@ turnin Escaping the Master##57535 |goto 24.25,49.41
 accept Mirror Making, Not Breaking##57536 |goto 24.25,49.41
 step
 Watch the dialogue
-Follow Laurent and Simone |q 57536/1 |goto 24.80,50.26
+Follow Laurent and Simone |q 57536/1 |goto 24.81,50.31
 step
 talk Laurent##164420
 Tell him _"I am ready."_
-Speak to Laurent |q 57536/2 |goto 24.80,50.26
+Speak to Laurent |q 57536/2 |goto 24.81,50.31
 step
 Kill the enemies that attack in waves
 |tip Fill up the blue bar in the quest tracker area.
 Defend Laurent and Simone |q 57536/3 |goto 24.73,50.38
 step
 talk Laurent##158505
-turnin Mirror Making, Not Breaking##57536 |goto 24.80,50.26
-step
-talk Dispatcher Raluca##168120
-|tip Outside.
-turnin WANTED: Enforcer Kristof##60275 |goto 30.72,49.12
+turnin Mirror Making, Not Breaking##57536 |goto 24.81,50.31
 step
 Ride the elevator up |goto 30.34,47.34 < 15 |only if walking
 Run up the stairs |goto 32.75,44.10 < 15 |only if walking
@@ -18539,9 +18521,10 @@ Complete the "Choosing Your Purpose" Quest in Oribos |complete completedanyq(578
 step
 talk Tal-Inara##159478
 accept Report to Draven##63215 |goto Oribos/0 38.90,69.98
+|only if not havequest(59314) or completedq(59314)
 step
 talk General Draven##171589
-turnin Report to Draven##63215 |goto Oribos/0 44.88,68.86
+turnin Report to Draven##63215 |goto Oribos/0 44.88,68.86 |only if not havequest(59314) or completedq(59314)
 accept Sinfall##59314 |goto Oribos/0 44.88,68.86
 step
 Ride the elevator up |goto Revendreth/0 30.33,47.33 < 10 |only if walking
