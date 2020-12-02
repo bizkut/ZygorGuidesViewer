@@ -15,7 +15,6 @@ next="Leveling Guides\\Shadowlands\\Chromie Time",
 startlevel=8,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk The Lich King##25462
 accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave/0 51.34,35.18
@@ -670,7 +669,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Azuremyst Isle (1-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Megelon##16475 |goto Ammen Vale/0 61.2,29.5
 accept You Survived!##9279
@@ -850,7 +848,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Dun Morogh (1-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Joren Ironstock##37081
 accept Hold the Line!##24469 |goto Coldridge Valley 67.1,41.3
@@ -1046,7 +1043,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Dun Morogh (1-50)",
 startlevel=1,
 endlevel=5
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 next "normalstart" |only Gnome
 next "oddstart" |only if not Gnome
@@ -1307,7 +1303,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Elwynn Forest (1-50)",
 startlevel=1,
 endlevel=5
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Marshal McBride##197
 accept Beating them Back!##28757 |goto Northshire/0 33.6,53.0 |only Human Mage
@@ -1517,7 +1512,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Darkshore (5-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Ilthalaine##2079
 accept The Balance of Nature##28713 |goto Shadowglen/0 45.6,74.6
@@ -2062,7 +2056,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Darkshore (5-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Prince Liam Greymane##34850
 accept Lockdown!##14078 |goto Gilneas City/0 59.14,23.88
@@ -2908,7 +2901,6 @@ condition_suggested=function() return level >= 1 and level <= 5 and not complete
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Ragnar Thunderbrew##1267
 accept Beer Basted Boar Ribs##384 |goto Dun Morogh/0 53.93,50.68
@@ -3333,7 +3325,6 @@ condition_suggested=function() return level >= 1 and level <= 5 and not complete
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 Follow the path |goto Northshire/0 29.30,73.25 < 15 |only if walking
 talk Falkhaan Isenstrider##6774
@@ -3681,7 +3672,6 @@ condition_suggested=function() return level >= 5 and level <= 10 and not complet
 startlevel=5,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Gryth Thurden##1573 |goto Ironforge/0 55.50,47.74 |n
 Tell him _"Mountaineer Barleybrew said you could help me get to Loch Modan."_
@@ -4314,7 +4304,6 @@ condition_suggested=function() return level >= 5 and level <= 10 and not complet
 startlevel=5,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 click Hero's Call Board##250720
 accept Hero's Call: Westfall!##28562 |goto Stormwind City/0 62.9,71.5
@@ -4768,7 +4757,6 @@ condition_suggested=function() return level >= 7 and level <= 10 and not complet
 startlevel=7,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 Follow the road |goto Elwynn Forest/0 85.25,74.02 < 30 |only if walking
 Continue following the road |goto Elwynn Forest/0 93.72,72.23 < 20 |only if walking
@@ -12848,7 +12836,6 @@ condition_suggested=function() return level >= 1 and level <= 5 and not complete
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 Follow the path |goto Ammen Vale/0 49.16,51.75 < 20 |only if walking
 Continue following the path |goto Ammen Vale/0 39.21,55.71 < 20 |only if walking
@@ -13379,7 +13366,6 @@ condition_suggested=function() return level >= 1 and level <= 5 and not complete
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Torallius the Pack Handler##17584
 accept Elekks Are Serious Business##9625 |goto The Exodar/0 81.51,51.46
@@ -14193,7 +14179,6 @@ condition_suggested=function() return level >= 5 and level <= 10 and not complet
 startlevel=5,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 stickystart "Time_Travel_On"
 step
 talk Dentaria Silverglade##32973
@@ -15264,7 +15249,6 @@ condition_suggested=function() return level >= 7 and level <= 10 and not complet
 startlevel=7,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 Follow the road |goto Darkshore/0 43.36,75.68 < 20 |only if walking
 Continue following the road |goto Darkshore/0 43.15,80.31 < 20 |only if walking

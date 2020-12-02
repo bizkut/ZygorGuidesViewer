@@ -1010,6 +1010,7 @@ end
 
 function Sync:Send(message,...)
 	if not message then return end
+	if not self:IsEnabled() then return end
 	self:Debug("|cffffaa00SND|r: %s",message)
 	local result = C_ChatInfo.SendAddonMessage(PREFIX,message,"PARTY")
 	if ... then return self:Send(...) end

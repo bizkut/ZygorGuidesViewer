@@ -1316,6 +1316,20 @@ function IL.Explain(itemlink)
 	})
 end	
 
+function IL.GetChatLink(itemlink)
+	local name = ZGV:GetItemInfo(itemlink)
+
+	if not name then
+		if IL.ChatTimer then ZGV:CancelTimer(IL.ChatTimer) end
+		IL.ChatTimer = ZGV:ScheduleTimer(function() 
+			IL.GetChatLink(itemlink)
+		end, 1)
+		return
+	end
+
+	DEFAULT_CHAT_FRAME:AddMessage("\124cfffe6100\124H"..itemlink.."\124h["..name.."]\124h\124r");
+end
+
 
 -- TESTING:
 function IL._test()

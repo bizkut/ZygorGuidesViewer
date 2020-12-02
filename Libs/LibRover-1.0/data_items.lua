@@ -172,5 +172,5 @@ data.portkeys = { -- smile if you're a muggle
 	--- SHADOWLANDS ---
 	-------------------
 	-- Cypher of Relocation
-		{item=180817, destination="The Maw/0 46.22,41.25", cost=60, cooldown=1200, cond=function() local m=ZGV.CurrentMapID return m==1543 end},
+		{item=180817, destination="The Maw/0 46.22,41.25", cost=30, cooldown=1200, cond=function() local m=ZGV.CurrentMapID return m==1543 end},
 }

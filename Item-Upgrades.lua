@@ -765,7 +765,7 @@ function Upgrades:ProcessPossibleUpgrades()
 		if ZGV.db.profile.autogearauto then
 			Upgrades:ShowEquipmentChangeNotification(process_slot)
 		else
-			local minimize = ZGV.NotificationCenter:EntryExists(self.EquipPopup:GetName())
+			local minimize = ZGV.NotificationCenter:EntryExists("ZygorItemPopup")
 			Upgrades:ShowEquipmentChangePopup(process_slot)
 			if minimize then self.EquipPopup.private:Minimize(self.EquipPopup) end
 		end
@@ -809,7 +809,7 @@ function Upgrades:ShowEquipmentChangeNotification(slot)
 
 		local onClick,priority,poptime,quiet
 		ZGV.NotificationCenter:AddEntry(
-			new_item.itemlink,
+			"ZygorItemPopup",
 			L['notifcenter_gear_title'],
 			L['notifcenter_gear_equipped']:format(new_item.itemlinkfull,G[new_item.type]),
 			texture,
@@ -1008,6 +1008,7 @@ function Upgrades:CreatePopup()
 	F.OnAccept = function(self)
 		self.selfHidden = true
 		Upgrades:Equip(self.n_item) --equip it!
+		ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
 	end
 
 	F.OnDecline = function(self)
@@ -1021,6 +1022,7 @@ function Upgrades:CreatePopup()
 
 		-- Send it to BadUpgrades because they don't want it suggested again.
 		Upgrades:SetBadUpgrade(self.n_item.itemlink,self.n_item.slot)
+		ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
 	end
 
 	F.OnEscape = function(self)
@@ -1185,7 +1187,7 @@ function Upgrades:ShowGearReport()
 end
 
 function Upgrades:ShowEquipmentChangePopup(slot)
-	ZGV.NotificationCenter:RemoveEntry()
+	ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
 
 	if not slot then return nil,"no slot" end
 	local n_item = Upgrades.UpgradeQueue[slot]

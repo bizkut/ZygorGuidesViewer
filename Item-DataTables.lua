@@ -7,25 +7,30 @@ ZGV.ItemScore = ItemScore
 -- Only stats defined in this table are valid. Use entry in blizz when filling rule sets
 
 ItemScore.Keywords = {
-	[1]  = {blizz="AGILITY", zgvdisplay="Agility", pawn="Agility"},
-	[2]  = {blizz="ATTACK_POWER", zgvdisplay="Attack Power", pawn="Ap"},
-	[3]  = {blizz="ARMOR", zgvdisplay="Armor", pawn="Armor"}, -- base armor on gear
-	[4]  = {blizz="AVOIDANCE", zgvdisplay="Avoidance", pawn="Avoidance"},
-	[5]  = {blizz="CRIT", zgvdisplay="Crit", pawn="CritRating"},
-	[6]  = {blizz="DAMAGE_PER_SECOND", zgvdisplay="Dps", pawn="Dps"},
-	[7]  = {blizz="HASTE", zgvdisplay="Haste", pawn="HasteRating"},
-	[8]  = {blizz="STURDINESS", zgvdisplay="Indestructible", pawn="Indestructible"},
-	[9]  = {blizz="INTELLECT", zgvdisplay="Intellect", pawn="Intellect"},
-	[10] = {blizz="LIFESTEAL", zgvdisplay="Leech", pawn="Leech"},
-	[11] = {blizz="MASTERY", zgvdisplay="Mastery", pawn="MasteryRating"},
-	[12] = {blizz="SPEED", zgvdisplay="Movement Speed", pawn="MovementSpeed"},
-	[13] = {blizz="RESILIENCE", zgvdisplay="Resilience", pawn="ResilienceRating"},
-	[14] = {blizz="WEAPONSPEED", zgvdisplay="Weapon Speed", pawn="Speed"},
-	[15] = {blizz="SPELL_POWER", zgvdisplay="Spell Power", pawn="SpellPower"},
-	[16] = {blizz="STAMINA", zgvdisplay="Stamina", pawn="Stamina"},
-	[17] = {blizz="STRENGTH", zgvdisplay="Strength", pawn="Strength"},
-	[18] = {blizz="VERSATILITY", zgvdisplay="Versatility", pawn="Versatility"},
+	[1]  = {blizz="AGILITY", zgvdisplay="Agility", pawn="Agility", regexname=ITEM_MOD_AGILITY_SHORT},
+	[2]  = {blizz="ATTACK_POWER", zgvdisplay="Attack Power", pawn="Ap", regexname=STAT_ATTACK_POWER},
+	[3]  = {blizz="ARMOR", zgvdisplay="Armor", pawn="Armor", regexname=ARMOR_TEMPLATE:gsub("[ ]*%%s[ ]*","")}, -- base armor on gear
+	[4]  = {blizz="AVOIDANCE", zgvdisplay="Avoidance", pawn="Avoidance", regexname=STAT_AVOIDANCE},
+	[5]  = {blizz="CRIT", zgvdisplay="Crit", pawn="CritRating", regexname=ITEM_MOD_CRIT_RATING_SHORT},
+	[6]  = {blizz="DAMAGE_PER_SECOND", zgvdisplay="Dps", pawn="Dps", regexname=DPS_TEMPLATE:gsub("[ ]*%%s[ ]*","")},
+	[7]  = {blizz="HASTE", zgvdisplay="Haste", pawn="HasteRating", regexname=STAT_HASTE},
+	[8]  = {blizz="STURDINESS", zgvdisplay="Indestructible", pawn="Indestructible", regexname=STAT_STURDINESS},
+	[9]  = {blizz="INTELLECT", zgvdisplay="Intellect", pawn="Intellect", regexname=ITEM_MOD_INTELLECT_SHORT},
+	[10] = {blizz="LIFESTEAL", zgvdisplay="Leech", pawn="Leech", regexname=STAT_LIFESTEAL},
+	[11] = {blizz="MASTERY", zgvdisplay="Mastery", pawn="MasteryRating", regexname=STAT_MASTERY},
+	[12] = {blizz="SPEED", zgvdisplay="Movement Speed", pawn="MovementSpeed", regexname=STAT_MOVEMENT_SPEED},
+	[13] = {blizz="RESILIENCE", zgvdisplay="Resilience", pawn="ResilienceRating", regexname=STAT_RESILIENCE},
+	[14] = {blizz="WEAPONSPEED", zgvdisplay="Weapon Speed", pawn="Speed", regexname=WEAPON_SPEED},
+	[15] = {blizz="SPELL_POWER", zgvdisplay="Spell Power", pawn="SpellPower", regexname=STAT_SPELLPOWER},
+	[16] = {blizz="STAMINA", zgvdisplay="Stamina", pawn="Stamina", regexname=ITEM_MOD_STAMINA_SHORT},
+	[17] = {blizz="STRENGTH", zgvdisplay="Strength", pawn="Strength", regexname=ITEM_MOD_STRENGTH_SHORT},
+	[18] = {blizz="VERSATILITY", zgvdisplay="Versatility", pawn="Versatility", regexname=STAT_VERSATILITY},
 }
+
+for index,data in ipairs(ItemScore.Keywords) do
+	data.regex = ("([0-9,.]+) " .. data.regexname):lower()
+	data.regex2 = (data.regexname .. " ([0-9.,]+)"):lower()
+end
 
 -- Gear keywords:
 -- Only gear defined in this table are valid. Use second entry when filling item sets

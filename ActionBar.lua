@@ -30,17 +30,20 @@ local function OnEvent(self, event)
 
 	if ActionBar.SetTimer then ZGV:CancelTimer(ActionBar.SetTimer) end
 
-	if not InCombatLockdown() then
-		ActionBar:SetActionButtons()
-	else
-		ActionBar.SetTimer = ZGV:ScheduleTimer(function() 
-			ActionBar:SetActionButtons()
-		end, 1)
-	end
+	ActionBar:SetActionButtons()
 end
 
 function ActionBar:SetActionButtons()
 	-- Hide disabled oveerlay
+
+	if ActionBar.SetTimer then ZGV:CancelTimer(ActionBar.SetTimer) end
+	if InCombatLockdown() then
+		ActionBar.SetTimer = ZGV:ScheduleTimer(function() 
+			ActionBar:SetActionButtons()
+		end, 1)
+		return
+	end
+
 
 	ZGV.ActionBar:ClearBar()
 

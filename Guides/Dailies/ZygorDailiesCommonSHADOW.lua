@@ -6,7 +6,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Shadowlands (50-60)\\Ar
 author="support@zygorguides.com",
 description="\nThis guide will assist you in completing world quests in Ardenweald.",
 condition_suggested=function() return level >= 50 end,
-condition_valid=function() return level >= 50 and completedanyq(62695,62698,62886,62835) end,
+condition_valid=function() return level >= 50 and completedanyq(62899,57904,59609,59324) end,
 condition_valid_msg="Valid Message",
 startlevel=50.0,
 worldquestzone={1550,1565},
@@ -62,7 +62,6 @@ step
 label quest-60649
 accept A Thorn In Their Side##60649 |goto Ardenweald/0 45.26,72.35
 |tip You will accept this quest automatically.
-|polish
 step
 click Pulsing Animacone##353194+
 |tip They look like white acorns on the ground around this area.
@@ -75,7 +74,6 @@ step
 label quest-61948
 accept Airborne Defense Force##61948 |goto Ardenweald/0 51.27,44.07
 |tip You will accept this quest automatically.
-|polish
 step
 talk Faryl##173377
 Tell him _"Begin pet battle."_
@@ -94,7 +92,6 @@ step
 label quest-61631
 accept Drust Between You and Me##61631 |goto Ardenweald/0 45.31,63.99
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_15_Drust_Forces"
 step
 kill Ingra Krazic##174732 |q 61631/2 |goto 45.26,65.76
@@ -107,7 +104,6 @@ step
 label quest-60855
 accept Gormageddon##60855 |goto Ardenweald/0 60.73,31.76
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 |tip Use the "Wrath of Nature" ability to transform into a cat if you wish.
@@ -257,13 +253,14 @@ accept Pupa Trooper##60337 |goto Ardenweald/0 54.51,64.01
 step
 label "Borrow_a_Pair_of_Enchanted_Wings"
 click Basket of Enchanted Wings
-Borrow a Pair of Enchanted Wings |havebuff spell:323695 |goto 52.67,57.52 |q 60337 |or
+|tip They appear on your minimap as yellow dots.
+Borrow a Pair of Enchanted Wings |havebuff spell:313053 |goto 52.67,57.52 |q 60337 |or
 '|condition completedq(60337) |or
 step
 click Ardenmoth Cocoon##352047+
 |tip They look like large brown cocoons hanging underneath trees and platforms in the air around this area.
 collect 10 Ardenmoth Cocoon##178717 |q 60337/2 |goto 52.60,60.15 |or
-'|condition not hasbuff("spell:323695") and not completedq(60337) and questactive(60337) |next "Borrow_a_Pair_of_Enchanted_Wings" |or
+'|condition not hasbuff("spell:313053") and not completedq(60337) and questactive(60337) |next "Borrow_a_Pair_of_Enchanted_Wings" |or
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-59600
@@ -280,7 +277,10 @@ step
 label quest-60476
 accept Seize the Means of Production##60476 |goto Ardenweald/0 55.34,27.52
 |tip You will accept this quest automatically.
-|polish
+step
+Use the _"Sprigganize"_ ability
+|tip It appears as a button on the screen.
+Shrink to Spriggan Size |havebuff spell:347565 |goto 55.34,27.52 |q 60476
 step
 kill Brittlebark Mischief-Maker##168490+
 Click objects around this area
@@ -459,7 +459,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Shadowlands (50-60)\\Ba
 author="support@zygorguides.com",
 description="\nThis guide will assist you in completing world quests in Bastion.",
 condition_suggested=function() return level >= 50 end,
-condition_valid=function() return level >= 50 and completedanyq(62695,62698,62886,62835) end,
+condition_valid=function() return level >= 50 and completedanyq(62899,57904,59609,59324) end,
 condition_valid_msg="Valid Message",
 startlevel=50.0,
 worldquestzone={1550,1533,1690},
@@ -1038,7 +1038,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Shadowlands (50-60)\\Ma
 author="support@zygorguides.com",
 description="\nThis guide will assist you in completing world quests in Maldraxxus.",
 condition_suggested=function() return level >= 50 end,
-condition_valid=function() return level >= 50 and completedanyq(62695,62698,62886,62835) end,
+condition_valid=function() return level >= 50 and completedanyq(62899,57904,59609,59324) end,
 condition_valid_msg="Valid Message",
 startlevel=50.0,
 worldquestzone={1550,1536},
@@ -1634,7 +1634,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Shadowlands (50-60)\\Re
 author="support@zygorguides.com",
 description="\nThis guide will assist you in completing world quests in Revendreth.",
 condition_suggested=function() return level >= 50 end,
-condition_valid=function() return level >= 50 and completedanyq(62695,62698,62886,62835) end,
+condition_valid=function() return level >= 50 and completedanyq(62899,57904,59609,59324) end,
 condition_valid_msg="Valid Message",
 startlevel=50.0,
 worldquestzone={1550,1525},
@@ -1707,7 +1707,6 @@ step
 label quest-60657
 accept Aid From Above##60657 |goto Revendreth/0 71.44,41.08
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Darkwing Legionnaire##
 Ride the Legionnaire |invehicle |goto 71.44,41.08 |q 60657
@@ -1991,12 +1990,13 @@ step
 label quest-60653
 accept Mirror Restoration##60653 |goto Revendreth/0 24.12,52.56
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 collect 10 Glass Shard##175384 |q 60653/1 |goto 24.12,52.56
 step
+Enter the building |goto 24.79,53.45 < 7 |walk
 click Broken Mirror
+|tip Downstairs inside the building.
 Restore the Broken Mirror |q 60653/2 |goto 24.57,52.52
 step
 Enter the Ornate Mirror |q 60653/3 |goto 24.57,52.52
@@ -3437,56 +3437,57 @@ patch='90001',
 },[[
 step
 label "Begin_Dailies"
-talk Flutterby##158553
-accept Replenish the Reservoir##61984 |goto Heart of the Forest/0 33.91,43.49
-accept Return Lost Souls##61331 |goto Heart of the Forest/0 33.91,43.49 |only if covenant() == NightFae and covenantrenown() < 15
-accept Return Lost Souls##62858 |goto Heart of the Forest/0 33.91,43.49 |only if covenant() == NightFae and covenantrenown() >= 15 and covenantrenown() < 24
-accept Return Lost Souls##62859 |goto Heart of the Forest/0 33.91,43.49 |only if covenant() == NightFae and covenantrenown() >= 24 and covenantrenown() < 32
-accept Return Lost Souls##62860 |goto Heart of the Forest/0 33.91,43.49 |only if covenant() == NightFae and covenantrenown() >= 32
-accept Soul Salvage##60457 |goto Heart of the Forest/0 33.91,43.49 |only if questactive(60457) or completedq(60457)
-accept Storm the Maw##60452 |goto Heart of the Forest/0 33.91,43.49 |only if questactive(60452) or completedq(60452)
-|only if anyquestactive(61331,62858,62859,62860,60457,60452) or completedanyq(61984,61331,62858,62859,62860,60457,60452) or not completedq(61984)
-step
-talk Sesselie##167196
-accept Anima Appeal##60462 |goto Heart of the Forest/1 50.62,62.62
-|only if questactive(60462) or completedq(60462)
+talk Elder Shaper An'wyn##168513
+accept A Wealth of Wealdwood##60369 |goto Ardenweald/0 43.56,52.43	|only if questactive(60369) or completedq(60369)
+accept Gildenite Grab##60364 |goto Ardenweald/0 43.56,52.43		|only if questactive(60364) or completedq(60364)
+accept A Source of Sorrowvine##60373 |goto Ardenweald/0 43.56,52.43	|only if questactive(60373) or completedq(60373)
+accept Rare Resources##60414 |goto Ardenweald/0 43.56,52.43		|only if questactive(60414) or completedq(60414)
+accept Bonemetal Bonanza##60374 |goto Ardenweald/0 43.56,52.43		|only if questactive(60374) or completedq(60374)
+|only if anyquestactive(60369,60364,60373,60414,60374) or completedanyq(60369,60364,60373,60414,60374)
 step
 talk Lord Herne##158544
 |tip He walks around this area.
-accept Training in Bastion##60387 |goto Heart of the Forest/0 39.66,71.34 |only if questactive(60387) or completedq(60387)
-accept Training in Maldraxxus##60386 |goto Heart of the Forest/0 39.66,71.34 |only if questactive(60386) or completedq(60386)
-accept Training in Revendreth##60385 |goto Heart of the Forest/0 39.66,71.34 |only if questactive(60385) or completedq(60385)
-accept Training Our Forces##60388 |goto Heart of the Forest/0 39.66,71.34 |only if questactive(60388) or completedq(60388)
+accept Training in Bastion##60387 |goto Heart of the Forest/0 39.66,71.34	|only if questactive(60387) or completedq(60387)
+accept Training in Maldraxxus##60386 |goto Heart of the Forest/0 39.66,71.34	|only if questactive(60386) or completedq(60386)
+accept Training in Revendreth##60385 |goto Heart of the Forest/0 39.66,71.34	|only if questactive(60385) or completedq(60385)
+accept Training Our Forces##60388 |goto Heart of the Forest/0 39.66,71.34	|only if questactive(60388) or completedq(60388)
 |only if anyquestactive(60387,60386,60385,60388) or completedanyq(60387,60386,60385,60388)
 step
-talk Featherlight##167193
-accept A Call to Revendreth##60421 |goto Heart of the Forest/0 60.04,31.87 |only if questactive(60421) or completedq(60421)
-accept A Call to Bastion##60418 |goto Heart of the Forest/0 60.04,31.87 |only if questactive(60418) or completedq(60418)
-accept A Call to Maldraxxus##60420 |goto Heart of the Forest/0 60.04,31.87 |only if questactive(60420) or completedq(60420)
-accept Troubles at Home##60419 |goto Heart of the Forest/0 60.04,31.87 |only if questactive(60419) or completedq(60419)
-|only if anyquestactive(60421,60418,60420,60419) or completedanyq(60421,60418,60420,60419)
+talk Sesselie##167196
+|tip Downstairs inside the tree.
+accept Replenish the Reservoir##61984 |goto Heart of the Forest/1 50.62,62.62	|only if not completedq(61984)
+accept Anima Appeal##60462 |goto Heart of the Forest/1 50.62,62.62		|only if questactive(60462) or completedq(60462)
+|only if questactive(60462) or completedq(60462,61984) or not completedq(61984)
+step
+talk Flutterby##158553
+accept Return Lost Souls##61331 |goto Heart of the Forest/0 33.91,43.49		|only if questactive(61331) or completedq(61331)
+accept Return Lost Souls##62858 |goto Heart of the Forest/0 33.91,43.49		|only if questactive(62858) or completedq(62858)
+accept Return Lost Souls##62859 |goto Heart of the Forest/0 33.91,43.49		|only if questactive(62859) or completedq(62859)
+accept Return Lost Souls##62860 |goto Heart of the Forest/0 33.91,43.49		|only if questactive(62860) or completedq(62860)
+accept Anima Salvage##60457 |goto Heart of the Forest/0 33.91,43.49		|only if questactive(60457) or completedq(60457)
+accept Storm the Maw##60452 |goto Heart of the Forest/0 33.91,43.49		|only if questactive(60452) or completedq(60452)
+|only if anyquestactive(61331,62858,62859,62860,60457,60452) or completedanyq(61331,62858,62859,62860,60457,60452)
 step
 talk Yanlar##167206
-accept Challenges in Ardenweald##60438 |goto Heart of the Forest/0 36.84,25.12 |only if questactive(60438) or completedq(60438)
-accept Challenges in Bastion##60437 |goto Heart of the Forest/0 36.84,25.12 |only if questactive(60437) or completedq(60437)
-accept Challenges in Maldraxxus##60436 |goto Heart of the Forest/0 36.84,25.12 |only if questactive(60436) or completedq(60436)
-accept Challenges in Revendreth##60435 |goto Heart of the Forest/0 36.84,25.12 |only if questactive(60435) or completedq(60435)
+accept Challenges in Ardenweald##60438 |goto 36.84,25.12	|only if questactive(60438) or completedq(60438)
+accept Challenges in Bastion##60437 |goto 36.84,25.12		|only if questactive(60437) or completedq(60437)
+accept Challenges in Maldraxxus##60436 |goto 36.84,25.12	|only if questactive(60436) or completedq(60436)
+accept Challenges in Revendreth##60435 |goto 36.84,25.12	|only if questactive(60435) or completedq(60435)
 |only if anyquestactive(60438,60437,60436,60435) or completedanyq(60438,60437,60436,60435)
 step
-talk Blodwyn##167195
-accept Aiding Ardenweald##60381 |goto Heart of the Forest/0 53.81,5.98 |only if questactive(60381) or completedq(60381)
-accept Aiding Bastion##60384 |goto Heart of the Forest/0 53.81,5.98 |only if questactive(60384) or completedq(60384)
-accept Aiding Maldraxxus##60383 |goto Heart of the Forest/0 53.81,5.98 |only if questactive(60383) or completedq(60383)
-accept Aiding Revendreth##60382 |goto Heart of the Forest/0 53.81,5.98 |only if questactive(60382) or completedq(60382)
-|only if anyquestactive(60381,60384,60383,60382) or completedanyq(60381,60384,60383,60382)
+talk Featherlight##167193
+accept A Call to Revendreth##60421 |goto 60.04,31.87	|only if questactive(60421) or completedq(60421)
+accept A Call to Bastion##60418 |goto 60.04,31.87	|only if questactive(60418) or completedq(60418)
+accept A Call to Maldraxxus##60420 |goto 60.04,31.87	|only if questactive(60420) or completedq(60420)
+accept Troubles at Home##60419 |goto 60.04,31.87	|only if questactive(60419) or completedq(60419)
+|only if anyquestactive(60421,60418,60420,60419) or completedanyq(60421,60418,60420,60419)
 step
-talk Elder Shaper An'wyn##168513
-accept A Wealth of Wealdwood##60369 |goto Ardenweald/0 43.56,52.43 |only if questactive(60369) or completedq(60369)
-accept Gildenite Grab##60364 |goto Ardenweald/0 43.56,52.43 |only if questactive(60364) or completedq(60364)
-accept A Source of Sorrowvine##60373 |goto Ardenweald/0 43.56,52.43 |only if questactive(60373) or completedq(60373)
-accept Rare Resources##60414 |goto Ardenweald/0 43.56,52.43 |only if questactive(60414) or completedq(60414)
-accept Bonemetal Bonanza##60374 |goto Ardenweald/0 43.56,52.43 |only if questactive(60374) or completedq(60374)
-|only if anyquestactive(60369,60364,60373,60414,60374) or completedanyq(60369,60364,60373,60414,60374)
+talk Blodwyn##167195
+accept Aiding Ardenweald##60381 |goto 53.81,5.98	|only if questactive(60381) or completedq(60381)
+accept Aiding Bastion##60384 |goto 53.81,5.98		|only if questactive(60384) or completedq(60384)
+accept Aiding Maldraxxus##60383 |goto 53.81,5.98	|only if questactive(60383) or completedq(60383)
+accept Aiding Revendreth##60382 |goto 53.81,5.98	|only if questactive(60382) or completedq(60382)
+|only if anyquestactive(60381,60384,60383,60382) or completedanyq(60381,60384,60383,60382)
 stickystart "Complete_World_Quests_in_Ardenweald_with_Trainee"
 stickystart "Complete_World_Quests_in_Ardenweald"
 stickystart "Defeat_the_Powerful_Foes_of_Ardenweald"
@@ -3585,12 +3586,12 @@ Defeat the Powerful Foes of Revendreth |q 60435/1
 |only if havequest(60435) or completedq(60435)
 step
 label "Defend_Ardenweald"
-Defend Ardenweald |q 60421/1
+Defend Ardenweald |q 60419/1
 |tip You can accomplish this several ways.
 |tip Complete world quests in Ardenweald using the "Ardenweald World Quests" guide.
 |tip Loot treasures or kill rare enemies across Ardenweald.
 |tip You can also kill bosses in the "Mists of Tirna Scithe" and "De Other Side" dungeons using their respective dungeon guides.
-|only if havequest(60421) or completedq(60421)
+|only if havequest(60419) or completedq(60419)
 step
 label "Defend_Bastion"
 Defend Bastion |q 60418/1
@@ -3609,12 +3610,12 @@ Defend Maldraxxus |q 60420/1
 |only if havequest(60420) or completedq(60420)
 step
 label "Defend_Revendreth"
-Defend Revendreth |q 60419/1
+Defend Revendreth |q 60421/1
 |tip You can accomplish this several ways.
 |tip Complete world quests in Revendreth using the "Revendreth World Quests" guide.
 |tip Loot treasures or kill rare enemies across Revendreth.
 |tip You can also kill bosses in the "Sanguine Depths" and "Halls of Atonement" dungeons using their respective dungeon guides.
-|only if havequest(60419) or completedq(60419)
+|only if havequest(60421) or completedq(60421)
 step
 label "Collect_4_Gildenite"
 collect 3 Gildenite##179321 |q 60364/1
@@ -3693,51 +3694,51 @@ Defeat #3# Rare or Special Encounter Bosses |q 60452/1
 |tip Encounters periodically show on the map.
 |only if havequest(60452) or completedq(60452)
 step
-talk Flutterby##158553
-turnin Return Lost Souls##61331 |goto Heart of the Forest/0 33.91,43.49 |only if readyq(61331) or completedq(61331)
-turnin Return Lost Souls##62858 |goto Heart of the Forest/0 33.91,43.49 |only if readyq(62858) or completedq(62858)
-turnin Return Lost Souls##62859 |goto Heart of the Forest/0 33.91,43.49 |only if readyq(62859) or completedq(62859)
-turnin Return Lost Souls##62860 |goto Heart of the Forest/0 33.91,43.49 |only if readyq(62860) or completedq(62860)
-turnin Soul Salvage##60457 |goto Heart of the Forest/0 33.91,43.49 |only if readyq(60457) or completedq(60457)
-turnin Storm the Maw##60452 |goto Heart of the Forest/0 33.91,43.49 |only if readyq(60452) or completedq(60452)
-|only if readyanyq(61331,62858,62859,62860,60457,60452) or completedanyq(61331,62858,62859,62860,60457,60452)
+talk Blodwyn##167195
+turnin Aiding Ardenweald##60381 |goto Heart of the Forest/0 53.81,5.98 |only if readyq(60381) or completedq(60381)
+turnin Aiding Bastion##60384 |goto 53.81,5.98 |only if readyq(60384) or completedq(60384)
+turnin Aiding Maldraxxus##60383 |goto 53.81,5.98 |only if readyq(60383) or completedq(60383)
+turnin Aiding Revendreth##60382 |goto 53.81,5.98 |only if readyq(60382) or completedq(60382)
+|only if readyanyq(60381,60384,60383,60382) or completedanyq(60381,60384,60383,60382)
 step
-talk Elder Shaper An'wyn##168513
-turnin A Wealth of Wealdwood##60369 |goto Ardenweald/0 43.56,52.43
-turnin Gildenite Grab##60364 |goto Ardenweald/0 43.56,52.43 |only if readyq(60364) or completedq(60364)
-turnin A Source of Sorrowvine##60373 |goto Ardenweald/0 43.56,52.43 |only if readyq(60373) or completedq(60373)
-turnin Rare Resources##60414 |goto Ardenweald/0 43.56,52.43 |only if readyq(60414) or completedq(60414)
-turnin Bonemetal Bonanza##60374 |goto Ardenweald/0 43.56,52.43 |only if readyq(60374) or completedq(60374)
-|only if readyanyq(60369,60364,60373,60414,60374) or completedanyq(60369,60364,60373,60414,60374)
+talk Featherlight##167193
+turnin A Call to Revendreth##60421 |goto 60.04,31.87 |only if readyq(60421) or completedq(60421)
+turnin A Call to Bastion##60418 |goto 60.04,31.87 |only if readyq(60418) or completedq(60418)
+turnin A Call to Maldraxxus##60420 |goto 60.04,31.87 |only if readyq(60420) or completedq(60420)
+turnin Troubles at Home##60419 |goto 60.04,31.87 |only if readyq(60419) or completedq(60419)
+|only if readyanyq(60421,60418,60420,60419) or completedanyq(60421,60418,60420,60419)
 step
 talk Yanlar##167206
-turnin Challenges in Ardenweald##60438 |goto Heart of the Forest/0 36.84,25.12 |only if readyq(60438) or completedq(60438)
-turnin Challenges in Bastion##60437 |goto Heart of the Forest/0 36.84,25.12 |only if readyq(60437) or completedq(60437)
-turnin Challenges in Maldraxxus##60436 |goto Heart of the Forest/0 36.84,25.12 |only if readyq(60436) or completedq(60436)
-turnin Challenges in Revendreth##60435 |goto Heart of the Forest/0 36.84,25.12 |only if readyq(60435) or completedq(60435)
+turnin Challenges in Ardenweald##60438 |goto 36.84,25.12 |only if readyq(60438) or completedq(60438)
+turnin Challenges in Bastion##60437 |goto 36.84,25.12 |only if readyq(60437) or completedq(60437)
+turnin Challenges in Maldraxxus##60436 |goto 36.84,25.12 |only if readyq(60436) or completedq(60436)
+turnin Challenges in Revendreth##60435 |goto 36.84,25.12 |only if readyq(60435) or completedq(60435)
 |only if readyanyq(60438,60437,60436,60435) or completedanyq(60438,60437,60436,60435)
+step
+talk Flutterby##158553
+turnin Return Lost Souls##61331 |goto 33.91,43.49 |only if readyq(61331) or completedq(61331)
+turnin Return Lost Souls##62858 |goto 33.91,43.49 |only if readyq(62858) or completedq(62858)
+turnin Return Lost Souls##62859 |goto 33.91,43.49 |only if readyq(62859) or completedq(62859)
+turnin Return Lost Souls##62860 |goto 33.91,43.49 |only if readyq(62860) or completedq(62860)
+turnin Anima Salvage##60457 |goto 33.91,43.49 |only if readyq(60457) or completedq(60457)
+turnin Storm the Maw##60452 |goto 33.91,43.49 |only if readyq(60452) or completedq(60452)
+|only if readyanyq(61331,62858,62859,62860,60457,60452) or completedanyq(61331,62858,62859,62860,60457,60452)
 step
 talk Lord Herne##158544
 |tip He walks around this area.
-turnin Training in Bastion##60387 |goto Heart of the Forest/0 39.66,71.34 |only if readyq(60387) or completedq(60387)
-turnin Training in Maldraxxus##60386 |goto Heart of the Forest/0 39.66,71.34 |only if readyq(60386) or completedq(60386)
-turnin Training in Revendreth##60385 |goto Heart of the Forest/0 39.66,71.34 |only if readyq(60385) or completedq(60385)
-turnin Training Our Forces##60388 |goto Heart of the Forest/0 39.66,71.34 |only if readyq(60388) or completedq(60388)
+turnin Training in Bastion##60387 |goto 39.66,71.34 |only if readyq(60387) or completedq(60387)
+turnin Training in Maldraxxus##60386 |goto 39.66,71.34 |only if readyq(60386) or completedq(60386)
+turnin Training in Revendreth##60385 |goto 39.66,71.34 |only if readyq(60385) or completedq(60385)
+turnin Training Our Forces##60388 |goto 39.66,71.34 |only if readyq(60388) or completedq(60388)
 |only if readyanyq(60387,60386,60385,60388) or completedanyq(60387,60386,60385,60388)
 step
-talk Featherlight##167193
-turnin A Call to Revendreth##60421 |goto Heart of the Forest/0 60.04,31.87 |only if readyq(60421) or completedq(60421)
-turnin A Call to Bastion##60418 |goto Heart of the Forest/0 60.04,31.87 |only if readyq(60418) or completedq(60418)
-turnin A Call to Maldraxxus##60420 |goto Heart of the Forest/0 60.04,31.87 |only if readyq(60420) or completedq(60420)
-turnin Troubles at Home##60419 |goto Heart of the Forest/0 60.04,31.87 |only if readyq(60419) or completedq(60419)
-|only if readyanyq(60421,60418,60420,60419) or completedanyq(60421,60418,60420,60419)
-step
-talk Blodwyn##167195
-turnin Aiding Ardenweald##60381 |goto Heart of the Forest/0 53.81,5.98 |only if readyq(60381) or completedq(60381)
-turnin Aiding Bastion##60384 |goto Heart of the Forest/0 53.81,5.98 |only if readyq(60384) or completedq(60384)
-turnin Aiding Maldraxxus##60383 |goto Heart of the Forest/0 53.81,5.98 |only if readyq(60383) or completedq(60383)
-turnin Aiding Revendreth##60382 |goto Heart of the Forest/0 53.81,5.98 |only if readyq(60382) or completedq(60382)
-|only if readyanyq(60381,60384,60383,60382) or completedanyq(60381,60384,60383,60382)
+talk Elder Shaper An'wyn##168513
+turnin A Wealth of Wealdwood##60369 |goto Ardenweald/0 43.56,52.43
+turnin Gildenite Grab##60364 |goto 43.56,52.43 |only if readyq(60364) or completedq(60364)
+turnin A Source of Sorrowvine##60373 |goto 43.56,52.43 |only if readyq(60373) or completedq(60373)
+turnin Rare Resources##60414 |goto 43.56,52.43 |only if readyq(60414) or completedq(60414)
+turnin Bonemetal Bonanza##60374 |goto 43.56,52.43 |only if readyq(60374) or completedq(60374)
+|only if readyanyq(60369,60364,60373,60414,60374) or completedanyq(60369,60364,60373,60414,60374)
 step
 talk Sesselie##167196
 turnin Anima Appeal##60462 |goto Heart of the Forest/1 50.62,62.62 |only if readyq(60462) or completedq(60462)

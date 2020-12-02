@@ -14,7 +14,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Eversong Woods (1-50)",
 startlevel=1,
 endlevel=5,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Magistrix Erona##15278
 accept Reclaiming Sunstrider Isle##8325 |goto Sunstrider Isle/0 61.03,45.13
@@ -135,7 +134,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Blasted Lands (15-50)",
 startlevel=8,
 endlevel=10,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk The Lich King##25462
 accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave/0 51.34,35.21
@@ -772,7 +770,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Northern Barrens (5-50)",
 startlevel=1,
 endlevel=10,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Sassy Hardwrench##34668
 |tip Inside the building.
@@ -1782,7 +1779,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Durotar (1-50)",
 startlevel=1,
 endlevel=5,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Kaltunk##10176
 accept Your Place In The World##25152 |goto Valley of Trials/0 45.18,68.40
@@ -1903,7 +1899,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Mulgore (1-50)",
 startlevel=1,
 endlevel=4,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Chief Hawkwind##2981
 accept The First Step##14449 |goto Camp Narache/0 27.73,28.30
@@ -2007,7 +2002,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Durotar (1-50)",
 startlevel=1,
 endlevel=5,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Jin'thala##37951
 accept The Rise of the Darkspear##31159 |goto Echo Isles/0 42.82,53.44 |only if Troll Monk
@@ -2464,7 +2458,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Silverpine Forest (5-50
 startlevel=1,
 endlevel=10,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Agatha##49044
 accept Fresh out of the Grave##24959 |goto Deathknell/0 40.51,78.53
@@ -3017,7 +3010,6 @@ condition_suggested=function() return level >= 1 and level <= 50 and not complet
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Outrunner Alarion##15301
 turnin Aiding the Outrunners##8347 |goto Eversong Woods/0 40.42,32.21 |only if havequest(8347) or completedq(8347)
@@ -3518,7 +3510,6 @@ condition_end=function() return completedq(9811) end,
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Courier Dawnstrider##16183
 turnin Missing in the Ghostlands##9144 |goto Eversong Woods/0 48.98,88.99 |only if havequest(9144) or completedq(9144)
@@ -4120,7 +4111,6 @@ condition_end=function() return completedq(27746) end,
 startlevel=5,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Grand Executor Mortuus##44615
 turnin Warchief's Command: Silverpine Forest!##26964 |goto Silverpine Forest/0 57.4,10.1 |only if havequest(26964) or completedq(26964)
@@ -4767,7 +4757,6 @@ condition_end=function() return completedq(28647) end,
 startlevel=7,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk High Executor Darthalia##2215
 turnin Warchief's Command: Hillsbrad Foothills!##28089 |goto Hillsbrad Foothills/0 29.23,63.35 |only if havequest(28089) or completedq(28089)
@@ -12626,7 +12615,6 @@ condition_suggested=function() return level >= 1 and level <= 50 and not complet
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Handler Marnlek##41142
 fpath Sen'jin Village |goto Durotar/0 55.38,73.31
@@ -13024,7 +13012,6 @@ condition_suggested=function() return level >= 1 and level <= 50 and not complet
 startlevel=1,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Ahmo Thunderhorn##36644
 accept Sharing the Land##14438 |goto Mulgore/0 47.66,59.59
@@ -13313,7 +13300,6 @@ condition_suggested=function() return level >= 5 and level <= 50 and not complet
 startlevel=5,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Kargal Battlescar##3337
 turnin Preserving the Barrens##26642 |goto Northern Barrens/0 67.67,39.40 |only if havequest(26642) or completedq(26642)
@@ -14152,7 +14138,6 @@ condition_suggested=function() return level >= 5 and level <= 50 and not complet
 startlevel=5,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Ag'tor Bloodfist##8576
 turnin Beyond Durotar##25648 |goto Azshara/0 26.81,76.95 |only if havequest(25648) or completedq(25648)
@@ -15323,7 +15308,6 @@ condition_suggested=function() return level >= 7 and level <= 50 and not complet
 startlevel=7,
 endlevel=50,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Kadrak##8582
 |tip He walks around this area.

@@ -31,14 +31,14 @@ data.taxipoints = {
 		
 			-- TRANSPORT NETWORK FPATHS --
 				
-				{name="Hero's Rest",faction="B",npc="Eternal Gateway",npcid="eg",x=51.75,y=46.81,region="heros_rest",taxioperator="eternalgateway",taxinodeID=2626,quest=63052},
-				{name="Aspirant's Rest",faction="B",npc="Eternal Gateway",npcid="eg",x=48.33,y=72.85,taxioperator="eternalgateway",taxinodeID=2630,quest=63052},
-				{name="Xandria's Vigil",faction="B",npc="Eternal Gateway",npcid="eg",x=40.71,y=55.21,taxioperator="eternalgateway",taxinodeID=2631,quest=63052},
-				{name="Sagehaven",faction="B",npc="Eternal Gateway",npcid="eg",x=44.16,y=33.02,taxioperator="eternalgateway",taxinodeID=2632,quest=63052},
-				{name="Temple of Purity",faction="B",npc="Eternal Gateway",npcid="eg",x=59.42,y=77.12,taxioperator="eternalgateway",taxinodeID=2633,quest=63052},
-				{name="Seat of Eternal Hymns",faction="B",npc="Eternal Gateway",npcid="eg",x=58.37,y=30.97,taxioperator="eternalgateway",taxinodeID=2634,quest=63052},
-				{name="Temple of Humility",faction="B",npc="Eternal Gateway",npcid="eg",x=66.59,y=47.90,taxioperator="eternalgateway",taxinodeID=2635,quest=63052},
-				{name="Terrace of the Collectors",faction="B",npc="Eternal Gateway",npcid="eg",x=35.40,y=21.93,taxioperator="eternalgateway",taxinodeID=2636,quest=63052},				
+				{name="Hero's Rest",faction="B",npc="Eternal Gateway",npcid="eg",x=51.75,y=46.81,region="heros_rest",taxioperator="eternalgateway",taxinodeID=2626,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Aspirant's Rest",faction="B",npc="Eternal Gateway",npcid="eg",x=48.33,y=72.85,taxioperator="eternalgateway",taxinodeID=2630,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Xandria's Vigil",faction="B",npc="Eternal Gateway",npcid="eg",x=40.71,y=55.21,taxioperator="eternalgateway",taxinodeID=2631,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Sagehaven",faction="B",npc="Eternal Gateway",npcid="eg",x=44.16,y=33.02,taxioperator="eternalgateway",taxinodeID=2632,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Temple of Purity",faction="B",npc="Eternal Gateway",npcid="eg",x=59.42,y=77.12,taxioperator="eternalgateway",taxinodeID=2633,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Seat of Eternal Hymns",faction="B",npc="Eternal Gateway",npcid="eg",x=58.37,y=30.97,taxioperator="eternalgateway",taxinodeID=2634,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Temple of Humility",faction="B",npc="Eternal Gateway",npcid="eg",x=66.59,y=47.90,taxioperator="eternalgateway",taxinodeID=2635,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
+				{name="Terrace of the Collectors",faction="B",npc="Eternal Gateway",npcid="eg",x=35.40,y=21.93,taxioperator="eternalgateway",taxinodeID=2636,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},				
 		-- taxinodeID needed everywhere as the names are duplicated
 	},
 
@@ -47,7 +47,7 @@ data.taxipoints = {
 
 		-- NEUTRAL --
 		{name="Elysian Hold",faction="B",npc="Cassius",npcid=159421,x=50.94,y=49.03,taxinodeID=2528},
-		{name="Elysian Hold",faction="B",npc="Eternal Gateway",npcid="eg",x=48.67,y=61.68,taxioperator="eternalgateway",taxinodeID=2625,quest=63052},
+		{name="Elysian Hold",faction="B",npc="Eternal Gateway",npcid="eg",x=48.67,y=61.68,taxioperator="eternalgateway",taxinodeID=2625,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
 	},
 
 
@@ -60,7 +60,7 @@ data.taxipoints = {
 		{name="Keres' Rest",faction="B",npc="Fly-eyed Eliera",npcid=157517,x=53.82,y=30.69},
 		{name="Spider's Watch",faction="B",npc="Flight Master Nudolva",npcid=157518,x=37.51,y=29.22},
 		{name="The Spearhead",faction="B",npc="Wing Guard Aela",npcid=157519,x=39.03,y=55.24},
-		{name="Bleak Redoubt",faction="B",npc="Wing Guard Buurkin",npcid=157514,x=52.47,y=67.65,function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Necrolord end},
+		{name="Bleak Redoubt",faction="B",npc="Wing Guard Buurkin",npcid=157514,x=52.47,y=67.65},
 	},
 
 
@@ -70,10 +70,10 @@ data.taxipoints = {
 		{name="Tirna Vaal",faction="B",npc="Lanra",npcid=165164,x=63.46,y=37.56},
 		{name="Hibernal Hollow",faction="B",npc="Na'lor",npcid=165166,x=60.35,y=53.49},
 		{name="Claw's Edge",faction="B",npc="V'kerra",npcid=167247,x=51.30,y=71.31},
-		{name="Refugee Camp",faction="B",npc="Derwynnthlmn",npcid=167255,x=49.35,y=51.82,function() local c=ZGV.Parser.ConditionEnv return c.covenant()~=c.NightFae end},--Not Night Fae
+		{name="Refugee Camp",faction="B",npc="Derwynnthlmn",npcid=167255,x=49.35,y=51.82},
 		{name="Glitterfall Basin",faction="B",npc="Dwyl'ir",npcid=167243,x=51.42,y=34.52},
 		{name="Root-Home",faction="B",npc="Tishereenelee",npcid=167265,x=35.14,y=51.71},
-		{name="Heart of the Forest",faction="B",npc="Ceridwyn",npcid=165701,x=46.26,y=50.81,function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.NightFae end},
+		{name="Heart of the Forest",faction="B",npc="Ceridwyn",npcid=165701,x=46.26,y=50.81,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.NightFae end},
 	},
 
 

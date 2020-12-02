@@ -14,7 +14,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Eversong Woods (1-50)",
 startlevel=1,
 endlevel=5,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Magistrix Erona##15278
 accept Reclaiming Sunstrider Isle##8325 |goto Sunstrider Isle/0 61.03,45.13
@@ -135,7 +134,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Blasted Lands (15-50)",
 startlevel=8,
 endlevel=10,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk The Lich King##25462
 accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave/0 51.34,35.21
@@ -772,7 +770,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Northern Barrens (5-50)",
 startlevel=1,
 endlevel=10,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Sassy Hardwrench##34668
 |tip Inside the building.
@@ -1782,7 +1779,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Durotar (1-50)",
 startlevel=1,
 endlevel=5,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Kaltunk##10176
 accept Your Place In The World##25152 |goto Valley of Trials/0 45.18,68.40
@@ -1903,7 +1899,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Mulgore (1-50)",
 startlevel=1,
 endlevel=4,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Chief Hawkwind##2981
 accept The First Step##14449 |goto Camp Narache/0 27.73,28.30
@@ -2007,7 +2002,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Durotar (1-50)",
 startlevel=1,
 endlevel=5,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Jin'thala##37951
 accept The Rise of the Darkspear##31159 |goto Echo Isles/0 42.82,53.44 |only if Troll Monk
@@ -2464,7 +2458,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Silverpine Forest (5-50
 startlevel=1,
 endlevel=10,
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Agatha##49044
 accept Fresh out of the Grave##24959 |goto Deathknell/0 40.51,78.53

@@ -16,6 +16,9 @@ local item_gem_types = ItemScore.Item_Gem_Types
 local ItemCache = {}
 ItemScore.ItemCache = ItemCache
 
+local locale=GetLocale()
+if locale=="enGB" then locale="enUS" end  -- just in case.
+
 local function strip_link(itemlink)
 	local _,itemstring,_ = itemlink:match("(.*)item:([0-9-:]*)(.*)")
 	if itemstring then 	
@@ -228,20 +231,23 @@ function ItemScore:GetItemDetails(itemlink)
 	-- if item is not yet cached, grab its data
 	if not ItemCache[itemlink] then
 		-- that is a new one
-		local stats = GetItemStats(itemlink)
 		local itemName,_,itemRarity,_,itemMinLevel,_,_,_,itemEquipLoc,texture,_,itemClassID,itemSubClassID = ZGV:GetItemInfo(itemlink) 
 		local itemlvl,_,baseitemlvl = GetDetailedItemLevelInfo(itemlink) 
-		if not (stats and itemName) then return false end
+		if not itemName then return false end
 
 		-- class, spec check, and level check. we need to scan tooltip for those. meh.
 		local playerclass, playerspec
 		Gratuity:SetHyperlink(itemlink)
 		if Gratuity:NumLines()==0 then return false end
 
+		local stats = {}
+
 		for num=1,Gratuity:NumLines() do
 			local line=Gratuity:GetLine(num)
 
 			if not line then break end
+			if line==RETRIEVING_ITEM_INFO then return false end
+			
 			local found_class = line:match( gsub(ITEM_CLASSES_ALLOWED,"%%s","(.*)")) 
 			if found_class then playerclass = found_class end
 
@@ -251,6 +257,21 @@ function ItemScore:GetItemDetails(itemlink)
 			-- gg blizz. some of itemlink from encounter journal report min level 120, even if tooltips states 110. 
 			local found_level = line:match( gsub(ITEM_MIN_LEVEL,"%%d","(.*)"))
 			if found_level then itemMinLevel = tonumber(found_level) end
+
+			for _,statdata in pairs(ItemScore.Keywords) do
+				local value = line:lower():match(statdata.regex)
+				if value then 
+					value = value:gsub(",",".")
+					stats[statdata.blizz] = tonumber(value)
+				end
+				if not value and locale~="enUS" then 
+					local value = line:lower():match(statdata.regex2)
+					if value then 
+						value = value:gsub(",",".")
+						stats[statdata.blizz] = tonumber(value)
+					end
+				end
+			end
 		end
 
 		-- ok, got everything, cache it
@@ -378,8 +399,14 @@ function ItemScore:GetItemScore(itemlink,verbose)
 	end
 
 	-- add dps and armor at minimal weight, unless proper statweights for them exist
-	if not statweights.ARMOR then score = score + (item.stats.RESISTANCE0_NAME or 0)*self.whiteScoreWeight end
-	if not statweights.DAMAGE_PER_SECOND then score = score + (item.stats.ITEM_MOD_DAMAGE_PER_SECOND_SHORT or 0)*self.whiteScoreWeight end
+	if not statweights.ARMOR then 
+		if verbose then table.insert(verbose,("  + |cff00ff00%.1f extra %s|r: |cffaaaaaa * %.1f|r = |cffffffff%.1f|r"):format((item.stats.ARMOR or 0),RESISTANCE0_NAME, self.whiteScoreWeight, (item.stats.ARMOR or 0)*self.whiteScoreWeight ))  end
+		score = score + (item.stats.ARMOR or 0)*self.whiteScoreWeight 
+	end
+	if not statweights.DAMAGE_PER_SECOND then 
+		if verbose then table.insert(verbose,("  + |cff00ff00%.1f extra %s|r: |cffaaaaaa * %.1f|r = |cffffffff%.1f|r"):format((item.stats.DAMAGE_PER_SECOND or 0),ITEM_MOD_DAMAGE_PER_SECOND_SHORT, self.whiteScoreWeight, (item.stats.DAMAGE_PER_SECOND or 0)*self.whiteScoreWeight ))  end
+		score = score + (item.stats.DAMAGE_PER_SECOND or 0)*self.whiteScoreWeight 
+	end
 
 	-- adjust armor weights
 	if item.class == LE_ITEM_CLASS_ARMOR and item.type~="INVTYPE_CLOAK" then
@@ -411,6 +438,11 @@ function ItemScore:GetItemScore(itemlink,verbose)
 
 	-- record scores
 	item.score = score
+
+	if verbose then 
+		table.insert(verbose,("score %f"):format(score))
+		table.insert(verbose,("comment %s"):format("scored ok"))
+	end
 
 	return score, true, "scored ok"
 end

@@ -20,7 +20,7 @@ table.insert(GuideMenu.Featured,{
 	{"content", text=[[Reach Level 50]]},
 	{"text", text=[[At level 10 you can choose one expansion which will scale to level you from 10 to 50. If it's your first time Use the Chromie Time guide to pick or change your expansion.]]},
 	{"columns",
-	{"item", text=[[**Chromie Time**]], guide="LEVELING\\Shadowlands\\Chromie Time"},
+	{"item", text=[[**Chromie Time**]], guide="LEVELING\\Starter Guides\\Chromie Time"},
 	{"item", text=[[**Classic (10-50)**]], folder="LEVELING\\Classic (10-50)",roadmaponly=true},
 	{"item", text=[[**The Burning Crusade (10-50)**]], folder="LEVELING\\The Burning Crusade (10-50)",roadmaponly=true},
 	{"item", text=[[**Wrath of the Lich King (10-50)**]], folder="LEVELING\\Wrath of the Lich King (10-50)",roadmaponly=true},
@@ -310,7 +310,7 @@ table.insert(GuideMenu.Featured,{
 
 {"list", text=[[Once you reach level 120 you can start using our End Game guides.]], folder="DAILIES\\Battle for Azeroth\\"},
 {"columns",
-{"item", text=[[**Chromie Time**]], guide="LEVELING\\Shadowlands\\Chromie Time"},
+{"item", text=[[**Chromie Time**]], guide="LEVELING\\Starter Guides\\Chromie Time"},
 
 {"item", text=[[|cfffe6100Tiragarde Sound]], guide="LEVELING\\Battle for Azeroth (10-50)\\Kul Tiras\\Tiragarde Sound (10-50)", faction="A"},
 

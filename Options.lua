@@ -1317,6 +1317,7 @@ function ZGV:Options_DefineOptionTables()
 				end,
 				set = function(i,v)
 					ZGV.ItemScore:ImportPawn(v) 
+					ZGV.ItemScore:RefreshUserData()
 				end,
 				font=ZGV.font_dialog,
 			})

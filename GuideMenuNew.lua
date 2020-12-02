@@ -34,7 +34,7 @@ function GuideMenu:ShowHome()
 		GuideMenu:CreateHome()
 	end
 	
-	GuideMenu:SetWideSectionHeader("What's new | November 30th, 2020 Release 8.0.23853")
+	GuideMenu:SetWideSectionHeader("What's new | December 1st, 2020 Release 8.0.23869")
 
 	GuideMenu.GuideCategory=nil
 end

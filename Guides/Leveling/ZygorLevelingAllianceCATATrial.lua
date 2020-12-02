@@ -15,7 +15,6 @@ next="Leveling Guides\\Shadowlands\\Chromie Time",
 startlevel=8,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk The Lich King##25462
 accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave/0 51.34,35.18
@@ -670,7 +669,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Azuremyst Isle (1-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Megelon##16475 |goto Ammen Vale/0 61.2,29.5
 accept You Survived!##9279
@@ -850,7 +848,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Dun Morogh (1-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Joren Ironstock##37081
 accept Hold the Line!##24469 |goto Coldridge Valley 67.1,41.3
@@ -1046,7 +1043,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Dun Morogh (1-50)",
 startlevel=1,
 endlevel=5
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 next "normalstart" |only Gnome
 next "oddstart" |only if not Gnome
@@ -1307,7 +1303,6 @@ next="Leveling Guides\\Classic (1-50)\\Eastern Kingdoms\\Elwynn Forest (1-50)",
 startlevel=1,
 endlevel=5
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Marshal McBride##197
 accept Beating them Back!##28757 |goto Northshire/0 33.6,53.0 |only Human Mage
@@ -1517,7 +1512,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Darkshore (5-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Ilthalaine##2079
 accept The Balance of Nature##28713 |goto Shadowglen/0 45.6,74.6
@@ -2062,7 +2056,6 @@ next="Leveling Guides\\Classic (1-50)\\Kalimdor\\Darkshore (5-50)",
 startlevel=1,
 endlevel=50
 },[[
-stickystart "Chromie_Time_Eligible"
 step
 talk Prince Liam Greymane##34850
 accept Lockdown!##14078 |goto Gilneas City/0 59.14,23.88

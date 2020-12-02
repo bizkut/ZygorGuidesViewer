@@ -133,8 +133,8 @@ data.basenodes.transit = {
 	--## Neutral ##--
 
 		-- Elysian Hold -to- Oribos --
-		"Elysian Hold/0 48.82,64.79 -to- Oribos/0 20.34,50.31 {mode:PORTAL} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Kyrian}"..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3}",
+		"Elysian Hold/0 48.82,64.79 -to- Oribos/0 20.34,50.31 {mode:PORTAL} "..
+			"{cond:covenant('Kyrian') and covenantnetwork() == 3}",
 
 
 
@@ -153,58 +153,47 @@ data.basenodes.transit = {
 
 		-- Seat of the Primus, Maldraxxus -to- Overlook, Seat of the Primus, Maldraxxus --
 		"Seat of the Primus/0 58.82,22.95 -to- Maldraxxus/0 50.39,73.42 {mode:PORTAL} {title:Click the Portal to Overlook, Seat of the Primus} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 1 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Overlook, Seat of the Primus, Maldraxxus -to- Main Hall, Seat of the Primus, Maldraxxus --
 		"Maldraxxus/0 50.40,73.99 -to- Seat of the Primus/0 58.71,25.85 {mode:PORTAL} {title:Click the Portal to Main Hall, Seat of the Primus} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 1 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Seat of the Primus, Maldraxxus -to- Sixfold Recluse, House of Constructs, Maldraxxus --
 		"Seat of the Primus/0 56.44,37.02 -to- Maldraxxus/0 26.08,43.01 {mode:PORTAL} {title:Click the Portal to Sixfold Recluse, House of Constructs} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 1 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Sixfold Recluse, House of Constructs, Maldraxxus -to- Main Hall, Seat of the Primus, Maldraxxus --
 		"Maldraxxus/0 25.86,43.27 -to- Seat of the Primus/0 58.71,25.85 {mode:PORTAL} {title:Click the Portal to Main Hall, Seat of the Primus} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 1 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Seat of the Primus, Maldraxxus -to- Nurakkir, House of Eyes, Maldraxxus --
 		"Seat of the Primus/0 61.62,37.75 -to- Maldraxxus/0 51.14,16.37 {mode:PORTAL} {title:Click the Portal to Nurakkir, House of Eyes} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 2 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Nurakkir, House of Eyes, Maldraxxus -to- Seat of the Primus, Maldraxxus --
 		"Maldraxxus/0 51.64,16.39 -to- Seat of the Primus/0 58.92,34.24 {mode:PORTAL} {title:Click the Portal to Seat of the Primus} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 2 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Seat of the Primus, Maldraxxus -to- Zerekriss, Maldraxxus (CONSTANTLY MOVES) --
 		--"Seat of the Primus/0 62.87,34.27 -to- Maldraxxus/0 28.97,44.65 {mode:PORTAL} {title:Click the Portal to Zerekriss: Maldraxxus} "..
-			--"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			--"{cond:PlayerCompletedQuest(63059)}",
+			--"{cond:covenantnetwork() >= 2 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Zerekriss, Maldraxxus -to- Seat of the Primus, Maldraxxus (CONSTANTLY MOVES) --
 		--"Maldraxxus/0 28.62,44.69 -to- Seat of the Primus/0 58.92,34.24 {mode:PORTAL} {title:Click the Portal to Seat of the Primus} "..
-			--"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			--"{cond:PlayerCompletedQuest(63059)}",
+			--"{cond:covenantnetwork() >= 2 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Seat of the Primus, Maldraxxus -to- Exoramas, House of Rituals, Maldraxxus --
 		"Seat of the Primus/0 61.58,30.50 -to- Maldraxxus/0 74.27,33.64 {mode:PORTAL} {title:Click the Portal to Exoramas, House of Rituals} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 2 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Exoramas, House of Rituals, Maldraxxus -to- Seat of the Primus, Maldraxxus --
 		"Maldraxxus/0 74.46,33.64 -to- Seat of the Primus/0 58.92,34.24 {mode:PORTAL} {title:Click the Portal to Seat of the Primus} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+			"{cond:covenantnetwork() >= 2 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 		-- Seat of the Primus, Malxraxxus -to- Oribos --
-		"Seat of the Primus/0 56.38,31.48 -to- Oribos/0 20.34,50.31 {mode:PORTAL} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Necrolord}"..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3}"..
-			"{cond:PlayerCompletedQuest(63059)}",
+		"Seat of the Primus/0 56.38,31.48 -to- Oribos/0 20.34,50.31 {mode:PORTAL} "..
+			"{cond:covenantnetwork() == 3 and covenant('Necrolord') and PlayerCompletedQuest(63059)}",
 
 
 
@@ -237,102 +226,83 @@ data.basenodes.transit = {
 
 		-- Fungal Terminus, Ardenweald -to- Heart of the Forest, Ardenweald
 		"Fungal Terminus/0 58.81,62.18 -to- Heart of the Forest/1 55.33,27.40 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to the Heart of the Forest\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Forest's Edge, Ardenweald (Only one-way currently)
 		"Fungal Terminus/0 41.97,61.14 -to- Ardenweald/0 65.73,60.26 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Forest's Edge\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Forest's Edge, Ardenweald -to- Fungal Terminus, Ardenweald (Only one-way currently) (Rank 1 Night Fae Transport)
 		"Ardenweald/0 65.73,60.26 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- The Stalks, Ardenweald (Rank 1 Night Fae Transport)
 		"Fungal Terminus/0 41.47,40.07 -to- Ardenweald/0 29.51,34.63 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse To the Stalks\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- The Stalks, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 1 Night Fae Transport)
 		"Ardenweald/0 29.50,34.61 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Stillglade, Ardenweald (Rank 1 Night Fae Transport)
 		"Fungal Terminus/0 56.45,37.37 -to- Ardenweald/0 57.50,42.59 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Stillglade\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Stillglade, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 1 Night Fae Transport)
 		"Ardenweald/0 57.49,42.63 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 1 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Gormhive, Ardenweald (Rank 2 Night Fae Transport)
 		"Fungal Terminus/0 52.69,67.91 -to- Ardenweald/0 53.28,79.06 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Gormhive\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 2 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Gormhive, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 2 Night Fae Transport)
 		"Ardenweald/0 53.28,79.04 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 2 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Banks of Life, Ardenweald (Rank 2 Night Fae Transport)
 		"Fungal Terminus/0 38.65,48.02 -to- Ardenweald/0 49.39,27.55 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to the Banks of Life\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 2 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Banks of Life, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 2 Night Fae Transport)
 		"Ardenweald/0 49.39,27.55 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 2 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Elder Stand, Ardenweald (Rank 2 Night Fae Transport)
 		"Fungal Terminus/0 51.80,35.59 -to- Ardenweald/0 26.44,51.25 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Elder Stand\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 2 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Elder Stand, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 2 Night Fae Transport)
 		"Ardenweald/0 26.45,51.25 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() >= 2 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Crumbled Ridge, Ardenweald (Rank 3 Night Fae Transport)
 		"Fungal Terminus/0 45.79,66.38 -to- Ardenweald/0 73.69,25.22 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Crumbled Ridge\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Crumbled Ridge, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 3 Night Fae Transport)
 		"Ardenweald/0 73.72,25.21 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Eventide Grove, Ardenweald (Rank 3 Night Fae Transport)
 		"Fungal Terminus/0 46.87,35.40 -to- Ardenweald/0 41.09,69.54 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Eventide Grove\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Eventide Grove, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 3 Night Fae Transport)
 		"Ardenweald/0 41.11,69.53 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Fungal Terminus, Ardenweald -to- Tirna Scithe, Ardenweald (Rank 3 Night Fae Transport)
 		"Fungal Terminus/0 58.78,43.56 -to- Ardenweald/0 20.28,66.95 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to Tirna Scithe\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Tirna Scithe, Ardenweald -to- Fungal Terminus, Ardenweald (Rank 3 Night Fae Transport)
 		"Ardenweald/0 20.29,66.96 -to- Fungal Terminus/0 65.75,73.60 {mode:PORTAL} {title:Use the |cfff0e081\"Traverse to The Ring\"|r ability on-screen} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} "..
-			"{cond:PlayerCompletedQuest(57583)}",
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 		-- Heart of the Forest, Ardenweald -to- Oribos, The Shadowlands (Rank 3 Night Fae Transport)
-		"Heart of the Forest/1 59.90,28.47 -to- Oribos/0 19.24,50.31 {mode:PORTAL} {cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') == 3} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.NightFae} {cond:PlayerCompletedQuest(57583)}",
+		"Heart of the Forest/1 59.90,28.47 -to- Oribos/0 19.24,50.31 {mode:PORTAL}"..
+			"{cond:covenantnetwork() == 3 and covenant('NightFae') and PlayerCompletedQuest(57583)}",
 
 	----------------
 	-- REVENDRETH --
@@ -438,23 +408,19 @@ data.basenodes.transit = {
 
 		-- Sinfall, Revendreth -x- The Eternal Palace, Revendreth --
 		"Sinfall/0 46.18,49.50 -x- Revendreth/0 56.74,32.46 {mode:PORTAL} {title:Walk into the Red Swirling Portal\nInside the Building} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Venthyr} "..
-			"{cond:PlayerCompletedQuest(60147)}",
+			"{cond:covenantnetwork() >= 1 and covenant('Venthyr') and PlayerCompletedQuest(60147)}",
 
 		-- Sinfall, Revendreth -x- Pridefall Hamlet, Revendreth --
 		"Sinfall/0 42.12,36.22 -x- Revendreth/0 70.76,75.48 {mode:PORTAL} {title:Walk into the Red Swirling Portal\nInside the Building} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 1} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Venthyr} "..
-			"{cond:PlayerCompletedQuest(60060)}",
+			"{cond:covenantnetwork() >= 1 and covenant('Venthyr') and PlayerCompletedQuest(60060)}",
 
 		-- Sinfall, Revendreth -x- Halls of Atonement, Revendreth --
 		"Sinfall/1 63.58,53.49 -x- Revendreth/0 73.61,43.94 {mode:PORTAL} {title:Walk into the Red Swirling Portal\nInside the Building} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Venthyr} "..
-			"{cond:PlayerCompletedQuest(60159)}",
+			"{cond:covenantnetwork() >= 2 and covenant('Venthyr') and PlayerCompletedQuest(60159)}",
 
 		-- Sinfall, Revendreth -x- The Banewood, Revendreth --
 		"Sinfall/1 58.34,36.56 -x- Revendreth/0 43.48,57.07 {mode:PORTAL} {title:Walk into the Red Swirling Portal\nInside the Building} "..
-			"{cond:ZGV.Parser.ConditionEnv.covenantfeature('Transport Network') >= 2} {cond:ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv.Venthyr} "..
-			"{cond:PlayerCompletedQuest(60160)}",
+			"{cond:covenantnetwork() >= 2 and covenant('Venthyr') and PlayerCompletedQuest(60160)}",
 
 
 

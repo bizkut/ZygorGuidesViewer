@@ -5931,7 +5931,7 @@ kill Duskterror##163059
 |tip She flies down to you.
 |tip She will eventually be captured.
 Watch the dialogue
-Capture Duskterror |q 58941/2 |goto 51.14,74.48
+Capture Duskterror |q 58941/2 |goto 52.44,76.47
 step
 label "Slay_Dredbats"
 Kill enemies around this area
@@ -6027,6 +6027,7 @@ Confront the Accuser |q 60506/2 |goto 51.57,59.78
 step
 cast Door of Shadows##300728
 |tip Place the green circle on the other side of barrier, where The Accuser is standing.
+|tip If you misplace it, use the nearby Midnight Rose vase to reset the cooldown.
 Cast Door of Shadows to Cross the Barrier |q 60506/3 |goto 51.57,59.67
 step
 talk The Accuser##156554
@@ -15146,6 +15147,3104 @@ step
 _Congratulations!_
 You Reached Renown Level 40.
 ]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Questline",{
+author="support@zygorguides.com",
+description="\nThis guide will assist you in completing the Night Fae\n"..
+"\ncovenant quests and storyline.\n",
+condition_suggested=function() return level >= 60 end,
+startlevel=60.0,
+endlevel=70.0,
+image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
+},[[
+step
+Reach Level 60 |ding 60
+|tip You must be level 60 before you can start your covenant questline.
+|tip Use the Leveling guides to accomplish this.
+step
+Complete the "Choosing Your Purpose" Quest in Oribos |complete completedanyq(57878,62000) |future
+|tip Use the "Shadowlands Intro & Main Questline" guide to accomplish this.
+step
+talk Tal-Inara##159478
+accept Report to Moonberry##63214 |goto Oribos/0 38.91,69.97
+step
+talk Lady Moonberry##171795
+turnin Report to Moonberry##63214 |goto Oribos/0 39.77,60.88
+accept The Heart of the Forest##61475 |goto Oribos/0 39.77,60.88
+step
+talk Lady Moonberry##172431
+turnin The Heart of the Forest##61475 |goto Ardenweald/0 49.34,52.36
+accept The Boon of Shapes##61479 |goto Ardenweald/0 49.34,52.36
+step
+talk Lady Moonberry##172431
+Tell her _"Lead on."_
+Begin Following Lady Moonberry |goto 49.34,52.36 > 20 |c |q 61479
+step
+Watch the dialogue
+|tip Follow Lady Moonberry as she flies.
+|tip She eventually flies to this location inside the tree.
+Follow Lady Moonberry |q 61479/1 |goto Heart of the Forest/0 49.96,40.23 |notravel
+step
+Use the _"Receive Boon"_ ability
+|tip It appears as a button on the screen.
+|tip Inside the tree.
+Watch the dialogue
+Kneel Before Lady Moonberry |q 61479/2 |goto 49.96,40.23
+step
+talk Lady Moonberry##172431
+|tip Inside the tree.
+turnin The Boon of Shapes##61479 |goto 49.21,39.92
+accept Show, Don't Tell##58104 |goto 49.21,39.92
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+Tell her _"Let us commune with each other."_
+Watch the dialogue
+Commune with Moonberry |q 58104/1 |goto 49.22,39.93
+step
+talk Kewarin##160292
+|tip Inside the tree.
+home Heart of the Forest |goto 54.79,56.18 |q 58104
+step
+Follow the path up |goto 56.70,28.47 < 15 |walk
+talk Ceridwyn##165701
+fpath Heart of the Forest |goto Ardenweald/0 46.26,50.81
+step
+Follow the path |goto Ardenweald/0 44.09,45.25 < 30 |only if walking
+talk Featherlight##160484
+turnin Show, Don't Tell##58104 |goto Ardenweald/0 40.71,42.78
+accept Break a Leg##58157 |goto Ardenweald/0 40.71,42.78
+step
+Take Your Place on Stage |q 58157/1 |goto 41.43,44.78
+step
+Use the _"Begin Act 1, Xavius"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+kill Niya, As Xavius##160466
+Defeat Act 1, "Lord Xavius" |q 58157/2 |goto 41.43,44.78
+step
+Use the _"Begin Act 2, Gul'dan"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+kill Senthii, As Gul'dan##160504
+Defeat Act 2, "Gul'dan" |q 58157/3 |goto 41.43,44.78
+step
+Use the _"Begin Act 3, Kil'jaeden"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+kill Glimmerdust, As Kil'jaeden##160506
+Defeat Act 3, "Kil'jaeden" |q 58157/4 |goto 41.43,44.78
+step
+Use the _"Begin Act 4, Argus"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+kill Mi'kai, As Argus, the Unmaker##160507
+Defeat Act 4, "Argus" |q 58157/5 |goto 41.43,44.78
+step
+Use the _"Taking a Bow"_ ability
+|tip It appears as a button on the screen.
+Take a Bow |q 58157/6 |goto 41.43,44.78
+step
+talk Featherlight##160484
+turnin Break a Leg##58157 |goto 40.71,42.78
+accept The Fourth Wall, er, War##58158 |goto 40.71,42.78
+step
+click Azeroth
+Carry Azeroth |havebuff spell:313449 |goto 40.81,43.91 |q 58158
+step
+click Azeroth
+Place Azeroth |q 58158/2 |goto 41.31,44.53
+step
+click Teldrassil
+Place Teldrassil |q 58158/1 |goto 41.21,44.89
+step
+talk Satinstitch##161066
+Tell him _"Give me my costume, please."_
+|tip You cannot receive this while mounted.
+Become Sargeras |q 58158/3 |goto 40.57,42.95
+step
+Use the _"Stab the World"_ ability
+|tip It appears as a button on the screen.
+|tip Mounting will remove your costume.
+Watch the dialogue
+Stab the World |q 58158/4 |goto 41.02,43.72
+step
+talk Satinstitch##161066
+Tell him _"Give me my costume, please."_
+|tip You cannot receive this while mounted.
+Become Nathanos |q 58158/5 |goto 40.57,42.95
+step
+Use the _"Burning Teldrassil"_ ability
+|tip It appears as a button on the screen.
+|tip Mounting will remove your costume.
+Burn Teldrassil |q 58158/6 |goto 41.21,44.89
+step
+talk Rickrack##161106
+Tell him _"Give me my costume, please."_
+|tip You cannot receive this while mounted.
+Become Reverence |q 58158/7 |goto 40.57,42.90
+step
+talk Satinstitch##161066
+Choose _<You hold still.>_
+|tip Mounting will remove your costume.
+Upgrade Your Costume |q 58158/8 |goto 40.57,42.95
+step
+Trample #15# Horde Siege Engines |q 58158/9 |goto 41.29,44.30
+|tip They look like small wooden block vehicles around this area.
+|tip Run over them.
+step
+talk Satinstitch##161066
+Tell him _"Please remove my costume."_
+Remove Your Costume |q 58158/10 |goto 40.57,42.95
+step
+click Wound
+Heal Azeroth's Wound |q 58158/11 |goto 41.47,44.34 |count 1
+step
+click Wound
+Heal Azeroth's Wound |q 58158/11 |goto 41.47,44.48 |count 2
+step
+click Wound
+Heal Azeroth's Wound |q 58158/11 |goto 41.37,44.52 |count 3
+step
+click Wound
+Heal Azeroth's Wound |q 58158/11 |goto 41.31,44.71 |count 4
+step
+click Wound
+Heal Azeroth's Wound |q 58158/11 |goto 41.21,44.69 |count 5
+step
+talk Featherlight##160484
+turnin The Fourth Wall, er, War##58158 |goto 40.71,42.78
+accept What's My Motivation?##58159 |goto 40.71,42.78
+step
+Take Your Place on Stage |q 58159/1 |goto 41.43,44.78
+step
+Use the _"Act 6, Begin!"_ ability
+|tip It appears as a button on the screen.
+Click Here After Using the Ability |confirm |goto 41.43,44.78 |q 58159
+step
+Watch the dialogue
+clicknpc Gloober as G'huun##160511
+Defeat G'huun |q 58159/2 |goto 41.30,44.84
+step
+Use the _"Act 7, Begin!"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+Defeat Jaina |q 58159/3 |goto 41.43,44.79
+step
+Use the _"Finale, Begin!"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+kill Astra, As Azshara##161161
+Defeat Azshara |q 58159/4 |goto 41.43,44.79
+step
+Watch the dialogue
+kill Dreamweaver, As N'Zoth##160510
+Defeat N'Zoth |q 58159/5 |goto 41.30,44.83
+step
+Use the _"Awaiting the Queen's Judgement"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+Await the Queen's Judgement |q 58159/6 |goto 41.43,44.79
+step
+talk Lady Moonberry##160467
+turnin What's My Motivation?##58159 |goto 41.07,44.86
+step
+talk Ysera##160500
+accept For Queen and Grove!##58160 |goto 42.51,45.29
+step
+clicknpc Ysera##160501
+Begin Flying with Ysera |invehicle |goto 42.51,45.29 |q 58160
+step
+Watch the dialogue
+Fly with Ysera |q 58160/1 |goto 51.94,8.24 |notravel
+step
+talk Attendant Sparkledew##158543
+|tip Inside the tree.
+Tell her _"Take me to the Queen's audience chamber, please."_
+Ask Attendant Sparkledew for Transport |q 58160/2 |goto Heart of the Forest/0 51.21,19.22
+step
+Reach the Queen's Audience Chamber |goto Heart of the Forest/2 43.68,61.88 < 10 |c |q 58160 |notravel
+step
+Use the _"Swearing Oath"_ ability
+|tip It appears as a button on the screen.
+|tip Upstairs inside the tree.
+Pledge the Oath |q 58160/3 |goto Heart of the Forest/2 49.66,37.10
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+turnin For Queen and Grove!##58160 |goto 51.16,27.90
+accept The Forest Will Sing Your Name##62883 |goto 51.16,27.90
+step
+talk Laurel##176096
+turnin The Forest Will Sing Your Name##62883 |goto Heart of the Forest/0 33.60,37.00
+accept Who Shapes the Forest##62884 |goto 33.60,37.00
+step
+talk Laurel##176096
+Ask her _"What is my Renown with the Night Fae?"_
+Examine Your Renown |q 62884/1 |goto 33.60,37.00
+step
+talk Laurel##176096
+turnin Who Shapes the Forest##62884 |goto 33.60,37.00
+accept A Call to Service##62697 |goto 33.60,37.00
+step
+talk Blodwyn##167195
+|tip Outside, on the balcony of the tree.
+turnin A Call to Service##62697 |goto Heart of the Forest/0 53.81,5.97
+accept A Calling in Ardenweald##62693 |goto Heart of the Forest/0 53.81,5.97
+accept The Life-blood of the Forest##62890 |goto Heart of the Forest/0 53.81,5.97
+step
+Complete #3# World Quests in Ardenweald |q 62693/1
+|tip Use the World Quests guide to accomplish this.
+|tip Click a world quest on the Ardenweald map to load the guide for it.
+step
+talk Blodwyn##167195
+|tip Outside, on the balcony of the tree.
+turnin A Calling in Ardenweald##62693 |goto Heart of the Forest/0 53.81,5.97
+step
+use the Bounty of the Grove Wardens##181475
+|tip You should have this from turning in the "A Calling in Ardenweald" quest.
+|tip You will be given an item worth 500 Anima.
+|tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
+Receive the Rewards |condition itemcount(181475) == 0 |q 62891 |future
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+turnin The Life-blood of the Forest##62890 |goto Heart of the Forest/1 39.39,54.35
+accept Into the Reservoir##62891 |goto Heart of the Forest/1 39.39,54.35
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+Tell him _"Show me the Sanctum."_
+|tip Click the "Deposit" button.
+Deposit #375# Anima |q 62891/2 |goto 39.39,54.35
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+turnin Into the Reservoir##62891 |goto 39.39,54.35
+accept Recover the Lost##62892 |goto 39.39,54.35
+step
+talk Flutterby##158553
+|tip Inside the tree.
+turnin Recover the Lost##62892 |goto Heart of the Forest/0 33.89,43.48
+accept Do What We Cannot##62893 |goto Heart of the Forest/0 33.89,43.48
+step
+talk Ve'nari##162804
+turnin Do What We Cannot##62893 |goto The Maw/0 46.92,41.69
+accept Setting the Ground Rules##62882 |goto The Maw/0 46.91,41.69
+step
+talk Ve'nari##162804
+Ask her _"What are your ground rules for working together?"_
+Watch the dialogue
+Set the Ground Rules with Ve'nari |q 62882/1 |goto 46.91,41.69
+step
+talk Ve'nari##162804
+turnin Setting the Ground Rules##62882 |goto 46.91,41.69
+accept Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
+stickystart "Collect_Granules_of_Stygia_60287"
+step
+kill Stone Prison##176145+
+|tip They look like pyramids made of rocks on the ground around this area.
+click Soul Cage+
+|tip They look like tall grey metal cages on the ground around this area.
+|tip They will appear on your minimap as white ghost icons.
+click Soul+
+|tip They look like white spirits that float out of the cages and stone prisons.
+|tip You can also click Souls that other players free.
+Take #5# Souls into the Soulkeeper |q 60287/1 |goto 40.16,42.42
+step
+label "Collect_Granules_of_Stygia_60287"
+Kill enemies around this area
+kill Stone Prison##176145+								|notinsticky
+|tip They look like pyramids made of rocks on the ground around this area.		|notinsticky
+click Soul Cage+									|notinsticky
+|tip They look like tall grey metal cages on the ground around this area.		|notinsticky
+|tip They will appear on your minimap as white ghost icons.				|notinsticky
+click Soul+										|notinsticky
+|tip They look like white spirits that float out of the cages and stone prisons.	|notinsticky
+|tip You can also click Souls that other players free.					|notinsticky
+collect 60 Granule of Stygia##180852 |q 60287/2 |goto 40.16,42.42
+step
+Follow the path down |goto 44.60,41.08 < 15 |only if walking
+talk Ve'nari##162804
+buy 1 Cypher of Relocation##180817 |q 60287/4 |goto 46.91,41.69
+step
+talk Ve'nari##162804
+turnin Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
+accept Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 47.19,43.16 |count 1
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 48.41,41.84 |count 2
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 48.19,40.20 |count 3
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 46.93,39.48 |count 4
+step
+talk Ve'nari##162804
+turnin Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
+accept Rule 3: Trust is Earned##60289 |goto 46.91,41.69
+step
+click Signaling Beacon
+Place the Signaling Beacon |q 60289/1 |goto 34.98,47.68
+step
+click Baine's Mace##364498
+|tip You will be attacked.
+collect Bloodhoof Warmace##184284 |q 60289/2 |goto 33.46,49.06
+step
+kill Tower Inquisitor##171626 |q 60289/3 |goto 33.46,49.06
+step
+use the Cypher of Relocation##180817
+Return to Ve'nari |goto 46.22,41.25 < 10 |c |q 60289
+step
+talk Ve'nari##162804
+turnin Rule 3: Trust is Earned##60289 |goto 46.91,41.69
+accept Hopeful News##62837 |goto 46.91,41.69
+step
+talk Highlord Bolvar Fordragon##164079
+turnin Hopeful News##62837 |goto Oribos/0 39.94,68.61
+accept Flutterback##62894 |goto Oribos/0 39.94,68.61
+step
+talk Flutterby##158553
+|tip Inside the tree.
+turnin Flutterback##62894 |goto Heart of the Forest/0 33.90,43.50
+accept Recovered Souls##62897 |goto Heart of the Forest/0 33.90,43.50
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+turnin Recovered Souls##62897 |goto Heart of the Forest/1 39.39,54.36
+accept The First New Growth##62898 |goto Heart of the Forest/1 39.39,54.36
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+Tell him _"Show me the Sanctum."_
+|tip Choose whichever upgrade you like best, it doesn't matter, because you will eventually unlock them all over time.
+|tip Click the "Activate" button.
+Start a Sanctum Upgrade |q 62898/1 |goto 39.39,54.36
+step
+talk Lady Moonberry##172431
+|tip Inside the tree.
+turnin The First New Growth##62898 |goto Heart of the Forest/0 49.22,39.94
+accept The Forge of Bonds##61541 |goto Heart of the Forest/0 49.22,39.94
+step
+talk Flutterby##158553
+|tip Inside the tree.
+turnin The Forge of Bonds##61541 |goto 33.89,43.50
+accept The Boon of Binding##61542 |goto 33.89,43.50
+step
+talk Niya##172677
+|tip Inside the tree.
+Tell her _"I am ready to begin."_
+Soulbind with Niya |q 61542/1 |goto 33.45,45.27
+step
+talk Niya##172677
+|tip Inside the tree.
+turnin The Boon of Binding##61542 |goto 33.43,45.26
+accept Strengthening the Bond##61550 |goto 33.43,45.26
+step
+click Forge of Bonds
+|tip Select the Soulbind Power.
+|tip Inside the tree.
+Activate the Soulbind Power |q 61550/1 |goto 33.17,46.85
+step
+talk Niya##172677
+|tip Inside the tree.
+turnin Strengthening the Bond##61550 |goto 33.45,45.28
+accept A Conduit for Growth##62900 |goto 33.45,45.28
+step
+click Forge of Bonds
+|tip Use the 3 conduits in your bags.
+|tip The conduits are different, depending on your class.
+Add the Conduits to the Forge of Bonds |q 62900/1 |goto 33.16,46.81
+step
+click Forge of Bonds
+|tip Look at the powers down the tree to figure out the path you want to take.
+|tip Choose the conduit that leads to unlocking the power you like best.
+|tip Inside the tree.
+Apply the Conduit to Niya |q 62900/2 |goto 33.16,46.81
+step
+talk Flutterby##158553
+|tip Inside the tree.
+turnin A Conduit for Growth##62900 |goto 33.91,43.44
+accept The Endless Forest##62899 |goto 33.91,43.44
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin The Endless Forest##62899 |goto 47.51,36.47
+accept The Highlord Calls##63030 |goto 47.51,36.47
+step
+talk Highlord Bolvar Fordragon##164079
+turnin The Highlord Calls##63030 |goto Oribos/0 39.94,68.59
+step
+Reach Renown Level 5 |condition covenant() == NightFae and covenantrenown() >= 5
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+talk Ysera##160262
+|tip Inside the tree.
+accept Daughter of the Night Warrior##59179 |goto Heart of the Forest/0 44.78,38.95
+step
+Find Shandris Feathermoon in Oribos |q 59179/1 |goto Oribos/0 39.06,66.96
+step
+Watch the dialogue
+talk Shandris Feathermoon##164277
+|tip She walks to this location.
+turnin Daughter of the Night Warrior##59179 |goto 39.06,66.96
+accept Into the Maw##59181 |goto 39.06,66.96
+step
+Escort Shandris Feathermoon into the Maw |q 59181/1 |goto The Maw/0 44.37,41.18
+step
+talk Shandris Feathermoon##164277
+turnin Into the Maw##59181 |goto 44.37,41.18
+accept On the Trail##60508 |goto 44.37,41.18
+step
+talk Shandris Feathermoon##168836
+Tell her _"We should be able to find Tyrande if we follow the trail of corpses."_
+Find the Location in Shandris's Dream |q 60508/1 |goto 36.20,47.96
+step
+Follow the path |goto 31.30,43.19 < 40 |only if walking
+Watch the dialogue
+kill Velzhen the Duplicitous##168921
+Follow the the Trail of Corpses |q 60508/2 |goto 33.04,37.27
+step
+talk Shandris Feathermoon##168929
+|tip On the bridge.
+turnin On the Trail##60508 |goto 30.11,36.43
+accept The Sea of Souls##60530 |goto 30.11,36.43
+step
+Find Tyrande Whisperwind |q 60530/1 |goto 39.31,25.83
+|tip As you walk, use the "Smoke Arrow" ability to escape from any enemies you find too difficult to kill.
+|tip It appears as a button on the screen.
+step
+talk Shandris Feathermoon##171028
+turnin The Sea of Souls##60530 |goto 46.86,41.70
+accept The Recovery of Tyrande Whisperwind##59189 |goto 46.86,41.70
+step
+Enter the Portal to Torghast |goto 48.20,39.40
+|tip Walk into the swirling portal.
+Follow Shandris Feathermoon into the Portal |goto Torghast/0 16.29,47.08 < 10 |noway |c |q 59189
+step
+talk Shandris Feathermoon##175118
+Choose _"Follow Shandris Feathermoon into Torghast to find Tyrande Whisperwind."_
+Follow Shandris Feathermoon into Torghast |q 59189/1 |goto Torghast/0 39.08,47.16
+step
+Begin the Scenario |scenariostart |q 59189
+step
+_Inside Torghast:_
+Watch the dialogue
+|tip Follow Shandris Feathermoon and protect her as she walks.
+Find Tyrande Whisperwind |scenariostage 1 |q 59189
+step
+_Inside Torghast:_
+Kill Mawsworn enemies around this area
+|tip Help Tyrande Whisperwind and Shandris Feathermoon fight.
+Slay #10# Maw Ambushers |scenariogoal 2/47817 |q 59189
+step
+_Inside Torghast:_
+Watch the dialogue
+|tip Follow Shandris Feathermoon and protect her as she walks.
+Follow Tyrande Whisperwind |scenariostage 3 |q 59189
+step
+_Inside Torghast:_
+Kill the enemies that attack in waves
+|tip Help Shandris Feathermoon fight.
+Slay #12# Maw Ambushers |scenariogoal 4/47817 |q 59189
+step
+_Inside Torghast:_
+click Lever
+|tip Follow the hallway through the traps.
+Disable the Traps |scenariostage 5 |q 59189
+step
+_Inside Torghast:_
+Find Tyrande |scenariostage 6 |q 59189
+|tip Continue following the path.
+step
+_Inside Torghast:_
+clicknpc Bound Soul##171110+
+|tip They look like people chained to the floor surrounding Skuld.
+|tip You must free the 3 souls to be able to attack Skuld.
+Free #3# Souls |scenariogoal 7/47830 |q 59189
+step
+_Inside Torghast:_
+kill Skuld##164447 |scenariogoal 7/47831 |q 59189
+|tip Shandris Feathermoon will help you fight.
+step
+_Inside Torghast:_
+Watch the dialogue
+|tip Follow Shandris Feathermoon as she walks.
+Find Tyrande |scenariostage 8 |q 59189
+step
+_Inside Torghast:_
+kill Tortured Amalgamation##164476 |scenariostage 9 |q 59189
+step
+_Inside Torghast:_
+talk Tyrande Whisperwind##164336
+Watch the dialogue
+Beseech Tyrande to Return |scenariostage 10 |q 59189
+step
+_Inside Torghast:_
+click Soulkeeper Crystal
+|tip Floating in the middle of the room.
+Place the Soulkeeper Crystal |scenariogoal 11/48460 |q 59189
+step
+_Inside Torghast:_
+Watch the dialogue
+Rescue #80# Night Elf Souls |scenariogoal 11/48457 |q 59189
+step
+_Inside Torghast:_
+talk Shandris Feathermoon##164334
+|tip In the middle of the room.
+Tell her _"I can bring you and these souls to Ardenweald."_
+Speak with Shandris to Leave |scenarioend |q 59189
+step
+talk Shandris Feathermoon##171028
+turnin The Recovery of Tyrande Whisperwind##59189 |goto The Maw/0 46.87,41.70
+accept Their New Home##59242 |goto The Maw/0 46.87,41.70
+step
+Bring the Night Elf Souls to Ysera in Ardenweald |q 59242/1 |goto Heart of the Forest/0 44.75,38.92
+|tip Inside the tree.
+step
+talk Ysera##160262
+|tip Inside the tree.
+Tell her _"I'm ready to release the night elf souls into Ardenweald."_
+Watch the dialogue
+Speak with Ysera to Release the Night Elf souls |q 59242/2 |goto 44.75,38.92
+step
+talk Ysera##160262
+|tip Inside the tree.
+turnin Their New Home##59242 |goto 44.75,38.92
+step
+Reach Renown Level 8 |condition covenant() == NightFae and covenantrenown() >= 8
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+_Next to you:_
+talk Mask of Bwonsamdi##166265
+|tip He appears next to you inside the Heart of the Forest.
+|tip Inside the tree.
+accept On De Other Side##59809
+step
+use the Deathstone##177904
+|tip Inside the tree.
+Travel to the Other Side |q 59809/1 |goto 44.45,39.32
+step
+_Inside the Other Side:_
+talk Bwonsamdi##166281
+turnin On De Other Side##59809
+accept Taking Inventory##59811
+step
+_Inside the Other Side:_
+talk Bwonsamdi##166281
+Tell him _"Return me to Ardenweald."_
+Return to Ardenweald |q 59811/1
+step
+click Jaron'tha
+Inspect Tharon'ja |q 59811/3 |goto Ardenweald/0 61.59,38.45
+step
+click Mam'toth
+Inspect Mam'toth |q 59811/2 |goto 61.33,38.98
+step
+click Dambala's Husk
+Inspect Dambala |q 59811/4 |goto 60.16,41.97
+step
+click Hakkar's Husk
+Inspect Hakkar |q 59811/5 |goto 63.46,39.72
+step
+_Next to you:_
+talk Mask of Bwonsamdi##166265
+turnin Taking Inventory##59811
+accept Following the Trail##59812
+step
+use the Death God Mask##180167
+Use the Death God Mask |q 59812/1 |goto 62.51,39.66
+step
+Follow the path up |goto 65.06,41.81 < 30 |only if walking
+Continue up the path |goto 66.85,39.30 < 30 |only if walking
+Follow the Tracks |q 59812/2 |goto 67.10,35.13
+step
+click Mueh'zala Token
+Locate the Mueh'zala Token |q 59812/3 |goto 67.10,35.13
+step
+_Next to you:_
+talk Mask of Bwonsamdi##166265
+turnin Following the Trail##59812
+accept Minions of Mueh'zala##59813
+accept Stolen Loa##59815
+stickystart "Slay_Muehzala_Forces"
+step
+Inspect Dambala |q 59815/2 |goto 67.84,36.47
+step
+kill High Priest Rakazodu##167548 |q 59813/1 |goto 68.56,35.25
+step
+Inspect Hakkar |q 59815/1 |goto 68.57,33.42
+step
+label "Slay_Muehzala_Forces"
+Kill enemies around this area
+Slay #8# Mueh'zala Forces |q 59813/2 |goto 68.04,35.09
+step
+_Next to you:_
+talk Mask of Bwonsamdi##166265
+turnin Minions of Mueh'zala##59813
+turnin Stolen Loa##59815
+accept Winter Be Comin'##59817
+step
+talk Attendant Sparkledew##158543
+|tip Inside the tree.
+Tell her _"Take me to the Queen's audience chamber, please."_
+Request an Audience with the Winter Queen |q 59817/1 |goto Heart of the Forest/0 53.72,38.27
+step
+Enter the Queen's Audience Chamber |goto Heart of the Forest/2 43.94,60.67 < 10 |c |q 59817 |notravel
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+Tell her _"I am here on behalf of Bwonsamdi. He needs our help."_
+Deliver Bwonsamdi's Request |q 59817/2 |goto Heart of the Forest/2 51.16,28.25
+step
+Watch the dialogue
+|tip The quest only becomes able to be turned in after the dialogue finishes.
+Click Here When You Are Able To Turn In The Quest |confirm |goto 51.16,28.25 |q 59817
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+turnin Winter Be Comin'##59817 |goto 51.16,28.25
+accept Gathering The Hunt##59818 |goto 51.16,28.25
+step
+talk Mask of Bwonsamdi##172886
+|tip Upstairs inside the tree.
+Ask him _"What will you do about Mueh'zala?"_
+Speak with Bwonsamdi |q 59818/1 |goto 46.96,42.05
+step
+talk Sorcha##158519
+Tell her _"The forces of Mueh'zala have invaded Ardenweald."_
+Rally Glitterfall Basin |q 59818/2 |goto Ardenweald/0 50.95,33.47
+step
+talk Guardian Kota##158921
+Tell her _"The forces of Mueh'zala have invaded Ardenweald."_
+Rally Tirna Vaal |q 59818/3 |goto 62.61,36.08
+step
+talk Guardian Molan##160929
+Tell him _"The forces of Mueh'zala have invaded Ardenweald."_
+Rally Hibernal Hollow |q 59818/4 |goto 60.13,52.64
+step
+Follow the path |goto 62.81,56.10 < 30 |only if walking
+talk Lady Moonberry##167823
+turnin Gathering The Hunt##59818 |goto 66.66,55.60
+accept Cleansing the Forest##59819 |goto 66.66,55.60
+step
+Kill enemies around this area
+clicknpc Wounded Hunter##168067+
+|tip They look like neutral goat people on the ground around this area.
+|tip They will appear on your minimap as yellow dots.
+Weaken the Mueh'zala Forces |q 59819/1 |goto 67.03,57.84
+|tip Fill up the blue bar in the quest tracker area.
+step
+Cross the bridge |goto 67.86,61.50 < 20 |only if walking
+Use the _"Majestic Runestag"_ ability
+|tip It appears as a button on the screen.
+Transform into a Majestic Runestag |invehicle |goto 68.45,64.98 |q 59819
+step
+kill Dambala##167848 |q 59819/2 |goto 68.58,66.00
+|tip Use the abilities on your action bar.
+step
+talk Lady Moonberry##167823
+turnin Cleansing the Forest##59819 |goto 68.36,65.06
+accept Report to the Queen##59821 |goto 68.36,65.06
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+turnin Report to the Queen##59821 |goto Heart of the Forest/2 51.16,28.23
+step
+Reach Renown Level 11 |condition covenant() == NightFae and covenantrenown() >= 11
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+talk Ysera##160262
+|tip Inside the tree.
+accept The Speaker of Elune##58610 |goto Heart of the Forest/0 44.77,38.95
+step
+talk Thiernax##161785
+Choose _<Explain the situation and request help.>_
+Watch the dialogue
+Speak with Thiernax |q 58610/1 |goto Ardenweald/0 40.28,51.25
+step
+talk Qadarin##161786
+turnin The Speaker of Elune##58610 |goto 40.24,51.16
+accept A Little Pruning##58669 |goto 40.24,51.16
+step
+_Next to you:_
+talk Qadarin
+accept Broken Webs##58647
+step
+talk Cirrik##163385
+accept Spriggan Snares##59008 |goto 39.07,52.53
+step
+talk Cirrik##163385
+Free Cirrik |q 59008/1 |goto 39.07,52.53
+stickystart "Rescue_Captives"
+stickystart "Slay_Sicklethorn_Spriggans"
+step
+click Broken Anima Web
+Repair the North Soulweb |q 58647/1 |goto 37.89,56.38
+step
+click Broken Anima Web
+Repair the Central Soulweb |q 58647/2 |goto 39.20,55.36
+step
+click Broken Anima Web
+Repair the South Soulweb |q 58647/3 |goto 40.76,56.16
+step
+_Next to you:_
+talk Qadarin
+turnin Broken Webs##58647
+step
+label "Rescue_Captives"
+clicknpc Captured Soul##163389+
+|tip They look like blue animals trapped in green vines on the ground around this area.
+Rescue #8# Captives |q 59008/2 |goto 39.43,56.26
+step
+label "Slay_Sicklethorn_Spriggans"
+Kill Sicklethorn enemies around this area
+Slay #15# Sicklethorn Spriggans |q 58669/1 |goto 39.43,56.26
+step
+_Next to you:_
+talk Qadarin
+turnin A Little Pruning##58669
+turnin Spriggan Snares##59008
+accept The Garden of Night##58704
+step
+Reach the Inner Garden |q 58704/1 |goto 39.09,59.43
+step
+talk Thiernax##161785
+Tell him _"I do hear something..."_
+Speak with Thiernax |q 58704/2 |goto 39.09,59.43
+step
+Kill the enemies that attack in waves
+kill Sickleshanks##163413
+Slay the Invading Brownies and Their Leader |q 58704/3 |goto 39.09,59.43
+step
+talk Thiernax##161785
+turnin The Garden of Night##58704 |goto 39.09,59.43
+accept Broken Harts##58871 |goto 39.09,59.43
+step
+talk Lord Herne##158544
+|tip He walks around this area.
+Choose _<Explain what happened in the Gardens of Night and the spriggan's curse.>_
+Speak with Lord Herne |q 58871/1 |goto Heart of the Forest/0 39.34,71.12
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+Ask her _"Do you know anything about curses?"_
+Watch the dialogue
+Listen to Lady Moonberry |q 58871/2 |goto 44.12,37.12
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin Broken Harts##58871 |goto 44.12,37.12
+accept Archivist on the Edge##59725 |goto 44.12,37.12
+step
+Follow the path up |goto 64.19,23.87 < 30 |only if walking
+talk Archivist Dreyden##165867
+turnin Archivist on the Edge##59725 |goto Ardenweald/0 63.64,22.70
+accept Curses!##59063 |goto Ardenweald/0 63.64,22.70
+stickystart "Collect_Pieces_Of_Shredded_Scroll"
+step
+kill Unleashed Major Hex##165869
+collect Tattered Binding##177280 |goto 60.92,25.91 |q 59063
+step
+label "Collect_Pieces_Of_Shredded_Scroll"
+Kill enemies around this area
+collect 5 Piece of Shredded Scroll##175137 |goto 62.38,24.05 |q 59063
+step
+use the Piece of Shredded Scroll##175137+
+Obtain the Sealed Scroll of Soul Rot |q 59063/1
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin Curses!##59063 |goto Heart of the Forest/0 44.11,37.12
+accept A Secret Never Spoken##59068 |goto Heart of the Forest/0 44.11,37.12
+accept A Sacrifice of Anima##59070 |goto Heart of the Forest/0 44.11,37.12
+step
+talk Ysera##160262
+|tip Inside the tree.
+accept A Token of Lost Love##59069 |goto 44.79,38.95
+step
+talk Watcher Vesperbloom##164023
+Choose _<Explain why Lady Moonberry sent you to get a Secret Never Spoken.>_
+Ask Watcher Vesperbloom for a Secret |q 59068/1 |goto Ardenweald/0 44.67,56.28
+step
+Enter the cave |goto 55.09,48.19 < 10 |walk
+kill Darkwarren Matriarch##164033
+|tip Inside the cave.
+Obtain the Book of Secrets |q 59068/2 |goto 54.50,45.72
+step
+talk Watcher Vesperbloom##164023
+Tell her _"I was able to recover your book."_
+Speak with Watcher Vesperbloom |q 59068/3 |goto 44.66,56.28
+step
+click A Secret Never Spoken
+Obtain the Secret Never Spoken |q 59068/4 |goto 44.65,56.25
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin A Secret Never Spoken##59068 |goto Heart of the Forest/0 44.13,37.11
+step
+Follow the path |goto Ardenweald/0 32.89,47.86 < 40 |only if walking
+Kill enemies around this area
+collect 60 Mischief-touched Anima##175139 |q 59070/1 |goto Ardenweald/0 27.99,54.06
+step
+talk Aithlyn##158556
+|tip Inside the tree.
+turnin Silk for Ardenweald##60066 |goto Heart of the Forest/0 60.02,32.42
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin A Sacrifice of Anima##59070 |goto 44.09,37.14
+step
+talk Alexstrasza the Life-Binder##164012
+Choose _<Explain the situation to Alexstrasza and request a Token of Lost Love.>_
+Watch the dialogue
+Speak with Alexstrasza |q 59069/1 |goto Twilight Highlands/0 26.69,21.64
+step
+click Keepsake Chest
+Obtain the Token of Lost Love |q 59069/2 |goto 27.07,21.03
+step
+talk Ysera##160262
+|tip Inside the tree.
+turnin A Token of Lost Love##59069 |goto Heart of the Forest/0 44.76,38.92
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+accept Mending a Broken Hart##59071 |goto 44.15,37.07
+step
+Use the _"Cast Counter Curse"_ ability
+|tip It appears as a button on the screen.
+|tip Inside the tree.
+Perform the Counter Curse |q 59071/1 |goto 43.91,38.47
+step
+talk Thiernax##161336
+|tip Inside the tree.
+turnin Mending a Broken Hart##59071 |goto 45.01,38.26
+accept Equine Soul##62428 |goto 45.01,38.26
+step
+talk Lady Muunn##174209
+|tip Inside the tree.
+turnin Equine Soul##62428 |goto 37.91,24.70
+step
+Reach Renown Level 13 |condition covenant() == NightFae and covenantrenown() >= 13
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+talk Lord Herne##170848
+|tip He walks around this area.
+|tip Outside the tree.
+accept The Fate of Ara'lon##60898 |goto 39.87,71.97
+step
+Find Ara'lon |q 60898/1 |goto Ardenweald/0 43.26,40.05
+step
+talk Ara'lon##170705
+turnin The Fate of Ara'lon##60898 |goto 43.26,40.05
+accept Masks of Deception##60910 |goto 43.26,40.05
+step
+Kill enemies around this area
+collect 2 Mask of Possession##180462 |q 60910/1 |goto 42.68,35.50
+step
+talk Ara'lon##170705
+turnin Masks of Deception##60910 |goto 43.26,40.05
+accept Blackthorn Captives##60928 |goto 43.26,40.05
+step
+use the Disguise Mask##180523
+Wear the Possessed Disguise |havebuff spell:333625 |goto 43.26,40.05 |q 60928
+step
+clicknpc Azelor##170959
+|tip Avoid the enemies with circles beneath them.
+|tip They can see through your disguise.
+Find Azelor |q 60928/1 |goto 41.43,35.50
+step
+Enter the cave |goto 41.54,33.66 < 10 |walk
+clicknpc Nera##170958
+|tip Inside the cave.
+Find Nera |q 60928/3 |goto 41.10,33.81
+step
+clicknpc Taeras##170957
+Find Taeras |q 60928/2 |goto 42.47,32.21
+step
+Enter the cave |goto 41.30,32.03 < 15 |walk
+click Cage
+|tip Inside the cave.
+Find Gweyir |q 60928/4 |goto 41.11,31.54
+step
+talk Ara'lon##173296
+|tip Inside the cave.
+turnin Blackthorn Captives##60928 |goto 41.10,31.60
+accept Report to Lord Herne##60934 |goto 41.10,31.60
+step
+talk Lord Herne##170848
+|tip Outside the tree.
+turnin Report to Lord Herne##60934 |goto Heart of the Forest/0 54.31,78.06
+step
+talk Ysera##171138
+accept Ulfar's Guidance##61061 |goto 53.20,78.87
+step
+Follow the path up |goto Drustvar/0 44.86,39.98 < 10 |only if walking
+Enter the cave |goto Drustvar/0 46.04,45.32 < 10 |walk
+talk Ulfar##141159
+|tip Inside the cave.
+turnin Ulfar's Guidance##61061 |goto Drustvar/0 45.20,45.85
+accept Into the Flame##61076 |goto Drustvar/0 45.20,45.85
+step
+Enter the cave |goto 27.02,58.45 < 7 |walk
+click Flame of Oblivion
+|tip Downstairs inside the cave.
+Place the Fetish |q 61076/1 |goto 27.55,58.96
+step
+Watch the dialogue
+|tip Downstairs inside the cave.
+kill Drust Behemoth##171251 |q 61076/2 |goto 27.48,59.79
+step
+click Drust Fetish
+|tip Downstairs inside the cave.
+collect Imbued Drust Fetish##180625 |q 61076/3 |goto 27.55,58.92
+step
+Run up the stairs |goto 27.20,59.97 < 7 |walk
+Leave the cave |goto 27.03,58.47 < 7 |walk
+Follow the path up |goto 44.86,39.98 < 10 |only if walking
+Enter the cave |goto 46.04,45.32 < 10 |walk
+talk Ulfar##141159
+|tip Inside the cave.
+turnin Into the Flame##61076 |goto 45.20,45.84
+accept Kivarr the Thornspeaker##61102 |goto 45.20,45.84
+step
+talk Lord Herne##170848
+|tip Outside the tree.
+turnin Kivarr the Thornspeaker##61102 |goto Heart of the Forest/0 51.28,81.16
+accept Kivarr's Den##61113 |goto Heart of the Forest/0 51.28,81.16
+step
+talk Ara'lon##170705
+Tell him _"I am looking for Kivarr."_
+Speak with Ara'lon |q 61113/1 |goto Ardenweald/0 46.03,56.70
+step
+Enter the cave |goto 43.48,69.24 < 10 |walk
+Meet Ara'lon at Eventide Grove |q 61113/2 |goto 43.65,69.07
+|tip Inside the cave.
+step
+talk Ara'lon##170705
+|tip Inside the cave.
+turnin Kivarr's Den##61113 |goto 43.65,69.07
+accept Searching the Grove##61701 |goto 43.65,69.07
+step
+Enter the cave |goto 46.36,72.81 < 10 |walk
+Locate Kivarr |q 61701/1 |goto 46.57,73.07
+|tip Inside the cave.
+step
+talk Kivarr##171413
+|tip Inside the cave.
+turnin Searching the Grove##61701 |goto 46.57,73.07
+accept The Thornspeaker Captive##58773 |goto 46.57,73.07
+step
+kill Lukir##162700
+collect Thros-Forged Key##180777 |q 58773/1 |goto 45.44,73.21
+step
+kill Gallak##162708
+collect Gilded Skull Key##182639 |q 58773/2 |goto 44.20,72.30
+step
+Enter the building |goto 45.77,75.69 < 10 |walk
+kill Haassert##162697
+|tip Inside the building.
+collect Lustrous Silver Key##182641 |q 58773/3 |goto 45.74,75.89
+step
+Enter the cave |goto 46.36,72.81 < 10 |walk
+talk Nika##173612
+|tip Inside the cave.
+turnin The Thornspeaker Captive##58773 |goto 46.57,73.08
+accept A Swift Intervention##61702 |goto 46.57,73.08
+step
+Watch the dialogue
+|tip Follow Nika as she walks.
+|tip She eventually walks to this location.
+Locate Kivarr |q 61702/1 |goto 41.87,74.41
+step
+kill Thulsketha the Binder##162297 |q 61702/2 |goto 41.47,74.36
+step
+talk Kivarr##171413
+turnin A Swift Intervention##61702 |goto 41.29,74.33
+accept Return to the Den##61143 |goto 41.29,74.33
+step
+Enter the cave |goto 43.49,69.24 < 10 |walk
+Travel to Kivarr's Den |q 61143/1 |goto 43.69,69.03
+|tip Inside the cave.
+step
+talk Kivarr##171413
+|tip Inside the cave.
+turnin Return to the Den##61143 |goto 43.69,69.03
+accept Nox Root##61703 |goto 43.69,69.03
+step
+Cross the bridge |goto 40.47,68.62 < 15 |only if walking
+click Nox Root+
+|tip They look like white mushrooms on the ground around this area.
+collect 12 Nox Root##182958 |q 61703/1 |goto 36.94,69.15
+step
+talk Kivarr##171413
+|tip Outside the tree.
+turnin Nox Root##61703 |goto 46.16,56.43
+accept Witch's Satchel##61709 |goto 46.16,56.43
+stickystart "Collect_Witchs_Satchel"
+step
+click Broken Spear
+|tip You may need help with this.
+accept The Broken Spear##61710 |goto 33.84,54.52
+step
+label "Collect_Witchs_Satchel"
+kill Oakheart Nightscreamer##172079+
+|tip You may need help with this.
+collect Witch's Satchel##182963 |q 61709/1 |goto 33.84,54.52
+step
+clicknpc Kivarr##171413
+|tip Outside the tree.
+turnin Witch's Satchel##61709 |goto 46.16,56.43
+step
+talk Lord Herne##170848
+turnin The Broken Spear##61710 |goto 46.23,56.76
+step
+talk Kivarr##171413
+accept Ritual of Purification##61711 |goto 46.16,56.43
+step
+Use the _"Purification Fetish"_ ability
+|tip Use it on Gweyir.
+|tip It appears as a button on the screen.
+Use the Purification Fetish |q 61711/1 |goto 46.14,56.63
+step
+Kill the enemies that attack
+Defeat the First Wave of Enemies |q 61711/2 |goto 46.14,56.63 |count 25
+step
+Use the _"Purification Fetish"_ ability
+|tip Use it on Gweyir.
+|tip It appears as a button on the screen.
+Kill the enemies that attack
+Defeat the Second Wave of Enemies |q 61711/2 |goto 46.14,56.63 |count 50
+step
+Use the _"Purification Fetish"_ ability
+|tip Use it on Gweyir.
+|tip It appears as a button on the screen.
+Kill the enemies that attack
+Defeat the Third Wave of Enemies |q 61711/2 |goto 46.14,56.63 |count 75
+step
+Use the _"Purification Fetish"_ ability
+|tip Use it on Gweyir.
+|tip It appears as a button on the screen.
+Kill the enemies that attack
+Complete the Ritual of Purification |q 61711/2 |goto 46.14,56.63 |count 100
+step
+talk Kivarr##171413
+turnin Ritual of Purification##61711 |goto 46.16,56.43
+step
+talk Lord Herne##170848
+accept Unbroken Bonds##61171 |goto 46.23,56.76
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+turnin Unbroken Bonds##61171 |goto Heart of the Forest/2 51.15,28.33
+step
+Reach Renown Level 17 |condition covenant() == NightFae and covenantrenown() >= 17
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+talk Ysera##160262
+|tip Inside the tree.
+accept Containing the Night##58445 |goto Heart of the Forest/0 44.79,38.93
+step
+talk Ysera##160262
+|tip Inside the tree.
+Tell her _"Let us hear Thiernax's plan."_
+Watch the dialogue
+Hear the Plan |q 58445/1 |goto 44.79,38.93
+step
+talk Ysera##160262
+|tip Inside the tree.
+turnin Containing the Night##58445 |goto 44.79,38.93
+accept Tracker Tracking##58446 |goto 44.79,38.93
+step
+talk Lord Herne##158544
+|tip He walks around this area.
+|tip Outside the tree.
+Tell him _"Lord Herne, we seek someone who can hunt down special warriors across the Shadowlands. Is there such a tracker among the Wild Hunt?"_
+Speak with Lord Herne |q 58446/1 |goto 39.34,71.13
+step
+talk Reldorn##164627
+turnin Tracker Tracking##58446 |goto Ardenweald/0 35.27,51.11
+accept Home of the Tirnenn##59258 |goto Ardenweald/0 35.27,51.11
+step
+Approach Tirna Scithe |q 59258/1 |goto 32.27,46.43
+step
+click Devourer Rift
+Close the Southern Portal |q 59258/2 |goto 31.41,46.39
+step
+click Devourer Rift
+Close the Northern Portal |q 59258/3 |goto 31.50,45.87
+step
+Follow the path |goto 30.09,46.07 < 20 |only if walking
+Watch the dialogue
+Locate the Horned Hunter |q 59258/4 |goto 30.00,44.89
+step
+talk Huln Highmountain##161353
+turnin Home of the Tirnenn##59258 |goto 30.00,44.89
+accept Dressing the Kill##58706 |goto 30.00,44.89
+step
+Use the _"Carve"_ ability
+|tip Use it on the Ravenous Gorger corpse.
+|tip It appears as a button on the screen.
+Carve the Kill |q 58706/1 |goto 29.96,44.70
+step
+talk Huln Highmountain##161353
+turnin Dressing the Kill##58706 |goto 30.00,44.90
+accept Monster Hunting##58447 |goto 30.00,44.90
+step
+Kill enemies around this area
+click Shriveled Shrub+
+|tip They look like brown bushes on the ground around this area.
+click Drained Animacone Cluster+
+|tip They look like large brown seed pod clusters hanging from trees and on the ground around this area.
+clicknpc Desiccated Tirnenn##161784+
+|tip They look like dead tree people on the ground around this area.
+Search for Traces of the Worldeater |q 58447/1 |goto 27.35,47.48
+step
+Follow the Trail |q 58447/2 |goto 25.29,49.44
+step
+Locate Voras |goto 24.52,48.86 < 15 |c |q 58447
+step
+Watch the dialogue
+Escape with Huln Highmountain |goto 24.52,48.86 > 20 |c |q 58447
+step
+Watch the dialogue
+Ambush Voras |q 58447/3 |goto 35.26,51.28 |notravel
+step
+talk Huln Highmountain##165841
+turnin Monster Hunting##58447 |goto 35.25,51.19
+accept Acid Reflux##58449 |goto 35.25,51.19
+accept Anima Instincts##58450 |goto 35.25,51.19
+stickystart "Collect_Bulging_Digestive_Sacs"
+step
+click Expended Wildseed##340664+
+|tip They look like huge brown seed pods on the ground around this area.
+collect 8 Life-Hardened Anima##175753 |q 58450/2 |goto 52.07,77.54
+step
+label "Collect_Bulging_Digestive_Sacs"
+Use the _"Pacify Gorm"_ ability
+|tip Use it on Gorm Rampager.
+|tip They will explode.
+click Gorm Giblet##357417+
+|tip They look like small red piles on the ground that appear nearby after the Gorm Rampagers explode.
+collect 50 Bulging Digestive Sac##174467 |q 58449/2 |goto 52.07,77.54
+step
+talk Reldorn##164627
+turnin Acid Reflux##58449 |goto 35.27,51.11
+turnin Anima Instincts##58450 |goto 35.27,51.11
+accept Becoming the Hunt##59721 |goto 35.27,51.11
+step
+Follow the path |goto 32.85,47.94 < 30 |only if walking
+talk Huln Highmountain##161353
+|tip Avoid enemies as you walk, and don't mount up.
+|tip If you get attacked, or mount up, you will lose your disguise.
+turnin Becoming the Hunt##59721 |goto 24.54,48.98
+accept Voras, The Realm Eater##58451 |goto 24.54,48.99
+step
+talk Huln Highmountain##161354
+Speak with Huln |q 58451/1 |goto 24.54,48.99
+step
+talk Huln Highmountain##161354
+Tell him _"I am ready. Set the lure, Huln."_
+Watch the dialogue
+|tip Follow Huln Highmountain as he runs away to hide.
+kill Voras##161691 |q 58451/2 |goto 24.54,48.99
+|tip Huln Highmountain will help you fight.
+step
+talk Huln Highmountain##161354
+|tip He walks to this location.
+turnin Voras, The Realm Eater##58451 |goto 24.55,48.98
+accept Tracking the Shadows##58452 |goto 24.55,48.98
+step
+talk Ysera##160262
+|tip Inside the tree.
+turnin Tracking the Shadows##58452 |goto Heart of the Forest/0 44.82,38.93
+step
+Reach Renown Level 20 |condition covenant() == NightFae and covenantrenown() >= 20
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+talk Ysera##160262
+|tip Inside the tree.
+accept An Expected Guest##59731 |goto Heart of the Forest/0 44.82,38.93
+step
+talk Bwonsamdi##165951
+|tip Outside the tree.
+turnin An Expected Guest##59731 |goto Ardenweald/0 48.36,52.42
+accept Something Extra for the Winter Queen##59732 |goto Ardenweald/0 48.36,52.42
+step
+Find the Entrance to Bwonsamdi's Necropolis |q 59732/1 |goto 50.61,44.57
+step
+click Bwonsamdi's Death Gate to the Necropolis
+Take the Portal to the Necropolis |q 59732/2 |goto 50.61,44.57
+step
+talk Bwonsamdi##122688
+|tip Inside the building.
+turnin Something Extra for the Winter Queen##59732 |goto Nazmir/0 39.57,24.67
+accept The Problem with Containing a Death Loa##59739 |goto Nazmir/0 39.57,24.67
+step
+talk Hanzabu##165968
+|tip Inside the building.
+accept Dark Mojo for a Dark Loa##59741 |goto 39.51,24.72
+accept Delaying the Other Side##59742 |goto 39.51,24.72
+stickystart "Rescue_Injured_Worshippers"
+stickystart "Collect_Dark_Mojo"
+step
+Run up the stairs |goto 40.30,30.94 < 15 |only if walking
+kill Zel'han the Summoner##166028
+|tip When he becomes immune to damage, kill the Scourge of the Dreadmire he summons to be able to damage him again.
+collect Zel'han's Broken Armor##180787 |q 59739/1 |goto 39.58,35.95
+step
+label "Rescue_Injured_Worshippers"
+use the Voodoo Powder##177817
+|tip Use it on Injured Bwonsamdi Worshippers.
+|tip They look like dead trolls on the ground around this area.
+Rescue #6# Injured Worshippers |q 59742/1 |goto 39.47,30.11
+step
+label "Collect_Dark_Mojo"
+Kill enemies around this area
+collect 100 Dark Mojo##177818 |q 59741/1 |goto 39.47,30.11
+step
+Enter the building |goto 39.57,26.64 < 10 |walk
+talk Mueh'zala##166018
+|tip Inside the building.
+turnin The Problem with Containing a Death Loa##59739 |goto 39.56,24.66
+step
+talk Bwonsamdi##122688
+|tip Inside the building.
+turnin Dark Mojo for a Dark Loa##59741 |goto 39.56,24.66
+turnin Delaying the Other Side##59742 |goto 39.56,24.66
+accept One Little Whisper##59749 |goto 39.56,24.66
+step
+click Gong of Calling
+|tip Inside the building.
+Summon a Special Friend |q 59749/1 |goto 39.12,25.23
+step
+talk Bwonsamdi##122688
+|tip Inside the building.
+Tell him _"I'm ready to begin the ritual to find out what Mueh'zala was hiding."_
+Speak with Bwonsamdi to Begin the Ritual |q 59749/2 |goto 39.56,24.66
+step
+Watch the dialogue
+|tip The NPC's nearby will periodically get drained of their life.
+|tip Use the ability on your action bar on them to replenish their life.
+|tip Inside the building.
+Complete the Ritual |q 59749/3 |goto 39.56,24.66
+step
+talk Bwonsamdi##122688
+|tip Inside the building.
+turnin One Little Whisper##59749 |goto 39.56,24.66
+accept Maw Manifested##59805 |goto 39.56,24.66
+step
+talk Spirit of Vol'jin##166110
+|tip Inside the building.
+Tell him _"Very well. Let's head to the Maw and find these missing spirits."_
+Speak with Vol'jin |q 59805/1 |goto 39.61,24.72
+step
+click Bwonsamdi's Secret Door to Ardenweald |goto 39.30,24.60
+|tip Inside the building.
+Return to Ardenweald |goto Ardenweald/0 50.59,44.57 < 10 |noway |c |q 59805
+step
+Travel to the Maw |q 59805/2 |goto The Maw/0 44.95,40.99
+step
+talk Spirit of Vol'jin##171655
+turnin Maw Manifested##59805 |goto 44.78,41.03
+accept Tracking a Wild God##59822 |goto 44.78,41.03
+step
+click Used Cage
+kill Rulkros##166263
+Find the First Clue |q 59822/1 |goto 42.34,43.56
+step
+Follow the path |goto 35.40,50.06 < 30 |only if walking
+click Used Cage
+Find the Second Clue |q 59822/2 |goto 35.62,55.80
+step
+talk Ashamane##166280
+Tell her _"I will slay the monsters that have been torturing you."_
+Kill the enemies that attack in waves
+kill Brynkros##166279
+Rescue the Wild God |q 59822/3 |goto 37.47,66.40
+step
+talk Ashamane##166315
+|tip On the bridge.
+Tell her _"I can take you back to Ardenweald if you go inside the soulkeeper crystal."_
+Watch the dialogue
+Absorb Ashamane into the Soulkeeper Crystal |q 59822/4 |goto 40.84,64.22
+step
+talk Spirit of Vol'jin##171806
+|tip On the bridge.
+turnin Tracking a Wild God##59822 |goto 40.95,64.26
+accept Loa Rescue##59824 |goto 40.95,64.26
+step
+Follow the path |goto 43.91,63.75 < 20 |only if walking
+clicknpc Hir'eek##166343
+Rescue the First Loa |q 59824/1 |goto 47.13,72.91
+step
+clicknpc Shadra##166367
+|tip At the entrance of the cave.
+Rescue the Second Loa |q 59824/2 |goto 46.07,82.80
+step
+Rescue the Third Loa |q 59824/3 |goto 45.79,85.02
+|tip Inside the cave.
+step
+talk Spirit of Vol'jin##166461
+|tip Inside the cave.
+turnin Loa Rescue##59824 |goto 45.79,85.02
+accept Rezan, Loa of Kings##59856 |goto 45.79,85.02
+step
+talk Spirit of Vol'jin##166461
+|tip Inside the cave.
+Tell him _"I'm ready to receive your anima to protect myself from the death barrier."_
+Receive Vol'jin's Anima |q 59856/1 |goto 45.79,85.02
+step
+kill Exhaurbius##166467
+|tip Inside the cave.
+Watch the dialogue
+Save Rezan |q 59856/2 |goto 47.15,86.49
+step
+talk Spirit of Vol'jin##166461
+|tip Inside the cave.
+turnin Rezan, Loa of Kings##59856 |goto 45.79,85.02
+accept Parting Ways##59866 |goto 45.79,85.02
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+Tell her _"Winter Queen, I bring missing spirits to return to Ardenweald."_
+Deliver the Loa to the Winter Queen |q 59866/1 |goto Heart of the Forest/2 51.17,27.94
+step
+talk Ysera##160262
+|tip Inside the tree.
+turnin Parting Ways##59866 |goto Heart of the Forest/0 44.76,38.90
+step
+Reach Renown Level 22 |condition covenant() == NightFae and covenantrenown() >= 22
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Night Fae Daily Quests" guide to accomplish this.
+step
+talk Ysera##160262
+|tip Inside the tree.
+accept We Strike Now##60189 |goto Heart of the Forest/0 44.76,38.90
+step
+talk Lord Herne##167686
+turnin We Strike Now##60189 |goto Ardenweald/0 39.06,63.75
+accept Assault on Darkreach##60190 |goto Ardenweald/0 39.06,63.75
+step
+talk Lady Moonberry##167688
+accept Their Last Line of Defense##60192 |goto 39.13,63.73
+step
+talk Kivarr##172010
+accept Ingra Drif##60191 |goto 38.98,63.75
+stickystart "Assault_Darkreach"
+step
+kill Ingra Drif##167702 |q 60191/1 |goto 36.56,67.51
+step
+click Shielding Rune
+Destroy the Shielding Rune |q 60192/1 |goto 39.19,69.59 |count 1
+step
+click Shielding Rune
+Destroy the Shielding Rune |q 60192/1 |goto 36.96,70.93 |count 2
+step
+click Shielding Rune
+Destroy the Shielding Rune |q 60192/1 |goto 36.43,68.39 |count 3
+step
+click Shielding Rune
+Destroy the Shielding Rune |q 60192/1 |goto 34.91,68.93 |count 4
+step
+label "Assault_Darkreach"
+Kill enemies around this area
+click Drust Totem+
+|tip They look like wooden poles with horned animal skulls on them on the ground around this area.
+click Cage+
+|tip They look like wooden stick cages on the ground around this area.
+Assault Darkreach |q 60190/1 |goto 36.28,68.47
+step
+talk Lord Herne##171838
+turnin Assault on Darkreach##60190 |goto 35.18,72.44
+step
+talk Kivarr##172010
+turnin Ingra Drif##60191 |goto 35.10,72.45
+step
+talk Lady Moonberry##167688
+turnin Their Last Line of Defense##60192 |goto 35.07,72.34
+step
+talk Lord Herne##171838
+accept Unmasked##60193 |goto 35.18,72.45
+step
+click Drust Barrier
+|tip On the bridge.
+Destroy the Drust Barrier |q 60193/1 |goto 35.82,70.62
+step
+Watch the dialogue
+Kill the enemies that attack in waves
+kill Gorak Zhar##165285 |q 60193/2 |goto 36.22,69.39
+step
+talk Lady Moonberry##171992
+turnin Unmasked##60193 |goto 36.17,69.62
+accept The Call of the Hunt##60194 |goto 36.17,69.62
+step
+talk Lady Moonberry##171992
+Tell her _"Let's get out of here."_
+Fly out with Lady Moonberry |q 60194/1 |goto 36.17,69.62
+step
+Watch the dialogue
+Return to Safety |goto 39.00,63.57 < 10 |c |q 60194 |notravel
+step
+talk Lord Herne##172091
+turnin The Call of the Hunt##60194 |goto 38.93,63.43
+accept Drust and Ashes##60108 |goto 38.93,63.43
+step
+talk Lord Herne##172091
+Tell him _"I am ready. For Ardenweald!"_
+Begin the Scenario |scenariostart |goto 38.93,63.43 |q 60108
+step
+clicknpc Ysera##166417
+Ride with Ysera |scenariogoal 1/49276 |goto Ardenweald/4 30.80,77.31 |q 60108
+step
+Watch the dialogue
+Put #125# Drust to Sleep |scenariogoal 1/49079 |q 60108
+|tip Use the ability on your action bar.
+|tip Use it on the enemies running on the ground.
+step
+Watch the dialogue
+Fly to the Heart of the Forest |scenariogoal 1/48021 |goto 53.88,24.48 |q 60108 |notravel
+step
+talk Winter Queen##166887
+Tell her _"Ara'lon has fallen. The Drust march on the Grove of Awakening."_
+Watch the dialogue
+Report to the Queen |scenariogoal 2/48026 |goto 55.78,23.36 |q 60108
+step
+Use the _"Receiving Blessing"_ ability
+|tip It appears as a button on the screen.
+Recieve the Queen's Blessing |scenariogoal 3/48022 |goto 55.51,23.09 |q 60108
+step
+click Horn of the Hunt
+Sound the Horn of the Wild Hunt |scenariogoal 4/48025 |goto 55.26,23.33 |q 60108
+step
+Kill enemies around this area
+Slay #45# Drust Forces |scenariogoal 4/48024 |goto 55.84,48.69 |q 60108
+step
+Reach the Grove of Awakening |scenariogoal 4/48023 |goto 62.79,63.70 |q 60108
+step
+talk Winter Queen##166887
+Ask her _"What are your orders?"_
+Watch the dialogue
+Speak with Winter Queen |scenariogoal 5/48027 |goto 62.80,63.71 |q 60108
+step
+Kill enemies around this area
+|tip They are fighting Lord Herne nearby.
+click Focus of Protection
+Assist Herne |scenariogoal 6/48029 |goto 54.30,72.22 |q 60108
+step
+Kill enemies around this area
+|tip They are fighting Lady Moonberry nearby.
+click Focus of Destiny
+Assist Moonberry |scenariogoal 6/48028 |goto 53.61,81.24 |q 60108
+step
+Kill enemies around this area
+|tip They are fighting Droman Aliothe nearby.
+click Focus of Renewal
+Assist Aliothe |scenariogoal 6/48030 |goto 65.81,72.34 |q 60108
+step
+Kill enemies around this area
+|tip They are fighting Zayhad, The Builder nearby.
+click Focus of Cycles
+Assist Zayhad |scenariogoal 6/48031 |goto 65.63,80.86 |q 60108
+step
+Return to the Winter Queen |scenariogoal 7/48740 |goto 60.08,76.22 |q 60108
+step
+kill Anchoring Rune##173708
+Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 61.34,82.96 |count 1 |q 60108
+step
+kill Anchoring Rune##173708
+Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 59.33,82.83 |count 2 |q 60108
+step
+kill Anchoring Rune##173708
+Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 58.91,85.80 |count 3 |q 60108
+step
+kill Anchoring Rune##173708
+Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 60.88,86.54 |count 4 |q 60108
+step
+kill Gorak Zhar##168683
+Defeat Gorak Zhar |scenariogoal 7/48032 |goto 59.92,84.24 |q 60108
+step
+talk Winter Queen##166887
+Tell her _"I am ready to go."_
+Speak with the Winter Queen |scenarioend |goto 60.10,76.29 |q 60108
+step
+talk Winter Queen##156634
+|tip Upstairs inside the tree.
+turnin Drust and Ashes##60108 |goto Heart of the Forest/2 51.19,28.19
+accept Ardenmoth Soul##62422 |goto Heart of the Forest/2 51.19,28.19
+step
+talk Lady Muunn##174209
+|tip Inside the tree.
+turnin Ardenmoth Soul##62422 |goto Heart of the Forest/0 37.89,24.75
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+accept Growing in Power##62560 |goto 47.51,36.49
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+Tell her _"I am ready, Lady Moonberry."_
+Witness the Empowerment |q 62560/1 |goto 47.51,36.49
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin Growing in Power##62560 |goto 47.51,36.49
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+accept My Heart is Full##62561 |goto 47.51,36.49
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+Tell her _"I am ready, Lady Moonberry."_
+Witness the Empowerment |q 62561/1 |goto 47.51,36.49
+step
+talk Lady Moonberry##161509
+|tip Inside the tree.
+turnin My Heart is Full##62561 |goto 47.51,36.49
+step
+_Congratulations!_
+You Reached Renown Level 40.
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Venthyr Questline",{
+author="support@zygorguides.com",
+description="\nThis guide will assist you in completing the Venthyr\n"..
+"\ncovenant quests and storyline.\n",
+condition_suggested=function() return level >= 50 end,
+startlevel=50.0,
+endlevel=60.0,
+image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
+},[[
+step
+Reach Level 60 |ding 60
+|tip You must be level 60 before you can start your covenant questline.
+|tip Use the Leveling guides to accomplish this.
+step
+Complete the "Choosing Your Purpose" Quest in Oribos |complete completedanyq(57878,62000) |future
+|tip Use the "Shadowlands Intro & Main Questline" guide to accomplish this.
+step
+talk Tal-Inara##159478
+accept Report to Draven##63215 |goto Oribos/0 38.90,69.98
+|only if not havequest(59314) or completedq(59314)
+step
+talk General Draven##171589
+turnin Report to Draven##63215 |goto Oribos/0 44.88,68.86 |only if not havequest(59314) or completedq(59314)
+accept Sinfall##59314 |goto Oribos/0 44.88,68.86
+step
+Ride the elevator up |goto Revendreth/0 30.33,47.33 < 10 |only if walking
+Enter Sinfall Through the Mirror |q 59314/2 |goto Revendreth/0 29.36,42.66
+|tip Walk into the red swirling portal.
+|tip Downstairs inside the building.
+step
+talk Prince Renathal##164742
+|tip Inside the building.
+turnin Sinfall##59314 |goto Sinfall/0 25.89,55.78
+accept The Court of Harvesters##59315 |goto Sinfall/0 25.89,55.78
+step
+Watch the dialogue
+|tip Follow Prince Renathal as he walks.
+|tip He eventually walks to this location.
+|tip Inside the building.
+Walk with Prince Renathal |q 59315/1 |goto 51.81,37.54
+step
+Use the _"Oath of the Harvesters"_ ability
+|tip It appears as a button on the screen.
+|tip Inside the building.
+Give Your Oath to the Accuser |q 59315/2 |goto 50.45,35.04
+step
+Use the _"Oath of the Harvesters"_ ability
+|tip It appears as a button on the screen.
+|tip Inside the building.
+Give Your Oath to the Curator |q 59315/3 |goto 52.07,40.62
+step
+talk Prince Renathal##164796
+|tip Inside the building.
+turnin The Court of Harvesters##59315 |goto 51.78,37.60
+accept Sacred Covenant##59321 |goto 51.78,37.60
+step
+talk Courier Snaggle##162702
+|tip Inside the building.
+fpath Sinfall |goto 67.31,21.42
+step
+talk Tavian##166137
+|tip Inside the building.
+home Sinfall |goto 66.02,33.59
+step
+Use the Sinfall Mirror to Teleport to the Sanctum's Lower Level |q 59321/1 |goto 36.55,48.19
+|tip Walk into the red swirling portal.
+|tip Inside the building.
+step
+talk Prince Renathal##171934
+|tip Downstairs inside the building.
+turnin Sacred Covenant##59321 |goto Sinfall/1 45.41,29.28
+accept Anima Awakening##59323 |goto Sinfall/1 45.41,29.28
+step
+Stand before the Harvesters |q 59323/1 |goto 45.64,24.77
+|tip Downstairs inside the building.
+step
+Watch the dialogue
+|tip Downstairs inside the building.
+Complete the Ritual |q 59323/2 |goto 45.64,24.77
+step
+talk Prince Renathal##171934
+|tip Downstairs inside the building.
+turnin Anima Awakening##59323 |goto 45.38,29.40
+accept Building Your Renown##62856 |goto 45.38,29.40
+step
+Use the Sinfall Mirror to Teleport to the Sanctum's Upper Level |q 62856/1 |goto 70.18,38.46
+|tip Walk into the red swirling portal.
+|tip Inside the building.
+step
+talk Rahel##175772
+|tip Inside the building.
+turnin Building Your Renown##62856 |goto Sinfall/0 54.27,26.43
+accept The Court's Bounty##62857 |goto Sinfall/0 54.27,26.43
+step
+talk Rahel##175772
+|tip Inside the building.
+Tell her _"Show me my Renown."_
+Examine your Renown |q 62857/1 |goto 54.27,26.43
+step
+talk Rahel##175772
+|tip Inside the building.
+turnin The Court's Bounty##62857 |goto 54.27,26.43
+accept A Call to Service##62695 |goto 54.27,26.43
+step
+Use the Sinfall Mirror to Teleport to the Sanctum's Lower Level |q 62695/1 |goto 36.55,48.19
+|tip Walk into the red swirling portal.
+|tip Inside the building.
+step
+talk Rendle##165302
+|tip Downstairs inside the building.
+turnin A Call to Service##62695 |goto Sinfall/1 62.46,76.60
+accept A Calling in Revendreth##62691 |goto Sinfall/1 62.46,76.60
+step
+Complete #3# World Quests in Revendreth |q 62691/1
+|tip Use the World Quests guide to accomplish this.
+|tip Click a world quest on the Revendreth map to load the guide for it.
+step
+talk Rendle##165302
+|tip Downstairs inside the building.
+turnin A Calling in Revendreth##62691 |goto Sinfall/1 62.46,76.60
+accept Anima is Power##62902 |goto Sinfall/1 62.46,76.60
+step
+use the Tribute of the Court##181556
+|tip You should have this from turning in the "A Calling in Revendreth" quest.
+|tip You will be given an item worth 500 Anima.
+|tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
+Receive the Rewards |condition itemcount(181556) == 0 |q 62903 |future
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+turnin Anima is Power##62902 |goto Sinfall/0 55.69,26.04
+accept Into the Reservoir##62903 |goto Sinfall/0 55.69,26.04
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+Tell him _"Show me the Sanctum."_
+|tip Click the "Deposit" button.
+Deposit #375# Anima |q 62903/2 |goto 55.69,26.04
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+turnin Into the Reservoir##62903 |goto 55.69,26.04
+accept The Souls Plight##62904 |goto 55.69,26.04
+step
+talk Tenaval##164738
+|tip Inside the building.
+turnin The Souls Plight##62904 |goto 45.45,28.44
+accept Back into the Darkness##62905 |goto 45.45,28.44
+step
+talk Ve'nari##162804
+turnin Back into the Darkness##62905 |goto The Maw/0 46.91,41.69
+accept Setting the Ground Rules##62882 |goto The Maw/0 46.91,41.69
+step
+talk Ve'nari##162804
+Ask her _"What are your ground rules for working together?"_
+Watch the dialogue
+Set the Ground Rules with Ve'nari |q 62882/1 |goto 46.91,41.69
+step
+talk Ve'nari##162804
+turnin Setting the Ground Rules##62882 |goto 46.91,41.69
+accept Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
+stickystart "Collect_Granules_of_Stygia_60287"
+step
+kill Stone Prison##176145+
+|tip They look like pyramids made of rocks on the ground around this area.
+click Soul Cage+
+|tip They look like tall grey metal cages on the ground around this area.
+|tip They will appear on your minimap as white ghost icons.
+click Soul+
+|tip They look like white spirits that float out of the cages and stone prisons.
+|tip You can also click Souls that other players free.
+Take #5# Souls into the Soulkeeper |q 60287/1 |goto 40.16,42.42
+step
+label "Collect_Granules_of_Stygia_60287"
+Kill enemies around this area
+kill Stone Prison##176145+								|notinsticky
+|tip They look like pyramids made of rocks on the ground around this area.		|notinsticky
+click Soul Cage+									|notinsticky
+|tip They look like tall grey metal cages on the ground around this area.		|notinsticky
+|tip They will appear on your minimap as white ghost icons.				|notinsticky
+click Soul+										|notinsticky
+|tip They look like white spirits that float out of the cages and stone prisons.	|notinsticky
+|tip You can also click Souls that other players free.					|notinsticky
+collect 60 Granule of Stygia##180852 |q 60287/2 |goto 40.16,42.42
+step
+Follow the path down |goto 44.60,41.08 < 15 |only if walking
+talk Ve'nari##162804
+buy 1 Cypher of Relocation##180817 |q 60287/4 |goto 46.91,41.69
+step
+talk Ve'nari##162804
+turnin Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
+accept Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 47.19,43.16 |count 1
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 48.41,41.84 |count 2
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 48.19,40.20 |count 3
+step
+click Soul Ward
+Reinforce the Soul Ward |q 61355/1 |goto 46.93,39.48 |count 4
+step
+talk Ve'nari##162804
+turnin Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
+accept Rule 3: Trust is Earned##60289 |goto 46.91,41.69
+step
+click Signaling Beacon
+Place the Signaling Beacon |q 60289/1 |goto 34.98,47.68
+step
+click Baine's Mace##364498
+|tip You will be attacked.
+collect Bloodhoof Warmace##184284 |q 60289/2 |goto 33.46,49.06
+step
+kill Tower Inquisitor##171626 |q 60289/3 |goto 33.46,49.06
+step
+use the Cypher of Relocation##180817
+Return to Ve'nari |goto 46.22,41.25 < 10 |c |q 60289
+step
+talk Ve'nari##162804
+turnin Rule 3: Trust is Earned##60289 |goto 46.91,41.69
+accept Hopeful News##62837 |goto 46.91,41.69
+step
+talk Highlord Bolvar Fordragon##164079
+turnin Hopeful News##62837 |goto Oribos/0 39.94,68.61
+accept Souls for Sinfall##62870 |goto Oribos/0 39.94,68.61
+step
+talk Tenaval##164738
+|tip Inside the building.
+turnin Souls for Sinfall##62870 |goto Sinfall/0 45.37,28.48
+accept A Coalition of the Willing##62914 |goto Sinfall/0 45.37,28.48
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+turnin A Coalition of the Willing##62914 |goto 55.73,26.00
+accept Home Improvement##62915 |goto 55.73,26.00
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+Tell him _"Show me the Sanctum."_
+|tip Choose whichever upgrade you like best, it doesn't matter, because you will eventually unlock them all over time.
+|tip Click the "Activate" button.
+Start a Sanctum Upgrade |q 62915/1 |goto 55.73,26.00
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+turnin Home Improvement##62915 |goto 55.73,26.00
+step
+talk The Accuser##171950
+|tip Inside the building.
+accept Binding Power##62918 |goto Sinfall/0 45.51,20.96
+step
+Watch the dialogue
+|tip Inside the building.
+talk Nadjia the Mistblade##164853
+|tip She walks to this location.
+Soulbind with Nadjia |q 62918/1 |goto 43.67,17.44
+step
+talk Nadjia the Mistblade##171979
+|tip Inside the building.
+turnin Binding Power##62918 |goto 43.73,17.46
+accept Strengthening the Bond##62919 |goto 43.73,17.46
+step
+click Forge of Bonds
+|tip Follow the instructions on the screen, then click the Activate button.
+|tip Inside the building.
+Empower Nadjia |q 62919/1 |goto 42.73,18.12
+step
+talk Nadjia the Mistblade##171979
+|tip Inside the building.
+turnin Strengthening the Bond##62919 |goto 43.72,17.41
+step
+talk The Accuser##171950
+|tip Inside the building.
+accept A Conduit For Change##62920 |goto 45.39,20.89
+step
+click Forge of Bonds
+|tip Use the 3 conduits in your bags.
+|tip The conduits are different, depending on your class.
+|tip Inside the building.
+Add the Conduits to the Forge of Bonds |q 62920/1 |goto 42.72,18.14
+step
+click Forge of Bonds
+|tip Look at the powers down the tree to figure out the path you want to take.
+|tip Choose the conduit that leads to unlocking the power you like best.
+|tip Inside the building.
+Apply the Conduit to Nadjia |q 62920/2 |goto 42.72,18.14
+step
+talk The Accuser##171950
+|tip Inside the building.
+turnin A Conduit For Change##62920 |goto 45.39,20.89
+accept Our True Purpose##62921 |goto 45.39,20.89
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin Our True Purpose##62921 |goto 51.77,37.51
+accept The Highlord Calls##63033 |goto 51.77,37.51
+step
+click Medallion of Pride
+|tip Inside the building.
+accept Halls of Atonement: Medallion of Pride##60500 |goto 56.80,30.94
+step
+talk Highlord Bolvar Fordragon##164079
+turnin The Highlord Calls##63033 |goto Oribos/0 39.94,68.59
+step
+Reach Renown Level 5 |condition covenant() == Venthyr and covenantrenown() >= 5
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+accept Common Ground##59701 |goto Sinfall/0 51.77,37.51
+step
+talk General Draven##161977
+|tip Inside the building.
+accept The Princeguard##61492 |goto 46.16,14.82
+step
+Ride the elevator up |goto Revendreth/0 42.07,47.12 < 15 |only if walking
+click Renathal Banner
+Place the Renathal Banner |q 59701/1 |goto Revendreth/0 40.45,50.78 |count 1
+stickystart "Slay_Venthyr_Invaders"
+step
+click Chelra the Bladewall
+Revive Chelra the Bladewall |q 61492/1 |goto 44.00,50.73
+step
+click Renathal Banner
+Place the Renathal Banner |q 59701/1 |goto 44.54,53.98 |count 2
+step
+click Renathal Banner
+Place the Renathal Banner |q 59701/1 |goto 45.37,49.01 |count 3
+step
+click Renathal Banner
+Place the Renathal Banner |q 59701/1 |goto 45.03,48.49 |count 4
+step
+label "Slay_Venthyr_Invaders"
+Kill enemies around this area
+Slay #10# Venthyr Invaders |q 61492/2 |goto 44.00,50.73
+step
+_Next to you:_
+talk Chelra the Bladewall##172499
+turnin The Princeguard##61492
+step
+Follow the path |goto 42.53,52.68 < 10 |only if walking
+talk Prince Renathal##165661
+|tip High up on the balcony.
+turnin Common Ground##59701 |goto 41.01,54.81
+accept Invitation for the Countess##59706 |goto 41.01,54.81
+accept Invitation for the Tithelord##59707 |goto 41.01,54.81
+accept Invitation for the Stonewright##59708 |goto 41.01,54.81
+step
+Follow the path |goto 42.54,52.65 < 10 |only if walking
+Ride the elevator down |goto 42.07,47.13 < 15 |only if walking
+Follow the path |goto 37.87,47.50 < 20 |only if walking
+Continue following the path |goto 38.10,38.33 < 30 |only if walking
+Follow the path |goto 41.19,32.29 < 30 |only if walking
+talk General Draven##165865
+turnin Invitation for the Stonewright##59708 |goto 40.27,30.59
+accept Harvester of Wrath##59720 |goto 40.27,30.59
+step
+talk The Stonewright##165866
+|tip You will be attacked while crossing the bridge.
+|tip The enemies won't attack you after you cross the bridge.
+Choose _"Deliver Prince Renathal's invitation."_
+Deliver the Message to the Stonewright |q 59720/1 |goto 34.28,21.92
+step
+Click the Pridefall Gate and follow the path |goto 70.45,77.72 < 15 |only if walking
+talk Nadjia the Mistblade##165818
+|tip High up on the balcony.
+turnin Invitation for the Tithelord##59707 |goto 72.23,74.92
+accept Harvester of Envy##59711 |goto 72.23,74.92
+step
+talk Temel##165817
+|tip High up on the balcony.
+Dispatch Temel |q 59711/1 |goto 72.20,74.91
+step
+Deliver the Message for the Tithelord |q 59711/2 |goto 77.42,64.68
+|tip Use the "Flap!" ability on your action bar to fly to this location.
+|tip Outside, in the courtyard behind the building.
+step
+Stop Controlling Temel |nobuff spell:323339 |q 59711
+|tip Use the "Escape!" ability on your action bar.
+step
+Run up the stairs |goto 42.05,46.02 < 15 |only if walking |goto 44.37,41.66
+click Old Gate Carriage
+|tip Wait here until a horse carriage comes along.
+|tip You shouldn't have to wait very long.
+|tip You will be able to ride the carriage to the quest location.
+Ride an Old Gate Carriage |invehicle |goto 44.21,41.51 |q 59706
+step
+Stop Riding the Old Gate Carriage |outvehicle |goto 51.36,37.03 |q 59706
+|tip Click the red arrow above your action bars at this location.
+step
+talk Cudgelface##165658
+|tip Up on the bridge.
+turnin Invitation for the Countess##59706 |goto 52.44,35.32
+accept Harvester of Desire##59676 |goto 52.44,35.32
+step
+click Servant's Basic Kit
+|tip High up on the balcony.
+Wear the Servant's Basic Kit |q 59676/1 |goto 52.41,35.32
+step
+talk The Countess##165662
+Choose _"Deliver Prince Renathal's invitation."_
+Deliver the Message for the Countess |q 59676/2 |goto 56.98,28.55
+step
+Ride the elevator up |goto 42.07,47.12 < 15 |only if walking
+Follow the path |goto 42.53,52.68 < 10 |only if walking
+talk Prince Renathal##165661
+|tip High up on the balcony.
+turnin Harvester of Desire##59676 |goto 41.01,54.81
+turnin Harvester of Envy##59711 |goto 41.01,54.81
+turnin Harvester of Wrath##59720 |goto 41.01,54.81
+accept The Court##59719 |goto 41.01,54.81
+step
+Watch the dialogue
+talk Prince Renathal##165661
+turnin The Court##59719 |goto 43.78,51.27
+step
+talk Theotar##161979
+accept Kindred Spirits##59343 |goto Sinfall/0 50.22,18.10
+step
+Watch the dialogue
+clicknpc Theotar##172042
+Soulbind with Theotar |q 59343/1 |goto 43.70,17.46
+step
+talk Theotar##172046
+turnin Kindred Spirits##59343 |goto 43.69,17.49
+step
+Reach Renown Level 8 |condition covenant() == Venthyr and covenantrenown() >= 8
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+click Medallion of Desire
+accept Medallion of Desire##60904 |goto Sinfall/0 53.60,32.91
+step
+talk Theotar##161979
+turnin Medallion of Desire##60904 |goto 50.22,18.10
+accept An Estate Within the Old Gate##57880 |goto 50.22,18.10
+step
+talk Bogdan##159513
+turnin An Estate Within the Old Gate##57880 |goto Revendreth/0 60.46,40.15
+accept The Key to Rebuilding##57881 |goto Revendreth/0 60.46,40.15
+accept Reestablishing the Household##57882 |goto Revendreth/0 60.46,40.15
+stickystart "Collect_Ornate_Key"
+step
+talk Florin##159652
+Choose _<Present the Offer of Employment.>_
+Speak to Florin |q 57882/3 |goto 59.32,34.09
+step
+talk Dumitra##159651
+Choose _<Present the Offer of Employment.>_
+Speak to Dumitra |q 57882/1 |goto 58.48,33.24
+step
+talk Elena##159650
+Choose _<Present the Offer of Employment.>_
+Speak to Elena |q 57882/2 |goto 61.02,33.44
+step
+label "Collect_Ornate_Key"
+Kill enemies around this area
+collect Ornate Key##173180 |q 57881/1 |goto 60.25,37.19
+step
+talk Bogdan##159513
+turnin The Key to Rebuilding##57881 |goto 60.46,40.14
+turnin Reestablishing the Household##57882 |goto 60.46,40.14
+accept Reclaiming Thornhill Manor##57884 |goto 60.46,40.14
+step
+Run up the stairs |goto 60.26,35.54 < 15 |only if walking
+kill Viscount Nicolae##159657 |q 57884/1 |goto 61.84,29.60
+step
+Enter the building |goto 59.22,30.23 < 7 |walk
+talk Bogdan##159513
+|tip Inside the building.
+turnin Reclaiming Thornhill Manor##57884 |goto 58.83,29.88
+accept A Discreet Entrance##57885 |goto 58.83,29.88
+step
+Enter the Ornate Mirror |q 57885/1 |goto 58.73,30.29
+|tip Walk into the red swirling portal.
+|tip Inside the building.
+step
+talk The Countess##159694
+|tip Upstairs inside the building.
+turnin A Discreet Entrance##57885 |goto 58.05,27.53 |region redelav_tower
+accept A Meal and A Deal##57886 |goto 58.05,27.53 |region redelav_tower
+step
+click Ornate Chair
+|tip Upstairs inside the building.
+Sit in the Ornate Chair |q 57886/1 |goto 58.13,27.65 |region redelav_tower
+step
+Watch the dialogue
+|tip Upstairs inside the building.
+Listen to the Countess |q 57886/2 |goto 58.13,27.65 |region redelav_tower
+step
+click Grand Feast
+|tip On the table.
+|tip Upstairs inside the building.
+Eat the Grand Feast |q 57886/3 |goto 58.13,27.65 |region redelav_tower
+step
+Watch the dialogue
+|tip Upstairs inside the building.
+Listen to the Countess |q 57886/4 |goto 58.13,27.65 |region redelav_tower
+step
+talk The Countess##159694
+|tip Upstairs inside the building.
+turnin A Meal and A Deal##57886 |goto 58.05,27.53 |region redelav_tower
+accept Killing the Messenger##57887 |goto 58.05,27.53 |region redelav_tower
+step
+Enter the Ornate Mirror |goto 57.38,28.67 |region redelav_tower
+|tip Walk into the red swirling portal.
+|tip Upstairs inside the building.
+Leave the Tower |goto 58.91,30.34 < 10 |noway |c |q 57887
+step
+kill Redelav Courier##159731
+|tip Wait for him to run by this location.
+|tip He will appear on your minimap as a yellow dot.
+collect Treasonous Missive##173285 |q 57887/1 |goto 57.54,36.34
+step
+talk The Countess##159694
+|tip Upstairs inside the building.
+turnin Killing the Messenger##57887 |goto 58.05,27.53 |region redelav_tower
+accept An Invitation to Treachery##57888 |goto 58.05,27.53 |region redelav_tower
+accept "Accidental" Arson##57889 |goto 58.05,27.53 |region redelav_tower
+accept Beautiful, But Deadly##57890 |goto 58.05,27.53 |region redelav_tower
+stickystart "Collect_Duskmire_Mushrooms"
+step
+Follow the path up |goto 57.09,37.23 < 30 |only if walking
+Enter the building |goto 56.26,35.95 < 7 |walk
+kill Lord Andrei##159664 |q 57889/1 |goto 56.40,35.35
+|tip Inside the building.
+step
+click Ornate Rug
+|tip Inside the building.
+Burn the Ornate Rug |q 57889/2 |goto 56.31,35.50
+step
+use the Invitations##173358
+|tip Use them on the Fiendish Servant.
+|tip In front of the building.
+Deliver to Redelav |q 57888/4 |goto 55.26,34.93
+step
+use the Invitations##173358
+|tip Use them on the Fiendish Servant.
+|tip In front of the building.
+Deliver to Darkvein |q 57888/1 |goto 53.07,37.01
+step
+use the Invitations##173358
+|tip Use them on the Fiendish Servant.
+|tip In front of the building.
+Deliver to Duskmire |q 57888/2 |goto 54.30,38.83
+step
+use the Invitations##173358
+|tip Use them on the Fiendish Servant.
+|tip In front of the building.
+Deliver to Primrose |q 57888/3 |goto 55.90,39.47
+step
+label "Collect_Duskmire_Mushrooms"
+click Duskmire Mushroom+
+|tip They look like clusters of small red balls on the ground around this area.
+collect 50 Duskmire Mushroom##173286 |q 57890/1 |goto 55.47,36.49
+step
+talk The Countess##159694
+|tip Upstairs inside the building.
+turnin An Invitation to Treachery##57888 |goto 58.05,27.53 |region redelav_tower
+turnin "Accidental" Arson##57889 |goto 58.05,27.53 |region redelav_tower
+turnin Beautiful, But Deadly##57890 |goto 58.05,27.53 |region redelav_tower
+accept Mix, Mingle, and Meddle##57891 |goto 58.05,27.53 |region redelav_tower
+step
+use the Duskmire Elixir##174923
+|tip Upstairs inside the building.
+Consume the Duskmire Elixir |q 57891/1 |goto 58.05,27.53 |region redelav_tower
+step
+Ride the elevator up |goto 57.40,33.45 < 15 |only if walking
+talk NPC+
+|tip They look like neutral NPC's around this area.
+|tip They have various names.
+Ask them _"Are you enjoying yourself?"_
+|tip Some of them may attack you.
+use the Duskmire Elixir##174923
+|tip Make sure to keep the Duskmire Elixir buff active, so you can talk to them.
+Question #10# Attendees |q 57891/2 |goto 55.34,31.35
+step
+talk The Countess##159946
+turnin Mix, Mingle, and Meddle##57891 |goto 56.92,28.64
+accept Enacting Immediate Justice##57892 |goto 56.92,28.64
+step
+talk The Countess##159946
+Tell her _"House Primrose"_
+Name the Traitorous House |q 57892/1 |goto 56.92,28.64
+step
+talk Chancellor Ladris##159884
+Tell him _"You stand accused of conspiring to overthrow The Countess."_
+Confront the House Leader |q 57892/2 |goto 55.13,30.52
+step
+kill Chancellor Ladris##159884
+Defeat the Traitor |q 57892/3 |goto 55.13,30.52
+step
+talk The Countess##159946
+turnin Enacting Immediate Justice##57892 |goto 56.93,28.64
+accept Neither Enemy nor Ally##57893 |goto 56.93,28.64
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin Neither Enemy nor Ally##57893 |goto Sinfall/0 51.78,37.63
+step
+Reach Renown Level 11 |condition covenant() == Venthyr and covenantrenown() >= 11
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+click Medallion of Avarice
+|tip Inside the building.
+accept Medallion of Avarice##60935 |goto Sinfall/0 54.88,31.04
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin Medallion of Avarice##60935 |goto 51.77,37.62
+accept The Curator##58842 |goto 51.77,37.62
+step
+talk The Curator##160941
+Ask her _"What happened to the Medallion of Avarice?"_
+Speak to the Curator |q 58842/1 |goto Revendreth/0 72.74,37.64
+step
+talk The Curator##160941
+turnin The Curator##58842 |goto 72.74,37.64
+accept Watcher Emil##58325 |goto 72.74,37.64
+step
+talk Guard Captain Elizabeta##161056
+|tip Inside the building.
+Tell her _"The Curator sent me. I'm looking for Watcher Emil."_
+Consult the Catacombs Officer |q 58325/1 |goto 65.92,32.28
+step
+talk Guard Captain Elizabeta##161056
+|tip Inside the building.
+accept Break Out##58337 |goto 65.92,32.28
+accept Combing the Catacombs##58326 |goto 65.92,32.28
+stickystart "Return_Escaped_Captives"
+stickystart "Kill_Sinstone_Rampagers"
+stickystart "Slay_Manifestations"
+step
+Follow the path up |goto 64.52,31.57 < 20 |only if walking
+Run down the stairs inside the building |goto 65.68,26.70 < 7 |c |q 58337
+step
+click Dorin's Journal
+|tip Downstairs inside the building.
+Find Guardsman Dorin |q 58325/2 |goto 65.06,26.85
+step
+label "Return_Escaped_Captives"
+use the Chains of Regret##174040
+|tip Use them on Escaped Captives.
+|tip They look like spirits wearing dark cloaks on the ground around this area.
+|tip They will start following you.
+click Catacombs Cage+
+|tip They look like large metal cages inside the buildings around this area.
+|tip They will appear on your minimap as dots when you have a Captured Soul following you.
+Return #6# Escaped Captives |q 58337/1 |goto 66.16,30.32
+step
+label "Kill_Sinstone_Rampagers"
+kill 3 Sinstone Rampager##160716 |q 58326/2 |goto 66.16,30.32
+step
+label "Slay_Manifestations"
+Kill enemies around this area
+|tip Escaped Captives and Sinstone Rampagers won't count for the quest goal.
+Slay #12# Manifestations |q 58326/1 |goto 66.16,30.32
+step
+Watch the dialogue
+|tip In the doorway of the building.
+Find Watcher Emil |q 58325/3 |goto 65.93,29.34
+step
+talk Watcher Emil##160956
+|tip Inside the building.
+turnin Watcher Emil##58325 |goto 65.93,28.84
+accept Lead the Way##58372 |goto 65.93,28.84
+step
+talk Watcher Emil##160956
+|tip Inside the building.
+Tell him _"Let's go."_
+Begin Following Watcher Emil |goto 65.93,28.84 > 15 |c |q 58372
+step
+Watch the dialogue
+|tip Follow Watcher Emil as he walks.
+|tip Stay within the white circle surrounding him.
+|tip He eventually walks to this location.
+Kill the enemies that attack
+Escort Watcher Emil |q 58372/2 |goto 65.40,34.06
+step
+talk Guard Captain Elizabeta##161056
+|tip Inside the building.
+turnin Break Out##58337 |goto 65.92,32.27
+turnin Combing the Catacombs##58326 |goto 65.92,32.27
+step
+Follow the path up |goto 68.06,37.51 < 30 |only if walking
+talk The Curator##160941
+turnin Lead the Way##58372 |goto 72.74,37.64
+accept Special Access##58421 |goto 72.74,37.64
+accept Crypt Crashers##58428 |goto 72.74,37.64
+step
+talk Watcher Emil##160956
+accept An Eye for an Amulet##58424 |goto 72.60,37.54
+stickystart "Collect_Death_Lotus_Powder"
+stickystart "Kill_Excavation_Enforcers"
+stickystart "Slay_Archivam_Instruders"
+step
+Cross the bridge |goto 74.13,37.79 < 15 |only if walking
+kill Examiner Ionata##160849
+collect Ionata's Fangs##174093 |q 58421/3 |goto 77.40,32.75
+step
+Enter the building |goto 79.75,37.24 < 7 |walk
+kill Examiner Boian##160847
+|tip Inside the building.
+collect Boian's Fangs##174094 |q 58421/2 |goto 80.06,37.24
+step
+Enter the building |goto 80.40,40.30 < 7 |walk
+kill Examiner Daciana##160848
+|tip Inside the building.
+collect Daciana's Fangs##174095 |q 58421/1 |goto 80.77,39.92
+step
+label "Collect_Death_Lotus_Powder"
+click Stonebreaker Mallet+
+|tip They look like small sledge hammers on the ground around this area.
+click Crypt Door+
+|tip They look like the doors of the smaller stone buildings around this area.
+|tip You will lose your Stonebreaker Mallet after each Crypt Door you break, and will need a new one.
+|tip They will appear on your minimap as dots.
+click Powder Bag
+|tip It looks like a brown sack.
+|tip It will eventually be inside one of the crypts.
+collect Death Lotus Powder##174098 |q 58428/1 |goto 78.02,36.92
+step
+label "Kill_Excavation_Enforcers"
+kill 5 Excavation Enforcer##160845 |q 58424/2 |goto 78.02,36.92
+step
+label "Slay_Archivam_Instruders"
+Kill Nefarious enemies around this area
+Slay #12# Archivam Intruders |q 58424/1 |goto 78.02,36.92
+step
+talk Nourman##161298
+|tip Outside, behind the building.
+turnin Special Access##58421 |goto 77.58,39.28
+accept The Traitor##60673 |goto 77.58,39.28
+step
+Enter the building |goto 77.48,39.10 < 7 |walk
+kill Sinkeeper Mateo##160850
+|tip Inside the building.
+collect Mateo's Mirror Shard##174092 |q 60673/1 |goto 78.51,39.38
+step
+Leave the building |goto 77.48,39.11 < 7 |walk
+Cross the bridge |goto 75.26,37.42 < 20 |only if walking
+talk The Curator##160941
+turnin The Traitor##60673 |goto 72.74,37.64
+turnin Crypt Crashers##58428 |goto 72.74,37.64
+step
+talk Watcher Emil##160956
+turnin An Eye for an Amulet##58424 |goto 72.60,37.54
+step
+talk The Curator##160941
+accept Mirror, Mirror...##58440 |goto 72.74,37.64
+step
+Watch the dialogue
+|tip In the doorway of the building.
+Wait for the Curator to Complete the Mirror |q 58440/1 |goto 72.70,37.54
+step
+use the Death Lotus Powder##174179
+Apply the Death Lotus Powder |q 58440/2 |goto 72.70,37.54
+step
+Enter the Mirror |q 58440/3 |goto 72.78,37.29
+|tip Walk into the red swirling portal.
+|tip Inside the building.
+step
+cast Door of Shadows##300728
+|tip Place the green circle on the other side of barrier, where the spiked treasure chest is.
+|tip Downstairs inside the building.
+click Curator's Chest
+collect Medallion of Avarice##174111 |q 58440/4 |goto 78.47,39.09
+step
+cast Door of Shadows##300728
+|tip Place the green circle on the other side of barrier.
+Escape the Protective Barrier |goto 78.13,38.74 < 10 |c |q 58440
+step
+Enter the Mirror |goto 77.82,38.43
+|tip Walk into the red swirling portal.
+|tip Inside the building.
+Leave the Curator's Crypt |goto 72.73,37.47 < 10 |noway |c |q 58440
+step
+talk The Curator##160941
+turnin Mirror, Mirror...##58440 |goto 72.74,37.64
+accept Return to Sinfall##58444 |goto 72.74,37.64
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin Return to Sinfall##58444 |goto Sinfall/0 51.80,37.61
+step
+Reach Renown Level 13 |condition covenant() == Venthyr and covenantrenown() >= 13
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+accept How to Wear Seven Medallions##61050 |goto 51.85,37.52
+step
+talk General Draven##161514
+|tip Inside the building.
+turnin How to Wear Seven Medallions##61050 |goto 44.51,46.52
+accept Hidden Mirror##58530 |goto 44.51,46.52
+step
+Enter the cave |goto Bastion/0 51.38,31.59 < 7 |walk
+use Laurent's Compact Looking Glass##180356
+|tip Inside the cave.
+Reveal the Hidden Mirror |q 58530/1 |goto Bastion/0 49.43,30.34
+step
+Watch the dialogue
+talk General Draven##162213
+|tip Inside the cave.
+turnin Hidden Mirror##58530 |goto 49.66,30.16
+accept A Tense Reunion##58555 |goto 49.66,30.16
+step
+Leave the cave |goto 51.38,31.59 < 7 |walk
+Reach the Eternal Forge |q 58555/1 |goto 50.37,22.54
+step
+Watch the dialogue
+talk General Draven##161526
+turnin A Tense Reunion##58555 |goto 50.09,20.71
+accept Right our Wrongs##58584 |goto 50.09,20.71
+step
+talk Mikanikos##160280
+accept No Friend of Mine##58585 |goto 50.11,20.54
+accept The Right Stuff##58586 |goto 50.11,20.54
+step
+Watch the dialogue
+talk Theotar##161637
+Tell him _"I am ready."_
+Speak to Theotar |q 58584/1 |goto 50.14,20.35
+stickystart "Collect_Purified_Metal"
+step
+Watch the dialogue
+click Anima Siphon
+|tip Theotar will make it appear.
+Destroy the Anima Siphon |q 58584/2 |goto 50.43,18.32 |count 1
+step
+Watch the dialogue
+click Anima Siphon
+|tip Theotar will make it appear.
+Destroy the Anima Siphon |q 58584/2 |goto 49.88,17.61 |count 2
+step
+Watch the dialogue
+click Anima Siphon
+|tip Theotar will make it appear.
+Destroy the Anima Siphon |q 58584/2 |goto 50.23,17.47 |count 3
+step
+Watch the dialogue
+click Anima Siphon
+|tip Theotar will make it appear.
+Destroy the Anima Siphon |q 58584/2 |goto 50.37,16.72 |count 4
+step
+Watch the dialogue
+click Anima Siphon
+|tip Theotar will make it appear.
+Destroy the Anima Siphon |q 58584/2 |goto 51.59,17.88 |count 5
+step
+kill Famos##161704
+collect Mikanikos' Tool Chest##174466 |q 58585/1 |goto 52.95,15.29
+step
+label "Collect_Purified_Metal"
+Kill enemies around this area
+collect Tainted Centurion Component##174465+ |n
+use the Tainted Centurion Component##174465+
+collect 5 Purified Metal##173880 |q 58586/1 |goto 51.60,17.95
+step
+talk Mikanikos##160280
+turnin No Friend of Mine##58585 |goto 50.11,20.54
+turnin The Right Stuff##58586 |goto 50.11,20.54
+step
+talk General Draven##161526
+turnin Right our Wrongs##58584 |goto 50.09,20.71
+step
+Watch the dialogue
+talk Mikanikos##160280
+accept A Perfect Circle##58600 |goto 50.13,20.48
+accept Phaestus, Genesis of Aeons##58603 |goto 50.13,20.48
+step
+Run up the stairs |goto 50.16,19.32 < 15 |only if walking
+kill Overseer Atticus##160409
+collect Phaestus, Genesis of Aeons##174061 |q 58603/1 |goto 49.00,15.54
+step
+Enter the building |goto 49.78,15.64 < 10 |walk
+click Forge Materials+
+|tip They look like metal and wooden treasure chests next to the wall on the ground around this area.
+|tip It can be in any of the chests.
+|tip You will be attacked or trapped if you choose the wrong chest.
+|tip Inside the building.
+collect Perfected Circlet Mold##174330 |q 58600/1 |goto 49.89,15.27
+step
+talk Mikanikos##160280
+turnin A Perfect Circle##58600 |goto 50.13,20.47
+turnin Phaestus, Genesis of Aeons##58603 |goto 50.13,20.47
+accept Crown of the Harvesters##58630 |goto 50.13,20.47
+step
+click Anvil
+Begin the Forging Process |q 58630/1 |goto 51.46,18.46
+step
+Watch the dialogue
+Forge the Crown of the Harvesters |q 58630/2 |goto 51.46,18.46
+step
+talk Mikanikos##174587
+turnin Crown of the Harvesters##58630 |goto 51.43,18.45
+accept Heavy is the Head...##58656 |goto 51.43,18.45
+step
+click Crown of the Harvesters
+Wear the Crown of the Harvesters |q 58656/1 |goto 51.46,18.45
+stickystart "Test_The_Crown"
+step
+kill Operational Colossus##162123
+|tip Use the abilities on your action bar.
+Slay the Eastern Colossus |q 58656/3 |goto 53.08,16.71
+step
+kill Operational Colossus##170753
+|tip Use the abilities on your action bar.
+Slay the Northern Colossus |q 58656/4 |goto 51.05,15.43
+step
+kill Operational Colossus##170754
+|tip Use the abilities on your action bar.
+Slay the Western Colossus |q 58656/5 |goto 49.06,15.62
+step
+label "Test_The_Crown"
+Kill enemies around this area
+|tip Use the abilities on your action bar. |notinsticky
+Test the Crown |q 58656/2 |goto 50.83,17.46
+step
+talk General Draven##161526
+turnin Heavy is the Head...##58656 |goto 50.09,20.71
+step
+talk Mikanikos##160280
+accept Citadel of Loyalty##60993 |goto 50.11,20.54
+step
+Run down the stairs and follow the road |goto 48.30,26.00 < 20 |only if walking
+Run down the stairs |goto 27.10,30.42 < 15 |only if walking
+Reach the Citadel of Loyalty |q 60993/1 |goto 24.29,29.84
+step
+Watch the dialogue
+talk Mikanikos##171001
+|tip He runs to this location.
+turnin Citadel of Loyalty##60993 |goto 24.42,29.86
+accept Lowering Their Defenses##60994 |goto 24.42,29.86
+step
+talk General Draven##170999
+accept Disloyalty##60995 |goto 24.30,29.88
+stickystart "Slay_Citadel_Forsworn"
+step
+Run down the stairs |goto 23.35,27.77 < 15 |only if walking
+click Forsworn Barrier Source
+Drain the Southern Barrier Source |q 60994/1 |goto 22.71,24.95
+step
+click Forsworn Barrier Source
+Drain the Eastern Barrier Source |q 60994/3 |goto 24.78,23.20
+step
+Run up the stairs |goto 22.89,25.19 < 15 |only if walking
+click Forsworn Barrier Source
+Drain the Northern Barrier Source |q 60994/2 |goto 24.42,24.02
+step
+label "Slay_Citadel_Forsworn"
+Kill enemies around this area
+|tip Use the "Assist" ability to kill them easier.
+|tip It appears as a button on the screen.
+Slay #15# Citadel Forsworn |q 60995/1 |goto 25.21,25.36
+step
+talk Mikanikos##171001
+turnin Lowering Their Defenses##60994 |goto 24.41,29.86
+turnin Disloyalty##60995 |goto 24.41,29.86
+step
+Watch the dialogue
+talk General Draven##171147
+|tip He flies to this location.
+accept Face Your Fears##60996 |goto 24.28,29.66
+step
+talk General Draven##171147
+Tell him _"I am ready."_
+Begin Flying with General Draven |goto 24.28,29.66 > 20 |c |q 60996
+step
+Watch the dialogue
+Reach the Temple of Loyalty |q 60996/1 |goto 21.07,22.87 |notravel
+step
+Use the _"Blessing of Loyalty"_ ability
+|tip It appears as a button on the screen.
+Watch the dialogue
+Purify the Crown of the Harvesters |q 60996/2 |goto 20.35,22.88
+step
+kill Echo of Denathrius##171160 |q 60996/3 |goto 20.50,22.88
+step
+talk General Draven##171175
+turnin Face Your Fears##60996 |goto 21.12,22.87
+accept The Prince's New Crown##59233 |goto 21.12,22.87
+step
+Return to Sinfall |q 59233/2 |goto Sinfall/0 51.80,37.63
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin The Prince's New Crown##59233 |goto Sinfall/0 51.80,37.63
+step
+Reach Renown Level 17 |condition covenant() == Venthyr and covenantrenown() >= 17
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+accept Confronting Sin##61077 |goto Sinfall/0 51.80,37.63
+step
+talk The Accuser##165291
+|tip Downstairs inside the building.
+turnin Confronting Sin##61077 |goto Sinfall/1 56.05,78.53
+accept Someone Worth Saving##58382 |goto Sinfall/1 56.05,78.53
+step
+talk Sinfall Executor##169625
+|tip Downstairs inside the building.
+Tell him _"Release Kael'thas Sunstrider."_
+Click Here After Telling Him to Release |confirm |goto 43.79,23.18 |q 58382
+step
+talk Sinfall Executor##169625
+|tip Downstairs inside the building.
+Tell him _"Release Kael'thas Sunstrider."_
+Release Kael'thas Sunstrider |q 58382/1 |goto 48.20,24.27
+step
+Watch the dialogue
+|tip Downstairs inside the building.
+talk The Accuser##161158
+turnin Someone Worth Saving##58382 |goto 46.42,32.17
+accept The Many Sins of Kael'thas Sunstrider##58383 |goto 46.42,32.17
+step
+talk The Accuser##161158
+|tip Downstairs inside the building.
+Tell her _"Begin your inquisition."_
+Begin the Ritual of Absolution |q 58383/1 |goto 46.42,32.17
+step
+Watch the dialogue
+|tip Downstairs inside the building.
+click Kael'thas Sunstrider
+Identify the Sin of Kael'thas |q 58383/2 |goto 40.12,31.44 |count 1
+step
+Watch the dialogue
+|tip Downstairs inside the building.
+click Kael'thas Sunstrider
+Identify the Sin of Kael'thas |q 58383/2 |goto 43.83,26.53 |count 2
+step
+Watch the dialogue
+|tip Downstairs inside the building.
+click Kael'thas Sunstrider
+Identify the Sins of Kael'thas |q 58383/2 |goto 41.08,26.08 |count 5
+step
+talk The Accuser##161158
+|tip Downstairs inside the building.
+turnin The Many Sins of Kael'thas Sunstrider##58383 |goto 46.42,32.16
+accept In the Shadow of our Failures##58426 |goto 46.42,32.16
+step
+Ride the elevator up |goto Revendreth/0 42.08,47.11 < 15 |only if walking
+talk The Accuser##161208
+turnin In the Shadow of our Failures##58426 |goto Revendreth/0 42.30,47.56
+accept Dredgers Left Behind##58384 |goto Revendreth/0 42.30,47.56
+accept Learning to Sacrifice##58385 |goto Revendreth/0 42.30,47.56
+step
+_Next to you:_
+talk Kael'thas Sunstrider
+accept Use My Strengths##58386
+stickystart "Rescue_Darkfall_Captives"
+step
+clicknpc Dormant Legionnaire##161598
+Watch the dialogue
+Animate the Legionnaires |q 58385/1 |goto 44.93,48.79
+step
+clicknpc Vrednic##161225
+Watch the dialogue
+Animate Vrednic |q 58385/3 |goto 43.35,53.82
+step
+Enter the building |goto 42.55,52.66 < 10 |only if walking
+clicknpc Dormant Messenger##161232
+|tip Upstairs, on the balcony of the building.
+Watch the dialogue
+Animate the Messengers |q 58385/2 |goto 41.69,52.39
+step
+kill Usurper Simona##161240
+|tip Outside, behind the building.
+|tip She will eventually become stunned and escape.
+Watch the dialogue
+Confront Usurper Simona |q 58386/1 |goto 41.05,54.75
+step
+label "Rescue_Darkfall_Captives"
+Rescue #10# Darkwall Captives |q 58384/1 |goto 43.78,50.94
+|tip Walk near Darkwall Captives.
+|tip They look like small friendly NPC's on the ground around this area.
+|tip They will run to safety.
+|tip If they attack a nearby enemy, help them kill it.
+step
+talk The Accuser##161278
+turnin Dredgers Left Behind##58384 |goto 43.87,51.41
+turnin Learning to Sacrifice##58385 |goto 43.87,51.41
+turnin Use My Strengths##58386 |goto 43.87,51.41
+accept We Each Must Carry Our Own Sins##58387 |goto 43.87,51.41
+step
+talk The Accuser##161278
+Tell her _"Begin the ritual of extraction."_
+Speak with the Accuser to Begin the Ritual |q 58387/1 |goto 43.87,51.41
+step
+Watch the dialogue
+Complete the Ritual of Extraction |q 58387/2 |goto 43.87,51.41
+step
+talk The Accuser##161278
+turnin We Each Must Carry Our Own Sins##58387 |goto 43.87,51.41
+accept Continued Care of Kael'thas##58443 |goto 43.87,51.41
+step
+Ride the elevator down |goto 46.29,50.84 < 15 |only if walking
+talk The Accuser##161421
+turnin Continued Care of Kael'thas##58443 |goto 46.45,51.49
+accept Blackbale Betrayers##58388 |goto 46.45,51.49
+stickystart "Kill_Blackbale_Overseers"
+step
+Kill enemies around this area
+accept Maldraxxian Weapons##58389 |goto 47.53,53.37
+|tip You will eventually automatically accept this quest after looting.
+step
+_Next to you:_
+talk Kael'thas Sunstrider
+accept There's Always a Paper Trail##58518
+stickystart "Collect_Maldraxxian_Weapons"
+step
+kill Lord Blackbale##161511
+collect Orders from the Tithelord##174278 |q 58518/1 |goto 51.15,55.62
+step
+label "Kill_Blackbale_Overseers"
+kill 4 Blackbale Overseer##161488 |q 58388/1 |goto 49.88,55.67
+step
+label "Collect_Maldraxxian_Weapons"
+Kill enemies around this area
+collect 8 Maldraxxian Weapon##174211 |q 58389/1 |goto 49.88,55.67
+step
+talk The Accuser##161421
+turnin Blackbale Betrayers##58388 |goto 46.45,51.49
+turnin Maldraxxian Weapons##58389 |goto 46.45,51.49
+turnin There's Always a Paper Trail##58518 |goto 46.45,51.49
+step
+_Next to you:_
+Watch the dialogue
+talk Kael'thas Sunstrider##162077
+accept Reconnaissance... for my, uh, Recovery##58391
+step
+Enter the building |goto 61.31,59.78 < 7 |c |q 58391
+step
+click Locked Door
+|tip Downstairs inside the building.
+Watch the dialogue
+Find the Tithelord |q 58391/1 |goto 61.17,60.41
+step
+click The Tithelord's Carriage
+|tip Outside.
+Stowaway on the Tithelord's Carriage |q 58391/2 |goto 61.51,60.12
+step
+Watch the dialogue
+Discover the Tithelord's Plan |q 58391/3 |goto 69.94,60.20 |notravel
+step
+talk Kael'thas Sunstrider##161572
+turnin Reconnaissance... for my, uh, Recovery##58391 |goto 69.89,59.96
+accept Death's End Destruction##58392 |goto 69.89,59.96
+accept Strategic Executions##58393 |goto 69.89,59.96
+stickystart "Disrupt_Deaths_End"
+step
+kill Heftor##161246 |q 58393/1 |goto 77.16,61.01
+step
+kill Stacka##161257 |q 58393/2 |goto 80.40,64.46
+step
+kill Big Shiny##161248 |q 58393/3 |goto 80.79,57.64
+step
+_Next to you:_
+talk Kael'thas Sunstrider##161572
+turnin Strategic Executions##58393
+step
+label "Disrupt_Deaths_End"
+Kill enemies around this area
+click Maldraxxi Anima Crystal+
+|tip They look like large floating green crystals around this area.
+Disrupt Death's End |q 58392/1 |goto 75.92,60.61
+|tip Fill up the blue bar in the quest tracker area.
+step
+_Next to you:_
+talk Kael'thas Sunstrider##161572
+turnin Death's End Destruction##58392
+accept Lady Ouix'Ara##58394
+step
+kill Lady Ouix'Ara##161770 |q 58394/1 |goto 78.85,62.82
+|tip Up on the platform.
+step
+_Next to you:_
+talk Kael'thas Sunstrider##161572
+turnin Lady Ouix'Ara##58394
+accept Enough Vengeance For One Day##58395
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin Enough Vengeance For One Day##58395 |goto Sinfall/0 51.77,37.58
+step
+Reach Renown Level 20 |condition covenant() == Venthyr and covenantrenown() >= 20
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+accept Stonevigil Unrest##57727 |goto Sinfall/0 51.77,37.58
+step
+Cross the bridge |goto Revendreth/0 60.64,62.39 < 10 |only if walking
+talk Prince Renathal##167380
+turnin Stonevigil Unrest##57727 |goto Revendreth/0 56.32,66.72
+accept Fangs and Minds##57772 |goto Revendreth/0 56.32,66.72
+step
+talk Baroness Draka##167381
+accept An Unwelcome Incursion##57771 |goto 56.34,66.59
+accept Third Talon Vartox##60145 |goto 56.34,66.59
+stickystart "Inspire_Stonevigil_Citizens"
+stickystart "Drain_Stoneborn_Anima"
+step
+Kill enemies around this area
+|tip You will eventually automatically accept this quest.
+accept Disrupting the Chain##60265 |goto 56.47,69.10
+step
+Enter the building |goto 56.30,69.73 < 7 |walk
+kill Third Talon Vartox##158361 |q 60145/1 |goto 56.57,68.88
+|tip Downstairs inside the building.
+step
+click Manor Supply Carriage
+Destroy the Manor Carriage |q 60265/2 |goto 56.75,71.29
+step
+click Darkhaven Supply Carriage
+Destroy the Darkhaven Carriage |q 60265/1 |goto 58.50,68.57
+step
+label "Drain_Stoneborn_Anima"
+Kill enemies around this area
+|tip You can find more inside the buildings around this area. |notinsticky
+Drain #12# Stoneborn Anima |q 57771/1 |goto 57.63,70.09
+step
+click Depleted Anima Well
+Fill the Depleted Anima Well |q 57771/2 |goto 58.31,69.28
+step
+label "Inspire_Stonevigil_Citizens"
+use Prince Renathal's Decree##178213
+|tip Use it next to Stonevigil Citizens.
+|tip They look like neutral venthyr NPC's standing on the ground around this area.
+|tip They can also be inside the buildings around this area.
+Inspire #8# Stonevigil Citizens |q 57772/1 |goto 57.63,70.09
+step
+Follow the path |goto 56.95,69.92 < 20 |only if walking
+talk Baroness Draka##167381
+turnin An Unwelcome Incursion##57771 |goto 56.34,66.59
+turnin Third Talon Vartox##60145 |goto 56.34,66.59
+step
+talk Prince Renathal##167380
+turnin Fangs and Minds##57772 |goto 56.32,66.73
+turnin Disrupting the Chain##60265 |goto 56.32,66.73
+step
+Watch the dialogue
+talk Baroness Draka##167381
+accept After Them!##60183 |goto 56.34,66.59
+step
+clicknpc Deathfang##167382
+Ride with Deathfang |invehicle |goto 56.34,66.32 |q 60183
+step
+Watch the dialogue
+Chase the Carriage |q 60183/1 |goto 61.54,69.35 |notravel
+step
+kill Provisioner Kraus##167550 |q 60183/2 |goto 61.62,69.31
+step
+talk Prince Renathal##167620
+|tip He floats to this location.
+turnin After Them!##60183 |goto 61.60,69.65
+accept To the Estate##57729 |goto 61.60,69.65
+step
+Watch the dialogue
+|tip Follow Prince Renathal as he travels.
+talk Prince Renathal##167689
+turnin To the Estate##57729 |goto 71.92,68.86
+accept The Tithelord##57646 |goto 71.92,68.86
+step
+talk Prince Renathal##167689
+Tell him _"I am ready."_
+Begin Following Prince Renathal |goto 71.92,68.86 > 15 |c |q 57646
+step
+Watch the dialogue
+|tip Follow Prince
+kill The Tithelord##158197
+|tip He will eventually escape.
+Click Here After He Escapes |confirm |goto 74.87,68.66 |q 57646
+step
+kill The Tithelord##158197
+|tip He will eventually escape.
+Click Here After He Escapes |confirm |goto 76.04,65.96 |q 57646
+step
+Watch the dialogue
+kill The Tithelord##158197
+collect Medallion of Envy##173976 |q 57646/1 |goto 77.60,70.21
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin The Tithelord##57646 |goto Sinfall/0 51.80,37.56
+step
+Reach Renown Level 22 |condition covenant() == Venthyr and covenantrenown() >= 22
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+talk Laurent##158038
+accept An Unfortunate Situation##57531 |goto Revendreth/0 26.42,48.95
+step
+kill Costel##158165
+|tip Inside the building.
+Recover Laurent's Belongings |q 57531/1 |goto 29.72,48.72
+step
+talk Laurent##158038
+turnin An Unfortunate Situation##57531 |goto 26.43,48.95
+accept Foraging for Fragments##57532 |goto 26.43,48.95
+step
+Watch the dialogue
+|tip Follow Laurent as he walks.
+|tip He walks to this location.
+Follow Laurent |q 57532/1 |goto 25.71,48.57
+step
+click Mirror Fragment
+collect Mirror Fragment##172085 |q 57532/2 |goto 25.68,48.54
+step
+Watch the dialogue
+|tip Follow Laurent as he walks.
+|tip He walks to this location.
+Follow Laurent |q 57532/3 |goto 25.53,47.34
+step
+click Mirror Fragment
+collect Mirror Fragment##172085 |q 57532/4 |goto 25.51,47.39
+step
+Watch the dialogue
+|tip Follow Laurent as he walks.
+|tip He walks to this location.
+Follow Laurent |q 57532/5 |goto 24.98,47.98
+step
+click Mirror Fragment
+collect Mirror Fragment##172085 |q 57532/6 |goto 25.00,48.04
+step
+Watch the dialogue
+talk Laurent##158205
+|tip He walks to this location.
+turnin Foraging for Fragments##57532 |goto 24.25,49.41
+accept Moving Mirrors##57571 |goto 24.25,49.41
+step
+click Mirror Trap+
+|tip There are 3 of them surrounding Simone.
+Free Simone |q 57571/1 |goto 24.07,49.67
+step
+Watch the dialogue
+talk Simone##158088
+|tip She walks to this location.
+turnin Moving Mirrors##57571 |goto 24.22,49.48
+accept Light Punishment##57533 |goto 24.22,49.48
+step
+talk Laurent##158205
+accept When Only Ash Remains##57534 |goto 24.25,49.42
+stickystart "Kill_Ashen_Ravagers"
+step
+click Mirror Trap+
+|tip There are 3 of them surrounding the Blistering Outcast.
+Free the Blistering Outcast |q 57533/1 |goto 23.02,49.52 |count 1
+step
+click Mirror Trap+
+|tip There are 3 of them surrounding the Blistering Outcast.
+Free the Blistering Outcast |q 57533/1 |goto 22.20,48.11 |count 2
+step
+click Mirror Trap+
+|tip There are 3 of them surrounding the Blistering Outcast.
+Free the Blistering Outcast |q 57533/1 |goto 21.86,50.38 |count 3
+step
+click Mirror Trap+
+|tip There are 3 of them surrounding the Blistering Outcast.
+Free the Blistering Outcast |q 57533/1 |goto 22.88,50.00 |count 4
+step
+click Mirror Trap+
+|tip There are 3 of them surrounding the Blistering Outcast.
+Free the Blistering Outcast |q 57533/1 |goto 22.51,52.16 |count 5
+step
+label "Kill_Ashen_Ravagers"
+kill 10 Ashen Ravager##164524 |q 57534/1 |goto 23.21,49.46
+step
+talk Simone##158088
+turnin Light Punishment##57533 |goto 24.22,49.48
+step
+talk Laurent##158205
+turnin When Only Ash Remains##57534 |goto 24.25,49.41
+accept Escaping the Master##57535 |goto 24.25,49.41
+step
+talk Simone##158088
+accept We Need More Power##59427 |goto 24.22,49.49
+stickystart "Collect_Anima_59427"
+step
+Kill Shrouded enemies around this area
+|tip You can find more inside the buildings around this area.
+collect 10 Mirror Fragment##172220 |q 57535/1 |goto 23.79,53.09
+step
+label "Collect_Anima_59427"
+click Anima Stores+
+|tip They look like small metal burnt out lanterns on the ground around this area.
+|tip You can find more inside the buildings around this area.
+|tip Fill up the blue bar in the quest tracker area.
+Collect Anima |q 59427/1 |goto 23.79,53.09
+step
+talk Simone##158088
+turnin We Need More Power##59427 |goto 24.22,49.48
+step
+talk Laurent##158205
+turnin Escaping the Master##57535 |goto 24.25,49.41
+accept Mirror Making, Not Breaking##57536 |goto 24.25,49.41
+step
+Watch the dialogue
+Follow Laurent and Simone |q 57536/1 |goto 24.80,50.26
+step
+talk Laurent##164420
+Tell him _"I am ready."_
+Speak to Laurent |q 57536/2 |goto 24.80,50.26
+step
+Kill the enemies that attack in waves
+|tip Fill up the blue bar in the quest tracker area.
+Defend Laurent and Simone |q 57536/3 |goto 24.73,50.38
+step
+talk Laurent##158505
+turnin Mirror Making, Not Breaking##57536 |goto 24.80,50.26
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+accept Mirror to Maldraxxus##58406 |goto Sinfall/0 51.82,37.54
+step
+talk Laurent##170532
+turnin Mirror to Maldraxxus##58406 |goto Revendreth/0 27.27,40.39
+step
+talk General Draven##170543
+accept The Medallion of Dominion##58407 |goto 27.42,40.33
+step
+Enter the Ornate Mirror
+|tip Walk into the swirling red portal.
+Teleport to Maldraxxus |scenariostart |goto 27.27,40.30 |q 58407
+step
+kill Adept Necromancer##162096+
+|tip Avoid the green tornados and circles on the ground.
+|tip Upstairs inside the building.
+|tip You can find more downstairs inside the building.
+|tip You will have to jump to get downstairs.
+Watch the dialogue
+Obtain the Information |scenariogoal 1/48394 |goto Maldraxxus Venthyr Scenario/0 74.85,33.65 |q 58407
+step
+Locate General Draven |goto 73.61,33.81 < 15 |c |q 58407
+step
+Watch the dialogue
+talk General Draven##162226
+Fly with General Draven |goto 73.61,33.81 > 15 |c |q 58407
+step
+Kill enemies around this area
+|tip They are flying in the air.
+|tip Use the abilities on your action bar.
+|tip Fly near the large floating crystals around this area to heal General Draven.
+Clear the Sky of #30# Enemies |scenariogoal 2/48395 |goto 69.68,29.89 |q 58407
+step
+Watch the dialogue
+Speak with Your Allies on the Ground About How to Proceed |scenariogoal 3/48396 |goto 71.79,33.64 |q 58407 |notravel
+step
+click Anima Crystal
+Reanimate the Allies |scenariogoal 4/48414 |goto 70.74,32.76 |q 58407 |count 4
+step
+click Anima Crystal
+Reanimate the Allies |scenariogoal 4/48414 |goto 69.74,34.68 |q 58407 |count 8
+step
+click Anima Crystal
+Reanimate the Ally |scenariogoal 4/48414 |goto 68.79,33.30 |q 58407 |count 9
+step
+click Anima Crystal
+Reanimate the Ally |scenariogoal 4/48414 |goto 69.30,32.42 |q 58407 |count 10
+step
+click Anima Crystal
+Reanimate the Ally |scenariogoal 4/48414 |goto 70.15,31.24 |q 58407 |count 11
+step
+click Anima Crystal
+Reanimate the Ally |scenariogoal 4/48414 |goto 71.28,31.46 |q 58407 |count 12
+step
+Use the _"Call General Draven"_ ability
+|tip Use it repeatedly on Maw Infernous as you fight.
+|tip It appears as a button on the screen.
+kill Maw Infernous##163213 |scenariogoal 5/47891 |goto 68.17,29.79 |q 58407
+step
+Enter the Portal |goto 68.15,29.84
+|tip Walk into the swirling portal.
+Teleport to Kel'Thuzad |goto 73.67,33.55 < 10 |noway |c |q 58407
+step
+Watch the dialogue
+|tip Inside the building.
+kill Kel'Thuzad##173066
+Recover the Medallion of Dominion from Kel'Thuzad |scenariogoal 6/48399 |goto 74.58,33.65 |q 58407
+step
+Return to Sinfall |goto Revendreth/0 27.46,40.60 < 10 |noway |c |q 58407
+step
+talk Prince Renathal##158653
+|tip Inside the building.
+turnin The Medallion of Dominion##58407 |goto Sinfall/0 51.76,37.62
+step
+talk General Draven##161977
+|tip Inside the building.
+accept A Stalwart Ally##59325 |goto 46.12,14.73
+step
+talk General Draven##164856
+|tip Inside the building.
+Soulbind with General Draven |q 59325/1 |goto 43.69,17.51
+step
+talk General Draven##172004
+|tip Inside the building.
+turnin A Stalwart Ally##59325 |goto 43.65,17.49
+step
+Reach Renown Level 40 |condition covenant() == Venthyr and covenantrenown() >= 40
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Venthyr Daily Quests" guide to accomplish this.
+step
+_Congratulations!_
+You Reached Renown Level 40.
+]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Necrolord Questline",{
 author="support@zygorguides.com",
 description="\nThis guide will assist you in completing the Necrolord\n"..
@@ -15266,7 +18365,7 @@ accept The Soul Contact##62843 |goto 46.64,42.35
 step
 talk Ve'nari##162804
 turnin The Soul Contact##62843 |goto The Maw/0 46.91,41.69
-accept Setting the Ground Rules##62882 |goto 46.91,41.69
+accept Setting the Ground Rules##62882 |goto The Maw/0 46.91,41.69
 step
 talk Ve'nari##162804
 Ask her _"What are your ground rules for working together?"_
@@ -15276,26 +18375,29 @@ step
 talk Ve'nari##162804
 turnin Setting the Ground Rules##62882 |goto 46.91,41.69
 accept Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
-stickystart "Collect_60_Granules_of_Stygia"
+stickystart "Collect_Granules_of_Stygia_60287"
 step
 kill Stone Prison##176145+
+|tip They look like pyramids made of rocks on the ground around this area.
 click Soul Cage+
 |tip They look like tall grey metal cages on the ground around this area.
-|tip They will appear on your minimap.
-clicknpc Caged Soul##174182+
-|tip They look like white spirits that float out of the cages.
-|tip You can also click Caged Souls that come out of cages other players opened.
-Take #5# Souls into the Soulkeeper |q 60287/1 |goto 41.90,49.63
+|tip They will appear on your minimap as white ghost icons.
+click Soul+
+|tip They look like white spirits that float out of the cages and stone prisons.
+|tip You can also click Souls that other players free.
+Take #5# Souls into the Soulkeeper |q 60287/1 |goto 40.16,42.42
 step
-label "Collect_60_Granules_of_Stygia"
+label "Collect_Granules_of_Stygia_60287"
 Kill enemies around this area
-click Soul Cage+ |notinsticky
-|tip They look like tall grey metal cages on the ground around this area. |notinsticky
-|tip They will appear on your minimap. |notinsticky
-clicknpc Caged Soul##174182+ |notinsticky
-|tip They look like white spirits that float out of the cages. |notinsticky
-|tip You can also click Caged Souls that come out of cages other players opened. |notinsticky
-collect 60 Granule of Stygia##180852 |q 60287/2 |goto 37.75,39.18
+kill Stone Prison##176145+								|notinsticky
+|tip They look like pyramids made of rocks on the ground around this area.		|notinsticky
+click Soul Cage+									|notinsticky
+|tip They look like tall grey metal cages on the ground around this area.		|notinsticky
+|tip They will appear on your minimap as white ghost icons.				|notinsticky
+click Soul+										|notinsticky
+|tip They look like white spirits that float out of the cages and stone prisons.	|notinsticky
+|tip You can also click Souls that other players free.					|notinsticky
+collect 60 Granule of Stygia##180852 |q 60287/2 |goto 40.16,42.42
 step
 Follow the path down |goto 44.60,41.08 < 15 |only if walking
 talk Ve'nari##162804
@@ -15305,20 +18407,16 @@ talk Ve'nari##162804
 turnin Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
 accept Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 47.19,43.16 |count 1
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 48.41,41.84 |count 2
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 48.19,40.20 |count 3
 step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
+click Soul Ward
 Reinforce the Soul Ward |q 61355/1 |goto 46.93,39.48 |count 4
 step
 talk Ve'nari##162804
@@ -15329,10 +18427,10 @@ click Signaling Beacon
 Place the Signaling Beacon |q 60289/1 |goto 34.98,47.68
 step
 click Baine's Mace##364498
+|tip You will be attacked.
 collect Bloodhoof Warmace##184284 |q 60289/2 |goto 33.46,49.06
 step
 kill Tower Inquisitor##171626 |q 60289/3 |goto 33.46,49.06
-|tip You will be attacked.
 step
 use the Cypher of Relocation##180817
 Return to Ve'nari |goto 46.22,41.25 < 10 |c |q 60289
@@ -15343,7 +18441,7 @@ accept Hopeful News##62837 |goto 46.91,41.69
 step
 talk Highlord Bolvar Fordragon##164079
 turnin Hopeful News##62837 |goto Oribos/0 39.94,68.61
-accept Return to Draka##62844 |goto 39.94,68.61
+accept Return to Draka##62844 |goto Oribos/0 39.94,68.61
 step
 talk Baroness Draka##161907
 turnin Return to Draka##62844 |goto Seat of the Primus/0 49.75,50.68
@@ -15355,9 +18453,8 @@ accept Sanctum Improvements##62846 |goto 52.72,38.30
 step
 talk Arkadia Moa##161909
 Tell her _"Show me the Sanctum."_
-|tip There are 4 upgrades to choose from.
-|tip Choose whichever one you like best, it doesn't matter, because you will eventually unlock them all over time.
-|tip Then, click the "Activate" button.
+|tip Choose whichever upgrade you like best, it doesn't matter, because you will eventually unlock them all over time.
+|tip Click the "Activate" button.
 Start a Sanctum Upgrade |q 62846/1 |goto 52.72,38.30
 step
 talk Arkadia Moa##161909
@@ -15409,117 +18506,6 @@ accept The Highlord Calls##63032 |goto 49.77,50.68
 step
 talk Highlord Bolvar Fordragon##164079
 turnin The Highlord Calls##63032 |goto Oribos/0 39.94,68.59
-accept Into Torghast##60136 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Ask her _"How do I enter Torghast?"_
-Ask Ve'nari about a Way into Torghast |q 60136/1 |goto The Maw/0 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Into Torghast##60136 |goto 46.91,41.69
-accept The Search for Baine##61099 |goto 46.91,41.69
-step
-Use Ve'nari's Portal to Enter Torghast |q 61099/1 |goto 48.20,39.38
-step
-click Wayfinder
-Choose _<Use the [Attuned Shard] with the Wayfinder.>_
-|tip Enter the instance with the popup that displays.
-Take the Attuned Shard to the Wayfinder and See Where it Leads |q 61099/2 |goto Torghast/0 37.96,47.08
-step
-Enter Arkoban Hall |goto Torghast/6 43.78,9.70 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/6 51.30,84.47
-|tip Walk into the swirling portal.
-Reach Floor 2 in Torghast |goto Torghast/7 36.19,61.10 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 54.08,52.39 < 10 |walk
-Enter the Portal |goto Torghast/7 54.84,78.28
-|tip Walk into the swirling portal.
-Reach Floor 3 in Torghast |goto Torghast/8 50.69,85.55 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/8 72.38,54.51
-|tip Walk into the swirling portal.
-Reach Floor 4 in Torghast |goto Torghast/7 78.38,52.61 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 71.37,52.40 < 10 |walk
-Run up the stairs |goto Torghast/7 62.90,35.51 < 10 |walk
-Enter the Portal |goto Torghast/7 62.86,53.95
-|tip Walk into the swirling portal.
-Reach Floor 5 in Torghast |goto Torghast/9 54.13,18.73 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/9 37.27,58.44 < 15 |only if walking
-Enter the Portal |goto Torghast/9 62.57,71.88
-|tip Walk into the swirling portal.
-Reach Floor 6 in Torghast |goto Torghast/10 75.86,76.65 < 10 |noway |c |q 61099
-step
-kill Warden Arkoban##175123 |q 61099/3 |goto Torghast/10 46.43,50.95
-accept Prison of the Forgotten##60267 |goto Torghast/10 46.43,50.95
-|tip You will automatically accept this quest after looting him.
-step
-clicknpc Baine Bloodhoof##175294
-Rescue Baine |q 61099/4 |goto 34.79,56.25
-step
-Enter the Portal |goto 35.23,41.51
-|tip Walk into the swirling portal.
-Leave Arkoban Hall |goto Torghast/0 37.23,47.20 < 10 |noway |c |q 61099
-step
-talk Highlord Bolvar Fordragon##164079
-turnin The Search for Baine##61099 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Tell her _"This was carried by one of the Jailer's more powerful guards. Do you know what it does?"_
-Speak with Ve'nari |q 60267/1 |goto The Maw/0 46.91,41.69
-step
-click Domination Lock
-turnin Prison of the Forgotten##60267 |goto Torghast/0 15.96,62.97
-step
-talk Runecarver##164937
-accept Deep Within##60268 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-Ask him _"Who are you? Why are you here?"_
-Learn More About the Prisoner |q 60268/1 |goto 50.17,53.83
-step
-talk Runecarver##164937
-turnin Deep Within##60268 |goto 50.17,53.83
-accept Reawakening##60269 |goto 50.17,53.83
-step
-Return to Torghast |goto Torghast/0 16.09,57.84 < 10 |c |q 60137
-step
-Follow the path |goto The Maw/0 44.56,41.13 < 15 |only if walking
-kill Odalrik##172207
-collect Runecarver's Memory##178561 |q 60269/1 |goto 38.63,28.84
-step
-talk Runecarver##164937
-turnin Reawakening##60269 |goto The Runecarver/0 50.17,53.83
-accept A Damned Pact##60270 |goto 50.17,53.83
-step
-talk Ve'nari##162804
-turnin A Damned Pact##60270 |goto The Maw/0 46.91,41.69
-accept A Grave Chance##60271 |goto 46.91,41.69
-stickystart "Collect_50_Stygia"
-step
-Kill enemies around this area
-|tip Enemies that are on fire will drop Molten Anima.
-collect 5 Molten Anima##178562 |q 60271/2 |goto 37.76,39.29
-step
-label "Collect_50_Stygia"
-Collect #50# Stygia |condition curcount(1767) >= 50 |q 60271
-|tip Stygia is a reward from world quests, daily quests, bonus objectives and rare spawns in The Maw.
-step
-talk Ve'nari##162804
-buy 1 Anima Supricifer##181324 |q 60271/1 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin A Grave Chance##60271 |goto 46.91,41.69
-accept The Weak Link##60272 |goto 46.91,41.69
-step
-talk Runecarver##164937
-Tell him _"I've found a way, but we only have one shot at it. Let's get you free!"_
-Break the Chain |q 60272/1 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-turnin The Weak Link##60272 |goto 50.72,54.13
 step
 talk Baroness Draka##161907
 accept Securing the House##62448 |goto Seat of the Primus/0 49.77,50.68
@@ -16815,3312 +19801,6 @@ step
 _Congratulations!_
 You Reached Renown Level 40.
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Questline",{
-author="support@zygorguides.com",
-description="\nThis guide will assist you in completing the Night Fae\n"..
-"\ncovenant quests and storyline.\n",
-condition_suggested=function() return level >= 60 end,
-startlevel=60.0,
-endlevel=70.0,
-image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
-},[[
-step
-Reach Level 60 |ding 60
-|tip You must be level 60 before you can start your covenant questline.
-|tip Use the Leveling guides to accomplish this.
-step
-Complete the "Choosing Your Purpose" Quest in Oribos |complete completedanyq(57878,62000) |future
-|tip Use the "Shadowlands Intro & Main Questline" guide to accomplish this.
-step
-talk Tal-Inara##159478
-accept Report to Moonberry##63214 |goto Oribos/0 38.91,69.97
-step
-talk Lady Moonberry##171795
-turnin Report to Moonberry##63214 |goto Oribos/0 39.77,60.88
-accept The Heart of the Forest##61475 |goto Oribos/0 39.77,60.88
-step
-talk Lady Moonberry##172431
-turnin The Heart of the Forest##61475 |goto Ardenweald/0 49.34,52.36
-accept The Boon of Shapes##61479 |goto Ardenweald/0 49.34,52.36
-step
-talk Lady Moonberry##172431
-Tell her _"Lead on."_
-Begin Following Lady Moonberry |goto 49.34,52.36 > 20 |c |q 61479
-step
-Watch the dialogue
-|tip Follow Lady Moonberry as she walks.
-|tip She eventually walks to this location inside the tree.
-Follow Lady Moonberry |q 61479/1 |goto Heart of the Forest/0 49.34,39.68 |notravel
-step
-Use the _"Receive Boon"_ ability
-|tip It appears as a button on the screen.
-|tip Inside the tree.
-Watch the dialogue
-Kneel Before Lady Moonberry |q 61479/2 |goto 49.96,40.23
-step
-talk Lady Moonberry##172431
-|tip Inside the tree.
-turnin The Boon of Shapes##61479 |goto 49.21,39.92
-accept Show, Don't Tell##58104 |goto 49.21,39.92
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-Tell her _"Let us commune with each other."_
-Watch the dialogue
-Commune with Moonberry |q 58104/1 |goto 49.22,39.93
-step
-talk Kewarin##160292
-|tip Inside the tree.
-home Heart of the Forest |goto 54.79,56.18 |q 58104
-step
-Follow the path up |goto 56.70,28.47 < 15 |walk
-talk Ceridwyn##165701
-fpath Heart of the Forest |goto Ardenweald/0 46.26,50.81
-step
-Follow the path |goto Ardenweald/0 44.09,45.25 < 30 |only if walking
-talk Featherlight##160484
-turnin Show, Don't Tell##58104 |goto Ardenweald/0 40.71,42.78
-accept Break a Leg##58157 |goto Ardenweald/0 40.71,42.78
-step
-Take Your Place on Stage |q 58157/1 |goto 41.43,44.78
-step
-Use the _"Begin Act 1, Xavius"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-kill Niya, As Xavius##160466
-Defeat Act 1, "Lord Xavius" |q 58157/2 |goto 41.43,44.78
-step
-Use the _"Begin Act 2, Gul'dan"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-kill Senthii, As Gul'dan##160504
-Defeat Act 2, "Gul'dan" |q 58157/3 |goto 41.43,44.78
-step
-Use the _"Begin Act 3, Kil'jaeden"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-kill Glimmerdust, As Kil'jaeden##160506
-Defeat Act 3, "Kil'jaeden" |q 58157/4 |goto 41.43,44.78
-step
-Use the _"Begin Act 4, Argus"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-kill Mi'kai, As Argus, the Unmaker##160507
-Defeat Act 4, "Argus" |q 58157/5 |goto 41.43,44.78
-step
-Use the _"Taking a Bow"_ ability
-|tip It appears as a button on the screen.
-Take a Bow |q 58157/6 |goto 41.43,44.78
-step
-talk Featherlight##160484
-turnin Break a Leg##58157 |goto 40.71,42.78
-accept The Fourth Wall, er, War##58158 |goto 40.71,42.78
-step
-click Azeroth
-Carry Azeroth |havebuff spell:313449 |goto 40.81,43.91 |q 58158
-step
-click Azeroth
-Place Azeroth |q 58158/2 |goto 41.31,44.53
-step
-click Teldrassil
-Place Teldrassil |q 58158/1 |goto 41.21,44.89
-step
-talk Satinstitch##161066
-Tell him _"Give me my costume, please."_
-|tip You cannot receive this while mounted.
-Become Sargeras |q 58158/3 |goto 40.57,42.95
-step
-Use the _"Stab the World"_ ability
-|tip It appears as a button on the screen.
-|tip Mounting will remove your costume.
-Watch the dialogue
-Stab the World |q 58158/4 |goto 41.02,43.72
-step
-talk Satinstitch##161066
-Tell him _"Give me my costume, please."_
-|tip You cannot receive this while mounted.
-Become Nathanos |q 58158/5 |goto 40.57,42.95
-step
-Use the _"Burning Teldrassil"_ ability
-|tip It appears as a button on the screen.
-|tip Mounting will remove your costume.
-Burn Teldrassil |q 58158/6 |goto 41.21,44.89
-step
-talk Rickrack##161106
-Tell him _"Give me my costume, please."_
-|tip You cannot receive this while mounted.
-Become Reverence |q 58158/7 |goto 40.57,42.90
-step
-talk Satinstitch##161066
-Choose _<You hold still.>_
-|tip Mounting will remove your costume.
-Upgrade Your Costume |q 58158/8 |goto 40.57,42.95
-step
-Trample #15# Horde Siege Engines |q 58158/9 |goto 41.29,44.30
-|tip They look like small wooden block vehicles around this area.
-|tip Run over them.
-step
-talk Satinstitch##161066
-Tell him _"Please remove my costume."_
-Remove Your Costume |q 58158/10 |goto 40.57,42.95
-step
-click Wound
-Heal Azeroth's Wound |q 58158/11 |goto 41.47,44.34 |count 1
-step
-click Wound
-Heal Azeroth's Wound |q 58158/11 |goto 41.47,44.48 |count 2
-step
-click Wound
-Heal Azeroth's Wound |q 58158/11 |goto 41.37,44.52 |count 3
-step
-click Wound
-Heal Azeroth's Wound |q 58158/11 |goto 41.31,44.71 |count 4
-step
-click Wound
-Heal Azeroth's Wound |q 58158/11 |goto 41.21,44.69 |count 5
-step
-talk Featherlight##160484
-turnin The Fourth Wall, er, War##58158 |goto 40.71,42.78
-accept What's My Motivation?##58159 |goto 40.71,42.78
-step
-Take Your Place on Stage |q 58159/1 |goto 41.43,44.78
-step
-Use the _"Act 6, Begin!"_ ability
-|tip It appears as a button on the screen.
-Click Here After Using the Ability |confirm |goto 41.43,44.78 |q 58159
-step
-Watch the dialogue
-clicknpc Gloober as G'huun##160511
-Defeat G'huun |q 58159/2 |goto 41.30,44.84
-step
-Use the _"Act 7, Begin!"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-Defeat Jaina |q 58159/3 |goto 41.43,44.79
-step
-Use the _"Finale, Begin!"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-kill Astra, As Azshara##161161
-Defeat Azshara |q 58159/4 |goto 41.43,44.79
-step
-Watch the dialogue
-kill Dreamweaver, As N'Zoth##160510
-Defeat N'Zoth |q 58159/5 |goto 41.30,44.83
-step
-Use the _"Awaiting the Queen's Judgement"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-Await the Queen's Judgement |q 58159/6 |goto 41.43,44.79
-step
-talk Lady Moonberry##160467
-turnin What's My Motivation?##58159 |goto 41.07,44.86
-step
-talk Ysera##160500
-accept For Queen and Grove!##58160 |goto 42.51,45.29
-step
-clicknpc Ysera##160501
-Begin Flying with Ysera |invehicle |goto 42.51,45.29 |q 58160
-step
-Watch the dialogue
-Fly with Ysera |q 58160/1 |goto 51.94,8.24 |notravel
-step
-talk Attendant Sparkledew##158543
-|tip Inside the tree.
-Tell her _"Take me to the Queen's audience chamber, please."_
-Ask Attendant Sparkledew for Transport |q 58160/2 |goto Heart of the Forest/0 51.21,19.22
-step
-Reach the Queen's Audience Chamber |goto Heart of the Forest/2 43.68,61.88 < 10 |c |q 58160 |notravel
-step
-Use the _"Swearing Oath"_ ability
-|tip It appears as a button on the screen.
-|tip Upstairs inside the tree.
-Pledge the Oath |q 58160/3 |goto Heart of the Forest/2 49.66,37.10
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-turnin For Queen and Grove!##58160 |goto 51.16,27.90
-accept The Forest Will Sing Your Name##62883 |goto 51.16,27.90
-step
-talk Laurel##176096
-turnin The Forest Will Sing Your Name##62883 |goto Heart of the Forest/0 33.60,37.00
-accept Who Shapes the Forest##62884 |goto 33.60,37.00
-step
-talk Laurel##176096
-Ask her _"What is my Renown with the Night Fae?"_
-Examine Your Renown |q 62884/1 |goto 33.60,37.00
-step
-talk Laurel##176096
-turnin Who Shapes the Forest##62884 |goto 33.60,37.00
-accept A Call to Service##62697 |goto 33.60,37.00
-step
-talk Blodwyn##167195
-|tip Outside, on the balcony of the tree.
-turnin A Call to Service##62697 |goto Heart of the Forest/0 53.81,5.97
-accept A Calling in Ardenweald##62693 |goto Heart of the Forest/0 53.81,5.97
-step
-Complete #3# World Quests in Ardenweald |q 62693/1
-|tip Use the World Quests guide to accomplish this.
-|tip Click a world quest on the Ardenweald map to load the guide for it.
-step
-talk Blodwyn##167195
-|tip Outside, on the balcony of the tree.
-turnin A Calling in Ardenweald##62693 |goto Heart of the Forest/0 53.81,5.97
-accept The Life-blood of the Forest##62890 |goto Heart of the Forest/0 53.81,5.97
-step
-talk Zayhad, The Builder##165702
-|tip Downstairs inside the tree.
-turnin The Life-blood of the Forest##62890 |goto Heart of the Forest/1 39.39,54.35
-accept Into the Reservoir##62891 |goto Heart of the Forest/1 39.39,54.35
-step
-use the Bounty of the Grove Wardens##181475
-|tip You should have this from turning in the "A Calling in Ardenweald" quest a few steps ago.
-|tip You will be given an item worth 500 Anima.
-|tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
-talk Zayhad, The Builder##165702
-|tip Downstairs inside the tree.
-Tell him _"Show me the Sanctum."_
-|tip Click the "Deposit" button to deposit the Anima to your covenant.
-Deposit #375# Reservoir Anima |q 62891/2 |goto 39.39,54.35
-step
-talk Zayhad, The Builder##165702
-|tip Downstairs inside the tree.
-turnin Into the Reservoir##62891 |goto 39.39,54.35
-accept Recover the Lost##62892 |goto 39.39,54.35
-step
-talk Flutterby##158553
-|tip Inside the tree.
-turnin Recover the Lost##62892 |goto Heart of the Forest/0 33.89,43.48
-accept Do What We Cannot##62893 |goto Heart of the Forest/0 33.89,43.48
-step
-talk Ve'nari##162804
-turnin Do What We Cannot##62893 |goto The Maw/0 46.92,41.69
-accept Setting the Ground Rules##62882 |goto The Maw/0 46.92,41.69
-step
-talk Ve'nari##162804
-Ask her _"What are your ground rules for working together?"_
-Watch the dialogue
-Set the Ground Rules with Ve'nari |q 62882/1 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Setting the Ground Rules##62882 |goto 46.91,41.69
-accept Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
-stickystart "Collect_60_Stygia"
-step
-kill Stone Prison##176145+
-click Soul Cage+
-|tip They look like tall grey metal cages on the ground around this area.
-|tip They will appear on your minimap.
-clicknpc Caged Soul##174182+
-|tip They look like white spirits that float out of the cages.
-|tip You can also click Caged Souls that come out of cages other players opened.
-Take #5# Souls into the Soulkeeper |q 60287/1 |goto 41.90,49.63
-step
-label "Collect_60_Stygia"
-Kill enemies around this area
-click Soul Cage+ |notinsticky
-|tip They look like tall grey metal cages on the ground around this area. |notinsticky
-|tip They will appear on your minimap. |notinsticky
-clicknpc Caged Soul##174182+ |notinsticky
-|tip They look like white spirits that float out of the cages. |notinsticky
-|tip You can also click Caged Souls that come out of cages other players opened. |notinsticky
-collect 60 Granule of Stygia##180852 |q 60287/2 |goto 41.16,51.76
-step
-Follow the path down |goto 44.60,41.08 < 15 |only if walking
-talk Ve'nari##162804
-buy Cypher of Relocation##180817 |q 60287/4 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
-accept Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 47.19,43.16 |count 1
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 48.41,41.84 |count 2
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 48.19,40.20 |count 3
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 46.93,39.48 |count 4
-step
-talk Ve'nari##162804
-turnin Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
-accept Rule 3: Trust is Earned##60289 |goto 46.91,41.69
-step
-Follow the path |goto 42.36,44.71 < 50 |only if walking
-click Signaling Beacon
-Place the Signaling Beacon |q 60289/1 |goto 34.98,47.68
-step
-click Baine's Mace
-collect Bloodhoof Warmace##184284 |q 60289/2 |goto 33.45,49.07
-|tip You will be attacked.
-step
-kill Tower Inquisitor##171626 |q 60289/3 |goto 33.45,49.07
-|tip She appears nearby.
-step
-use the Cypher of Relocation##180817
-Return to Ve'nari |goto 46.22,41.25 < 10 |c |q 60289
-step
-talk Ve'nari##162804
-turnin Rule 3: Trust is Earned##60289 |goto 46.91,41.69
-accept Hopeful News##62837 |goto 46.91,41.69
-step
-talk Highlord Bolvar Fordragon##164079
-turnin Hopeful News##62837 |goto Oribos/0 39.92,68.59
-accept Flutterback##62894 |goto Oribos/0 39.92,68.59
-step
-talk Flutterby##158553
-|tip Inside the tree.
-turnin Flutterback##62894 |goto Heart of the Forest/0 33.90,43.50
-accept Recovered Souls##62897 |goto Heart of the Forest/0 33.90,43.50
-step
-talk Zayhad, The Builder##165702
-|tip Downstairs inside the tree.
-turnin Recovered Souls##62897 |goto Heart of the Forest/1 39.39,54.36
-accept The First New Growth##62898 |goto Heart of the Forest/1 39.39,54.36
-step
-talk Zayhad, The Builder##165702
-|tip Downstairs inside the tree.
-Tell him _"Show me the Sanctum."_
-|tip There are 4 upgrades to choose from.
-|tip Choose whichever one you like best, it doesn't matter, because you will eventually unlock them all over time.
-|tip Then, click the "Activate" button.
-Start a Sanctum Upgrade |q 62898/1 |goto 39.39,54.36
-step
-talk Lady Moonberry##172431
-|tip Inside the tree.
-turnin The First New Growth##62898 |goto Heart of the Forest/0 49.22,39.94
-accept The Forge of Bonds##61541 |goto Heart of the Forest/0 49.22,39.94
-step
-talk Flutterby##158553
-|tip Inside the tree.
-turnin The Forge of Bonds##61541 |goto 33.89,43.50
-accept The Boon of Binding##61542 |goto 33.89,43.50
-step
-talk Niya##172677
-|tip Inside the tree.
-Tell her _"I am ready to begin."_
-Soulbind with Niya |q 61542/1 |goto 33.45,45.27
-step
-talk Niya##172677
-|tip Inside the tree.
-turnin The Boon of Binding##61542 |goto 33.43,45.26
-accept Strengthening the Bond##61550 |goto 33.43,45.26
-step
-click Forge of Bonds
-|tip Follow the instructions on the screen, then click the Activate button.
-|tip Inside the tree.
-Empower Niya |q 61550/1 |goto 33.17,46.85
-step
-talk Niya##172677
-|tip Inside the tree.
-turnin Strengthening the Bond##61550 |goto 33.45,45.28
-accept A Conduit for Growth##62900 |goto 33.45,45.28
-step
-Use the conduits in your bags
-|tip You should have received 3 of them.
-|tip Follow the instructions on the screen.
-Add the Conduits to the Forge of Bonds |q 62900/1 |goto 33.16,46.81
-step
-click Forge of Bonds
-|tip Follow the instructions on the screen.
-|tip Inside the tree.
-Apply the Conduit to Niya |q 62900/2 |goto 33.16,46.81
-step
-talk Flutterby##158553
-|tip Inside the tree.
-turnin A Conduit for Growth##62900 |goto 33.91,43.44
-accept The Endless Forest##62899 |goto 33.91,43.44
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin The Endless Forest##62899 |goto 47.51,36.47
-accept The Highlord Calls##63030 |goto 47.51,36.47
-step
-talk Highlord Bolvar Fordragon##164079
-turnin The Highlord Calls##63030 |goto Oribos/0 39.94,68.59
-accept Into Torghast##60136 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Ask her _"How do I enter Torghast?"_
-Ask Ve'nari about a Way into Torghast |q 60136/1 |goto The Maw/0 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Into Torghast##60136 |goto 46.91,41.69
-accept The Search for Baine##61099 |goto 46.91,41.69
-step
-Use Ve'nari's Portal to Enter Torghast |q 61099/1 |goto 48.20,39.38
-step
-click Wayfinder
-Choose _<Use the [Attuned Shard] with the Wayfinder.>_
-|tip Enter the instance with the popup that displays.
-Take the Attuned Shard to the Wayfinder and See Where it Leads |q 61099/2 |goto Torghast/0 37.96,47.08
-step
-Enter Arkoban Hall |goto Torghast/6 43.78,9.70 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/6 51.30,84.47
-|tip Walk into the swirling portal.
-Reach Floor 2 in Torghast |goto Torghast/7 36.19,61.10 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 54.08,52.39 < 10 |walk
-Enter the Portal |goto Torghast/7 54.84,78.28
-|tip Walk into the swirling portal.
-Reach Floor 3 in Torghast |goto Torghast/8 50.69,85.55 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/8 72.38,54.51
-|tip Walk into the swirling portal.
-Reach Floor 4 in Torghast |goto Torghast/7 78.38,52.61 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 71.37,52.40 < 10 |walk
-Run up the stairs |goto Torghast/7 62.90,35.51 < 10 |walk
-Enter the Portal |goto Torghast/7 62.86,53.95
-|tip Walk into the swirling portal.
-Reach Floor 5 in Torghast |goto Torghast/9 54.13,18.73 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/9 37.27,58.44 < 15 |only if walking
-Enter the Portal |goto Torghast/9 62.57,71.88
-|tip Walk into the swirling portal.
-Reach Floor 6 in Torghast |goto Torghast/10 75.86,76.65 < 10 |noway |c |q 61099
-step
-kill Warden Arkoban##175123 |q 61099/3 |goto Torghast/10 46.43,50.95
-accept Prison of the Forgotten##60267 |goto Torghast/10 46.43,50.95
-|tip You will automatically accept this quest after looting him.
-step
-clicknpc Baine Bloodhoof##175294
-Rescue Baine |q 61099/4 |goto 34.79,56.25
-step
-Enter the Portal |goto 35.23,41.51
-|tip Walk into the swirling portal.
-Leave Arkoban Hall |goto Torghast/0 37.23,47.20 < 10 |noway |c |q 61099
-step
-talk Highlord Bolvar Fordragon##164079
-turnin The Search for Baine##61099 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Tell her _"This was carried by one of the Jailer's more powerful guards. Do you know what it does?"_
-Speak with Ve'nari |q 60267/1 |goto The Maw/0 46.91,41.69
-step
-click Domination Lock
-turnin Prison of the Forgotten##60267 |goto Torghast/0 15.96,62.97
-step
-talk Runecarver##164937
-accept Deep Within##60268 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-Ask him _"Who are you? Why are you here?"_
-Learn More About the Prisoner |q 60268/1 |goto 50.17,53.83
-step
-talk Runecarver##164937
-turnin Deep Within##60268 |goto 50.17,53.83
-accept Reawakening##60269 |goto 50.17,53.83
-step
-Return to Torghast |goto Torghast/0 16.09,57.84 < 10 |c |q 60137
-step
-Follow the path |goto The Maw/0 44.56,41.13 < 15 |only if walking
-kill Odalrik##172207
-collect Runecarver's Memory##178561 |q 60269/1 |goto 38.63,28.84
-step
-talk Runecarver##164937
-turnin Reawakening##60269 |goto The Runecarver/0 50.17,53.83
-accept A Damned Pact##60270 |goto 50.17,53.83
-step
-talk Ve'nari##162804
-turnin A Damned Pact##60270 |goto The Maw/0 46.91,41.69
-accept A Grave Chance##60271 |goto 46.91,41.69
-stickystart "Collect_50_Stygia"
-step
-Kill enemies around this area
-|tip Enemies that are on fire will drop Molten Anima.
-collect 5 Molten Anima##178562 |q 60271/2 |goto 37.76,39.29
-step
-label "Collect_50_Stygia"
-Collect #50# Stygia |condition curcount(1767) >= 50 |q 60271
-|tip Stygia is a reward from world quests, daily quests, bonus objectives and rare spawns in The Maw.
-step
-talk Ve'nari##162804
-buy 1 Anima Supricifer##181324 |q 60271/1 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin A Grave Chance##60271 |goto 46.91,41.69
-accept The Weak Link##60272 |goto 46.91,41.69
-step
-talk Runecarver##164937
-Tell him _"I've found a way, but we only have one shot at it. Let's get you free!"_
-Break the Chain |q 60272/1 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-turnin The Weak Link##60272 |goto 50.72,54.13
-step
-Reach Renown Level 5 |condition covenant() == NightFae and covenantrenown() >= 5
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-talk Ysera##160262
-|tip Inside the tree.
-accept Daughter of the Night Warrior##59179 |goto Heart of the Forest/0 44.78,38.95
-step
-Find Shandris Feathermoon in Oribos |q 59179/1 |goto Oribos/0 39.06,66.96
-step
-Watch the dialogue
-talk Shandris Feathermoon##164277
-|tip She walks to this location.
-turnin Daughter of the Night Warrior##59179 |goto 39.06,66.96
-accept Into the Maw##59181 |goto 39.06,66.96
-step
-Escort Shandris Feathermoon into the Maw |q 59181/1 |goto The Maw/0 44.37,41.18
-step
-talk Shandris Feathermoon##164277
-turnin Into the Maw##59181 |goto 44.37,41.18
-accept On the Trail##60508 |goto 44.37,41.18
-step
-talk Shandris Feathermoon##168836
-Tell her _"We should be able to find Tyrande if we follow the trail of corpses."_
-Find the Location in Shandris's Dream |q 60508/1 |goto 36.20,47.96
-step
-Follow the path |goto 31.30,43.19 < 40 |only if walking
-Watch the dialogue
-kill Velzhen the Duplicitous##168921
-Follow the the Trail of Corpses |q 60508/2 |goto 33.04,37.27
-step
-talk Shandris Feathermoon##168929
-|tip On the bridge.
-turnin On the Trail##60508 |goto 30.11,36.43
-accept The Sea of Souls##60530 |goto 30.11,36.43
-step
-Find Tyrande Whisperwind |q 60530/1 |goto 39.31,25.83
-|tip As you walk, use the "Smoke Arrow" ability to escape from any enemies you find too difficult to kill.
-|tip It appears as a button on the screen.
-step
-talk Shandris Feathermoon##171028
-turnin The Sea of Souls##60530 |goto 46.86,41.70
-accept The Recovery of Tyrande Whisperwind##59189 |goto 46.86,41.70
-step
-Enter the Portal to Torghast |goto 48.20,39.40
-|tip Walk into the swirling portal.
-Follow Shandris Feathermoon into the Portal |goto Torghast/0 16.29,47.08 < 10 |noway |c |q 59189
-step
-talk Shandris Feathermoon##175118
-Choose _"Follow Shandris Feathermoon into Torghast to find Tyrande Whisperwind."_
-Follow Shandris Feathermoon into Torghast |q 59189/1 |goto Torghast/0 39.08,47.16
-step
-Begin the Scenario |scenariostart |q 59189
-step
-_Inside Torghast:_
-Watch the dialogue
-|tip Follow Shandris Feathermoon and protect her as she walks.
-Find Tyrande Whisperwind |scenariostage 1 |q 59189
-step
-_Inside Torghast:_
-Kill Mawsworn enemies around this area
-|tip Help Tyrande Whisperwind and Shandris Feathermoon fight.
-Slay #10# Maw Ambushers |scenariogoal 2/47817 |q 59189
-step
-_Inside Torghast:_
-Watch the dialogue
-|tip Follow Shandris Feathermoon and protect her as she walks.
-Follow Tyrande Whisperwind |scenariostage 3 |q 59189
-step
-_Inside Torghast:_
-Kill the enemies that attack in waves
-|tip Help Shandris Feathermoon fight.
-Slay #12# Maw Ambushers |scenariogoal 4/47817 |q 59189
-step
-_Inside Torghast:_
-click Lever
-|tip Follow the hallway through the traps.
-Disable the Traps |scenariostage 5 |q 59189
-step
-_Inside Torghast:_
-Find Tyrande |scenariostage 6 |q 59189
-|tip Continue following the path.
-step
-_Inside Torghast:_
-clicknpc Bound Soul##171110+
-|tip They look like people chained to the floor surrounding Skuld.
-|tip You must free the 3 souls to be able to attack Skuld.
-Free #3# Souls |scenariogoal 7/47830 |q 59189
-step
-_Inside Torghast:_
-kill Skuld##164447 |scenariogoal 7/47831 |q 59189
-|tip Shandris Feathermoon will help you fight.
-step
-_Inside Torghast:_
-Watch the dialogue
-|tip Follow Shandris Feathermoon as she walks.
-Find Tyrande |scenariostage 8 |q 59189
-step
-_Inside Torghast:_
-kill Tortured Amalgamation##164476 |scenariostage 9 |q 59189
-step
-_Inside Torghast:_
-talk Tyrande Whisperwind##164336
-Watch the dialogue
-Beseech Tyrande to Return |scenariostage 10 |q 59189
-step
-_Inside Torghast:_
-click Soulkeeper Crystal
-|tip Floating in the middle of the room.
-Place the Soulkeeper Crystal |scenariogoal 11/48460 |q 59189
-step
-_Inside Torghast:_
-Watch the dialogue
-Rescue #80# Night Elf Souls |scenariogoal 11/48457 |q 59189
-step
-_Inside Torghast:_
-talk Shandris Feathermoon##164334
-|tip In the middle of the room.
-Tell her _"I can bring you and these souls to Ardenweald."_
-Speak with Shandris to Leave |scenarioend |q 59189
-step
-talk Shandris Feathermoon##171028
-turnin The Recovery of Tyrande Whisperwind##59189 |goto The Maw/0 46.87,41.70
-accept Their New Home##59242 |goto The Maw/0 46.87,41.70
-step
-Bring the Night Elf Souls to Ysera in Ardenweald |q 59242/1 |goto Heart of the Forest/0 44.75,38.92
-|tip Inside the tree.
-step
-talk Ysera##160262
-|tip Inside the tree.
-Tell her _"I'm ready to release the night elf souls into Ardenweald."_
-Watch the dialogue
-Speak with Ysera to Release the Night Elf souls |q 59242/2 |goto 44.75,38.92
-step
-talk Ysera##160262
-|tip Inside the tree.
-turnin Their New Home##59242 |goto 44.75,38.92
-step
-Reach Renown Level 8 |condition covenant() == NightFae and covenantrenown() >= 8
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-_Next to you:_
-talk Mask of Bwonsamdi##166265
-|tip He appears next to you inside the Heart of the Forest.
-|tip Inside the tree.
-accept On De Other Side##59809
-step
-use the Deathstone##177904
-|tip Inside the tree.
-Travel to the Other Side |q 59809/1 |goto 44.45,39.32
-step
-_Inside the Other Side:_
-talk Bwonsamdi##166281
-turnin On De Other Side##59809
-accept Taking Inventory##59811
-step
-_Inside the Other Side:_
-talk Bwonsamdi##166281
-Tell him _"Return me to Ardenweald."_
-Return to Ardenweald |q 59811/1
-step
-click Jaron'tha
-Inspect Tharon'ja |q 59811/3 |goto Ardenweald/0 61.59,38.45
-step
-click Mam'toth
-Inspect Mam'toth |q 59811/2 |goto 61.33,38.98
-step
-click Dambala's Husk
-Inspect Dambala |q 59811/4 |goto 60.16,41.97
-step
-click Hakkar's Husk
-Inspect Hakkar |q 59811/5 |goto 63.46,39.72
-step
-_Next to you:_
-talk Mask of Bwonsamdi##166265
-turnin Taking Inventory##59811
-accept Following the Trail##59812
-step
-use the Death God Mask##180167
-Use the Death God Mask |q 59812/1 |goto 62.51,39.66
-step
-Follow the path up |goto 65.06,41.81 < 30 |only if walking
-Continue up the path |goto 66.85,39.30 < 30 |only if walking
-Follow the Tracks |q 59812/2 |goto 67.10,35.13
-step
-click Mueh'zala Token
-Locate the Mueh'zala Token |q 59812/3 |goto 67.10,35.13
-step
-_Next to you:_
-talk Mask of Bwonsamdi##166265
-turnin Following the Trail##59812
-accept Minions of Mueh'zala##59813
-accept Stolen Loa##59815
-stickystart "Slay_Muehzala_Forces"
-step
-Inspect Dambala |q 59815/2 |goto 67.84,36.47
-step
-kill High Priest Rakazodu##167548 |q 59813/1 |goto 68.56,35.25
-step
-Inspect Hakkar |q 59815/1 |goto 68.57,33.42
-step
-label "Slay_Muehzala_Forces"
-Kill enemies around this area
-Slay #8# Mueh'zala Forces |q 59813/2 |goto 68.04,35.09
-step
-_Next to you:_
-talk Mask of Bwonsamdi##166265
-turnin Minions of Mueh'zala##59813
-turnin Stolen Loa##59815
-accept Winter Be Comin'##59817
-step
-talk Attendant Sparkledew##158543
-|tip Inside the tree.
-Tell her _"Take me to the Queen's audience chamber, please."_
-Request an Audience with the Winter Queen |q 59817/1 |goto Heart of the Forest/0 53.72,38.27
-step
-Enter the Queen's Audience Chamber |goto Heart of the Forest/2 43.94,60.67 < 10 |c |q 59817 |notravel
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-Tell her _"I am here on behalf of Bwonsamdi. He needs our help."_
-Deliver Bwonsamdi's Request |q 59817/2 |goto Heart of the Forest/2 51.16,28.25
-step
-Watch the dialogue
-|tip The quest only becomes able to be turned in after the dialogue finishes.
-Click Here When You Are Able To Turn In The Quest |confirm |goto 51.16,28.25 |q 59817
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-turnin Winter Be Comin'##59817 |goto 51.16,28.25
-accept Gathering The Hunt##59818 |goto 51.16,28.25
-step
-talk Mask of Bwonsamdi##172886
-|tip Upstairs inside the tree.
-Ask him _"What will you do about Mueh'zala?"_
-Speak with Bwonsamdi |q 59818/1 |goto 46.96,42.05
-step
-talk Sorcha##158519
-Tell her _"The forces of Mueh'zala have invaded Ardenweald."_
-Rally Glitterfall Basin |q 59818/2 |goto Ardenweald/0 50.95,33.47
-step
-talk Guardian Kota##158921
-Tell her _"The forces of Mueh'zala have invaded Ardenweald."_
-Rally Tirna Vaal |q 59818/3 |goto 62.61,36.08
-step
-talk Guardian Molan##160929
-Tell him _"The forces of Mueh'zala have invaded Ardenweald."_
-Rally Hibernal Hollow |q 59818/4 |goto 60.13,52.64
-step
-Follow the path |goto 62.81,56.10 < 30 |only if walking
-talk Lady Moonberry##167823
-turnin Gathering The Hunt##59818 |goto 66.66,55.60
-accept Cleansing the Forest##59819 |goto 66.66,55.60
-step
-Kill enemies around this area
-clicknpc Wounded Hunter##168067+
-|tip They look like neutral goat people on the ground around this area.
-|tip They will appear on your minimap as yellow dots.
-Weaken the Mueh'zala Forces |q 59819/1 |goto 67.03,57.84
-|tip Fill up the blue bar in the quest tracker area.
-step
-Cross the bridge |goto 67.86,61.50 < 20 |only if walking
-Use the _"Majestic Runestag"_ ability
-|tip It appears as a button on the screen.
-Transform into a Majestic Runestag |invehicle |goto 68.45,64.98 |q 59819
-step
-kill Dambala##167848 |q 59819/2 |goto 68.58,66.00
-|tip Use the abilities on your action bar.
-step
-talk Lady Moonberry##167823
-turnin Cleansing the Forest##59819 |goto 68.36,65.06
-accept Report to the Queen##59821 |goto 68.36,65.06
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-turnin Report to the Queen##59821 |goto Heart of the Forest/2 51.16,28.23
-step
-Reach Renown Level 11 |condition covenant() == NightFae and covenantrenown() >= 11
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-talk Ysera##160262
-|tip Inside the tree.
-accept The Speaker of Elune##58610 |goto Heart of the Forest/0 44.77,38.95
-step
-talk Thiernax##161785
-Choose _<Explain the situation and request help.>_
-Watch the dialogue
-Speak with Thiernax |q 58610/1 |goto Ardenweald/0 40.28,51.25
-step
-talk Qadarin##161786
-turnin The Speaker of Elune##58610 |goto 40.24,51.16
-accept A Little Pruning##58669 |goto 40.24,51.16
-step
-_Next to you:_
-talk Qadarin
-accept Broken Webs##58647
-step
-talk Cirrik##163385
-accept Spriggan Snares##59008 |goto 39.07,52.53
-step
-talk Cirrik##163385
-Free Cirrik |q 59008/1 |goto 39.07,52.53
-stickystart "Rescue_Captives"
-stickystart "Slay_Sicklethorn_Spriggans"
-step
-click Broken Anima Web
-Repair the North Soulweb |q 58647/1 |goto 37.89,56.38
-step
-click Broken Anima Web
-Repair the Central Soulweb |q 58647/2 |goto 39.20,55.36
-step
-click Broken Anima Web
-Repair the South Soulweb |q 58647/3 |goto 40.76,56.16
-step
-_Next to you:_
-talk Qadarin
-turnin Broken Webs##58647
-step
-label "Rescue_Captives"
-clicknpc Captured Soul##163389+
-|tip They look like blue animals trapped in green vines on the ground around this area.
-Rescue #8# Captives |q 59008/2 |goto 39.43,56.26
-step
-label "Slay_Sicklethorn_Spriggans"
-Kill Sicklethorn enemies around this area
-Slay #15# Sicklethorn Spriggans |q 58669/1 |goto 39.43,56.26
-step
-_Next to you:_
-talk Qadarin
-turnin A Little Pruning##58669
-turnin Spriggan Snares##59008
-accept The Garden of Night##58704
-step
-Reach the Inner Garden |q 58704/1 |goto 39.09,59.43
-step
-talk Thiernax##161785
-Tell him _"I do hear something..."_
-Speak with Thiernax |q 58704/2 |goto 39.09,59.43
-step
-Kill the enemies that attack in waves
-kill Sickleshanks##163413
-Slay the Invading Brownies and Their Leader |q 58704/3 |goto 39.09,59.43
-step
-talk Thiernax##161785
-turnin The Garden of Night##58704 |goto 39.09,59.43
-accept Broken Harts##58871 |goto 39.09,59.43
-step
-talk Lord Herne##158544
-|tip He walks around this area.
-Choose _<Explain what happened in the Gardens of Night and the spriggan's curse.>_
-Speak with Lord Herne |q 58871/1 |goto Heart of the Forest/0 39.34,71.12
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-Ask her _"Do you know anything about curses?"_
-Watch the dialogue
-Listen to Lady Moonberry |q 58871/2 |goto 44.12,37.12
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin Broken Harts##58871 |goto 44.12,37.12
-accept Archivist on the Edge##59725 |goto 44.12,37.12
-step
-Follow the path up |goto 64.19,23.87 < 30 |only if walking
-talk Archivist Dreyden##165867
-turnin Archivist on the Edge##59725 |goto Ardenweald/0 63.64,22.70
-accept Curses!##59063 |goto Ardenweald/0 63.64,22.70
-stickystart "Collect_Pieces_Of_Shredded_Scroll"
-step
-kill Unleashed Major Hex##165869
-collect Tattered Binding##177280 |goto 60.92,25.91 |q 59063
-step
-label "Collect_Pieces_Of_Shredded_Scroll"
-Kill enemies around this area
-collect 5 Piece of Shredded Scroll##175137 |goto 62.38,24.05 |q 59063
-step
-use the Piece of Shredded Scroll##175137+
-Obtain the Sealed Scroll of Soul Rot |q 59063/1
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin Curses!##59063 |goto Heart of the Forest/0 44.11,37.12
-accept A Secret Never Spoken##59068 |goto Heart of the Forest/0 44.11,37.12
-accept A Sacrifice of Anima##59070 |goto Heart of the Forest/0 44.11,37.12
-step
-talk Ysera##160262
-|tip Inside the tree.
-accept A Token of Lost Love##59069 |goto 44.79,38.95
-step
-talk Watcher Vesperbloom##164023
-Choose _<Explain why Lady Moonberry sent you to get a Secret Never Spoken.>_
-Ask Watcher Vesperbloom for a Secret |q 59068/1 |goto Ardenweald/0 44.67,56.28
-step
-Enter the cave |goto 55.09,48.19 < 10 |walk
-kill Darkwarren Matriarch##164033
-|tip Inside the cave.
-Obtain the Book of Secrets |q 59068/2 |goto 54.50,45.72
-step
-talk Watcher Vesperbloom##164023
-Tell her _"I was able to recover your book."_
-Speak with Watcher Vesperbloom |q 59068/3 |goto 44.66,56.28
-step
-click A Secret Never Spoken
-Obtain the Secret Never Spoken |q 59068/4 |goto 44.65,56.25
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin A Secret Never Spoken##59068 |goto Heart of the Forest/0 44.13,37.11
-step
-Follow the path |goto Ardenweald/0 32.89,47.86 < 40 |only if walking
-Kill enemies around this area
-collect 60 Mischief-touched Anima##175139 |q 59070/1 |goto Ardenweald/0 27.99,54.06
-step
-talk Aithlyn##158556
-|tip Inside the tree.
-turnin Silk for Ardenweald##60066 |goto Heart of the Forest/0 60.02,32.42
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin A Sacrifice of Anima##59070 |goto 44.09,37.14
-step
-talk Alexstrasza the Life-Binder##164012
-Choose _<Explain the situation to Alexstrasza and request a Token of Lost Love.>_
-Watch the dialogue
-Speak with Alexstrasza |q 59069/1 |goto Twilight Highlands/0 26.69,21.64
-step
-click Keepsake Chest
-Obtain the Token of Lost Love |q 59069/2 |goto 27.07,21.03
-step
-talk Ysera##160262
-|tip Inside the tree.
-turnin A Token of Lost Love##59069 |goto Heart of the Forest/0 44.76,38.92
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-accept Mending a Broken Hart##59071 |goto 44.15,37.07
-step
-Use the _"Cast Counter Curse"_ ability
-|tip It appears as a button on the screen.
-|tip Inside the tree.
-Perform the Counter Curse |q 59071/1 |goto 43.91,38.47
-step
-talk Thiernax##161336
-|tip Inside the tree.
-turnin Mending a Broken Hart##59071 |goto 45.01,38.26
-accept Equine Soul##62428 |goto 45.01,38.26
-step
-talk Lady Muunn##174209
-|tip Inside the tree.
-turnin Equine Soul##62428 |goto 37.91,24.70
-step
-Reach Renown Level 13 |condition covenant() == NightFae and covenantrenown() >= 13
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-talk Lord Herne##170848
-|tip He walks around this area.
-|tip Outside the tree.
-accept The Fate of Ara'lon##60898 |goto 39.87,71.97
-step
-Find Ara'lon |q 60898/1 |goto Ardenweald/0 43.26,40.05
-step
-talk Ara'lon##170705
-turnin The Fate of Ara'lon##60898 |goto 43.26,40.05
-accept Masks of Deception##60910 |goto 43.26,40.05
-step
-Kill enemies around this area
-collect 2 Mask of Possession##180462 |q 60910/1 |goto 42.68,35.50
-step
-talk Ara'lon##170705
-turnin Masks of Deception##60910 |goto 43.26,40.05
-accept Blackthorn Captives##60928 |goto 43.26,40.05
-step
-use the Disguise Mask##180523
-Wear the Possessed Disguise |havebuff spell:333625 |goto 43.26,40.05 |q 60928
-step
-clicknpc Azelor##170959
-|tip Avoid the enemies with circles beneath them.
-|tip They can see through your disguise.
-Find Azelor |q 60928/1 |goto 41.43,35.50
-step
-Enter the cave |goto 41.54,33.66 < 10 |walk
-clicknpc Nera##170958
-|tip Inside the cave.
-Find Nera |q 60928/3 |goto 41.10,33.81
-step
-clicknpc Taeras##170957
-Find Taeras |q 60928/2 |goto 42.47,32.21
-step
-Enter the cave |goto 41.30,32.03 < 15 |walk
-click Cage
-|tip Inside the cave.
-Find Gweyir |q 60928/4 |goto 41.11,31.54
-step
-talk Ara'lon##173296
-|tip Inside the cave.
-turnin Blackthorn Captives##60928 |goto 41.10,31.60
-accept Report to Lord Herne##60934 |goto 41.10,31.60
-step
-talk Lord Herne##170848
-|tip Outside the tree.
-turnin Report to Lord Herne##60934 |goto Heart of the Forest/0 54.31,78.06
-step
-talk Ysera##171138
-accept Ulfar's Guidance##61061 |goto 53.20,78.87
-step
-Follow the path up |goto Drustvar/0 44.86,39.98 < 10 |only if walking
-Enter the cave |goto Drustvar/0 46.04,45.32 < 10 |walk
-talk Ulfar##141159
-|tip Inside the cave.
-turnin Ulfar's Guidance##61061 |goto Drustvar/0 45.20,45.85
-accept Into the Flame##61076 |goto Drustvar/0 45.20,45.85
-step
-Enter the cave |goto 27.02,58.45 < 7 |walk
-click Flame of Oblivion
-|tip Downstairs inside the cave.
-Place the Fetish |q 61076/1 |goto 27.55,58.96
-step
-Watch the dialogue
-|tip Downstairs inside the cave.
-kill Drust Behemoth##171251 |q 61076/2 |goto 27.48,59.79
-step
-click Drust Fetish
-|tip Downstairs inside the cave.
-collect Imbued Drust Fetish##180625 |q 61076/3 |goto 27.55,58.92
-step
-Run up the stairs |goto 27.20,59.97 < 7 |walk
-Leave the cave |goto 27.03,58.47 < 7 |walk
-Follow the path up |goto 44.86,39.98 < 10 |only if walking
-Enter the cave |goto 46.04,45.32 < 10 |walk
-talk Ulfar##141159
-|tip Inside the cave.
-turnin Into the Flame##61076 |goto 45.20,45.84
-accept Kivarr the Thornspeaker##61102 |goto 45.20,45.84
-step
-talk Lord Herne##170848
-|tip Outside the tree.
-turnin Kivarr the Thornspeaker##61102 |goto Heart of the Forest/0 51.28,81.16
-accept Kivarr's Den##61113 |goto Heart of the Forest/0 51.28,81.16
-step
-talk Ara'lon##170705
-Tell him _"I am looking for Kivarr."_
-Speak with Ara'lon |q 61113/1 |goto Ardenweald/0 46.03,56.70
-step
-Enter the cave |goto 43.48,69.24 < 10 |walk
-Meet Ara'lon at Eventide Grove |q 61113/2 |goto 43.65,69.07
-|tip Inside the cave.
-step
-talk Ara'lon##170705
-|tip Inside the cave.
-turnin Kivarr's Den##61113 |goto 43.65,69.07
-accept Searching the Grove##61701 |goto 43.65,69.07
-step
-Enter the cave |goto 46.36,72.81 < 10 |walk
-Locate Kivarr |q 61701/1 |goto 46.57,73.07
-|tip Inside the cave.
-step
-talk Kivarr##171413
-|tip Inside the cave.
-turnin Searching the Grove##61701 |goto 46.57,73.07
-accept The Thornspeaker Captive##58773 |goto 46.57,73.07
-step
-kill Lukir##162700
-collect Thros-Forged Key##180777 |q 58773/1 |goto 45.44,73.21
-step
-kill Gallak##162708
-collect Gilded Skull Key##182639 |q 58773/2 |goto 44.20,72.30
-step
-Enter the building |goto 45.77,75.69 < 10 |walk
-kill Haassert##162697
-|tip Inside the building.
-collect Lustrous Silver Key##182641 |q 58773/3 |goto 45.74,75.89
-step
-Enter the cave |goto 46.36,72.81 < 10 |walk
-talk Nika##173612
-|tip Inside the cave.
-turnin The Thornspeaker Captive##58773 |goto 46.57,73.08
-accept A Swift Intervention##61702 |goto 46.57,73.08
-step
-Watch the dialogue
-|tip Follow Nika as she walks.
-|tip She eventually walks to this location.
-Locate Kivarr |q 61702/1 |goto 41.87,74.41
-step
-kill Thulsketha the Binder##162297 |q 61702/2 |goto 41.47,74.36
-step
-talk Kivarr##171413
-turnin A Swift Intervention##61702 |goto 41.29,74.33
-accept Return to the Den##61143 |goto 41.29,74.33
-step
-Enter the cave |goto 43.49,69.24 < 10 |walk
-Travel to Kivarr's Den |q 61143/1 |goto 43.69,69.03
-|tip Inside the cave.
-step
-talk Kivarr##171413
-|tip Inside the cave.
-turnin Return to the Den##61143 |goto 43.69,69.03
-accept Nox Root##61703 |goto 43.69,69.03
-step
-Cross the bridge |goto 40.47,68.62 < 15 |only if walking
-click Nox Root+
-|tip They look like white mushrooms on the ground around this area.
-collect 12 Nox Root##182958 |q 61703/1 |goto 36.94,69.15
-step
-talk Kivarr##171413
-|tip Outside the tree.
-turnin Nox Root##61703 |goto 46.16,56.43
-accept Witch's Satchel##61709 |goto 46.16,56.43
-stickystart "Collect_Witchs_Satchel"
-step
-click Broken Spear
-|tip You may need help with this.
-accept The Broken Spear##61710 |goto 33.84,54.52
-step
-label "Collect_Witchs_Satchel"
-kill Oakheart Nightscreamer##172079+
-|tip You may need help with this.
-collect Witch's Satchel##182963 |q 61709/1 |goto 33.84,54.52
-step
-clicknpc Kivarr##171413
-|tip Outside the tree.
-turnin Witch's Satchel##61709 |goto 46.16,56.43
-step
-talk Lord Herne##170848
-turnin The Broken Spear##61710 |goto 46.23,56.76
-step
-talk Kivarr##171413
-accept Ritual of Purification##61711 |goto 46.16,56.43
-step
-Use the _"Purification Fetish"_ ability
-|tip Use it on Gweyir.
-|tip It appears as a button on the screen.
-Use the Purification Fetish |q 61711/1 |goto 46.14,56.63
-step
-Kill the enemies that attack
-Defeat the First Wave of Enemies |q 61711/2 |goto 46.14,56.63 |count 25
-step
-Use the _"Purification Fetish"_ ability
-|tip Use it on Gweyir.
-|tip It appears as a button on the screen.
-Kill the enemies that attack
-Defeat the Second Wave of Enemies |q 61711/2 |goto 46.14,56.63 |count 50
-step
-Use the _"Purification Fetish"_ ability
-|tip Use it on Gweyir.
-|tip It appears as a button on the screen.
-Kill the enemies that attack
-Defeat the Third Wave of Enemies |q 61711/2 |goto 46.14,56.63 |count 75
-step
-Use the _"Purification Fetish"_ ability
-|tip Use it on Gweyir.
-|tip It appears as a button on the screen.
-Kill the enemies that attack
-Complete the Ritual of Purification |q 61711/2 |goto 46.14,56.63 |count 100
-step
-talk Kivarr##171413
-turnin Ritual of Purification##61711 |goto 46.16,56.43
-step
-talk Lord Herne##170848
-accept Unbroken Bonds##61171 |goto 46.23,56.76
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-turnin Unbroken Bonds##61171 |goto Heart of the Forest/2 51.15,28.33
-step
-Reach Renown Level 17 |condition covenant() == NightFae and covenantrenown() >= 17
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-talk Ysera##160262
-|tip Inside the tree.
-accept Containing the Night##58445 |goto Heart of the Forest/0 44.79,38.93
-step
-talk Ysera##160262
-|tip Inside the tree.
-Tell her _"Let us hear Thiernax's plan."_
-Watch the dialogue
-Hear the Plan |q 58445/1 |goto 44.79,38.93
-step
-talk Ysera##160262
-|tip Inside the tree.
-turnin Containing the Night##58445 |goto 44.79,38.93
-accept Tracker Tracking##58446 |goto 44.79,38.93
-step
-talk Lord Herne##158544
-|tip He walks around this area.
-|tip Outside the tree.
-Tell him _"Lord Herne, we seek someone who can hunt down special warriors across the Shadowlands. Is there such a tracker among the Wild Hunt?"_
-Speak with Lord Herne |q 58446/1 |goto 39.34,71.13
-step
-talk Reldorn##164627
-turnin Tracker Tracking##58446 |goto Ardenweald/0 35.27,51.11
-accept Home of the Tirnenn##59258 |goto Ardenweald/0 35.27,51.11
-step
-Approach Tirna Scithe |q 59258/1 |goto 32.27,46.43
-step
-click Devourer Rift
-Close the Southern Portal |q 59258/2 |goto 31.41,46.39
-step
-click Devourer Rift
-Close the Northern Portal |q 59258/3 |goto 31.50,45.87
-step
-Follow the path |goto 30.09,46.07 < 20 |only if walking
-Watch the dialogue
-Locate the Horned Hunter |q 59258/4 |goto 30.00,44.89
-step
-talk Huln Highmountain##161353
-turnin Home of the Tirnenn##59258 |goto 30.00,44.89
-accept Dressing the Kill##58706 |goto 30.00,44.89
-step
-Use the _"Carve"_ ability
-|tip Use it on the Ravenous Gorger corpse.
-|tip It appears as a button on the screen.
-Carve the Kill |q 58706/1 |goto 29.96,44.70
-step
-talk Huln Highmountain##161353
-turnin Dressing the Kill##58706 |goto 30.00,44.90
-accept Monster Hunting##58447 |goto 30.00,44.90
-step
-Kill enemies around this area
-click Shriveled Shrub+
-|tip They look like brown bushes on the ground around this area.
-click Drained Animacone Cluster+
-|tip They look like large brown seed pod clusters hanging from trees and on the ground around this area.
-clicknpc Desiccated Tirnenn##161784+
-|tip They look like dead tree people on the ground around this area.
-Search for Traces of the Worldeater |q 58447/1 |goto 27.35,47.48
-step
-Follow the Trail |q 58447/2 |goto 25.29,49.44
-step
-Locate Voras |goto 24.52,48.86 < 15 |c |q 58447
-step
-Watch the dialogue
-Escape with Huln Highmountain |goto 24.52,48.86 > 20 |c |q 58447
-step
-Watch the dialogue
-Ambush Voras |q 58447/3 |goto 35.26,51.28 |notravel
-step
-talk Huln Highmountain##165841
-turnin Monster Hunting##58447 |goto 35.25,51.19
-accept Acid Reflux##58449 |goto 35.25,51.19
-accept Anima Instincts##58450 |goto 35.25,51.19
-stickystart "Collect_Bulging_Digestive_Sacs"
-step
-click Expended Wildseed##340664+
-|tip They look like huge brown seed pods on the ground around this area.
-collect 8 Life-Hardened Anima##175753 |q 58450/2 |goto 52.07,77.54
-step
-label "Collect_Bulging_Digestive_Sacs"
-Use the _"Pacify Gorm"_ ability
-|tip Use it on Gorm Rampager.
-|tip They will explode.
-click Gorm Giblet##357417+
-|tip They look like small red piles on the ground that appear nearby after the Gorm Rampagers explode.
-collect 50 Bulging Digestive Sac##174467 |q 58449/2 |goto 52.07,77.54
-step
-talk Reldorn##164627
-turnin Acid Reflux##58449 |goto 35.27,51.11
-turnin Anima Instincts##58450 |goto 35.27,51.11
-accept Becoming the Hunt##59721 |goto 35.27,51.11
-step
-Follow the path |goto 32.85,47.94 < 30 |only if walking
-talk Huln Highmountain##161353
-|tip Avoid enemies as you walk, and don't mount up.
-|tip If you get attacked, or mount up, you will lose your disguise.
-turnin Becoming the Hunt##59721 |goto 24.54,48.98
-accept Voras, The Realm Eater##58451 |goto 24.54,48.99
-step
-talk Huln Highmountain##161354
-Speak with Huln |q 58451/1 |goto 24.54,48.99
-step
-talk Huln Highmountain##161354
-Tell him _"I am ready. Set the lure, Huln."_
-Watch the dialogue
-|tip Follow Huln Highmountain as he runs away to hide.
-kill Voras##161691 |q 58451/2 |goto 24.54,48.99
-|tip Huln Highmountain will help you fight.
-step
-talk Huln Highmountain##161354
-|tip He walks to this location.
-turnin Voras, The Realm Eater##58451 |goto 24.55,48.98
-accept Tracking the Shadows##58452 |goto 24.55,48.98
-step
-talk Ysera##160262
-|tip Inside the tree.
-turnin Tracking the Shadows##58452 |goto Heart of the Forest/0 44.82,38.93
-step
-Reach Renown Level 20 |condition covenant() == NightFae and covenantrenown() >= 20
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-talk Ysera##160262
-|tip Inside the tree.
-accept An Expected Guest##59731 |goto Heart of the Forest/0 44.82,38.93
-step
-talk Bwonsamdi##165951
-|tip Outside the tree.
-turnin An Expected Guest##59731 |goto Ardenweald/0 48.36,52.42
-accept Something Extra for the Winter Queen##59732 |goto Ardenweald/0 48.36,52.42
-step
-Find the Entrance to Bwonsamdi's Necropolis |q 59732/1 |goto 50.61,44.57
-step
-click Bwonsamdi's Death Gate to the Necropolis
-Take the Portal to the Necropolis |q 59732/2 |goto 50.61,44.57
-step
-talk Bwonsamdi##122688
-|tip Inside the building.
-turnin Something Extra for the Winter Queen##59732 |goto Nazmir/0 39.57,24.67
-accept The Problem with Containing a Death Loa##59739 |goto Nazmir/0 39.57,24.67
-step
-talk Hanzabu##165968
-|tip Inside the building.
-accept Dark Mojo for a Dark Loa##59741 |goto 39.51,24.72
-accept Delaying the Other Side##59742 |goto 39.51,24.72
-stickystart "Rescue_Injured_Worshippers"
-stickystart "Collect_Dark_Mojo"
-step
-Run up the stairs |goto 40.30,30.94 < 15 |only if walking
-kill Zel'han the Summoner##166028
-|tip When he becomes immune to damage, kill the Scourge of the Dreadmire he summons to be able to damage him again.
-collect Zel'han's Broken Armor##180787 |q 59739/1 |goto 39.58,35.95
-step
-label "Rescue_Injured_Worshippers"
-use the Voodoo Powder##177817
-|tip Use it on Injured Bwonsamdi Worshippers.
-|tip They look like dead trolls on the ground around this area.
-Rescue #6# Injured Worshippers |q 59742/1 |goto 39.47,30.11
-step
-label "Collect_Dark_Mojo"
-Kill enemies around this area
-collect 100 Dark Mojo##177818 |q 59741/1 |goto 39.47,30.11
-step
-Enter the building |goto 39.57,26.64 < 10 |walk
-talk Mueh'zala##166018
-|tip Inside the building.
-turnin The Problem with Containing a Death Loa##59739 |goto 39.56,24.66
-step
-talk Bwonsamdi##122688
-|tip Inside the building.
-turnin Dark Mojo for a Dark Loa##59741 |goto 39.56,24.66
-turnin Delaying the Other Side##59742 |goto 39.56,24.66
-accept One Little Whisper##59749 |goto 39.56,24.66
-step
-click Gong of Calling
-|tip Inside the building.
-Summon a Special Friend |q 59749/1 |goto 39.12,25.23
-step
-talk Bwonsamdi##122688
-|tip Inside the building.
-Tell him _"I'm ready to begin the ritual to find out what Mueh'zala was hiding."_
-Speak with Bwonsamdi to Begin the Ritual |q 59749/2 |goto 39.56,24.66
-step
-Watch the dialogue
-|tip The NPC's nearby will periodically get drained of their life.
-|tip Use the ability on your action bar on them to replenish their life.
-|tip Inside the building.
-Complete the Ritual |q 59749/3 |goto 39.56,24.66
-step
-talk Bwonsamdi##122688
-|tip Inside the building.
-turnin One Little Whisper##59749 |goto 39.56,24.66
-accept Maw Manifested##59805 |goto 39.56,24.66
-step
-talk Spirit of Vol'jin##166110
-|tip Inside the building.
-Tell him _"Very well. Let's head to the Maw and find these missing spirits."_
-Speak with Vol'jin |q 59805/1 |goto 39.61,24.72
-step
-click Bwonsamdi's Secret Door to Ardenweald |goto 39.30,24.60
-|tip Inside the building.
-Return to Ardenweald |goto Ardenweald/0 50.59,44.57 < 10 |noway |c |q 59805
-step
-Travel to the Maw |q 59805/2 |goto The Maw/0 44.95,40.99
-step
-talk Spirit of Vol'jin##171655
-turnin Maw Manifested##59805 |goto 44.78,41.03
-accept Tracking a Wild God##59822 |goto 44.78,41.03
-step
-click Used Cage
-kill Rulkros##166263
-Find the First Clue |q 59822/1 |goto 42.34,43.56
-step
-Follow the path |goto 35.40,50.06 < 30 |only if walking
-click Used Cage
-Find the Second Clue |q 59822/2 |goto 35.62,55.80
-step
-talk Ashamane##166280
-Tell her _"I will slay the monsters that have been torturing you."_
-Kill the enemies that attack in waves
-kill Brynkros##166279
-Rescue the Wild God |q 59822/3 |goto 37.47,66.40
-step
-talk Ashamane##166315
-|tip On the bridge.
-Tell her _"I can take you back to Ardenweald if you go inside the soulkeeper crystal."_
-Watch the dialogue
-Absorb Ashamane into the Soulkeeper Crystal |q 59822/4 |goto 40.84,64.22
-step
-talk Spirit of Vol'jin##171806
-|tip On the bridge.
-turnin Tracking a Wild God##59822 |goto 40.95,64.26
-accept Loa Rescue##59824 |goto 40.95,64.26
-step
-Follow the path |goto 43.91,63.75 < 20 |only if walking
-clicknpc Hir'eek##166343
-Rescue the First Loa |q 59824/1 |goto 47.13,72.91
-step
-clicknpc Shadra##166367
-|tip At the entrance of the cave.
-Rescue the Second Loa |q 59824/2 |goto 46.07,82.80
-step
-Rescue the Third Loa |q 59824/3 |goto 45.79,85.02
-|tip Inside the cave.
-step
-talk Spirit of Vol'jin##166461
-|tip Inside the cave.
-turnin Loa Rescue##59824 |goto 45.79,85.02
-accept Rezan, Loa of Kings##59856 |goto 45.79,85.02
-step
-talk Spirit of Vol'jin##166461
-|tip Inside the cave.
-Tell him _"I'm ready to receive your anima to protect myself from the death barrier."_
-Receive Vol'jin's Anima |q 59856/1 |goto 45.79,85.02
-step
-kill Exhaurbius##166467
-|tip Inside the cave.
-Watch the dialogue
-Save Rezan |q 59856/2 |goto 47.15,86.49
-step
-talk Spirit of Vol'jin##166461
-|tip Inside the cave.
-turnin Rezan, Loa of Kings##59856 |goto 45.79,85.02
-accept Parting Ways##59866 |goto 45.79,85.02
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-Tell her _"Winter Queen, I bring missing spirits to return to Ardenweald."_
-Deliver the Loa to the Winter Queen |q 59866/1 |goto Heart of the Forest/2 51.17,27.94
-step
-talk Ysera##160262
-|tip Inside the tree.
-turnin Parting Ways##59866 |goto Heart of the Forest/0 44.76,38.90
-step
-Reach Renown Level 22 |condition covenant() == NightFae and covenantrenown() >= 22
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Night Fae Daily Quests" guide to accomplish this.
-step
-talk Ysera##160262
-|tip Inside the tree.
-accept We Strike Now##60189 |goto Heart of the Forest/0 44.76,38.90
-step
-talk Lord Herne##167686
-turnin We Strike Now##60189 |goto Ardenweald/0 39.06,63.75
-accept Assault on Darkreach##60190 |goto Ardenweald/0 39.06,63.75
-step
-talk Lady Moonberry##167688
-accept Their Last Line of Defense##60192 |goto 39.13,63.73
-step
-talk Kivarr##172010
-accept Ingra Drif##60191 |goto 38.98,63.75
-stickystart "Assault_Darkreach"
-step
-kill Ingra Drif##167702 |q 60191/1 |goto 36.56,67.51
-step
-click Shielding Rune
-Destroy the Shielding Rune |q 60192/1 |goto 39.19,69.59 |count 1
-step
-click Shielding Rune
-Destroy the Shielding Rune |q 60192/1 |goto 36.96,70.93 |count 2
-step
-click Shielding Rune
-Destroy the Shielding Rune |q 60192/1 |goto 36.43,68.39 |count 3
-step
-click Shielding Rune
-Destroy the Shielding Rune |q 60192/1 |goto 34.91,68.93 |count 4
-step
-label "Assault_Darkreach"
-Kill enemies around this area
-click Drust Totem+
-|tip They look like wooden poles with horned animal skulls on them on the ground around this area.
-click Cage+
-|tip They look like wooden stick cages on the ground around this area.
-Assault Darkreach |q 60190/1 |goto 36.28,68.47
-step
-talk Lord Herne##171838
-turnin Assault on Darkreach##60190 |goto 35.18,72.44
-step
-talk Kivarr##172010
-turnin Ingra Drif##60191 |goto 35.10,72.45
-step
-talk Lady Moonberry##167688
-turnin Their Last Line of Defense##60192 |goto 35.07,72.34
-step
-talk Lord Herne##171838
-accept Unmasked##60193 |goto 35.18,72.45
-step
-click Drust Barrier
-|tip On the bridge.
-Destroy the Drust Barrier |q 60193/1 |goto 35.82,70.62
-step
-Watch the dialogue
-Kill the enemies that attack in waves
-kill Gorak Zhar##165285 |q 60193/2 |goto 36.22,69.39
-step
-talk Lady Moonberry##171992
-turnin Unmasked##60193 |goto 36.17,69.62
-accept The Call of the Hunt##60194 |goto 36.17,69.62
-step
-talk Lady Moonberry##171992
-Tell her _"Let's get out of here."_
-Fly out with Lady Moonberry |q 60194/1 |goto 36.17,69.62
-step
-Watch the dialogue
-Return to Safety |goto 39.00,63.57 < 10 |c |q 60194 |notravel
-step
-talk Lord Herne##172091
-turnin The Call of the Hunt##60194 |goto 38.93,63.43
-accept Drust and Ashes##60108 |goto 38.93,63.43
-step
-talk Lord Herne##172091
-Tell him _"I am ready. For Ardenweald!"_
-Begin the Scenario |scenariostart |goto 38.93,63.43 |q 60108
-step
-clicknpc Ysera##166417
-Ride with Ysera |scenariogoal 1/49276 |goto Ardenweald/4 30.80,77.31 |q 60108
-step
-Watch the dialogue
-Put #125# Drust to Sleep |scenariogoal 1/49079 |q 60108
-|tip Use the ability on your action bar.
-|tip Use it on the enemies running on the ground.
-step
-Watch the dialogue
-Fly to the Heart of the Forest |scenariogoal 1/48021 |goto 53.88,24.48 |q 60108 |notravel
-step
-talk Winter Queen##166887
-Tell her _"Ara'lon has fallen. The Drust march on the Grove of Awakening."_
-Watch the dialogue
-Report to the Queen |scenariogoal 2/48026 |goto 55.78,23.36 |q 60108
-step
-Use the _"Receiving Blessing"_ ability
-|tip It appears as a button on the screen.
-Recieve the Queen's Blessing |scenariogoal 3/48022 |goto 55.51,23.09 |q 60108
-step
-click Horn of the Hunt
-Sound the Horn of the Wild Hunt |scenariogoal 4/48025 |goto 55.26,23.33 |q 60108
-step
-Kill enemies around this area
-Slay #45# Drust Forces |scenariogoal 4/48024 |goto 55.84,48.69 |q 60108
-step
-Reach the Grove of Awakening |scenariogoal 4/48023 |goto 62.79,63.70 |q 60108
-step
-talk Winter Queen##166887
-Ask her _"What are your orders?"_
-Watch the dialogue
-Speak with Winter Queen |scenariogoal 5/48027 |goto 62.80,63.71 |q 60108
-step
-Kill enemies around this area
-|tip They are fighting Lord Herne nearby.
-click Focus of Protection
-Assist Herne |scenariogoal 6/48029 |goto 54.30,72.22 |q 60108
-step
-Kill enemies around this area
-|tip They are fighting Lady Moonberry nearby.
-click Focus of Destiny
-Assist Moonberry |scenariogoal 6/48028 |goto 53.61,81.24 |q 60108
-step
-Kill enemies around this area
-|tip They are fighting Droman Aliothe nearby.
-click Focus of Renewal
-Assist Aliothe |scenariogoal 6/48030 |goto 65.81,72.34 |q 60108
-step
-Kill enemies around this area
-|tip They are fighting Zayhad, The Builder nearby.
-click Focus of Cycles
-Assist Zayhad |scenariogoal 6/48031 |goto 65.63,80.86 |q 60108
-step
-Return to the Winter Queen |scenariogoal 7/48740 |goto 60.08,76.22 |q 60108
-step
-kill Anchoring Rune##173708
-Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 61.34,82.96 |count 1 |q 60108
-step
-kill Anchoring Rune##173708
-Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 59.33,82.83 |count 2 |q 60108
-step
-kill Anchoring Rune##173708
-Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 58.91,85.80 |count 3 |q 60108
-step
-kill Anchoring Rune##173708
-Destroy the Anchoring Rune |scenariogoal 7/49315 |goto 60.88,86.54 |count 4 |q 60108
-step
-kill Gorak Zhar##168683
-Defeat Gorak Zhar |scenariogoal 7/48032 |goto 59.92,84.24 |q 60108
-step
-talk Winter Queen##166887
-Tell her _"I am ready to go."_
-Speak with the Winter Queen |scenarioend |goto 60.10,76.29 |q 60108
-step
-talk Winter Queen##156634
-|tip Upstairs inside the tree.
-turnin Drust and Ashes##60108 |goto Heart of the Forest/2 51.19,28.19
-accept Ardenmoth Soul##62422 |goto Heart of the Forest/2 51.19,28.19
-step
-talk Lady Muunn##174209
-|tip Inside the tree.
-turnin Ardenmoth Soul##62422 |goto Heart of the Forest/0 37.89,24.75
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-accept Growing in Power##62560 |goto 47.51,36.49
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-Tell her _"I am ready, Lady Moonberry."_
-Witness the Empowerment |q 62560/1 |goto 47.51,36.49
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin Growing in Power##62560 |goto 47.51,36.49
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-accept My Heart is Full##62561 |goto 47.51,36.49
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-Tell her _"I am ready, Lady Moonberry."_
-Witness the Empowerment |q 62561/1 |goto 47.51,36.49
-step
-talk Lady Moonberry##161509
-|tip Inside the tree.
-turnin My Heart is Full##62561 |goto 47.51,36.49
-step
-_Congratulations!_
-You Reached Renown Level 40.
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Venthyr Questline",{
-author="support@zygorguides.com",
-description="\nThis guide will assist you in completing the Venthyr\n"..
-"\ncovenant quests and storyline.\n",
-condition_suggested=function() return level >= 50 end,
-startlevel=50.0,
-endlevel=60.0,
-image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
-},[[
-step
-Reach Level 60 |ding 60
-|tip You must be level 60 before you can start your covenant questline.
-|tip Use the Leveling guides to accomplish this.
-step
-Complete the "Choosing Your Purpose" Quest in Oribos |complete completedanyq(57878,62000) |future
-|tip Use the "Shadowlands Intro & Main Questline" guide to accomplish this.
-step
-talk Tal-Inara##159478
-accept Report to Draven##63215 |goto Oribos/0 38.90,69.98
-|only if not havequest(59314) or completedq(59314)
-step
-talk General Draven##171589
-turnin Report to Draven##63215 |goto Oribos/0 44.88,68.86 |only if not havequest(59314) or completedq(59314)
-accept Sinfall##59314 |goto Oribos/0 44.88,68.86
-step
-Ride the elevator up |goto Revendreth/0 30.33,47.33 < 10 |only if walking
-Run down the stairs |goto Revendreth/0 30.73,42.26 < 10 |walk
-Enter Sinfall Through the Mirror |q 59314/2 |goto Revendreth/0 29.36,42.66
-|tip Walk into the red swirling portal.
-|tip Downstairs inside the building.
-step
-talk Prince Renathal##164742
-|tip Inside the building.
-turnin Sinfall##59314 |goto Sinfall/0 25.89,55.78
-accept The Court of Harvesters##59315 |goto Sinfall/0 25.89,55.78
-step
-Watch the dialogue
-|tip Follow Prince Renathal as he walks.
-|tip He eventually walks to this location.
-|tip Inside the building.
-Walk with Prince Renathal |q 59315/1 |goto 52.29,37.18
-step
-Use the _"Oath of the Harvesters"_ ability
-|tip It appears as a button on the screen.
-|tip Inside the building.
-Give Your Oath to the Accuser |q 59315/2 |goto 50.45,35.04
-step
-Use the _"Oath of the Harvesters"_ ability
-|tip It appears as a button on the screen.
-|tip Inside the building.
-Give Your Oath to the Curator |q 59315/3 |goto 52.07,40.62
-step
-talk Prince Renathal##164796
-|tip Inside the building.
-turnin The Court of Harvesters##59315 |goto 51.78,37.60
-accept Sacred Covenant##59321 |goto 51.78,37.60
-step
-talk Courier Snaggle##162702
-|tip Inside the building.
-fpath Sinfall |goto 67.31,21.42
-step
-talk Tavian##166137
-|tip Inside the building.
-home Sinfall |goto 66.02,33.59
-step
-Use the Sinfall Mirror to Teleport to the Sanctum's Lower Level |q 59321/1 |goto 36.55,48.19
-|tip Walk into the red swirling portal.
-|tip Inside the building.
-step
-talk Prince Renathal##171934
-|tip Downstairs inside the building.
-turnin Sacred Covenant##59321 |goto Sinfall/1 45.41,29.28
-accept Anima Awakening##59323 |goto Sinfall/1 45.41,29.28
-step
-Stand before the Harvesters |q 59323/1 |goto 45.64,24.77
-|tip Downstairs inside the building.
-step
-Watch the dialogue
-|tip Downstairs inside the building.
-Complete the Ritual |q 59323/2 |goto 45.64,24.77
-step
-talk Prince Renathal##171934
-|tip Downstairs inside the building.
-turnin Anima Awakening##59323 |goto 45.38,29.40
-accept Building Your Renown##62856 |goto 45.38,29.40
-step
-Use the Sinfall Mirror to Teleport to the Sanctum's Upper Level |q 62856/1 |goto 70.18,38.46
-|tip Walk into the red swirling portal.
-|tip Inside the building.
-step
-talk Rahel##175772
-turnin Building Your Renown##62856 |goto Sinfall/0 54.27,26.43
-accept The Court's Bounty##62857 |goto 54.27,26.43
-step
-talk Rahel##175772
-Tell her _"Show me my Renown."_
-Examine your Renown |q 62857/1 |goto 54.27,26.43
-step
-talk Rahel##175772
-turnin The Court's Bounty##62857 |goto 54.27,26.43
-accept A Call to Service##62695 |goto 54.27,26.43
-step
-Use the Sinfall Mirror to Teleport to the Sanctum's Lower Level |q 62695/1 |goto 36.55,48.19
-|tip Walk into the red swirling portal.
-|tip Inside the building.
-step
-talk Rendle##165302
-turnin A Call to Service##62695 |goto Sinfall/1 62.46,76.60
-accept A Calling in Revendreth##62691 |goto Sinfall/1 62.46,76.60
-step
-Complete #3# World Quests in Revendreth |q 62691/1
-|tip Use the World Quests guide to accomplish this.
-|tip Click a world quest on the Revendreth map to load the guide for it.
-step
-talk Rendle##165302
-turnin A Calling in Revendreth##62691 |goto Sinfall/1 62.46,76.60
-accept Anima is Power##62902 |goto 62.46,76.60
-step
-talk Foreman Flatfinger##172605
-turnin Anima is Power##62902 |goto Sinfall/0 55.69,26.04
-accept Into the Reservoir##62903 |goto 55.69,26.04
-step
-use the Tribute of the Court##181556
-|tip You should have this from turning in the "A Calling in Revendreth" quest a few steps ago.
-|tip You will be given an item worth 500 Anima.
-|tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
-talk Foreman Flatfinger##172605
-Tell him _"Show me the Sanctum."_
-|tip Click the "Deposit" button to deposit the Anima to your covenant.
-Deposit #375# Reservoir Anima |q 62903/2 |goto 55.69,26.04
-step
-talk Foreman Flatfinger##172605
-turnin Into the Reservoir##62903 |goto 55.69,26.04
-accept The Souls Plight##62904 |goto 55.69,26.04
-step
-talk Tenaval##164738
-turnin The Souls Plight##62904 |goto 45.45,28.44
-accept Back into the Darkness##62905 |goto 45.45,28.44
-step
-talk Ve'nari##162804
-turnin Back into the Darkness##62905 |goto The Maw/0 46.91,41.69
-accept Setting the Ground Rules##62882 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-Ask her _"What are your ground rules for working together?"_
-Watch the dialogue
-Set the Ground Rules with Ve'nari |q 62882/1 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Setting the Ground Rules##62882 |goto 46.91,41.69
-accept Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
-stickystart "Collect_60_Granules_of_Stygia"
-step
-kill Stone Prison##176145+
-click Soul Cage+
-|tip They look like tall grey metal cages on the ground around this area.
-|tip They will appear on your minimap.
-clicknpc Caged Soul##174182+
-|tip They look like white spirits that float out of the cages.
-|tip You can also click Caged Souls that come out of cages other players opened.
-Take #5# Souls into the Soulkeeper |q 60287/1 |goto 41.90,49.63
-step
-label "Collect_60_Granules_of_Stygia"
-Kill enemies around this area
-click Soul Cage+ |notinsticky
-|tip They look like tall grey metal cages on the ground around this area. |notinsticky
-|tip They will appear on your minimap. |notinsticky
-clicknpc Caged Soul##174182+ |notinsticky
-|tip They look like white spirits that float out of the cages. |notinsticky
-|tip You can also click Caged Souls that come out of cages other players opened. |notinsticky
-collect 60 Granule of Stygia##180852 |q 60287/2 |goto 37.75,39.18
-step
-Follow the path down |goto 44.60,41.08 < 15 |only if walking
-talk Ve'nari##162804
-buy 1 Cypher of Relocation##180817 |q 60287/4 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Rule 1: Have an Escape Plan##60287 |goto 46.91,41.69
-accept Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 47.19,43.16 |count 1
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 48.41,41.84 |count 2
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 48.19,40.20 |count 3
-step
-use the Broker Device##184314
-|tip Use it on the Soul Ward.
-Reinforce the Soul Ward |q 61355/1 |goto 46.93,39.48 |count 4
-step
-talk Ve'nari##162804
-turnin Rule 2: Keep a Low Profile##61355 |goto 46.91,41.69
-accept Rule 3: Trust is Earned##60289 |goto 46.91,41.69
-step
-click Signaling Beacon
-Place the Signaling Beacon |q 60289/1 |goto 34.98,47.68
-step
-click Baine's Mace##364498
-collect Bloodhoof Warmace##184284 |q 60289/2 |goto 33.46,49.06
-step
-kill Tower Inquisitor##171626 |q 60289/3 |goto 33.46,49.06
-|tip You will be attacked.
-step
-use the Cypher of Relocation##180817
-Return to Ve'nari |goto 46.22,41.25 < 10 |c |q 60289
-step
-talk Ve'nari##162804
-turnin Rule 3: Trust is Earned##60289 |goto 46.91,41.69
-accept Hopeful News##62837 |goto 46.91,41.69
-step
-talk Highlord Bolvar Fordragon##164079
-turnin Hopeful News##62837 |goto Oribos/0 39.94,68.61
-accept Souls for Sinfall##62870 |goto Oribos/0 39.94,68.61
-step
-talk Tenaval##164738
-|tip Inside the building.
-turnin Souls for Sinfall##62870 |goto Sinfall/0 45.37,28.48
-accept A Coalition of the Willing##62914 |goto Sinfall/0 45.37,28.48
-step
-talk Foreman Flatfinger##172605
-|tip Inside the building.
-turnin A Coalition of the Willing##62914 |goto 55.73,26.00
-accept Home Improvement##62915 |goto 55.73,26.00
-step
-talk Foreman Flatfinger##172605
-Tell him _"Show me the Sanctum."_
-|tip There are 4 upgrades to choose from.
-|tip Choose whichever one you like best, it doesn't matter, because you will eventually unlock them all over time.
-|tip Then, click the "Activate" button.
-Start a Sanctum Upgrade |q 62915/1 |goto 55.73,26.00
-step
-talk Foreman Flatfinger##172605
-|tip Inside the building.
-turnin Home Improvement##62915 |goto 55.73,26.00
-step
-talk The Accuser##171950
-|tip Inside the building.
-accept Binding Power##62918 |goto Sinfall/0 45.51,20.96
-step
-Watch the dialogue
-|tip Inside the building.
-talk Nadjia the Mistblade##164853
-Soulbind with Nadjia |q 62918/1 |goto 43.67,17.44
-step
-talk Nadjia the Mistblade##171979
-|tip Inside the building.
-turnin Binding Power##62918 |goto 43.73,17.46
-accept Strengthening the Bond##62919 |goto 43.73,17.46
-step
-click Forge of Bonds
-|tip Follow the instructions on the screen, then click the Activate button.
-|tip Inside the building.
-Empower Nadjia |q 62919/1 |goto 42.73,18.12
-step
-talk Nadjia the Mistblade##171979
-|tip Inside the building.
-turnin Strengthening the Bond##62919 |goto 43.72,17.41
-step
-talk The Accuser##171950
-accept A Conduit For Change##62920 |goto 45.39,20.89
-step
-Use the conduits in your bags
-|tip You should have received 3 of them.
-|tip Follow the instructions on the screen.
-Add the Conduits to the Forge of Bonds |q 62920/1 |goto 42.72,18.14
-step
-click Forge of Bonds
-|tip Follow the instructions on the screen.
-Apply the Conduit to Nadjia |q 62920/2 |goto 42.72,18.14
-step
-talk The Accuser##171950
-turnin A Conduit For Change##62920 |goto 45.39,20.89
-accept Our True Purpose##62921 |goto 45.39,20.89
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin Our True Purpose##62921 |goto 51.77,37.51
-accept The Highlord Calls##63033 |goto 51.77,37.51
-step
-talk Highlord Bolvar Fordragon##164079
-turnin The Highlord Calls##63033 |goto Oribos/0 39.94,68.59
-accept Into Torghast##60136 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Ask her _"How do I enter Torghast?"_
-Ask Ve'nari about a Way into Torghast |q 60136/1 |goto The Maw/0 46.91,41.69
-step
-talk Ve'nari##162804
-turnin Into Torghast##60136 |goto 46.91,41.69
-accept The Search for Baine##61099 |goto 46.91,41.69
-step
-Use Ve'nari's Portal to Enter Torghast |q 61099/1 |goto 48.20,39.38
-step
-click Wayfinder
-Choose _<Use the [Attuned Shard] with the Wayfinder.>_
-|tip Enter the instance with the popup that displays.
-Take the Attuned Shard to the Wayfinder and See Where it Leads |q 61099/2 |goto Torghast/0 37.96,47.08
-step
-Enter Arkoban Hall |goto Torghast/6 43.78,9.70 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/6 51.30,84.47
-|tip Walk into the swirling portal.
-Reach Floor 2 in Torghast |goto Torghast/7 36.19,61.10 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 54.08,52.39 < 10 |walk
-Enter the Portal |goto Torghast/7 54.84,78.28
-|tip Walk into the swirling portal.
-Reach Floor 3 in Torghast |goto Torghast/8 50.69,85.55 < 10 |noway |c |q 61099
-step
-Enter the Portal |goto Torghast/8 72.38,54.51
-|tip Walk into the swirling portal.
-Reach Floor 4 in Torghast |goto Torghast/7 78.38,52.61 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/7 71.37,52.40 < 10 |walk
-Run up the stairs |goto Torghast/7 62.90,35.51 < 10 |walk
-Enter the Portal |goto Torghast/7 62.86,53.95
-|tip Walk into the swirling portal.
-Reach Floor 5 in Torghast |goto Torghast/9 54.13,18.73 < 10 |noway |c |q 61099
-step
-Follow the path |goto Torghast/9 37.27,58.44 < 15 |only if walking
-Enter the Portal |goto Torghast/9 62.57,71.88
-|tip Walk into the swirling portal.
-Reach Floor 6 in Torghast |goto Torghast/10 75.86,76.65 < 10 |noway |c |q 61099
-step
-kill Warden Arkoban##175123 |q 61099/3 |goto Torghast/10 46.43,50.95
-accept Prison of the Forgotten##60267 |goto Torghast/10 46.43,50.95
-|tip You will automatically accept this quest after looting him.
-step
-clicknpc Baine Bloodhoof##175294
-Rescue Baine |q 61099/4 |goto 34.79,56.25
-step
-Enter the Portal |goto 35.23,41.51
-|tip Walk into the swirling portal.
-Leave Arkoban Hall |goto Torghast/0 37.23,47.20 < 10 |noway |c |q 61099
-step
-talk Highlord Bolvar Fordragon##164079
-turnin The Search for Baine##61099 |goto Oribos/0 39.94,68.59
-step
-talk Ve'nari##162804
-Tell her _"This was carried by one of the Jailer's more powerful guards. Do you know what it does?"_
-Speak with Ve'nari |q 60267/1 |goto The Maw/0 46.91,41.69
-step
-click Domination Lock
-turnin Prison of the Forgotten##60267 |goto Torghast/0 15.96,62.97
-step
-talk Runecarver##164937
-accept Deep Within##60268 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-Ask him _"Who are you? Why are you here?"_
-Learn More About the Prisoner |q 60268/1 |goto 50.17,53.83
-step
-talk Runecarver##164937
-turnin Deep Within##60268 |goto 50.17,53.83
-accept Reawakening##60269 |goto 50.17,53.83
-step
-Return to Torghast |goto Torghast/0 16.09,57.84 < 10 |c |q 60137
-step
-Follow the path |goto The Maw/0 44.56,41.13 < 15 |only if walking
-kill Odalrik##172207
-collect Runecarver's Memory##178561 |q 60269/1 |goto 38.63,28.84
-step
-talk Runecarver##164937
-turnin Reawakening##60269 |goto The Runecarver/0 50.17,53.83
-accept A Damned Pact##60270 |goto 50.17,53.83
-step
-talk Ve'nari##162804
-turnin A Damned Pact##60270 |goto The Maw/0 46.91,41.69
-accept A Grave Chance##60271 |goto 46.91,41.69
-stickystart "Collect_50_Stygia"
-step
-Kill enemies around this area
-|tip Enemies that are on fire will drop Molten Anima.
-collect 5 Molten Anima##178562 |q 60271/2 |goto 37.76,39.29
-step
-label "Collect_50_Stygia"
-Collect #50# Stygia |condition curcount(1767) >= 50 |q 60271
-|tip Stygia is a reward from world quests, daily quests, bonus objectives and rare spawns in The Maw.
-step
-talk Ve'nari##162804
-buy 1 Anima Supricifer##181324 |q 60271/1 |goto 46.91,41.69
-step
-talk Ve'nari##162804
-turnin A Grave Chance##60271 |goto 46.91,41.69
-accept The Weak Link##60272 |goto 46.91,41.69
-step
-talk Runecarver##164937
-Tell him _"I've found a way, but we only have one shot at it. Let's get you free!"_
-Break the Chain |q 60272/1 |goto The Runecarver/0 50.17,53.83
-step
-talk Runecarver##164937
-turnin The Weak Link##60272 |goto 50.72,54.13
-step
-Reach Renown Level 5 |condition covenant() == Venthyr and covenantrenown() >= 5
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-accept Common Ground##59701 |goto Sinfall/0 51.77,37.51
-step
-talk General Draven##161977
-|tip Inside the building.
-accept The Princeguard##61492 |goto 46.16,14.82
-step
-Ride the elevator up |goto Revendreth/0 42.07,47.12 < 15 |only if walking
-click Renathal Banner
-Place the Renathal Banner |q 59701/1 |goto Revendreth/0 40.45,50.78 |count 1
-stickystart "Slay_Venthyr_Invaders"
-step
-click Chelra the Bladewall
-Revive Chelra the Bladewall |q 61492/1 |goto 44.00,50.73
-step
-click Renathal Banner
-Place the Renathal Banner |q 59701/1 |goto 44.54,53.98 |count 2
-step
-click Renathal Banner
-Place the Renathal Banner |q 59701/1 |goto 45.37,49.01 |count 3
-step
-click Renathal Banner
-Place the Renathal Banner |q 59701/1 |goto 45.03,48.49 |count 4
-step
-label "Slay_Venthyr_Invaders"
-Kill enemies around this area
-Slay #10# Venthyr Invaders |q 61492/2 |goto 44.00,50.73
-step
-_Next to you:_
-talk Chelra the Bladewall##172499
-turnin The Princeguard##61492
-step
-Follow the path |goto 42.53,52.68 < 10 |only if walking
-talk Prince Renathal##165661
-|tip High up on the balcony.
-turnin Common Ground##59701 |goto 41.01,54.81
-accept Invitation for the Countess##59706 |goto 41.01,54.81
-accept Invitation for the Tithelord##59707 |goto 41.01,54.81
-accept Invitation for the Stonewright##59708 |goto 41.01,54.81
-step
-Follow the path |goto 42.54,52.65 < 10 |only if walking
-Ride the elevator down |goto 42.07,47.13 < 15 |only if walking
-Follow the path |goto 37.87,47.50 < 20 |only if walking
-Continue following the path |goto 38.10,38.33 < 30 |only if walking
-Follow the path |goto 41.19,32.29 < 30 |only if walking
-talk General Draven##165865
-turnin Invitation for the Stonewright##59708 |goto 40.27,30.59
-accept Harvester of Wrath##59720 |goto 40.27,30.59
-step
-talk The Stonewright##165866
-|tip You will be attacked while crossing the bridge.
-|tip The enemies won't attack you after you cross the bridge.
-Choose _"Deliver Prince Renathal's invitation."_
-Deliver the Message to the Stonewright |q 59720/1 |goto 34.28,21.92
-step
-Click the Pridefall Gate and follow the path |goto 70.45,77.72 < 15 |only if walking
-talk Nadjia the Mistblade##165818
-|tip High up on the balcony.
-turnin Invitation for the Tithelord##59707 |goto 72.23,74.92
-accept Harvester of Envy##59711 |goto 72.23,74.92
-step
-talk Temel##165817
-|tip High up on the balcony.
-Dispatch Temel |q 59711/1 |goto 72.20,74.91
-step
-Deliver the Message for the Tithelord |q 59711/2 |goto 77.42,64.68
-|tip Use the "Flap!" ability on your action bar to fly to this location.
-|tip Outside, in the courtyard behind the building.
-step
-Stop Controlling Temel |nobuff spell:323339 |q 59711
-|tip Use the "Escape!" ability on your action bar.
-step
-Run up the stairs |goto 42.05,46.02 < 15 |only if walking |goto 44.37,41.66
-click Old Gate Carriage
-|tip Wait here until a horse carriage comes along.
-|tip You shouldn't have to wait very long.
-|tip You will be able to ride the carriage to the quest location.
-Ride an Old Gate Carriage |invehicle |goto 44.21,41.51 |q 59706
-step
-Stop Riding the Old Gate Carriage |outvehicle |goto 51.36,37.03 |q 59706
-|tip Click the red arrow above your action bars at this location.
-step
-talk Cudgelface##165658
-|tip Up on the bridge.
-turnin Invitation for the Countess##59706 |goto 52.44,35.32
-accept Harvester of Desire##59676 |goto 52.44,35.32
-step
-click Servant's Basic Kit
-|tip High up on the balcony.
-Wear the Servant's Basic Kit |q 59676/1 |goto 52.41,35.32
-step
-talk The Countess##165662
-Choose _"Deliver Prince Renathal's invitation."_
-Deliver the Message for the Countess |q 59676/2 |goto 56.98,28.55
-step
-Ride the elevator up |goto 42.07,47.12 < 15 |only if walking
-Follow the path |goto 42.53,52.68 < 10 |only if walking
-talk Prince Renathal##165661
-|tip High up on the balcony.
-turnin Harvester of Desire##59676 |goto 41.01,54.81
-turnin Harvester of Envy##59711 |goto 41.01,54.81
-turnin Harvester of Wrath##59720 |goto 41.01,54.81
-accept The Court##59719 |goto 41.01,54.81
-step
-Watch the dialogue
-talk Prince Renathal##165661
-turnin The Court##59719 |goto 43.78,51.27
-step
-talk Theotar##161979
-accept Kindred Spirits##59343 |goto Sinfall/0 50.22,18.10
-step
-Watch the dialogue
-clicknpc Theotar##172042
-Soulbind with Theotar |q 59343/1 |goto 43.70,17.46
-step
-talk Theotar##172046
-turnin Kindred Spirits##59343 |goto 43.69,17.49
-step
-Reach Renown Level 8 |condition covenant() == Venthyr and covenantrenown() >= 8
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-click Medallion of Pride
-|tip Inside the building.
-accept Halls of Atonement: Medallion of Pride##60500 |goto 56.80,30.94
-step
-click Medallion of Desire
-accept Medallion of Desire##60904 |goto Sinfall/0 53.60,32.91
-step
-talk Theotar##161979
-turnin Medallion of Desire##60904 |goto 50.22,18.10
-accept An Estate Within the Old Gate##57880 |goto 50.22,18.10
-step
-talk Bogdan##159513
-turnin An Estate Within the Old Gate##57880 |goto Revendreth/0 60.46,40.15
-accept The Key to Rebuilding##57881 |goto Revendreth/0 60.46,40.15
-accept Reestablishing the Household##57882 |goto Revendreth/0 60.46,40.15
-stickystart "Collect_Ornate_Key"
-step
-talk Florin##159652
-Choose _<Present the Offer of Employment.>_
-Speak to Florin |q 57882/3 |goto 59.32,34.09
-step
-talk Dumitra##159651
-Choose _<Present the Offer of Employment.>_
-Speak to Dumitra |q 57882/1 |goto 58.48,33.24
-step
-talk Elena##159650
-Choose _<Present the Offer of Employment.>_
-Speak to Elena |q 57882/2 |goto 61.02,33.44
-step
-label "Collect_Ornate_Key"
-Kill enemies around this area
-collect Ornate Key##173180 |q 57881/1 |goto 60.25,37.19
-step
-talk Bogdan##159513
-turnin The Key to Rebuilding##57881 |goto 60.46,40.14
-turnin Reestablishing the Household##57882 |goto 60.46,40.14
-accept Reclaiming Thornhill Manor##57884 |goto 60.46,40.14
-step
-Run up the stairs |goto 60.26,35.54 < 15 |only if walking
-kill Viscount Nicolae##159657 |q 57884/1 |goto 61.84,29.60
-step
-Enter the building |goto 59.22,30.23 < 7 |walk
-talk Bogdan##159513
-|tip Inside the building.
-turnin Reclaiming Thornhill Manor##57884 |goto 58.83,29.88
-accept A Discreet Entrance##57885 |goto 58.83,29.88
-step
-Enter the Ornate Mirror |q 57885/1 |goto 58.73,30.29
-|tip Walk into the red swirling portal.
-|tip Inside the building.
-step
-talk The Countess##159694
-|tip Upstairs inside the building.
-turnin A Discreet Entrance##57885 |goto 58.05,27.53 |region redelav_tower
-accept A Meal and A Deal##57886 |goto 58.05,27.53 |region redelav_tower
-step
-click Ornate Chair
-|tip Upstairs inside the building.
-Sit in the Ornate Chair |q 57886/1 |goto 58.13,27.65 |region redelav_tower
-step
-Watch the dialogue
-|tip Upstairs inside the building.
-Listen to the Countess |q 57886/2 |goto 58.13,27.65 |region redelav_tower
-step
-click Grand Feast
-|tip On the table.
-|tip Upstairs inside the building.
-Eat the Grand Feast |q 57886/3 |goto 58.13,27.65 |region redelav_tower
-step
-Watch the dialogue
-|tip Upstairs inside the building.
-Listen to the Countess |q 57886/4 |goto 58.13,27.65 |region redelav_tower
-step
-talk The Countess##159694
-|tip Upstairs inside the building.
-turnin A Meal and A Deal##57886 |goto 58.05,27.53 |region redelav_tower
-accept Killing the Messenger##57887 |goto 58.05,27.53 |region redelav_tower
-step
-Enter the Ornate Mirror |goto 57.38,28.67 |region redelav_tower
-|tip Walk into the red swirling portal.
-|tip Upstairs inside the building.
-Leave the Tower |goto 58.91,30.34 < 10 |noway |c |q 57887
-step
-kill Redelav Courier##159731
-|tip Wait for him to run by this location.
-|tip He will appear on your minimap as a yellow dot.
-collect Treasonous Missive##173285 |q 57887/1 |goto 57.54,36.34
-step
-talk The Countess##159694
-|tip Upstairs inside the building.
-turnin Killing the Messenger##57887 |goto 58.05,27.53 |region redelav_tower
-accept An Invitation to Treachery##57888 |goto 58.05,27.53 |region redelav_tower
-accept "Accidental" Arson##57889 |goto 58.05,27.53 |region redelav_tower
-accept Beautiful, But Deadly##57890 |goto 58.05,27.53 |region redelav_tower
-stickystart "Collect_Duskmire_Mushrooms"
-step
-Follow the path up |goto 57.09,37.23 < 30 |only if walking
-Enter the building |goto 56.26,35.95 < 7 |walk
-kill Lord Andrei##159664 |q 57889/1 |goto 56.40,35.35
-|tip Inside the building.
-step
-click Ornate Rug
-|tip Inside the building.
-Burn the Ornate Rug |q 57889/2 |goto 56.31,35.50
-step
-use the Invitations##173358
-|tip Use them on the Fiendish Servant.
-|tip In front of the building.
-Deliver to Redelav |q 57888/4 |goto 55.26,34.93
-step
-use the Invitations##173358
-|tip Use them on the Fiendish Servant.
-|tip In front of the building.
-Deliver to Darkvein |q 57888/1 |goto 53.07,37.01
-step
-use the Invitations##173358
-|tip Use them on the Fiendish Servant.
-|tip In front of the building.
-Deliver to Duskmire |q 57888/2 |goto 54.30,38.83
-step
-use the Invitations##173358
-|tip Use them on the Fiendish Servant.
-|tip In front of the building.
-Deliver to Primrose |q 57888/3 |goto 55.90,39.47
-step
-label "Collect_Duskmire_Mushrooms"
-click Duskmire Mushroom+
-|tip They look like clusters of small red balls on the ground around this area.
-collect 50 Duskmire Mushroom##173286 |q 57890/1 |goto 55.47,36.49
-step
-talk The Countess##159694
-|tip Upstairs inside the building.
-turnin An Invitation to Treachery##57888 |goto 58.05,27.53 |region redelav_tower
-turnin "Accidental" Arson##57889 |goto 58.05,27.53 |region redelav_tower
-turnin Beautiful, But Deadly##57890 |goto 58.05,27.53 |region redelav_tower
-accept Mix, Mingle, and Meddle##57891 |goto 58.05,27.53 |region redelav_tower
-step
-use the Duskmire Elixir##174923
-|tip Upstairs inside the building.
-Consume the Duskmire Elixir |q 57891/1 |goto 58.05,27.53 |region redelav_tower
-step
-Ride the elevator up |goto 57.40,33.45 < 15 |only if walking
-talk NPC+
-|tip They look like neutral NPC's around this area.
-|tip They have various names.
-Ask them _"Are you enjoying yourself?"_
-|tip Some of them may attack you.
-use the Duskmire Elixir##174923
-|tip Make sure to keep the Duskmire Elixir buff active, so you can talk to them.
-Question #10# Attendees |q 57891/2 |goto 55.34,31.35
-step
-talk The Countess##159946
-turnin Mix, Mingle, and Meddle##57891 |goto 56.92,28.64
-accept Enacting Immediate Justice##57892 |goto 56.92,28.64
-step
-talk The Countess##159946
-Tell her _"House Primrose"_
-Name the Traitorous House |q 57892/1 |goto 56.92,28.64
-step
-talk Chancellor Ladris##159884
-Tell him _"You stand accused of conspiring to overthrow The Countess."_
-Confront the House Leader |q 57892/2 |goto 55.13,30.52
-step
-kill Chancellor Ladris##159884
-Defeat the Traitor |q 57892/3 |goto 55.13,30.52
-step
-talk The Countess##159946
-turnin Enacting Immediate Justice##57892 |goto 56.93,28.64
-accept Neither Enemy nor Ally##57893 |goto 56.93,28.64
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin Neither Enemy nor Ally##57893 |goto Sinfall/0 51.78,37.63
-step
-Reach Renown Level 11 |condition covenant() == Venthyr and covenantrenown() >= 11
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-click Medallion of Avarice
-|tip Inside the building.
-accept Medallion of Avarice##60935 |goto Sinfall/0 54.88,31.04
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin Medallion of Avarice##60935 |goto 51.77,37.62
-accept The Curator##58842 |goto 51.77,37.62
-step
-talk The Curator##160941
-Ask her _"What happened to the Medallion of Avarice?"_
-Speak to the Curator |q 58842/1 |goto Revendreth/0 72.74,37.64
-step
-talk The Curator##160941
-turnin The Curator##58842 |goto 72.74,37.64
-accept Watcher Emil##58325 |goto 72.74,37.64
-step
-talk Guard Captain Elizabeta##161056
-|tip Inside the building.
-Tell her _"The Curator sent me. I'm looking for Watcher Emil."_
-Consult the Catacombs Officer |q 58325/1 |goto 65.92,32.28
-step
-talk Guard Captain Elizabeta##161056
-|tip Inside the building.
-accept Break Out##58337 |goto 65.92,32.28
-accept Combing the Catacombs##58326 |goto 65.92,32.28
-stickystart "Return_Escaped_Captives"
-stickystart "Kill_Sinstone_Rampagers"
-stickystart "Slay_Manifestations"
-step
-Follow the path up |goto 64.52,31.57 < 20 |only if walking
-Run down the stairs inside the building |goto 65.68,26.70 < 7 |c |q 58337
-step
-click Dorin's Journal
-|tip Downstairs inside the building.
-Find Guardsman Dorin |q 58325/2 |goto 65.06,26.85
-step
-label "Return_Escaped_Captives"
-use the Chains of Regret##174040
-|tip Use them on Escaped Captives.
-|tip They look like spirits wearing dark cloaks on the ground around this area.
-|tip They will start following you.
-click Catacombs Cage+
-|tip They look like large metal cages inside the buildings around this area.
-|tip They will appear on your minimap as dots when you have a Captured Soul following you.
-Return #6# Escaped Captives |q 58337/1 |goto 66.16,30.32
-step
-label "Kill_Sinstone_Rampagers"
-kill 3 Sinstone Rampager##160716 |q 58326/2 |goto 66.16,30.32
-step
-label "Slay_Manifestations"
-Kill enemies around this area
-|tip Escaped Captives and Sinstone Rampagers won't count for the quest goal.
-Slay #12# Manifestations |q 58326/1 |goto 66.16,30.32
-step
-Watch the dialogue
-|tip In the doorway of the building.
-Find Watcher Emil |q 58325/3 |goto 65.93,29.34
-step
-talk Watcher Emil##160956
-|tip Inside the building.
-turnin Watcher Emil##58325 |goto 65.93,28.84
-accept Lead the Way##58372 |goto 65.93,28.84
-step
-talk Watcher Emil##160956
-|tip Inside the building.
-Tell him _"Let's go."_
-Begin Following Watcher Emil |goto 65.93,28.84 > 15 |c |q 58372
-step
-Watch the dialogue
-|tip Follow Watcher Emil as he walks.
-|tip Stay within the white circle surrounding him.
-|tip He eventually walks to this location.
-Kill the enemies that attack
-Escort Watcher Emil |q 58372/2 |goto 65.40,34.06
-step
-talk Guard Captain Elizabeta##161056
-|tip Inside the building.
-turnin Break Out##58337 |goto 65.92,32.27
-turnin Combing the Catacombs##58326 |goto 65.92,32.27
-step
-Follow the path up |goto 68.06,37.51 < 30 |only if walking
-talk The Curator##160941
-turnin Lead the Way##58372 |goto 72.74,37.64
-accept Special Access##58421 |goto 72.74,37.64
-accept Crypt Crashers##58428 |goto 72.74,37.64
-step
-talk Watcher Emil##160956
-accept An Eye for an Amulet##58424 |goto 72.60,37.54
-stickystart "Collect_Death_Lotus_Powder"
-stickystart "Kill_Excavation_Enforcers"
-stickystart "Slay_Archivam_Instruders"
-step
-Cross the bridge |goto 74.13,37.79 < 15 |only if walking
-kill Examiner Ionata##160849
-collect Ionata's Fangs##174093 |q 58421/3 |goto 77.40,32.75
-step
-Enter the building |goto 79.75,37.24 < 7 |walk
-kill Examiner Boian##160847
-|tip Inside the building.
-collect Boian's Fangs##174094 |q 58421/2 |goto 80.06,37.24
-step
-Enter the building |goto 80.40,40.30 < 7 |walk
-kill Examiner Daciana##160848
-|tip Inside the building.
-collect Daciana's Fangs##174095 |q 58421/1 |goto 80.77,39.92
-step
-label "Collect_Death_Lotus_Powder"
-click Stonebreaker Mallet+
-|tip They look like small sledge hammers on the ground around this area.
-click Crypt Door+
-|tip They look like the doors of the smaller stone buildings around this area.
-|tip You will lose your Stonebreaker Mallet after each Crypt Door you break, and will need a new one.
-|tip They will appear on your minimap as dots.
-click Powder Bag
-|tip It looks like a brown sack.
-|tip It will eventually be inside one of the crypts.
-collect Death Lotus Powder##174098 |q 58428/1 |goto 78.02,36.92
-step
-label "Kill_Excavation_Enforcers"
-kill 5 Excavation Enforcer##160845 |q 58424/2 |goto 78.02,36.92
-step
-label "Slay_Archivam_Instruders"
-Kill Nefarious enemies around this area
-Slay #12# Archivam Intruders |q 58424/1 |goto 78.02,36.92
-step
-talk Nourman##161298
-|tip Outside, behind the building.
-turnin Special Access##58421 |goto 77.58,39.28
-accept The Traitor##60673 |goto 77.58,39.28
-step
-Enter the building |goto 77.48,39.10 < 7 |walk
-kill Sinkeeper Mateo##160850
-|tip Inside the building.
-collect Mateo's Mirror Shard##174092 |q 60673/1 |goto 78.51,39.38
-step
-Leave the building |goto 77.48,39.11 < 7 |walk
-Cross the bridge |goto 75.26,37.42 < 20 |only if walking
-talk The Curator##160941
-turnin The Traitor##60673 |goto 72.74,37.64
-turnin Crypt Crashers##58428 |goto 72.74,37.64
-step
-talk Watcher Emil##160956
-turnin An Eye for an Amulet##58424 |goto 72.60,37.54
-step
-talk The Curator##160941
-accept Mirror, Mirror...##58440 |goto 72.74,37.64
-step
-Watch the dialogue
-|tip In the doorway of the building.
-Wait for the Curator to Complete the Mirror |q 58440/1 |goto 72.70,37.54
-step
-use the Death Lotus Powder##174179
-Apply the Death Lotus Powder |q 58440/2 |goto 72.70,37.54
-step
-Enter the Mirror |q 58440/3 |goto 72.78,37.29
-|tip Walk into the red swirling portal.
-|tip Inside the building.
-step
-cast Door of Shadows##300728
-|tip Place the green circle on the other side of barrier, where the spiked treasure chest is.
-|tip Downstairs inside the building.
-click Curator's Chest
-collect Medallion of Avarice##174111 |q 58440/4 |goto 78.47,39.09
-step
-cast Door of Shadows##300728
-|tip Place the green circle on the other side of barrier.
-Escape the Protective Barrier |goto 78.13,38.74 < 10 |c |q 58440
-step
-Enter the Mirror |goto 77.82,38.43
-|tip Walk into the red swirling portal.
-|tip Inside the building.
-Leave the Curator's Crypt |goto 72.73,37.47 < 10 |noway |c |q 58440
-step
-talk The Curator##160941
-turnin Mirror, Mirror...##58440 |goto 72.74,37.64
-accept Return to Sinfall##58444 |goto 72.74,37.64
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin Return to Sinfall##58444 |goto Sinfall/0 51.80,37.61
-step
-Reach Renown Level 13 |condition covenant() == Venthyr and covenantrenown() >= 13
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-accept How to Wear Seven Medallions##61050 |goto 51.85,37.52
-step
-talk General Draven##161514
-|tip Inside the building.
-turnin How to Wear Seven Medallions##61050 |goto 44.51,46.52
-accept Hidden Mirror##58530 |goto 44.51,46.52
-step
-Enter the cave |goto Bastion/0 51.38,31.59 < 7 |walk
-use Laurent's Compact Looking Glass##180356
-|tip Inside the cave.
-Reveal the Hidden Mirror |q 58530/1 |goto Bastion/0 49.43,30.34
-step
-Watch the dialogue
-talk General Draven##162213
-|tip Inside the cave.
-turnin Hidden Mirror##58530 |goto 49.66,30.16
-accept A Tense Reunion##58555 |goto 49.66,30.16
-step
-Leave the cave |goto 51.38,31.59 < 7 |walk
-Reach the Eternal Forge |q 58555/1 |goto 50.37,22.54
-step
-Watch the dialogue
-talk General Draven##161526
-turnin A Tense Reunion##58555 |goto 50.09,20.71
-accept Right our Wrongs##58584 |goto 50.09,20.71
-step
-talk Mikanikos##160280
-accept No Friend of Mine##58585 |goto 50.11,20.54
-accept The Right Stuff##58586 |goto 50.11,20.54
-step
-Watch the dialogue
-talk Theotar##161637
-Tell him _"I am ready."_
-Speak to Theotar |q 58584/1 |goto 50.14,20.35
-stickystart "Collect_Purified_Metal"
-step
-Watch the dialogue
-click Anima Siphon
-|tip Theotar will make it appear.
-Destroy the Anima Siphon |q 58584/2 |goto 50.43,18.32 |count 1
-step
-Watch the dialogue
-click Anima Siphon
-|tip Theotar will make it appear.
-Destroy the Anima Siphon |q 58584/2 |goto 49.88,17.61 |count 2
-step
-Watch the dialogue
-click Anima Siphon
-|tip Theotar will make it appear.
-Destroy the Anima Siphon |q 58584/2 |goto 50.23,17.47 |count 3
-step
-Watch the dialogue
-click Anima Siphon
-|tip Theotar will make it appear.
-Destroy the Anima Siphon |q 58584/2 |goto 50.37,16.72 |count 4
-step
-Watch the dialogue
-click Anima Siphon
-|tip Theotar will make it appear.
-Destroy the Anima Siphon |q 58584/2 |goto 51.59,17.88 |count 5
-step
-kill Famos##161704
-collect Mikanikos' Tool Chest##174466 |q 58585/1 |goto 52.95,15.29
-step
-label "Collect_Purified_Metal"
-Kill enemies around this area
-collect Tainted Centurion Component##174465+ |n
-use the Tainted Centurion Component##174465+
-collect 5 Purified Metal##173880 |q 58586/1 |goto 51.60,17.95
-step
-talk Mikanikos##160280
-turnin No Friend of Mine##58585 |goto 50.11,20.54
-turnin The Right Stuff##58586 |goto 50.11,20.54
-step
-talk General Draven##161526
-turnin Right our Wrongs##58584 |goto 50.09,20.71
-step
-Watch the dialogue
-talk Mikanikos##160280
-accept A Perfect Circle##58600 |goto 50.13,20.48
-accept Phaestus, Genesis of Aeons##58603 |goto 50.13,20.48
-step
-Run up the stairs |goto 50.16,19.32 < 15 |only if walking
-kill Overseer Atticus##160409
-collect Phaestus, Genesis of Aeons##174061 |q 58603/1 |goto 49.00,15.54
-step
-Enter the building |goto 49.78,15.64 < 10 |walk
-click Forge Materials+
-|tip They look like metal and wooden treasure chests next to the wall on the ground around this area.
-|tip It can be in any of the chests.
-|tip You will be attacked or trapped if you choose the wrong chest.
-|tip Inside the building.
-collect Perfected Circlet Mold##174330 |q 58600/1 |goto 49.89,15.27
-step
-talk Mikanikos##160280
-turnin A Perfect Circle##58600 |goto 50.13,20.47
-turnin Phaestus, Genesis of Aeons##58603 |goto 50.13,20.47
-accept Crown of the Harvesters##58630 |goto 50.13,20.47
-step
-click Anvil
-Begin the Forging Process |q 58630/1 |goto 51.46,18.46
-step
-Watch the dialogue
-Forge the Crown of the Harvesters |q 58630/2 |goto 51.46,18.46
-step
-talk Mikanikos##174587
-turnin Crown of the Harvesters##58630 |goto 51.43,18.45
-accept Heavy is the Head...##58656 |goto 51.43,18.45
-step
-click Crown of the Harvesters
-Wear the Crown of the Harvesters |q 58656/1 |goto 51.46,18.45
-stickystart "Test_The_Crown"
-step
-kill Operational Colossus##162123
-|tip Use the abilities on your action bar.
-Slay the Eastern Colossus |q 58656/3 |goto 53.08,16.71
-step
-kill Operational Colossus##170753
-|tip Use the abilities on your action bar.
-Slay the Northern Colossus |q 58656/4 |goto 51.05,15.43
-step
-kill Operational Colossus##170754
-|tip Use the abilities on your action bar.
-Slay the Western Colossus |q 58656/5 |goto 49.06,15.62
-step
-label "Test_The_Crown"
-Kill enemies around this area
-|tip Use the abilities on your action bar. |notinsticky
-Test the Crown |q 58656/2 |goto 50.83,17.46
-step
-talk General Draven##161526
-turnin Heavy is the Head...##58656 |goto 50.09,20.71
-step
-talk Mikanikos##160280
-accept Citadel of Loyalty##60993 |goto 50.11,20.54
-step
-Run down the stairs and follow the road |goto 48.30,26.00 < 20 |only if walking
-Run down the stairs |goto 27.10,30.42 < 15 |only if walking
-Reach the Citadel of Loyalty |q 60993/1 |goto 24.29,29.84
-step
-Watch the dialogue
-talk Mikanikos##171001
-|tip He runs to this location.
-turnin Citadel of Loyalty##60993 |goto 24.42,29.86
-accept Lowering Their Defenses##60994 |goto 24.42,29.86
-step
-talk General Draven##170999
-accept Disloyalty##60995 |goto 24.30,29.88
-stickystart "Slay_Citadel_Forsworn"
-step
-Run down the stairs |goto 23.35,27.77 < 15 |only if walking
-click Forsworn Barrier Source
-Drain the Southern Barrier Source |q 60994/1 |goto 22.71,24.95
-step
-click Forsworn Barrier Source
-Drain the Eastern Barrier Source |q 60994/3 |goto 24.78,23.20
-step
-Run up the stairs |goto 22.89,25.19 < 15 |only if walking
-click Forsworn Barrier Source
-Drain the Northern Barrier Source |q 60994/2 |goto 24.42,24.02
-step
-label "Slay_Citadel_Forsworn"
-Kill enemies around this area
-|tip Use the "Assist" ability to kill them easier.
-|tip It appears as a button on the screen.
-Slay #15# Citadel Forsworn |q 60995/1 |goto 25.21,25.36
-step
-talk Mikanikos##171001
-turnin Lowering Their Defenses##60994 |goto 24.41,29.86
-turnin Disloyalty##60995 |goto 24.41,29.86
-step
-Watch the dialogue
-talk General Draven##171147
-|tip He flies to this location.
-accept Face Your Fears##60996 |goto 24.28,29.66
-step
-talk General Draven##171147
-Tell him _"I am ready."_
-Begin Flying with General Draven |goto 24.28,29.66 > 20 |c |q 60996
-step
-Watch the dialogue
-Reach the Temple of Loyalty |q 60996/1 |goto 21.07,22.87 |notravel
-step
-Use the _"Blessing of Loyalty"_ ability
-|tip It appears as a button on the screen.
-Watch the dialogue
-Purify the Crown of the Harvesters |q 60996/2 |goto 20.35,22.88
-step
-kill Echo of Denathrius##171160 |q 60996/3 |goto 20.50,22.88
-step
-talk General Draven##171175
-turnin Face Your Fears##60996 |goto 21.12,22.87
-accept The Prince's New Crown##59233 |goto 21.12,22.87
-step
-Return to Sinfall |q 59233/2 |goto Sinfall/0 51.80,37.63
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin The Prince's New Crown##59233 |goto Sinfall/0 51.80,37.63
-step
-Reach Renown Level 17 |condition covenant() == Venthyr and covenantrenown() >= 17
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-accept Confronting Sin##61077 |goto Sinfall/0 51.80,37.63
-step
-talk The Accuser##165291
-|tip Downstairs inside the building.
-turnin Confronting Sin##61077 |goto Sinfall/1 56.05,78.53
-accept Someone Worth Saving##58382 |goto Sinfall/1 56.05,78.53
-step
-talk Sinfall Executor##169625
-|tip Downstairs inside the building.
-Tell him _"Release Kael'thas Sunstrider."_
-Click Here After Telling Him to Release |confirm |goto 43.79,23.18 |q 58382
-step
-talk Sinfall Executor##169625
-|tip Downstairs inside the building.
-Tell him _"Release Kael'thas Sunstrider."_
-Release Kael'thas Sunstrider |q 58382/1 |goto 48.20,24.27
-step
-Watch the dialogue
-|tip Downstairs inside the building.
-talk The Accuser##161158
-turnin Someone Worth Saving##58382 |goto 46.42,32.17
-accept The Many Sins of Kael'thas Sunstrider##58383 |goto 46.42,32.17
-step
-talk The Accuser##161158
-|tip Downstairs inside the building.
-Tell her _"Begin your inquisition."_
-Begin the Ritual of Absolution |q 58383/1 |goto 46.42,32.17
-step
-Watch the dialogue
-|tip Downstairs inside the building.
-click Kael'thas Sunstrider
-Identify the Sin of Kael'thas |q 58383/2 |goto 40.12,31.44 |count 1
-step
-Watch the dialogue
-|tip Downstairs inside the building.
-click Kael'thas Sunstrider
-Identify the Sin of Kael'thas |q 58383/2 |goto 43.83,26.53 |count 2
-step
-Watch the dialogue
-|tip Downstairs inside the building.
-click Kael'thas Sunstrider
-Identify the Sins of Kael'thas |q 58383/2 |goto 41.08,26.08 |count 5
-step
-talk The Accuser##161158
-|tip Downstairs inside the building.
-turnin The Many Sins of Kael'thas Sunstrider##58383 |goto 46.42,32.16
-accept In the Shadow of our Failures##58426 |goto 46.42,32.16
-step
-Ride the elevator up |goto Revendreth/0 42.08,47.11 < 15 |only if walking
-talk The Accuser##161208
-turnin In the Shadow of our Failures##58426 |goto Revendreth/0 42.30,47.56
-accept Dredgers Left Behind##58384 |goto Revendreth/0 42.30,47.56
-accept Learning to Sacrifice##58385 |goto Revendreth/0 42.30,47.56
-step
-_Next to you:_
-talk Kael'thas Sunstrider
-accept Use My Strengths##58386
-stickystart "Rescue_Darkfall_Captives"
-step
-clicknpc Dormant Legionnaire##161598
-Watch the dialogue
-Animate the Legionnaires |q 58385/1 |goto 44.93,48.79
-step
-clicknpc Vrednic##161225
-Watch the dialogue
-Animate Vrednic |q 58385/3 |goto 43.35,53.82
-step
-Enter the building |goto 42.55,52.66 < 10 |only if walking
-clicknpc Dormant Messenger##161232
-|tip Upstairs, on the balcony of the building.
-Watch the dialogue
-Animate the Messengers |q 58385/2 |goto 41.69,52.39
-step
-kill Usurper Simona##161240
-|tip Outside, behind the building.
-|tip She will eventually become stunned and escape.
-Watch the dialogue
-Confront Usurper Simona |q 58386/1 |goto 41.05,54.75
-step
-label "Rescue_Darkfall_Captives"
-Rescue #10# Darkwall Captives |q 58384/1 |goto 43.78,50.94
-|tip Walk near Darkwall Captives.
-|tip They look like small friendly NPC's on the ground around this area.
-|tip They will run to safety.
-|tip If they attack a nearby enemy, help them kill it.
-step
-talk The Accuser##161278
-turnin Dredgers Left Behind##58384 |goto 43.87,51.41
-turnin Learning to Sacrifice##58385 |goto 43.87,51.41
-turnin Use My Strengths##58386 |goto 43.87,51.41
-accept We Each Must Carry Our Own Sins##58387 |goto 43.87,51.41
-step
-talk The Accuser##161278
-Tell her _"Begin the ritual of extraction."_
-Speak with the Accuser to Begin the Ritual |q 58387/1 |goto 43.87,51.41
-step
-Watch the dialogue
-Complete the Ritual of Extraction |q 58387/2 |goto 43.87,51.41
-step
-talk The Accuser##161278
-turnin We Each Must Carry Our Own Sins##58387 |goto 43.87,51.41
-accept Continued Care of Kael'thas##58443 |goto 43.87,51.41
-step
-Ride the elevator down |goto 46.29,50.84 < 15 |only if walking
-talk The Accuser##161421
-turnin Continued Care of Kael'thas##58443 |goto 46.45,51.49
-accept Blackbale Betrayers##58388 |goto 46.45,51.49
-stickystart "Kill_Blackbale_Overseers"
-step
-Kill enemies around this area
-accept Maldraxxian Weapons##58389 |goto 47.53,53.37
-|tip You will eventually automatically accept this quest after looting.
-step
-_Next to you:_
-talk Kael'thas Sunstrider
-accept There's Always a Paper Trail##58518
-stickystart "Collect_Maldraxxian_Weapons"
-step
-kill Lord Blackbale##161511
-collect Orders from the Tithelord##174278 |q 58518/1 |goto 51.15,55.62
-step
-label "Kill_Blackbale_Overseers"
-kill 4 Blackbale Overseer##161488 |q 58388/1 |goto 49.88,55.67
-step
-label "Collect_Maldraxxian_Weapons"
-Kill enemies around this area
-collect 8 Maldraxxian Weapon##174211 |q 58389/1 |goto 49.88,55.67
-step
-talk The Accuser##161421
-turnin Blackbale Betrayers##58388 |goto 46.45,51.49
-turnin Maldraxxian Weapons##58389 |goto 46.45,51.49
-turnin There's Always a Paper Trail##58518 |goto 46.45,51.49
-step
-_Next to you:_
-Watch the dialogue
-talk Kael'thas Sunstrider##162077
-accept Reconnaissance... for my, uh, Recovery##58391
-step
-Enter the building |goto 61.31,59.78 < 7 |c |q 58391
-step
-click Locked Door
-|tip Downstairs inside the building.
-Watch the dialogue
-Find the Tithelord |q 58391/1 |goto 61.17,60.41
-step
-click The Tithelord's Carriage
-|tip Outside.
-Stowaway on the Tithelord's Carriage |q 58391/2 |goto 61.51,60.12
-step
-Watch the dialogue
-Discover the Tithelord's Plan |q 58391/3 |goto 69.94,60.20 |notravel
-step
-talk Kael'thas Sunstrider##161572
-turnin Reconnaissance... for my, uh, Recovery##58391 |goto 69.89,59.96
-accept Death's End Destruction##58392 |goto 69.89,59.96
-accept Strategic Executions##58393 |goto 69.89,59.96
-stickystart "Disrupt_Deaths_End"
-step
-kill Heftor##161246 |q 58393/1 |goto 77.16,61.01
-step
-kill Stacka##161257 |q 58393/2 |goto 80.40,64.46
-step
-kill Big Shiny##161248 |q 58393/3 |goto 80.79,57.64
-step
-_Next to you:_
-talk Kael'thas Sunstrider##161572
-turnin Strategic Executions##58393
-step
-label "Disrupt_Deaths_End"
-Kill enemies around this area
-click Maldraxxi Anima Crystal+
-|tip They look like large floating green crystals around this area.
-Disrupt Death's End |q 58392/1 |goto 75.92,60.61
-|tip Fill up the blue bar in the quest tracker area.
-step
-_Next to you:_
-talk Kael'thas Sunstrider##161572
-turnin Death's End Destruction##58392
-accept Lady Ouix'Ara##58394
-step
-kill Lady Ouix'Ara##161770 |q 58394/1 |goto 78.85,62.82
-|tip Up on the platform.
-step
-_Next to you:_
-talk Kael'thas Sunstrider##161572
-turnin Lady Ouix'Ara##58394
-accept Enough Vengeance For One Day##58395
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin Enough Vengeance For One Day##58395 |goto Sinfall/0 51.77,37.58
-step
-Reach Renown Level 20 |condition covenant() == Venthyr and covenantrenown() >= 20
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-accept Stonevigil Unrest##57727 |goto Sinfall/0 51.77,37.58
-step
-Cross the bridge |goto Revendreth/0 60.64,62.39 < 10 |only if walking
-talk Prince Renathal##167380
-turnin Stonevigil Unrest##57727 |goto Revendreth/0 56.32,66.72
-accept Fangs and Minds##57772 |goto Revendreth/0 56.32,66.72
-step
-talk Baroness Draka##167381
-accept An Unwelcome Incursion##57771 |goto 56.34,66.59
-accept Third Talon Vartox##60145 |goto 56.34,66.59
-stickystart "Inspire_Stonevigil_Citizens"
-stickystart "Drain_Stoneborn_Anima"
-step
-Kill enemies around this area
-|tip You will eventually automatically accept this quest.
-accept Disrupting the Chain##60265 |goto 56.47,69.10
-step
-Enter the building |goto 56.30,69.73 < 7 |walk
-kill Third Talon Vartox##158361 |q 60145/1 |goto 56.57,68.88
-|tip Downstairs inside the building.
-step
-click Manor Supply Carriage
-Destroy the Manor Carriage |q 60265/2 |goto 56.75,71.29
-step
-click Darkhaven Supply Carriage
-Destroy the Darkhaven Carriage |q 60265/1 |goto 58.50,68.57
-step
-label "Drain_Stoneborn_Anima"
-Kill enemies around this area
-|tip You can find more inside the buildings around this area. |notinsticky
-Drain #12# Stoneborn Anima |q 57771/1 |goto 57.63,70.09
-step
-click Depleted Anima Well
-Fill the Depleted Anima Well |q 57771/2 |goto 58.31,69.28
-step
-label "Inspire_Stonevigil_Citizens"
-use Prince Renathal's Decree##178213
-|tip Use it next to Stonevigil Citizens.
-|tip They look like neutral venthyr NPC's standing on the ground around this area.
-|tip They can also be inside the buildings around this area.
-Inspire #8# Stonevigil Citizens |q 57772/1 |goto 57.63,70.09
-step
-Follow the path |goto 56.95,69.92 < 20 |only if walking
-talk Baroness Draka##167381
-turnin An Unwelcome Incursion##57771 |goto 56.34,66.59
-turnin Third Talon Vartox##60145 |goto 56.34,66.59
-step
-talk Prince Renathal##167380
-turnin Fangs and Minds##57772 |goto 56.32,66.73
-turnin Disrupting the Chain##60265 |goto 56.32,66.73
-step
-Watch the dialogue
-talk Baroness Draka##167381
-accept After Them!##60183 |goto 56.34,66.59
-step
-clicknpc Deathfang##167382
-Ride with Deathfang |invehicle |goto 56.34,66.32 |q 60183
-step
-Watch the dialogue
-Chase the Carriage |q 60183/1 |goto 61.54,69.35 |notravel
-step
-kill Provisioner Kraus##167550 |q 60183/2 |goto 61.62,69.31
-step
-talk Prince Renathal##167620
-|tip He floats to this location.
-turnin After Them!##60183 |goto 61.60,69.65
-accept To the Estate##57729 |goto 61.60,69.65
-step
-Watch the dialogue
-|tip Follow Prince Renathal as he travels.
-talk Prince Renathal##167689
-turnin To the Estate##57729 |goto 71.92,68.86
-accept The Tithelord##57646 |goto 71.92,68.86
-step
-talk Prince Renathal##167689
-Tell him _"I am ready."_
-Begin Following Prince Renathal |goto 71.92,68.86 > 15 |c |q 57646
-step
-Watch the dialogue
-|tip Follow Prince
-kill The Tithelord##158197
-|tip He will eventually escape.
-Click Here After He Escapes |confirm |goto 74.87,68.66 |q 57646
-step
-kill The Tithelord##158197
-|tip He will eventually escape.
-Click Here After He Escapes |confirm |goto 76.04,65.96 |q 57646
-step
-Watch the dialogue
-kill The Tithelord##158197
-collect Medallion of Envy##173976 |q 57646/1 |goto 77.60,70.21
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin The Tithelord##57646 |goto Sinfall/0 51.80,37.56
-step
-Reach Renown Level 22 |condition covenant() == Venthyr and covenantrenown() >= 22
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-talk Laurent##158038
-accept An Unfortunate Situation##57531 |goto Revendreth/0 26.42,48.95
-step
-kill Costel##158165
-|tip Inside the building.
-Recover Laurent's Belongings |q 57531/1 |goto 29.72,48.72
-step
-talk Laurent##158038
-turnin An Unfortunate Situation##57531 |goto 26.43,48.95
-accept Foraging for Fragments##57532 |goto 26.43,48.95
-step
-Watch the dialogue
-|tip Follow Laurent as he walks.
-|tip He walks to this location.
-Follow Laurent |q 57532/1 |goto 25.71,48.57
-step
-click Mirror Fragment
-collect Mirror Fragment##172085 |q 57532/2 |goto 25.68,48.54
-step
-Watch the dialogue
-|tip Follow Laurent as he walks.
-|tip He walks to this location.
-Follow Laurent |q 57532/3 |goto 25.53,47.34
-step
-click Mirror Fragment
-collect Mirror Fragment##172085 |q 57532/4 |goto 25.51,47.39
-step
-Watch the dialogue
-|tip Follow Laurent as he walks.
-|tip He walks to this location.
-Follow Laurent |q 57532/5 |goto 24.98,47.98
-step
-click Mirror Fragment
-collect Mirror Fragment##172085 |q 57532/6 |goto 25.00,48.04
-step
-Watch the dialogue
-talk Laurent##158205
-|tip He walks to this location.
-turnin Foraging for Fragments##57532 |goto 24.25,49.41
-accept Moving Mirrors##57571 |goto 24.25,49.41
-step
-click Mirror Trap+
-|tip There are 3 of them surrounding Simone.
-Free Simone |q 57571/1 |goto 24.07,49.67
-step
-Watch the dialogue
-talk Simone##158088
-|tip She walks to this location.
-turnin Moving Mirrors##57571 |goto 24.22,49.48
-accept Light Punishment##57533 |goto 24.22,49.48
-step
-talk Laurent##158205
-accept When Only Ash Remains##57534 |goto 24.25,49.42
-stickystart "Kill_Ashen_Ravagers"
-step
-click Mirror Trap+
-|tip There are 3 of them surrounding the Blistering Outcast.
-Free the Blistering Outcast |q 57533/1 |goto 23.02,49.52 |count 1
-step
-click Mirror Trap+
-|tip There are 3 of them surrounding the Blistering Outcast.
-Free the Blistering Outcast |q 57533/1 |goto 22.20,48.11 |count 2
-step
-click Mirror Trap+
-|tip There are 3 of them surrounding the Blistering Outcast.
-Free the Blistering Outcast |q 57533/1 |goto 21.86,50.38 |count 3
-step
-click Mirror Trap+
-|tip There are 3 of them surrounding the Blistering Outcast.
-Free the Blistering Outcast |q 57533/1 |goto 22.88,50.00 |count 4
-step
-click Mirror Trap+
-|tip There are 3 of them surrounding the Blistering Outcast.
-Free the Blistering Outcast |q 57533/1 |goto 22.51,52.16 |count 5
-step
-label "Kill_Ashen_Ravagers"
-kill 10 Ashen Ravager##164524 |q 57534/1 |goto 23.21,49.46
-step
-talk Simone##158088
-turnin Light Punishment##57533 |goto 24.22,49.48
-step
-talk Laurent##158205
-turnin When Only Ash Remains##57534 |goto 24.25,49.41
-accept Escaping the Master##57535 |goto 24.25,49.41
-step
-talk Simone##158088
-accept We Need More Power##59427 |goto 24.22,49.49
-stickystart "Collect_Anima_59427"
-step
-Kill Shrouded enemies around this area
-|tip You can find more inside the buildings around this area.
-collect 10 Mirror Fragment##172220 |q 57535/1 |goto 23.79,53.09
-step
-label "Collect_Anima_59427"
-click Anima Stores+
-|tip They look like small metal burnt out lanterns on the ground around this area.
-|tip You can find more inside the buildings around this area.
-|tip Fill up the blue bar in the quest tracker area.
-Collect Anima |q 59427/1 |goto 23.79,53.09
-step
-talk Simone##158088
-turnin We Need More Power##59427 |goto 24.22,49.48
-step
-talk Laurent##158205
-turnin Escaping the Master##57535 |goto 24.25,49.41
-accept Mirror Making, Not Breaking##57536 |goto 24.25,49.41
-step
-Watch the dialogue
-Follow Laurent and Simone |q 57536/1 |goto 24.80,50.26
-step
-talk Laurent##164420
-Tell him _"I am ready."_
-Speak to Laurent |q 57536/2 |goto 24.80,50.26
-step
-Kill the enemies that attack in waves
-|tip Fill up the blue bar in the quest tracker area.
-Defend Laurent and Simone |q 57536/3 |goto 24.73,50.38
-step
-talk Laurent##158505
-turnin Mirror Making, Not Breaking##57536 |goto 24.80,50.26
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-accept Mirror to Maldraxxus##58406 |goto Sinfall/0 51.82,37.54
-step
-talk Laurent##170532
-turnin Mirror to Maldraxxus##58406 |goto Revendreth/0 27.27,40.39
-step
-talk General Draven##170543
-accept The Medallion of Dominion##58407 |goto 27.42,40.33
-step
-Enter the Ornate Mirror
-|tip Walk into the swirling red portal.
-Teleport to Maldraxxus |scenariostart |goto 27.27,40.30 |q 58407
-step
-kill Adept Necromancer##162096+
-|tip Avoid the green tornados and circles on the ground.
-|tip Upstairs inside the building.
-|tip You can find more downstairs inside the building.
-|tip You will have to jump to get downstairs.
-Watch the dialogue
-Obtain the Information |scenariogoal 1/48394 |goto Maldraxxus Venthyr Scenario/0 74.85,33.65 |q 58407
-step
-Locate General Draven |goto 73.61,33.81 < 15 |c |q 58407
-step
-Watch the dialogue
-talk General Draven##162226
-Fly with General Draven |goto 73.61,33.81 > 15 |c |q 58407
-step
-Kill enemies around this area
-|tip They are flying in the air.
-|tip Use the abilities on your action bar.
-|tip Fly near the large floating crystals around this area to heal General Draven.
-Clear the Sky of #30# Enemies |scenariogoal 2/48395 |goto 69.68,29.89 |q 58407
-step
-Watch the dialogue
-Speak with Your Allies on the Ground About How to Proceed |scenariogoal 3/48396 |goto 71.79,33.64 |q 58407 |notravel
-step
-click Anima Crystal
-Reanimate the Allies |scenariogoal 4/48414 |goto 70.74,32.76 |q 58407 |count 4
-step
-click Anima Crystal
-Reanimate the Allies |scenariogoal 4/48414 |goto 69.74,34.68 |q 58407 |count 8
-step
-click Anima Crystal
-Reanimate the Ally |scenariogoal 4/48414 |goto 68.79,33.30 |q 58407 |count 9
-step
-click Anima Crystal
-Reanimate the Ally |scenariogoal 4/48414 |goto 69.30,32.42 |q 58407 |count 10
-step
-click Anima Crystal
-Reanimate the Ally |scenariogoal 4/48414 |goto 70.15,31.24 |q 58407 |count 11
-step
-click Anima Crystal
-Reanimate the Ally |scenariogoal 4/48414 |goto 71.28,31.46 |q 58407 |count 12
-step
-Use the _"Call General Draven"_ ability
-|tip Use it repeatedly on Maw Infernous as you fight.
-|tip It appears as a button on the screen.
-kill Maw Infernous##163213 |scenariogoal 5/47891 |goto 68.17,29.79 |q 58407
-step
-Enter the Portal |goto 68.15,29.84
-|tip Walk into the swirling portal.
-Teleport to Kel'Thuzad |goto 73.67,33.55 < 10 |noway |c |q 58407
-step
-Watch the dialogue
-|tip Inside the building.
-kill Kel'Thuzad##173066
-Recover the Medallion of Dominion from Kel'Thuzad |scenariogoal 6/48399 |goto 74.58,33.65 |q 58407
-step
-Return to Sinfall |goto Revendreth/0 27.46,40.60 < 10 |noway |c |q 58407
-step
-talk Prince Renathal##158653
-|tip Inside the building.
-turnin The Medallion of Dominion##58407 |goto Sinfall/0 51.76,37.62
-step
-talk General Draven##161977
-|tip Inside the building.
-accept A Stalwart Ally##59325 |goto 46.12,14.73
-step
-talk General Draven##164856
-|tip Inside the building.
-Soulbind with General Draven |q 59325/1 |goto 43.69,17.51
-step
-talk General Draven##172004
-|tip Inside the building.
-turnin A Stalwart Ally##59325 |goto 43.65,17.49
-step
-Reach Renown Level 40 |condition covenant() == Venthyr and covenantrenown() >= 40
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Venthyr Daily Quests" guide to accomplish this.
-step
-_Congratulations!_
-You Reached Renown Level 40.
-]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Transport Network",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through upgrading your covenant transport network.",
@@ -20132,9 +19812,11 @@ Accept or Complete the "Enhancing the Hold" Quest |condition havequest(62794) or
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |q 63052 |future
+|only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1810) >= 1 |q 63052 |future
+|only if covenantfeature("Transport Network") < 1
 step
 talk Haephus##167745
 Tell him _"Show me the Sanctum."_
@@ -20164,9 +19846,11 @@ turnin At a Moment's Notice##63053 |goto 48.84,62.70
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 1000
+|only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Souls |condition curcount(1810) >= 8
+|only if covenantfeature("Transport Network") < 2
 step
 talk Haephus##167745
 |tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
@@ -20174,80 +19858,15 @@ Upgrade your Transport Network to Tier 2 |condition covenantfeature("Transport N
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Souls |condition curcount(1810) >= 22
+|only if covenantfeature("Transport Network") < 3
 step
 talk Haephus##167745
 |tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
 Upgrade your Transport Network to Tier 3 |condition covenantfeature("Transport Network") == 3 |goto Elysian Hold/0 42.59,53.02
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Necrolords Transport Network",{
-author="support@zygorguides.com",
-description="\nThis guide will walk you through upgrading your covenant transport network.",
-condition_suggested=function() return level >= 60 end,
-},[[
-step
-Accept or Complete the "Sanctum Improvements" Quest |condition havequest(62846) or completedq(62846)
-|tip Use the "Necrolords Questline" guide to accomplish this.
-stickystart "Collect_a_Redeemed_Soul"
-step
-Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000
-step
-label "Collect_a_Redeemed_Soul"
-Collect a Redeemed Soul |condition curcount(1810) >= 1
-step
-talk Arkadia Moa##161909
-Tell her _"Show me the Sanctum."_
-|tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
-Upgrade your Transport Network to Tier 1 |condition covenantfeature("Transport Network") >= 1 |goto Seat of the Primus/0 52.75,38.27
-step
-talk Arkadia Moa##161909
-accept Powering the Portals##63055 |goto 52.75,38.27
-step
-click Prime Scroll
-Activate the Transport Network |q 63055/1 |goto 59.04,34.20
-step
-talk Serafina Von##175963
-turnin Powering the Portals##63055 |goto 59.72,31.70
-accept Blink of an Eye##63059 |goto 59.72,31.70
-step
-click Nurakkir, House of Eyes
-Use the Nurakkir, House of Eyes Portal |q 63059/1 |goto Maldraxxus/0 51.14,16.37
-step
-click Seat of the Primus
-Return Using the Seat of the Primus Portal |q 63059/2 |goto Seat of the Primus/0 58.92,34.24
-step
-talk Serafina Von##175963
-turnin Blink of an Eye##63059 |goto 59.72,31.70
-step
-talk Khaliiq##173306
-accept Dude, Where's My Necropolis?##60184 |goto 61.28,32.91
-stickystart "Collect_8_Redeemed_Souls"
-step
-Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
-step
-label "Collect_8_Redeemed_Souls"
-Collect #8# Redeemed Souls |condition curcount(1810) >= 8
-step
-talk Arkadia Moa##161909
-Tell her _"Show me the Sanctum."_
-|tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
-Upgrade your Transport Network to Tier 2 |condition covenantfeature("Transport Network") >= 2 |goto 52.75,38.27
-step
-talk Khaliiq##173306
-turnin Dude, Where's My Necropolis?##60184 |goto 61.28,32.91
-stickystart "Collect_22_Redeemed_Souls"
-step
-Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
-step
-label "Collect_22_Redeemed_Souls"
-Collect #22# Redeemed Souls |condition curcount(1810) >= 22
-step
-talk Arkadia Moa##161909
-Tell her _"Show me the Sanctum."_
-|tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
-Upgrade your Transport Network to Tier 3 |condition covenantfeature("Transport Network") == 3 |goto Seat of the Primus/0 52.75,38.27
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Transport Network",{
 author="support@zygorguides.com",
@@ -20260,9 +19879,11 @@ Accept or Complete the "The First New Growth" Quest |condition havequest(62898) 
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |q 63073 |future
+|only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1865) >= 1 |q 63073 |future
+|only if covenantfeature("Transport Network") < 1
 step
 talk Zayhad, The Builder##165702
 |tip Downstairs inside the tree.
@@ -20342,9 +19963,11 @@ turnin Through the Veil##57583 |goto 55.38,26.56
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Souls |condition curcount(1865) >= 8
+|only if covenantfeature("Transport Network") < 2
 step
 talk Zayhad, The Builder##165702
 |tip Downstairs inside the tree.
@@ -20353,9 +19976,11 @@ Upgrade your Transport Network to Tier 2 |condition covenantfeature("Transport N
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Souls |condition curcount(1865) >= 22
+|only if covenantfeature("Transport Network") < 3
 step
 talk Zayhad, The Builder##165702
 |tip Downstairs inside the tree.
@@ -20373,9 +19998,11 @@ Accept or Complete the "Home Improvement" Quest |condition havequest(62915) or c
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000
+|only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1864) >= 1
+|only if covenantfeature("Transport Network") < 1
 step
 talk Foreman Flatfinger##172605
 Tell him _"Show me the Sanctum."_
@@ -20407,9 +20034,11 @@ turnin Mirror Attunement: The Eternal Terrace##60147 |goto Sinfall/0 47.80,57.26
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Soul |condition curcount(1864) >= 8
+|only if covenantfeature("Transport Network") < 2
 step
 talk Foreman Flatfinger##172605
 Tell him _"Show me the Sanctum."_
@@ -20432,14 +20061,89 @@ turnin Mirror Attunement: The Banewood##60160 |goto 47.80,57.26
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Soul |condition curcount(1864) >= 22
+|only if covenantfeature("Transport Network") < 3
 step
 talk Foreman Flatfinger##172605
 Tell him _"Show me the Sanctum."_
 |tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
 Upgrade your Transport Network to Tier 3 |condition covenantfeature("Transport Network") == 3 |goto Sinfall/0 55.63,26.27
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Necrolords Transport Network",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through upgrading your covenant transport network.",
+condition_suggested=function() return level >= 60 end,
+},[[
+step
+Accept or Complete the "Sanctum Improvements" Quest |condition havequest(62846) or completedq(62846)
+|tip Use the "Necrolords Questline" guide to accomplish this.
+stickystart "Collect_a_Redeemed_Soul"
+step
+Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000
+|only if covenantfeature("Transport Network") < 1
+step
+label "Collect_a_Redeemed_Soul"
+Collect a Redeemed Soul |condition curcount(1810) >= 1
+|only if covenantfeature("Transport Network") < 1
+step
+talk Arkadia Moa##161909
+Tell her _"Show me the Sanctum."_
+|tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
+Upgrade your Transport Network to Tier 1 |condition covenantfeature("Transport Network") >= 1 |goto Seat of the Primus/0 52.75,38.27
+step
+talk Arkadia Moa##161909
+accept Powering the Portals##63055 |goto 52.75,38.27
+step
+click Prime Scroll
+Activate the Transport Network |q 63055/1 |goto 59.04,34.20
+step
+talk Serafina Von##175963
+turnin Powering the Portals##63055 |goto 59.72,31.70
+accept Blink of an Eye##63059 |goto 59.72,31.70
+step
+click Nurakkir, House of Eyes
+Use the Nurakkir, House of Eyes Portal |q 63059/1 |goto Maldraxxus/0 51.14,16.37
+step
+click Seat of the Primus
+Return Using the Seat of the Primus Portal |q 63059/2 |goto Seat of the Primus/0 58.92,34.24
+step
+talk Serafina Von##175963
+turnin Blink of an Eye##63059 |goto 59.72,31.70
+step
+talk Khaliiq##173306
+accept Dude, Where's My Necropolis?##60184 |goto 61.28,32.91
+stickystart "Collect_8_Redeemed_Souls"
+step
+Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|only if covenantfeature("Transport Network") < 2
+step
+label "Collect_8_Redeemed_Souls"
+Collect #8# Redeemed Souls |condition curcount(1810) >= 8
+|only if covenantfeature("Transport Network") < 2
+step
+talk Arkadia Moa##161909
+Tell her _"Show me the Sanctum."_
+|tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
+Upgrade your Transport Network to Tier 2 |condition covenantfeature("Transport Network") >= 2 |goto 52.75,38.27
+step
+talk Khaliiq##173306
+turnin Dude, Where's My Necropolis?##60184 |goto 61.28,32.91
+stickystart "Collect_22_Redeemed_Souls"
+step
+Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|only if covenantfeature("Transport Network") < 3
+step
+label "Collect_22_Redeemed_Souls"
+Collect #22# Redeemed Souls |condition curcount(1810) >= 22
+|only if covenantfeature("Transport Network") < 3
+step
+talk Arkadia Moa##161909
+Tell her _"Show me the Sanctum."_
+|tip Select the "Transport Network" node and click the "Activate" button to begin the upgrade.
+Upgrade your Transport Network to Tier 3 |condition covenantfeature("Transport Network") == 3 |goto Seat of the Primus/0 52.75,38.27
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Command Table",{
 author="support@zygorguides.com",
@@ -20533,97 +20237,6 @@ Reach Renown Level 40 |condition covenant() == Kyrian and covenantrenown() >= 40
 |tip Increase your Renown by completing Covenant Sanctum quests.
 |tip They are repeatable quests in your covenant base.
 |tip Use the "Kyrian Daily Quests" guide to accomplish this.
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Necrolords Command Table",{
-author="support@zygorguides.com",
-description="\nThis guide will walk you through recruiting your covenant command table followers.",
-condition_end=function() return completedq(62316) end,
-},[[
-step
-Accept or Complete the "Sanctum Improvements" Quest |condition havequest(62846) or completedq(62846)
-|tip Use the "Necrolords Questline" guide to accomplish this.
-step
-talk Arkadia Moa##161909
-|tip Inside the building.
-Tell her _"Show me the Sanctum."_
-|tip Select the "Command Table" node and click the "Activate" button to begin the upgrade.
-Upgrade your Command Table to Tier 1 |condition covenantfeature("Command Table") >= 1 |goto Seat of the Primus/0 52.75,38.27
-step
-talk Arkadia Moa##161909
-|tip Inside the building.
-accept Strength in Numbers##63054 |goto 52.75,38.27
-step
-click Prime Scroll
-|tip Inside the building.
-Activate the Command Table |q 63054/1 |goto 40.84,46.40
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-turnin Strength in Numbers##63054 |goto 38.75,48.52
-accept In Shadowlands Service##59603 |goto 38.75,48.52
-step
-click Command Table
-|tip Inside the building.
-|tip Choose a mission and folllow the instructions on-screen.
-Start an Adventure |q 59603/1 |goto 39.31,46.32
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-turnin In Shadowlands Service##59603 |goto 38.75,48.52
-step
-Reach Renown Level 4 |condition covenant() == Necrolord and covenantrenown() >= 4
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Necrolord Daily Quests" guide to accomplish this.
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-accept Adventurer: Secutor Mevix##62309 |goto 38.75,48.52
-step
-Reach Renown Level 12 |condition covenant() == Necrolord and covenantrenown() >= 12
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Necrolord Daily Quests" guide to accomplish this.
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-accept Adventurer: Gunn Gorgebone##62312 |goto 38.75,48.52
-step
-Reach Renown Level 17 |condition covenant() == Necrolord and covenantrenown() >= 17
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Necrolord Daily Quests" guide to accomplish this.
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-accept Adventurer: Rencissa the Dynamo##62313 |goto 38.75,48.52
-step
-Reach Renown Level 27 |condition covenant() == Necrolord and covenantrenown() >= 27
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Necrolord Daily Quests" guide to accomplish this.
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-accept Adventurer: Khaliiq##62314 |goto 38.75,48.52
-step
-Reach Renown Level 33 |condition covenant() == Necrolord and covenantrenown() >= 33
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Necrolord Daily Quests" guide to accomplish this.
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-accept Adventurer: Plaguey##62315 |goto 38.75,48.52
-step
-Reach Renown Level 38 |condition covenant() == Necrolord and covenantrenown() >= 38
-|tip Increase your Renown by completing Covenant Sanctum quests.
-|tip They are repeatable quests in your covenant base.
-|tip Use the "Necrolord Daily Quests" guide to accomplish this.
-step
-talk Merick Feldscar##165321
-|tip Inside the building.
-accept Adventurer: Rathan##62316 |goto 38.75,48.52
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Command Table",{
 author="support@zygorguides.com",
@@ -20792,6 +20405,97 @@ step
 talk Tactician Sakaa##164741
 |tip Inside the building.
 accept Adventurer: Bogdan##61792 |goto 58.10,59.78
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Necrolords Command Table",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through recruiting your covenant command table followers.",
+condition_end=function() return completedq(62316) end,
+},[[
+step
+Accept or Complete the "Sanctum Improvements" Quest |condition havequest(62846) or completedq(62846)
+|tip Use the "Necrolords Questline" guide to accomplish this.
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
+Tell her _"Show me the Sanctum."_
+|tip Select the "Command Table" node and click the "Activate" button to begin the upgrade.
+Upgrade your Command Table to Tier 1 |condition covenantfeature("Command Table") >= 1 |goto Seat of the Primus/0 52.75,38.27
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
+accept Strength in Numbers##63054 |goto 52.75,38.27
+step
+click Prime Scroll
+|tip Inside the building.
+Activate the Command Table |q 63054/1 |goto 40.84,46.40
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+turnin Strength in Numbers##63054 |goto 38.75,48.52
+accept In Shadowlands Service##59603 |goto 38.75,48.52
+step
+click Command Table
+|tip Inside the building.
+|tip Choose a mission and folllow the instructions on-screen.
+Start an Adventure |q 59603/1 |goto 39.31,46.32
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+turnin In Shadowlands Service##59603 |goto 38.75,48.52
+step
+Reach Renown Level 4 |condition covenant() == Necrolord and covenantrenown() >= 4
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Necrolord Daily Quests" guide to accomplish this.
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+accept Adventurer: Secutor Mevix##62309 |goto 38.75,48.52
+step
+Reach Renown Level 12 |condition covenant() == Necrolord and covenantrenown() >= 12
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Necrolord Daily Quests" guide to accomplish this.
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+accept Adventurer: Gunn Gorgebone##62312 |goto 38.75,48.52
+step
+Reach Renown Level 17 |condition covenant() == Necrolord and covenantrenown() >= 17
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Necrolord Daily Quests" guide to accomplish this.
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+accept Adventurer: Rencissa the Dynamo##62313 |goto 38.75,48.52
+step
+Reach Renown Level 27 |condition covenant() == Necrolord and covenantrenown() >= 27
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Necrolord Daily Quests" guide to accomplish this.
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+accept Adventurer: Khaliiq##62314 |goto 38.75,48.52
+step
+Reach Renown Level 33 |condition covenant() == Necrolord and covenantrenown() >= 33
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Necrolord Daily Quests" guide to accomplish this.
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+accept Adventurer: Plaguey##62315 |goto 38.75,48.52
+step
+Reach Renown Level 38 |condition covenant() == Necrolord and covenantrenown() >= 38
+|tip Increase your Renown by completing Covenant Sanctum quests.
+|tip They are repeatable quests in your covenant base.
+|tip Use the "Necrolord Daily Quests" guide to accomplish this.
+step
+talk Merick Feldscar##165321
+|tip Inside the building.
+accept Adventurer: Rathan##62316 |goto 38.75,48.52
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Torghast\\Torghast Questline",{
 author="support@zygorguides.com",

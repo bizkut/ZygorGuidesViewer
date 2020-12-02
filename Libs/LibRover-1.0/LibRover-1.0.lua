@@ -591,6 +591,8 @@ do
 			PlayerCompletedQuest = C_QuestLog.IsQuestFlaggedCompleted,
 			UnitLevel = function() return ZGV:GetPlayerPreciseLevel() end,
 			PlayerLevel = function() return ZGV:GetPlayerPreciseLevel() end,
+			covenant = function(covenant) return ZGV.Parser.ConditionEnv.covenant()==ZGV.Parser.ConditionEnv[covenant] end,
+			covenantnetwork = function() return (ZGV.Parser.ConditionEnv.covenantfeature('Transport Network')) end,
 		},{__index=_G})
 		
 		local function ParseDataCond(data)
@@ -2952,6 +2954,8 @@ do
 						mytime = neighlink.cost  -- timetabled!
 
 					elseif mode == "taxi" then
+						-- note: taxi flights are not penalized based on taxi point knowledge, due to valid flyovers.
+						-- Walk/fly to depart, and walk/fly after arrival are, however.
 						if not current.missing then -- current.missing == Thereamore's flight path is gone when it's destroyed.
 							mytime = neighlink.cost  -- timetabled!
 									or
@@ -2962,6 +2966,7 @@ do
 								if cost_debugging then costdesc = costdesc .. "guild perk taxi bonus; " end
 							end -- Guild Perk Ride like the Wind.
 						end
+
 					elseif mode == "tram" then
 						--mycost = 120.00  -- 2 minutes.
 						mytime = COST_TRAM  -- make it suck
@@ -2972,10 +2977,12 @@ do
 					elseif mode == "courtesy" then
 						mytime = neighlink.cost
 					--]]
+
 					elseif mode=="portal" then
 						mytime = neighlink.cost or COST_PORTAL -- to avoid "teleport 10 feet away" silliness
 
 						if Lib.cfg.frown_on_portals then mytime = mytime * 5 end	-- Usually portals decrease travel time significantly, so increasing their cost has no effect. But short portal hops are confusing so this makes short hops happen more rarely.
+
 					elseif mode=="ship" or mode=="zeppelin" then
 						--mycost = 110.00 + 30.00   -- about 3m40s between trips, half that.  + departure/arrival.
 						--mycost = (neighlink.freq or 220.00) / 2   -- about 3m40s between trips, half that.  + departure/arrival.
@@ -2989,8 +2996,9 @@ do
 							mytime = 240
 						end
 
-					-- fly to unknown taxi AND run/fly from there? nope! Penalize all movement from there, since we can't penalize arrival.
-					elseif current.type=="taxi" and current.known==false then
+					-- fly to unknown taxi AND run/fly from there? nope! Penalize all movement from there, since we can't penalize arrival (some taxis are valid unknown flyovers)
+					--elseif current.type=="taxi" and current:IsTaxiKnown()==false then
+					elseif (mode=="walk" or mode=="fly") and current.parent and current.parentlink and current.parentlink.mode=="taxi" and current.parent:IsTaxiKnown()==false then -- walking from an unknown taxi, means we have LANDED on it. Penalize!
 						mytime=COST_FAILURE+1
 						if cost_debugging then costdesc = costdesc .. "no arrival at unknown taxi; " end
 
