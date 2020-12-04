@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ProfessionsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Classic\\Alchemy 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Classic Alchemy skill from 1-300.",
 condition_end=function() return skill('Alchemy') >= 300 end,
@@ -421,7 +421,7 @@ step
 _Congratulations!_
 You Reached 600 Archaeology Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Classic\\Blacksmithing 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Blacksmithing skill from 1-300.",
 condition_end=function() return skill('Blacksmithing') >= 300 end,
@@ -691,7 +691,7 @@ step
 _Congratulations!_
 You Reached 300 Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Classic\\Cooking 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cooking skill from 1-300.",
 condition_end=function() return skill('Cooking') >= 300 end,
@@ -873,7 +873,7 @@ step
 _Congratulations!_
 You Reached 300 Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Classic\\Enchanting 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Enchanting skill from 1-300.",
 condition_end=function() return skill('Enchanting') >= 300 end,
@@ -1087,7 +1087,7 @@ step
 _Congratulations!_
 You Reached 300 Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Classic\\Engineering 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Engineering skill from 1-300.",
 condition_end=function() return skill('Engineering') >= 300 end,
@@ -1363,7 +1363,7 @@ step
 _Congratulations!_
 You Reached 300 Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Classic\\Fishing 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Fishing skill from 1-300.",
 condition_end=function() return skill('Fishing') >= 300 end,
@@ -1384,7 +1384,7 @@ step
 _Congratulations!_
 You Reached 300 Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Classic\\Herbalism 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Herbalism skill from 1-300.",
 condition_end=function() return skill('Herbalism') >= 300 end,
@@ -1421,7 +1421,7 @@ step
 _Congratulations!_
 You Reached 300 Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Classic\\Inscription 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Inscription skill from 1-300.",
 condition_end=function() return skill('Inscription') >= 300 end,
@@ -1746,7 +1746,7 @@ step
 _Congratulations!_
 You Reached 300 Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Classic\\Jewelcrafting 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Jewelcrafting skill from 1-300.",
 condition_end=function() return skill('Jewelcrafting') >= 300 end,
@@ -2006,7 +2006,7 @@ step
 _Congratulations!_
 You Reached 300 Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Classic\\Leatherworking 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Leatherworking skill from 1-300.",
 condition_end=function() return skill('Leatherworking') >= 300 end,
@@ -2247,7 +2247,7 @@ step
 _Congratulations!_
 You Reached 300 Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Classic\\Mining 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Mining skill from 1-300.",
 condition_end=function() return skill('Mining') >= 300 end,
@@ -2304,7 +2304,7 @@ step
 _Congratulations!_
 You Reached 300 Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Classic\\Skinning 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Skinning skill from 1-300.",
 condition_end=function() return skill('Skinning') >= 300 end,
@@ -2327,7 +2327,7 @@ step
 _Congratulations!_
 You Reached 300 Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Classic\\Tailoring 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Tailoring skill from 1-300.",
 condition_end=function() return skill('Tailoring') >= 300 end,

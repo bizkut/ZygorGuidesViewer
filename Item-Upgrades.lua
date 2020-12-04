@@ -1036,7 +1036,7 @@ function Upgrades:CreatePopup()
 	end
 
 	F.AdjustSize = function(self) -- Need to change this because it is different for this kind of Popup
-		local offsets = 45 + 10 + 5 + 20 --Logo and top + text and buttons + buttons and bottom + more room
+		local offsets = (self.logo:IsVisible() and self.logo:GetHeight() or 5) + 10 + 5 + 20 --Logo and top + text and buttons + buttons and bottom + more room
 
 		local ItemsAlwaysThere = self.text:GetStringHeight() + self.stattext:GetStringHeight() + self.acceptbutton:GetHeight()
 		local ItemsSometimes = ( 

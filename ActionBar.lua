@@ -62,26 +62,26 @@ function ActionBar:SetActionButtons()
 
 	for gi,goal in ipairs(goals) do
 		if goal:IsVisible() then
-			if goal.castspell and goal.castspellid then
+			if goal.castspell and goal.castspellid and ZGV.db.profile.actionbar_quest then
 				table.insert(actions,{"spell",goal.castspellid})
-			elseif goal.castspell and goal.extraaction then
+			elseif goal.castspell and goal.extraaction  and ZGV.db.profile.actionbar_quest then
 				table.insert(actions,{"extraaction",goal.extraaction})
-			elseif goal.item or goal.itemid then
+			elseif goal.item or goal.itemid  and ZGV.db.profile.actionbar_item then
 				table.insert(actions,{"item",goal.itemid  or  goal.item})
-			elseif goal.script and goal.script:find("DoEmote") then
+			elseif goal.script and goal.script:find("DoEmote")  and ZGV.db.profile.actionbar_quest then
 				table.insert(actions,{"emote",goal.script})
-			elseif goal.script then
+			elseif goal.script and ZGV.db.profile.actionbar_quest then
 				table.insert(actions,{"script",goal.script})
-			elseif goal.macro then
+			elseif goal.macro and ZGV.db.profile.actionbar_quest then
 				table.insert(actions,{"macro",goal.macro})
-			elseif goal.petaction then
+			elseif goal.petaction and ZGV.db.profile.actionbar_quest then
 				local num,name,subtext,tex = ZGV.FindPetActionInfo(goal.petaction)
 				if num then
 					table.insert(actions,{"petaction",goal.numitem})
 				end
-			elseif goal.action=="talk" and goal.npcid then
+			elseif goal.action=="talk" and goal.npcid and ZGV.db.profile.actionbar_talk then
 				table.insert(actions_npc,{"talk",goal.npcid})
-			elseif goal.action=="kill" and goal.targetid then
+			elseif goal.action=="kill" and goal.targetid and ZGV.db.profile.actionbar_kill then
 				table.insert(actions_npc,{"kill",goal.targetid})
 			end
 		end -- if goal visible

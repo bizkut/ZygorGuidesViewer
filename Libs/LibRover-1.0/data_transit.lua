@@ -528,7 +528,7 @@ data.basenodes.transit = {
 		"Orgrimmar/1 56.23,91.73 -to- Dalaran/1 55.92,46.79 {fac:H} {mode:PORTAL} {title:Click the Portal to Dalaran, Crystalsong Forest in the Portal Room}",
 
 		-- Orgrimmar - Durotar, Kalimdor -to- Warspear - Ashran, Draenor --CHECKED
-		"Orgrimmar/1 58.32,87.83 -to- Warspear/0 44.42,35.53 {fac:H} {mode:PORTAL} {title:Click the Portal to Warspear, Ashran in the Portal Room}",
+		"Orgrimmar/1 58.32,87.83 -to- Warspear/0 44.42,35.53 {fac:H} {mode:PORTAL} {title:Click the Portal to Warspear, Ashran\ninside the Portal Room}",
 
 		-- Orgrimmar - Durotar, Kalimdor -to- Ramkaehen - Uldum, Kalimdor --CHECKED
 		"Orgrimmar/1 48.87,38.55 -to- Uldum/0 54.90,34.25 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(28112) or PlayerLevel() >= 50}",
@@ -1051,7 +1051,7 @@ data.basenodes.transit = {
 		"Warspear/0 53.16,43.91 -to- Tanaan Jungle/0 60.9,47.3 {fac:H} {mode:PORTAL} {title: Click the Portal to Vol'mar} {cond:PlayerCompletedQuest(37935)}",
 
 		-- Warspear - Ashran, Draenor -to- Orgrimmar - Durotar, Kalimdor --
-		"Warspear/0 60.7,51.6 -to- Orgrimmar/1 57.10,89.81 <subtype:cityportal> {fac:H} {mode:PORTAL}",
+		"Warspear/0 60.7,51.6 -to- Orgrimmar/1 57.10,89.81 <subtype:cityportal> {fac:H} {mode:PORTAL} {title: Click the Portal to Orgrimmar\nInside the Building}",
 
 	--## NEUTRAL ##--
 

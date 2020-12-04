@@ -235,6 +235,8 @@ STYLE.NotificationDecorColor=CONTROLBAR
 STYLE.NotificationTextColor={0.8,0.8,0.8,1}
 STYLE.NotificationTextColorOver={1,1,1,1}
 STYLE.NotificationBubbleColor=ACCENT
+
+STYLE.NotificationPopupShowHeader = false
 STYLE.NotificationPopupHeaderBackdrop=STYLE.SmallOpaqueBackdrop
 STYLE.NotificationPopupHeaderBackdropColor=BLACK
 STYLE.NotificationPopupHeaderBackdropBorderColor=BLACK

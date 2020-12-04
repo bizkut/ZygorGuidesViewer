@@ -19833,7 +19833,7 @@ step
 To earn this achievement, you will have to complete the 13 Legion Archaeology quest lines
 |tip You will need to be level 110 before being able to start these quest lines.
 |tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 26 weeks to complete.
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 Click here to see your progress on this achievement |confirm |or
 |only if not achieved(10603)
 step
@@ -19877,7 +19877,7 @@ Complete the quest line beginning with _Bits and Pieces_ |achieve 10603/1
 Complete the quest line beginning with _Fel Fragments_ |achieve 10603/12
 Complete the quest line beginning with _Out of the Frying Pan_ |achieve 10603/7
 Complete the quest line beginning with _One Step Closer_ |achieve 10603/10
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 step
 Once you have aquired the 5 pieces for the Titan Disk, Brann will give you a follow up quest
 |tip This quest is given to you as soon as you get the last of the 5 pieces.
@@ -20022,7 +20022,7 @@ step
 To earn this achievement, you will have to complete 8 out of the 13 Legion Archaeology quest lines
 |tip You will need to be level 110 before being able to start these quest lines.
 |tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 16 weeks to complete.
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 Click here to see your progress on this achievement |confirm |or
 |only if not achieved(10602)
 step
@@ -20074,7 +20074,7 @@ description="\nThis guide will walk you through completing the \"Surveying the L
 step
 To earn this achievement, you will have to complete 1 out of the 13 Legion Archaeology quest lines
 |tip You will need to be level 110 before being able to start these quest lines.
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 Click here to see your progress on this achievement |confirm |or
 |only if not achieved(10601)
 step
@@ -20145,7 +20145,7 @@ description="\nThis guide will walk you through completing the \"Legion Cooking\
 step
 To earn this achievement you will need to cook up 15 of the Legion Cooking recipes
 |tip Check out our Legion Cooking Quest Line guide to obtain the first few recipes.
-Click here to load the "Legion Cooking Quest Line" guide |confirm |next "Profession Guides\\Cooking\\Quest Guides\\Legion\\Legion Cooking Quest Line"
+Click here to load the "Legion Cooking Quest Line" guide |confirm |next "Profession Guides\\Cooking\\Quest Guides\\Legion Cooking Quest Line"
 confirm
 step
 After that you will need to research by talking to Nomi and placing Cooking Work Orders
@@ -20166,7 +20166,7 @@ description="\nThis guide will walk you through completing the \"A Cast Above th
 },[[
 step
 Complete the "Drowned Mana" quest |condition completedq(42911) |or
-Click here to load the "Fishing Quest Line" guide |confirm |next "Profession Guides\\Fishing\\Quest Guides\\Legion\\Legion Fishing Quest Line" |or
+Click here to load the "Fishing Quest Line" guide |confirm |next "Profession Guides\\Fishing\\Quest Guides\\Legion Fishing Quest Line" |or
 step
 collect Goblin Glider Kit##109076 |c |q 42911 |future
 |tip You can create these if you have Engineering.

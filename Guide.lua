@@ -556,7 +556,7 @@ function Guide:AdvertiseWithPopup(nodelay,force)
 				local offsets = 10 + 10 + 5 --Logo and top + text and buttons + buttons and bottom
 				local minWidth = self.acceptbutton:GetWidth() + self.declinebutton:GetWidth() + self.settings:GetWidth() + 55
 
-				local height = offsets + (self.text3checkbox:GetStringHeight()+10) + self.tex:GetHeight() + self.text:GetStringHeight() + self.text2:GetStringHeight() + self.logo:GetHeight() + self.acceptbutton:GetHeight() + self.morebutton:GetHeight()
+				local height = offsets + (self.text3checkbox:GetStringHeight()+10) + self.tex:GetHeight() + self.text:GetStringHeight() + self.text2:GetStringHeight() + (self.logo:IsVisible() and self.logo:GetHeight() or 5) + self.acceptbutton:GetHeight() + self.morebutton:GetHeight()
 				local width = max(minWidth,self.text:GetStringWidth(),self.text2:GetStringWidth(),self.tex:GetWidth())+50
 
 				self:SetSize(width,height)
@@ -624,7 +624,7 @@ function Guide:LegionPopup(title,message,level)
 				local offsets = 10 + 10 + 5 --Logo and top + text and buttons + buttons and bottom
 				local minWidth = self.acceptbutton:GetWidth() + self.declinebutton:GetWidth() + self.settings:GetWidth() + 55
 
-				local height = offsets + (self.text3checkbox:GetStringHeight()+10) + self.tex:GetHeight() + self.text:GetStringHeight() + self.text2:GetStringHeight() + self.logo:GetHeight() + self.acceptbutton:GetHeight()
+				local height = offsets + (self.text3checkbox:GetStringHeight()+10) + self.tex:GetHeight() + self.text:GetStringHeight() + self.text2:GetStringHeight() + (self.logo:IsVisible() and self.logo:GetHeight() or 5) + self.acceptbutton:GetHeight()
 				local width = max(minWidth,self.text:GetStringWidth()+50,self.text2:GetStringWidth(),self.tex:GetWidth()+25)
 
 				self:SetSize(width,height)

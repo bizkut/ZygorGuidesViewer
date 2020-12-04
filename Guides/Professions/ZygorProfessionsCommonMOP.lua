@@ -7,7 +7,7 @@ ZygorGuidesViewer.GuideMenuTier = "MOP"
 -- ALCHEMY --
 -------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Mists of Pandaria\\Pandaria Alchemy 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Pandaria Alchemy 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Alchemy skill from 1-75.",
 	condition_end=function() return skill('Pandaria Alchemy') >= 75 end,
@@ -57,25 +57,25 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Mi
 -- COOKING --
 -------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Daily Guides\\Mists of Pandaria\\Pandaria Cooking Daily Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Daily Guides\\Pandaria Cooking Daily Guide",{
 	},[[
 	step
 		#include "MoP_Cooking_Dailies"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Cooking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Cooking 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Cooking skill from 1-75.",
 	condition_end=function() return skill('Pandaria Cooking') >= 75 end,
 	condition_suggested=function() return skill('Cooking') > 0 and skill('Pandaria Cooking') < 75 and level >= 78 end,
 	},[[
-		leechsteps "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Grill 1-75" 1-32
+		leechsteps "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75" 1-32
 	step
 		_Congratulations!_
 		You Reached Level 75 Pandaria Cooking Skill.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Brew 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Brew 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through completing the \"Way of the Brew\" Cooking path.",
 	condition_end=function() return skill('Way of the Brew') >= 75 end,
@@ -202,7 +202,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mi
 		You Reached 75 Way of the Brew Cooking Skill.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Grill 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through completing the \"Way of the Grill\" Cooking path.",
 	condition_end=function() return skill('Way of the Grill') >= 75 end,
@@ -340,7 +340,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mi
 		You Reached 75 Way of the Grill Cooking Skill.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Oven 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Oven 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through completing the \"Way of the Oven\" Cooking path.",
 	condition_end=function() return skill('Way of the Oven') >= 75 end,
@@ -476,7 +476,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mi
 		You Reached 75 Way of the Oven Cooking Skill.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Pot 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Pot 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through completing the \"Way of the Pot\" Cooking path.",
 	condition_end=function() return skill('Way of the Pot') >= 75 end,
@@ -610,7 +610,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mi
 		You Reached 75 Way of the Pot Cooking Skill.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Steamer 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Steamer 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through completing the \"Way of the Steamer\" Cooking path.",
 	condition_end=function() return skill('Way of the Steamer') >= 75 end,
@@ -745,7 +745,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mi
 		You Reached 75 Way of the Steamer Cooking Skill.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Wok 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Wok 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through completing the \"Way of the Wok\" Cooking path.",
 	condition_end=function() return skill('Way of the Wok') >= 75 end,
@@ -889,7 +889,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Mi
 -- ENCHANTING --
 ----------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Mists of Pandaria\\Pandaria Enchanting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Pandaria Enchanting 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Enchanting skill from 1-75.",
 	condition_end=function() return skill('Pandaria Enchanting') >= 75 end,
@@ -952,7 +952,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\
 -- ENGINEERING --
 -----------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Mists of Pandaria\\Pandaria Engineering 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Pandaria Engineering 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Engineering skill from 1-75.",
 	condition_end=function() return skill('Pandaria Engineering') >= 75 end,
@@ -1020,7 +1020,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides
 -- HERBALISM --
 ---------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mists of Pandaria\\Fool's Cap",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fool's Cap",{
 	author="support@zygorguides.com",
 	description="\nFool's Cap can be gathered from the Dread Wastes.",
 	condition_end=function() return skill('Pandaria Herbalism') >= 50 end,
@@ -1046,7 +1046,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\M
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mists of Pandaria\\Golden Lotus",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Golden Lotus",{
 	author="support@zygorguides.com",
 	description="\nGolden Lotus can be gathered from The Jade Forest in Pandaria.",
 	condition_end=function() return skill('Pandaria Herbalism') >= 50 end,
@@ -1092,7 +1092,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\M
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mists of Pandaria\\Green Tea Leaf",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Green Tea Leaf",{
 	author="support@zygorguides.com",
 	description="\nGreen Tea Leaf can be gathered from The Jade Forest.",
 	condition_end=function() return skill('Pandaria Herbalism') >= 50 end,
@@ -1136,7 +1136,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\M
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mists of Pandaria\\Rain Poppy",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Rain Poppy",{
 	author="support@zygorguides.com",
 	description="\nRain Poppy can be gathered from The Jade Forest.",
 	condition_end=function() return skill('Pandaria Herbalism') >= 50 end,
@@ -1162,7 +1162,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\M
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mists of Pandaria\\Silkweed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Silkweed",{
 	author="support@zygorguides.com",
 	description="\nSilkweed can be gathered from Valley of the Four Winds.",
 	condition_end=function() return skill('Pandaria Herbalism') >= 50 end,
@@ -1189,7 +1189,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\M
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mists of Pandaria\\Snow Lily",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Snow Lily",{
 	author="support@zygorguides.com",
 	description="\nSnow Lily can be gathered from Kun-Lai Summit.",
 	condition_end=function() return skill('Pandaria Herbalism') >= 50 end,
@@ -1223,7 +1223,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\M
 -- INSCRIPTION --
 -----------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Mists of Pandaria\\Pandaria Inscription 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Pandaria Inscription 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Inscription skill from 1-75.",
 	condition_end=function() return skill('Pandaria Inscription') >= 75 end,
@@ -1275,7 +1275,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides
 -- JEWELCRAFTING --
 -------------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Mists of Pandaria\\Pandaria Jewelcrafting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Pandaria Jewelcrafting 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Jewelcrafting skill from 1-75.",
 	condition_end=function() return skill('Pandaria Jewelcrafting') >= 75 end,
@@ -1327,7 +1327,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guid
 -- LEATHERWORKING --
 --------------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Mists of Pandaria\\Pandaria Leatherworking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Pandaria Leatherworking 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Leatherworking skill from 1-75.",
 	condition_end=function() return skill('Pandaria Leatherworking') >= 75 end,
@@ -1402,7 +1402,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Gui
 -- MINING --
 ------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mists of Pandaria\\Ghost Iron",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Ghost Iron",{
 	author="support@zygorguides.com",
 	description="\nGhost Iron can be gathered from Krasarang Wilds.",
 	condition_end=function() return skill('Pandaria Mining') >= 50 end,
@@ -1435,7 +1435,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mist
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mists of Pandaria\\Kyparite",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Kyparite",{
 	author="support@zygorguides.com",
 	description="\nKyparite can be gathered from the Dread Wastes.",
 	condition_end=function() return skill('Pandaria Mining') >= 50 end,
@@ -1459,7 +1459,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mist
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mists of Pandaria\\Trillium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Trillium",{
 	author="support@zygorguides.com",
 	description="\nTrillium can be gathered from Townlong Steppes.",
 	condition_end=function() return skill('Pandaria Mining') >= 50 end,
@@ -1499,7 +1499,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mist
 -- SKINNING --
 --------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Mists of Pandaria\\Exotic Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Exotic Leather",{
 	author="support@zygorguides.com",
 	description="\nExotic Leather can be gathered from Dread Wastes.",
 	condition_end=function() return skill('Pandaria Skinning') >= 50 end,
@@ -1515,7 +1515,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Mi
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Mists of Pandaria\\Pandaria Skinning 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Pandaria Skinning 1-75",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Pandaria Skinning skill from 1-75.",
 	condition_end=function() return skill('Pandaria Skinning') >= 75 end,
@@ -1541,7 +1541,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\M
 -- Elemental Reagents --
 ------------------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Mists of Pandaria\\Spirit of Harmony",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Spirit of Harmony",{
 	author="support@zygorguides.com",
 	description="\nEternal shadow can be gathered from Kun-Lai Summit.",
 	},[[

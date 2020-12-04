@@ -94,7 +94,8 @@ STYLE.FindNearestBackdropBorderColor = STYLE.SmallGlassBackdropBorderColor
 
 -- Notification center
 
-STYLE.NotificationPopupHeaderBackdrop=STYLE.SmallGlassBackdrop
+STYLE.NotificationPopupShowHeader = false
+STYLE.NotificationPopupHeaderBackdrop={bgFile=SKINSDIR.."white",edgeFile=STYLEDIR.."backdrop-glass-small",tile = true, edgeSize=10, tileSize = 10, insets = { left = 10, right = 10, top = 10, bottom = 10 }}
 STYLE.NotificationPopupHeaderBackdropColor=STYLE.SmallGlassBackdropColor
 STYLE.NotificationPopupHeaderBackdropBorderColor=STYLE.SmallGlassBackdropBorderColor
 

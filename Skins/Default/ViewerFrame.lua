@@ -1750,6 +1750,13 @@ function ZGV_DefaultSkin_Frame_Mixin:MenuSettingsButton_OnClick()
 		},
 		UIDropDownFork_separatorInfo,
 		{
+			text = L['pointer_arrowmenu_findnearest'], -- aka findNPC
+			hasArrow=true,
+			menuList = ZGV.WhoWhere.Types,
+			notCheckable=true,
+		},
+		UIDropDownFork_separatorInfo,
+		{
 			text=L["menu_Reset"],
 			iconset=ZGV.ButtonSets.TitleButtons,
 			iconkey="CLOSE",

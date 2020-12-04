@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ProfessionsAMoP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Mists of Pandaria\\Pandaria Blacksmithing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Pandaria Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Pandaria Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Pandaren Blacksmithing') >= 75 end,
@@ -84,7 +84,7 @@ step
 _Congratulations!_
 You Reached 75 Pandaria Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Mists of Pandaria\\Fishing 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Pandaria Fishing skill from 1-75.",
 condition_end=function() return skill('Pandaria Fishing') >= 75 end,
@@ -105,7 +105,7 @@ step
 label "fish_600"
 Congratulations, you are now a Zen Master Fisherman!
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Mists of Pandaria\\Pandaria Herbalism 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Pandaria Herbalism 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Pandaria Herbalism skill from 1-75.",
 condition_end=function() return skill('Pandaria Herbalism') >= 75 end,
@@ -137,7 +137,7 @@ step
 _Congratulations!_
 You Reached 75 Pandaria Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mists of Pandaria\\Pandaria Mining 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Pandaria Mining 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Pandaria Mining skill from 1-75.",
 condition_end=function() return skill('Pandaria Mining') >= 75 end,
@@ -165,7 +165,7 @@ step
 _Congratulations!_
 You Reached 75 Pandaria Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Mists of Pandaria\\Pandaria Tailoring 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Pandaria Tailoring 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Pandaria Tailoring skill from 1-75.",
 condition_end=function() return skill('Pandaria Tailoring') >= 75 end,

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ProfessionsASHADOW") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Shadowlands\\Shadowlands Alchemy 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Shadowlands Alchemy 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Alchemy profession from 1-175.",
 startlevel=50.0,
@@ -210,15 +210,7 @@ step
 _Congratulations!_
 You Reached 175 Shadowlands Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Leveling Guides\\Shadowlands\\Shadowlands Archaeology 1-175",{
-author="support@zygorguides.com",
-description="\nThis guide will walk you through leveling your Shadowlands Archaeology profession from 1-175.",
-startlevel=50.0,
-},[[
-step
-confirm
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Shadowlands\\Shadowlands Blacksmithing 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Shadowlands Blacksmithing 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Blacksmithing profession from 1-100.",
 startlevel=50.0,
@@ -349,7 +341,7 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Shadowlands\\Shadowlands Cooking 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Shadowlands Cooking 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Cooking profession from 1-100.",
 startlevel=50.0,
@@ -692,7 +684,7 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Aethereal Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Aethereal Meat",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Aethereal Meat for various Cooking recipes.",
 startlevel=50.0,
@@ -701,7 +693,7 @@ step
 kill Starving Shadowstalker##168620+
 collect Aethereal Meat##172052 |n |goto Ardenweald/0 65.51,29.60
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Phantasmal Haunch",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Phantasmal Haunch",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Phantasmal Haunch for various Cooking recipes.",
 startlevel=50.0,
@@ -710,7 +702,7 @@ step
 Kill Gorm enemies around this area
 collect Phantasmal Haunch##172055 |n |goto Ardenweald/0 51.69,75.67
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Raw Seraphic Wing",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raw Seraphic Wing",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Raw Seraphic Wing for various Cooking recipes.",
 startlevel=50.0,
@@ -720,7 +712,7 @@ Kill Etherwyrm enemies around this area
 collect Raw Seraphic Wing##172054 |n |goto Bastion/0 52.87,79.59
 You can find more around [55.30,75.94]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Shadowy Shank",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowy Shank",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Shadowy Shank for various Cooking recipes.",
 startlevel=50.0,
@@ -729,7 +721,7 @@ step
 Kill Gorm enemies around this area
 collect Shadowy Shank##179315 |n |goto Ardenweald/0 51.69,75.67
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Tenebrous Ribs",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Tenebrous Ribs",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Tenebrous Ribs for various Cooking recipes.",
 startlevel=50.0,
@@ -739,7 +731,7 @@ Kill Bloodtusk enemies around this area
 collect Tenebrous Ribs##172053 |n |goto Maldraxxus/0 57.29,47.25
 You can find more around [53.60,38.50]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Iridescent Amberjack",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Iridescent Amberjack",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Iridescent Amberjack for various Cooking recipes.",
 startlevel=50.0,
@@ -750,7 +742,7 @@ use Iridescent Amberjack Bait##173039
 |tip These have a chance to drop while fishing in Ardenweald, use them to increase the chance of catching Iridescent Amberjacks.
 collect Iridescent Amberjack##173033 |n |goto Ardenweald/0 49.36,52.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Lost Sole",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Lost Sole",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Lost Sole for various Cooking recipes.",
 startlevel=50.0,
@@ -761,7 +753,7 @@ use Lost Sole Bait##173038
 |tip These have a chance to drop while fishing in Ardenweald, use them to increase the chance of catching Lost Soles.
 collect Lost Sole##173032 |n |goto Ardenweald/0 49.36,52.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Pocked Bonefish",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Pocked Bonefish",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Pocked Bonefish for various Cooking recipes.",
 startlevel=50.0,
@@ -772,7 +764,7 @@ use Pocked Bonefish Bait##173041
 |tip These have a chance to drop while fishing in Maldraxxus, use them to increase the chance of catching Pocked Bonefish.
 collect Pocked Bonefish##173035 |n |goto Maldraxxus/0 49.57,54.10
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Silvergill Pike",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Silvergill Pike",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Silvergill Pike for various Cooking recipes.",
 startlevel=50.0,
@@ -783,7 +775,7 @@ use Silvergill Pike Bait##173040
 |tip These have a chance to drop while fishing in Bastion, use them to increase the chance of catching Silvergill Pikes.
 collect Silvergill Pike##173034 |n |goto Bastion/0 49.29,64.34
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Spinefin Piranha",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Spinefin Piranha",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Spinefin Piranha for various Cooking recipes.",
 startlevel=50.0,
@@ -794,7 +786,7 @@ use Spinefin Piranha Bait##173042
 |tip These have a chance to drop while fishing in Revendreth, use them to increase the chance of catching Spinefin Piranhas.
 collect Spinefin Piranha##173036 |n |goto Revendreth/0 51.31,63.83
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Elysian Thade",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Elysian Thade",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Elysian Thade for various Cooking recipes.",
 startlevel=50.0,
@@ -805,19 +797,19 @@ use Elysian Thade Bait##173043
 |tip These have a chance to drop while fishing in Ardenweald, use them to increase the chance of catching Elysian Thades.
 collect Elysian Thade##173037 |n |goto Ardenweald/0 49.36,52.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Shadowlands\\Shadowlands Enchanting 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Shadowlands Enchanting 1-115",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through leveling your Shadowlands Enchanting profession from 1-100.",
+description="\nThis guide will walk you through leveling your Shadowlands Enchanting profession from 1-115.",
 startlevel=50.0,
-condition_end=function() return skill('Shadowlands Enchanting') >= 100 end,
-condition_suggested=function() return skill('Shadowlands Enchanting') > 0 and skill('Shadowlands Enchanting') < 100 and level >= 50 end,
+condition_end=function() return skill('Shadowlands Enchanting') >= 115 end,
+condition_suggested=function() return skill('Shadowlands Enchanting') > 0 and skill('Shadowlands Enchanting') < 115 and level >= 50 end,
 },[[
 step
 talk Imbuer Au'vresh##156683
 Train Enchanting |skillmax Enchanting,300 |goto Oribos/0 48.39,29.43
 step
 talk Imbuer Au'vresh##156683
-Train Shadowlands Enchanting |skillmax Shadowlands Enchanting,100 |goto 48.39,29.43
+Train Shadowlands Enchanting |skillmax Shadowlands Enchanting,115 |goto 48.39,29.43
 step
 talk Distributor Au'resh##156694
 buy 49 Enchanting Vellum##38682 |goto 47.55,29.05
@@ -1010,10 +1002,46 @@ _<Create 10 Eternal Stats>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
 Reach Level 100 Shadowlands Enchanting |skill Shadowlands Enchanting,100
 step
+talk Imbuer Au'vresh##156683
+Train Eternal Grace |learn Eternal Grace##309621 |goto 48.39,29.43
+step
+collect 20 Sacred Shard##172231
+|tip You can get these by disenchanting Shadowlands level Rare (blue) armor and weapons.
+|tip You can also purchase them from the Auction House.
+|only if skill("Shadowlands Enchanting") < 110
+step
+collect 5 Eternal Crystal##172232
+|tip You can get these by disenchanting Shadowlands level Epic (purple) armor and weapons.
+|tip You can also purchase them from the Auction House.
+|only if skill("Shadowlands Enchanting") < 110
+step
+Open Your Enchanting Crafting Panel:
+_<Create 5 Eternal Grace>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+Reach Level 110 Shadowlands Enchanting |skill Shadowlands Enchanting,110
+step
+talk Imbuer Au'vresh##156683
+Train Sinful Revelation |learn Sinful Revelation##309623 |goto 48.39,29.43
+step
+collect 12 Sacred Shard##172231
+|tip You can get these by disenchanting Shadowlands level Rare (blue) armor and weapons.
+|tip You can also purchase them from the Auction House.
+|only if skill("Shadowlands Enchanting") < 115
+step
+collect 3 Eternal Crystal##172232
+|tip You can get these by disenchanting Shadowlands level Epic (purple) armor and weapons.
+|tip You can also purchase them from the Auction House.
+|only if skill("Shadowlands Enchanting") < 115
+step
+Open Your Enchanting Crafting Panel:
+_<Create 3 Sinful Revelation>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+Reach Level 115 Shadowlands Enchanting |skill Shadowlands Enchanting,115
+step
 _Congratulations!_
-You Reached 100 Shadowlands Enchanting Skill.
+You Reached 115 Shadowlands Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Shadowlands\\Shadowlands Engineering 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Shadowlands Engineering 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Engineering profession from 1-100.",
 startlevel=50.0,
@@ -1254,6 +1282,7 @@ collect 45 Desolate Leather##172089
 |only if skill("Shadowlands Engineering") < 75
 step
 collect 60 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guide to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Engineering") < 75
 step
@@ -1336,29 +1365,29 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Shadowlands\\Shadowlands Fishing 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Shadowlands Fishing 1-200",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through leveling your Shadowlands Fishing profession from 1-175.",
+description="\nThis guide will walk you through leveling your Shadowlands Fishing profession from 1-200.",
 startlevel=50.0,
-condition_end=function() return skill('Shadowlands Fishing') >= 175 end,
-condition_suggested=function() return skill('Shadowlands Fishing') > 0 and skill('Shadowlands Fishing') < 175 and level >= 50 end,
+condition_end=function() return skill('Shadowlands Fishing') >= 200 end,
+condition_suggested=function() return skill('Shadowlands Fishing') > 0 and skill('Shadowlands Fishing') < 200 and level >= 50 end,
 },[[
 step
 talk Retriever Au'prin##156671
 Train Fishing |skillmax Fishing,300 |goto Oribos/0 47.53,23.59
 step
 talk Retriever Au'prin##156671
-Train Shadowlands Fishing |skillmax Shadowlands Fishing,175 |goto 47.53,23.59
+Train Shadowlands Fishing |skillmax Shadowlands Fishing,200 |goto 47.53,23.59
 step
 Fish in the open water
 |tip You can fish anywhere and gain skill.
 |tip If you want to fish up specific fish, refer to one of our farming guides.
-Reach Level 175 Shadowlands Fishing |skill Shadowlands Fishing,175 |goto Bastion/0 52.10,76.06
+Reach Level 200 Shadowlands Fishing |skill Shadowlands Fishing,200 |goto Bastion/0 52.10,76.06
 step
 _Congratulations!_
-You Reached 175 Shadowlands Fishing Skill.
+You Reached 200 Shadowlands Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Iridescent Amberjack",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Iridescent Amberjack",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Iridescent Amberjack for various Cooking recipes.",
 startlevel=50.0,
@@ -1369,7 +1398,7 @@ use Iridescent Amberjack Bait##173039
 |tip These have a chance to drop while fishing in Ardenweald, use them to increase the chance of catching Iridescent Amberjacks.
 collect Iridescent Amberjack##173033 |n |goto Ardenweald/0 49.36,52.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Lost Sole",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Lost Sole",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Lost Sole for various Cooking recipes.",
 startlevel=50.0,
@@ -1380,7 +1409,7 @@ use Lost Sole Bait##173038
 |tip These have a chance to drop while fishing in Ardenweald, use them to increase the chance of catching Lost Soles.
 collect Lost Sole##173032 |n |goto Ardenweald/0 49.36,52.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Pocked Bonefish",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Pocked Bonefish",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Pocked Bonefish for various Cooking recipes.",
 startlevel=50.0,
@@ -1391,7 +1420,7 @@ use Pocked Bonefish Bait##173041
 |tip These have a chance to drop while fishing in Maldraxxus, use them to increase the chance of catching Pocked Bonefish.
 collect Pocked Bonefish##173035 |n |goto Maldraxxus/0 49.57,54.10
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Silvergill Pike",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Silvergill Pike",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Silvergill Pike for various Cooking recipes.",
 startlevel=50.0,
@@ -1402,7 +1431,7 @@ use Silvergill Pike Bait##173040
 |tip These have a chance to drop while fishing in Bastion, use them to increase the chance of catching Silvergill Pikes.
 collect Silvergill Pike##173034 |n |goto Bastion/0 49.29,64.34
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Spinefin Piranha",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Spinefin Piranha",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Spinefin Piranha for various Cooking recipes.",
 startlevel=50.0,
@@ -1413,7 +1442,7 @@ use Spinefin Piranha Bait##173042
 |tip These have a chance to drop while fishing in Revendreth, use them to increase the chance of catching Spinefin Piranhas.
 collect Spinefin Piranha##173036 |n |goto Revendreth/0 51.31,63.83
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shadowlands\\Elysian Thade",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Elysian Thade",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Elysian Thade for various Cooking recipes.",
 startlevel=50.0,
@@ -1424,19 +1453,19 @@ use Elysian Thade Bait##173043
 |tip These have a chance to drop while fishing in Ardenweald, use them to increase the chance of catching Elysian Thades.
 collect Elysian Thade##173037 |n |goto Ardenweald/0 49.36,52.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Shadowlands\\Shadowlands Herbalism 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Shadowlands Herbalism 1-150",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through leveling your Shadowlands Herbalism profession from 1-175.",
+description="\nThis guide will walk you through leveling your Shadowlands Herbalism profession from 1-150.",
 startlevel=50.0,
-condition_end=function() return skill('Shadowlands Herbalism') >= 175 end,
-condition_suggested=function() return skill('Shadowlands Herbalism') > 0 and skill('Shadowlands Herbalism') < 175 and level >= 50 end,
+condition_end=function() return skill('Shadowlands Herbalism') >= 150 end,
+condition_suggested=function() return skill('Shadowlands Herbalism') > 0 and skill('Shadowlands Herbalism') < 150 and level >= 50 end,
 },[[
 step
 talk Selector Au'mar##156686
 Train Herbalism |skillmax Herbalism,300 |goto Oribos/0 40.24,38.24
 step
 talk Selector Au'mar##156686
-Train Shadowlands Herbalism |skillmax Shadowlands Herbalism,175 |goto 40.24,38.24
+Train Shadowlands Herbalism |skillmax Shadowlands Herbalism,150 |goto 40.24,38.24
 step
 map Bastion/0
 path follow smart; loop on; ants straight; dist 30
@@ -1449,12 +1478,12 @@ path	44.82,53.70	45.77,59.11	46.51,63.47	47.38,68.79	46.05,69.49
 path	46.76,71.68
 Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
-Reach Level 175 Shadowlands Herbalism |skill Shadowlands Herbalism,175
+Reach Level 150 Shadowlands Herbalism |skill Shadowlands Herbalism,150
 step
 _Congratulations!_
-You Reached 175 Shadowlands Herbalism Skill.
+You Reached 150 Shadowlands Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Shadowlands\\Death Blossom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Death Blossom",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Death Blossom for various profession recipes.",
 startlevel=56.0,
@@ -1472,7 +1501,7 @@ click Death Blossom##336686+
 |tip Track them on your minimap with "Find Herbs".
 collect Death Blossom##169701 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Shadowlands\\Marrowroot",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Marrowroot",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Marrowroot for various profession recipes.",
 startlevel=53.0,
@@ -1490,7 +1519,7 @@ click Marrowroot##336689+
 |tip Track them on your minimap with "Find Herbs".
 collect Marrowroot##168589 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Shadowlands\\Vigil's Torch",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Vigil's Torch",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Vigil's Torch for various profession recipes.",
 startlevel=56.0,
@@ -1508,7 +1537,7 @@ click Vigil's Torch##336688+
 |tip Track them on your minimap with "Find Herbs".
 collect Vigil's Torch##170554 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Shadowlands\\Rising Glory",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Rising Glory",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Rising Glory for various profession recipes.",
 startlevel=50.0,
@@ -1527,7 +1556,7 @@ click Rising Glory##336690+
 |tip Track them on your minimap with "Find Herbs".
 collect Rising Glory##168586 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Shadowlands\\Widowbloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Widowbloom",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Widowbloom for various profession recipes.",
 startlevel=58.0,
@@ -1543,7 +1572,7 @@ click Widowbloom##336433+
 |tip Track them on your minimap with "Find Herbs".
 collect Widowbloom##168583 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Shadowlands\\Nightshade",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Nightshade",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Nightshade for various profession recipes.",
 startlevel=53.0,
@@ -1561,7 +1590,7 @@ click Nightshade##336691+
 |tip Track them on your minimap with "Find Herbs".
 collect Nightshade##171315 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Shadowlands\\Shadowlands Inscription 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Shadowlands Inscription 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Inscription profession from 1-100.",
 startlevel=50.0,
@@ -1805,7 +1834,7 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Shadowlands\\Shadowlands Jewelcrafting 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Shadowlands Jewelcrafting 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Jewelcrafting profession from 1-100.",
 startlevel=50.0,
@@ -1947,7 +1976,7 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Shadowlands\\Shadowlands Leatherworking 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Shadowlands Leatherworking 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Leatherworking profession from 1-100.",
 startlevel=50.0,
@@ -2146,19 +2175,19 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Shadowlands\\Shadowlands Mining 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Shadowlands Mining 1-150",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through leveling your Shadowlands Mining profession from 1-175.",
+description="\nThis guide will walk you through leveling your Shadowlands Mining profession from 1-150.",
 startlevel=50.0,
-condition_end=function() return skill('Shadowlands Mining') >= 175 end,
-condition_suggested=function() return skill('Shadowlands Mining') > 0 and skill('Shadowlands Mining') < 175 and level >= 50 end,
+condition_end=function() return skill('Shadowlands Mining') >= 150 end,
+condition_suggested=function() return skill('Shadowlands Mining') > 0 and skill('Shadowlands Mining') < 150 and level >= 50 end,
 },[[
 step
 talk Excavationist Au'fer##156668
 Train Mining |skillmax Mining,300 |goto Oribos/0 39.30,32.95
 step
 talk Excavationist Au'fer##156668
-Train Shadowlands Mining |skillmax Shadowlands Mining,175 |goto 39.30,32.95
+Train Shadowlands Mining |skillmax Shadowlands Mining,150 |goto 39.30,32.95
 step
 map Bastion/0
 path follow smart; loop on; ants straight; dist 30
@@ -2173,12 +2202,12 @@ path	48.44,71.36	49.59,70.24
 Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip Enter caves along the path for additional nodes.
-Reach Level 175 Shadowlands Mining |skill Shadowlands Mining,175
+Reach Level 150 Shadowlands Mining |skill Shadowlands Mining,150
 step
 _Congratulations!_
-You Reached 175 Shadowlands Mining Skill.
+You Reached 150 Shadowlands Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Shadowlands\\Elethium Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Elethium Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Elethium Ore for various profession recipes.",
 startlevel=50.0,
@@ -2201,7 +2230,7 @@ click Elethium Deposit##349900+
 |tip These are rare spawn nodes, so you likely won't find them in bulk.
 collect Elethium Ore##171833 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Shadowlands\\Laestrite Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Laestrite Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Laestrite Ore for various profession recipes.",
 startlevel=50.0,
@@ -2223,7 +2252,7 @@ click Laestrite Deposit##349898+
 |tip Enter caves along the path for additional nodes.
 collect Laestrite Ore##171828 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Shadowlands\\Oxxein Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Oxxein Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Oxxein Ore for various profession recipes.",
 startlevel=50.0,
@@ -2249,7 +2278,7 @@ click Oxxein Deposit##349981+
 |tip These are uncommon spawn nodes, so you likely won't find them in bulk.
 collect Oxxein Ore##171830 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Shadowlands\\Phaedrum Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Phaedrum Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Phaedrum Ore for various profession recipes.",
 startlevel=50.0,
@@ -2278,7 +2307,7 @@ click Phaedrum Deposit##349982+
 |tip These are uncommon spawn nodes, so you likely won't find them in bulk.
 collect Phaedrum Ore##171831 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Shadowlands\\Sinvyr Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Sinvyr Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Sinvyr Ore for various profession recipes.",
 startlevel=50.0,
@@ -2297,7 +2326,7 @@ click Sinvyr Deposit##349983+
 |tip These are uncommon spawn nodes, so you likely won't find them in bulk.
 collect Sinvyr Ore##171832 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Shadowlands\\Solenium Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Solenium Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Solenium Ore for various profession recipes.",
 startlevel=50.0,
@@ -2320,19 +2349,19 @@ click Solenium Deposit##349980+
 |tip These are uncommon spawn nodes, so you likely won't find them in bulk.
 collect Solenium Ore##171829 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Shadowlands\\Shadowlands Skinning 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Shadowlands Skinning 1-200",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through leveling your Shadowlands Skinning profession from 1-175.",
+description="\nThis guide will walk you through leveling your Shadowlands Skinning profession from 1-200.",
 startlevel=50.0,
-condition_end=function() return skill('Shadowlands Skinning') >= 175 end,
-condition_suggested=function() return skill('Shadowlands Skinning') > 0 and skill('Shadowlands Skinning') < 175 and level >= 50 end,
+condition_end=function() return skill('Shadowlands Skinning') >= 200 end,
+condition_suggested=function() return skill('Shadowlands Skinning') > 0 and skill('Shadowlands Skinning') < 200 and level >= 50 end,
 },[[
 step
 talk Flayer Au'khem##156667
 Train Skinning |skillmax Skinning,300 |goto Oribos/0 42.15,28.10
 step
 talk Flayer Au'khem##156667
-Train Shadowlands Skinning |skillmax Shadowlands Skinning,175 |goto 42.15,28.10
+Train Shadowlands Skinning |skillmax Shadowlands Skinning,200 |goto 42.15,28.10
 step
 map Bastion/0
 path follow smart; loop on; ants straight; dist 30
@@ -2345,12 +2374,12 @@ path	44.82,53.70	45.77,59.11	46.51,63.47	47.38,68.79	46.05,69.49
 path	46.76,71.68
 Kill Beast enemies as you follow the path around this area
 |tip Loot and skin them.
-Reach Level 175 Shadowlands Skinning |skill Shadowlands Skinning,175
+Reach Level 200 Shadowlands Skinning |skill Shadowlands Skinning,200
 step
 _Congratulations!_
-You Reached 175 Shadowlands Skinning Skill.
+You Reached 200 Shadowlands Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Desolate Hide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Desolate Hide",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Desolate Hide for various profession recipes.",
 startlevel=50.0,
@@ -2361,7 +2390,7 @@ kill Horrific Bonemauler##156596+
 collect Desolate Hide##172094 |n |goto Revendreth/0 41.84,65.35
 You can find more around [44.85,72.54]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Desolate Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Desolate Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Desolate Leather for various profession recipes.",
 startlevel=50.0,
@@ -2380,7 +2409,7 @@ Kill Beast enemies as you follow the path around this area
 |tip Loot and skin them.
 collect Desolate Leather##172089 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Gaunt Sinew",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Gaunt Sinew",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Gaunt Sinew for various profession recipes.",
 startlevel=50.0,
@@ -2390,7 +2419,7 @@ kill Virulent Pest##159856+
 |tip Loot and skin them.
 collect Gaunt Sinew##177279 |n |goto Maldraxxus/0 54.31,58.44
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Heavy Desolate Hide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Desolate Hide",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Heavy Desolate Hide for various profession recipes.",
 startlevel=50.0,
@@ -2402,7 +2431,7 @@ collect Heavy Desolate Hide##172097 |n |goto Revendreth/0 45.35,69.45
 |tip Heavy Desolate Hide is rare, so it may take a while to collect them.
 You can find more around [45.46,63.74]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Heavy Desolate Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Desolate Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Heavy Desolate Leather for various profession recipes.",
 startlevel=50.0,
@@ -2413,7 +2442,7 @@ Kill Rune enemies around this area
 collect Heavy Desolate Leather##172096 |n |goto Ardenweald/0 59.06,38.26
 You can find more around [57.30,41.89]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Necrotic Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Necrotic Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Necrotic Leather for various profession recipes.",
 startlevel=50.0,
@@ -2424,7 +2453,7 @@ kill Virulent Pest##159856+
 collect Necrotic Leather##172332 |n |goto Maldraxxus/0 54.31,58.44
 |tip Necrotic Leather is rare, so it may take a while to collect them.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Pallid Bone",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Pallid Bone",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Pallid Bone for various profession recipes.",
 startlevel=50.0,
@@ -2436,7 +2465,7 @@ Kill Skyripper enemies around this area
 collect Pallid Bone##172092 |n |goto 58.05,89.81
 You can find more around [54.15,90.31]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Purified Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Purified Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Purified Leather for various profession recipes.",
 startlevel=50.0,
@@ -2456,7 +2485,7 @@ Kill Beast enemies as you follow the path around this area
 collect Purified Leather##172333 |n
 |tip Purified Leather is rare, so it may take a while to collect them.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Sinful Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Sinful Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Sinful Leather for various profession recipes.",
 startlevel=50.0,
@@ -2468,7 +2497,7 @@ collect Sinful Leather##172331 |n |goto Revendreth/0 45.35,69.45
 |tip Sinful Leather is rare, so it may take a while to collect them.
 You can find more around [45.46,63.74]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shadowlands\\Unseelie Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Unseelie Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Unseelie Leather for various profession recipes.",
 startlevel=50.0,
@@ -2480,7 +2509,7 @@ collect Unseelie Leather##172330 |n |goto Ardenweald/0 59.06,38.26
 |tip Unseelie Leather is rare, so it may take a while to collect them.
 You can find more around [57.30,41.89]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Shadowlands\\Shadowlands Tailoring 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Shadowlands Tailoring 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Shadowlands Tailoring profession from 1-100.",
 startlevel=50.0,
@@ -2495,6 +2524,7 @@ talk Stitcher Au'phes##156681
 Train Shadowlands Tailoring |skillmax Shadowlands Tailoring,100 |goto 45.50,31.80
 step
 collect 9 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 10
 step
@@ -2510,6 +2540,7 @@ buy 24 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 26
 step
 collect 40 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 26
 step
@@ -2525,6 +2556,7 @@ buy 40 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 40
 step
 collect 35 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 40
 step
@@ -2536,6 +2568,7 @@ talk Stitcher Au'phes##156681
 Train Heavy Shrouded Cloth Bandage |learn Heavy Shrouded Cloth Bandage##310923 |goto 45.50,31.80
 step
 collect 30 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 55
 step
@@ -2551,10 +2584,12 @@ buy 40 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 65
 step
 collect 25 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 65
 step
 collect 20 Lightless Silk##173204
+|tip Use the "Lightless Silk" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 65
 step
@@ -2570,10 +2605,12 @@ buy 50 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 75
 step
 collect 50 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 75
 step
 collect 40 Lightless Silk##173204
+|tip Use the "Lightless Silk" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 75
 step
@@ -2589,10 +2626,12 @@ buy 16 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 81
 step
 collect 12 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 81
 step
 collect 10 Lightless Silk##173204
+|tip Use the "Lightless Silk" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 81
 step
@@ -2608,10 +2647,12 @@ buy 30 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 90
 step
 collect 21 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 90
 step
 collect 18 Lightless Silk##173204
+|tip Use the "Lightless Silk" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 90
 step
@@ -2627,10 +2668,12 @@ buy 30 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 99
 step
 collect 21 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 99
 step
 collect 18 Lightless Silk##173204
+|tip Use the "Lightless Silk" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 99
 step
@@ -2646,10 +2689,12 @@ buy 8 Penumbra Thread##177062 |goto 44.47,26.51
 |only if skill("Shadowlands Tailoring") < 100
 step
 collect 6 Shrouded Cloth##173202
+|tip Use the "Shrouded Cloth" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 100
 step
 collect 5 Lightless Silk##173204
+|tip Use the "Lightless Silk" farming guides to accomplish this.
 |tip You can also purchase them from the Auction House.
 |only if skill("Shadowlands Tailoring") < 100
 step
@@ -2660,20 +2705,19 @@ step
 _Congratulations!_
 You Reached 100 Shadowlands Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Shadowlands\\Lightless Silk",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Lightless Silk",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Lightless Silk for various profession recipes.",
 startlevel=50.0,
 },[[
 step
-Kill Humanoid enemies around this area
-|tip Drust, Drustfallen and Drustcrazed enemies can drop this item.
-collect Lightless Silk##173204 |n |goto Ardenweald/0 37.69,64.99
-You can find more around: |notinsticky
-[36.99,66.62]
-[37.65,69.11]
+kill Seed Harvester##166327+
+collect Lightless Silk##173204 |n |goto Ardenweald/0 44.25,24.28
+|tip These are a rare drop.
+You can find more around [43.95,21.57]
+And inside the cave at [42.39,23.81]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Shadowlands\\Shrouded Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Shrouded Cloth",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Shrouded Cloth for various profession recipes.",
 startlevel=50.0,
@@ -2682,4 +2726,5 @@ step
 kill Seed Harvester##166327+
 collect Shrouded Cloth##173202 |n |goto Ardenweald/0 44.25,24.28
 You can find more around [43.95,21.57]
+And inside the cave at [42.39,23.81]
 ]])

@@ -9483,7 +9483,7 @@ description="\nThis guide will walk you through completing the \"Master of the B
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Brew cooking on a single character
-Click here to load the Way of the Brew guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Brew 1-75"
+Click here to load the Way of the Brew guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Brew 1-75"
 Earn the Master of the Brew Achievement |achieve 7305
 step
 _Congratulations!_
@@ -9500,7 +9500,7 @@ description="\nThis guide will walk you through completing the \"Master of the G
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Grill cooking on a single character
-Click here to load the Way of the Grill guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Grill 1-75"
+Click here to load the Way of the Grill guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Grill 1-75"
 Earn the Master of the Grill Achievement |achieve 7300
 step
 _Congratulations!_
@@ -9517,7 +9517,7 @@ description="\nThis guide will walk you through completing the \"Master of the O
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Oven cooking on a single character
-Click here to load the Way of the Oven guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Oven 1-75"
+Click here to load the Way of the Oven guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Oven 1-75"
 Earn the Master of the Oven Achievement |achieve 7304
 step
 _Congratulations!_
@@ -9563,7 +9563,7 @@ description="\nThis guide will walk you through completing the \"Master of the P
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Pot cooking on a single character
-Click here to load the Way of the Pot guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Pot 1-75"
+Click here to load the Way of the Pot guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Pot 1-75"
 Earn the Master of the Pot Achievement |achieve 7302
 step
 _Congratulations!_
@@ -9580,7 +9580,7 @@ description="\nThis guide will walk you through completing the \"Master of the S
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Steamer cooking on a single character
-Click here to load the Way of the Steamer guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Steamer 1-75"
+Click here to load the Way of the Steamer guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Steamer 1-75"
 Earn the Master of the Steamer Achievement |achieve 7303
 step
 _Congratulations!_
@@ -9597,7 +9597,7 @@ description="\nThis guide will walk you through completing the \"Master of the W
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Wok cooking on a single character
-Click here to load the Way of the Wok guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Mists of Pandaria\\Pandaria Way of the Wok 1-75"
+Click here to load the Way of the Wok guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Pandaria Way of the Wok 1-75"
 Earn the Master of the Wok Achievement |achieve 7301
 step
 _Congratulations!_

@@ -46,7 +46,7 @@ data.taxipoints = {
 	['Elysian Hold']={
 
 		-- NEUTRAL --
-		{name="Elysian Hold",faction="B",npc="Cassius",npcid=159421,x=50.94,y=49.03,taxinodeID=2528},
+		{name="Elysian Hold",faction="B",npc="Cassius",npcid=159421,x=50.94,y=49.03,taxinodeID=2528,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian or c.covenant()==0 end},
 		{name="Elysian Hold",faction="B",npc="Eternal Gateway",npcid="eg",x=48.67,y=61.68,taxioperator="eternalgateway",taxinodeID=2625,quest=63052,recheck=true,cond_fun==function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Kyrian end},
 	},
 
@@ -59,8 +59,8 @@ data.taxipoints = {
 		{name="Renounced Bastille",faction="B",npc="Felsen Wingclip",npcid=157516,x=67.93,y=45.84},
 		{name="Keres' Rest",faction="B",npc="Fly-eyed Eliera",npcid=157517,x=53.82,y=30.69},
 		{name="Spider's Watch",faction="B",npc="Flight Master Nudolva",npcid=157518,x=37.51,y=29.22},
-		{name="The Spearhead",faction="B",npc="Wing Guard Aela",npcid=157519,x=39.03,y=55.24},
-		{name="Bleak Redoubt",faction="B",npc="Wing Guard Buurkin",npcid=157514,x=52.47,y=67.65},
+		{name="The Spearhead",faction="B",npc="Wing Guard Aela",npcid=157519,x=39.03,y=55.24,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()~=c.Necrolord end},
+		{name="Bleak Redoubt",faction="B",npc="Wing Guard Buurkin",npcid=157514,x=52.47,y=67.65,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Necrolord or c.covenant()==0 end},
 	},
 
 
@@ -70,7 +70,7 @@ data.taxipoints = {
 		{name="Tirna Vaal",faction="B",npc="Lanra",npcid=165164,x=63.46,y=37.56},
 		{name="Hibernal Hollow",faction="B",npc="Na'lor",npcid=165166,x=60.35,y=53.49},
 		{name="Claw's Edge",faction="B",npc="V'kerra",npcid=167247,x=51.30,y=71.31},
-		{name="Refugee Camp",faction="B",npc="Derwynnthlmn",npcid=167255,x=49.35,y=51.82},
+		{name="Refugee Camp",faction="B",npc="Derwynnthlmn",npcid=167255,x=49.35,y=51.82,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()~=c.NightFae end},
 		{name="Glitterfall Basin",faction="B",npc="Dwyl'ir",npcid=167243,x=51.42,y=34.52},
 		{name="Root-Home",faction="B",npc="Tishereenelee",npcid=167265,x=35.14,y=51.71},
 		{name="Heart of the Forest",faction="B",npc="Ceridwyn",npcid=165701,x=46.26,y=50.81,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.NightFae end},
@@ -95,7 +95,7 @@ data.taxipoints = {
 	['Sinfall']={
 
 		-- NEUTRAL --
-		{name="Sinfall",faction="B",npc="Courier Snaggle",npcid=162702,x=67.31,y=21.42},
+		{name="Sinfall",faction="B",npc="Courier Snaggle",npcid=162702,x=67.31,y=21.42,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Venthyr or c.covenant()==0 end},
 	},
 },
 

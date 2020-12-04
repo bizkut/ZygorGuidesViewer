@@ -415,7 +415,7 @@ function ZGV:Options_DefineOptionTables()
 
 		AddOption('opacity',{
 			type = 'select',
-			values = {[0.1]=L["opt_opacity_low"],[0.2]="'",[0.3]="'",[0.4]="||",[0.5]="'",[0.6]="'",[0.7]="'",[0.8]="'",[0.9]="'",[1]=L["opt_opacity_high"]},
+			values = {[0.5]=L["opt_opacity_low"],[0.55]="'",[0.6]="'",[0.65]="||",[0.7]="'",[0.75]="'",[0.8]="'",[0.85]="'",[0.9]="'",[1]=L["opt_opacity_high"]},
 			style = 'slider',
 			set = function(i,v)
 				Setter_Simple(i,v)
@@ -430,7 +430,7 @@ function ZGV:Options_DefineOptionTables()
 		AddOption('',{ type = 'description', name="  ", width=30})
 		AddOption('opacitymenu',{
 			type = 'select',
-			values = {[0.1]=L["opt_opacity_low"],[0.2]="'",[0.3]="'",[0.4]="||",[0.5]="'",[0.6]="'",[0.7]="'",[0.8]="'",[0.9]="'",[1]=L["opt_opacity_high"]},
+			values = {[0.5]=L["opt_opacity_low"],[0.55]="'",[0.6]="'",[0.65]="||",[0.7]="'",[0.75]="'",[0.8]="'",[0.85]="'",[0.9]="'",[1]=L["opt_opacity_high"]},
 			style = 'slider',
 			set = function(i,v)
 				Setter_Simple(i,v)
@@ -639,6 +639,40 @@ function ZGV:Options_DefineOptionTables()
 			_inline=true,
 			disabled = function() return not self.db.profile.enable_actionbuttons end,
 		})
+		AddOptionSpace()
+
+		AddOption('',{ type = 'description', name=L['opt_actionbar_types_title'], font=ZGV.font_dialog_gray})
+		AddOption('actionbar_quest',{ 
+			type = 'toggle', 
+			_default = true, 
+			width = "full", 
+			set = function(i,v)
+				Setter_Simple(i,v)
+				ZGV.ActionBar:SetActionButtons()
+			end,
+			disabled = function() return not self.db.profile.enable_actionbuttons end,
+		})
+		AddOption('actionbar_talk',{ 
+			type = 'toggle', 
+			_default = true, 
+			width = "full", 
+			set = function(i,v)
+				Setter_Simple(i,v)
+				ZGV.ActionBar:SetActionButtons()
+			end,
+			disabled = function() return not self.db.profile.enable_actionbuttons end,
+		})
+		AddOption('actionbar_kill',{ 
+			type = 'toggle', 
+			_default = true, 
+			width = "full", 
+			set = function(i,v)
+				Setter_Simple(i,v)
+				ZGV.ActionBar:SetActionButtons()
+			end,
+			disabled = function() return not self.db.profile.enable_actionbuttons end,
+		})
+
 		AddOptionSpace()
 		AddOption('targetonclick',{ 
 			type = 'toggle', 
@@ -1580,7 +1614,7 @@ function ZGV:Options_DefineOptionTables()
 			AddOption('n_popup_dungeon',{ type = 'toggle', width = "full", _default = true, disabled = function() return not self.db.profile.n_popup_enable end,})
 			AddOption('n_popup_monk',{ type = 'toggle', width = "full", _default = true, disabled=function() return not (select(3,UnitClass("player"))==10 and self.db.profile.n_popup_enable) end ,--[[ hidden=function() return select(3,UnitClass("player"))~=10 end,--]] })
 			AddOption('n_popup_pet',{ type = 'toggle', width = "full", _default = true ,--[[ hidden=function() return select(3,UnitClass("player"))~=10 end,--]] })
-			AddOption('n_popup_wq',{ type = 'toggle', width = "full", _default = true, set = function(i,v) Setter_Simple(i,v) if v then self.db.profile.worldquestmap = true end end, disabled = function() return not self.db.profile.n_popup_enable end, })
+			--AddOption('n_popup_wq',{ type = 'toggle', width = "full", _default = true, set = function(i,v) Setter_Simple(i,v) if v then self.db.profile.worldquestmap = true end end, disabled = function() return not self.db.profile.n_popup_enable end, })
 
 			AddOptionSpace()
 

@@ -321,15 +321,15 @@ local modecolors = {
 	["?"] = "|cff888888",
 }
 function Node:IsTaxiKnown()
-	if self.known==true and not self.recheck then return true,"|cff00ff00known|r"
-	elseif self.known==false and not self.recheck then return false,"|cffff0000unknown|r"
-	elseif (self.quest and not IsQuestFlaggedCompleted(self.quest)) then return false,"|cffff0000assumed unknown (quest incomp)|r"
-	elseif (self.factionid and ZGV:GetReputation(self.factionid).standing<(self.factionstanding or 3)) then return false,"|cffff0000assumed unknown (faction rep)|r"
-	elseif (self.cond_fun and not self.cond_fun()) then return false,"|cffff0000assumed unknown (cond fail)|r"
-	elseif (self.level and ZGV:GetPlayerPreciseLevel()<self.level) or (not C_Map.GetMapLevels(self.m) or C_Map.GetMapLevels(self.m)>ZGV:GetPlayerPreciseLevel()+5) then return false,"|cffff0000assumed unknown (high lvl)|r"
-	elseif self.known==true then return true,"|cff00ff00known|r"
-	elseif self.known==false then return false,"|cffff0000unknown|r"
-	else return nil,"|cffffaa00maybe?|r" end
+	if self.known==true and not self.recheck then return true,"|cff00ff00known|r",true
+	elseif self.known==false and not self.recheck then return false,"|cffff0000unknown|r",true
+	elseif (self.quest and not IsQuestFlaggedCompleted(self.quest)) then return false,"|cffff0000assumed unknown (quest incomp)|r",false
+	elseif (self.factionid and ZGV:GetReputation(self.factionid).standing<(self.factionstanding or 3)) then return false,"|cffff0000assumed unknown (faction rep)|r",false
+	elseif (self.cond_fun and not self.cond_fun()) then return false,"|cffff0000assumed unknown (cond fail)|r",false
+	elseif (self.level and ZGV:GetPlayerPreciseLevel()<self.level) or (not C_Map.GetMapLevels(self.m) or C_Map.GetMapLevels(self.m)>ZGV:GetPlayerPreciseLevel()+5) then return false,"|cffff0000assumed unknown (high lvl)|r",false
+	elseif self.known==true then return true,"|cff00ff00known|r",true
+	elseif self.known==false then return false,"|cffff0000unknown|r",true
+	else return nil,"|cffffaa00maybe?|r",true end
 end
 
 function Node:tostring(withneighs)

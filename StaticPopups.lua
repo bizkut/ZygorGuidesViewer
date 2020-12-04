@@ -109,7 +109,7 @@ end
 
 function Popup:AdjustSize()
 	local offsets = 10 + 10 + 5 --Logo and top + text and buttons + buttons and bottom
-	local height = offsets + self.text:GetStringHeight() + self.text2:GetStringHeight() + self.text3checkbox:GetStringHeight() + self.morebutton:GetHeight() + self.logo:GetHeight() + self.acceptbutton:GetHeight()
+	local height = offsets + self.text:GetStringHeight() + self.text2:GetStringHeight() + self.text3checkbox:GetStringHeight() + self.morebutton:GetHeight() + (self.logo:IsVisible() and self.logo:GetHeight() or 5) + self.acceptbutton:GetHeight()
 	local minWidth = self.acceptbutton:GetWidth() + self.declinebutton:GetWidth() + self.settings:GetWidth()
 	local width = min(max(minWidth,max(self.text:GetStringWidth(),self.text2:GetStringWidth())) + 50 , MAXWIDTH)
 
@@ -285,7 +285,7 @@ function PopupHandler:CreatePopup(name,skin)
 	popup.logo:SetParent(popup.logobackground)
 
 	popup.background = CHAIN(ui:Create("Frame",popup))
-		:SetPoint("TOP",popup.logo,"BOTTOM",0,0)
+		:SetPoint("TOP",popup.logobackground,"BOTTOM",0,0)
 		:SetPoint("LEFT",0,0)
 		:SetPoint("RIGHT",0,0)
 		:SetPoint("BOTTOM",0,0)
@@ -388,17 +388,32 @@ function PopupHandler:CreatePopup(name,skin)
 		local function set_alpha(new_a,r,g,b,a) return r,g,b,new_a*a end
 		local OPACITY = SkinData("UseOpacity") and ZGV.db.profile.opacity or  1
 
+		CHAIN(popup)
+			:SetBackdropColor(0,0,0,0)
+			:SetBackdropBorderColor(0,0,0,0)
+
 		CHAIN(popup.logobackground)
 			:SetBackdrop(SkinData("NotificationPopupHeaderBackdrop"))
-			:SetBackdropColor(unpack(SkinData("NotificationPopupHeaderBackdropColor")))
-			:SetBackdropBorderColor(unpack(SkinData("NotificationPopupHeaderBackdropBorderColor")))
+			:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("NotificationPopupHeaderBackdropColor"))))
+			:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("NotificationPopupHeaderBackdropBorderColor"))))
 			:SquareCorners(false,false,true,true)
 
-		CHAIN(popup)
+		CHAIN(popup.background)
 			:SetBackdrop(SkinData("NotificationPopupContentBackdrop"))
-			:SetBackdropColor(set_alpha(OPACITY,unpack(SkinData("NotificationPopupContentBackdropColor"))))
-			:SetBackdropBorderColor(set_alpha(OPACITY,unpack(SkinData("NotificationPopupContentBackdropBorderColor"))))
-			:SquareCorners(false,false,false,true)
+			:SetBackdropColor(unpack(SkinData("NotificationPopupContentBackdropColor")))
+			:SetBackdropBorderColor(unpack(SkinData("NotificationPopupContentBackdropBorderColor")))
+
+		if SkinData("NotificationPopupShowHeader") then
+			popup.logo:Show()
+			popup.logobackground:Show()
+			popup.background:SetPoint("TOP",popup.logobackground,"BOTTOM",0,0)
+			popup.background:SquareCorners(true,true,false,false)
+		else
+			popup.logo:Hide()
+			popup.logobackground:Hide()
+			popup.background:SetPoint("TOP",popup,"TOP",0,0)
+			popup.background:SquareCorners(false,false,false,false)
+		end
 
 		CHAIN(popup.morebutton)
 			:SetBackdrop(SkinData("ButtonBackdrop1"))
@@ -420,6 +435,8 @@ function PopupHandler:CreatePopup(name,skin)
 			:SetBackdropBorderColor(unpack(SkinData("ButtonBorderColor1")))
 			:SetHighlightBackdropColor(unpack(SkinData("ButtonHighlightColor1")))
 			:SetPushedBackdropColor(unpack(SkinData("Accent")))
+
+		if popup.AdjustSize then popup:AdjustSize() end
 	end
 
 	ZGV:AddMessageHandler("SKIN_UPDATED",popup.ApplySkin)

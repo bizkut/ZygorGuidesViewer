@@ -226,6 +226,8 @@ STYLE.NotificationDecorColor=STYLE.MainBackdropBorderColor
 STYLE.NotificationTextColor={0.8,0.8,0.8,1}
 STYLE.NotificationTextColorOver={1,1,1,1}
 STYLE.NotificationBubbleColor={HTMLColor("#fe6100ff")}
+
+STYLE.NotificationPopupShowHeader = true
 STYLE.NotificationPopupHeaderBackdrop=STYLE.MainBackdrop
 STYLE.NotificationPopupHeaderBackdropColor=STYLE.MainBackdropColor
 STYLE.NotificationPopupHeaderBackdropBorderColor=STYLE.MainBackdropBorderColor

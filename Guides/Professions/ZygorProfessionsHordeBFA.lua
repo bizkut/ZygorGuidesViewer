@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ProfessionsHBFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Battle for Azeroth\\Zandalari Alchemy 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Zandalari Alchemy 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Alchemy profession from 1-175.",
 startlevel=5.0,
@@ -141,7 +141,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Alchemy",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Tools of the Trade - Alchemy",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will learn Silas' Sphere of Transformation. This allows you to interact "..
 "with various cauldrons around Zandalar and Kul Tiras, as well as the ability to transmute the sphere temporarily.",
@@ -287,7 +287,7 @@ step
 _Congratulations!_
 You Reached 950 Archaeology Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Battle for Azeroth\\Zandalari Blacksmithing 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Zandalari Blacksmithing 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Blacksmithing profession from 1-175.",
 startlevel=5.0,
@@ -424,7 +424,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Blacksmithing",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Tools of the Trade - Blacksmithing",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn Khaz'gorian Smithing Hammer. This allows you to repair a piece of "..
 "your equipment instantly, as well as granting a chance for your Blacksmithing-created items to be Indestructible.",
@@ -522,7 +522,7 @@ step
 talk Forgemaster Zak'aal##127112
 turnin Anvil's Away##50279 |goto Dazar'alor/0 43.64,38.29
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Battle for Azeroth\\Zandalari Cooking 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Zandalari Cooking 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Cooking profession from 1-175.",
 startlevel=5.0,
@@ -533,7 +533,7 @@ step
 talk T'sarah the Royal Chef##141549
 Learn Zandalari Cooking |skillmax Zandalari Cooking,175 |goto Dazar'alor/2 28.45,50.0
 step
-Load the "Aromatic Fish Oil" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Aromatic Fish Oil"
+Load the "Aromatic Fish Oil" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Aromatic Fish Oil"
 |tip Click the line above to load the guide.
 |tip You will need the "Fishing" skill in order to utilize the guide.
 collect 98 Aromatic Fish Oil##160711
@@ -571,7 +571,7 @@ step
 talk T'sarah the Royal Chef##141549
 Learn the Recipe for Honey-Glazed Haunches |learn Honey-Glazed Haunches##259414 |goto 28.45,50.0
 step
-Load the "Meaty Haunch" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Meaty Haunch"
+Load the "Meaty Haunch" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Meaty Haunch"
 |tip Click the line above to load the guide.
 collect 600 Meaty Haunch##154898
 |tip You can also purchase them from the Auction House.
@@ -622,35 +622,35 @@ collect 420 Kul Tiramisu##154881
 |tip 345 Major's Frothy Coffee.
 |only if skill("Zandalari Cooking") < 145
 step
-Load the "Redtail Loach" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Redtail Loach"
+Load the "Redtail Loach" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Redtail Loach"
 |tip Click the line above to load the guide.
 |tip You will need the "Fishing" skill in order to utilize the guide.
 collect 700 Redtail Loach##152549
 |tip You can also purchase them from the Auction House.
 only if skill("Zandalari Cooking") < 145
 step
-Load the "Frenzied Fangtooth" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Frenzied Fangtooth"
+Load the "Frenzied Fangtooth" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Frenzied Fangtooth"
 |tip Click the line above to load the guide.
 |tip You will need the "Fishing" skill in order to utilize the guide.
 collect 700 Frenzied Fangtooth##152545
 |tip You can also purchase them from the Auction House.
 only if skill("Zandalari Cooking") < 145
 step
-Load the "Stringy Loins" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Stringy Loins"
+Load the "Stringy Loins" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Stringy Loins"
 |tip Click the line above to load the guide.
 |tip You will need the "Fishing" skill in order to utilize the guide.
 collect 700 Stringy Loins##154897
 |tip You can also purchase them from the Auction House.
 only if skill("Zandalari Cooking") < 145
 step
-Load the "Meaty Haunch" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Meaty Haunch"
+Load the "Meaty Haunch" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Meaty Haunch"
 |tip Click the line above to load the guide.
 |tip You will need the "Fishing" skill in order to utilize the guide.
 collect 700 Meaty Haunch##154898
 |tip You can also purchase them from the Auction House.
 only if skill("Zandalari Cooking") < 145
 step
-Load the "Midnight Salmon" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Midnight Salmon"
+Load the "Midnight Salmon" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Midnight Salmon"
 |tip Click the line above to load the guide.
 |tip You will need the "Fishing" skill in order to utilize the guide.
 collect 185 Midnight Salmon##162515
@@ -694,7 +694,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Aberrant Voidfin",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Aberrant Voidfin",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Aberrant Voidfin for various Cooking recipes.",
 startlevel=10.0,
@@ -705,7 +705,7 @@ step
 cast Fishing##131474
 collect Aberrant Voidfin##174328 |n |goto 72.64,58.11
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Briny Flesh",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Briny Flesh",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Briny Flesh for various Cooking recipes.",
 startlevel=10.0,
@@ -724,7 +724,7 @@ path	55.99,77.68	55.59,76.57	56.96,76.63	57.99,75.50	61.75,71.02
 path	63.96,67.56	65.65,60.20
 collect Briny Flesh##152631 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Malformed Gnasher",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Malformed Gnasher",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Malformed Gnasher for various Cooking recipes.",
 startlevel=10.0,
@@ -735,7 +735,7 @@ step
 cast Fishing##131474
 collect Malformed Gnasher##174327 |n |goto 82.96,58.25
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Meaty Haunch",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Meaty Haunch",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Meaty Haunch for various Cooking recipes.",
 startlevel=10.0,
@@ -746,7 +746,7 @@ Kill enemies around this area
 collect Meaty Haunch##154898 |n |goto Zuldazar/0 69.82,26.34
 You can find more around [70.34,23.77]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Moist Fillet",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Moist Fillet",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Moist Fillet for various Cooking recipes.",
 startlevel=10.0,
@@ -757,7 +757,7 @@ kill Deeptide Frenzy##144647+
 |tip Surface for air inside the cave and outside.
 collect Moist Fillet##168645 |goto Nazjatar/0 46.43,84.11 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Questionable Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Questionable Meat",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Questionable Meat for various Cooking recipes.",
 startlevel=10.0,
@@ -768,7 +768,7 @@ step
 kill Thundermaw##156778+
 collect Questionable Meat##174353 |n |goto 25.12,75.08
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Rubbery Flank",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Rubbery Flank",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Rubbery Flank for various Cooking recipes.",
 startlevel=10.0,
@@ -783,7 +783,7 @@ Kill enemies around this area
 |tip Kill Turtles and Snapdragons.
 collect Rubbery Flank##168303 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Stringy Loins",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Stringy Loins",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Stringy Loins for various Cooking recipes.",
 startlevel=10.0,
@@ -794,7 +794,7 @@ kill Shallows Saurolisk##125452
 collect Stringy Loins##154897 |n |goto Drustvar/0 68.2,40.6
 You can find more around [65.33,40.57]
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Thick Paleo Steak",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Thick Paleo Steak",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Thick Paleo Steak for various Cooking recipes.",
 startlevel=110.0,
@@ -804,7 +804,7 @@ kill Venomous Diemetradon##123098+
 |tip If you have the "Skinning" skill, you can gather extra meat.
 collect Thick Paleo Steak##154899 |n |goto Zuldazar/0 68.15,25.53
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Battle for Azeroth\\Zandalari Enchanting 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Zandalari Enchanting 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Enchanting profession from 1-175.",
 startlevel=5.0,
@@ -978,7 +978,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Enchanting",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Tools of the Trade - Enchanting",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn Iwen's Enchanting Rod. This allows you to animate golems "..
 "found in various locations around Zandalar and Kul Tiras, as well as granting additional Enchanting "..
@@ -1129,7 +1129,7 @@ talk Sef Iwen##146094
 |tip Inside the cave.
 turnin Putting It All Together##54002 |goto 57.76,80.76
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Battle for Azeroth\\Zandalari Engineering 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Zandalari Engineering 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Engineering profession from 1-175.",
 startlevel=5.0,
@@ -1156,7 +1156,7 @@ talk Shuga Blastcaps##131840
 buy 687 Insulated Wiring##163569 |goto 45.13,40.59
 |only if skill("Zandalari Engineering") < 85
 step
-Load the "Monelite Ore" guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Battle for Azeroth\\Monelite"
+Load the "Monelite Ore" guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Monelite"
 |tip Click the line above to load the guide.
 |tip You will need the "Mining" skill in order to utilize the guide.
 collect 920 Monelite Ore##152512
@@ -1170,7 +1170,7 @@ step
 talk Shuga Blastcaps##131840
 Learn the Recipe for the Deployable Attire Rearranger |learn Deployable Attire Rearranger##256154 |goto 45.13,40.59
 step
-Load the "Storm Silver Ore" guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Battle for Azeroth\\Storm Silver"
+Load the "Storm Silver Ore" guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Storm Silver"
 |tip Click the line above to load the guide.
 |tip You will need the "Mining" skill in order to utilize the guide.
 collect 930 Storm Silver##152579
@@ -1299,7 +1299,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Engineering",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Tools of the Trade - Engineering",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn the ability to create The Ub3r-Spanner. This allows you to summon "..
 "and craft Ub3r inventions with Engineering.",
@@ -1402,7 +1402,7 @@ step
 talk Shuga Blastcaps##131840
 turnin The Ub3r-Spanner##53937 |goto 45.13,40.59
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Battle for Azeroth\\Zandalari Fishing 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Zandalari Fishing 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Fishing profession from 1-175.",
 startlevel=5.0,
@@ -1423,7 +1423,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Aromatic Fish Oil",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Aromatic Fish Oil",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Aromatic Fish Oil for various Cooking recipes.",
 startlevel=10.0,
@@ -1437,7 +1437,7 @@ use the Sand Shifter##152543
 use the Slimy Mackerel##152544
 collect Aromatic Fish Oil##160711 |n |goto 49.34,97.57
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Frenzied Fangtooth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Frenzied Fangtooth",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Frenzied Fangtooth for various Cooking recipes.",
 startlevel=10.0,
@@ -1447,7 +1447,7 @@ Fish in the open water
 |tip You will occassionally catch Lane Snappers as well as Frenzied Fangtooth.
 collect Frenzied Fangtooth##152545 |n |goto Stormsong Valley/0 52.51,25.97
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Great Sea Catfish",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Great Sea Catfish",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Great Sea Catfish for various Cooking recipes.",
 startlevel=10.0,
@@ -1480,7 +1480,7 @@ Fish in Great Sea Catfish Schools
 collect Great Sea Catfish##152547 |n
 '|goto Nazmir/0 39.12,84.85 < 30 |c |noway |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Ionized Minnow",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Ionized Minnow",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Ionized Minnow for Spare Parts.",
 startlevel=10.0,
@@ -1489,7 +1489,7 @@ step
 cast Fishing##131474
 collect Ionized Minnow##167562 |n |goto Mechagon Island/0 35.99,49.21
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Lane Snapper",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Lane Snapper",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Lane Snapper for various Cooking recipes.",
 startlevel=10.0,
@@ -1499,7 +1499,7 @@ Fish in the open water
 |tip You will occassionally catch Lane Snappers as well as Frenzied Fangtooth.
 collect Lane Snapper##152546 |n |goto Stormsong Valley/0 52.51,25.97
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Mauve Stinger",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Mauve Stinger",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Mauve Stinger for various Cooking recipes.",
 startlevel=10.0,
@@ -1509,7 +1509,7 @@ cast Fishing##131474
 |tip You will catch Viper Fish as well as Mauve Stinger.
 collect Mauve Stinger##168646 |n |goto Nazjatar/0 72.86,24.71
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Midnight Salmon",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Midnight Salmon",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Midnight Salmon for various Cooking recipes.",
 startlevel=10.0,
@@ -1529,7 +1529,7 @@ collect Midnight Salmon##162515 |n
 |tip They look like small circular swirling spots in the water along the coast.
 |tip These can be found along the coasts of Stormsong Valley.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Redtail Loach",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Redtail Loach",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Redtail Loach for various Cooking recipes.",
 startlevel=10.0,
@@ -1562,7 +1562,7 @@ Fish in Great Sea Catfish Schools
 collect Great Sea Catfish##152547 |n
 '|goto Nazmir/0 39.12,84.85 < 30 |c |noway |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Sand Shifter",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Sand Shifter",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Sand Shifter for various Cooking recipes.",
 startlevel=10.0,
@@ -1572,7 +1572,7 @@ Fish in the open water
 |tip You will occassionally catch Slimy Mackerel as well as Sand Shifters.
 collect Sand Shifter##152543 |n |goto Nazmir/0 40.78,81.97
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Slimy Mackerel",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Slimy Mackerel",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Slimy Mackerel for various Cooking recipes.",
 startlevel=10.0,
@@ -1582,7 +1582,7 @@ Fish in the open water
 |tip You will occassionally catch Sand Shifters as well as Sand Shifters.
 collect Slimy Mackerel##152544 |n |goto Nazmir/0 40.78,81.97
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Tiragarde Perch",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Tiragarde Perch",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Tiragarde Perch for various Cooking recipes.",
 startlevel=10.0,
@@ -1592,7 +1592,7 @@ Fish in the small pond
 |tip You will occassionally catch Great Sea Catfish as well as Tiragarde Perch.
 collect Tiragarde Perch##152548 |n |goto Tiragarde Sound/0 77.67,67.30
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Viper Fish",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Viper Fish",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Viper Fish for various Cooking recipes.",
 startlevel=10.0,
@@ -1602,7 +1602,7 @@ cast Fishing##131474
 |tip You will catch Mauve Stinger as well as Viper Fish.
 collect Viper Fish##168302 |n |goto Nazjatar/0 72.86,24.71
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Battle for Azeroth\\Zandalari Herbalism 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Zandalari Herbalism 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Herbalism profession from 1-175.",
 startlevel=5.0,
@@ -1632,7 +1632,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Battle for Azeroth\\Zandalari Herbalism Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Zandalari Herbalism Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Zandalari Herbalism quest line.",
 startlevel=10.0,
@@ -2049,7 +2049,7 @@ talk Jahden Fla##122704
 |tip He walks around this area.
 turnin More Anchor Pods##51481 |goto Dazar'alor/0 42.18,36.05
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Akunda's Bite",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Akunda's Bite",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Akunda's Bite for various Alchemy recipes.",
 startlevel=10.0,
@@ -2067,7 +2067,7 @@ click Akunda's Bite
 |tip Track them on your minimap with "Find Herbs".
 collect Akunda's Bite##152507 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Anchor Weed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Anchor Weed",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Anchor Weed for various Alchemy recipes.",
 startlevel=10.0,
@@ -2089,7 +2089,7 @@ click Anchor Weed
 |tip Track them on your minimap with "Find Herbs".
 collect Anchor Weed##152510 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Riverbud",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Riverbud",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Riverbud for various Alchemy recipes.",
 startlevel=10.0,
@@ -2120,7 +2120,7 @@ click Riverbud
 collect Riverbud##152505+ |n
 Click here to continue |confirm |next "loop"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Sea Stalk",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Sea Stalk",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Sea Stalk for various Alchemy recipes.",
 startlevel=10.0,
@@ -2135,7 +2135,7 @@ click Sea Stalk##
 |tip Track them on your minimap with "Find Herbs".
 collect Sea Stalk##152511 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Siren's Pollen",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Siren's Pollen",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Siren's Pollen for various Alchemy recipes.",
 startlevel=10.0,
@@ -2161,7 +2161,7 @@ click Siren's Sting
 |tip They grow on trees.
 collect Siren's Pollen##152509 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Star Moss",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Star Moss",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Star Moss for various Alchemy recipes.",
 startlevel=10.0,
@@ -2176,7 +2176,7 @@ click Star Moss
 |tip Track them on your minimap with "Find Herbs".
 collect Star Moss##152506 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Winter's Kiss",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Winter's Kiss",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Winter's Kiss for various Alchemy recipes.",
 startlevel=10.0,
@@ -2190,7 +2190,7 @@ click Winter's Kiss
 |tip Track them on your minimap with "Find Herbs".
 collect Winter's Kiss##152508 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Battle for Azeroth\\Zin'anthid",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Zin'anthid",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Zin'anthid for various Alchemy recipes.",
 startlevel=10.0,
@@ -2214,7 +2214,7 @@ click Zin'anthid##326598+
 |tip Track them on your minimap with "Find Herbs".
 collect Zin'anthid##168487 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Battle for Azeroth\\Zandalari Inscription 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Zandalari Inscription 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Inscription profession from 1-175.",
 startlevel=5.0,
@@ -2376,7 +2376,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Inscription",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Tools of the Trade - Inscription",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn the Sanguine Feather Quill of Lana'thel. This allows you to create "..
 "Blood Contracts and siphon the blood of nearby slain enemies.",
@@ -2545,7 +2545,7 @@ step
 talk Miju##152261
 turnin A Test of Quills##49882 |goto 33.00,85.68
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Battle for Azeroth\\Zandalari Jewelcrafting 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Zandalari Jewelcrafting 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Jewelcrafting profession from 1-175.",
 startlevel=5.0,
@@ -2816,7 +2816,7 @@ label "Congratulations"
 _Congratulations!_
 You Reached 175 Zandalari Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Jewelcrafting",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Tools of the Trade - Jewelcrafting",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn the Jewelhammer's Focus. This allows you to interact with shrines in various "..
 "locations in Zandalar and Kul Tiras, as well as extract a gem socketed into your gear.",
@@ -2969,7 +2969,7 @@ talk Seshuli##122695
 |tip Inside the building.
 turnin The Missing Chapter##49599 |goto Dazar'alor/0 47.05,37.92
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Battle for Azeroth\\Zandalari Leatherworking 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Zandalari Leatherworking 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Leatherworking profession from 1-175.",
 startlevel=5.0,
@@ -3069,7 +3069,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Leatherworking",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Tools of the Trade - Leatherworking",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn the RE-USE ME. This allows you to interact with drums in various "..
 "locations around Zandalar and Kul Tiras, as well as summon a special mount in Zandalar and Kul Tiras.",
@@ -3184,7 +3184,7 @@ step
 talk Atikka "Ace" Moonchaser##151162
 turnin Instruments of Destruction##55223 |goto Dazar'alor/0 53.40,92.51
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Battle for Azeroth\\Zandalari Mining 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Zandalari Mining 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Mining profession from 1-175.",
 startlevel=5.0,
@@ -3221,7 +3221,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Battle for Azeroth\\Zandalari Mining Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Zandalari Mining Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Mining quest line.",
 startlevel=10.0,
@@ -4024,7 +4024,7 @@ step
 _Congratulations!_
 You completed the Zandalari Mining questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Battle for Azeroth\\Monelite",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Monelite",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Monelite for various Blacksmithing recipes.",
 startlevel=10.0,
@@ -4089,7 +4089,7 @@ click Monelite Seam##276619
 |tip Enter caves along the path for additional nodes.
 collect Monelite Ore##152512 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Battle for Azeroth\\Osmenite Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Osmenite Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Osmenite Ore for various Blacksmithing recipes.",
 startlevel=10.0,
@@ -4114,7 +4114,7 @@ click Osmenite Seam##325874+
 |tip Enter caves along the path for additional nodes.
 collect Osmenite Ore##168185 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Battle for Azeroth\\Platinum Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Platinum Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Platinum for various Blacksmithing recipes.",
 startlevel=10.0,
@@ -4150,7 +4150,7 @@ click Platinum Deposit##276618
 |tip These are rare spawn nodes, so you likely won't find them in bulk.
 collect Platinum Ore##152513 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Battle for Azeroth\\Storm Silver Ore",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Storm Silver Ore",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Storm Silver for various Blacksmithing recipes.",
 startlevel=10.0,
@@ -4185,7 +4185,7 @@ click Storm Silver Deposit##276617
 |tip Enter caves along the path for additional nodes.
 collect Storm Silver Ore##152579 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Battle for Azeroth\\Zandalari Skinning 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Zandalari Skinning 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Skinning profession from 1-175.",
 startlevel=10.0,
@@ -4207,7 +4207,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Battle for Azeroth\\Zandalari Skinning Quest Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Zandalari Skinning Quest Guide",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Zandalari Skinning quest line.",
 startlevel=10.0,
@@ -4315,7 +4315,7 @@ turnin A Thicker Thread##52215 |goto Dazar'alor/0 43.76,34.66
 turnin Loa Fit For A King##52217 |goto 43.76,34.66
 turnin Ancient Skinning Knife##52213 |goto 43.76,34.66
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Blood-Stained Bone",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Blood-Stained Bone",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Blood-Stained Bone for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4329,7 +4329,7 @@ Kill enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Blood-Stained Bone##154164 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Calcified Bone",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Calcified Bone",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Calcified Bone for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4343,7 +4343,7 @@ Kill enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Calcified Bone##154165 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Coarse Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Coarse Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Coarse Leather for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4357,7 +4357,7 @@ Kill Coldtooth enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Coarse Leather##152541 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Dredged Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Dredged Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Dredged Leather for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4372,7 +4372,7 @@ Kill enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Dredged Leather##168649 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Mistscale",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Mistscale",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Mistscale for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4386,7 +4386,7 @@ Kill enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Mistscale##153051 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Shimmerscale",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Shimmerscale",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Shimmerscale for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4400,7 +4400,7 @@ Kill enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Shimmerscale##153050 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Battle for Azeroth\\Tempest Hide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Tempest Hide",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Tempest Hide for various Leatherworking recipes.",
 startlevel=10.0,
@@ -4414,7 +4414,7 @@ Kill Coldtooth enemies around this area
 |tip Make sure you loot them so you can skin them after.
 collect Tempest Hide##154722 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Battle for Azeroth\\Zandalari Tailoring 1-175",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Zandalari Tailoring 1-175",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Zandalari Tailoring profession from 1-175.",
 startlevel=5.0,
@@ -4527,7 +4527,7 @@ step
 _Congratulations!_
 You Reached 175 Zandalari Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Battle for Azeroth\\Tools of the Trade - Tailoring",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tools of the Trade - Tailoring",{
 author="support@zygorguides.com",
 description="\nUpon completion of this guide, you will earn the Synchronous Thread. This grants you increased cloth drops "..
 "from humanoid enemies.",
@@ -4670,7 +4670,7 @@ step
 Click the Complete Quest Box
 turnin Cut from the Same Cloth##53962 |goto 43.13,38.48
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Battle for Azeroth\\Deep Sea Satin",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Deep Sea Satin",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Deep Sea Satin for various Tailoring recipes.",
 startlevel=10.0,
@@ -4686,7 +4686,7 @@ Kill enemies around this area
 |tip These are a rare drop.
 collect Deep Sea Satin##152577 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Battle for Azeroth\\Gilded Seaweave",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Gilded Seaweave",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Gilded Seaweave for various Tailoring recipes.",
 startlevel=10.0,
@@ -4697,7 +4697,7 @@ Kill Shirakess enemies around this area
 |tip These are a rare drop.
 collect Gilded Seaweave##167738 |goto Nazjatar/0 60.45,58.06 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Battle for Azeroth\\Tidespray Linen",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Tidespray Linen",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Tidespray Linen for various Tailoring recipes.",
 startlevel=10.0,
@@ -4712,7 +4712,7 @@ Kill enemies around this area
 |tip Only humanoid mobs drop cloth.
 collect Tidespray Linen##152576 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leveling Guides\\Battle for Azeroth\\Void Focus",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Void Focus",{
 author="support@zygorguides.com",
 description="This guide will walk you through unlocking the Void Focus, required for crafting 8.3 gear.",
 keywords={"8.3","N'zoth","Nzoth","Corruption"},

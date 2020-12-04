@@ -321,7 +321,6 @@ turnin A Good Axe##59766
 accept Draw Out the Darkness##60644
 step
 click Place Blade
-|tip Wait for Thrall to place it on the ground.
 Watch the dialogue
 kill Withering Presence##169759 |q 60644/2 |goto 29.51,43.88
 step
@@ -364,39 +363,39 @@ turnin Stand as One##59770 |goto 42.37,42.16
 step
 Leave the Maw |goto Oribos/0 19.24,50.31 < 10 |noway |c |q 60129 |future
 step
-_Is This Character an Alt?_
-|tip To unlock the Threads of Fate, you must complete the Shadowlands campaign, and the first chapter of your covenant on your main character.
-|tip For your first character that enters shadowlands, you cannot skip any content.
-|tip Alt character are given a choice, though.
-|tip Click the line below that matches the character you're currently playing.
-Main Character |confirm |next "Main_Character_Or_Replay_Storyline"
-Alt Character |confirm |next "Alt_Character_Leveling_Choice"
+_Detecting Threads of Fate Eligibility:_
+Threads of Fate Unlocked	|havebuff spell:343980		|q 62704	|future		|or	|next "Threads_Of_Fate_Choice"
+Threads of Fate Not Unlocked	|nobuff spell:343980						|or	|next "Main_Character_Or_Replay_Storyline"	|only if not havequest(62704) and not completedq(62704)
 step
-label "Alt_Character_Leveling_Choice"
+label "Threads_Of_Fate_Choice"
+Watch the dialogue
 talk Fatescribe Roh-Tahl##174871
-accept The Threads of Fate##62704 |goto Oribos/0 19.61,50.27
+|tip He floats to this location.
+accept The Threads of Fate##62704 |goto Oribos/0 20.41,50.28
 step
 talk Fatescribe Roh-Tahl##174871
 Tell him _"I am ready to choose my fate in the Shadowlands."_
-|tip Choosing "The Threads of Fate" will allow you to choose your covenant immediately, skip normal questing, and instead level up by completing world quests, dungeons, etc.
-|tip Choosing "Replay Storyline" will allow you to quest as you normally would through the zones in the Shadowlands, choosing your covenant at level 60.
-Choose Your Shadowlands Experience |q 62704/1 |goto 19.61,50.27
+|tip You can level normally with story quests, or with the Threads of Fate.
+|tip To unlock the Threads of Fate, you must complete the Shadowlands story campaign, and the first chapter of your covenant on at least one previous character.
+|tip For your first character that enters the Shadowlands, you cannot level with the Threads of Fate.
+|tip Leveling by doing only story quests is faster than with the Threads of Fate.
+|tip However, Threads of Fate lets you get a little head start on the endgame, so it's a tradeoff, and mostly preference.
+|tip Choosing "The Threads of Fate" will allow you to choose your covenant immediately, skip normal story questing, and instead level up by completing world quests, dungeons, and side quest.
+|tip Choosing "Replay Storyline" will allow you to quest as you normally would through the zones in the Shadowlands, completing story quest, and choosing your covenant at level 60.
+Choose Your Shadowlands Experience |q 62704/1 |goto 20.41,50.28
 step
 talk Fatescribe Roh-Tahl##174871
-turnin The Threads of Fate##62704 |goto 19.61,50.27
+turnin The Threads of Fate##62704 |goto 20.41,50.28
 step
-_What Did You Choose?_
-|tip Click the line below that matches the Shadowlands experience you chose for your character.
-The Threads of Fate |confirm |next "Alt_Skip_Normal_Questing"
-Replay Storyline |confirm |next "Main_Character_Or_Replay_Storyline"
+talk Fatescribe Roh-Tahl##174871
+|tip You will only be able to accept one of these quests.
+accept Re-Introductions##62716				|goto 19.61,50.27	|or	|next "Alt_Skip_Normal_Questing"
+accept Stranger in an Even Stranger Land##60129		|goto 19.61,50.27	|or	|next "Main_Character_Or_Replay_Storyline"
 step
 label "Alt_Skip_Normal_Questing"
-talk Fatescribe Roh-Tahl##174871
-accept Re-Introductions##62716 |goto Oribos/0 19.61,50.27
-step
 talk Tal-Inara##159478
-turnin Re-Introductions##62716 |goto 38.88,70.00
-accept Choosing Your Purpose##62000 |goto 38.88,70.00
+turnin Re-Introductions##62716 |goto Oribos/0 38.88,70.00
+accept Choosing Your Purpose##62000 |goto Oribos/0 38.88,70.00
 step
 click Shadowlands Covenant Map
 |tip Join the Covenant you like the best.
@@ -540,12 +539,9 @@ Reach Level 60 |ding 60
 |next "Which_Covenant_Did_You_Choose"
 step
 label "Main_Character_Or_Replay_Storyline"
-accept Stranger in an Even Stranger Land##60129 |goto Oribos/0 19.24,50.31
-|tip You will automatically accept this quest.
-step
 talk Attendant Protector##168252
 Ask him _"Where am I? Have I escaped the Maw?"_
-Try to Communicate |q 60129/1 |goto 23.80,49.66
+Try to Communicate |q 60129/1 |goto Oribos/0 23.80,49.66
 step
 Watch the dialogue
 |tip Follow the Protector Captain as he walks.
@@ -600,6 +596,9 @@ accept Tether to Home##60150 |goto Oribos/0 39.90,66.46
 step
 click Shadowlands Map
 Affix the Helm of Domination |q 60150/1 |goto 39.83,68.70
+step
+Watch the dialogue
+See if it Works |q 60150/2 |goto 39.83,68.70
 step
 talk Highlord Bolvar Fordragon##164079
 turnin Tether to Home##60150 |goto 40.27,64.73
@@ -1822,8 +1821,10 @@ talk Cassius##159421
 Tell him _"I need to go to the Temple of Courage."_
 Fly to the Temple of Courage |q 60005/1 |goto 50.93,49.04
 step
+Begin Flying to the Temple of Courage |invehicle |goto 50.93,49.04 |q 60005
+step
 Watch the dialogue
-Reach the Temple of Courage |goto Bastion/0 41.96,55.21 < 10 |c |q 60005 |notravel
+Reach the Temple of Courage |outvehicle |goto Bastion/0 41.96,55.21 |q 60005 |notravel
 step
 talk Thanikos##167873
 turnin Imminent Danger##60005 |goto Bastion/0 41.76,55.18
@@ -3016,7 +3017,7 @@ use the Fractured Anima Crystal##175409
 |tip Use it near their corpses.
 Siphon #12# Corpses of Anima |q 59210/2 |goto 72.12,50.60
 step
-Follow the path up |goto 73.68,48.20 < 30 |only if walking
+Follow the path up |goto 74.55,47.43 < 30 |only if walking
 talk Baroness Vashj##164326
 turnin Entangling Web##59185 |goto 73.54,44.51
 turnin Tainted Cores##59210 |goto 73.54,44.51
@@ -3749,6 +3750,7 @@ step
 talk Baroness Draka##167903
 accept A Soul Saved##59974 |goto 39.15,67.95
 step
+Follow the path up |goto Maldraxxus/0 40.16,57.01 < 40 |only if walking
 talk Alexandros Mograine##162801
 turnin A Soul Saved##59974 |goto Maldraxxus/0 41.34,60.58
 accept In Death We Are Truly Tested##59011 |goto Maldraxxus/0 41.34,60.58
@@ -4216,16 +4218,13 @@ accept Take the Power##59801 |goto 74.32,32.35
 stickystart "Collect_Animacones_59801"
 step
 Follow the path |goto 75.26,32.64 < 15 |only if walking
-kill Fiona Bleakthorn##160445
-Find Fiona |q 58165/1 |goto 75.61,34.20
+kill Fiona Bleakthorn##160445 |q 58165/1 |goto 75.61,34.20
 step
 Follow the path |goto 76.49,31.35 < 15 |only if walking
-kill Wildtwister Lewor##160295
-Find Lewor |q 58165/3 |goto 75.86,30.91
+kill Wildtwister Lewor##160295 |q 58165/3 |goto 75.86,30.91
 step
-kill Bitterfly##160442
+kill Bitterfly##160442 |q 58165/2 |goto 73.94,31.06
 |tip He flies low to the ground around this area.
-Find Bitterfly |q 58165/2 |goto 73.94,31.06
 step
 label "Collect_Animacones_59801"
 click Animacone+
@@ -4884,6 +4883,8 @@ Kill enemies around this area
 |tip They are on the ground as you fly.
 |tip Use the ability on your action bar.
 Slay #50# Invaders |q 58524/2 |goto 69.37,55.03
+step
+Begin Returning to Hibernal Hollow |invehicle |q 58524
 step
 Watch the dialogue
 Return to Hibernal Hollow |outvehicle |goto 60.05,53.07 |q 58524 |notravel
@@ -6816,28 +6817,24 @@ startlevel=60.0,
 endlevel=60.0,
 },[[
 step
-Click Here After Reaching Dubious Reputation with Ve'nari |confirm
+Click Here After Reaching Apprehensive Reputation with Ve'nari |confirm
 step
 talk Ve'rayn##168432
 accept Trust Issues##63051 |goto Oribos/1 55.22,59.98
 step
 _Next to you:_
 talk Ve'rayn##168432
-Choose:
-_"Yes, the Jailer's forces have grown more powerful since Denathrius's betrayal."_
-_"It's a challenge, but I can overcome it."_
-_"Ve'nari? Who is Ve'nari?"_
-_"I have never met anyone named Ve'nari."_
+|tip Choose any dialogue options you prefer, it doesn't matter.
 Answer Ve'rayn's Questions |q 63051/1 |goto 55.22,59.98
 step
 talk Ve'nari##162804
 turnin Trust Issues##63051 |goto The Maw/0 46.91,41.70
 accept Rule 4: Make A List##60281 |goto 46.91,41.70
 step
-kill Inquisitor Devaki##173580 |q 60281/1 |goto 33.81,16.26
+kill Inquisitor Devaki##173580 |q 60281/1 |goto 33.07,15.39
 step
 click Broker Cache##364872
-collect Pulsing Sphere##184492 |q 60281/2 |goto 34.29,14.70
+collect Pulsing Sphere##184492 |q 60281/2 |goto 33.55,14.49
 step
 talk Ve'nari##162804
 turnin Rule 4: Make A List##60281 |goto 46.91,41.70
@@ -6919,9 +6916,6 @@ startlevel=50.0,
 endlevel=60.0,
 image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
 },[[
-step
-accept Bolstering Bastion##62723
-|tip Use the "Shadowlands Intro & Main Story Questline" guide to accomplish this.
 step
 Follow the road |goto Bastion/0 55.92,55.83 < 50 |only if walking
 Continue following the road |goto Bastion/0 53.56,69.79 < 50 |only if walking
@@ -8201,16 +8195,13 @@ accept Take the Power##59801 |goto 74.32,32.35
 stickystart "Collect_Animacones_59801"
 step
 Follow the path |goto 75.26,32.64 < 15 |only if walking
-kill Fiona Bleakthorn##160445
-Find Fiona |q 58165/1 |goto 75.61,34.20
+kill Fiona Bleakthorn##160445 |q 58165/1 |goto 75.61,34.20
 step
 Follow the path |goto 76.49,31.35 < 15 |only if walking
-kill Wildtwister Lewor##160295
-Find Lewor |q 58165/3 |goto 75.86,30.91
+kill Wildtwister Lewor##160295 |q 58165/3 |goto 75.86,30.91
 step
-kill Bitterfly##160442
+kill Bitterfly##160442 |q 58165/2 |goto 73.94,31.06
 |tip He flies low to the ground around this area.
-Find Bitterfly |q 58165/2 |goto 73.94,31.06
 step
 label "Collect_Animacones_59801"
 click Animacone+
@@ -8279,7 +8270,7 @@ click Hungry Wildseed+
 Aid the Tranquil Pools |q 62774/1 |goto 62.38,41.29
 |only if havequest(62774) or completedq(62774)
 step
-Follow the road |goto 60.53,36.97 < 30 |only if walking
+Follow the road |goto 60.53,36.97 < 30 |only if walking and completedq(62774)
 talk Guardian Kota##158921
 turnin Delivery for Guardian Kota##57825 |goto 62.61,36.09
 accept The Absent-Minded Artisan##61051 |goto 62.61,36.09
@@ -10168,10 +10159,6 @@ talk Terrified Steward##168119+
 "Cleanse" the Temple |q 59147/1 |goto 58.54,75.26
 |tip Fill up the blue bar in the quest tracker area.
 step
-talk Acolyte Galistos##160647
-|tip On the bridge.
-turnin An Inspired Moral Inventory##57444 |goto 61.14,74.41
-step
 talk Eridia##159762
 |tip On the bridge.
 turnin A Once Sweet Sound##57037 |goto 61.27,74.36
@@ -10240,7 +10227,7 @@ turnin Purity's Prerogative##57447 |goto 53.83,73.66
 step
 Reach Level 51 |ding 51
 |tip You must be level 51 to continue the questline.
-|tip Use the "Bastion" leveling guide to complete side quests.
+|tip Use the "Bastion (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Kleia##156238
@@ -10501,7 +10488,7 @@ turnin The Wards of Bastion##59200 |goto 55.65,41.95
 step
 Reach Level 53 |ding 53
 |tip You must be level 53 to continue the questline.
-|tip Use the "Bastion" leveling guide to complete side quests.
+|tip Use the "Bastion (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Polemarch Adrestes##160037
@@ -10513,10 +10500,10 @@ talk Cassius##159421
 Tell him _"I need to go to the Temple of Courage."_
 Fly to the Temple of Courage |q 60005/1 |goto 50.93,49.04
 step
-Begin Flying to the Temple of Courage |ontaxi |goto 50.93,49.04 |q 60005
+Begin Flying to the Temple of Courage |invehicle |goto 50.93,49.04 |q 60005
 step
 Watch the dialogue
-Reach the Temple of Courage |offtaxi |goto Bastion/0 41.96,55.21 |q 60005 |notravel
+Reach the Temple of Courage |outvehicle |goto Bastion/0 41.96,55.21 |q 60005 |notravel
 step
 talk Thanikos##167873
 turnin Imminent Danger##60005 |goto Bastion/0 41.76,55.18
@@ -10809,14 +10796,6 @@ step
 talk Baroness Draka##159065
 |tip Inside the building.
 turnin The House of the Chosen##57515 |goto 38.90,65.19
-step
-Reach Level 54 |ding 54
-|tip You must be level 54 to continue the questline.
-|tip Use the "Maldraxxus" leveling guide to complete side quests.
-|tip You can also run dungeons, if you prefer.
-step
-talk Baroness Draka##159065
-|tip Inside the building.
 accept The First Act of War##57514 |goto 38.90,65.19
 step
 Enter the building |goto 36.43,60.83 < 10 |walk
@@ -11189,7 +11168,7 @@ use the Fractured Anima Crystal##175409
 |tip Use it near their corpses.
 Siphon #12# Corpses of Anima |q 59210/2 |goto 72.12,50.60
 step
-Follow the path up |goto 73.68,48.20 < 30 |only if walking
+Follow the path up |goto 74.55,47.43 < 30 |only if walking
 talk Baroness Vashj##164326
 turnin Entangling Web##59185 |goto 73.54,44.51
 turnin Tainted Cores##59210 |goto 73.54,44.51
@@ -11510,13 +11489,14 @@ turnin Fathomless Power##59231 |goto 50.31,67.72
 step
 Reach Level 55 |ding 55
 |tip You must be level 55 to continue the questline.
-|tip Use the "Maldraxxus" leveling guide to complete side quests.
+|tip Use the "Maldraxxus (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Baroness Draka##168381
 |tip Upstairs.
 accept Among the Chosen##59202 |goto 50.31,67.72
 step
+Follow the path up |goto 40.16,57.01 < 40 |only if walking
 Enter the building |goto 40.91,61.34 < 15 |walk
 Return to the House of the Chosen |q 59202/1 |goto 40.47,62.18
 |tip Inside the building.
@@ -11598,7 +11578,9 @@ Watch the dialogue
 |tip She eventually walks to this location.
 Follow Ve'nari |q 59966/2 |goto 34.62,66.89
 step
+Watch the dialogue
 talk Highlord Darion Mograine##172414
+|tip He walks to this location.
 turnin Delving Deeper##59966 |goto 32.92,66.40
 accept A Bond Beyond Death##59973 |goto 32.92,66.40
 step
@@ -11618,6 +11600,7 @@ step
 click Ve'nari's Portal
 Use Ve'nari's Portal |q 61190/1 |goto 33.06,66.16
 step
+Watch the dialogue
 talk Ve'nari##162804
 turnin Wake of Ashes##61190 |goto 46.92,41.69
 accept Maw Walker##62654 |goto 46.92,41.69
@@ -11635,6 +11618,7 @@ Watch the dialogue
 talk Baroness Draka##167903
 accept A Soul Saved##59974 |goto 39.15,67.95
 step
+Follow the path up |goto Maldraxxus/0 40.16,57.01 < 40 |only if walking
 talk Alexandros Mograine##162801
 turnin A Soul Saved##59974 |goto Maldraxxus/0 41.34,60.58
 accept In Death We Are Truly Tested##59011 |goto Maldraxxus/0 41.34,60.58
@@ -12053,7 +12037,7 @@ turnin Audience with the Winter Queen##60519 |goto 63.59,36.27
 step
 Reach Level 56 |ding 56
 |tip You must be level 56 to continue the questline.
-|tip Use the "Ardenweald" leveling guide to complete side quests.
+|tip Use the "Ardenweald (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Lady Moonberry##169031
@@ -12345,6 +12329,8 @@ Kill enemies around this area
 |tip Use the ability on your action bar.
 Slay #50# Invaders |q 58524/2 |goto 69.37,55.03
 step
+Begin Returning to Hibernal Hollow |invehicle |q 58524
+step
 Watch the dialogue
 Return to Hibernal Hollow |outvehicle |goto 60.05,53.07 |q 58524 |notravel
 step
@@ -12439,7 +12425,7 @@ turnin Visions of the Dreamer: The Betrayal##60578 |goto 60.06,52.96
 step
 Reach Level 58 |ding 58
 |tip You must be level 58 to continue the questline.
-|tip Use the "Ardenweald" leveling guide to complete side quests.
+|tip Use the "Ardenweald (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Dreamweaver##160962
@@ -13439,7 +13425,7 @@ turnin Refuge of Revendreth##57694 |goto 52.49,39.11
 step
 Reach Level 60 |ding 60
 |tip You must be level 60 to continue the questline.
-|tip Use the "Revendreth" leveling guide to complete side quests.
+|tip Use the "Revendreth (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
 talk Prince Renathal##162688
@@ -15633,72 +15619,66 @@ Follow Shandris Feathermoon into Torghast |q 59189/1 |goto Torghast/0 39.08,47.1
 step
 Begin the Scenario |scenariostart |q 59189
 step
-_Inside Torghast:_
 Watch the dialogue
 |tip Follow Shandris Feathermoon and protect her as she walks.
-Find Tyrande Whisperwind |scenariostage 1 |q 59189
+Find Tyrande Whisperwind |scenariostage 1 |goto Night Fae Torghast/0 63.63,47.55 |q 59189
 step
-_Inside Torghast:_
 Kill Mawsworn enemies around this area
 |tip Help Tyrande Whisperwind and Shandris Feathermoon fight.
-Slay #10# Maw Ambushers |scenariogoal 2/47817 |q 59189
+Slay #10# Maw Ambushers |scenariogoal 2/47817 |goto 78.50,37.23 |q 59189
 step
-_Inside Torghast:_
 Watch the dialogue
 |tip Follow Shandris Feathermoon and protect her as she walks.
-Follow Tyrande Whisperwind |scenariostage 3 |q 59189
+Follow Tyrande Whisperwind |scenariostage 3 |goto 78.11,67.82 |q 59189
 step
-_Inside Torghast:_
 Kill the enemies that attack in waves
 |tip Help Shandris Feathermoon fight.
-Slay #12# Maw Ambushers |scenariogoal 4/47817 |q 59189
+Slay #12# Maw Ambushers |scenariogoal 4/47817 |goto 78.34,66.60 |q 59189
 step
-_Inside Torghast:_
 click Lever
 |tip Follow the hallway through the traps.
-Disable the Traps |scenariostage 5 |q 59189
+Disable the Traps |scenariostage 5 |goto 60.55,87.33 |q 59189
 step
-_Inside Torghast:_
-Find Tyrande |scenariostage 6 |q 59189
+Find Tyrande |scenariostage 6 |goto 50.12,69.21 |q 59189
 |tip Continue following the path.
 step
-_Inside Torghast:_
-clicknpc Bound Soul##171110+
-|tip They look like people chained to the floor surrounding Skuld.
+clicknpc Bound Soul##171110
 |tip You must free the 3 souls to be able to attack Skuld.
-Free #3# Souls |scenariogoal 7/47830 |q 59189
+Free the Soul |scenariogoal 7/47830 |goto 43.33,72.29 |q 59189 |count 1
 step
-_Inside Torghast:_
-kill Skuld##164447 |scenariogoal 7/47831 |q 59189
+clicknpc Bound Soul##171110
+|tip You must free the 3 souls to be able to attack Skuld.
+Free the Soul |scenariogoal 7/47830 |goto 40.78,70.16 |q 59189 |count 2
+step
+clicknpc Bound Soul##171110
+|tip You must free the 3 souls to be able to attack Skuld.
+Free the Soul |scenariogoal 7/47830 |goto 43.13,68.06 |q 59189 |count 3
+step
+kill Skuld##164447 |scenariogoal 7/47831 |goto 42.14,70.13 |q 59189
 |tip Shandris Feathermoon will help you fight.
 step
-_Inside Torghast:_
+Follow the path |goto 25.30,69.07 < 20 |walk
 Watch the dialogue
 |tip Follow Shandris Feathermoon as she walks.
-Find Tyrande |scenariostage 8 |q 59189
+Find Tyrande |scenariostage 8 |goto 24.55,34.44 |q 59189
 step
-_Inside Torghast:_
-kill Tortured Amalgamation##164476 |scenariostage 9 |q 59189
+kill Tortured Amalgamation##164476 |scenariostage 9 |goto 25.10,28.91 |q 59189
 step
-_Inside Torghast:_
 talk Tyrande Whisperwind##164336
 Watch the dialogue
-Beseech Tyrande to Return |scenariostage 10 |q 59189
+Beseech Tyrande to Return |scenariostage 10 |goto 25.32,28.28 |q 59189
 step
-_Inside Torghast:_
 click Soulkeeper Crystal
 |tip Floating in the middle of the room.
-Place the Soulkeeper Crystal |scenariogoal 11/48460 |q 59189
+Place the Soulkeeper Crystal |scenariogoal 11/48460 |goto 25.36,27.77 |q 59189
 step
-_Inside Torghast:_
 Watch the dialogue
 Rescue #80# Night Elf Souls |scenariogoal 11/48457 |q 59189
 step
-_Inside Torghast:_
 talk Shandris Feathermoon##164334
 |tip In the middle of the room.
 Tell her _"I can bring you and these souls to Ardenweald."_
-Speak with Shandris to Leave |scenarioend |q 59189
+Speak with Shandris to Leave |scenarioend |goto 25.27,28.90 |q 59189
 step
 talk Shandris Feathermoon##171028
 turnin The Recovery of Tyrande Whisperwind##59189 |goto The Maw/0 46.87,41.70
@@ -19812,10 +19792,12 @@ Accept or Complete the "Enhancing the Hold" Quest |condition havequest(62794) or
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |q 63052 |future
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1810) >= 1 |q 63052 |future
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 1
 step
 talk Haephus##167745
@@ -19846,10 +19828,12 @@ turnin At a Moment's Notice##63053 |goto 48.84,62.70
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 1000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Souls |condition curcount(1810) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 2
 step
 talk Haephus##167745
@@ -19858,10 +19842,12 @@ Upgrade your Transport Network to Tier 2 |condition covenantfeature("Transport N
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Souls |condition curcount(1810) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 3
 step
 talk Haephus##167745
@@ -19879,10 +19865,12 @@ Accept or Complete the "The First New Growth" Quest |condition havequest(62898) 
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |q 63073 |future
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1865) >= 1 |q 63073 |future
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 1
 step
 talk Zayhad, The Builder##165702
@@ -19963,10 +19951,12 @@ turnin Through the Veil##57583 |goto 55.38,26.56
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Souls |condition curcount(1865) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 2
 step
 talk Zayhad, The Builder##165702
@@ -19976,10 +19966,12 @@ Upgrade your Transport Network to Tier 2 |condition covenantfeature("Transport N
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Souls |condition curcount(1865) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 3
 step
 talk Zayhad, The Builder##165702
@@ -19998,10 +19990,12 @@ Accept or Complete the "Home Improvement" Quest |condition havequest(62915) or c
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1864) >= 1
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 1
 step
 talk Foreman Flatfinger##172605
@@ -20034,10 +20028,12 @@ turnin Mirror Attunement: The Eternal Terrace##60147 |goto Sinfall/0 47.80,57.26
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Soul |condition curcount(1864) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 2
 step
 talk Foreman Flatfinger##172605
@@ -20061,10 +20057,12 @@ turnin Mirror Attunement: The Banewood##60160 |goto 47.80,57.26
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Soul |condition curcount(1864) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 3
 step
 talk Foreman Flatfinger##172605
@@ -20083,10 +20081,12 @@ Accept or Complete the "Sanctum Improvements" Quest |condition havequest(62846) 
 stickystart "Collect_a_Redeemed_Soul"
 step
 Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 1
 step
 label "Collect_a_Redeemed_Soul"
 Collect a Redeemed Soul |condition curcount(1810) >= 1
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 1
 step
 talk Arkadia Moa##161909
@@ -20118,10 +20118,12 @@ accept Dude, Where's My Necropolis?##60184 |goto 61.28,32.91
 stickystart "Collect_8_Redeemed_Souls"
 step
 Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 2
 step
 label "Collect_8_Redeemed_Souls"
 Collect #8# Redeemed Souls |condition curcount(1810) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 2
 step
 talk Arkadia Moa##161909
@@ -20134,10 +20136,12 @@ turnin Dude, Where's My Necropolis?##60184 |goto 61.28,32.91
 stickystart "Collect_22_Redeemed_Souls"
 step
 Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 |only if covenantfeature("Transport Network") < 3
 step
 label "Collect_22_Redeemed_Souls"
 Collect #22# Redeemed Souls |condition curcount(1810) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
 |only if covenantfeature("Transport Network") < 3
 step
 talk Arkadia Moa##161909
@@ -20497,6 +20501,308 @@ talk Merick Feldscar##165321
 |tip Inside the building.
 accept Adventurer: Rathan##62316 |goto 38.75,48.52
 ]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Anima Conductor",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through unlocking and upgrading your covenant Anima Conductor.",
+condition_end=function() return covenantfeature("Anima Conductor") >= 3 end,
+},[[
+step
+Accept or Complete the "Enhancing the Hold" Quest |condition havequest(62794) or completedq(62794)
+|tip Use the "Kyrian Questline" guide to accomplish this.
+stickystart "Collect_a_Redeemed_Soul"
+step
+Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |future
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 1
+step
+label "Collect_a_Redeemed_Soul"
+Collect a Redeemed Soul |condition curcount(1865) >= 1 |future
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 1
+step
+talk Haephus##167745
+Tell him _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 1 |condition covenantfeature("Anima Conductor") >= 1 |goto Elysian Hold/0 42.59,53.02
+step
+talk Haephus##167745
+accept All That Remains##57901 |goto 42.59,53.02
+step
+click Elysian Scroll
+Activate the Anima Conductor |q 57901/1 |goto 47.20,65.52
+step
+talk Capheus##167196
+turnin All That Remains##57901 |goto 37.89,67.50
+accept Power in the Sky##57903 |goto 37.89,67.50
+step
+click Anima Conductor
+|tip Click the location of preference on the map to channel anima to it for the day.
+|tip Each day you can channel anima.
+|tip Every 10 consecutive days spent channeling will allow you to permanently reinforce the area of your choice.
+Channel Anima |q 57903/1 |goto 38.34,67.94
+step
+talk Capheus##167196
+turnin Power in the Sky##57903 |goto 37.89,67.50
+stickystart "Collect_8_Redeemed_Souls"
+step
+Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 2
+step
+label "Collect_8_Redeemed_Souls"
+Collect #8# Redeemed Souls |condition curcount(1865) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 2
+step
+talk Haephus##167745
+Tell him _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 2 |condition covenantfeature("Anima Conductor") >= 2 |goto Elysian Hold/0 42.59,53.02
+stickystart "Collect_22_Redeemed_Souls"
+step
+Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 3
+step
+label "Collect_22_Redeemed_Souls"
+Collect #22# Redeemed Souls |condition curcount(1865) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 3
+step
+talk Haephus##167745
+Tell him _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 3 |condition covenantfeature("Anima Conductor") >= 3 |goto Elysian Hold/0 42.59,53.02
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Anima Conductor",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through unlocking and upgrading your covenant Anima Conductor.",
+condition_end=function() return covenantfeature("Anima Conductor") >= 3 end,
+},[[
+step
+Accept or Complete the "The First New Growth" Quest |condition havequest(62898) or completedq(62898)
+|tip Use the "Night Fae Questline" guide to accomplish this.
+stickystart "Collect_a_Redeemed_Soul"
+step
+Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |future
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 1
+step
+label "Collect_a_Redeemed_Soul"
+Collect a Redeemed Soul |condition curcount(1865) >= 1 |future
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 1
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 1 |condition covenantfeature("Anima Conductor") >= 1 |goto Heart of the Forest/1 39.40,54.32
+step
+talk Zayhad, The Builder##165702
+accept Root Restoration##63067 |goto 39.44,54.43
+step
+click Fae Scroll
+Activate the Anima Conductor |q 63067/1 |goto 47.20,65.52
+step
+talk Sesselie##167196
+turnin Root Restoration##63067 |goto 50.63,62.59
+accept The Roots Thirst##60723 |goto 50.63,62.59
+step
+click Anima Conductor
+|tip Click the location of preference on the map to channel anima to it for the day.
+|tip Each day you can channel anima.
+|tip Every 10 consecutive days spent channeling will allow you to permanently reinforce the area of your choice.
+Channel Anima |q 60723/1 |goto 47.93,61.37
+step
+talk Sesselie##167196
+turnin The Roots Thirst##60723 |goto 50.63,62.59
+stickystart "Collect_8_Redeemed_Souls"
+step
+Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 2
+step
+label "Collect_8_Redeemed_Souls"
+Collect #8# Redeemed Souls |condition curcount(1865) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 2
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 2 |condition covenantfeature("Anima Conductor") >= 2 |goto 39.40,54.32
+stickystart "Collect_22_Redeemed_Souls"
+step
+Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 3
+step
+label "Collect_22_Redeemed_Souls"
+Collect #22# Redeemed Souls |condition curcount(1865) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 3
+step
+talk Zayhad, The Builder##165702
+|tip Downstairs inside the tree.
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 3 |condition covenantfeature("Anima Conductor") >= 3 |goto 39.40,54.32
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Venthyr Anima Conductor",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through unlocking and upgrading your covenant Anima Conductor.",
+condition_end=function() return covenantfeature("Anima Conductor") >= 3 end,
+},[[
+step
+Accept or Complete the "Home Improvement" Quest |condition havequest(62915) or completedq(62915)
+|tip Use the "Venthyr Questline" guide to accomplish this.
+stickystart "Collect_a_Redeemed_Soul"
+step
+Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |future
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 1
+step
+label "Collect_a_Redeemed_Soul"
+Collect a Redeemed Soul |condition curcount(1865) >= 1 |future
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 1
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+Tell him _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 1 |condition covenantfeature("Anima Conductor") >= 1 |goto Sinfall/0 55.63,26.27
+step
+talk Foreman Flatfinger##172605
+accept Sanctum Upgrade: Anima Conductor##63066 |goto 55.63,26.27
+step
+click Scroll of Dark Empowerment
+Activate the Anima Conductor |q 63066/1 |goto Sinfall/1 49.52,52.97
+step
+talk Devahia##164739
+turnin Sanctum Upgrade: Anima Conductor##63066 |goto 47.67,57.39
+accept The Anima Must Flow##60721 |goto 47.67,57.39
+step
+click Anima Conductor
+|tip Click the location of preference on the map to channel anima to it for the day.
+|tip Each day you can channel anima.
+|tip Every 10 consecutive days spent channeling will allow you to permanently reinforce the area of your choice.
+Channel Anima |q 60721/1 |goto 46.95,54.77
+step
+talk Devahia##164739
+turnin The Anima Must Flow##60721 |goto 47.67,57.39
+stickystart "Collect_8_Redeemed_Souls"
+step
+Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 2
+step
+label "Collect_8_Redeemed_Souls"
+Collect #8# Redeemed Souls |condition curcount(1865) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 2
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+Tell him _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 2 |condition covenantfeature("Anima Conductor") >= 2 |goto Sinfall/0 55.63,26.27
+stickystart "Collect_22_Redeemed_Souls"
+step
+Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 3
+step
+label "Collect_22_Redeemed_Souls"
+Collect #22# Redeemed Souls |condition curcount(1865) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 3
+step
+talk Foreman Flatfinger##172605
+|tip Inside the building.
+Tell him _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 3 |condition covenantfeature("Anima Conductor") >= 3 |goto Sinfall/0 55.63,26.27
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Covenants\\Necrolords Anima Conductor",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through unlocking and upgrading your covenant Anima Conductor.",
+condition_end=function() return covenantfeature("Anima Conductor") >= 3 end,
+},[[
+step
+Accept or Complete the "Sanctum Improvements" Quest |condition havequest(62846) or completedq(62846)
+|tip Use the "Necrolords Questline" guide to accomplish this.
+stickystart "Collect_a_Redeemed_Soul"
+step
+Collect #1000# Reservoir Anima |condition curcount(1813) >= 1000 |future
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 1
+step
+label "Collect_a_Redeemed_Soul"
+Collect a Redeemed Soul |condition curcount(1865) >= 1 |future
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 1
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
+Tell her _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 1 |condition covenantfeature("Anima Conductor") >= 1 |goto Seat of the Primus/0 52.75,38.27
+step
+talk Arkadia Moa##161909
+accept Restoring Power##63057 |goto 52.75,38.27
+step
+click Prime Scroll
+|tip Inside the building.
+Activate the Anima Conductor |q 63057/1 |goto 47.20,65.52
+step
+talk Yondare Hex##167205
+|tip Inside the building.
+turnin Restoring Power##63057 |goto 48.95,35.95
+accept Tower Power##60722 |goto 48.95,35.95
+step
+click Anima Conductor
+|tip Inside the building.
+|tip Click the location of preference on the map to channel anima to it for the day.
+|tip Each day you can channel anima.
+|tip Every 10 consecutive days spent channeling will allow you to permanently reinforce the area of your choice.
+Channel Anima |q 60722/1 |goto 49.70,34.37
+step
+talk Yondare Hex##167205
+|tip Inside the building.
+turnin Tower Power##60722 |goto 48.95,35.95
+stickystart "Collect_8_Redeemed_Souls"
+step
+Collect #2500# Reservoir Anima |condition curcount(1813) >= 2500
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 2
+step
+label "Collect_8_Redeemed_Souls"
+Collect #8# Redeemed Souls |condition curcount(1865) >= 8
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 2
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
+Tell her _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 2 |condition covenantfeature("Anima Conductor") >= 2 |goto Seat of the Primus/0 52.75,38.27
+stickystart "Collect_22_Redeemed_Souls"
+step
+Collect #5000# Reservoir Anima |condition curcount(1813) >= 5000
+|tip Collect anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
+|only if covenantfeature("Anima Conductor") < 3
+step
+label "Collect_22_Redeemed_Souls"
+Collect #22# Redeemed Souls |condition curcount(1865) >= 22
+|tip Complete the "Return Lost Souls" weekly quest to earn these each week.
+|only if covenantfeature("Anima Conductor") < 3
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
+Tell her _"Show me the Sanctum."_
+|tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
+Upgrade your Anima Conductor to Tier 3 |condition covenantfeature("Anima Conductor") >= 3 |goto Seat of the Primus/0 52.75,38.27
+]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Torghast\\Torghast Questline",{
 author="support@zygorguides.com",
 description="\nThis guide will assist you in completing the Torghast questline.",
@@ -20567,8 +20873,6 @@ step
 talk Ve'nari##162804
 Tell her _"This was carried by one of the Jailer's more powerful guards. Do you know what it does?"_
 Speak with Ve'nari |q 60267/1 |goto The Maw/0 46.91,41.69
-step
-Search Torghast's Antechamber for a Lock |q 60267/2 |goto Torghast/0 15.96,62.97
 step
 click Domination Lock
 turnin Prison of the Forgotten##60267 |goto 15.96,62.97
@@ -20866,4 +21170,21 @@ Collect #1250# Soul Ash |q 62700/1
 step
 talk Runecarver##164937
 turnin Ashes of the Tower##62700 |goto 50.72,54.13
+accept The Final Pieces##62719 |goto 50.72,54.13
+stickystart "Obtain_2_Different_Missives"
+step
+Acquire a Rune Vessel |q 62719/1
+|tip Craft one with professions or purchase it from the Auction House.
+|tip Plate vessels are named Shadowghast.
+|tip Mail vessels are named Boneshatter.
+|tip Leather vessels are named Umbrahide.
+|tip Cloth vessels are named Grim-Veiled.
+|tip Neck and ring vessels are named Shadowghast.
+step
+label "Obtain_2_Different_Missives"
+Obtain #2# Different Missives |q 62719/2
+|tip Craft them with Inscription or purchase them from the Auction House.
+step
+talk Runecarver##164937
+turnin The Final Pieces##62719 |goto 50.72,54.13
 ]])

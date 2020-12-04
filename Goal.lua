@@ -1105,10 +1105,12 @@ GOALTYPES['skillmax'] = {
 	parse = function(self,params)
 		local err = GOALTYPES['skill'].parse(self,params)
 		if err then return err end
+		--[[ shadowlands appears to have thrown away any semblance of level ranges
 		local validlevels={[75]=1, [100]=1, [150]=1, [175]=1, [300]=1, -- subskills and primary skills
 				   [950]=1, -- archeology
 				   [150]=1,[225]=1,[375]=1,[450]=1,[525]=1,[600]=1,[700]=1,[800]=1} -- left for now for legacy code
 		if not validlevels[self.skilllevel] then return "skillmax: you can't raise a skill max level to ".. self.skilllevel.."!" end
+		--]]
 	end,
 	iscomplete = function(self)
 		local skill = ZGV.Professions:GetSkill(self.skill)

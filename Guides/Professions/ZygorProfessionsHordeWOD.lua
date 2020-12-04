@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ProfessionsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Warlords of Draenor\\Draenor Alchemy 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Draenor Alchemy 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Alchemy skill from 1-100.",
 condition_end=function() return skill('Draenor Alchemy') >= 100 end,
@@ -96,7 +96,7 @@ step
 _Congratulations!_
 You Reached 700 Archaeology Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Warlords of Draenor\\Draenor Blacksmithing 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Draenor Blacksmithing 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Blacksmithing skill from 1-100.",
 condition_end=function() return skill('Draenor Blacksmithing') >= 100 end,
@@ -139,7 +139,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Warlords of Draenor\\Draenor Cooking 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Draenor Cooking 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Cooking skill from 1-100.",
 condition_end=function() return skill('Draenor Cooking') >= 100 end,
@@ -256,7 +256,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Warlords of Draenor\\Draenor Enchanting 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Draenor Enchanting 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Enchanting skill from 1-100.",
 condition_end=function() return skill('Draenor Enchanting') >= 100 end,
@@ -285,7 +285,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Warlords of Draenor\\Draenor Engineering 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Draenor Engineering 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Engineering skill from 1-100.",
 condition_end=function() return skill('Draenor Engineering') >= 100 end,
@@ -349,7 +349,7 @@ _Congratulations!_
 You Reached 100 Draenor Engineering Skill.
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Warlords of Draenor\\Draenor Fishing 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Draenor Fishing 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Fishing skill from 1-100.",
 condition_end=function() return skill('Draenor Fishing') >= 100 end,
@@ -367,7 +367,7 @@ _Congratulations!_
 You Reached 100 Draenor Fishing Skill.
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Warlords of Draenor\\Draenor Herbalism 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Draenor Herbalism 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Herbalism skill from 1-100.",
 condition_end=function() return skill('Draenor Herbalism') >= 100 end,
@@ -415,7 +415,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Warlords of Draenor\\Draenor Inscription 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Draenor Inscription 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Inscription skill from 1-100.",
 condition_end=function() return skill('Draenor Inscription') >= 100 end,
@@ -453,7 +453,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Warlords of Draenor\\Draenor Jewelcrafting 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Draenor Jewelcrafting 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Jewelcrafting skill from 1-100.",
 condition_end=function() return skill('Draenor Jewelcrafting') >= 100 end,
@@ -494,7 +494,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Warlords of Draenor\\Draenor Leatherworking 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Draenor Leatherworking 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Leatherworking skill from 1-100.",
 condition_end=function() return skill('Draenor Leatherworking') >= 100 end,
@@ -550,7 +550,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Warlords of Draenor\\Blackrock",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Blackrock",{
 author="support@zygorguides.com",
 description="\nBlackrock can be gathered from Frostfire Ridge.",
 condition_end=function() return skill('Draenor Mining') >= 50 end,
@@ -572,7 +572,7 @@ click Rich Blackrock Deposit##228564+
 collect Blackrock Ore##109118 |n
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Warlords of Draenor\\True Iron",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\True Iron",{
 author="support@zygorguides.com",
 description="\nTrue Iron can be gathered from Frostfire Ridge.",
 condition_end=function() return skill('Draenor Mining') >= 50 end,
@@ -594,7 +594,7 @@ click Rich True Iron Deposit##228510+
 collect True Iron Ore##109119 |n
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Warlords of Draenor\\Draenor Mining 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Draenor Mining 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Mining skill from 1-100.",
 condition_end=function() return skill('Draenor Mining') >= 100 end,
@@ -634,7 +634,7 @@ step
 _Congratulations!_
 You Reached 100 Draenor Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Warlords of Draenor\\Draenor Tailoring 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Draenor Tailoring 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Draenor Tailoring skill from 1-100.",
 condition_end=function() return skill('Draenor Tailoring') >= 100 end,

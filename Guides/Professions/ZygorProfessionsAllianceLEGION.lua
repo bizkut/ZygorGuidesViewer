@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ProfessionsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Legion\\Legion Alchemy 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Legion Alchemy 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Alchemy skill from 1-100.",
 startlevel=5.0,
@@ -13,7 +13,7 @@ condition_suggested=function() return skill('Legion Alchemy') > 0 and skill('Leg
 step
 _Before Starting This Guide:_
 Complete the "Legion Alchemy Quest Line" Guide
-Click here to load the "Legion Alchemy Quest Line" guide |confirm |next "Profession Guides\\Alchemy\\Quest Guides\\Legion\\Legion Alchemy Quest Line"
+Click here to load the "Legion Alchemy Quest Line" guide |confirm |next "Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line"
 only if not completedq(42081)
 step
 collect 184 Yseralline Seed##128304
@@ -69,7 +69,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Quest Guides\\Legion\\Legion Alchemy Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Alchemy quest line.",
 startlevel=10.0,
@@ -847,7 +847,7 @@ step
 _Congratulations!_
 You completed the Legion Alchemy questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Quest Guides\\Legion\\Argus Alchemy Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Quest Guides\\Argus Alchemy Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Alchemy quest line.",
 startlevel=45.0,
@@ -895,7 +895,7 @@ collect 5 Primal Sargerite##151568 |q 48016/2
 Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 For the Infernal Alchemist Stone, you can either create it yourself, which requires completing the previous Alchemy Quest line to obtain the pattern, or you can buy it from the AH.
-Click here to load the "Legion Alchemy Quest Line" guide |next "Profession Guides\\Alchemy\\Quest Guides\\Legion\\Legion Alchemy Quest Line" |confirm |or
+Click here to load the "Legion Alchemy Quest Line" guide |next "Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line" |confirm |or
 Click here to create it yourself |next "Alchemy Create" |confirm |or
 Click here if you bought it from the AH |next "Alchemy AH" |confirm |or
 step
@@ -972,7 +972,7 @@ step
 _Congratulations!_
 You Reached 800 Archaeology Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Quest Guides\\Legion\\Legion Archaeology Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Archaeology quest line.",
 startlevel=45.0,
@@ -1497,7 +1497,7 @@ label "Archaeology_Quests_Finished"
 _Congratulations!_
 You completed the Archaeology questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Legion\\Legion Blacksmithing 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Legion Blacksmithing 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Blacksmithing skill from 1-100.",
 startlevel=100.0,
@@ -1507,7 +1507,7 @@ condition_suggested=function() return skill('Legion Blacksmithing') > 0 and skil
 step
 _Before Starting This Guide:_
 Complete the "Legion Blacksmithing Quest Line" Guide
-Click here to load the "Legion Blacksmithing Quest Line" guide |confirm |next "Profession Guides\\Blacksmithing\\Quest Guides\\Legion\\Legion Blacksmithing Quest Line"
+Click here to load the "Legion Blacksmithing Quest Line" guide |confirm |next "Profession Guides\\Blacksmithing\\Quest Guides\\Legion Blacksmithing Quest Line"
 only if not completedq(38533)
 step
 collect 8 Demonsteel Bar##124461
@@ -1573,7 +1573,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Quest Guides\\Legion\\Legion Blacksmithing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Quest Guides\\Legion Blacksmithing Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Blacksmithing quest line.",
 startlevel=10.0,
@@ -2245,7 +2245,7 @@ talk Felsmith Nal'ryssa##92264
 |tip She walks around this small camp.
 turnin Tribal Knowledge##38533 |goto 29.93,53.29
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Quest Guides\\Legion\\Argus Blacksmithing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Quest Guides\\Argus Blacksmithing Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Blacksmithing quest line.",
 startlevel=45.0,
@@ -2305,7 +2305,7 @@ step
 _Congratulations!_
 You completed the Argus Blacksmithing questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Big Gamy Ribs",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Big Gamy Ribs",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Big Gamy Ribs for various cooking recipes.",
 startlevel=40.0,
@@ -2315,7 +2315,7 @@ kill Sated Hillstrider##98808+
 |tip Other mobs around this area drop Big Gamy Ribs too, but these respawn very quickly.
 collect Big Gamy Ribs##124119 |n |goto Highmountain/0 41.38,54.03
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Fatty Bearsteak",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Fatty Bearsteak",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Fatty Bearsteaks for various cooking recipes.",
 startlevel=40.0,
@@ -2328,7 +2328,7 @@ Follow the path down |goto Stormheim/0 69.66,52.98 < 30 |only if walking
 kill Voracious Bear##93095+
 collect Fatty Bearsteak##124118 |n |goto Stormheim/0 72.49,49.96
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Lean Shank",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Lean Shank",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Lean Shanks for various cooking recipes.",
 startlevel=40.0,
@@ -2338,7 +2338,7 @@ kill Pinerock Prowler##94149+
 kill Pinerock Stalker##99481+
 collect Lean Shank##124117 |n |goto Highmountain/0 42.98,49.26
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Leyblood",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Leyblood",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Leyblood for various cooking recipes.",
 startlevel=40.0,
@@ -2348,7 +2348,7 @@ Enter the cave |goto Azsuna/0 49.35,25.97 < 20 |walk
 kill Flashwyrm##107098+
 collect Leyblood##124120 |n |goto Azsuna/0 49.72,25.41
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Wildfowl Egg",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Wildfowl Egg",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Wildfowl Eggs for various cooking recipes.",
 startlevel=40.0,
@@ -2367,7 +2367,7 @@ kill Coastal Seagull##97809+
 |tip If you kill them up on the rocks and can't reach them to loot them, kill a crab on the ground nearby to AoE loot them.
 collect Wildfowl Egg##124121 |n |goto Stormheim/0 80.57,69.32
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Legion\\Legion Cooking 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Legion Cooking 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Cooking from 1 to 100.",
 startlevel=5.0,
@@ -2380,7 +2380,7 @@ talk Katherine Lee##93534
 |tip Inside the building.
 Train Legion Cooking |skillmax Legion Cooking,100 |goto 39.73,66.55
 step
-Load the "Legion Cooking Quest Line" Guide |confirm |next "Profession Guides\\Cooking\\Quest Guides\\Legion\\Legion Cooking Quest Line"
+Load the "Legion Cooking Quest Line" Guide |confirm |next "Profession Guides\\Cooking\\Quest Guides\\Legion Cooking Quest Line"
 |tip Click the line above to load the guide.
 |tip After completing the Legion Cooking Quest Line, you should be around level 45 Legion Cooking.
 Complete the Legion Cooking Quest Line |q 40991 |future
@@ -2543,7 +2543,7 @@ label "End"
 _Congratulations!_
 You Reached Level 100 Legion Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Quest Guides\\Legion\\Legion Cooking Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Quest Guides\\Legion Cooking Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Cooking quest line.",
 startlevel=10.0,
@@ -2678,7 +2678,7 @@ step
 _Congratulations!_
 You completed the Cooking questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Legion\\Legion Enchanting 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Legion Enchanting 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Enchanting skill from 1-100.",
 startlevel=45.0,
@@ -2688,7 +2688,7 @@ condition_suggested=function() return skill('Legion Enchanting') > 0 and skill('
 step
 _Before Starting This Guide:_
 Complete the "Legion Enchanting Quest Line" Guide
-Click here to load the "Legion Enchanting Quest Line" guide |confirm |next "Profession Guides\\Enchanting\\Quest Guides\\Legion\\Legion Enchanting Quest Line"
+Click here to load the "Legion Enchanting Quest Line" guide |confirm |next "Profession Guides\\Enchanting\\Quest Guides\\Legion Enchanting Quest Line"
 only if not completedq(39923)
 step
 Enter the building |goto Dalaran L/10 39.47,41.99 < 5 |walk
@@ -2781,7 +2781,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Quest Guides\\Legion\\Legion Enchanting Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Quest Guides\\Legion Enchanting Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Enchanting quest line.",
 startlevel=10.0,
@@ -3278,7 +3278,7 @@ step
 _Congratulations!_
 You completed the Enchanting questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Legion\\Legion Engineering 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Legion Engineering 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Engineering skill from 1-100.",
 startlevel=10.0,
@@ -3474,7 +3474,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Quest Guides\\Legion\\Legion Engineering Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Quest Guides\\Legion Engineering Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Engineering quest line.",
 startlevel=10.0,
@@ -3899,7 +3899,7 @@ step
 _Congratulations!_
 You completed the Engineering questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Quest Guides\\Legion\\Argus Engineering Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Quest Guides\\Argus Engineering Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Engineering quest line.",
 startlevel=45.0,
@@ -3994,14 +3994,14 @@ step
 _Congratulations!_
 You completed the Argus Engineering questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Legion\\Legion Fishing 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Legion Fishing 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Fishing skill from 1-100.",
 condition_end=function() return skill('Legion Fishing') >= 100 end,
 condition_suggested=function() return skill('Legion Fishing') > 0 and skill('Legion Fishing') < 100 end,
 },[[
 step
-Load the "Legion Fishing Quest Line" Guide |confirm |next "Profession Guides\\Fishing\\Quest Guides\\Legion\\Legion Fishing Quest Line"
+Load the "Legion Fishing Quest Line" Guide |confirm |next "Profession Guides\\Fishing\\Quest Guides\\Legion Fishing Quest Line"
 |tip Click the line above to load the guide.
 Complete the Legion Fishing Quest Line |q 42911 |future
 step
@@ -4011,7 +4011,7 @@ step
 _Congratulations!_
 You Reached Level 100 Legion Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Legion\\Black Barracuda",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Black Barracuda",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through fishing up Black Barracudas for various cooking recipes.",
 startlevel=10.0,
@@ -4028,7 +4028,7 @@ Fish in Black Barracuda Schools
 |tip Follow the beach east from this spot.
 collect Black Barracuda##124112 |n |goto Suramar/0 74.20,49.90
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Legion\\Highmountain Salmon",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Highmountain Salmon",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through fishing up Highmountain Salmon for various cooking recipes.",
 startlevel=10.0,
@@ -4038,7 +4038,7 @@ Fish in the Rapid-Moving River
 |tip Highmountain Salmon seems to be pretty rare to catch, so it may take a while.
 collect Highmountain Salmon##124109 |n |goto Highmountain/0 41.84,51.65
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Legion\\Silver Mackerel",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Silver Mackerel",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through fishing up Silver Mackerels for various cooking recipes.",
 startlevel=10.0,
@@ -4047,7 +4047,7 @@ step
 Fish in the water
 collect Silver Mackerel##133607 |n |goto Azsuna/0 52.47,31.86
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Quest Guides\\Legion\\Legion Fishing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Quest Guides\\Legion Fishing Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Fishing quest line.",
 startlevel=10.0,
@@ -4084,7 +4084,7 @@ step
 _Congratulations!_
 You completed the Fishing questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Quest Guides\\Legion\\Underlight Angler (Legion Fishing Artifact)",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Quest Guides\\Underlight Angler (Legion Fishing Artifact)",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through obtaining the Legion Fishing artifact.",
 startlevel=10.0,
@@ -4161,7 +4161,7 @@ You earned the Underlight Angler fishing artifact.
 |tip Continue fishing rare fish, like you did while earning the "Bigger Fish to Fry" achievement.
 |tip Each rare fish will give 50 Artifact Power.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Legion\\Legion Herbalism 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Legion Herbalism 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Herbalism profession from 1-100.",
 startlevel=10.0,
@@ -4211,7 +4211,7 @@ step
 _Congratulations!_
 You Reached Level 100 Legion Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Aethril",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Aethril",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Aethril for various Alchemy recipes.",
 startlevel=10.0,
@@ -4238,7 +4238,7 @@ kill Withered Hungerer##98232+
 |tip They have a chance to spawn when you gather Aethril.
 collect Aethril##124101 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Astral Glory",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Astral Glory",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Astral Glory for various Alchemy recipes.",
 startlevel=10.0,
@@ -4273,7 +4273,7 @@ click Fel-Encrusted Herb##273052
 collect Astral Glory##151565 |n
 Follow the path until you reach the end |goto 57.97,61.39 |noway |c |next "path"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Dreamleaf",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Dreamleaf",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Dreamleaf for various Alchemy recipes.",
 startlevel=10.0,
@@ -4296,7 +4296,7 @@ kill Nightmare Creeper##98234+
 |tip They have a chance to spawn when you gather Dreamleaf.
 collect Dreamleaf##124102 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Felwort",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Felwort",{
 author="support@zygorguides.com",
 description="\nFelwort can be gathered from Legion World Quests in the Broken Isles.",
 condition_end=function() return skill('Legion Herbalism') >= 50 end,
@@ -4308,7 +4308,7 @@ click Felwort##252404+
 |tip Refer to the World Quest guide to accomplish this.
 collect Felwort##124106 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Fjarnskaggl",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fjarnskaggl",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Fjarnskaggl for various Alchemy recipes.",
 startlevel=10.0,
@@ -4335,7 +4335,7 @@ click Fjarnskaggl##244777
 |tip Track them on your minimap with "Find Herbs".
 collect Fjarnskaggl##124104 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Foxflower",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Foxflower",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Foxflower for various Alchemy recipes.",
 startlevel=10.0,
@@ -4365,7 +4365,7 @@ click Foxflower##241641
 collect Foxflower##124103 |n
 |tip Fly back to Prepfoot, Highmountain when you finish the route.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Starlight Rose",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Starlight Rose",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Starlight Rose for various Alchemy recipes.",
 startlevel=45.0,
@@ -4397,7 +4397,7 @@ kill Withered Hungerer##98232+
 |tip They have a chance to spawn when you gather Starlight Rose.
 collect Starlight Rose##124105 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Legion\\Legion Herbalism Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Legion Herbalism Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Herbalism quest line.",
 startlevel=10.0,
@@ -5177,7 +5177,7 @@ step
 _Congratulations!_
 You completed the Herbalism questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Legion\\Argus Herbalism Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Argus Herbalism Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Herbalism quest line.",
 startlevel=45.0,
@@ -5258,7 +5258,7 @@ step
 _Congratulations!_
 You completed the Argus Herbalism questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Legion\\Legion Inscription 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Legion Inscription 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Inscription skill from 1-100.",
 startlevel=10.0,
@@ -5362,7 +5362,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Quest Guides\\Legion\\Legion Inscription Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Quest Guides\\Legion Inscription Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Inscription quest line.",
 startlevel=10.0,
@@ -5786,7 +5786,7 @@ step
 _Congratulations!_
 You completed the Inscription questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Legion\\Legion Jewelcrafting 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Legion Jewelcrafting 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Jewelcrafting skill from 1-100.",
 startlevel=10.0,
@@ -5796,7 +5796,7 @@ condition_suggested=function() return skill('Legion Jewelcrafting') > 0 and skil
 step
 _Before Starting This Guide:_
 Complete the "Legion Jewelcrafting Quest Line" Guide
-Click here to load the "Legion Jewelcrafting Quest Line" guide |confirm |next "Profession Guides\\Jewelcrafting\\Quest Guides\\Legion\\Legion Jewelcrafting Quest Line"
+Click here to load the "Legion Jewelcrafting Quest Line" guide |confirm |next "Profession Guides\\Jewelcrafting\\Quest Guides\\Legion Jewelcrafting Quest Line"
 only if not completedq(40561)
 step
 collect 45 Deep Amber##130173
@@ -5873,7 +5873,7 @@ step
 _Congratulations!_
 You Reached Level 100 Legion Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Quest Guides\\Legion\\Legion Jewelcrafting Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Quest Guides\\Legion Jewelcrafting Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Jewelcrafting quest line.",
 startlevel=10.0,
@@ -6427,7 +6427,7 @@ talk Timothy Jones##93527
 |tip Inside the building.
 turnin Jewel of the Heavens##40561 |goto 40.06,35.30
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Quest Guides\\Legion\\Argus Jewelcrafting Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Quest Guides\\Argus Jewelcrafting Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Jewelcrafting quest line.",
 startlevel=45.0,
@@ -6522,7 +6522,7 @@ step
 _Congratulations!_
 You completed the Argus Jewelcrafting questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Legion\\Legion Leatherworking 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Legion Leatherworking 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Leatherworking skill from 1-100.",
 startlevel=10.0,
@@ -6532,7 +6532,7 @@ condition_suggested=function() return skill('Legion Leatherworking') > 0 and ski
 step
 _Before Starting This Guide:_
 Complete the "Legion Leatherworking Quest Line" Guide
-Click here to load the "Legion Leatherworking Quest Line" guide |confirm |next "Profession Guides\\Leatherworking\\Quest Guides\\Legion\\Legion Leatherworking Quest Line"
+Click here to load the "Legion Leatherworking Quest Line" guide |confirm |next "Profession Guides\\Leatherworking\\Quest Guides\\Legion Leatherworking Quest Line"
 only if not completedq(40214)
 step
 Press _I_ and queue for the Darkheart Thicket dungeon, or enter it normally
@@ -6606,7 +6606,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Quest Guides\\Legion\\Legion Leatherworking Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Quest Guides\\Legion Leatherworking Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Leatherworking quest line.",
 startlevel=10.0,
@@ -7312,7 +7312,7 @@ step
 _Congratulations!_
 You completed the Leatherworking questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Quest Guides\\Legion\\Argus Leatherworking Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Quest Guides\\Argus Leatherworking Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Leatherworking quest line.",
 startlevel=45.0,
@@ -7344,7 +7344,7 @@ step
 _Congratulations!_
 You completed the Argus Leatherworking questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Legion\\Empyrium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Empyrium",{
 author="support@zygorguides.com",
 description="\nEmpyrium can be gathered from Krokuun.",
 condition_end=function() return skill('Legion Mining') >= 50 end,
@@ -7383,7 +7383,7 @@ click Rich Empyrium Deposit##272778+
 collect Empyrium##151564 |n
 Follow the path until you reach the end |goto 57.97,61.39 |noway |c |next "Start_Path"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Legion\\Felslate",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Felslate",{
 author="support@zygorguides.com",
 description="\nFelslate can be gathered from Suramar.",
 condition_end=function() return skill('Legion Mining') >= 50 end,
@@ -7457,7 +7457,7 @@ Jump down the waterfall |goto 29.16,27.97 < 20 |walk
 Follow the path |goto 27.46,28.21 < 30 |walk
 Follow the path up |goto 26.21,29.55 < 30 |c |next "Start_Seams_Route"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Legion\\Leystone",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Leystone",{
 author="support@zygorguides.com",
 description="\nLeystone can be gathered from Suramar.",
 condition_end=function() return skill('Legion Mining') >= 50 end,
@@ -7531,7 +7531,7 @@ Jump down the waterfall |goto 29.16,27.97 < 20 |walk
 Follow the path |goto 27.46,28.21 < 30 |walk
 Follow the path up |goto 26.21,29.55 < 30 |c |next "Start_Seams_Route"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Legion\\Legion Mining 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Legion Mining 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Mining skill from 1-100.",
 condition_end=function() return skill('Legion Mining') >= 100 end,
@@ -7673,7 +7673,7 @@ step
 _Congratulations!_
 You Reached 100 Legion Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Legion\\Legion Mining Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Legion Mining Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Mining quest line.",
 startlevel=10.0,
@@ -8140,7 +8140,7 @@ step
 _Congratulations!_
 You completed the Mining questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Legion\\Argus Mining Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Argus Mining Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Mining quest line.",
 startlevel=45,
@@ -8287,7 +8287,7 @@ step
 _Congratulations!_
 You completed the Argus Mining questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Legion\\Fiendish Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Fiendish Leather",{
 author="support@zygorguides.com",
 description="\nFiendish Leather can be gathered from Krokuun in Argus.",
 condition_end=function() return skill('Legion Skinning') >= 50 end,
@@ -8297,7 +8297,7 @@ Kill Duskcloak enemies around this area
 |tip They are found all around the Petrified Forest.
 collect Fiendish Leather##151566 |n |goto Krokuun/0 72.45,70.40
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Legion\\Stonehide Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Stonehide Leather",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Stonehide Leather for various Leatherworking recipes.",
 startlevel=10.0,
@@ -8308,7 +8308,7 @@ Kill enemies around this area
 |tip Loot and skin them.
 collect Stonehide Leather##124113 |n |goto Stormheim/0 49.36,56.91
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Legion\\Stormscale",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Stormscale",{
 author="support@zygorguides.com",
 description="\nStormscale can be gathered from Highmountain in the Broken Isles.",
 condition_end=function() return skill('Legion Skinning') >= 50 end,
@@ -8331,7 +8331,7 @@ kill Coldscale Gazecrawler##108185+
 collect Stormscale##124115 |n
 '|goto 50.00,67.89 < 25 |noway |c |next "Start_Farming"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Legion\\Legion Skinning 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Legion Skinning 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Skinning profession from 1-100.",
 startlevel=10.0,
@@ -8339,7 +8339,7 @@ condition_end=function() return skill('Legion Skinning') >= 100 end,
 condition_suggested=function() return skill('Legion Skinning') > 0 and skill('Legion Skinning') < 100 and level >= 10 end,
 },[[
 step
-Load the "Legion Skinning Quest Line" Guide |confirm |next "Profession Guides\\Skinning\\Quest Guides\\Legion\\Legion Skinning Quest Line"
+Load the "Legion Skinning Quest Line" Guide |confirm |next "Profession Guides\\Skinning\\Quest Guides\\Legion Skinning Quest Line"
 |tip Click the line above to load the guide.
 Complete the Legion Skinning Quest Line |q 40140 |future
 step
@@ -8352,7 +8352,7 @@ label "Congratulations_Skinning"
 _Congratulations!_
 You Reached 100 Legion Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Legion\\Legion Skinning Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Legion Skinning Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Skinning quest line.",
 startlevel=10.0,
@@ -8761,7 +8761,7 @@ step
 _Congratulations!_
 You completed the Skinning questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Legion\\Argus Skinning Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Argus Skinning Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Skinning quest line.",
 startlevel=45.0,
@@ -8812,7 +8812,7 @@ step
 _Congratulations!_
 You completed the Argus Skinning questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Legion\\Legion Tailoring 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Legion Tailoring 1-100",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Legion Tailoring skill from 1-100.",
 condition_end=function() return skill('Legion Tailoring') >= 100 end,
@@ -8823,7 +8823,7 @@ talk Tanithria##93542
 |tip Inside the building.
 Train Legion Tailoring |skillmax Legion Tailoring,100 |goto Dalaran L/10 34.99,34.61
 step
-Load the "Legion Tailoring Quest Line" Guide |confirm |next "Profession Guides\\Tailoring\\Quest Guides\\Legion\\Legion Tailoring Quest Line"
+Load the "Legion Tailoring Quest Line" Guide |confirm |next "Profession Guides\\Tailoring\\Quest Guides\\Legion Tailoring Quest Line"
 |tip Click the line above to load the guide.
 |tip After completing the Legion Tailoring Quest Line, you should be around level 45 Legion Tailoring.
 Complete the Legion Tailoring Quest Line |q 38974 |future
@@ -8934,7 +8934,7 @@ step
 _Congratulations!_
 You Reached Level 100 Legion Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Legion\\Lightweave Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Lightweave Cloth",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Lightweave Cloth for various Tailoring recipes.",
 startlevel=10.0,
@@ -8976,7 +8976,7 @@ collect Lightweave Cloth##151567 |n
 Click here to continue |confirm |next "loop"
 |tip Enter the buildings near the provided path.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Legion\\Shal'dorei Silk",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Shal'dorei Silk",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through farming Shal'dorei Silk for various Tailoring recipes.",
 startlevel=10.0,
@@ -8994,7 +8994,7 @@ kill Crawliac Hagfeather##95266+, Crawliac Deathscreamer##95265+, Skywhisker Loy
 |tip You can also purchase it from the Auction House.
 collect Shal'dorei Silk##124437 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Quest Guides\\Legion\\Legion Tailoring Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Quest Guides\\Legion Tailoring Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Legion Tailoring quest line.",
 startlevel=10.0,
@@ -9742,7 +9742,7 @@ step
 _Congratulations!_
 You completed the Tailoring questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Quest Guides\\Legion\\Argus Tailoring Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Quest Guides\\Argus Tailoring Quest Line",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the Argus Tailoring quest line.",
 startlevel=45.0,

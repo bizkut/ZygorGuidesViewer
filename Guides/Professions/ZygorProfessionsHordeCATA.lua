@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ProfessionsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Classic\\Alchemy 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Classic Alchemy skill from 1-300.",
 condition_end=function() return skill('Alchemy') >= 300 end,
@@ -233,7 +233,7 @@ step
 _Congratulations!_
 You Reached 300 Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Burning Crusade\\Outland Alchemy 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Outland Alchemy 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Alchemy skill from 1-75.",
 condition_end=function() return skill('Outland Alchemy') >= 75 end,
@@ -326,7 +326,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Wrath of the Lich King\\Northrend Alchemy 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Northrend Alchemy 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Alchemy skill from 1-75.",
 condition_end=function() return skill('Northrend Alchemy') >= 75 end,
@@ -454,7 +454,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Cataclysm\\Cataclysm Alchemy 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Cataclysm Alchemy 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Alchemy skill from 1-75.",
 condition_end=function() return skill('Cataclysm Alchemy') >= 75 end,
@@ -788,7 +788,7 @@ step
 _Congratulations!_
 You Reached 600 Archaeology Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Classic\\Blacksmithing 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Blacksmithing skill from 1-300.",
 condition_end=function() return skill('Blacksmithing') >= 300 end,
@@ -1058,7 +1058,7 @@ step
 _Congratulations!_
 You Reached 300 Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Burning Crusade\\Outland Blacksmithing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Outland Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Outland Blacksmithing') >= 75 end,
@@ -1184,7 +1184,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Wrath of the Lich King\\Northrend Blacksmithing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Northrend Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Northrend Blacksmithing') >= 75 end,
@@ -1293,7 +1293,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Cataclysm\\Cataclysm Blacksmithing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Cataclysm Blacksmithing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Blacksmithing skill from 1-75.",
 condition_end=function() return skill('Cataclysm Blacksmithing') >= 75 end,
@@ -1413,7 +1413,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Clam Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Clam Meat",{
 author="support@zygorguides.com",
 description="\nClam Meat can be gathered from the Echo Isles in southern Durotar.",
 },[[
@@ -1425,7 +1425,7 @@ use the Small Barnacled Clam##5523
 collect Clam Meat##5503 |n |goto Echo Isles/0 61.52,17.08
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Classic\\Cooking 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cooking skill from 1-300.",
 condition_end=function() return skill('Cooking') >= 300 end,
@@ -1607,7 +1607,7 @@ step
 _Congratulations!_
 You Reached 300 Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Burning Crusade\\Outland Cooking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Outland Cooking 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Cooking skill from 1-75.",
 condition_end=function() return skill('Outland Cooking') >= 75 end,
@@ -1675,7 +1675,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Wrath of the Lich King\\Northrend Cooking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Northrend Cooking 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Cooking skill from 1-75.",
 condition_end=function() return skill('Northrend Cooking') >= 75 end,
@@ -1726,7 +1726,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cataclysm\\Cataclysm Cooking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cataclysm Cooking 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Cooking skill from 1-75.",
 condition_end=function() return skill('Cataclysm Cooking') >= 75 end,
@@ -1816,7 +1816,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Cooking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Classic\\Enchanting 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Enchanting skill from 1-300.",
 condition_end=function() return skill('Enchanting') >= 300 end,
@@ -2030,7 +2030,7 @@ step
 _Congratulations!_
 You Reached 300 Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Burning Crusade\\Outland Enchanting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Outland Enchanting 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Enchanting skill from 1-75.",
 condition_end=function() return skill('Outland Enchanting') >= 75 end,
@@ -2188,7 +2188,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Wrath of the Lich King\\Northrend Enchanting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Northrend Enchanting 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Enchanting skill from 1-75.",
 condition_end=function() return skill('Northrend Enchanting') >= 75 end,
@@ -2319,7 +2319,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Cataclysm\\Cataclysm Enchanting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Cataclysm Enchanting 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Enchanting skill from 1-75.",
 condition_end=function() return skill('Cataclysm Enchanting') >= 75 end,
@@ -2462,7 +2462,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Classic\\Engineering 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Engineering skill from 1-300.",
 condition_end=function() return skill('Engineering') >= 300 end,
@@ -2738,7 +2738,7 @@ step
 _Congratulations!_
 You Reached 300 Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Burning Crusade\\Outland Engineering 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Outland Engineering 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Engineering skill from 1-75.",
 condition_end=function() return skill('Outland Engineering') >= 75 end,
@@ -2889,7 +2889,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Wrath of the Lich King\\Northrend Engineering 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Northrend Engineering 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Engineering skill from 1-75.",
 condition_end=function() return skill('Northrend Engineering') >= 75 end,
@@ -3050,7 +3050,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Cataclysm\\Cataclysm Engineering 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Cataclysm Engineering 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Engineering skill from 1-75.",
 condition_end=function() return skill('Cataclysm Engineering') >= 75 end,
@@ -3127,7 +3127,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Classic\\Fishing 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Fishing skill from 1-300.",
 condition_end=function() return skill('Fishing') >= 300 end,
@@ -3148,7 +3148,7 @@ step
 _Congratulations!_
 You Reached 300 Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Burning Crusade\\Outland Fishing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Outland Fishing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Fishing skill from 1-75.",
 condition_end=function() return skill('Outland Fishing') >= 75 end,
@@ -3165,7 +3165,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Wrath of the Lich King\\Northrend Fishing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Northrend Fishing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Fishing skill from 1-75.",
 condition_end=function() return skill('Northrend Fishing') >= 75 end,
@@ -3182,7 +3182,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Cataclysm\\Cataclysm Fishing 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Cataclysm Fishing 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Fishing skill from 1-75.",
 condition_end=function() return skill('Cataclysm Fishing') >= 75 end,
@@ -3199,7 +3199,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Fishing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Earthroot",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Earthroot",{
 author="support@zygorguides.com",
 description="\nEarthroot can be gathered from Tirisfal Glades.",
 condition_end=function() return skill('Herbalism') >= 115 end,
@@ -3226,7 +3226,7 @@ click Earthroot##1619+
 collect Earthroot##2449 |n
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Peacebloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Peacebloom",{
 author="support@zygorguides.com",
 description="\nPeacebloom can be gathered from Tirisfal Glades.",
 condition_end=function() return skill('Herbalism') >= 50 end,
@@ -3253,7 +3253,7 @@ click Peacebloom##1618+
 collect Peacebloom##2447 |n
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Silverleaf",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Silverleaf",{
 author="support@zygorguides.com",
 description="\nSilverleaf can be gathered from Tirisfal Glades.",
 condition_end=function() return skill('Herbalism') >= 50 end,
@@ -3280,7 +3280,7 @@ click Silverleaf##1617+
 collect Silverleaf##765 |n
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Classic\\Herbalism 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Herbalism skill from 1-300.",
 condition_end=function() return skill('Herbalism') >= 300 end,
@@ -3317,7 +3317,7 @@ step
 _Congratulations!_
 You Reached 300 Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Burning Crusade\\Outland Herbalism 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Outland Herbalism 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Herbalism skill from 1-75.",
 condition_end=function() return skill('Outland Herbalism') >= 75 end,
@@ -3352,7 +3352,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Wrath of the Lich King\\Northrend Herbalism 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Northrend Herbalism 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Herbalism skill from 1-75.",
 condition_end=function() return skill('Northrend Herbalism') >= 75 end,
@@ -3384,7 +3384,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Cataclysm\\Cataclysm Herbalism 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Cataclysm Herbalism 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Herbalism skill from 1-75.",
 condition_end=function() return skill('Cataclysm Herbalism') >= 75 end,
@@ -3419,7 +3419,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Herbalism Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Classic\\Inscription 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Inscription skill from 1-300.",
 condition_end=function() return skill('Inscription') >= 300 end,
@@ -3744,7 +3744,7 @@ step
 _Congratulations!_
 You Reached 300 Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Burning Crusade\\Outland Inscription 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Outland Inscription 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Inscription skill from 1-75.",
 condition_end=function() return skill('Outland Inscription') >= 75 end,
@@ -3834,7 +3834,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Wrath of the Lich King\\Northrend Inscription 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Northrend Inscription 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Inscription skill from 1-75.",
 condition_end=function() return skill('Northrend Inscription') >= 75 end,
@@ -3913,7 +3913,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Cataclysm\\Cataclysm Inscription 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Cataclysm Inscription 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Inscription skill from 1-75.",
 condition_end=function() return skill('Cataclysm Inscription') >= 75 end,
@@ -3963,7 +3963,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Classic\\Jewelcrafting 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Jewelcrafting skill from 1-300.",
 condition_end=function() return skill('Jewelcrafting') >= 300 end,
@@ -4223,7 +4223,7 @@ step
 _Congratulations!_
 You Reached 300 Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Burning Crusade\\Outland Jewelcrafting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Outland Jewelcrafting 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Jewelcrafting skill from 1-75.",
 condition_end=function() return skill('Outland Jewelcrafting') >= 75 end,
@@ -4366,7 +4366,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Wrath of the Lich King\\Northrend Jewelcrafting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Northrend Jewelcrafting 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Jewelcrafting skill from 1-75.",
 condition_end=function() return skill('Northrend Jewelcrafting') >= 75 end,
@@ -4471,7 +4471,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Cataclysm\\Cataclysm Jewelcrafting 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Cataclysm Jewelcrafting 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Jewelcrafting skill from 1-75.",
 condition_end=function() return skill('Cataclysm Jewelcrafting') >= 75 end,
@@ -4579,7 +4579,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Classic\\Leatherworking 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Leatherworking skill from 1-300.",
 condition_end=function() return skill('Leatherworking') >= 300 end,
@@ -4820,7 +4820,7 @@ step
 _Congratulations!_
 You Reached 300 Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Burning Crusade\\Outland Leatherworking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Outland Leatherworking 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Leatherworking skill from 1-75.",
 condition_end=function() return skill('Outland Leatherworking') >= 75 end,
@@ -4921,7 +4921,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Wrath of the Lich King\\Northrend Leatherworking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Northrend Leatherworking 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Leatherworking skill from 1-75.",
 condition_end=function() return skill('Northrend Leatherworking') >= 75 end,
@@ -5080,7 +5080,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Cataclysm\\Cataclysm Leatherworking 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Cataclysm Leatherworking 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Leatherworking skill from 1-75.",
 condition_end=function() return skill('Cataclysm Leatherworking') >= 75 end,
@@ -5237,7 +5237,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Copper",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Copper",{
 author="support@zygorguides.com",
 description="\nCopper can be gathered from Durotar and Mulgore.",
 condition_end=function() return skill('Mining') >= 50 end,
@@ -5287,7 +5287,7 @@ collect Copper Ore##2770 |n
 Click Here to Go Back to the Durotar Farming Path |confirm |next "Durotar_Farming_Location"
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Classic\\Mining 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Mining skill from 1-300.",
 condition_end=function() return skill('Mining') >= 300 end,
@@ -5344,7 +5344,7 @@ step
 _Congratulations!_
 You Reached 300 Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Burning Crusade\\Outland Mining 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Outland Mining 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Mining skill from 1-75.",
 condition_end=function() return skill('Outland Mining') >= 75 end,
@@ -5377,7 +5377,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Wrath of the Lich King\\Northrend Mining 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Northrend Mining 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Mining skill from 1-75.",
 condition_end=function() return skill('Northrend Mining') >= 75 end,
@@ -5419,7 +5419,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Cataclysm\\Cataclysm Mining 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Cataclysm Mining 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Mining skill from 1-75.",
 condition_end=function() return skill('Cataclysm Mining') >= 75 end,
@@ -5455,7 +5455,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Mining Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Light Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Light Leather",{
 author="support@zygorguides.com",
 description="\nLight Leather can be gathered from Durotar.",
 condition_end=function() return skill('Skinning') >= 50 end,
@@ -5469,7 +5469,7 @@ Kill enemies around this area
 collect Light Leather##2318 |n
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Classic\\Skinning 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Skinning skill from 1-300.",
 condition_end=function() return skill('Skinning') >= 300 end,
@@ -5492,7 +5492,7 @@ step
 _Congratulations!_
 You Reached 300 Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Burning Crusade\\Outland Skinning 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Outland Skinning 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Skinning skill from 1-75.",
 condition_end=function() return skill('Outland Skinning') >= 75 end,
@@ -5519,7 +5519,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Wrath of the Lich King\\Northrend Skinning 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Northrend Skinning 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Skinning skill from 1-75.",
 condition_end=function() return skill('Northrend Skinning') >= 75 end,
@@ -5544,7 +5544,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Cataclysm\\Cataclysm Skinning 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Cataclysm Skinning 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Skinning skill from 1-75.",
 condition_end=function() return skill('Cataclysm Skinning') >= 75 end,
@@ -5566,7 +5566,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Skinning Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Classic\\Linen Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Linen Cloth",{
 author="support@zygorguides.com",
 description="\nLinen Cloth can be gathered from the Silverpine Forest.",
 },[[
@@ -5576,7 +5576,7 @@ kill Hillsbrad Worgen##45255+
 collect Linen Cloth##2589 |n |goto Silverpine Forest/0 54.00,34.75
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Classic\\Silk Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Silk Cloth",{
 author="support@zygorguides.com",
 description="\nSilk Cloth can be gathered from the northwestern Thousand Needles.",
 },[[
@@ -5585,7 +5585,7 @@ Kill enemies around this area
 collect Silk Cloth##4306 |n |goto Thousand Needles/0 12.34,7.04
 '|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Classic\\Tailoring 1-300",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-300",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Tailoring skill from 1-300.",
 condition_end=function() return skill('Tailoring') >= 300 end,
@@ -5688,7 +5688,7 @@ step
 _Congratulations!_
 You Reached 300 Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Burning Crusade\\Outland Tailoring 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Outland Tailoring 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Outland Tailoring skill from 1-75.",
 condition_end=function() return skill('Outland Tailoring') >= 75 end,
@@ -5731,7 +5731,7 @@ step
 _Congratulations!_
 You Reached 75 Outland Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Wrath of the Lich King\\Northrend Tailoring 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Northrend Tailoring 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Northrend Tailoring skill from 1-75.",
 condition_end=function() return skill('Northrend Tailoring') >= 75 end,
@@ -5767,7 +5767,7 @@ step
 _Congratulations!_
 You Reached 75 Northrend Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Cataclysm\\Cataclysm Tailoring 1-75",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Cataclysm Tailoring 1-75",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through leveling your Cataclysm Tailoring skill from 1-75.",
 condition_end=function() return skill('Cataclysm Tailoring') >= 75 end,
@@ -5799,7 +5799,7 @@ step
 _Congratulations!_
 You Reached 75 Cataclysm Tailoring Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Cataclysm\\Volatile Water",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Volatile Water",{
 author="support@zygorguides.com",
 description="\nVolatile Water can be gathered from Twilight Highlands in Eastern Kingdoms.",
 },[[

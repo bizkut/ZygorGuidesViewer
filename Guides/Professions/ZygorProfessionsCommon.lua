@@ -8,7 +8,7 @@ ZygorGuidesViewer.GuideMenuTier = "CAT"
 -------------
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Bear Flank",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bear Flank",{
 	author="support@zygorguides.com",
 	description="\nBear Flanks can be gathered from the western end of Western Plaguelands.",
 	},[[
@@ -18,7 +18,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Bear Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bear Meat",{
 	author="support@zygorguides.com",
 	description="\nBear Meat can be gathered from the Twilight Vale in southern Darkshore.",
 	},[[
@@ -33,7 +33,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Crawler Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crawler Meat",{
 	author="support@zygorguides.com",
 	description="\nCrawler Meat can be gathered from Darkshore.",
 	},[[
@@ -52,7 +52,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Crocolisk Tail",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crocolisk Tail",{
 	author="support@zygorguides.com",
 	description="\nCrocolisk Tail can be gathered from the western Tol Barad.",
 	},[[
@@ -63,7 +63,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Giant Egg",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Giant Egg",{
 	author="support@zygorguides.com",
 	description="\nGiant Eggs can be gathered from eastern Swamp of Sorrows.",
 	},[[
@@ -75,7 +75,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Crawler Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crawler Meat",{
 	author="support@zygorguides.com",
 	description="\nCrawler Meat can be gathered from Darkshore.",
 	},[[
@@ -94,7 +94,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Crocolisk Tail",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crocolisk Tail",{
 	author="support@zygorguides.com",
 	description="\nCrocolisk Tail can be gathered from the western Tol Barad.",
 	},[[
@@ -105,7 +105,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Giant Egg",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Giant Egg",{
 	author="support@zygorguides.com",
 	description="\nGiant Eggs can be gathered from eastern Swamp of Sorrows.",
 	},[[
@@ -116,7 +116,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Raptor Egg",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Egg",{
 	author="support@zygorguides.com",
 	description="\nRaptor Eggs can be gathered from southern Arathi Highlands.",
 	},[[
@@ -132,7 +132,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Raptor Flesh",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Flesh",{
 	author="support@zygorguides.com",
 	description="\nRaptor Flesh can be gathered from southern Arathi Highlands.",
 	},[[
@@ -147,7 +147,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Classic\\Sandworm Meat",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Sandworm Meat",{
 	author="support@zygorguides.com",
 	description="\nSandworm Meat can be gathered from the northern half of Silithus.",
 	},[[
@@ -163,7 +163,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cla
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Burning Crusade\\Raptor Ribs",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Ribs",{
 	author="support@zygorguides.com",
 	description="\nRaptor Ribs can be gathered from the eastern Blade's Edge Mountains.",
 	},[[
@@ -178,7 +178,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bur
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Burning Crusade\\Ravager Flesh",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Ravager Flesh",{
 	author="support@zygorguides.com",
 	description="\nRavager Flesh can be gathered from the western Hellfire Peninsula.",
 	},[[
@@ -189,7 +189,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bur
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Burning Crusade\\Talbuk Venison",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Talbuk Venison",{
 	author="support@zygorguides.com",
 	description="\nTalbuk Venison can be gathered from central Nagrand.",
 	},[[
@@ -204,7 +204,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bur
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Wrath of the Lich King\\Shoveltusk Flank",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Shoveltusk Flank",{
 	author="support@zygorguides.com",
 	description="\nShoveltusk Flanks can be gathered from Howling Fjord.",
 	},[[
@@ -219,7 +219,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Wra
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cataclysm\\Giant Turtle Tongue",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Giant Turtle Tongue",{
 	author="support@zygorguides.com",
 	description="\nGiant Turtle Tongue can be gathered from the northeastern Vashj'ir.",
 	},[[
@@ -230,7 +230,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cat
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cataclysm\\Snake Eye",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Snake Eye",{
 	author="support@zygorguides.com",
 	description="\nSnake Eyes can be gathered from northeastern Vashj'ir.",
 	},[[
@@ -245,7 +245,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Cat
 -- HERBALISM --
 ---------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Black Lotus",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Black Lotus",{
 	author="support@zygorguides.com",
 	description="\nBlack Lotus can be gathered from Eastern Plaguelands in Eastern Kingdoms.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -258,7 +258,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Blindweed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Blindweed",{
 	author="support@zygorguides.com",
 	description="\nBlindweed can be gathered from Western Plaguelands.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -276,7 +276,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Bloodthistle",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Bloodthistle",{
 	author="support@zygorguides.com",
 	description="\nBloodthistle can be gathered from Eversong Woods.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -300,7 +300,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Briarthorn",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Briarthorn",{
 	author="support@zygorguides.com",
 	description="\nBriarthorn can be gathered from Hillsbrad Foothills.",
 	condition_end=function() return skill('Herbalism') >= 170 end,
@@ -326,7 +326,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Bruiseweed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Bruiseweed",{
 	author="support@zygorguides.com",
 	description="\nBruiseweed can be gathered from Hillsbrad Foothills.",
 	condition_end=function() return skill('Herbalism') >= 200 end,
@@ -352,7 +352,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Dragon's Teeth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Dragon's Teeth",{
 	author="support@zygorguides.com",
 	description="\nDragon's Teeth can be gathered from Badlands.",
 	condition_end=function() return skill('Herbalism') >= 295 end,
@@ -369,7 +369,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Dreamfoil",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Dreamfoil",{
 	author="support@zygorguides.com",
 	description="\nDreamfoil can be gathered from Felwood.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -397,7 +397,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Fadeleaf",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fadeleaf",{
 	author="support@zygorguides.com",
 	description="\nFadeleaf can be gathered from Western Plaguelands.",
 	condition_end=function() return skill('Herbalism') >= 250 end,
@@ -425,7 +425,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		Search Gahrron's Withering for Fadeleaf |goto 62.97,57.82 < 20 |c |next "Start_Path"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Firebloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Firebloom",{
 	author="support@zygorguides.com",
 	description="\nFirebloom can be gathered from Searing Gorge.",
 	condition_end=function() return skill('Herbalism') >= 305 end,
@@ -446,7 +446,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Ghost Mushroom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Ghost Mushroom",{
 	author="support@zygorguides.com",
 	description="\nGhost Mushroom can be gathered from Un'Goro Crater.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -466,7 +466,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Golden Sansam",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Golden Sansam",{
 	author="support@zygorguides.com",
 	description="\nGolden Sansam can be gathered from Swamp of Sorrows.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -484,7 +484,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Goldthorn",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Goldthorn",{
 	author="support@zygorguides.com",
 	description="\nGoldthorn can be gathered from The Hinterlands.",
 	condition_end=function() return skill('Herbalism') >= 270 end,
@@ -511,7 +511,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Grave Moss",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Grave Moss",{
 	author="support@zygorguides.com",
 	description="\nGrave Moss can be gathered from Duskwood.",
 	condition_end=function() return skill('Herbalism') >= 220 end,
@@ -528,7 +528,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Gromsblood",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Gromsblood",{
 	author="support@zygorguides.com",
 	description="\nGromsblood can be gathered from Felwood.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -556,7 +556,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Icecap",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Icecap",{
 	author="support@zygorguides.com",
 	description="\nIcecap can be gathered from Winterspring.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -589,7 +589,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Khadgar's Whisker",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Khadgar's Whisker",{
 	author="support@zygorguides.com",
 	description="\nKhadgar's Whisker can be gathered from Western Plaguelands.",
 	condition_end=function() return skill('Herbalism') >= 260 end,
@@ -607,7 +607,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Kingsblood",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Kingsblood",{
 	author="support@zygorguides.com",
 	description="\nKingsblood can be gathered from Western Plaguelands.",
 	condition_end=function() return skill('Herbalism') >= 225 end,
@@ -626,7 +626,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Liferoot",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Liferoot",{
 	author="support@zygorguides.com",
 	description="\nLiferoot can be gathered from Western Plaguelands.",
 	condition_end=function() return skill('Herbalism') >= 250 end,
@@ -644,7 +644,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Mageroyal",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mageroyal",{
 	author="support@zygorguides.com",
 	description="\nMageroyal can be gathered from Hillsbrad Foothills.",
 	condition_end=function() return skill('Herbalism') >= 150 end,
@@ -670,7 +670,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Mountain Silversage",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mountain Silversage",{
 	author="support@zygorguides.com",
 	description="\nMountain Silversage can be gathered from Winterspring.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -691,7 +691,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Purple Lotus",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Purple Lotus",{
 	author="support@zygorguides.com",
 	description="\nPurple Lotus can be gathered from Felwood.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -753,7 +753,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		collect Purple Lotus##8831 |n
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Sorrowmoss",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Sorrowmoss",{
 	author="support@zygorguides.com",
 	description="\nSorrowmoss can be gathered from Swamp of Sorrows.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -779,7 +779,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Stranglekelp",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Stranglekelp",{
 	author="support@zygorguides.com",
 	description="\nStranglekelp can be gathered from Thousand Needles.",
 	condition_end=function() return skill('Herbalism') >= 185 end,
@@ -803,7 +803,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Sungrass",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Sungrass",{
 	author="support@zygorguides.com",
 	description="\nSungrass can be gathered from Searing Gorge.",
 	condition_end=function() return skill('Herbalism') >= 50 end,
@@ -823,7 +823,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Classic\\Wild Steelbloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wild Steelbloom",{
 	author="support@zygorguides.com",
 	description="\nWild Steelbloom can be gathered from Northern Stranglethorn.",
 	condition_end=function() return skill('Herbalism') >= 215 end,
@@ -847,7 +847,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Ancient Lichen",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Ancient Lichen",{
 	author="support@zygorguides.com",
 	description="\nAncient Lichen can be gathered from the Mana-Tombs.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -868,7 +868,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Dreaming Glory",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Dreaming Glory",{
 	author="support@zygorguides.com",
 	description="\nDreaming Glory can be gathered from Terokkar Forest.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -894,7 +894,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Fel Lotus",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fel Lotus",{
 	author="support@zygorguides.com",
 	description="\nFel Lotus can be gathered from Shadowmoon Valley.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -917,7 +917,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Felweed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Felweed",{
 	author="support@zygorguides.com",
 	description="\nFelweed can be gathered from Terokkar Forest.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -944,7 +944,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Mana Thistle",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mana Thistle",{
 	author="support@zygorguides.com",
 	description="\nMana Thistle can be gathered from Terokkar Forest and Shadowmoon Valley.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -982,7 +982,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		Farm Along the Path |goto 74.60,86.41 < 30 |noway |c |next "Start_Path"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Netherbloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Netherbloom",{
 	author="support@zygorguides.com",
 	description="\nNetherbloom can be gathered from Netherstorm.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -1021,7 +1021,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Nightmare Vine",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Nightmare Vine",{
 	author="support@zygorguides.com",
 	description="\nNightmare Vine can be gathered from Shadowmoon Valley.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -1043,7 +1043,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Ragveil",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Ragveil",{
 	author="support@zygorguides.com",
 	description="\nRagveil can be gathered from Zangarmarsh.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -1075,7 +1075,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Burning Crusade\\Terocone",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Terocone",{
 	author="support@zygorguides.com",
 	description="\nTerocone can be gathered from Terokkar Forest.",
 	condition_end=function() return skill('Outland Herbalism') >= 50 end,
@@ -1101,7 +1101,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\B
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Adder's Tongue",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Adder's Tongue",{
 	author="support@zygorguides.com",
 	description="\nAdder's Tongue can be gathered from Sholazar Basin.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1120,7 +1120,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Deadnettle",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Deadnettle",{
 	author="support@zygorguides.com",
 	description="\nDeadnettle can be gathered from Zul'Drak.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1151,7 +1151,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Fire Leaf",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fire Leaf",{
 	author="support@zygorguides.com",
 	description="\nFire Leaf can be gathered from Borean Tundra.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1169,7 +1169,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Frost Lotus",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Frost Lotus",{
 	author="support@zygorguides.com",
 	description="\nFrost Lotus can be gathered from The Storm Peaks.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1205,7 +1205,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Goldclover",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Goldclover",{
 	author="support@zygorguides.com",
 	description="\nGoldclover can be gathered from Borean Tundra.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1222,7 +1222,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Icethorn",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Icethorn",{
 	author="support@zygorguides.com",
 	description="\nIcethorn can be gathered from The Storm Peaks.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1256,7 +1256,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Lichbloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Lichbloom",{
 	author="support@zygorguides.com",
 	description="\nLichbloom can be gathered from The Storm Peaks.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1290,7 +1290,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Talandra's Rose",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Talandra's Rose",{
 	author="support@zygorguides.com",
 	description="\nTalandra's Rose can be gathered from Zul'Drak.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1320,7 +1320,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wrath of the Lich King\\Tiger Lily",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Tiger Lily",{
 	author="support@zygorguides.com",
 	description="\nTiger Lily can be gathered from Sholazar Basin.",
 	condition_end=function() return skill('Northrend Herbalism') >= 50 end,
@@ -1339,7 +1339,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cataclysm\\Azshara's Veil",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Azshara's Veil",{
 	author="support@zygorguides.com",
 	description="\nAzshara's Veil can be gathered from the Shimmering Expanse.",
 	condition_end=function() return skill('Cataclysm Herbalism') >= 50 end,
@@ -1365,7 +1365,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cataclysm\\Cinderbloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cinderbloom",{
 	author="support@zygorguides.com",
 	description="\nCinderbloom can be gathered from Mount Hyjal.",
 	condition_end=function() return skill('Cataclysm Herbalism') >= 50 end,
@@ -1388,7 +1388,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cataclysm\\Heartblossom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Heartblossom",{
 	author="support@zygorguides.com",
 	description="\nHeartblossom can be gathered from Deepholm.",
 	condition_end=function() return skill('Cataclysm Herbalism') >= 50 end,
@@ -1408,7 +1408,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cataclysm\\Stormvine",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Stormvine",{
 	author="support@zygorguides.com",
 	description="\nStormvine can be gathered from the Shimmering Expanse.",
 	condition_end=function() return skill('Cataclysm Herbalism') >= 50 end,
@@ -1434,7 +1434,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cataclysm\\Twilight Jasmine",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Twilight Jasmine",{
 	author="support@zygorguides.com",
 	description="\nTwilight Jasmine can be gathered from Twilight Highlands.",
 	condition_end=function() return skill('Cataclysm Herbalism') >= 50 end,
@@ -1470,7 +1470,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Cataclysm\\Whiptail",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Whiptail",{
 	author="support@zygorguides.com",
 	description="\nWhiptail can be gathered from Uldum.",
 	condition_end=function() return skill('Cataclysm Herbalism') >= 50 end,
@@ -1491,7 +1491,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\C
 -- MINING --
 ------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Dark Iron",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Dark Iron",{
 	author="support@zygorguides.com",
 	description="\nDark Iron can be gathered from the Blackrock Depths and Molten Core inside Blackrock Mountain.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1505,7 +1505,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Gold",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Gold",{
 	author="support@zygorguides.com",
 	description="\nGold can be gathered from Feralas.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1551,7 +1551,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Iron",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Iron",{
 	author="support@zygorguides.com",
 	description="\nIron can be gathered from Feralas.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1595,7 +1595,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Mithril",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mithril",{
 	author="support@zygorguides.com",
 	description="\nMithril can be gathered from Felwood.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1639,7 +1639,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Silver",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Silver",{
 	author="support@zygorguides.com",
 	description="\nSilver can be gathered from Northern Stranglethorn.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1669,7 +1669,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Thorium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Thorium",{
 	author="support@zygorguides.com",
 	description="\nThorium can be gathered from Winterspring.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1711,7 +1711,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Tin",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Tin",{
 	author="support@zygorguides.com",
 	description="\nTin can be gathered from Hillsbrad Foothills.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1729,7 +1729,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Classic\\Truesilver",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Truesilver",{
 	author="support@zygorguides.com",
 	description="\nTruesilver can be gathered from Winterspring.",
 	condition_end=function() return skill('Mining') >= 50 end,
@@ -1769,7 +1769,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Clas
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Burning Crusade\\Adamantite",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Adamantite",{
 	author="support@zygorguides.com",
 	description="\nAdamantite can be gathered from Nagrand.",
 	condition_end=function() return skill('Outland Mining') >= 50 end,
@@ -1796,7 +1796,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Burn
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Burning Crusade\\Fel Iron",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Fel Iron",{
 	author="support@zygorguides.com",
 	description="\nFel Iron can be gathered from Hellfire Peninsula.",
 	condition_end=function() return skill('Outland Mining') >= 50 end,
@@ -1844,7 +1844,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Burn
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Burning Crusade\\Khorium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Khorium",{
 	author="support@zygorguides.com",
 	description="\nKhorium can be gathered from Nagrand in Outland.",
 	condition_end=function() return skill('Outland Mining') >= 50 end,
@@ -1881,7 +1881,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Burn
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Wrath of the Lich King\\Cobalt",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cobalt",{
 	author="support@zygorguides.com",
 	description="\nCobalt can be gathered from Howling Fjord.",
 	condition_end=function() return skill('Northrend Mining') >= 50 end,
@@ -1920,7 +1920,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Wrat
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Wrath of the Lich King\\Saronite",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Saronite",{
 	author="support@zygorguides.com",
 	description="\nSaronite can be gathered from Sholazar Basin.",
 	condition_end=function() return skill('Northrend Mining') >= 50 end,
@@ -1955,7 +1955,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Wrat
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Wrath of the Lich King\\Titanium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Titanium",{
 	author="support@zygorguides.com",
 	description="\nTitanium can be gathered from Icecrown.",
 	condition_end=function() return skill('Northrend Mining') >= 50 end,
@@ -1983,7 +1983,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Wrat
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cataclysm\\Elementium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Elementium",{
 	author="support@zygorguides.com",
 	description="\nElementium can be gathered from Twilight Highlands.",
 	condition_end=function() return skill('Cataclysm Mining') >= 50 end,
@@ -2013,7 +2013,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cata
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cataclysm\\Obsidium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Obsidium",{
 	author="support@zygorguides.com",
 	description="\nObsidium can be gathered from Mount Hyjal.",
 	condition_end=function() return skill('Cataclysm Mining') >= 50 end,
@@ -2037,7 +2037,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cata
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cataclysm\\Pyrite",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Pyrite",{
 	author="support@zygorguides.com",
 	description="\nPyrite can be gathered from Uldum.",
 	condition_end=function() return skill('Cataclysm Mining') >= 50 end,
@@ -2078,7 +2078,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Cata
 -- SKINNING --
 --------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Heavy Hide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Hide",{
 	author="support@zygorguides.com",
 	description="\nHeavy Hide can be gathered from Feralas.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2090,7 +2090,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cl
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Heavy Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Leather",{
 	author="support@zygorguides.com",
 	description="\nHeavy Leather can be gathered from Feralas.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2103,7 +2103,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cl
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Medium Hide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Medium Hide",{
 	author="support@zygorguides.com",
 	description="\nMedium Hide can be gathered from Northern Stranglethorn.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2118,7 +2118,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cl
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Medium Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Medium Leather",{
 	author="support@zygorguides.com",
 	description="\nMedium Leather can be gathered from Northern Stranglethorn.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2133,7 +2133,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cl
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Rugged Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Rugged Leather",{
 	author="support@zygorguides.com",
 	description="\nRugged Leather can be gathered from Blasted Lands.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2149,7 +2149,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cl
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Classic\\Thick Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Thick Leather",{
 	author="support@zygorguides.com",
 	description="\nThick Leather can be gathered from Badlands.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2160,7 +2160,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cl
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Burning Crusade\\Fel Scales",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Fel Scales",{
 	author="support@zygorguides.com",
 	description="\nFel Scales can be gathered from Hellfire Peninsula.",
 	condition_end=function() return skill('Outland Skinning') >= 50 end,
@@ -2171,7 +2171,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Bu
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Burning Crusade\\Knothide Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Knothide Leather",{
 	author="support@zygorguides.com",
 	description="\nKnothide Leather can be gathered from Terokkar Forest.",
 	condition_end=function() return skill('Outland Skinning') >= 50 end,
@@ -2188,7 +2188,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Bu
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Burning Crusade\\Thick Clefthoof Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Thick Clefthoof Leather",{
 	author="support@zygorguides.com",
 	description="\nThick Clefthoof Leather can be gathered from Nagrand.",
 	condition_end=function() return skill('Skinning') >= 50 end,
@@ -2202,7 +2202,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Bu
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Wrath of the Lich King\\Borean Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Borean Leather",{
 	author="support@zygorguides.com",
 	description="\nBorean Leather can be gathered from Sholazar Basin.",
 	condition_end=function() return skill('Northrend Skinning') >= 50 end,
@@ -2218,7 +2218,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Wr
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Wrath of the Lich King\\Nerubian Chitin",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Nerubian Chitin",{
 	author="support@zygorguides.com",
 	description="\nShal'dorei Silk can be gathered from Icecrown.",
 	condition_end=function() return skill('Legion Skinning') >= 50 end,
@@ -2233,7 +2233,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Wr
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cataclysm\\Blackened Dragonscale",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Blackened Dragonscale",{
 	author="support@zygorguides.com",
 	description="\nBlackened Dragonscale can be gathered from Twilight Highlands in Eastern Kingdoms.",
 	condition_end=function() return skill('Cataclysm Skinning') >= 50 end,
@@ -2246,7 +2246,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Ca
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Cataclysm\\Savage Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Savage Leather",{
 	author="support@zygorguides.com",
 	description="\nSavage Leather can be gathered from Twilight Highlands.",
 	condition_end=function() return skill('Cataclysm Skinning') >= 50 end,
@@ -2266,7 +2266,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Ca
 -- TAILORING --
 ---------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Classic\\Mageweave Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Mageweave Cloth",{
 	author="support@zygorguides.com",
 	description="\nMageweave Cloth can be gathered from southwestern Eastern Plaguelands.",
 	},[[
@@ -2276,7 +2276,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\C
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Classic\\Wool Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Wool Cloth",{
 	author="support@zygorguides.com",
 	description="\nWool Cloth can be gathered from the eastern Wetlands.",
 	},[[
@@ -2291,7 +2291,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\C
 -- Elemental Reagents --
 ------------------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Classic\\Essence of Air",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Essence of Air",{
 	author="support@zygorguides.com",
 	description="\nEssence of Air can be gathered from Silithus.",
 	},[[
@@ -2307,7 +2307,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Classic\\Essence of Earth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Essence of Earth",{
 	author="support@zygorguides.com",
 	description="\nEssence of Earth can be gathered from Molten Core or Winterspring.",
 	},[[
@@ -2324,7 +2324,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Classic\\Essence of Fire",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Essence of Fire",{
 	author="support@zygorguides.com",
 	description="\nEssence of Fire can be gathered from Molten Core.",
 	},[[
@@ -2336,7 +2336,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Classic\\Essence of Undeath",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Essence of Undeath",{
 	author="support@zygorguides.com",
 	description="\nEssence of Undeath can be gathered from Winterspring.",
 	},[[
@@ -2347,7 +2347,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Classic\\Essence of Water",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Essence of Water",{
 	author="support@zygorguides.com",
 	description="\nEssence of Water can be gathered from Swamp of Sorrows or Winterspring.",
 	},[[
@@ -2362,7 +2362,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		Click Here to Farm in Swamp of Sorrows (Best) |confirm |next "Collect_Essence_Of_Water_Swamp_of_Sorrows"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Classic\\Living Essence",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Living Essence",{
 	author="support@zygorguides.com",
 	description="\nLiving Essence can be gathered from Blasted Lands.",
 	},[[
@@ -2377,7 +2377,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Air",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Air",{
 	author="support@zygorguides.com",
 	description="\nPrimal Air can be gathered from Shadowmoon Valley, Outland.",
 	},[[
@@ -2404,7 +2404,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|goto 55.35,71.72 < 30 |c |noway |next "Start"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Earth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Earth",{
 	author="support@zygorguides.com",
 	description="\nPrimal Earth can be gathered from Nagrand.",
 	},[[
@@ -2431,7 +2431,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|goto Nagrand/0 46.19,77.20 < 30 |c |noway |next "Start"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Fire",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Fire",{
 	author="support@zygorguides.com",
 	description="\nPrimal Fire can be gathered from Hellfire Peninsula.",
 	},[[
@@ -2442,7 +2442,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Life",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Life",{
 	author="support@zygorguides.com",
 	description="\nPrimal Life can be gathered from The Underbog in Outland.",
 	},[[
@@ -2458,7 +2458,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Mana",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Mana",{
 	author="support@zygorguides.com",
 	description="\nPrimal Mana can be gathered from the Netherstorm in Outland.",
 	},[[
@@ -2473,7 +2473,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Shadow",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Shadow",{
 	author="support@zygorguides.com",
 	description="\nPrimal Shadow can be gathered from Hellfire Peninsula.",
 	},[[
@@ -2498,7 +2498,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|goto 76.12,63.56 < 30 |c |noway |next "Start"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Burning Crusade\\Primal Water",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Primal Water",{
 	author="support@zygorguides.com",
 	description="\nPrimal Water can be gathered from Black Temple or Skettis, Terrokar Forest.",
 	},[[
@@ -2521,7 +2521,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		Click Here to Farm in Black Temple (Best) |confirm |next "Collect_Mote_Of_Water_Black_Temple"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Wrath of the Lich King\\Eternal Air",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Eternal Air",{
 	author="support@zygorguides.com",
 	description="\nEternal Air can be gathered from Borean Tundra in Northrend.",
 	},[[
@@ -2534,7 +2534,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Wrath of the Lich King\\Eternal Earth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Eternal Earth",{
 	author="support@zygorguides.com",
 	description="\nEternal Earth can be gathered from Howling Fjord in Northrend.",
 	},[[
@@ -2546,7 +2546,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Wrath of the Lich King\\Eternal Fire",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Eternal Fire",{
 	author="support@zygorguides.com",
 	description="\nEternal Fire can be gathered from The Storm Peaks in Northrend.",
 	},[[
@@ -2559,7 +2559,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 ]])
 
 --@@TRIALGUIDE
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Wrath of the Lich King\\Eternal Life",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Eternal Life",{
 	author="support@zygorguides.com",
 	description="\nEternal Life can be gathered from the Howling Fjord in Northrend.",
 	},[[
@@ -2573,7 +2573,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Wrath of the Lich King\\Eternal Shadow",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Eternal Shadow",{
 	author="support@zygorguides.com",
 	description="\nEternal shadow can be gathered from Dragonblight in Northrend.",
 	},[[
@@ -2585,7 +2585,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Wrath of the Lich King\\Eternal Water",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Eternal Water",{
 	author="support@zygorguides.com",
 	description="\nEternal Water can be gathered from Dragonblight in Northrend.",
 	},[[
@@ -2596,7 +2596,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Cataclysm\\Volatile Air",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Volatile Air",{
 	author="support@zygorguides.com",
 	description="\nVolatile Air can be gathered from the Vortex Pinnacle in Uldum.",
 	},[[
@@ -2607,7 +2607,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Cataclysm\\Volatile Earth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Volatile Earth",{
 	author="support@zygorguides.com",
 	description="\nVolatile Earth can be gathered from Mount Hyjal in Kalimdor.",
 	},[[
@@ -2621,7 +2621,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Cataclysm\\Volatile Fire",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Volatile Fire",{
 	author="support@zygorguides.com",
 	description="\nVolatile Fire can be gathered from Twilight Highlands in Eastern Kingdoms.",
 	},[[
@@ -2634,7 +2634,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Re
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Elemental Reagents\\Cataclysm\\Volatile Life",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\General Farming Guides\\Volatile Life",{
 	author="support@zygorguides.com",
 	description="\nVolatile Life can be gathered from Uldum.",
 	},[[

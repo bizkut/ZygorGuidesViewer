@@ -2998,7 +2998,7 @@ do
 
 					-- fly to unknown taxi AND run/fly from there? nope! Penalize all movement from there, since we can't penalize arrival (some taxis are valid unknown flyovers)
 					--elseif current.type=="taxi" and current:IsTaxiKnown()==false then
-					elseif (mode=="walk" or mode=="fly") and current.parent and current.parentlink and current.parentlink.mode=="taxi" and current.parent:IsTaxiKnown()==false then -- walking from an unknown taxi, means we have LANDED on it. Penalize!
+					elseif (mode=="walk" or mode=="fly") and current.parentlink and current.parentlink.mode=="taxi" and current:IsTaxiKnown()==false then -- walking from an unknown taxi, means we have LANDED on it. Penalize!
 						mytime=COST_FAILURE+1
 						if cost_debugging then costdesc = costdesc .. "no arrival at unknown taxi; " end
 
@@ -3146,6 +3146,7 @@ do
 
 					-- ==
 
+					--[[
 					if neigh.type=="taxi" and (mode=="walk" or mode=="fly") then -- landing at
 						local known,desc = neigh:IsTaxiKnown()               -- taxis that are
 						if known==false then                                 -- strictly unknown
@@ -3153,7 +3154,15 @@ do
 						end -- but allow takeoff for known or maybe
 						if not known and cost_debugging then costdesc = costdesc .. desc.."|r; " end
 					end
+					--]]
 					-- ==
+					if neigh.type=="taxi" and (mode=="walk" or mode=="fly") then -- departing from conditioned taxis is bad
+						local known,desc,couldbe = neigh:IsTaxiKnown()
+						if known==false and couldbe==false then
+							mycost=mycost+COST_FAILURE+20
+						end -- but allow takeoff for known or maybe
+						if not known and cost_debugging then costdesc = costdesc .. desc.."|r; " end
+					end
 
 					-- Seriously frown upon banned nodes :)
 						if lib_banned_nodes_any and lib_banned_nodes[neigh] then

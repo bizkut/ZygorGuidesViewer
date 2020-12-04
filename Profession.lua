@@ -14,10 +14,9 @@ local name,ZGV = ...
 ZGV.Professions = {}
 local ZGVP = ZGV.Professions
 
-ZGVP.skillSpells = {}
-
 ZGVP.tradeskills = {
 	[171] = {name="Alchemy",crafting=true,subs={
+		[1294] = {name="Shadowlands Alchemy", skill=2750},
 		[592] = {name="Zandalari Alchemy", skill=2478},
 		[433] = {name="Legion Alchemy", skill=2479},
 		[332] = {name="Draenor Alchemy", skill=2480},
@@ -28,6 +27,7 @@ ZGVP.tradeskills = {
 		[604] = {name="Alchemy", skill=2485},
 	}},
 	[164] = {name="Blacksmithing",crafting=true,subs={
+		[1311] = {name="Shadowlands Blacksmithing", skill=2751},
 		[542] = {name="Zandalari Blacksmithing", skill=2437},
 		[426] = {name="Legion Blacksmithing", skill=2454},
 		[389] = {name="Draenor Blacksmithing", skill=2472},
@@ -38,6 +38,7 @@ ZGVP.tradeskills = {
 		[590] = {name="Blacksmithing", skill=2477},
 	}},
 	[333] = {name="Enchanting",crafting=true,subs={
+		[1364] = {name="Shadowlands Enchanting", skill=2753},
 		[647] = {name="Zandalari Enchanting", skill=2486},
 		[443] = {name="Legion Enchanting", skill=2487},
 		[348] = {name="Draenor Enchanting", skill=2488},
@@ -48,6 +49,7 @@ ZGVP.tradeskills = {
 		[667] = {name="Enchanting", skill=2494},
 	}},
 	[202] = {name="Engineering",crafting=true,subs={
+		[1381] = {name="Shadowlands Engineering", skill=2755},
 		[709] = {name="Zandalari Engineering", skill=2499},
 		[469] = {name="Legion Engineering", skill=2500},
 		[347] = {name="Draenor Engineering", skill=2501},
@@ -58,6 +60,7 @@ ZGVP.tradeskills = {
 		[419] = {name="Engineering", skill=2506},
 	}},
 	[773] = {name="Inscription",crafting=true,subs={
+		[1406] = {name="Shadowlands Inscription", skill=2756},
 		[759] = {name="Zandalari Inscription", skill=2507},
 		[450] = {name="Legion Inscription", skill=2508},
 		[410] = {name="Draenor Inscription", skill=2509},
@@ -68,6 +71,7 @@ ZGVP.tradeskills = {
 		[415] = {name="Inscription", skill=2514},
 	}},
 	[755] = {name="Jewelcrafting",crafting=true,subs={
+		[1418] = {name="Shadowlands Jewelcrafting", skill=2757},
 		[805] = {name="Zandalari Jewelcrafting", skill=2517},
 		[464] = {name="Legion Jewelcrafting", skill=2518},
 		[373] = {name="Draenor Jewelcrafting", skill=2519},
@@ -78,6 +82,7 @@ ZGVP.tradeskills = {
 		[372] = {name="Jewelcrafting", skill=2524},
 	}},
 	[165] = {name="Leatherworking",crafting=true,subs={
+		[1334] = {name="Shadowlands Leatherworking", skill=2758},
 		[871] = {name="Zandalari Leatherworking", skill=2525},
 		[460] = {name="Legion Leatherworking", skill=2526},
 		[380] = {name="Draenor Leatherworking", skill=2527},
@@ -88,6 +93,7 @@ ZGVP.tradeskills = {
 		[379] = {name="Leatherworking", skill=2532},
 	}},
 	[197] = {name="Tailoring",crafting=true,subs={
+		[1395] = {name="Shadowlands Tailoring", skill=2759},
 		[942] = {name="Zandalari Tailoring", skill=2533},
 		[430] = {name="Legion Tailoring", skill=2534},
 		[369] = {name="Draenor Tailoring", skill=2535},
@@ -98,6 +104,7 @@ ZGVP.tradeskills = {
 		[362] = {name="Tailoring", skill=2540},
 	}},
 	[182] = {name="Herbalism",subs={
+		[1441] = {name="Shadowlands Herbalism", skill=2760},
 		[1029] = {name="Zandalari Herbalism", skill=2549},
 		[456] = {name="Legion Herbalism", skill=2550},
 		[1034] = {name="Draenor Herbalism", skill=2551},
@@ -108,6 +115,7 @@ ZGVP.tradeskills = {
 		[1044] = {name="Herbalism", skill=2556},
 	}},
 	[186] = {name="Mining",crafting=true,subs={
+		[1320] = {name="Shadowlands Mining", skill=2761},
 		[1065] = {name="Zandalari Mining", skill=2565},
 		[425] =  {name="Legion Mining", skill=2566},
 		[1068] =  {name="Draenor Mining", skill=2567},
@@ -118,6 +126,7 @@ ZGVP.tradeskills = {
 		[1078] = {name="Mining", skill=2572},
 	}},
 	[393] = {name="Skinning",subs={
+		[1331] = {name="Shadowlands Skinning", skill=2762},
 		[1046] = {name="Zandalari Skinning", skill=2557},
 		[459] = {name="Legion Skinning", skill=2558},
 		[1052] = {name="Pandaria Skinning", skill=2560},
@@ -130,6 +139,7 @@ ZGVP.tradeskills = {
 		[794] = {name="Archaeology", skill=794},
 	}},
 	[185] = {name="Cooking",crafting=true,subs={
+		[1323] = {name="Shadowlands Cooking", skill=2752},
 		[1118] = {name="Zandalari Cooking", skill=2541},
 		[475] = {name="Legion Cooking", skill=2542},
 		[342] = {name="Draenor Cooking", skill=2543},
@@ -146,6 +156,7 @@ ZGVP.tradeskills = {
 		[69] = {name="Way of the Brew", skill=980},
 	}},
 	[356] = {name="Fishing",subs={
+		[1391] = {name="Shadowlands Fishing", skill=2754},
 		[1114] = {name="Zandalari Fishing", skill=2585},
 		[1112] = {name="Legion Fishing", skill=2586},
 		[1110] = {name="Draenor Fishing", skill=2587},

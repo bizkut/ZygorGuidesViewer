@@ -19,7 +19,6 @@ step
 label quest-60872
 accept A Dangerous Harvest##60872 |goto Ardenweald/0 50.90,38.01
 |tip You will accept this quest automatically.
-|polish
 step
 Transform into an Ardenmoth |invehicle |goto 50.90,38.01 |q 60872
 |tip Use the "Ardenmoth Transformation" ability that appears on-screen.
@@ -81,12 +80,11 @@ Defeat Faryl in a Pet Battle |q 61948/1 |goto 51.27,44.07
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61949
-accept Ardenweald's Tricksters##61949 |goto Ardenweald/0 40.19,28.80
+accept Ardenweald's Tricksters##61949 |goto Ardenweald/0 40.17,28.74
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Rascal##173381
-Defeat Rascal in a Pet Battle |q 61949/1 |goto 40.19,28.80
+Defeat Rascal in a Pet Battle |q 61949/1 |goto 40.17,28.74
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61631
@@ -191,7 +189,6 @@ step
 label quest-61947
 accept Lurking In The Shadows##61947 |goto Ardenweald/0 39.96,64.49
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Nightfang##173376
 Defeat Nightfang in a Pet Battle |q 61947/1 |goto 39.96,64.49
@@ -232,18 +229,17 @@ step
 label quest-58975
 accept Pest Removal##58975 |goto Ardenweald/0 54.66,49.10
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Mature_Gorm_58975"
 step
 clicknpc Burrowing Mite Leg##163197+
 |tip They look like wiggling bug legs sticking out of the ground around this area.
 |tip Run away after clicking them to pull them out of the ground.
 |tip A burrowing mite will attack you after extraction.
-Extract #10# Burrowing Mites |q 58975/1 |goto 54.66,49.10
+Extract #8# Burrowing Mites |q 58975/1 |goto 54.66,49.10
 step
 label "Slay_Mature_Gorm_58975"
 Kill Darkwarren enemies around this area
-Slay #15# Mature Gorm |q 58975/2 |goto 54.66,49.10
+Slay #12# Mature Gorm |q 58975/2 |goto 54.66,49.10
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-60337
@@ -291,12 +287,11 @@ step
 label quest-60574
 accept Shaking 'Shrooms##60574 |goto Ardenweald/0 31.42,35.25
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Invading_Fae_60574"
 step
 click Swollen Mushroom Stalk+
 |tip They look like tall green mushrooms on the ground around this area.
-Shake #10# Swollen Mushroom Stalks |q 60574/1 |goto 31.42,35.25
+Shake #8# Swollen Mushroom Stalks |q 60574/1 |goto 31.42,35.25
 step
 label "Slay_Invading_Fae_60574"
 Kill enemies around this area
@@ -321,7 +316,6 @@ step
 label quest-58993
 accept Swarm Defense##58993 |goto Ardenweald/0 50.97,72.67
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Veilwing Sentry##163633
 Mount the Veilwing Sentry |q 58993/1 |goto 50.97,72.67
@@ -329,16 +323,16 @@ step
 kill 30 Rootstinger Swarmling##163616 |q 58993/2 |goto 50.97,72.67
 |tip They are in the air.
 |tip Use the ability on your action bar.
+|next "Shadow_World_Quest_Emissaries"
 step
 label quest-60786
 accept Swarm Defense##60786 |goto Ardenweald/0 25.04,60.90
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Veilwing Sentry##163633
 Mount the Veilwing Sentry |q 60786/1 |goto 25.04,60.90
 step
-kill 20 Rootstinger Swarmling##163616 |q 60786/2
+kill 45 Rootstinger Swarmling##163616 |q 60786/2
 |tip They fly through the air towards you.
 |tip Use the abilities on your action bar.
 |next "Shadow_World_Quest_Emissaries"
@@ -355,7 +349,6 @@ step
 label quest-60564
 accept Three Gorm Enter, No One Leaves##60564 |goto Ardenweald/0 51.65,76.27
 |tip You will accept this quest automatically.
-|polish
 stickystart "Kill_Contender_Brahn"
 stickystart "Kill_Contender_Melia"
 step
@@ -371,20 +364,20 @@ step
 label quest-60842
 accept To Serve Spriggan##60842 |goto Ardenweald/0 39.32,56.27
 |tip You will accept this quest automatically.
-|polish
 step
+Use the _"Throw Frog"_ ability
+|tip It appears as a button on the screen.
+|tip Use it on weakened Sicklethorn enemies.
 collect 10 Bagged Frog##180439 |goto 39.32,56.27 |q 60842
-|tip Weaken Sicklethorn enemies until they're almost dead.
-|tip When weakened, use the "Croaking Bag" ability on-screen.
 step
-use the Bagged Frog##180439
-Transform and Release #10# Spriggan |q 60842/1 |goto 39.32,56.27
+Use the _"Throw Frog"_ ability
+|tip It appears as a button on the screen.
+Feed #10# Spriggan to The Craw |q 60842/1 |goto 40.47,52.70
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-60739
 accept Tough Crowd##60739 |goto Ardenweald/0 41.60,46.46
 |tip You will accept this quest automatically.
-|polish
 step
 Click NPCs around this area
 |tip Keep clicking them until one of them reacts to you.
@@ -505,7 +498,6 @@ step
 label quest-60565
 accept A Steward for Every Occasion##60565 |goto Bastion/0 52.66,46.81 |region heros_rest
 |tip You will accept this quest automatically.
-|polish
 step
 talk Helpful Steward##169078
 |tip They look like large walking owls around this area.
@@ -517,6 +509,7 @@ Ask it _"Can you help with this problem?_"
 |tip The steward with the hammer repairs the malfunctioning NPC.
 |tip The steward with the broom sweeps the glass.
 |tip The steward with the crate provides drink to the Thirsty Aspirant.
+|tip The steward with the basket catches the scrolls.
 Do #6# Chores |q 60565/1 |goto 52.66,46.81 |region heros_rest
 |next "Shadow_World_Quest_Emissaries"
 step
@@ -578,7 +571,6 @@ step
 label quest-60929
 accept Air Supremacy##60929 |goto Bastion/0 40.92,55.54
 |tip You will accept this quest automatically.
-|polish
 step
 click Weapon Rack
 collect Xandria's Reach##180465 |q 60929/1 |goto 40.92,55.54
@@ -632,7 +624,6 @@ step
 label quest-62451
 accept Assault on the Vestibule##62451 |goto Bastion/0 44.43,79.20
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Steward Mechanic##174303
 Take the Colossal Core |q 62451/1 |goto 44.43,79.20
@@ -644,29 +635,28 @@ clicknpc Centurion Colossus##174305
 Insert the Colossal Core |q 62451/3 |goto 42.80,78.54
 step
 clicknpc Centurion Colossus##174318
-Enter the Centurion Colossus |goto 42.46,78.39 |invehicle |q 62451
+Enter the Centurion Colossus |invehicle |goto 42.46,78.39 |q 62451
 step
-Push the Button |q 62451/3 |goto 42.46,78.39
-|tip Use the "Charged Blast" ability on your action bar.
+Push the Button |q 62451/4 |goto 42.46,78.39
+|tip Use "The Button" ability on your action bar.
 step
 Cross the bridge |goto 40.65,77.66 < 30 |only if walking
-kill Andromede, Herald of the Forsworn##174307 |q 62451/4 |goto 37.81,76.56
+kill Andromede, Herald of the Forsworn##174307 |q 62451/5 |goto 37.81,76.56
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-62058
 accept Centurions, Assemble!##62058 |goto Bastion/0 50.11,20.55
 |tip You will accept this quest automatically.
-|polish
 step
 Select a Centurion |q 62058/1 |goto 50.11,20.55
 |tip Click any centurion you wish to select it.
 step
-Click your chosen centurion
+Watch the dialogue
 Pilot your Centurion |q 62058/2 |goto 50.11,20.55
 stickystart "Repel_the_Forsworn_Threat_62058"
 step
 Follow the path up |goto 50.69,16.62 < 30 |walk
-kill Overseer Phoneira##173575 |q 62058/4 |goto 50.11,20.55
+kill Overseer Phoneira##173575 |q 62058/4 |goto 48.99,15.53
 step
 label "Repel_the_Forsworn_Threat_62058"
 Kill enemies around this area
@@ -676,7 +666,6 @@ step
 label quest-61784
 accept Cliffs of Bastion##61784 |goto Bastion/0 34.83,62.83
 |tip You will accept this quest automatically.
-|polish
 step
 talk Stratios##173131
 Tell him _"Begin pet battle."_
@@ -697,16 +686,15 @@ step
 label quest-61549
 accept Drought Conditions##61549 |goto Bastion/0 51.51,41.14
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Etherwyrms_61549"
 step
 talk Trapped Caretaker##172714
 Tell them _"I've cleared a path for you. You should leave."_
-Evacuate #5# Caretakers |q 61549/2 |goto 51.51,41.14
+Evacuate #8# Caretakers |q 61549/2 |goto 51.51,41.14
 step
 label "Slay_Etherwyrms_61549"
 Kill Etherwyrm enemies around this area
-Slay #12# Etherwyrms |q 61549/1 |goto 51.51,41.14
+Slay #15# Etherwyrms |q 61549/1 |goto 51.51,41.14
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61520
@@ -728,7 +716,6 @@ step
 label quest-60844
 accept Flight School: Falling With Style##60844 |goto Bastion/0 58.02,29.37
 |tip You will accept this quest automatically.
-|polish
 step
 label "Gain_Soaring_Ambition_Buff"
 Launch Yourself into the Air |havebuff spell:331960 |goto 58.02,29.37
@@ -760,12 +747,12 @@ step
 label quest-60858
 accept Flight School: Up and Away!##60858 |goto Bastion/0 41.66,23.33
 |tip You will accept this quest automatically.
-|polish
 step
 label "Enter_the_Updraft"
 Enter the Updraft |havebuff spell:332463 |goto 41.63,23.13 |q 60858
+|tip Walk onto the white air current.
 step
-Reach the Temple |q 60858/2 |goto 39.46,18.76 |or
+Reach the Temple |q 60858/2 |goto 39.46,18.76 |or |notravel
 |tip Bounce on top of each of the flowers, following the spiral upward path.
 '|condition not hasbuff("spell:332463") and not completedq(60858) and questactive(60858) |next "Enter_the_Updraft" |or
 |next "Shadow_World_Quest_Emissaries"
@@ -787,7 +774,6 @@ step
 label quest-59771
 accept History of Corruption##59771 |goto Bastion/0 47.03,63.38
 |tip You will accept this quest automatically.
-|polish
 step
 click Vesper of History
 Ring the Vesper of History |q 59771/1 |goto 47.03,63.38
@@ -840,7 +826,6 @@ accept March of the Eternal Protector##61337 |goto Bastion/0 57.14,54.23
 |tip Search up and down this road for Heraclor.
 |tip Heraclor is a giant boss-level construct that patrols the road.
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around Heraclor
 |tip Waves of enemies will attack relentlessly.
@@ -860,7 +845,6 @@ step
 label quest-61787
 accept Micro Defense Force##61787 |goto Bastion/0 51.40,38.33
 |tip You will accept this quest automatically.
-|polish
 step
 talk Zolla##173130
 Tell it _"Begin pet battle."_
@@ -901,7 +885,6 @@ step
 label quest-62258
 accept Soaring Over Bastion##62258 |goto Bastion/0 57.53,44.69
 |tip You will accept this quest automatically.
-|polish
 step
 kill Gilded Cloudstrider##159298+
 collect 4 Cloudstrider Antler##183140 |q 62258/1 |goto 57.53,44.69
@@ -991,7 +974,6 @@ step
 label quest-59680
 accept Vesiphone's Vicious Vesper##59680 |goto Bastion/0 59.54,74.33
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 |tip Use the "Purity Charm" ability that appears on-screen and kill enemies near the bell.
@@ -1051,7 +1033,6 @@ step
 label quest-57205
 accept A Few Bumps Along the Way##57205 |goto Maldraxxus/0 37.59,50.90
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies inside the yellow circle
 |tip Each enemy killed will increase your progress.
@@ -1181,17 +1162,21 @@ step
 label quest-58207
 accept Buggin' Out##58207 |goto Maldraxxus/0 53.01,22.57
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Twigin##160349
 Gain Twigin's Aid |q 58207/1 |goto 53.01,22.57
 stickystart "Slay_Bony_Spindel_Insects_58207"
 step
-clicknpc Injured Scout##159739
+clicknpc Injured Scout##159739+
+|tip They look like wounded bugs on the ground around this area.
+|tip Use the "Twigin's Wings" button on-screen to fly high in the air.
+|tip Use it again to crash down to the ground, dealing damage.
 Save #6# Injured Spinners |q 58207/2 |goto 54.75,20.20
 step
 label "Slay_Bony_Spindel_Insects_58207"
 Kill enemies around this area
+|tip Use the "Twigin's Wings" button on-screen to fly high in the air. |notinsticky
+|tip Use it again to crash down to the ground, dealing damage. |notinsticky
 Slay #12# Bony Spindel Insects |q 58207/3 |goto 54.75,20.20
 |next "Shadow_World_Quest_Emissaries"
 step
@@ -1252,11 +1237,10 @@ Light the Flame of Challenge |q 61477/1 |goto 54.33,54.24 |count 5 |or
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-60531
-Follow the path |goto 41.84,59.54 < 75 |only if walking
+Follow the path |goto Maldraxxus/0 41.84,59.54 < 75 |only if walking
 Continue following the path |goto 39.97,66.52 < 30 |only if walking
-accept Chosen Champions##60531 |goto Maldraxxus/0 34.92,75.46
+accept Chosen Champions##60531 |goto 34.92,75.46
 |tip You will accept this quest automatically.
-|polish
 step
 Click objects around this area
 |tip Various objects glowing around this area will grant you buffs.
@@ -1267,12 +1251,11 @@ step
 label quest-58490
 accept Deadly Reminder##58490 |goto Maldraxxus/0 50.37,64.66
 |tip You will accept this quest automatically.
-|polish
 step
 click Empowering Crystal+
 |tip They look like large floating green crystals around this area.
 Kill enemies around this area
-Eliminate the Enemy Forces and Positions |q 58490/1 |goto 50.37,64.66
+Eliminate the Lich Forces |q 58490/1 |goto 50.37,64.66
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61141
@@ -1341,7 +1324,6 @@ step
 label quest-61867
 accept Extra Pieces##61867 |goto Maldraxxus/0 34.01,55.27
 |tip You will accept this quest automatically.
-|polish
 step
 talk Rotgut##173263
 Tell it _"Begin pet battle."_
@@ -1362,7 +1344,6 @@ Follow the path up |goto Maldraxxus/0 44.27,63.49 < 30 |only if walking
 Enter the cave |goto 44.59,65.46 < 20 |walk
 accept Forged in Secret##61667 |goto 44.45,67.81
 |tip You will accept this quest automatically.
-|polish
 step
 talk Specialist Entra##166129
 Ask her _"What should I do?"_
@@ -1375,26 +1356,23 @@ kill Nasho##166437 |q 61667/3 |goto 44.51,67.74
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61189
-accept Further Gelatinous Research##61189 |goto Maldraxxus/0 65.38,55.01
+accept Further Gelatinous Research##61189 |goto Maldraxxus/0 65.38,54.92
 |tip You will accept this quest automatically.
-|polish
 step
 talk Project Lead Allen##171747
 Tell him _"I will assit you."_
-Acquire the Accumulator |q 61189/1 |goto 65.38,55.01
+Acquire the Accumulator |q 61189/1 |goto 65.38,54.92
 step
 Kill enemies around this area
 use the Aqueous Material Accumulator##180876
 |tip Use it on tiny slimes that spawn after killing large slimes around this area.
-Gather #18# Slimes |q 61189/2 |goto 63.92,52.48
+Gather #30# Slimes |q 61189/2 |goto 63.92,52.48
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-58221
 accept Gettin' Even##58221 |goto Maldraxxus/0 50.26,21.38
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Bonefused_Constructs_58221"
-stickystart "Kill_Loose_Stitch_58221"
 step
 click Crate of Salvaged Explosives+
 |tip They look like crates encased in bone on the ground around this area.
@@ -1445,7 +1423,6 @@ label "Slay_Bonefused_Constructs_58221"
 Kill enemies around this area
 Slay #12# Bonefused Constructs |q 58221/1 |goto 50.26,21.38
 step
-label "Kill_Loose_Stitch_58221"
 kill Loose Stitch##165568 |q 58221/3 |goto 49.18,24.53
 |tip It walks around this area.
 |next "Shadow_World_Quest_Emissaries"
@@ -1453,7 +1430,6 @@ step
 label quest-61540
 accept Just Winging It##61540 |goto Maldraxxus/0 59.34,33.73
 |tip You will accept this quest automatically.
-|polish
 step
 Follow the path up |goto 59.34,33.73 < 15 |only if walking
 talk Taloned Flayedwing##172871
@@ -1529,12 +1505,11 @@ step
 label quest-58437
 accept Parts to a Whole##58437 |goto Maldraxxus/0 25.55,33.23
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 use the Disassembly Flag##174110
 |tip use it on the corpses of the enmies you kill.
-Mark #12# Corpses for Harvesting |q 58437/1 |goto 25.55,33.23
+Mark #15# Corpses for Harvesting |q 58437/1 |goto 25.55,33.23
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-58505
@@ -1555,7 +1530,6 @@ step
 label quest-59642
 accept Pulling Hairs##59642 |goto Maldraxxus/0 55.30,37.03
 |tip You will accept this quest automatically.
-|polish
 stickystart "Collect_Stringy_Growth_59642"
 stickystart "Collect_Corpselouse_Bristles_59642"
 step
@@ -1566,6 +1540,7 @@ label "Collect_Stringy_Growth_59642"
 clicknpc Stringy Growth##165440+
 |tip They look like tall thin weeds on the ground around this area.
 |tip Run away after clicking them to pull them out of the ground.
+|tip They appear on your minimap as yellow dots.
 collect 8 Stringy Growth##176808 |q 59642/1 |goto 55.88,38.33
 step
 label "Collect_Corpselouse_Bristles_59642"
@@ -1593,7 +1568,7 @@ accept The Spider on the Wall##59743 |goto Maldraxxus/0 35.93,72.08
 |polish
 step
 talk Khaliiq##165966
-Speak with Khaliiq |q 59743/1 |
+Speak with Khaliiq |q 59743/1 |goto 35.93,72.08
 step
 kill Requisitioner Kem##165970
 collect Requisitioner's Scroll##177693 |q 59743/2 |goto 37.54,73.35
@@ -1608,7 +1583,6 @@ step
 label quest-61868
 accept Uncomfortably Undercover##61868 |goto Maldraxxus/0 63.23,46.88
 |tip You will accept this quest automatically.
-|polish
 step
 talk Dundley Stickyfingers##173267
 Tell him _"Begin pet battle."_
@@ -1618,7 +1592,6 @@ step
 label quest-58601
 accept Web of Information##58601 |goto Maldraxxus/0 55.65,18.83
 |tip You will accept this quest automatically.
-|polish
 step
 click Necrotic Sentry+
 |tip The circle in the center will show you how close you are to a hidden Necrosentry.
@@ -1665,7 +1638,6 @@ step
 label quest-59902
 accept A Curious Cache##59902 |goto Revendreth/0 45.21,67.20
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 Slay #10# Banewood Wildlife |q 59902/1 |goto 45.21,67.20
@@ -1817,7 +1789,10 @@ step
 label quest-57465
 accept Dirty Job: Wood Work##57465 |goto Revendreth/0 73.97,75.44
 |tip You will accept this quest automatically.
-|polish
+step
+clicknpc Ripened Laborer##172929+
+|tip They look like small humanoids around this area.
+Grab a Dredger |q 57465/1 |goto 74.13,75.18
 step
 clicknpc Ripened Laborer##172929+
 |tip They look like small humanoids around this area.
@@ -1829,7 +1804,6 @@ step
 label quest-61885
 accept Eyegor's Special Friends##61885 |goto Revendreth/0 67.63,66.08
 |tip You will accept this quest automatically.
-|polish
 step
 talk Eyegor##173324
 Tell him _"Begin pet battle."_
@@ -2033,13 +2007,13 @@ Land Safely |q 59718/2 |goto 56.51,62.50
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61883
-accept Resilient Survivors##61883 |goto Revendreth/0 39.95,52.50
+accept Resilient Survivors##61883 |goto Revendreth/0 39.98,52.59
 |tip You will accept this quest automatically.
-|polish
 step
 talk Sylla##173315
+|tip Up on the platform.
 Tell her _"Begin pet battle."_
-Defeat Sylla in a Pet Battle |q 61883/1 |goto 39.95,52.50
+Defeat Sylla in a Pet Battle |q 61883/1 |goto 39.98,52.59
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-59599
@@ -2293,38 +2267,39 @@ step
 label quest-59581
 accept The Strength of Sinfall##59581 |goto Revendreth/0 49.97,50.72
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
-clicknpc Darkwing Assassin##169419+
+clicknpc Chalice Dredger##161258+
 |tip They look like small humanoids around this area.
+click Anima Stores+
+|tip They look like small metal cages on the ground around this area.
 Disrupt the Chalice District |q 59581/1 |goto 49.97,50.72
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-59789
-accept Tithe and Taxes##59789 |goto Revendreth/0 73.89,68.62
+accept Tithe and Taxes##59789 |goto Revendreth/0 73.50,68.89
 |tip You will accept this quest automatically.
-|polish
 step
 click Misplaced Anima Collector
-Obtain the Anima Collector |q 59789/ |goto 73.89,68.62
+Obtain the Anima Collector |q 59789/1 |goto 73.50,68.89
 stickystart "Slay_Manor_Guests_59789"
 stickystart "Kill_Cruel_Collector_59789"
 step
-kill 3 Callous Peacekeeper##165830 |q 59789/ |goto 76.91,68.43
+kill 3 Callous Peacekeeper##165830 |q 59789/2 |goto 76.91,68.43
+|tip Use the "Siphon" ability on-screen to weaken them.
 step
 label "Slay_Manor_Guests_59789"
 Kill enemies around this area
-Slay #12# Manor Guests |q 59789/ |goto 75.12,67.88
+Slay #12# Manor Guests |q 59789/3 |goto 75.12,67.88
 step
 label "Kill_Cruel_Collector_59789"
-kill 5 Cruel Collector##165831 |q 59789/ |goto 75.12,67.88
+kill 5 Cruel Collector##165831 |q 59789/4 |goto 75.12,67.88
+|tip Use the "Siphon" ability on-screen to weaken them.
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-57328
 accept Trashin' the Camp##57328 |goto Revendreth/0 45.83,59.05
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 collect Soul Cage Key##171249+ |n
@@ -2335,7 +2310,6 @@ clicknpc Inert Stonestalker##157477+
 |tip They look like sleeping white bears around this area.
 Assault Stalker's Lodge |q 57328/1 |goto 45.83,59.05
 step
-Enter the building |goto 46.20,57.63 < 20 |walk
 Run down the stairs |goto 46.29,57.14 < 15 |walk
 kill Sara Wight##157405 |q 57328/2 |goto 45.39,57.17
 |next "Shadow_World_Quest_Emissaries"
@@ -2537,6 +2511,7 @@ stickystop "Collect_Essences_of_Misery"
 stickystart "Rescue_Half-Buried_Souls"
 stickystart "Kill_Mawsworn_Shacklers"
 stickystart "Kill_Mawsworn_Deadeyes"
+stickystart "Disable_Pain_Conduits"
 step
 talk Trapped Soul##175813
 accept Sundered Souls##63043 |goto 28.11,14.68
@@ -2565,26 +2540,27 @@ Click the Complete Quest Box
 turnin Sundered Souls##63043
 |only if readyq(63043) or completedq(63043)
 step
+label "Disable_Pain_Conduits"
+click Pain Conduit##354937+
+|tip They look like large spiked stone pedestals on the ground around this area.
+|tip They appear on your minimap as yellow dots.
+Disable #3# Pain Conduits |q 61104/1 |goto 28.82,14.55
+|only if havequest(61104)
+step
 talk Tormented Soul##176029
 accept A Shadowed Fate##63166 |goto 29.71,20.91
 |only if questactive(63166)
-stickystart "Disable_Pain_Conduits"
 step
-Enter the building |goto 27.88,20.50
-kill Grathalax##171307 |q 61104/2 |goto 27.88,20.50
+kill Grathalax##171307 |q 61104/2 |goto Extractor's Sanatorium/0 62.09,33.31
 |tip Inside the building.
-|only if havequest(61104)
-step
-label "Disable_Pain_Conduits"
-click Pain Conduit##354937+
-Disable #3# Pain Conduits |q 61104/1 |goto 27.88,20.50
+|tip You may need a group for this.
 |only if havequest(61104)
 stickystart "Release_6_Tormented_Souls"
 stickystart "Collect_9_Runeforged_Shackles"
 stickystart "Collect_12_Death_Motes"
 step
 click Runeforged Shackles##364921+
-accept Acquisiton: Runeforged Shackles##63047 |goto 25.62,24.21
+accept Acquisiton: Runeforged Shackles##63047 |goto The Maw/0 25.62,24.21
 |only if questactive(63047)
 step
 label "Release_6_Tormented_Souls"
@@ -2602,6 +2578,8 @@ collect 9 Runeforged Shackles##184552 |q 63047/1 |goto 26.47,26.00
 |only if havequest(63047)
 step
 label "Collect_12_Death_Motes"
+clicknpc Death Mote##170169+
+|tip They look like swirling black and white orbs floating above the ground around this area.
 Collect #12# Death Motes |q 60762/1 |goto 27.30,24.65
 |only if havequest(60762)
 step
@@ -2669,7 +2647,7 @@ accept A Monument to Vengeance##63039 |goto 22.17,47.94
 |only if questactive(63039)
 step
 click Ebon Runeblade##364901+
-|tip They look like axes laying on the ground around this area.
+|tip They look like discarded weapons laying on the ground around this area.
 collect 8 Ebon Runeblade##184511 |q 63039/1 |goto 19.48,48.48
 |only if havequest(63039)
 step
@@ -2901,12 +2879,12 @@ Defend Ardenweald |q 60424/1
 |only if havequest(60424) or completedq(60424)
 step
 label "Defend_Bastion"
-Defend Bastion |q 60434/1
+Defend Bastion |q 60425/1
 |tip You can accomplish this several ways.
 |tip Complete world quests in Bastion using the "Bastion World Quests" guide.
 |tip Loot treasures or kill rare enemies across Bastion.
 |tip You can also kill bosses in the "Spires of Ascension" and "Necrotic Wake" dungeons using their respective dungeon guides.
-|only if havequest(60434) or completedq(60434)
+|only if havequest(60425) or completedq(60425)
 step
 label "Defend_Maldraxxus"
 Defend Maldraxxus |q 60430/1
@@ -2917,12 +2895,12 @@ Defend Maldraxxus |q 60430/1
 |only if havequest(60430) or completedq(60430)
 step
 label "Defend_Revendreth"
-Defend Revendreth |q 60425/1
+Defend Revendreth |q 60434/1
 |tip You can accomplish this several ways.
 |tip Complete world quests in Revendreth using the "Revendreth World Quests" guide.
 |tip Loot treasures or kill rare enemies across Revendreth.
 |tip You can also kill bosses in the "Sanguine Depths" and "Halls of Atonement" dungeons using their respective dungeon guides.
-|only if havequest(60425) or completedq(60425)
+|only if havequest(60434) or completedq(60434)
 step
 label "Collect_4_Gildenite"
 collect 3 Gildenite##179321 |q 60358/1
@@ -3054,7 +3032,7 @@ Tell him _"Show me the Sanctum."_
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60465/1 |goto Elysian Hold/0 42.60,53.06 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60454,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies" |or
 |only if havequest(60465) or completedq(60465)
 step
 talk Haephus##167745
@@ -3067,7 +3045,7 @@ Tell him _"Show me the Sanctum."_ |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61982/1 |goto Elysian Hold/0 42.60,53.06 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60454,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies" |or
 |only if havequest(61982) or completedq(61982)
 step
 talk Haephus##167745
@@ -3076,7 +3054,7 @@ turnin Replenish the Reservoir##61982 |goto Elysian Hold/0 42.60,53.06
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60454,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Necrolord Daily Quests",{
 author="support@zygorguides.com",
@@ -3130,7 +3108,7 @@ accept Aiding Revendreth##60398 |goto Seat of the Primus/0 47.62,28.72 |only if 
 |only if anyquestactive(60390,60393,60396,60398) or completedanyq(60390,60393,60396,60398)
 step
 talk Yondare Hex##167205
-accept Anima Appeal##60464 |goto Seat of the Primus/0 49.10,36.01
+accept Anima Appeal##60464 |goto Seat of the Primus/0 48.95,35.95
 |only if questactive(60464) or completedq()
 step
 talk Gatherer Zaya##167201
@@ -3398,7 +3376,7 @@ turnin Aiding Revendreth##60398 |goto Seat of the Primus/0 47.62,28.72 |only if 
 |only if readyanyq(60390,60393,60396,60398) or completedanyq(60390,60393,60396,60398)
 step
 talk Yondare Hex##167205
-turnin Anima Appeal##60464 |goto Seat of the Primus/0 49.10,36.01
+turnin Anima Appeal##60464 |goto Seat of the Primus/0 48.95,35.95
 |only if readyq(60464) or completedq(60464)
 stickystart "Deposit_1500_Anima_in_the_Reservoir"
 step
@@ -3406,11 +3384,11 @@ talk Arkadia Moa##161909
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60464/1 |goto Seat of the Primus/0 52.71,38.30 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60455,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies" |or
 |only if havequest(60464) or completedq(60464)
 step
 talk Yondare Hex##167205
-turnin Anima Appeal##60464 |goto Seat of the Primus/0 49.10,36.01
+turnin Anima Appeal##60464 |goto Seat of the Primus/0 48.95,35.95
 |only if readyq(60464) or completedq(60464)
 step
 label "Deposit_1500_Anima_in_the_Reservoir"
@@ -3418,7 +3396,7 @@ talk Arkadia Moa##161909 |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61983/1 |goto Seat of the Primus/0 52.71,38.30 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60455,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies" |or
 |only if havequest(61983) or completedq(61983)
 step
 talk Osbourne Black##167748
@@ -3427,7 +3405,7 @@ turnin Replenish the Reservoir##61983 |goto Seat of the Primus/0 46.66,42.38
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60455,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Daily Quests",{
 author="support@zygorguides.com",
@@ -3741,6 +3719,7 @@ turnin Bonemetal Bonanza##60374 |goto 43.56,52.43 |only if readyq(60374) or comp
 |only if readyanyq(60369,60364,60373,60414,60374) or completedanyq(60369,60364,60373,60414,60374)
 step
 talk Sesselie##167196
+|tip Downstairs inside the tree.
 turnin Anima Appeal##60462 |goto Heart of the Forest/1 50.62,62.62 |only if readyq(60462) or completedq(60462)
 turnin Replenish the Reservoir##61984 |goto Heart of the Forest/1 50.60,62.63 |only if readyq(61984) or completedq(61984)
 |only if readyanyq(60462) or completedanyq(60462)
@@ -3751,10 +3730,11 @@ Tell it _"Show me the Sanctum."_
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60462/1 |goto Heart of the Forest/1 38.93,54.72 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60452,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies" |or
 |only if havequest(60462) or completedq(60462)
 step
 talk Sesselie##167196
+|tip Downstairs inside the tree.
 turnin Anima Appeal##60462 |goto Heart of the Forest/1 50.62,62.62
 |only if readyq(60462) or completedq(60462)
 step
@@ -3764,16 +3744,17 @@ Tell it _"Show me the Sanctum."_ |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61984/1 |goto Heart of the Forest/1 38.93,54.72 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60452,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies" |or
 |only if havequest(61984) or completedq(61984)
 step
 talk Sesselie##167196
+|tip Downstairs inside the tree.
 turnin Replenish the Reservoir##61984 |goto Heart of the Forest/1 50.60,62.63
 |only if readyq(61984) or completedq(61984)
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60452,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Fungal Terminus Daily Quests",{
 author="support@zygorguides.com",
@@ -3803,9 +3784,10 @@ accept Go Beyond!##62466 |goto 50.75,53.29 |only if questpossible() and covenant
 accept Go Beyond!##60188 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
 accept Go Beyond!##62263 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
 accept Go Beyond!##62465 |goto 50.75,53.29 |only if questpossible() and covenantfeature("Transport Network") >= 3 |or 3
-Accept the Daily Quest 1 |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 1 |or
-Accept the Daily Quests 2 |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 2 |or 2
-Accept the Daily Quests 3 |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 3 |or 3
+Accept the Daily Quest |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 1 |or
+Accept the Daily Quests |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 2 |or 2
+Accept the Daily Quests |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 3 |or 3
+'|condition completedanyq(62614,62615,62610,60153,62296,62607,60175,62608,62606,62459,62400,62466,60188,62263,62465) |or
 step
 talk Marasmius##167455
 Tell it _"Let's ride."_
@@ -4481,7 +4463,7 @@ Tell him _"Show me the Sanctum."_
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60463/1 |goto Sinfall/0 55.70,26.04 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60456,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies" |or
 |only if havequest(60463) or completedq(60463)
 step
 talk Devahia##164739
@@ -4494,7 +4476,7 @@ Tell him _"Show me the Sanctum."_ |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61981/1 |goto Sinfall/0 55.70,26.04 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60456,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies" |or
 |only if readyq(61981) or completedq(61981)
 step
 talk Foreman Flatfinger##172605
@@ -4503,7 +4485,7 @@ turnin Replenish the Reservoir##61981 |goto 55.70,26.04
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60456,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Anima Conductor Daily Quests",{
 author="support@zygorguides.com",

@@ -13459,7 +13459,7 @@ patch='30003',
 description="\nObtain 300 skill points in fishing.",
 },[[
 step
-|next "Profession Guides\\Fishing\\Leveling Guides\\Classic\\Fishing 1-300"
+|next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-300"
 step
 Obtain 300 skill points in fishing |achieve 128
 step
@@ -13613,7 +13613,7 @@ patch='30003',
 description="\nObtain 225 skill points in fishing.",
 },[[
 step
-|next "Profession Guides\\Fishing\\Leveling Guides\\Classic\\Fishing 1-300"
+|next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-300"
 step
 Obtain 225 skill points in fishing |achieve 127
 step

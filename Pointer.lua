@@ -1362,9 +1362,9 @@ function Pointer:SetupArrow()
 
 	-- freeze
 	self.ArrowFrame:RegisterForDrag(not ZGV.db.profile.arrowfreeze and "LeftButton")
-	self.ArrowFrame:RegisterForClicks(ZGV.db.profile.arrowfreeze and "RightButtonUp" or "AnyUp")
-	self.ArrowFrame:EnableMouseWheel(not ZGV.db.profile.arrowfreeze)
-	self.ArrowFrame:EnableMouse(not ZGV.db.profile.arrowfreeze)
+	self.ArrowFrame:RegisterForClicks("AnyUp")
+	self.ArrowFrame:EnableMouseWheel(true)
+	self.ArrowFrame:EnableMouse(true)
 
 	-- scale
 	local scale = ZGV.db.profile.arrowscale
@@ -3149,7 +3149,7 @@ end
 --]]
 
 function Pointer.ArrowFrame_OnClick(frame,button)
-	if ZGV.db.profile.arrowfreeze then return end  -- how did we get the OnClick event, anyway?
+	--if ZGV.db.profile.arrowfreeze then return end  -- how did we get the OnClick event, anyway?
 	if UnitOnTaxi("player") then return end -- no recalcs while we are flying
 
 	if button=="LeftButton" then
@@ -3351,6 +3351,7 @@ function Pointer:ShowRouteMenu(arrowframe)
 						isNotRadio=1,
 					})
 			end
+			--[[
 			if arrowframe.waypoint.type=="route" and arrowframe.waypoint.pathnode.type=="taxi" then
 				tinsert(menu,{
 						text = L['opt_autotaxi'],
@@ -3359,6 +3360,7 @@ function Pointer:ShowRouteMenu(arrowframe)
 						isNotRadio=1,
 					})
 			end
+			--]]
 			tinsert(menu,UIDropDownFork_separatorInfo)
 		end
 

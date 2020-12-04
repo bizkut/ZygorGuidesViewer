@@ -232,7 +232,7 @@ local function CreateQuestPopup()
 	F.OnEscape =  F.OnDecline
 	F.AdjustSize = function(self) -- Need to change this because it is different for this kind of Popup
 		local offsets = 10 + 10 + 5 + 10 --Logo and top + text and buttons + buttons and bottom
-		self:SetHeight(offsets + self.text:GetStringHeight() + self.tex:GetHeight() + self.itemname_new:GetHeight() + self.text2:GetStringHeight() + self.logo:GetHeight() + self.acceptbutton:GetHeight() )
+		self:SetHeight(offsets + self.text:GetStringHeight() + self.tex:GetHeight() + self.itemname_new:GetHeight() + self.text2:GetStringHeight() + (self.logo:IsVisible() and self.logo:GetHeight() or 5) + self.acceptbutton:GetHeight() )
 	end
 
 	F.equippingQuestItemSettings = function(self)

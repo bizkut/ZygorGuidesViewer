@@ -393,7 +393,7 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 		['opt_fontscale'] = "Font size",
 		['opt_fontscale_desc'] = "Set the size of fonts used in the guides.",
 
-		["opt_opacitytoggle"] = "Make viewer transparent",
+		["opt_opacitytoggle"] = "Enable Transparency",
 		["opt_opacitytoggle_desc"] = "Makes the Viewer window slightly see-through.",
 		["opt_framescale_s"] = "Viewer size:",
 		["opt_framescale_s_desc"] = "You can resize the window to match your preferences.",
@@ -453,7 +453,10 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 		["opt_actionbar_scale_s"] = "Action Bar Scale",
 		["opt_actionbar_hide_useless"] = "Only display when step has items or spells to use.",
 		['opt_targetonclick'] = "Add raid marker to NPCs when selected with action buttons",
-
+		['opt_actionbar_types_title'] = "Button types:",
+		['opt_actionbar_quest'] = "Quest actions",
+		['opt_actionbar_talk'] = "Talk to NPC",
+		['opt_actionbar_kill'] = "Kill enemy",
 
 	["opt_tabs_icon"] = "Use icons in tabs",
 	["opt_tabs_minwdth_s"] = "Minimum tab width",

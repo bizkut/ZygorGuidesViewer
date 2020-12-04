@@ -61,8 +61,15 @@ local WQ_TYPES = {
 }
 
 local WQ_REWARDS = { -- checks for specific currencies are in isvalid
+	{"Anima",true,"anima"},
+
+	{"Order resources",true,1220},
+	{"Wakening essence",true,1533},
+
 	{"Azerite power",true,1553},
 	{"War resources",true,1560},
+
+	{"Reputation",true,"reputation"},
 	{"Other resources",true,"resources"},
 	{"Gold",true,"gold"},
 	{"Gear",true,"gear"},
@@ -313,16 +320,20 @@ function WorldQuests:SuggestWorldQuestGuide(object,questID,force,mapID)
 			return false
 		end
 
-		-- if tab with world quest guide exists load guide into it, otherwise show wq popup
+		local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
+		tab:SetAsCurrent()
+		ZGV:SetGuide(guide.title,labelstep)
+
+		-- if tab with world quest guide exists load guide into it, otherwise create one
+		local silent = false
 		if ZGV.Tabs:DoesSpecialTabExist("worldquestzone") then
-			ZGV:Debug("&_SUB &worldquests setting to %s",questID)
-			local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
-			tab:SetAsCurrent()
-			ZGV:SetGuide(guide.title,labelstep,false,"silent")
-		else
-			ZGV:Debug("&_SUB &worldquests show popup for %s",questID)
-			add_world_quest_notification(questID,questTitle,guide,labelstep)
+			silent = true
 		end
+		ZGV:Debug("&_SUB &worldquests setting to %s",questID)
+		local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
+		tab:SetAsCurrent()
+		ZGV:SetGuide(guide.title,labelstep,false,"silent")
+
 		return true
 	else
 		ZGV:Debug("&worldquests won't switch to %s",questID)
@@ -341,6 +352,8 @@ end
 
 function WorldQuests:SuggestWorldQuestGuideFromMap(object,questID,force,mapID)
 	if not ZGV.db.profile.worldquestmap then return false end
+
+	mapID = mapID or object.ZygorMapId
 
 	WorldQuests:SuggestWorldQuestGuide(object,questID,force,mapID)
 end
@@ -390,6 +403,10 @@ local function get_quest_details(data,qid)
 			data.currencies.texture = texture
 			data.currencies.count = count
 			data.currencies.currencyID = currencyID
+
+			if C_CurrencyInfo.GetFactionGrantedByCurrency(currencyID) then
+				data.rewardsreputation = true
+			end
 			break
 		end
 	end
@@ -407,6 +424,9 @@ local function get_quest_details(data,qid)
 		data.rewards.itemEquipLoc = itemEquipLoc
 		data.rewards.texture = itemIcon
 		data.rewards.colorcode = ITEM_QUALITY_COLORS[itemRarity or 1].hex
+		if itemlink then data.rewards.anima = C_Item.IsAnimaItemByID(itemlink) end
+
+
 
 		if not itemIcon then -- if we did not get icon, force refresh
 			WorldQuests.useCache = false
@@ -589,16 +609,29 @@ function WorldQuests:IsValidQuest(object)
 
 	if object.gold>0 then 
 		if not ZGV.db.profile.WQreward.gold then return false,"rejected gold" end 
+
+	elseif object.rewardsreputation then
+		if not ZGV.db.profile.WQreward.reputation then return false,"rejected reputation" end
+
 	elseif object.currencies.currencyID then 
 		if object.currencies.currencyID == 1553 then 
 			if not ZGV.db.profile.WQreward[1553] then return false,"rejected resource" end
 		elseif object.currencies.currencyID == 1560 then 
 			if not ZGV.db.profile.WQreward[1560] then return false,"rejected resource" end
+
+		elseif object.currencies.currencyID == 1220 then 
+			if not ZGV.db.profile.WQreward[1220] then return false,"rejected resource" end
+		elseif object.currencies.currencyID == 1533 then 
+			if not ZGV.db.profile.WQreward[1533] then return false,"rejected resource" end
+
 		elseif not ZGV.db.profile.WQreward.resources then 
 			return false,"rejected resource" 
 		end
 	--elseif object.honor>0  then 
 	--	if not ZGV.db.profile.WQreward.honor then return false,"rejected honor" end
+	elseif (object.rewards.anima) then 
+		if not ZGV.db.profile.WQreward.anima then return false,"rejected anima" end
+
 	elseif (object.rewards.itemEquipLoc and object.rewards.itemEquipLoc~="") then 
 		if not ZGV.db.profile.WQreward.gear then return false,"rejected gear" end
 	elseif ZGV.db.profile.WQreward.other == false then 
@@ -1186,6 +1219,10 @@ function WorldQuests:SetFilters()
 		for optnum,opt in ipairs(WQ_FACTIONS_SHA) do ZGV.db.profile.WQreputation[opt[3]]=opt[2] end
 		ZGV.db.profile.WQupdate90 = true
 	end
+	if not ZGV.db.profile.WQupdate92 then
+		ZGV.db.profile.WQreward.anima=true
+		ZGV.db.profile.WQupdate92 = true
+	end
 
 	ZGV.db.char.QuestQueue = ZGV.db.char.QuestQueue or {}
 	WorldQuests.QuestQueue = ZGV.db.char.QuestQueue
@@ -1388,6 +1425,8 @@ function WorldQuests.DataProvier:RefreshAllData()
 				end
 
 				if pin then
+					pin.ZygorMapId = info.mapID
+
 					if info.isCombatAllyQuest or info.isDaily then
 						pin.worldQuest = false
 					end

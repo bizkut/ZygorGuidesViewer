@@ -2409,7 +2409,7 @@ function ZGV:DoUpdateFrame(full,onupdate)
 		self.stepchanged=false
 
 		-- set minimum frame size to one step
-		minh = self.Frame.stepframes[1]:GetHeight() + TOP_HEIGHT + ZGV.Frame.Border.TabBack:GetHeight()
+		minh = (self.Frame.stepframes[1] and self.Frame.stepframes[1]:GetHeight() or 10) + TOP_HEIGHT + ZGV.Frame.Border.TabBack:GetHeight()
 
 		--self:HighlightCurrentStep()
 

@@ -7,7 +7,7 @@ ZygorGuidesViewer.GuideMenuTier = "WOD"
 -- HERBALISM --
 ---------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Warlords of Draenor\\Fireweed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fireweed",{
 	author="support@zygorguides.com",
 	description="\nFireweed can be gathered from Frostfire Ridge.",
 	condition_end=function() return skill('Draenor Herbalism') >= 50 end,
@@ -95,7 +95,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|goto 70.71,23.11 < 20 |noway |c |next "Start"
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Warlords of Draenor\\Frostweed",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Frostweed",{
 	author="support@zygorguides.com",
 	description="\nFrostweed can be gathered from Frostfire Ridge in Draenor.",
 	condition_end=function() return skill('Draenor Herbalism') >= 50 end,
@@ -125,7 +125,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Warlords of Draenor\\Gorgrond Flytrap",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Gorgrond Flytrap",{
 	author="support@zygorguides.com",
 	description="\nGorgrond Flytrap can be gathered from Gorgrond in Draenor.",
 	condition_end=function() return skill('Draenor Herbalism') >= 50 end,
@@ -150,7 +150,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Warlords of Draenor\\Nagrand Arrowbloom",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Nagrand Arrowbloom",{
 	author="support@zygorguides.com",
 	description="\nNagrand Arrowbloom can be gathered from Nagrand in Draenor.",
 	condition_end=function() return skill('Draenor Herbalism') >= 50 end,
@@ -185,7 +185,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Warlords of Draenor\\Starflower",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Starflower",{
 	author="support@zygorguides.com",
 	description="\nStarflower can be gathered from Shadowmoon Valley in Draenor.",
 	condition_end=function() return skill('Draenor Herbalism') >= 50 end,
@@ -208,7 +208,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Warlords of Draenor\\Talador Orchid",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Talador Orchid",{
 	author="support@zygorguides.com",
 	description="\nTalador Orchid can be gathered from Talador in Draenor.",
 	condition_end=function() return skill('Draenor Herbalism') >= 50 end,
@@ -237,7 +237,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\W
 -- SKINNING --
 --------------
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Warlords of Draenor\\Raw Beast Hide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Raw Beast Hide",{
 	author="support@zygorguides.com",
 	description="\nRaw Beast Hide can be gathered from Nagrand in Draenor.",
 	condition_end=function() return skill('Draenor Skinning') >= 50 end,
@@ -249,7 +249,7 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Wa
 		'|confirm
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Warlords of Draenor\\Draenor Skinning 1-100",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Draenor Skinning 1-100",{
 	author="support@zygorguides.com",
 	description="\nThis guide will walk you through leveling your Draenor Skinning skill from 1-100.",
 	condition_end=function() return skill('Draenor Skinning') >= 100 end,
