@@ -700,8 +700,8 @@ Speak to Roh-Avonavi to Travel to Bastion |q 59773/1 |goto 64.20,49.58
 step
 Travel to Bastion |goto Bastion/0 36.97,76.23 < 10 |c |q 59773 |notravel
 step
-Complete the "Follow the Path" Quest in Bastion |q 60056 |future
-|tip Use the "Bastion" Leveling guide to accomplish this.
+Complete the Bastion Story Questline |q 60056 |future
+|tip Use the "Bastion" or "Bastion (Story Only)" leveling guide to accomplish this.
 step
 talk Tal-Inara##159478
 accept The Arbiter's Will##61096 |goto Oribos/0 38.89,70.02
@@ -727,8 +727,8 @@ Speak to Roh-Avonavi to Travel to Maldraxxus |q 57386/1 |goto 59.23,34.19
 step
 Travel to Maldraxxus |goto Maldraxxus/0 50.04,43.06 < 10 |c |q 57386 |notravel
 step
-Complete the "Words of the Primus" Quest in Maldraxxus |q 59206 |future
-|tip Use the "Maldraxxus" Leveling guide to accomplish this.
+Complete the Maldraxxus Story Questline |q 59206 |future
+|tip Use the "Maldraxxus" or "Maldraxxus (Story Only)" leveling guide to accomplish this.
 step
 talk Tal-Inara##173383
 accept Request of the Highlord##61715 |goto Oribos/0 54.49,54.23
@@ -762,8 +762,8 @@ Speak to Roh-Avonavi |q 60338/2 |goto 50.79,74.17
 step
 Travel to Ardenweald |goto Ardenweald/0 68.52,17.61 < 10 |c |q 60338 |notravel
 step
-Complete "The Queen's Request" Quest in Ardenweald |q 58724 |future
-|tip Use the "Ardenweald" Leveling guide to accomplish this.
+Complete the Ardenweald Story Questline |q 58724 |future
+|tip Use the "Ardenweald" or "Ardenweald (Story Only)" leveling guide to accomplish this.
 step
 talk Tal-Inara##159478
 accept A Plea to Revendreth##57025 |goto Oribos/1 49.03,60.01
@@ -778,8 +778,8 @@ Speak to Roh-Avonavi to Travel to Revendreth |q 57025/2 |goto 34.27,53.21
 step
 Travel to Revendreth |offtaxi |goto Revendreth/0 70.75,84.09 |q 57025 |notravel
 step
-Complete "The End of the Beginning" Quest in Revendreth |q 57876 |future
-|tip Use the "Revendreth" Leveling guide to accomplish this.
+Complete the Revendreth Story Questline |q 57876 |future
+|tip Use the "Revendreth" or "Revendreth (Story Only)" leveling guide to accomplish this.
 step
 talk Tal-Inara##159478
 accept The Looming Dark##57877 |goto Oribos/0 38.87,70.01
@@ -2088,10 +2088,6 @@ talk Andira##160189
 |tip Keep chasing her until you can click her.
 Retrieve Andira |q 58039/1 |goto 56.04,44.13
 step
-clicknpc Gatamatos##159641
-Find Gatamatos |q 57931/1 |goto 54.86,43.54
-stickystart "Return_Gatamatos"
-step
 label "Drain_Cloudstrider_Anima"
 use the Anima Drainer##173691
 |tip Use it on Gilded Cloudstriders.
@@ -2101,6 +2097,10 @@ step
 label "Collect_Cloudstrider_Antlers"
 kill Gilded Cloudstrider##159298+
 collect 5 Cloudstrider Antler##173690 |q 58038/1 |goto 57.24,44.61
+step
+clicknpc Gatamatos##159641
+Find Gatamatos |q 57931/1 |goto 54.86,43.54
+stickystart "Return_Gatamatos"
 step
 Follow the path up |goto 57.04,44.18 < 20 |only if walking
 Return Andira |q 58039/2 |goto 57.27,39.21
@@ -7234,10 +7234,6 @@ talk Andira##160189
 |tip Keep chasing her until you can click her.
 Retrieve Andira |q 58039/1 |goto 56.04,44.13
 step
-clicknpc Gatamatos##159641
-Find Gatamatos |q 57931/1 |goto 54.86,43.54
-stickystart "Return_Gatamatos"
-step
 label "Drain_Cloudstrider_Anima"
 use the Anima Drainer##173691
 |tip Use it on Gilded Cloudstriders.
@@ -7247,6 +7243,10 @@ step
 label "Collect_Cloudstrider_Antlers"
 kill Gilded Cloudstrider##159298+
 collect 5 Cloudstrider Antler##173690 |q 58038/1 |goto 57.24,44.61
+step
+clicknpc Gatamatos##159641
+Find Gatamatos |q 57931/1 |goto 54.86,43.54
+stickystart "Return_Gatamatos"
 step
 Follow the path up |goto 57.04,44.18 < 20 |only if walking
 Return Andira |q 58039/2 |goto 57.27,39.21
@@ -8921,13 +8921,16 @@ Enter the building |goto 71.82,40.34 < 7 |walk
 talk The Accuser##160116
 |tip Downstairs inside the building.
 accept An Abuse of Power##57919 |goto 71.75,40.41
+|only if completedq(62716)
 step
 talk Abused Soul##160107
 |tip Downstairs inside the building.
 Subjugate the Abused Soul |q 57919/1 |goto 71.46,40.71
+|only if completedq(62716)
 step
 kill Shattered Soul##160120 |q 57919/2 |goto 71.46,40.71
 |tip Downstairs inside the building.
+|only if completedq(62716)
 step
 talk The Accuser##160116
 |tip Downstairs inside the building.
@@ -8935,10 +8938,12 @@ turnin An Abuse of Power##57919 |goto 71.76,40.42
 accept The Proper Souls##57920 |goto 71.76,40.42
 accept The Proper Tools##57921 |goto 71.76,40.42
 accept The Proper Punishment##57922 |goto 71.76,40.42
+|only if completedq(62716)
 step
 talk Absolooshun##158986
 |tip Inside the building.
 home Absolution Crypt |goto 72.32,39.85
+|only if completedq(62716)
 stickystart "Collect_Venthyr_Ritual_Robes"
 stickystart "Collect_Venthyr_Ritual_Dagger"
 stickystart "Collect_Venthyr_Ritual_Tome"
@@ -8946,31 +8951,39 @@ step
 Run up the stairs |goto 68.96,39.79 < 15 |only if walking
 clicknpc Fugitive Soul##160149
 Subjugate the Fugitive Soul |q 57920/1 |goto 68.00,42.03 |count 1
+|only if completedq(62716)
 step
 Run up the stairs |goto 67.80,41.54 < 15 |only if walking
 clicknpc Fugitive Soul##160149
 Subjugate the Fugitive Soul |q 57920/1 |goto 66.35,43.64 |count 2
+|only if completedq(62716)
 step
 kill Fata the Soulflayer##159677 |q 57922/1 |goto 65.19,43.80
 |tip He floats around this area.
+|only if completedq(62716)
 step
 clicknpc Fugitive Soul##160149
 Subjugate the Fugitive Soul |q 57920/1 |goto 68.44,43.01 |count 3
+|only if completedq(62716)
 step
 clicknpc Fugitive Soul##160149
 Subjugate the Fugitive Soul |q 57920/1 |goto 70.57,43.37 |count 4
+|only if completedq(62716)
 step
 label "Collect_Venthyr_Ritual_Robes"
 Kill enemies around this area
 collect Venthyr Ritual Robes##173695 |q 57921/1 |goto 69.51,44.00
+|only if completedq(62716)
 step
 label "Collect_Venthyr_Ritual_Dagger"
 Kill enemies around this area |notinsticky
 collect Venthyr Ritual Dagger |q 57921/2 |goto 69.51,44.00
+|only if completedq(62716)
 step
 label "Collect_Venthyr_Ritual_Tome"
 Kill enemies around this area |notinsticky
 collect Venthyr Ritual Tome##173697 |q 57921/3 |goto 69.51,44.00
+|only if completedq(62716)
 step
 Run up the stairs |goto 69.88,44.32 < 15 |only if walking
 talk The Accuser##160139
@@ -8978,34 +8991,41 @@ turnin The Proper Souls##57920 |goto 70.70,46.97
 turnin The Proper Tools##57921 |goto 70.70,46.97
 turnin The Proper Punishment##57922 |goto 70.70,46.97
 accept Ritual of Absolution##57923 |goto 70.70,46.97
+|only if completedq(62716)
 step
 Watch the dialogue
 talk The Accuser##160163
 |tip She runs to this location.
 Tell her _"I'm ready. Begin the ritual."_
 Start the Absolution Ritual |q 57923/1 |goto 71.96,46.22
+|only if completedq(62716)
 step
 Watch the dialogue
 Kill the enemies that attack in waves
 Complete the Ritual |q 57923/2 |goto 71.96,46.22
+|only if completedq(62716)
 step
 Watch the dialogue
 talk The Accuser##160163
 turnin Ritual of Absolution##57923 |goto 71.96,46.22
 accept Ritual of Judgment##57924 |goto 71.96,46.22
+|only if completedq(62716)
 step
 Watch the dialogue
 talk The Accuser##160233
 |tip She walks to this location.
 Tell her _"I am ready. Begin the ritual."_
 Join the Ritual of Judgment |q 57924/1 |goto 74.12,49.71
+|only if completedq(62716)
 step
 Watch the dialogue
 Judge the Soul |q 57924/2 |goto 74.12,49.71
+|only if completedq(62716)
 step
 talk The Accuser##160294
 turnin Ritual of Judgment##57924 |goto 74.29,49.72
 accept Archivist Fane##57925 |goto 74.29,49.72
+|only if completedq(62716)
 step
 Enter the building |goto 72.98,52.47 < 15 |walk
 talk Archivist Fane##160248
@@ -9013,39 +9033,48 @@ talk Archivist Fane##160248
 turnin Archivist Fane##57925 |goto 73.00,51.99
 accept The Sinstone Archive##57926 |goto 73.00,51.99
 accept Missing Stone Fiend##60127 |goto 73.00,51.99
+|only if completedq(62716)
 stickystart "Collect_Sinstone_Records"
 step
 Kill enemies around this area
 accept Atonement Crypt Key##57928 |goto 72.71,53.34
 |tip You will eventually automatically accept this quest after looting.
+|only if completedq(62716)
 step
 Run up the stairs |goto 72.07,56.07 < 15 |only if walking
 talk Cryptkeeper Kassir##163073
 turnin Missing Stone Fiend##60127 |goto 70.15,56.22
 accept Rebuilding Temel##57927 |goto 70.15,56.22
+|only if completedq(62716)
 step
 click Temel's Head
 collect Temel's Head##173739 |q 57927/3 |goto 70.23,53.80
+|only if completedq(62716)
 step
 click Temel's Body
 collect Temel's Body##173737 |q 57927/1 |goto 68.90,53.29
+|only if completedq(62716)
 step
 click Temel's Wings
 collect Temel's Wings##173738 |q 57927/2 |goto 66.15,53.10
+|only if completedq(62716)
 step
 click Crypt Door+
 |tip They look like the doors on the small stone buildings around this area.
 |tip You may have to open many of them before you find an Atonement Crypt.
 Open an Atonement Crypt |q 57928/1 |goto 70.03,54.91
+|only if completedq(62716)
 step
 label "Collect_Sinstone_Records"
 Kill enemies around this area
 collect 100 Sinstone Records##173733 |q 57926/1 |goto 70.03,54.91
+|only if completedq(62716)
 step
 talk Cryptkeeper Kassir##163073
 turnin Rebuilding Temel##57927 |goto 70.15,56.21
 turnin Atonement Crypt Key##57928 |goto 70.15,56.21
 accept Ready to Serve##60128 |goto 70.15,56.21
+|only if completedq(62716)
 step
 Run down the stairs |goto 71.46,56.45 < 15 |only if walking
 talk Archivist Fane##160248
@@ -9053,17 +9082,20 @@ talk Archivist Fane##160248
 turnin The Sinstone Archive##57926 |goto 72.99,51.99
 turnin Ready to Serve##60128 |goto 72.99,51.99
 accept Hunting an Inquisitor##57929 |goto 72.99,51.99
+|only if completedq(62716)
 step
 Run up the stairs |goto 75.32,50.94 < 15 |only if walking
 Use the _"Read Inquisitor Traian's Sinstone"_ ability
 |tip It appears as a button on the screen.
 kill Inquisitor Traian##159151 |q 57929/1 |goto 76.19,52.11
+|only if completedq(62716)
 step
 Enter the building |goto 72.98,52.47 < 15 |walk
 talk Archivist Fane##160248
 |tip Inside the building.
 turnin Hunting an Inquisitor##57929 |goto 72.99,51.99
 accept Halls of Atonement: Your Absolution##58092 |goto 72.99,51.99
+|only if completedq(62716)
 step
 Run up the stairs |goto 68.94,39.78 < 15 |only if walking
 Cross the bridge |goto 67.08,39.56 < 20 |only if walking
@@ -9102,7 +9134,8 @@ Collect Tithe Anima |q 60176/1 |goto 62.51,63.36 |count 5
 step
 click Droplets of Anima
 Collect Tithe Anima |q 60176/1 |goto 62.29,62.10 |count 10
-step		talk 167489
+step
+talk Lajos##167489
 accept Reason for the Treason##60177 |goto 62.22,61.36
 step
 click Droplets of Anima
@@ -12939,7 +12972,7 @@ kill Duskterror##163059
 |tip She flies down to you.
 |tip She will eventually be captured.
 Watch the dialogue
-Capture Duskterror |q 58941/2 |goto 51.14,74.48
+Capture Duskterror |q 58941/2 |goto 52.44,76.47
 step
 talk Flockmaster Sergio##163221
 turnin Alpha Bat##58941 |goto 51.26,74.31
@@ -17025,10 +17058,10 @@ step
 Ride the elevator up |goto Revendreth/0 42.07,47.12 < 15 |only if walking
 click Renathal Banner
 Place the Renathal Banner |q 59701/1 |goto Revendreth/0 40.45,50.78 |count 1
-stickystart "Slay_Venthyr_Invaders"
 step
 click Chelra the Bladewall
 Revive Chelra the Bladewall |q 61492/1 |goto 44.00,50.73
+stickystart "Slay_Venthyr_Invaders"
 step
 click Renathal Banner
 Place the Renathal Banner |q 59701/1 |goto 44.54,53.98 |count 2
@@ -17087,7 +17120,6 @@ step
 Stop Controlling Temel |nobuff spell:323339 |q 59711
 |tip Use the "Escape!" ability on your action bar.
 step
-Run up the stairs |goto 42.05,46.02 < 15 |only if walking |goto 44.37,41.66
 click Old Gate Carriage
 |tip Wait here until a horse carriage comes along.
 |tip You shouldn't have to wait very long.
@@ -18263,7 +18295,8 @@ Speak with Baroness Draka |q 59556/1 |goto 49.49,21.82
 step
 Watch the dialogue
 |tip Follow Baroness Draka as she walks.
-|tip She eventually walks to this location inside the building.
+|tip She eventually walks to this location.
+|tip Inside the building.
 Follow Baroness Draka |q 59556/2 |goto 49.69,43.84
 step
 Watch the dialogue
@@ -18274,7 +18307,7 @@ step
 Use the _"Raise the Runeblade"_ ability
 |tip It appears as a button on the screen.
 |tip Inside the building.
-Raise the Runeblade |q 59556/4 |goto 49.68,42.29
+Join the Necrolord Covenant |q 59556/4 |goto 49.68,42.29
 step
 talk Baroness Draka##165182
 |tip Inside the building.
@@ -18296,50 +18329,62 @@ turnin Power of the Primus##61359 |goto 49.70,43.84
 accept A Hero of Great Renown##62833 |goto 49.70,43.84
 step
 talk Elspeth Larink##175998
+|tip Inside the building.
 turnin A Hero of Great Renown##62833 |goto 46.43,40.20
 accept Glorious Ambition##62834 |goto 46.43,40.20
 step
 talk Elspeth Larink##175998
+|tip Inside the building.
 Ask her _"What is my Renown with the Necrolords?"_
-Examine your Renown |q 62834/1 |goto 46.43,40.20
+Examine Your Renown |q 62834/1 |goto 46.43,40.20
 step
 talk Elspeth Larink##175998
+|tip Inside the building.
 turnin Glorious Ambition##62834 |goto 46.43,40.20
 accept A Call to Service##62835 |goto 46.43,40.20
 step
 talk Tapani Nightwish##161994
+|tip Inside the building.
 home Seat of the Primus |goto 46.89,30.01 |q 62835
 step
 talk Sergeant Romark##158339
+|tip Inside the building.
 turnin A Call to Service##62835 |goto 47.63,28.74
 accept A Calling in Maldraxxus##62694 |goto 47.63,28.74
+accept Anima is Strength##62839 |goto 47.63,28.74
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
+turnin Anima is Strength##62839 |goto 52.70,38.31
+accept Into the Reservoir##62840 |goto 52.70,38.31
 step
 Complete #3# World Quests in Maldraxxus |q 62694/1
 |tip Use the World Quests guide to accomplish this.
 |tip Click a world quest on the Maldraxxus map to load the guide for it.
 step
 talk Sergeant Romark##158339
+|tip Inside the building.
 turnin A Calling in Maldraxxus##62694 |goto 47.63,28.74
-accept Anima is Strength##62839 |goto 47.63,28.74
-step
-talk Arkadia Moa##161909
-turnin Anima is Strength##62839 |goto 52.70,38.31
-accept Into the Reservoir##62840 |goto 52.70,38.31
 step
 use the Tribute of the Ambitious##181732
-|tip You should have this from turning in the "A Calling in Maldraxxus" quest a few steps ago.
+|tip You should have this from turning in the "A Calling in Maldraxxus" quest.
 |tip You will be given an item worth 500 Anima.
 |tip If you don't have this, complete world quests that reward Anima items, until you have 375 Anima worth of items.
-talk Arkadia Moa##161909
-Tell her _"Show me the Sanctum."_
-|tip Click the "Deposit" button to deposit the Anima to your covenant.
-Deposit #375# Reservoir Anima |q 62840/2 |goto 52.70,38.31
+Receive the Rewards |condition itemcount(181732) == 0 |q 62840 |future
 step
 talk Arkadia Moa##161909
+|tip Inside the building.
+Tell her _"Show me the Sanctum."_
+|tip Click the "Deposit" button.
+Deposit #375# Anima |q 62840/2 |goto 52.70,38.31
+step
+talk Arkadia Moa##161909
+|tip Inside the building.
 turnin Into the Reservoir##62840 |goto 52.70,38.31
 accept Opportunity Strikes##61397 |goto 52.70,38.31
 step
 talk Osbourne Black##167748
+|tip Inside the building.
 turnin Opportunity Strikes##61397 |goto 46.64,42.35
 accept The Soul Contact##62843 |goto 46.64,42.35
 step
@@ -18424,20 +18469,24 @@ turnin Hopeful News##62837 |goto Oribos/0 39.94,68.61
 accept Return to Draka##62844 |goto Oribos/0 39.94,68.61
 step
 talk Baroness Draka##161907
+|tip Inside the building.
 turnin Return to Draka##62844 |goto Seat of the Primus/0 49.75,50.68
-accept Bringing It All Together##62845 |goto 49.75,50.68
+accept Bringing It All Together##62845 |goto Seat of the Primus/0 49.75,50.68
 step
 talk Arkadia Moa##161909
+|tip Inside the building.
 turnin Bringing It All Together##62845 |goto 52.72,38.30
 accept Sanctum Improvements##62846 |goto 52.72,38.30
 step
 talk Arkadia Moa##161909
+|tip Inside the building.
 Tell her _"Show me the Sanctum."_
 |tip Choose whichever upgrade you like best, it doesn't matter, because you will eventually unlock them all over time.
 |tip Click the "Activate" button.
 Start a Sanctum Upgrade |q 62846/1 |goto 52.72,38.30
 step
 talk Arkadia Moa##161909
+|tip Inside the building.
 turnin Sanctum Improvements##62846 |goto 52.72,38.30
 accept Collective Soul##59596 |goto 52.72,38.30
 step
@@ -18446,7 +18495,7 @@ talk Plague Deviser Marileth##161904
 turnin Collective Soul##59596 |goto 38.90,32.28
 accept Come On, We're Simpatico!##59597 |goto 38.90,32.28
 step
-clicknpc Plague Deviser Marileth##165333
+talk Plague Deviser Marileth##165333
 |tip Inside the building.
 Soulbind with Marileth |q 59597/1 |goto 38.90,32.28
 step
@@ -18465,13 +18514,15 @@ talk Plague Deviser Marileth##161904
 turnin A Journey Made Together##61388 |goto 38.89,32.25
 accept Conduits, What Are They For?##62848 |goto 38.89,32.25
 step
-Use the conduits in your bags
-|tip You should have received 3 of them.
-|tip Follow the instructions on the screen.
+click Forge of Bonds
+|tip Use the 3 conduits in your bags.
+|tip The conduits are different, depending on your class.
+|tip Inside the building.
 Add the Conduits to the Forge of Bonds |q 62848/1 |goto 38.09,34.13
 step
 click Forge of Bonds
-|tip Follow the instructions on the screen.
+|tip Look at the powers down the tree to figure out the path you want to take.
+|tip Choose the conduit that leads to unlocking the power you like best.
 |tip Inside the building.
 Apply the Conduit to Plague Deviser Marileth |q 62848/2 |goto 38.09,34.13
 step
@@ -18481,13 +18532,19 @@ turnin Conduits, What Are They For?##62848 |goto 38.89,32.25
 accept No Rest For the Dead##59609 |goto 38.89,32.25
 step
 talk Baroness Draka##161907
+|tip Inside the building.
 turnin No Rest For the Dead##59609 |goto 49.77,50.68
 accept The Highlord Calls##63032 |goto 49.77,50.68
+step
+talk Rathan##162222
+|tip Inside the building.
+accept Rebellious Souls##58665 |goto 47.97,50.47
 step
 talk Highlord Bolvar Fordragon##164079
 turnin The Highlord Calls##63032 |goto Oribos/0 39.94,68.59
 step
 talk Baroness Draka##161907
+|tip Inside the building.
 accept Securing the House##62448 |goto Seat of the Primus/0 49.77,50.68
 step
 Reach Renown Level 5 |q 62448/1
@@ -18496,18 +18553,19 @@ Reach Renown Level 5 |q 62448/1
 |tip Use the "Necrolord Daily Quests" guide to accomplish this.
 step
 talk Baroness Draka##161907
+|tip Inside the building.
 turnin Securing the House##62448 |goto 49.77,50.68
 accept Enemy at the Door##59555 |goto 49.77,50.68
 step
 clicknpc Ragewing##165125
 Ride Ragewing |q 59555/1 |goto Maldraxxus/0 52.89,67.73
-stickystart "Slay_60_Enemies"
+stickystart "Slay_Enemies_59555"
 step
 kill Siege Ballista##165124+
 |tip Use the abilities on your action bar.
 Destroy #10# Siege Ballista |q 59555/3 |goto 50.39,59.75
 step
-label "Slay_60_Enemies"
+label "Slay_Enemies_59555"
 Kill enemies around this area
 |tip Use the abilities on your action bar. |notinsticky
 Slay #60# Enemies |q 59555/2 |goto 50.38,64.57
@@ -20753,7 +20811,7 @@ accept Restoring Power##63057 |goto 52.75,38.27
 step
 click Prime Scroll
 |tip Inside the building.
-Activate the Anima Conductor |q 63057/1 |goto 47.20,65.52
+Activate the Anima Conductor |q 63057/1 |goto 49.69,36.92
 step
 talk Yondare Hex##167205
 |tip Inside the building.
@@ -20883,19 +20941,19 @@ accept Explore Torghast##62932 |goto Oribos/0 39.92,68.62
 step
 Enter Torghast |goto Torghast/0 16.29,47.08 < 10 |c |q 62932
 step
-Use the Portal to Skoldus Hall |goto Torghast/0 49.69,26.66
-|tip Walk into the swirling portal.
+Use a Portal to Torghast |goto Torghast/0 55.32,29.56
+|tip Walk into any of the swirling portals.
 |tip Enter the instance with the popup that displays.
-Enter Skoldus Hall |goto Torghast/0 49.69,26.66 > 10000 |noway |c |q 62932
+Enter Torghast |goto Torghast/0 49.69,26.66 > 10000 |noway |c |q 62932
 step
-_Inside Skoldus Hall:_
-kill Custodian Thonar##153165
-|tip He is on floor 6.
+_Inside Torghast:_
+Kill the final boss
+|tip It is on floor 6.
 collect Soul-Touched Key##184198 |n
 Find Information |q 62932/1
 step
-_Inside Skoldus Hall:_
-Leave Skoldus Hall |goto Torghast/0 37.23,47.20 < 10 |noway |c |q 62932
+_Inside Torghast:_
+Leave Torghast |goto Torghast/0 37.23,47.20 < 10 |noway |c |q 62932
 |tip Walk into the swirling portal nearby.
 step
 talk Highlord Bolvar Fordragon##164079
@@ -21163,16 +21221,56 @@ turnin The Weak Link##60272 |goto 50.72,54.13
 step
 talk Runecarver##164937
 accept Ashes of the Tower##62700 |goto 50.72,54.13
+accept The Final Pieces##62719 |goto 50.72,54.13
+accept The Vessels of Jewels##62800 |goto 50.72,54.13 |only if skill("Shadowlands Jewelcrafting") >= 1
+accept The Vessels of Leather and Bone##62798 |goto 50.72,54.13 |only if skill("Shadowlands Leatherworking") >= 1
+accept The Vessels of Metal##62797 |goto 50.72,54.13 |only if skill("Shadowlands Blacksmithing") >= 1
+accept The Vessels of the Thread##62799 |goto 50.72,54.13 |only if skill("Shadowlands Tailoring") >= 1
+stickystart "Acquire_a_Rune_Vessel"
+stickystart "Obtain_2_Different_Missives"
+stickystart "Collect_1250_Soul_Ash"
 step
-Collect #1250# Soul Ash |q 62700/1
-|tip Run Torghast Tower to collect Soul Ash.
-|tip Soul Ash will be dropped by the final boss upon full completion.
+talk Appraiser Au'vesk##156670
+Bring the Memory Back to Appraiser Au'vesk |q 62800/1 |goto Oribos/0 35.20,41.35
+|only if havequest(62800) or completedq(62800)
+step
+talk Tanner Au'qil##156669
+Bring the Memory Back to Tanner Au'qil |q 62798/1 |goto 42.27,26.60
+|only if havequest(62798) or completedq(62798)
+step
+talk Smith Au'berk##156666
+Bring the Memory Back to Smith Au'berk |q 62797/1 |goto 40.50,31.50
+|only if havequest(62797) or completedq(62797)
+step
+talk Stitcher Au'phes##156681
+Bring the Memory Back to Stitcher Au'phes |q 62799/1 |goto 45.47,31.78
+|only if havequest(62799) or completedq(62799)
+step
+talk Appraiser Au'vesk##156670
+turnin The Vessels of Jewels##62800 |goto Oribos/0 35.20,41.35
+|only if havequest(62800) or completedq(62800)
+step
+talk Tanner Au'qil##156669
+turnin The Vessels of Leather and Bone##62798 |goto 42.27,26.60
+|only if havequest(62798) or completedq(62798)
+step
+talk Smith Au'berk##156666
+turnin The Vessels of Metal##62797 |goto 40.50,31.50
+|only if havequest(62797) or completedq(62797)
+step
+talk Stitcher Au'phes##156681
+turnin The Vessels of the Thread##62799 |goto 45.47,31.78
+|only if havequest(62799) or completedq(62799)
 step
 talk Runecarver##164937
-turnin Ashes of the Tower##62700 |goto 50.72,54.13
-accept The Final Pieces##62719 |goto 50.72,54.13
-stickystart "Obtain_2_Different_Missives"
+turnin The Vessels of Jewels##62800 |goto 50.72,54.13
+turnin The Vessels of Leather and Bone##62798 |goto 50.72,54.13
+turnin The Vessels of Metal##62797 |goto 50.72,54.13
+turnin The Vessels of the Thread##62799 |goto 50.72,54.13
+turnin The Final Pieces##62719 |goto 50.72,54.13 |only if readyq(62719)
+turnin Ashes of the Tower##62700 |goto 50.72,54.13 |only if readyq(62700)
 step
+label "Acquire_a_Rune_Vessel"
 Acquire a Rune Vessel |q 62719/1
 |tip Craft one with professions or purchase it from the Auction House.
 |tip Plate vessels are named Shadowghast.
@@ -21184,7 +21282,17 @@ step
 label "Obtain_2_Different_Missives"
 Obtain #2# Different Missives |q 62719/2
 |tip Craft them with Inscription or purchase them from the Auction House.
+|tip There are missives of Haste, Critical Strike, Mastery, and Versatility.
 step
 talk Runecarver##164937
 turnin The Final Pieces##62719 |goto 50.72,54.13
+turnin Ashes of the Tower##62700 |goto 50.72,54.13 |only if readyq(62700)
+step
+label "Collect_1250_Soul_Ash"
+Collect #1250# Soul Ash |q 62700/1
+|tip Run Torghast Tower to collect Soul Ash.
+|tip Soul Ash will be dropped by the final boss upon full completion.
+step
+talk Runecarver##164937
+turnin Ashes of the Tower##62700 |goto 50.72,54.13
 ]])

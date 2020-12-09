@@ -302,7 +302,16 @@ function ActionBar:SetButton(btype,object)
 
 	local macro_index = GetMacroIndexByName("ZygorAction"..action_index)
 	if macro_index==0 then
-	    macro_index = CreateMacro("ZygorAction"..action_index, 134400, "", true) -- create empty macro
+		local numAccountMacros, numCharacterMacros = GetNumMacros();
+		if numAccountMacros==MAX_ACCOUNT_MACROS then
+			if not ZGV.db.char.actionbarmacrowarning then
+				ZGV:Print("Action Bar was unable to create needed macros, since you have exceeded maximum number of possible macros. You will need to remove some of your existing macros for Action Bar to be able to work properly.")
+				ZGV.db.char.actionbarmacrowarning = true
+			end
+			return
+		end
+		macro_index = CreateMacro("ZygorAction"..action_index, 134400, "") -- create empty macro
+		ZGV.db.char.actionbarmacrowarning = false
 	end
 
 	local macro_text, macro_texture, macro_name,macro_tooltip,zygor_texture_index,_ = "", 134400

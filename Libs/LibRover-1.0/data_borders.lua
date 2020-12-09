@@ -11,6 +11,7 @@ data.basenodes.borders = {
 	-- Shadowlands
 		"The Maw/0 23.01,68.40 -x- Altar of Domination/0 89.73,34.52 {title_atob:Enter the building} {title_btoa:Leave the building}",
 		"The Maw/0 27.87,20.52 -x- Extractor's Sanatorium/0 19.94,73.08 {title_atob:Enter the building} {title_btoa:Leave the building}",
+		"Bastion/0 44.03,24.70 -x- Path of Wisdom/0 48.04,90.71 {title_atob:Enter the building} {title_btoa:Leave the building}",
 
 	-- Kalimdor
 		"Ashenvale 20.7,15.8 -x- Darkshore 38.8,96.4",

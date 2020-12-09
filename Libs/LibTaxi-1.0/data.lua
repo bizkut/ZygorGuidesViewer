@@ -95,7 +95,7 @@ data.taxipoints = {
 	['Sinfall']={
 
 		-- NEUTRAL --
-		{name="Sinfall",faction="B",npc="Courier Snaggle",npcid=162702,x=67.31,y=21.42,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Venthyr or c.covenant()==0 end},
+		{name="Sinfall",faction="B",npc="Courier Snaggle",npcid=162702,x=67.31,y=21.42,recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.covenant()==c.Venthyr end},
 	},
 },
 

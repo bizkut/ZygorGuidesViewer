@@ -295,7 +295,14 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 					if col.textureoffset then widget:SetTexCoord(unpack(col.textureoffset)) end
 					if col.texturecolor then widget:SetVertexColor(unpack(col.texturecolor)) end
 				end
-			end					
+			end
+			if col.iconset and col.iconkey then
+				if col.type=="button" then
+					ZGV.ButtonSets[col.iconset][col.iconkey]:AssignToButton(widget)
+				elseif col.type=="icon" then
+					ZGV.IconSets[col.iconset][col.iconkey]:AssignToTexture(widget)
+				end
+			end
 
 			if prev then 
 				widget:SetPoint("LEFT",prev,"RIGHT",(col.padding or DATA.ROW_PADDING),0) 
@@ -362,7 +369,7 @@ end
 
 function ScrollTable:TotalValue(count)
 	self.scrollbar:TotalValue(count)
-	if count<self.DATA.ROW_COUNT then
+	if count<=self.DATA.ROW_COUNT then
 		for _,row in pairs(self.rows) do
 			row:SetPoint("RIGHT",self)
 		end

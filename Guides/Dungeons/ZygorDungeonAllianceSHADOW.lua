@@ -632,54 +632,152 @@ Click Here to Continue |confirm
 step
 kill Artificer Xy'mox##166644 |goto Castle Nathria/1 65.36,23.25
 _EVERYONE:_ |grouprole EVERYONE
+|tip Use wormholes to your advantage to quickly reposition yourself. |grouprole EVERYONE
+|tip Avoid standing in the path of "Rift Blast." |grouprole EVERYONE
+|tip Run away from "Fleeting Spirits" if you become fixated. |grouprole EVERYONE
+|tip Avoid standing within 50 yards of "Seeds of Extinction," which explode after 20 seconds. |grouprole EVERYONE
+|tip Seeds can be moved before they explode to create a safe area. |grouprole EVERYONE
+|tip Run away from the "Edge of Annihilation" when it draws you in or you will suffer critical damage. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
+|tip 2 players will be marked with "Dimensional Tear" which expires after 8 seconds and leaves a wormhole behind. |grouprole DAMAGE
+|tip Decide with your group how to place wormholes created by "Dimensional Tear." |grouprole DAMAGE
+|tip If any players become "Possessed," DPS them until they are no longer controlled. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
+|tip 2 players will be marked with "Dimensional Tear" which expires after 8 seconds and leaves a wormhole behind. |grouprole HEALER
+|tip Decide with your group how to place wormholes created by "Dimensional Tear." |grouprole HEALER
+|tip "Glyph of Destruction" and "Hyperlight Spark" will require increased raid healing. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip "Glyph of Destruction" will inflict significant damage to anyone nearby when it expires. |grouprole TANK
 Click Here to Continue |confirm
 step
 kill Hungering Destroyer##164261 |goto Castle Nathria/3 35.82,34.57
 _EVERYONE:_ |grouprole EVERYONE
+|tip Run away when "Consume" is cast. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
+|tip Avoid standing near other players if affected by "Gluttonous Miasma." |grouprole DAMAGE
+|tip "Gluttonous Miasma" will prevent all healing received and deal damage to the player and anyone within 5 yards. |grouprole DAMAGE
+|tip Position yourself so other players aren't in the path of "Volatile Injection" if targeted. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
+|tip Avoid standing near other players if affected by "Gluttonous Miasma." |grouprole HEALER
+|tip "Gluttonous Miasma" will prevent all healing received and deal damage to the player and anyone within 5 yards. |grouprole HEALER
+|tip Position yourself so other players aren't in the path of "Volatile Injection" if targeted. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip Swap threat with your offtank to manage stacks of "Growing Hunger." |grouprole TANK
 Click Here to Continue |confirm
 step
 kill Lady Inerva Darkvein##167517 |goto Castle Nathria/4 36.27,44.30
 _EVERYONE:_ |grouprole EVERYONE
-_DAMAGE:_ |grouprole DAMAGE
+|tip Click Anima Containers when they reach 33% or higher and not affected by "Focus Anima." |grouprole EVERYONE
+|tip Soak vials before they hit the ground. |grouprole EVERYONE
+|tip At 33%+ anima the vials leave pools which should be avoided. |grouprole EVERYONE
+|tip At 66%+ anima the vials bounce once and must be soaked twice. |grouprole EVERYONE
+|tip When afflicted by "Shared Suffering," cut through each of the orbs with your beams at the same time. |grouprole EVERYONE
+|tip At 33%+ anima avoid the beams from the orbs. |grouprole EVERYONE
+|tip At 66%+ anima the beams rotate, making them harder to avoid. |grouprole EVERYONE
+|tip Move the "Concentrated Anima" debuff near the boss before it expires. |grouprole EVERYONE
+|tip At 33%+ anima the boss needs to be moved to the player with the "Concentrated Anima" debuff because the player will be rooted. |grouprole EVERYONE
+|tip At 66%+ anima dodge the orbs that spawn with the add after "Concentrated Anima" expires. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
+|tip At 33%+ Anima, players affected by "Shared Cognition" will need extra healing. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip Swap threat at two stacks of "Warped Desires." |grouprole TANK
+|tip At 33%+ Anima, run away from the group before "Warped Desires" expires. |grouprole TANK
+|tip Be prepared to pick up the add when "Concentrated Anima" expires. |grouprole TANK
 Click Here to Continue |confirm
 step
 kill Baroness Frieda##166969 |goto Castle Nathria/0 70.14,54.73
 kill Castellan Niklaus##166971
 kill Lord Stavros##166970
 _EVERYONE:_ |grouprole EVERYONE
+|tip Determine your kill order before beginning. |grouprole EVERYONE
+|tip When each boss reaches 50% health, move to the indicated dance tile and continue to move to the tile indicated until the dance is complete. |grouprole EVERYONE
+|tip Any time aside from "Danse Macabre," Stay on the dance floor. |grouprole EVERYONE
+|tip Interrupt "Dreadbolt Volley" from Freida. |grouprole EVERYONE
+|tip If Frieda is alive with one boss dead, spread out during "Prideful Eruption." |grouprole EVERYONE
+|tip If Niklaus is alive with one boss dead, crowd control Dredger Servants and kill them quickly. |grouprole EVERYONE
+|tip If paired with another player by "Dark Recital," run to your partner and keep moving to avoid the bad that spawns. |grouprole EVERYONE
+|tip If Stavros is alive with one boss dead, move away from dancers during "Waltz of Blood." |grouprole EVERYONE
+|tip If Stavros is alive with two bosses dead, find and kill the Dancing Fools that can be killed and sand on their corpse to remain safe. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
+|tip Focus down one boss at a time. |grouprole DAMAGE
+|tip Burn down Dutiful Attendants quickly. |grouprole DAMAGE
+|tip Kill any Veteran Stoneguards as soon as they spawn if Niklaus is alive with two bosses dead. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
+|tip Players targeted by "Drain Essence" will need additional healing. |grouprole HEALER
+|tip Dispel debuffs quickly. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip If Frieda is alive with two bosses dead, swap threat after two "Soul Spikes." |grouprole TANK
+|tip If Niklaus is alive with two bosses dead, pick up the Veteran Stoneguard. |grouprole TANK
+|tip Swap threat at two stacks of "Deulist's Riposte." |grouprole TANK
+|tip Position yourself facing away from the raid to tank Stavros. |grouprole TANK
+|tip Swap threat with Stavros after two stacks of "Evasive Lunge." |grouprole TANK
 Click Here to Continue |confirm
 step
 kill Sludgefist##174733 |goto Castle Nathria/3 70.23,81.59
 _EVERYONE:_ |grouprole EVERYONE
+|tip If connected by a chain, move to your partner and stay within 12 yards until it fades. |grouprole EVERYONE
+|tip Hide behind a pillar if affected by "Hateful Gaze." |grouprole EVERYONE
+|tip Avoid standing in front of Sludgefist during "Hateful Gaze" if not affected. |grouprole EVERYONE
+|tip Run at least 20 yards away from Sludgefist to avoid "Destructive Stomp" damage. |grouprole EVERYONE
+|tip Ranged players should stay as far away from the boss as possible. |grouprole EVERYONE
+|tip Avoid "Falling Rubble" areas targeted on the ground. |grouprole EVERYONE
+|tip Avoid standing in "Stonequake" zones on the ground. |grouprole EVERYONE
+|tip "Colossal Roar" will knock you back. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
+|tip Save DPS cooldowns for periods after Sludgefist runs into a pillar. |grouprole DAMAGE
+|tip At 20% health Sludgefist enrages, so use any DPS cooldowns available. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
+|tip Players failing to avoid "Destructive Stomp" will take serious to fatal damage. |grouprole HEALER
+|tip "Colossal Roar" will deal damage to the entire raid. |grouprole HEALER
+|tip At 20% health Sludgefist enrages and causes significantly increased damage. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip Stand on top of each other for the duration of the encounter to split "Giant Fists" damage. |grouprole TANK
+|tip Keep Sludgefist at least 20 yards away from pillars to avoid them being broken. |grouprole TANK
 Click Here to Continue |confirm
 step
 kill General Grashaal##175233 |goto Castle Nathria/6 26.37,21.93
 kill General Kaal##165318
 _EVERYONE:_ |grouprole EVERYONE
+|tip Stand in "Crystalline Bursts" to remove your bleed if targeted by "Crystalize." |grouprole EVERYONE
+|tip Stack on the target that bursts to share damage from "Pulverizing Meteor." |grouprole EVERYONE
+|tip Move to the boss' sides and stay at least 8 yards apart if marked by "Wicked Blade." |grouprole EVERYONE
+|tip When a boss becomes "Hardened," kill the adds and return the orbs they drop to Prince Renathal. |grouprole EVERYONE
+|tip Run to Prince Renathal when he reaches full mana during "Shattering Blast." |grouprole EVERYONE
+|tip Run away if targeted by "Reverberating Eruption" and ensure that all other areas of "Unstable Ground" are soaked. |grouprole EVERYONE
+|tip Don't stand in patches left behind by "Seismic Upheaval." |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
+|tip When the Stone Legion Goloath casts "Soultaint Effigy," nuke it down. |grouprole DAMAGE
+|tip DPS both bosses down together to avoid extra damage from "Soldier's Oath." |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
+|tip Dispel "Heart Rend" and health through the debuff afterwards. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip Swap threat to avoid excess "Stone Fist" stacks. |grouprole TANK
 Click Here to Continue |confirm
 step
 kill Sire Denathrius##168938 |goto Castle Nathria/5 49.24,53.55
 _EVERYONE:_ |grouprole EVERYONE
+|tip Run away from players when affected by "Feeding Time." |grouprole EVERYONE
+|tip Move out of the frontal cone "Ravage" attack and avoid standing in the "Desolation" area left behind. |grouprole EVERYONE
+|tip Until 70% health, split into two groups and alternate standing in "Cleansing Pain" areas. |grouprole EVERYONE
+|tip Ensure you have 3 stacks or less of "Burden of Sin" upon reaching 70% health. |grouprole EVERYONE
+|tip At 70% health, run to the center of the room. |grouprole EVERYONE
+|tip Run through the mirrior during "Hand of Destruction." |grouprole EVERYONE
+|tip Run away from other players if targeted by "Impale" and avoid standing in a direct line if not affected by it. |grouprole EVERYONE
+|tip Dodge "Massacre" indication lines. |grouprole EVERYONE
+|tip Below 40% health, stand near the center. |grouprole EVERYONE
+|tip Avoid standing near other people if debuffed with "Fatal Finesse." |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
+|tip Kill Echoes of Sin immediately. |grouprole DAMAGE
+|tip Kill Crimson Cabalists immediately. |grouprole DAMAGE
+|tip Burn the boss down quickly at the 40% mark. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
+|tip Below 40% health, raid damage will become increasingly severe. |grouprole HEALER
 _TANK:_ |grouprole TANK
+|tip Position "Wracking Pain" so it hits adds and not raid members. |grouprole TANK
+|tip Swap threat after each "Wracking Pain" cast. |grouprole TANK
+|tip Pick up and tank Remornia near the boss. |grouprole TANK
+|tip Move the boss near the mirror for "Hand of Destruction." |grouprole TANK
+|tip Below 40% health, tank the boss near the edges. |grouprole TANK
 Click Here to Continue |confirm
 step
 _Congratulations!_

@@ -258,6 +258,14 @@ function ItemScore:GetItemDetails(itemlink)
 			local found_level = line:match( gsub(ITEM_MIN_LEVEL,"%%d","(.*)"))
 			if found_level then itemMinLevel = tonumber(found_level) end
 
+			-- we reached enchancement or triggered effect line, no more stats. 
+			if line:match(gsub(ENCHANTED_TOOLTIP_LINE,"%%s","(.*)")) then break end
+			if line:match("^"..ITEM_SPELL_TRIGGER_ONEQUIP) then break end
+			if line:match("^"..ITEM_SPELL_TRIGGER_ONPROC) then break end
+			if line:match("^"..ITEM_SPELL_TRIGGER_ONUSE) then break end
+			if line:match("^"..ITEM_SET_BONUS_GRAY) then break end
+			if line:match("^"..ITEM_SET_BONUS) then break end
+
 			for _,statdata in pairs(ItemScore.Keywords) do
 				local value = line:lower():match(statdata.regex)
 				if value then 

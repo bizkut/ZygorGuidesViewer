@@ -369,7 +369,7 @@ function Goldguide:Update()
 
 					row.chore = chore
 
-					row.loadbutton:SetEnabledIf(not ZGVG.Appraiser:IsInCurrentDeals(chore.id))
+					row.loadbutton:EnableIf(not ZGVG.Appraiser:IsInCurrentDeals(chore.id))
 						
 
 					row.backalpha = rownum%2==0 and 0.0 or 0.06

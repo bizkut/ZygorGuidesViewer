@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 373,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
+	nodes_version = 374,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -59,6 +59,7 @@ data.MapIDsByName = {
 ["Revendreth Scenario"] = {[0]=1688},
 ["Extractor's Sanatorium"] = {[0]=1822},
 ["Night Fae Torghast"] = {[0]=1720},
+["Path of Wisdom"] = {[0]=1713},
 
 
 --Shadowlands Dungeons--
@@ -1469,6 +1470,7 @@ data.ZoneMeta = {
 	["Bastion/1"] = {hostile=false},
 	["Extractor's Sanatorium/0"] = {hostile=false},
 	["Fungal Terminus/0"] = {hostile=false},
+	["Path of Wisdom/0"] = {hostile=false},
 }
 
 --[[

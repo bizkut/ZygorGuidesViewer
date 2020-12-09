@@ -20032,7 +20032,7 @@ Tell her _"Tell me about my specialization options."_
 Speak with Veruca Darkstream to Learn About Specializations |q 60352/1 |goto 75.46,47.50
 |only if Rogue
 step
-Activate a Combat Specialization |q 5960352591/2
+Activate a Combat Specialization |q 60352/2
 |tip Press "N", choose a specialization, and click the "Activate" button.
 |only if Rogue
 step

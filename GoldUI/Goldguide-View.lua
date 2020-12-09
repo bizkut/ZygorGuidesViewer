@@ -73,10 +73,7 @@ local FARMING_COLUMNS = {
 	{ title="RATE", width=130, titlej="RIGHT", textj="RIGHT", name="rate", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="TIME", width=60, titlej="RIGHT", textj="RIGHT", name="disptime", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="EST. GOLD", width=110, titlej="RIGHT", textj="RIGHT", name="dispgold", sortable=true, sortfunction=Goldguide.UpdateSorting },
-	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15,
-		texture=function() return SkinData("TitleButtons") end,
-		textureoffset={10/32,11/32,0,1/4},
-	}
+	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15, iconset = "TitleButtons", iconkey="LOADGUIDE"}
 }
 
 local FARMING_TYPES = {
@@ -106,10 +103,7 @@ local GATHERING_COLUMNS = {
 	{ title="RATE", width=130, titlej="RIGHT", textj="RIGHT", name="rate", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="TIME", width=60, titlej="RIGHT", textj="RIGHT", name="disptime", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="EST. GOLD", width=110, titlej="RIGHT", textj="RIGHT", name="dispgold", sortable=true, sortfunction=Goldguide.UpdateSorting },
-	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15,
-		texture=function() return SkinData("TitleButtons") end,
-		textureoffset={10/32,11/32,0,1/4},
-	}
+	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15, iconset = "TitleButtons", iconkey="LOADGUIDE"}
 }
 
 local GATHERING_TOOLTIP = {
@@ -137,10 +131,7 @@ local CRAFTING_COLUMNS = {
 	{ title="STATUS", width=60, titlej="CENTER", textj="CENTER", name="status", font=FONTSTATUS},
 	{ title="MATERIALS", width=110, titlej="RIGHT", textj="RIGHT", name="materials", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="PROFIT", width=110, titlej="RIGHT", textj="RIGHT", name="profit", sortable=true, sortfunction=Goldguide.UpdateSorting },
-	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15,
-		texture=function() return SkinData("TitleButtons") end,
-		textureoffset={10/32,11/32,0,1/4},
-	}
+	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15, iconset = "TitleButtons", iconkey="LOADGUIDE"}
 }
 
 local CRAFTING_TOOLTIP = {
@@ -168,10 +159,7 @@ local AUCTION_COLUMNS = {
 	{ title="COST", width=105, titlej="RIGHT", textj="RIGHT", name="cost", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="PROFIT", width=105, titlej="RIGHT", textj="RIGHT", name="profit", sortable=true, sortfunction=Goldguide.UpdateSorting },
 	{ title="GAIN", width=60, titlej="RIGHT", textj="RIGHT", name="gain", sortable=true, sortfunction=Goldguide.UpdateSorting },
-	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15,
-		texture=function() return SkinData("TitleButtons") end,
-		textureoffset={10/32,11/32,0,1/4},
-	}
+	{ title="", width=23, titlej="RIGHT", textj="RIGHT", name="loadbutton", type="button", iconheight=18, iconwidth=18,padding=15, iconset = "TitleButtons", iconkey="LOADGUIDE"}
 }
 
 local AUCTION_TOOLTIP = {

@@ -74,6 +74,11 @@ end
 
 Scan.BrowseQuery = {minLevel=0,maxLevel=0,filters={},sorts={}};
 function Scan:ScanByName(name,itemid,dontanalyze)
+	Scan.ListenItemID = nil
+	Scan.ScannedItemID = nil
+	Scan.ScannedItemKey = nil
+	Scan.ScannedPetID = nil
+
 	if self.state=="SS_BUYING" then ZGV:Debug("&scan Scan:ScanByName|cffffee00 cannot scan, buyout not finished!") return false end
 	if name=="" then return false,"no name" end
 	if self.state~="SS_IDLE" then return false,"state "..self.state.." not SS_IDLE" end
@@ -99,6 +104,11 @@ function Scan:ScanByName(name,itemid,dontanalyze)
 end
 
 function Scan:ListenByName(name,itemid)
+	Scan.ListenItemID = nil
+	Scan.ScannedItemID = nil
+	Scan.ScannedItemKey = nil
+	Scan.ScannedPetID = nil
+
 	if self.state=="SS_BUYING" then ZGV:Debug("&scan Scan:ScanByName|cffffee00 cannot scan, buyout not finished!") return false end
 	if name=="" then return false,"no name" end
 	if self.state~="SS_IDLE" then return false,"state "..self.state.." not SS_IDLE" end
@@ -251,7 +261,6 @@ end
 
 -- handle single item scans from 8.3 api
 function Scan:WorkStep(mode)
-
 	-- we are here, so we have full browse results
 	local browseresults = C_AuctionHouse.GetBrowseResults()
 
@@ -302,24 +311,26 @@ function Scan:WorkStep(mode)
 				tinsert(self.rawdata,"1^" .. row .."^".. (data.itemID) .."^".. (data.quantity) .."^".. (data.unitPrice) .."^".. (data.itemLink or "item:"..data.itemID) .."^0") -- hardcoded page 1, hardcoded no owned auctions
 			end
 		end
-	else
+	else -- mode=="browse"
 		for index,item in pairs(browseresults) do
 			local itemKey = item.itemKey
+			--print("full",C_AuctionHouse.HasFullItemSearchResults(itemKey))
+			--print("full",C_AuctionHouse.HasFullCommoditySearchResults(itemKey.itemID))
 			if C_AuctionHouse.HasSearchResults(itemKey) then
 				local keyinfo = C_AuctionHouse.GetItemKeyInfo(itemKey);
-				if mode=="item" then
-					local searchresults = C_AuctionHouse.GetNumItemSearchResults(itemKey)
-					for i=1,searchresults do
-						local data = C_AuctionHouse.GetItemSearchResultInfo(itemKey,i)
-						row = row + 1
-						tinsert(self.rawdata,"1^" .. row .."^".. (itemKey.itemID) .."^".. (data.quantity) .."^".. (data.buyoutAmount) .."^".. (data.itemLink) .."^0") -- hardcoded page 1, hardcoded no owned auctions
-					end
-				elseif mode=="commodity" then 
+				if keyinfo.isCommodity then 
 					local searchresults = C_AuctionHouse.GetNumCommoditySearchResults(desiredID)
 					for i=1,searchresults do
 						local data = C_AuctionHouse.GetCommoditySearchResultInfo(desiredID,i)
 						row = row + 1
 						tinsert(self.rawdata,"1^" .. row .."^".. (data.itemID) .."^".. (data.quantity) .."^".. (data.unitPrice) .."^".. (data.itemLink or "item:"..data.itemID) .."^0") -- hardcoded page 1, hardcoded no owned auctions
+					end
+				else -- if mode=="item" then
+					local searchresults = C_AuctionHouse.GetNumItemSearchResults(itemKey)
+					for i=1,searchresults do
+						local data = C_AuctionHouse.GetItemSearchResultInfo(itemKey,i)
+						row = row + 1
+						tinsert(self.rawdata,"1^" .. row .."^".. (itemKey.itemID) .."^".. (data.quantity) .."^".. (data.buyoutAmount) .."^".. (data.itemLink) .."^0") -- hardcoded page 1, hardcoded no owned auctions
 					end
 				end
 			end
@@ -327,12 +338,6 @@ function Scan:WorkStep(mode)
 	end
 
 	Scan.data.wipe_one = Scan.ScannedItemID
-
-
-	Scan.ListenItemID = nil
-	Scan.ScannedItemID = nil
-	Scan.ScannedItemKey = nil
-	Scan.ScannedPetID = nil
 
 	Scan:AnalyzeAuctions("reset")
 	Scan:SetState("SS_ANALYZING")
@@ -770,7 +775,10 @@ end
 local analyze_throttle = 50 --ms
 function Scan:AnalyzeAuctions(cmd)  -- Ugly Self-coroutine.
 	-- selfdriver:
-	if cmd=="reset" then self.analyzethread=nil return end
+	if cmd=="reset" then 
+		self.analyzethread=nil 
+		return 
+	end
 	if cmd=="go" then  self.analyzethread=self.analyzethread or coroutine.create(self.AnalyzeAuctions)  local suc,err=coroutine.resume(self.analyzethread,self)  
 	if not suc then ZGV:Debug("&scan ERROR ANALYZING %s",err) self.analyzethread=nil self:SetState("SS_IDLE") end return  end
 	-- end of selfdriver

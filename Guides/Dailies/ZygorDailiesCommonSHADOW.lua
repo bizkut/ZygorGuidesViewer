@@ -31,7 +31,6 @@ step
 label quest-60950
 accept A Matter of Stealth##60950 |goto Ardenweald/0 70.94,33.05
 |tip You will accept this quest automatically.
-|polish
 step
 talk Amberfoot##170928
 Tell her _"I'm ready for the disguise."_
@@ -47,7 +46,6 @@ step
 label quest-60899
 accept A Night in the Woods##60899 |goto Ardenweald/0 27.30,58.05
 |tip You will accept this quest automatically.
-|polish
 step
 Search around for the patrol
 |tip They appear on your minimap as a yellow dot.
@@ -197,7 +195,6 @@ step
 label quest-61946
 accept Natural Defenders##61946 |goto Ardenweald/0 58.23,56.91
 |tip You will accept this quest automatically.
-|polish
 step
 talk Glitterdust##173372
 Tell it _"Begin pet battle."_
@@ -207,7 +204,6 @@ step
 label quest-61411
 accept Our Heart Will Go On##61411 |goto Ardenweald/0 67.71,24.74
 |tip You will accept this quest automatically.
-|polish
 step
 talk Zayhad, The Builder##172185
 Tell it _"I'll take this acorn and recover memories within Heartwood Grove."_
@@ -219,6 +215,7 @@ Collect #3# Good Memories |q 61411/3 |goto 68.90,25.90
 |tip They appear on your minimap as yellow dots.
 step
 label "Slay_Drust_Invaders_61411"
+Kill enemies around this area
 Slay #12# Drust Invaders |q 61411/2 |goto 68.90,25.90
 step
 talk Zayhad, The Builder##172185
@@ -262,7 +259,6 @@ step
 label quest-59600
 accept Rotbriar Trouble##59600 |goto Ardenweald/0 62.36,24.23
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Nature Soul##165320+
 |tip They look like small sparkling animals on the ground around this area.
@@ -320,7 +316,7 @@ step
 clicknpc Veilwing Sentry##163633
 Mount the Veilwing Sentry |q 58993/1 |goto 50.97,72.67
 step
-kill 30 Rootstinger Swarmling##163616 |q 58993/2 |goto 50.97,72.67
+kill 45 Rootstinger Swarmling##163616 |q 58993/2 |goto 50.97,72.67
 |tip They are in the air.
 |tip Use the ability on your action bar.
 |next "Shadow_World_Quest_Emissaries"
@@ -418,7 +414,6 @@ step
 label quest-60609
 accept Who Devours the Devourers?##60609 |goto Ardenweald/0 27.04,48.03
 |tip You will accept this quest automatically.
-|polish
 step
 label "Collect_Resonating_Anima_Core"
 Kill enemies around this area
@@ -431,14 +426,13 @@ use the Resonating Anima Core##180008
 |tip Use them on the Devourer Rifts around this area.
 |tip They look like giant swirling blue portals around this area.
 |tip They appear on your minimap as yellow dots.
-Close #4# Devourer Rifts |q 60609/1 |goto 27.04,48.03 |or
+Close #5# Devourer Rifts |q 60609/1 |goto 27.04,48.03 |or
 '|condition not completedq(60609) and questactive(60609) and itemcount(180008) == 0 |next "Collect_Resonating_Anima_Core" |or
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-60837
 accept Wrath of Aliothe##60837 |goto Ardenweald/0 39.33,55.77
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 |tip You can use the button that appears on-screen to turn into a bear if you wish.
@@ -465,20 +459,19 @@ step
 label quest-61593
 accept A Crisis of Memory##61593 |goto Bastion/0 43.39,26.09
 |tip You will accept this quest automatically.
-|polish
 step
-Enter the building |goto 42.14,25.57 < 20 |walk
 kill Iristia the Unburdened##172913 |q 61593/3 |goto 41.08,26.78
 |tip Inside the building.
 |tip Neutral mobs may become hostile if you approach too closely.
 step
 kill Sybigone the Awakened##172914 |q 61593/2 |goto 43.34,25.74
 |tip Neutral mobs may become hostile if you approach too closely.
+|tip She flies around this area.
 step
-Enter the building |goto 43.79,24.94 < 20 |walk
-kill Olyssion the Reclaimer##172912 |q 61593/1 |goto 44.06,24.68
+kill Olyssion the Reclaimer##172912 |q 61593/1 |goto Path of Wisdom/0 48.11,9.82
 |tip All the way in the back of the building.
 |tip Neutral mobs may become hostile if you approach too closely.
+|next "Shadow_World_Quest_Emissaries"
 step
 label quest-61689
 accept A Crisis of Memory##61689 |goto Bastion/0 42.98,26.10
@@ -516,7 +509,6 @@ step
 label quest-60623
 accept AHHH! Real Monsters!##60623 |goto Bastion/0 67.53,30.18
 |tip You will accept this quest automatically.
-|polish
 step
 talk Aspirant Thetes##171834
 Tell her _"I will accompany you."_
@@ -550,7 +542,6 @@ step
 label quest-61148
 accept AHHH! Real Monsters!##61148 |goto Bastion/0 67.54,30.25
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 collect 100 Devoured Anima##180789 |q 61148/1 |goto 67.54,30.25
@@ -559,7 +550,7 @@ click Devourer Rift
 |tip Use the "Create Rift" ability that appears on-screen.
 Enter a Rift |q 61148/2
 step
-kill Visk the All-Consuming##171513 |q 61148/3 |goto 67.19,28.35
+kill Visk the All-Consuming##171513 |q 61148/3 |goto 67.11,27.92
 |tip Running over orbs on the ground will grant you a stacking buff.
 |tip Each stack will increase your speed, damage, and healing.
 |tip Stacks will also increase your damage taken.
@@ -585,7 +576,6 @@ step
 label quest-62235
 accept Allay Their Fears##62235 |goto Bastion/0 51.29,59.60
 |tip You will accept this quest automatically.
-|polish
 step
 click Korinna's Allaying Crook##357754
 collect Korinna's Allaying Crook##183045 |q 62235/1 |goto 51.29,59.60
@@ -700,7 +690,6 @@ step
 label quest-61520
 accept Enemy of My Mnemis##61520 |goto Bastion/0 50.71,20.71
 |tip You will accept this quest automatically.
-|polish
 step
 click Inert Centurion Core##356395
 collect Inert Centurion Core##181710 |q 61520/1 |goto 50.71,20.71
@@ -836,7 +825,6 @@ step
 label quest-61783
 accept Mega Bite##61783 |goto Bastion/0 36.51,31.70
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Jawbone##173133
 Defeat Jawbone in a Pet Battle |q 61783/1 |goto 36.51,31.70
@@ -854,7 +842,6 @@ step
 label quest-61967
 accept Remedial Lessons##61967 |goto Bastion/0 64.06,43.61
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Manifestations_of_Pride_61967"
 step
 label "Collect_Mirror_of_Ancient_Teachings_61967"
@@ -863,13 +850,13 @@ Kill enemies around this area
 collect Mirror Fragment##182457+ |n
 |tip Three fragments are required to make one mirror.
 use the Mirror Fragment##182457
-collect Mirror of Ancient Teachings##182458 |goto 64.06,43.61
+collect 3 Mirror of Ancient Teachings##182458 |goto 64.06,43.61 |q 61967
 step
 click Instruction Dais+
 |tip They look like stone platforms on the ground around this area.
 |tip They appear on your minimap as yellow dots.
 Restore #3# Instructors |q 61967/1 |goto 64.06,43.61 |or
-'|condition not completedq(61967/1) and questactive(61967) and itemcount(182458) == 0 |next "Collect_Mirror_of_Ancient_Teachings_61967" |or
+'|condition not completedq(61967,1) and questactive(61967) and itemcount(182458) == 0 |next "Collect_Mirror_of_Ancient_Teachings_61967" |or
 step
 label "Slay_Manifestations_of_Pride_61967"
 Kill Pride enemies around this area
@@ -879,7 +866,12 @@ talk Voitha##156327
 Tell her _"I will retrieve the scrolls."_
 Speak to Voitha |q 61967/3 |goto 66.04,47.09
 step
-Confirm |confirm
+Watch the dialogue
+|tip The Disciple of Humility will carry you to the archive.
+click Sacred Text##357469+
+|tip They look like rolled up scrolls on shelves on the side of the building.
+|tip Wait for the Disciple of Humility to stop at each shelf.
+collect 5 Sacred Text##182477 |q 61967/4 |goto 67.73,42.96
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-62258
@@ -906,7 +898,6 @@ step
 label quest-61791
 accept Thenia's Loyal Companions##61791 |goto Bastion/0 54.55,56.10
 |tip You will accept this quest automatically.
-|polish
 step
 talk Thenia##173129
 Tell her _"Begin pet battle."_
@@ -936,11 +927,10 @@ step
 label quest-62241
 accept Training Regimen##62241 |goto Bastion/0 55.30,41.94
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Gatamatos##159697
 Retreive Gatamatos |q 62241/1 |goto 55.39,42.05
-stickystart "Kill_Agitated_etherwyrms_62241"
+stickystart "Kill_Agitated_Etherwyrms_62241"
 step
 Enter the building |goto 55.69,42.88 < 10 |walk
 Use the _"Order Search"_ ability
@@ -949,7 +939,7 @@ Use the _"Order Search"_ ability
 |tip Follow Gatamatos to the gem.
 Retreive #6# Training Gems |q 62241/3 |goto 55.69,42.88
 step
-label "Kill_Agitated_etherwyrms_62241"
+label "Kill_Agitated_Etherwyrms_62241"
 kill 8 Agitated Etherwyrm##159610 |q 62241/2 |goto 55.69,42.88
 |tip Inside the building.
 step
@@ -1001,7 +991,6 @@ step
 label quest-59585
 accept We'll Make an Aspirant Out of You##59585 |goto Bastion/0 45.63,80.24
 |tip You will accept this quest automatically.
-|polish
 step
 click Training Spear
 Equip Yourself |q 59585/1 |goto 45.47,80.44
@@ -1090,7 +1079,6 @@ step
 label quest-58605
 accept Amateur Night##58605 |goto Maldraxxus/0 50.37,47.27
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 |tip Elite enemies will spawn one at a time in the center of the arena.
@@ -1101,15 +1089,14 @@ step
 label quest-59836
 accept Battles Won Long Ago##59836 |goto Maldraxxus/0 46.16,59.08
 |tip You will accept this quest automatically.
-|polish
 step
 Kill Unbound enemies around this area
 Kill #15# Iron Trench Enemies |q 59836/1 |goto 46.16,59.08
 step
 click Banner of Remembrance
-Plant the Banner at the Iron Trench |q 59836/2 |goto 46.16,59.08
+Plant the Banner at the Iron Trench |q 59836/2 |goto 47.24,58.63
 step
-kill Mierina##161537 |q 59836/3 |goto 46.16,59.08
+kill Mierina##161537 |q 59836/3 |goto 47.04,58.50
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61343
@@ -1181,58 +1168,67 @@ Slay #12# Bony Spindel Insects |q 58207/3 |goto 54.75,20.20
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61477
-accept Calling the Champions##61477 |goto Maldraxxus/0 50.02,55.74
+accept Calling the Champions##61477 |goto Maldraxxus/0 50.10,55.69
 |tip You will accept this quest automatically.
-|polish
 step
 label "Retrieve_the_Flame_1"
 click Brazier of Challenge
-Retrieve the Flame |havebuff spell:336414 |goto 50.02,55.74 |q 61477
+Retrieve the Flame |havebuff spell:336414 |goto 50.10,55.69 |q 61477
 step
 click Unlit Brazier of Challenge
-|tip Using your mount will cause you to drop the flame.
-|tip Walk over the runes that appear on the ground to increase your speed.
-Light the Flame of Challenge |q 61477/1 |goto 46.59,53.75 |count 1 |or
+|tip Follow the road.
+|tip DO NOT MOUNT, you will lose the flame buff.
+|tip Walk over the yellow circle runes that appear on the ground to increase your speed.
+|tip Avoid the Slimelets as you run, they will make you lose the flame buff.
+Light the Flame of Challenge |q 61477/1 |goto 54.30,54.23 |count 1 |or
 '|condition not hasbuff("spell:336414") and countremains(61477,5) and questactive(61477) |next "Retrieve_the_Flame_1" |or
 step
 label "Retrieve_the_Flame_2"
 click Brazier of Challenge
-Retrieve the Flame |havebuff spell:336414 |goto 46.59,53.75 |q 61477
+Retrieve the Flame |havebuff spell:336414 |goto 54.30,54.23 |q 61477
 step
 click Unlit Brazier of Challenge
-|tip Using your mount will cause you to drop the flame.
-|tip Walk over the runes that appear on the ground to increase your speed.
-Light the Flame of Challenge |q 61477/1 |goto 44.70,45.04 |count 2 |or
+|tip Follow the road.
+|tip DO NOT MOUNT, you will lose the flame buff.
+|tip Walk over the yellow circle runes that appear on the ground to increase your speed.
+|tip Avoid the Slimelets as you run, they will make you lose the flame buff.
+Light the Flame of Challenge |q 61477/1 |goto 56.25,44.23 |count 2 |or
 '|condition not hasbuff("spell:336414") and countremains(61477,4) and questactive(61477) |next "Retrieve_the_Flame_2" |or
 step
 label "Retrieve_the_Flame_3"
 click Brazier of Challenge
-Retrieve the Flame |havebuff spell:336414 |goto 44.70,45.04 |q 61477
+Retrieve the Flame |havebuff spell:336414 |goto 56.25,44.23 |q 61477
 step
 click Unlit Brazier of Challenge
-|tip Using your mount will cause you to drop the flame.
-|tip Walk over the runes that appear on the ground to increase your speed.
-Light the Flame of Challenge |q 61477/1 |goto 49.94,39.04 |count 3 |or
+|tip Follow the road.
+|tip DO NOT MOUNT, you will lose the flame buff.
+|tip Walk over the yellow circle runes that appear on the ground to increase your speed.
+|tip Avoid the Slimelets as you run, they will make you lose the flame buff.
+Light the Flame of Challenge |q 61477/1 |goto 49.84,39.11 |count 3 |or
 '|condition not hasbuff("spell:336414") and countremains(61477,3) and questactive(61477) |next "Retrieve_the_Flame_3" |or
 step
 label "Retrieve_the_Flame_4"
 click Brazier of Challenge
-Retrieve the Flame |havebuff spell:336414 |goto 49.94,39.04 |q 61477
+Retrieve the Flame |havebuff spell:336414 |goto 49.84,39.11 |q 61477
 step
 click Unlit Brazier of Challenge
-|tip Using your mount will cause you to drop the flame.
-|tip Walk over the runes that appear on the ground to increase your speed.
-Light the Flame of Challenge |q 61477/1 |goto 56.28,44.19 |count 4 |or
+|tip Follow the road.
+|tip DO NOT MOUNT, you will lose the flame buff.
+|tip Walk over the yellow circle runes that appear on the ground to increase your speed.
+|tip Avoid the Slimelets as you run, they will make you lose the flame buff.
+Light the Flame of Challenge |q 61477/1 |goto 44.77,45.01 |count 4 |or
 '|condition not hasbuff("spell:336414") and countremains(61477,2) and questactive(61477) |next "Retrieve_the_Flame_4" |or
 step
 label "Retrieve_the_Flame_5"
 click Brazier of Challenge
-Retrieve the Flame |havebuff spell:336414 |goto 56.28,44.19 |q 61477
+Retrieve the Flame |havebuff spell:336414 |goto 44.77,45.01 |q 61477
 step
 click Unlit Brazier of Challenge
-|tip Using your mount will cause you to drop the flame.
-|tip Walk over the runes that appear on the ground to increase your speed.
-Light the Flame of Challenge |q 61477/1 |goto 54.33,54.24 |count 5 |or
+|tip Follow the road.
+|tip DO NOT MOUNT, you will lose the flame buff.
+|tip Walk over the yellow circle runes that appear on the ground to increase your speed.
+|tip Avoid the Slimelets as you run, they will make you lose the flame buff.
+Light the Flame of Challenge |q 61477/1 |goto 46.58,53.63 |count 5 |or
 '|condition not hasbuff("spell:336414") and countremains(61477,1) and questactive(61477) |next "Retrieve_the_Flame_5" |or
 |next "Shadow_World_Quest_Emissaries"
 step
@@ -1259,44 +1255,18 @@ Eliminate the Lich Forces |q 58490/1 |goto 50.37,64.66
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61141
-accept Deathfang's Favorite Toy##61141 |goto Maldraxxus/0 56.63,52.07
+accept Deathfang's Favorite Toy##61141 |goto Maldraxxus/0 55.30,53.62
 |tip You will accept this quest automatically.
 |polish
 step
 Kill Bloodtusk enemies around this area
-collect Throwin' Skull##180810 |q 61141/1 |goto 56.63,52.07
+collect Throwin' Skull##180810 |q 61141/1 |goto 55.30,53.62
 step
+clicknpc Deathfang##171450
+|tip If you lose the skull after using it, click Deathfang again to retrieve it.
 use the Throwin' Skull##180810
-|tip Throw it nearbye.
-Play with Deathfang |q 61141/2 |goto 55.23,53.51 |count 1
-step
-clicknpc Deathfang##171591
-collect Throwin' Skull##180810 |q 61141 |goto 55.23,53.51
-step
-use the Throwin' Skull##180810
-|tip Throw it nearbye.
-Play with Deathfang |q 61141/2 |goto 55.23,53.51 |count 2
-step
-clicknpc Deathfang##171591
-collect Throwin' Skull##180810 |q 61141 |goto 55.23,53.51
-step
-use the Throwin' Skull##180810
-|tip Throw it nearbye.
-Play with Deathfang |q 61141/2 |goto 55.23,53.51 |count 3
-step
-clicknpc Deathfang##171591
-collect Throwin' Skull##180810 |q 61141 |goto 55.23,53.51
-step
-use the Throwin' Skull##180810
-|tip Throw it nearbye.
-Play with Deathfang |q 61141/2 |goto 55.23,53.51 |count 4
-step
-clicknpc Deathfang##171591
-collect Throwin' Skull##180810 |q 61141 |goto 55.23,53.51
-step
-use the Throwin' Skull##180810
-|tip Throw it nearbye.
-Play with Deathfang |q 61141/2 |goto 55.23,53.51 |count 5
+|tip Throw it nearby.
+Play with Deathfang #5# Times |q 61141/2 |goto 55.30,53.62
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61708
@@ -1321,6 +1291,23 @@ step
 kill Arin'gore##161196 |q 61708/4 |goto 59.43,27.06
 |next "Shadow_World_Quest_Emissaries"
 step
+label quest-61608
+accept Unbreakable Crystal##61608 |goto Maldraxxus/0 50.26,53.26
+|tip You will accept this quest automatically.
+step
+click Crafter's Crate##356879
+collect Antique Necromancer's Staff##182043 |q 61608/1 |goto 50.26,53.26
+step
+cast Disenchant##324750
+|tip Cast it on the Antique Necromancer's Staff in your bags.
+Disenchant the Antique Necromancer's Staff |condition itemcount(182043) == 0 |goto 50.26,53.26 |q 61608
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Unbreakable Crystal>_
+|tip It is in the Quest Recipes category under Shadowlands Enchanting.
+collect 1 Unbreakable Crystal##181949 |q 61608/3
+|next "Shadow_World_Quest_Emissaries"
+step
 label quest-61867
 accept Extra Pieces##61867 |goto Maldraxxus/0 34.01,55.27
 |tip You will accept this quest automatically.
@@ -1333,7 +1320,6 @@ step
 label quest-61870
 accept Failed Experiment##61870 |goto Maldraxxus/0 54.07,28.06
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Gorgemouth##173274
 Defeat Gorgemouth in a Pet Battle |q 61870/1 |goto 54.07,28.06
@@ -1445,7 +1431,6 @@ step
 label quest-61539
 accept Liches Get Stitches##61539 |goto Maldraxxus/0 67.17,28.54
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 Disrupt the Sin'dane's Forces |q 61539/1 |goto 67.17,28.54
@@ -1454,7 +1439,6 @@ step
 label quest-61866
 accept Mighty Minions of Maldraxxus##61866 |goto Maldraxxus/0 46.86,50.00
 |tip You will accept this quest automatically.
-|polish
 step
 talk Caregiver Maximillian##173257
 Tell him _"Begin pet battle."_
@@ -1464,12 +1448,27 @@ step
 label quest-59234
 accept Mixing A Mess##59234 |goto Maldraxxus/0 60.71,77.24
 |tip You will accept this quest automatically.
-|polish
 step
 kill Burning Extract##165027+
 |tip Click the oil, goo, or ooze that sometimes spawns after killing extracts.
-Deliver #3# Viscous Oil, Mephitic Goo, or Miscible Ooze to the Pool |q 59234/1 |goto 60.71,77.24
-Bring them to [58.43,74.31]
+Collect an Oozing Ingredient |q 59234/1 |goto 60.71,77.24 |count 1
+step
+Deliver #3# Viscous Oil, Mephitic Goo, or Miscible Ooze to the Pool |q 59234/2 |goto 58.43,74.31 |count 1
+|tip Walk near the pool of blood.
+step
+kill Burning Extract##165027+
+|tip Click the oil, goo, or ooze that sometimes spawns after killing extracts.
+Collect an Oozing Ingredient |q 59234/1 |goto 60.71,77.24 |count 2
+step
+Deliver #3# Viscous Oil, Mephitic Goo, or Miscible Ooze to the Pool |q 59234/2 |goto 58.43,74.31 |count 2
+|tip Walk near the pool of blood.
+step
+kill Burning Extract##165027+
+|tip Click the oil, goo, or ooze that sometimes spawns after killing extracts.
+Collect an Oozing Ingredient |q 59234/1 |goto 60.71,77.24 |count 3
+step
+Deliver #3# Viscous Oil, Mephitic Goo, or Miscible Ooze to the Pool |q 59234/2 |goto 58.43,74.31 |count 3
+|tip Walk near the pool of blood.
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61841
@@ -1515,7 +1514,6 @@ step
 label quest-58505
 accept Planned Demise##58505 |goto Maldraxxus/0 53.76,66.01
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 collect Lich Battle Plan##174231 |q 58505/1 |goto 53.76,66.01
@@ -1549,12 +1547,11 @@ collect 8 Corpselouse Bristles##176846 |q 59642/2 |goto 55.88,38.33
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61060
-accept Spore Losers##61060 |goto Maldraxxus/0 76.70,56.00
+accept Spore Losers##61060 |goto Maldraxxus/0 76.10,55.83
 |tip You will accept this quest automatically.
-|polish
 step
 click Fungret Mushroom
-Eat the Fungret Mushroom |q 61060/1 |goto 76.70,56.00
+Eat the Fungret Mushroom |q 61060/1 |goto 76.10,55.83
 step
 Kill enemies around this area
 |tip Use the abilities on your action bar.
@@ -1646,7 +1643,6 @@ step
 label quest-60655
 accept A Stolen Stone Fiend##60655 |goto Revendreth/0 57.23,39.76
 |tip You will accept this quest automatically.
-|polish
 step
 use the Stone Fiend Tracker##180249
 |tip Use it to display a trail leading to the Missing Stone Fiend.
@@ -1717,7 +1713,6 @@ step
 label quest-61879
 accept Ashes Will Fall##61879 |goto Revendreth/0 25.26,38.00
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Scorch##173303
 Defeat Scorch in a Pet Battle |q 61879/1 |goto 25.26,38.00
@@ -1726,7 +1721,6 @@ step
 label quest-58144
 accept Battered and Bruised##58144 |goto Revendreth/0 24.37,38.68
 |tip You will accept this quest automatically.
-|polish
 step
 click Iron Chains
 Collect the Chains |q 58144/1 |goto 24.37,38.68
@@ -1773,7 +1767,6 @@ step
 label quest-57443
 accept Dirty Job: Demolition Detail##57443 |goto Revendreth/0 53.64,73.49
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Ripened Laborer##172929+
 |tip They look like small humanoids around this area.
@@ -1799,6 +1792,23 @@ clicknpc Ripened Laborer##172929+
 Destroy #3# Infested Horror Saps |q 57465/2 |goto 74.13,75.18
 |tip Use the "Throw Dredger" ability on-screen to toss a dredger at the giant trees.
 |tip Defend the dredger from any enemies that attack it until it destroys the tree.
+|next "Shadow_World_Quest_Emissaries"
+step
+label quest-61630
+accept Enchanting: Everburning Brand##61630 |goto Revendreth/0 32.67,48.98
+|tip You will accept this quest automatically.
+step
+click Crafter's Crate##356880
+collect 1 Antique Duelist's Rapier##182067 |q 61630/1 |goto 32.67,48.98
+step
+cast Disenchant##324750
+|tip Cast it on the Antique Duelist's Rapier in your bags.
+Disenchant the Antique Duelist's Rapier |condition itemcount(182067) == 0 |goto 32.67,48.98 |q 61630
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Everburning Brand>_
+|tip It is in the Quest Recipes category under Shadowlands Enchanting.
+collect 1 Everburning Brand##181950 |q 61630/3 |goto 32.67,48.98
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61885
@@ -1981,7 +1991,6 @@ step
 label quest-59808
 accept Muck It Up##59808 |goto Revendreth/0 35.55,32.37
 |tip You will accept this quest automatically.
-|polish
 stickystart "Kill_Primordial_Sludge_59808"
 step
 kill Primordial Sludge##166206+
@@ -2037,7 +2046,6 @@ step
 label quest-60602
 accept Secret Service##60602 |goto Revendreth/0 56.81,32.37
 |tip You will accept this quest automatically.
-|polish
 step
 label "Acquire_the_Servant's_Basic_Kit"
 click Servant's Basic Kit##349089
@@ -2045,7 +2053,7 @@ click Servant's Basic Kit##349089
 Acquire the Servant's Basic Kit |invehicle |goto 56.81,32.37 |q 60602
 step
 kill Muck Rat##169623+
-|tip When they appear, use the "Left Hook" and "Right Hook" abilities on them.
+|tip When they appear, use the "Left Hook" ability on them.
 |tip Avoid the patrolling Stone Legion Security.
 |tip Use "Serve Food," and "Serve Drink" abilities on guests.
 |tip Guests that are in dire need will have three red warning lines above their head.
@@ -2074,7 +2082,6 @@ step
 label quest-59617
 accept Stone Fiend Saboteurs##59617 |goto Revendreth/0 55.70,37.36
 |tip You will accept this quest automatically.
-|polish
 step
 kill Stone Fiend Saboteur##165373+
 |tip They fly all over this area.
@@ -2127,10 +2134,10 @@ label quest-59852
 Enter the building |goto Revendreth/0 31.15,57.12 < 10 |walk
 accept Tea Tales: Gubbins and Tubbins##59852 |goto 31.33,57.42
 |tip You will accept this quest automatically.
-|polish
 step
 label "Hear_Gubbins_and_Tubbins'_Story"
 clicknpc Tubbins##166558
+|tip Inside the building.
 Ask Gubbins and Tubbins to Tell Their Story |invehicle |goto 31.33,57.42 |q 59852
 step
 click Tubbins's Lost Teapot
@@ -2151,6 +2158,7 @@ accept Tea Tales: Lost Sybille##59853 |goto 30.88,57.28
 step
 label "Hear_Sybille's_Story"
 clicknpc Lost Sybille##166538
+|tip Inside the building.
 Ask Lost Sybille to Tell Her Story |invehicle |goto 30.88,57.28 |q 59853
 step
 click Theotar's Parasol
@@ -2186,10 +2194,10 @@ label quest-59848
 Enter the building |goto Revendreth/0 31.15,57.12 < 10 |walk
 accept Tea Tales: Theotar##59848 |goto 31.03,57.47
 |tip You will accept this quest automatically.
-|polish
 step
 label "Hear_Theotar's_Story"
 clicknpc Theotar##166555
+|tip Inside the building.
 Ask Theotar to Tell His Story |invehicle |goto 31.03,57.47 |q 59848
 stickystart "Kill_Scorched_Scavenger_59848"
 stickystart "Slay_Very_Rude_Ash_Ghouls_59848"
@@ -2203,7 +2211,7 @@ Recover the Stolen Parasol |q 59848/2 |goto 34.98,52.32 |or
 '|condition outvehicle() and not completedq(59848) and questactive(59848) and havequest(59848) |next "Hear_Theotar's_Story" |or
 step
 label "Kill_Scorched_Scavenger_59848"
-kill 10 Scorched Scavenger##157731 |q 59848/3 |goto 34.95,57.32 |or
+kill 5 Scorched Scavenger##157731 |q 59848/3 |goto 34.95,57.32 |or
 |tip Use the "Spot of Tea" ability out-of-combat to recover health and mana. |notinsticky
 |tip Use "Bolt of Madness" for single-target ranged attacking. |notinsticky
 |tip Use "Dude's Descent" for AoE damage and stuns. |notinsticky
@@ -2211,7 +2219,7 @@ kill 10 Scorched Scavenger##157731 |q 59848/3 |goto 34.95,57.32 |or
 '|condition outvehicle() and not completedq(59848) and questactive(59848) and havequest(59848) |next "Hear_Theotar's_Story" |or
 step
 label "Slay_Very_Rude_Ash_Ghouls_59848"
-Slay #10# Very Rude Ash Ghouls |q 59848/4 |goto 34.95,57.32 |or
+Slay #5# Very Rude Ash Ghouls |q 59848/4 |goto 34.95,57.32 |or
 |tip Use the "Spot of Tea" ability out-of-combat to recover health and mana. |notinsticky
 |tip Use "Bolt of Madness" for single-target ranged attacking. |notinsticky
 |tip Use "Dude's Descent" for AoE damage and stuns. |notinsticky
@@ -2229,10 +2237,10 @@ label quest-59850
 Enter the building |goto Revendreth/0 31.15,57.12 < 10 |walk
 accept Tea Tales: Vulca##59850 |goto 31.17,57.59
 |tip You will accept this quest automatically.
-|polish
 step
 label "Hear_Vulca's_Story"
 clicknpc Vulca##166556
+|tip Inside the building.
 Ask Vulca to Tell Her Story |invehicle |goto 31.17,57.59 |q 59850
 stickystart "Slay_Ash_Ghouls_59850"
 step
@@ -2255,13 +2263,12 @@ Get to the Tea Party |q 59850/4 |goto 31.17,57.59 |or
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-61886
-accept The Mind Games of Addius##61886 |goto Revendreth/0 61.35,41.20
+accept The Mind Games of Addius##61886 |goto Revendreth/0 61.29,41.10
 |tip You will accept this quest automatically.
-|polish
 step
 talk Addius the Tormentor##173331
 Tell him _"Begin pet battle."_
-Defeat Addius in a Pet Battle |q 61886/1 |goto 61.35,41.20
+Defeat Addius the Tormentor in a Pet Battle |q 61886/1 |goto 61.29,41.10
 |next "Shadow_World_Quest_Emissaries"
 step
 label quest-59581
@@ -2710,7 +2717,7 @@ turnin Forces of Perdition##62214 |goto 46.91,41.69 |only if readyq(62214) or co
 step
 You have completed all daily quests in The Maw
 |tip This guide will reset when more become available.
-'|condition not completedanyq(63062,63050,63179,63043,63047,63166,63031,63100,63040,63038,63045,63069,63072) |next "Begin_Dailies"
+'|condition not completedanyq(63062,63050,63179,63043,63047,63166,63031,63100,63040,63038,63045,63069,63072,60732,63039) |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Daily Quests",{
 author="support@zygorguides.com",
@@ -2971,11 +2978,12 @@ Rescue #20# Lost Souls in the Maw |q 62863/1 |goto The Maw/0 39.52,46.74
 step
 label "Defeat_3_Rare_or_Special_Encounter_Bosses"
 Defeat #3# Rare or Special Encounter Bosses |q 60454/1
-|tip Encounters periodically show on the map.
+|tip Encounters periodically show on the map in The Maw.
 |only if havequest(60454) or completedq(60454)
 step
 label "Collect_150_Soul_Embers_from_Torghast"
 Gather #150# Anima Embers from Torghast, Tower of the Damned |q 60458/1
+|tip Run Torghast and collect them from the final boss.
 |only if havequest(60458) or completedq(60458)
 step
 talk Soulguide Daelia##160212
@@ -3032,7 +3040,7 @@ Tell him _"Show me the Sanctum."_
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60465/1 |goto Elysian Hold/0 42.60,53.06 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400,60454) < 3 |next "Begin_Dailies" |or
 |only if havequest(60465) or completedq(60465)
 step
 talk Haephus##167745
@@ -3045,7 +3053,7 @@ Tell him _"Show me the Sanctum."_ |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61982/1 |goto Elysian Hold/0 42.60,53.06 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400,60454) < 3 |next "Begin_Dailies" |or
 |only if havequest(61982) or completedq(61982)
 step
 talk Haephus##167745
@@ -3054,7 +3062,7 @@ turnin Replenish the Reservoir##61982 |goto Elysian Hold/0 42.60,53.06
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60458,60415,60358,60439,60442,60447,60450,60403,60407,60412,60404,60424,60434,60377,60430,60425,60380,60372,60465,60391,60392,60395,60400,60454) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Necrolord Daily Quests",{
 author="support@zygorguides.com",
@@ -3315,12 +3323,12 @@ Rescue #20# Lost Souls in the Maw |q 62866/1 |goto The Maw/0 39.52,46.74
 step
 label "Defeat_3_Rare_or_Special_Encounter_Bosses"
 Defeat #3# Rare or Special Encounter Bosses |q 60455/1
-|tip Run Torghast, Tower of the Damned and you will collect these as you progress.
+|tip Encounters periodically show on the map in The Maw.
 |only if havequest(60455) or completedq(60455)
 step
 label "Collect_150_Soul_Embers_from_Torghast"
 Gather #150# Anima Embers from Torghast, Tower of the Damned |q 60459/1
-|tip Run Torghast, Tower of the Damned and you will collect these as you progress.
+|tip Run Torghast and collect them from the final boss.
 |only if havequest(60459) or completedq(60459)
 step
 talk Sabbath Nightshade##167207
@@ -3384,7 +3392,7 @@ talk Arkadia Moa##161909
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60464/1 |goto Seat of the Primus/0 52.71,38.30 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464,60455) < 3 |next "Begin_Dailies" |or
 |only if havequest(60464) or completedq(60464)
 step
 talk Yondare Hex##167205
@@ -3396,7 +3404,7 @@ talk Arkadia Moa##161909 |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61983/1 |goto Seat of the Primus/0 52.71,38.30 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464,60455) < 3 |next "Begin_Dailies" |or
 |only if havequest(61983) or completedq(61983)
 step
 talk Osbourne Black##167748
@@ -3405,7 +3413,7 @@ turnin Replenish the Reservoir##61983 |goto Seat of the Primus/0 46.66,42.38
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60459,60440,60443,60445,60449,60402,60405,60411,60408,60423,60426,60376,60433,60429,60371,60379,60416,60363,60390,60393,60396,60398,60464,60455) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Night Fae Daily Quests",{
 author="support@zygorguides.com",
@@ -3664,12 +3672,12 @@ Rescue #20# Lost Souls from the Maw |q 62860/1 |goto The Maw/0 39.52,46.74
 step
 label "Collect_150_Soul_Embers_from_Torghast"
 Gather #150# Anima Embers from Torghast, Tower of the Damned |q 60457/1
-|tip Run Torghast, Tower of the Damned and you will collect these as you progress.
+|tip Run Torghast and collect them from the final boss.
 |only if havequest(60457) or completedq(60457)
 step
 label "Defeat_3_Rare_or_Special_Encounter_Bosses"
 Defeat #3# Rare or Special Encounter Bosses |q 60452/1
-|tip Encounters periodically show on the map.
+|tip Encounters periodically show on the map in The Maw.
 |only if havequest(60452) or completedq(60452)
 step
 talk Blodwyn##167195
@@ -3730,7 +3738,7 @@ Tell it _"Show me the Sanctum."_
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60462/1 |goto Heart of the Forest/1 38.93,54.72 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462,60452) < 3 |next "Begin_Dailies" |or
 |only if havequest(60462) or completedq(60462)
 step
 talk Sesselie##167196
@@ -3744,7 +3752,7 @@ Tell it _"Show me the Sanctum."_ |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61984/1 |goto Heart of the Forest/1 38.93,54.72 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462,60452) < 3 |next "Begin_Dailies" |or
 |only if havequest(61984) or completedq(61984)
 step
 talk Sesselie##167196
@@ -3754,7 +3762,7 @@ turnin Replenish the Reservoir##61984 |goto Heart of the Forest/1 50.60,62.63
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60457,60369,60373,60414,60364,60438,60437,60436,60435,60387,60386,60374,60385,60388,60421,60418,60420,60419,60381,60384,60383,60382,60462,60452) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Fungal Terminus Daily Quests",{
 author="support@zygorguides.com",
@@ -3787,7 +3795,7 @@ accept Go Beyond!##62465 |goto 50.75,53.29 |only if questpossible() and covenant
 Accept the Daily Quest |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 1 |or
 Accept the Daily Quests |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 2 |or 2
 Accept the Daily Quests |condition false |goto 50.75,53.29 |only if covenantfeature("Transport Network") == 3 |or 3
-'|condition completedanyq(62614,62615,62610,60153,62296,62607,60175,62608,62606,62459,62400,62466,60188,62263,62465) |or
+'|condition completedanyq(62614,62615,62610,60153,62296,62382,62453,62611,62607,60175,62608,62606,62459,62400,62417,62466,60188,62263,62465) |or
 step
 talk Marasmius##167455
 Tell it _"Let's ride."_
@@ -4138,7 +4146,7 @@ turnin Go Beyond!##62465 |goto 50.75,53.29 |only if readyq(62465) or completedq(
 step
 You have completed all Fungal Terminus daily quests
 |tip This guide will reset when more become available.
-'|condition not completedanyq(62614,62615,62610,60153,62296,62607,60175,62608,62606,62459,62400,62466,60188,62263,62465) |next "Begin_Dailies"
+'|condition not completedanyq(62614,62615,62610,60153,62296,62382,62453,62611,62607,60175,62608,62606,62459,62400,62417,62466,60188,62263,62465) |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Venthyr Daily Quests",{
 author="support@zygorguides.com",
@@ -4396,12 +4404,12 @@ Rescue #20# Lost Souls in the Maw |q 62869/1 |goto The Maw/0 39.52,46.74
 step
 label "Collect_150_Soul_Embers_from_Torghast"
 Gather #150# Anima Embers from Torghast, Tower of the Damned |q 60460/1
-|tip Run Torghast, Tower of the Damned and you will collect these as you progress.
+|tip Run Torghast and collect them from the final boss.
 |only if havequest(60460) or completedq(60460)
 step
 label "Defeat_3_Rare_or_Special_Encounter_Bosses"
-Defeat #3# Rare or Special Encounter Bosses |q 60456/1
-|tip Encounters periodically show on the map.
+Defeat #3# Rare or Special Encounter Bosses in the Maw |q 60456/1
+|tip Encounters periodically show on the map in The Maw.
 |only if havequest(60456) or completedq(60456)
 step
 talk Tenaval##164738
@@ -4463,7 +4471,7 @@ Tell him _"Show me the Sanctum."_
 |tip Click the "Deposit" button to deposit anima from your bags.
 Deposit #400# Anima in the Anima Reservoir |q 60463/1 |goto Sinfall/0 55.70,26.04 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands.
-'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399,60456) < 3 |next "Begin_Dailies" |or
 |only if havequest(60463) or completedq(60463)
 step
 talk Devahia##164739
@@ -4476,7 +4484,7 @@ Tell him _"Show me the Sanctum."_ |notinsticky
 |tip Click the "Deposit" button to deposit anima from your bags. |notinsticky
 Deposit #1500# Anima in the Anima Reservoir |q 61981/1 |goto Sinfall/0 55.70,26.04 |or
 |tip Gather anima by completing world quests, killing rare enemies, and looting treasures across the Shadowlands. |notinsticky
-'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies" |or
+'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399,60456) < 3 |next "Begin_Dailies" |or
 |only if readyq(61981) or completedq(61981)
 step
 talk Foreman Flatfinger##172605
@@ -4485,7 +4493,7 @@ turnin Replenish the Reservoir##61981 |goto 55.70,26.04
 step
 You have completed all covenant daily quests
 |tip This guide will reset when more become available.
-'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399) < 3 |next "Begin_Dailies"
+'|condition countcompletedq(60460,60401,60409,60406,60410,60422,60427,60431,60432,60463,60417,60370,60375,60378,60358,60441,60444,60446,60448,60389,60394,60397,60399,60456) < 3 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Shadowlands (50-60)\\Covenants\\Kyrian Anima Conductor Daily Quests",{
 author="support@zygorguides.com",

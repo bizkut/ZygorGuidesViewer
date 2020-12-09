@@ -33894,6 +33894,8 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [174550]="Myskia|",
 [174417]="Lyri|",
 [174383]="Shifting Dread|",
+[161211]="Tamed Gargon|",
+[171450]="Deathfang|",
 
 
 --[]="|",
